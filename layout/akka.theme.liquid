@@ -33,16 +33,15 @@
 
     <style>
       @font-face {
-        font-family: 'Blisstwin';
-        src: url('https://cdn.shopify.com/s/files/1/0885/5581/5215/files/Blisstwin-Regular.eot?v=1726161989');
-        src: url('https://cdn.shopify.com/s/files/1/0885/5581/5215/files/Blisstwin-Regular.eot#iefix?v=1726161989?') format('embedded-opentype'),
-            url('https://cdn.shopify.com/s/files/1/0885/5581/5215/files/Blisstwin-Regular.woff2?v=1726161988') format('woff2'),
-            url('https://cdn.shopify.com/s/files/1/0885/5581/5215/files/Blisstwin-Regular.woff?v=1726161989') format('woff'),
-            url('https://cdn.shopify.com/s/files/1/0885/5581/5215/files/Blisstwin-Regular.ttf?v=1726161989') format('truetype');
-        font-weight: normal;
-        font-style: italic;
-        font-display: swap;
-      }
+          font-family: 'Blisstwin';
+          src: url('{{ 'Blisstwin-Regular.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Blisstwin-Regular.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Blisstwin-Regular.woff' | file_url }}') format('woff'),
+               url('{{ 'Blisstwin-Regular.ttf' | file_url }}') format('truetype');
+          font-weight: normal;
+          font-style: italic;
+          font-display: swap;
+      }      
       @font-face {
           font-family: 'Syne';
           src: url('{{ 'Syne-Regular.eot' | file_url }}');
