@@ -1,0 +1,51 @@
+<header class="sticky z-20 top-0 flex flex-col justify-center items-center px-[20px] py-3 text-white bg-[#3E488B] max-[1024px]:px-5">
+    <div class="flex flex-wrap gap-5 justify-between w-full max-w-[var(--page-width)] max-[1024px]:max-w-full max-[1024px]:items-center">
+    <h1 class="flex items-start text-4xl font-extrabold">
+        <img class="max-w-[93px] w-full" src="{{ section.settings.logo | img_url: 'original' }}" alt="Logo">
+    </h1>
+    <nav class="flex flex-wrap gap-10 items-start my-auto text-xl max-[1024px]:max-w-full font-['Syne'] capitalize max-[1024px]:hidden">
+        {% assign menu = linklists[section.settings.main_menu] %}
+        {% for link in menu.links %}
+        <a href="{{ link.url }}" class="gap-3.5 self-stretch p-0.5 {{ link.active ? 'underline' : '' }}">{{ link.title | downcase }}</a>
+        {% endfor %}
+    </nav>
+    <div id="nav-icon" class="hidden max-[1024px]:block">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </div>
+    <nav id="nav-box" class="max-w-full font-['Syne'] hidden">
+    {% for link in menu.links %}
+        <a href="{{ link.url }}" class="h-[60px] leading-[20px] text-[20px] text-white uppercase tracking-[-0.3px] p-0.5 px-[16px] block {{ link.active ? 'underline' : '' }}">{{ link.title | upcase }}</a>
+    {% endfor %}
+    </nav>
+</header>
+
+{% schema %}
+{
+    "name": "Header",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo Image",
+            "default": "shopify://image/path_to_default_logo.png"
+        },
+        {
+            "type": "link_list",
+            "id": "main_menu",
+            "label": "Main Menu",
+            "default": "main-menu"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Default",
+            "category": "Header"
+        }
+    ]
+}
+{% endschema %}
+    

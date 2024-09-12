@@ -596,8 +596,21 @@ video {
   position: sticky;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .isolate {
   isolation: isolate;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .block {
@@ -620,14 +633,116 @@ video {
   display: none;
 }
 
+.h-\[60px\] {
+  height: 60px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-\[93px\] {
+  max-width: 93px;
+}
+
+.max-w-\[var\(--page-width\)\] {
+  max-width: var(--page-width);
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-3\.5 {
+  gap: 0.875rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.self-stretch {
+  align-self: stretch;
 }
 
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.bg-\[\#3E488B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(62 72 139 / var(--tw-bg-opacity));
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
+}
+
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.font-\[\'Syne\'\] {
+  font-family: 'Syne';
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .uppercase {
@@ -640,6 +755,23 @@ video {
 
 .italic {
   font-style: italic;
+}
+
+.leading-\[20px\] {
+  line-height: 20px;
+}
+
+.tracking-\[-0\.3px\] {
+  letter-spacing: -0.3px;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .shadow {
@@ -843,4 +975,27 @@ html {
 :root {
   --page-width: 1340px;
   --desktop-bp: 1200px;
+}
+
+@media (max-width: 1024px) {
+  .max-\[1024px\]\:block {
+    display: block;
+  }
+
+  .max-\[1024px\]\:hidden {
+    display: none;
+  }
+
+  .max-\[1024px\]\:max-w-full {
+    max-width: 100%;
+  }
+
+  .max-\[1024px\]\:items-center {
+    align-items: center;
+  }
+
+  .max-\[1024px\]\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
