@@ -1,6 +1,146 @@
+<section id="section-1" class="handlebars-template w-full">
+  {%- raw -%}
+    <script id="template-desktop" type="text/x-handlebars-template">
+      {{#unless (isMobile)}}
+        <div id="section-1-desktop" class="relative bg-[#F4D9CC] parallax-animate" data-onload="500">
+          <div class="flex mx-auto justify-end items-end gap-[90px] max-[1350px]:gap-[20px]">
+            <div class="sticky bottom-[200px] flex justify-end z-[2]">
+              <div class="absolute top-[-280px] left-[-300px] parallax-image" data-speed="0.05" data-direction="up">
+                {{#if settings.desktop_image_1}}
+                  <img loading="lazy" class="element scaleup object-contain max-w-full aspect-[2.07] w-[509px]" src="{{ settings.desktop_image_1 | img_url: 'original' }}" alt="" />
+                {{/if}}
+              </div>
+              <div class="max-w-[590px] mb-[40px] min-[1500px]:mr-[150px] max-[1400px]:ml-[40px] font-['syne']">
+                <div class="overflow-hidden">
+                  <h1 class="text-[70px] font-normal leading-[70px] tracking-[1.4px] mb-[45px] capitalize text-[#2E3666] element slideupfade">
+                    <span class="font-['blisstwin']">{{ settings.heading }}</span>
+                    Liver Rejuvenation
+                  </h1>
+                </div>
+                <div class="overflow-hidden">
+                  <p class="text-[#2E3666] font-syne text-2xl font-normal leading-[1.2] mb-[45px] element slideupfade">
+                    {{ settings.description }}
+                  </p>
+                </div>
+                <div class="overflow-y-hidden pb-9">
+                  <a href="{{ settings.cta_link }}" class="button element slideupfade flex items-center gap-[16px]" role="button">
+                    <span>SHOP AKKA</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="34" viewBox="0 0 22 34" fill="none">
+                      <path d="M19.3476 23.404C19.3476 23.6817 19.2373 23.948 19.0409 24.1444C18.8445 24.3408 18.5782 24.4511 18.3005 24.4511C18.0227 24.4511 17.7564 24.3408 17.56 24.1444C17.3636 23.948 17.2533 23.6817 17.2533 23.404V12.576L5.08033 24.749C4.88183 24.9339 4.61928 25.0346 4.348 25.0298C4.07672 25.0251 3.81789 24.9152 3.62604 24.7233C3.43418 24.5314 3.32429 24.2726 3.3195 24.0013C3.31471 23.7301 3.41541 23.4675 3.60038 23.269L15.7716 11.0943H4.94362C4.6659 11.0943 4.39956 10.984 4.20318 10.7876C4.00681 10.5912 3.89648 10.3249 3.89648 10.0471C3.89648 9.76942 4.00681 9.50308 4.20318 9.3067C4.39956 9.11032 4.6659 9 4.94362 9H18.3005C18.5782 9 18.8445 9.11032 19.0409 9.3067C19.2373 9.50308 19.3476 9.76942 19.3476 10.0471V23.404Z" fill="#EDEEF5"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-[300px] flex-col relative z-[5]">
+              {{#if settings.desktop_image_2}}
+                <div class="mt-[250px]"><img class="element scaleup max-w-[280px] h-auto" src="{{ settings.desktop_image_2 | img_url: 'original' }}"></div>
+              {{/if}}
+              {{#if settings.desktop_image_3}}
+                <div><img loading="lazy" class="element scaleup max-w-[280px] h-auto" src="{{ settings.desktop_image_3 | img_url: 'original' }}"></div>
+              {{/if}}
+            </div>
+            <div class="sticky bottom-[226px]">
+              {{#if settings.desktop_image_2}}
+                <div class="parallax-image" data-speed="0.3" data-direction="up"><img class="element scaleup max-w-[280px] h-auto" src="{{ settings.desktop_image_2 | img_url: 'original' }}"></div>
+              {{/if}}
+            </div>
+          </div>
+          <div class="sticky bottom-[-50px] z-[1]">
+            <div class="pt-[20px] flex justify-end relative">
+              {{#if settings.desktop_image_3}}
+                <div class="absolute top-[-150px] left-0 parallax-image" data-speed="0.2" data-direction="up"><img class="element scaleup max-w-[300px]" loading="lazy" src="{{ settings.desktop_image_3 | img_url: 'original' }}"></div>
+              {{/if}}
+              {{#if settings.desktop_image_2}}
+                <div class="relative bottom-[-40px] parallax-image" data-speed="0.05" data-stop="45" data-direction="up"><img class="element scaleup max-w-[1170px]" loading="lazy" src="{{ settings.desktop_image_2 | img_url: 'original' }}"></div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      {{/unless}}
+    </script>
+  
+    <script id="template-mobile" type="text/x-handlebars-template">
+      {{#if (isMobile)}}
+        <div id="section-1-mobile" class="relative bg-[#F4D9CC] px-[16px] pb-[30px]">
+          {{#if settings.mobile_image_1}}
+            <div><img src="{{ settings.mobile_image_1 | img_url: 'original' }}" class="w-full"></div>
+          {{/if}}
+          <div class="flex items-center justify-center gap-[56px] px-[20px] mt-[-120px] mb-[30px]">
+            {{#if settings.mobile_image_2}}
+              <div class="w-1/2"><img src="{{ settings.mobile_image_2 | img_url: 'original' }}" class="w-full"></div>
+            {{/if}}
+          </div>
+          <h2 class="text-[40px] font-normal leading-[1] tracking-[0.8px] mb-[45px] capitalize text-[#2E3666]">
+            <span class="font-['blisstwin']">{{ settings.heading }}</span>
+          </h2>
+          <p class="text-[#2E3666] font-syne text-[20px] font-normal leading-[1.2] mb-[45px]">
+            {{ settings.description }}
+          </p>
+          <a href="{{ settings.cta_link }}" class="button items-center gap-[16px]" role="button">
+            <span>SHOP AKKA</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="34" viewBox="0 0 22 34" fill="none">
+              <path d="M19.3476 23.404C19.3476 23.6817 19.2373 23.948 19.0409 24.1444C18.8445 24.3408 18.5782 24.4511 18.3005 24.4511C18.0227 24.4511 17.7564 24.3408 17.56 24.1444C17.3636 23.948 17.2533 23.6817 17.2533 23.404V12.576L5.08033 24.749C4.88183 24.9339 4.61928 25.0346 4.348 25.0298C4.07672 25.0251 3.81789 24.9152 3.62604 24.7233C3.43418 24.5314 3.32429 24.2726 3.3195 24.0013C3.31471 23.7301 3.41541 23.4675 3.60038 23.269L15.7716 11.0943H4.94362C4.6659 11.0943 4.39956 10.984 4.20318 10.7876C4.00681 10.5912 3.89648 10.3249 3.89648 10.0471C3.89648 9.76942 4.00681 9.50308 4.20318 9.3067C4.39956 9.11032 4.6659 9 4.94362 9H18.3005C18.5782 9 18.8445 9.11032 19.0409 9.3067C19.2373 9.50308 19.3476 9.76942 19.3476 10.0471V23.404Z" fill="#EDEEF5"/>
+            </svg>
+          </a>
+        </div>
+      {{/if}}
+    </script>
+  {% endraw %}
+</section>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "AK - Home Section 1",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image_1",
+      "label": "Desktop Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image_2",
+      "label": "Desktop Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image_3",
+      "label": "Desktop Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image_1",
+      "label": "Mobile Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image_2",
+      "label": "Mobile Image 2"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Next Generation Liver Rejuvenation"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Your liver is responsible for over 500 different functions. Our researchers have created the ultimate supplement to help support it."
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Call to Action Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AK - Home Section 1",
+      "category": "AKKA HOME"
+    }
+  ]
+}
 {% endschema %}
