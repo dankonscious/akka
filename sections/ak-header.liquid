@@ -25,7 +25,10 @@
 
 {% schema %}
 {
-    "name": "Header",
+    "name": "t:sections.header.name",
+    "enabled_on": {
+        "groups": ["header"]
+    },
     "settings": [
         {
             "type": "image_picker",
@@ -42,8 +45,8 @@
     ],
     "presets": [
         {
-            "name": "Default",
-            "category": "Header"
+            "name": "Header",
+            "category": "AKKA"
         }
     ]
 }
