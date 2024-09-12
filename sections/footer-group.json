@@ -15,8 +15,8 @@
       "type": "ak-footer",
       "settings": {
         "newsletter_title": "Sign up for our newsletter and get first access to the very best of our products, inspiration, and community.",
-        "sitemap_links": "",
-        "information_links": "",
+        "sitemap_links": "footer",
+        "information_links": "main-menu",
         "contact_email": "hello@tryakka.com",
         "contact_phone": "844-808-(AKKA) 2552",
         "contact_address": "Matawan, NJ, 07747"
