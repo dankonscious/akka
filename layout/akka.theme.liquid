@@ -43,6 +43,18 @@
         font-style: italic;
         font-display: swap;
       }
+      @font-face {
+          font-family: 'Syne';
+          src: url('{{ 'Syne-Regular.eot' | file_url }}');
+          src: url('{{ 'Syne-Regular.eot?#iefix' | file_url }}') format('embedded-opentype'),
+              url('{{ 'Syne-Regular.woff2' | file_url }}') format('woff2'),
+              url('{{ 'Syne-Regular.woff' | file_url }}') format('woff'),
+              url('{{ 'Syne-Regular.ttf' | file_url }}') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+    
     </style>
     
     {{ 'tailwind.css' | asset_url | stylesheet_tag }}
