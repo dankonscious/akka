@@ -30,9 +30,16 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "ak_header_AkQRTh": {
+      "type": "ak-header",
+      "settings": {
+        "main_menu": "main-menu"
+      }
     }
   },
   "order": [
-    "header"
+    "header",
+    "ak_header_AkQRTh"
   ]
 }
