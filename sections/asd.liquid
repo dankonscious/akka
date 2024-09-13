@@ -1,0 +1,97 @@
+<section id="section-2" class="dynamic-sticky parallax-animate sticky top-[10px] z-0 px-[20px]">
+  <div class="max-w-[var(--page-width)] px-0 py-[100px] mx-auto max-[1024px]:px-[16px] max-[1024px]:pb-[16px] max-[1024px]:pt-[32px]">
+    
+    <div class="overflow-hidden">
+      <h2 class="element slideupfade text-[#2E3666] font-['syne'] text-[70px] font-normal leading-[1] tracking-[1.4px] capitalize max-[1024px]:text-[40px]">
+        {{ section.settings.headline }}
+      </h2>
+    </div>
+    <div class="overflow-hidden pb-[20px]">
+      <h3 class="element slideupfade text-[#2E3666] font-['syne'] text-[40px] font-normal leading-[1] tracking-[0.8px] capitalize max-[1024px]:text-[24px] max-[1024px]:pr-[80px] max-[1024px]:mt-[16px]">
+        {{ section.settings.subheadline }}
+      </h3>
+    </div>
+
+    <div class="flex mt-[50px] max-[1024px]:flex-col max-[1024px]:mt-[39px]">
+      <div class="w-1/2 element scaleup relative max-[1024px]:w-full">
+        <div class="pb-[90%] relative overflow-hidden [&:hover_img]:translate-y-[100%]">
+          <img class="block transform transition-transform  absolute bottom-[99.9%] left-0 w-full h-full object-cover" loading="eager" src="{{ section.settings.image1 | img_url: 'master' }}">
+          <img class="block transform transition-transform absolute top-0 left-0 w-full h-full object-cover" loading="eager" src="{{ section.settings.image2 | img_url: 'master' }}">
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full p-[40px] pr-[200px] max-[1024px]:p-[16px] max-[1024px]:pr-[100px]">
+          <svg class="mb-[20px]" xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68" fill="none">
+            <circle cx="34" cy="34" r="33.5" stroke="white"/>
+            <path d="M24.9921 36.83C23.6621 36.83 22.8221 35.71 23.0321 34.38C23.2421 33.05 24.5021 32 25.8321 32H42.6321C43.9621 32 44.8721 33.05 44.6621 34.38C44.4521 35.71 43.1221 36.83 41.7921 36.83H24.9921Z" fill="white"/>
+          </svg>
+          <h3 class="text-white font-['blisstwin'] text-[70px] font-normal leading-[1] tracking-[1.4px] capitalize max-[1024px]:text-[40px]">
+            {{ section.settings.text1 }}
+          </h3>
+        </div>
+      </div>
+      <div class="w-1/2 element scaleup max-[1024px]:w-full">
+        <div class="pb-[90%] relative overflow-hidden [&:hover_img]:translate-x-[100%]">
+          <img class="block transform transition-transform  absolute top-0 right-[99.9%] w-full h-full object-cover" loading="eager" src="{{ section.settings.image2 | img_url: 'master' }}">
+          <img class="block transform transition-transform absolute top-0 left-0 w-full h-full object-cover" loading="eager" src="{{ section.settings.image1 | img_url: 'master' }}">
+        </div>
+        <div class="absolute bottom-0 left-0 w-full p-[40px] pr-[200px] max-[1024px]:p-[16px] max-[1024px]:pr-[100px]">
+          <svg class="mb-[20px]" xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68" fill="none">
+            <circle cx="34" cy="34" r="33.5" stroke="white"/>
+            <path d="M20.4195 35.66C19.5095 35.66 18.8795 34.89 19.0195 33.98C19.1595 33.07 20.1395 32.3 21.0495 32.3H32.6695L34.6995 20.68C34.8395 19.77 35.7495 19 36.6595 19C37.5695 19 38.1995 19.77 38.0595 20.68L36.0295 32.3H47.5795C48.4895 32.3 49.1195 33.07 48.9795 33.98C48.8395 34.89 47.9295 35.66 47.0195 35.66H35.3995L33.3695 47.28C33.2295 48.19 32.3195 48.96 31.4095 48.96C30.4995 48.96 29.8695 48.19 30.0095 47.28L32.0395 35.66H20.4195Z" fill="white"/>
+          </svg>
+          <h3 class="text-white font-['blisstwin'] text-[70px] font-normal leading-[1] tracking-[1.4px] capitalize max-[1024px]:text-[40px]">
+            {{ section.settings.text2 }}
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "AK - Home S2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "Akka is a <span class='font-['Blisstwin']'>superbiotic</span>"
+    },
+    {
+      "type": "text",
+      "id": "subheadline",
+      "label": "Subheadline",
+      "default": "that targets liver health to help you heal"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "First Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Second Image"
+    },
+    {
+      "type": "text",
+      "id": "text1",
+      "label": "Text for First Image",
+      "default": "Weight Gain, fatigue, brain fog"
+    },
+    {
+      "type": "text",
+      "id": "text2",
+      "label": "Text for Second Image",
+      "default": "metabolism, vitality, energy"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AK - Home S2",
+      "category": "AKKA HOME"
+    }
+  ]
+}
+{% endschema %}
