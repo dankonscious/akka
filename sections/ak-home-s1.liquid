@@ -1,7 +1,7 @@
 <section id="section-1" class="handlebars-template w-full">
-    {%- raw -%}
+    
       <script id="template-desktop" type="text/x-handlebars-template">
-        {{#unless (isMobile)}}
+        {%- raw -%}{{#unless (isMobile)}}{% endraw %}
           <div id="section-1-desktop" class="relative bg-[#F4D9CC] parallax-animate" data-onload="500">
             <div class="flex mx-auto justify-end items-end gap-[90px] max-[1350px]:gap-[20px]">
               <div class="sticky bottom-[200px] flex justify-end z-[2]">
@@ -57,11 +57,11 @@
               </div>
             </div>
           </div>
-        {{/unless}}
+        {% raw %}{{/unless}}{% endraw %}
       </script>
     
       <script id="template-mobile" type="text/x-handlebars-template">
-        {{#if (isMobile)}}
+        {%- raw -%}{{#if (isMobile)}}{% endraw %}
           <div id="section-1-mobile" class="relative bg-[#F4D9CC] px-[16px] pb-[30px]">
             {% if settings.mobile_image_1 %}
               <div><img src="{{ settings.mobile_image_1 | img_url: 'original' }}" class="w-full"></div>
@@ -84,9 +84,8 @@
               </svg>
             </a>
           </div>
-        {{/if}}
+        {%- raw -%}{{/if}}{% endraw %}
       </script>
-    {% endraw %}
   </section>
   
   {% schema %}
