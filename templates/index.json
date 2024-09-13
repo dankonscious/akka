@@ -52,6 +52,8 @@
       "settings": {
         "headline": "Akka is a <span class=\"font-[\" blisstwin>superbiotic<\/span>",
         "subheadline": "that targets liver health to help you heal",
+        "image1": "shopify:\/\/shop_images\/akka-silymarin.png",
+        "image2": "shopify:\/\/shop_images\/akka-quercetin.png",
         "text1": "Weight Gain, fatigue, brain fog",
         "text2": "metabolism, vitality, energy"
       }
