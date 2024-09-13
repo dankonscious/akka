@@ -1,0 +1,92 @@
+
+<section id="section4" class="flex overflow-hidden relative flex-col h-[1463px] max-[1200px]:px-[16px] max-[1200px]:h-auto">
+    <img loading="lazy" src="{{ section.settings.background_image | img_url: 'master' }}" alt="" class="object-cover absolute inset-0 size-full"/>
+
+    <div class="w-full h-full absolute top-0 left-0 flex items-center justify-center max-[1200px]:hidden">
+    <div class="rotate-me border-[#2e3666] border-solid border-[2px] w-full h-full max-w-[1350px] max-h-[1350px] relative  rounded-full">
+        <div class="w-[15px] h-[15px] bg-[#2e3666] rotate-45 absolute top-[-9px] left-[50%]"></div>
+    </div>
+    </div>
+
+    <div class="box relative w-full max-[1200px]:max-w-full font-['syne'] h-full max-[1200px]:h-auto">
+    <div class="z-10 flex-col items-center self-center pt-[164px] pb-[171px] mt-0 max-w-full border-x border-solid border-[#2E3666] w-[956px] mx-auto max-[1200px]:py-24 max-[1200px]:mt-0 h-full max-[1200px]:pt-[64px] max-[1200px]:pb-[32px] max-[1200px]:border-none max-[1200px]:w-full max-[1200px]:max-w-full max-[1200px]:h-auto">
+        <div class="flex flex-col items-center max-w-full text-7xl text-slate-700 w-[856px] max-[1200px]:text-4xl mx-auto">
+        <h2 class="leading-[79px] max-[1200px]:max-w-full max-[1200px]:text-[33px]">{{ section.settings.heading_1 }}</h2>
+        <h3 class="leading-[normal] max-[1200px]:max-w-full max-[1200px]:text-[33px] font-['blisstwin']">{{ section.settings.heading_2 }}</h3>
+        </div>
+        
+        <video class="video max-w-[calc(100%_+_2px)] ml-[-1px] mt-9 w-[101%] max-[1200px]:max-w-full" autoplay loop muted playsinline>
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+        </video>
+
+        <p class="flex flex-col items-center mt-[42px] mb-0 max-w-full text-2xl leading-[normal] tracking-[0.48px] w-[847px] max-[1200px]:mb-2.5 text-center mx-auto max-[1200px]:mt-[32px] max-[1200px]:text-left max-[1200px]:text-[20px]">
+        <span class="text-[#2E3666] max-[1200px]:max-w-full">{{ section.settings.content }}</span>
+        </p>
+
+        <a href="{{ section.settings.button_link }}" class="button mx-auto mt-[32px] gap-[16px] !flex w-fit uppercase">
+        <span>{{ section.settings.button_text }}</span>
+        <img loading="lazy" src="{{ section.settings.button_icon | img_url: 'small' }}" alt="" class="object-contain shrink-0 aspect-[0.65] w-[22px]" />
+        </a>
+    </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "AK - Home S4",
+    "settings": [
+    {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+    },
+    {
+        "type": "text",
+        "id": "heading_1",
+        "label": "Heading 1",
+        "default": "Rigorously researched,"
+    },
+    {
+        "type": "text",
+        "id": "heading_2",
+        "label": "Heading 2",
+        "default": "expertly executed"
+    },
+    {
+        "type": "image_picker",
+        "id": "video_url",
+        "label": "Video URL"
+    },
+    {
+        "type": "textarea",
+        "id": "content",
+        "label": "Content",
+        "default": "We believe in the power of strong science to bring you great health..."
+    },
+    {
+        "type": "text",
+        "id": "button_link",
+        "label": "Button Link",
+        "default": "/pages/ourapproach.com"
+    },
+    {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Our Approach"
+    },
+    {
+        "type": "image_picker",
+        "id": "button_icon",
+        "label": "Button Icon"
+    }
+    ],
+    "presets": [
+    {
+        "name": "AK - Home S4",
+        "category": "AKKA HOME"
+    }
+    ]
+}
+{% endschema %}    
+    

@@ -3,7 +3,7 @@
   <div class="flex flex-wrap gap-[50px] items-end self-start pb-16 max-[1200px]:max-w-full max-w-[var(--page-width)] w-full mx-auto font-['syne'] max-[1200px]:gap-0 max-[1200px]:pb-0">
     <div class="flex flex-col text-slate-700 w-[900px] max-[1200px]:max-w-full max-[1200px]:pl-0">
       <header class="flex flex-wrap gap-8 items-center self-start text-[70px] max-[1200px]:max-w-full max-[1200px]:text-4xl">
-        <img loading="lazy" src="{{ section.settings.image }}" alt="{{ section.settings.image_alt }}" class="object-contain shrink-0 w-48 aspect-[2.28] rounded-[100px]" />
+        <img loading="lazy" src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image_alt }}" class="object-contain shrink-0 w-48 aspect-[2.28] rounded-[100px]" />
         <h1 class="min-w-[240px] max-[1200px]:max-w-full max-[1200px]:text-4xl text-[#2E3666]">
           <span class="text-center max-[1200px]:text-4xl">{{ section.settings.title_line_1 }}</span>
           <span class="w-[400px] max-[1200px]:text-4xl font-['blisstwin']">{{ section.settings.title_line_2 }}</span>
@@ -44,13 +44,13 @@
       <div class="relative w-[860px] max-w-full flex-1 max-[1200px]:w-full">
         <div id="science-slider" class="fade_slider !max-w-[100%] !h-[50vh] ">
           <div class="fade_slide">
-            <img loading="lazy" src="{{ section.settings.slider_image_1 }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ section.settings.slider_image_1_alt }}">
+            <img loading="lazy" src="{{ section.settings.slider_image_1 | img_url: 'master' }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ section.settings.slider_image_1_alt }}">
           </div>
           <div class="fade_slide">
-            <img loading="lazy" src="{{ section.settings.slider_image_2 }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ section.settings.slider_image_2_alt }}">
+            <img loading="lazy" src="{{ section.settings.slider_image_2 | img_url: 'master' }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ section.settings.slider_image_2_alt }}">
           </div>
           <div class="fade_slide">
-            <img loading="lazy" src="{{ section.settings.slider_image_3 }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ section.settings.slider_image_3_alt }}">
+            <img loading="lazy" src="{{ section.settings.slider_image_3 | img_url: 'master' }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ section.settings.slider_image_3_alt }}">
           </div>
         </div>
       </div>
@@ -92,10 +92,10 @@
       "default": "From storing vitamins and minerals, to immune support, to hormone regulation, the liver plays a crucial role in your body."
     },
     {
-      "type": "url",
+      "type": "text",
       "id": "button_link",
       "label": "Button Link",
-      "default": "/pages/science.html"
+      "default": "/pages/science.com"
     },
     {
       "type": "text",
