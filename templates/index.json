@@ -39,17 +39,27 @@
         "padding_bottom": 36
       }
     },
-    "asd_tW3BYA": {
-      "type": "asd",
+    "ak_home_s1_d6yq6M": {
+      "type": "ak-home-s1",
       "settings": {
         "heading": "Next Generation Liver Rejuvenation",
         "description": "Your liver is responsible for over 500 different functions. Our researchers have created the ultimate supplement to help support it.",
         "cta_link": ""
       }
+    },
+    "ak_home_s2_XGdaaB": {
+      "type": "ak-home-s2",
+      "settings": {
+        "headline": "Akka is a <span class=\"font-[\" blisstwin>superbiotic<\/span>",
+        "subheadline": "that targets liver health to help you heal",
+        "text1": "Weight Gain, fatigue, brain fog",
+        "text2": "metabolism, vitality, energy"
+      }
     }
   },
   "order": [
     "featured_collection",
-    "asd_tW3BYA"
+    "ak_home_s1_d6yq6M",
+    "ak_home_s2_XGdaaB"
   ]
 }
