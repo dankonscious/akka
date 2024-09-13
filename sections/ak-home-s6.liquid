@@ -52,39 +52,46 @@
     
 <section id="section6" class="flex sticky top-0 flex-col py-24 min-h-[984px] bg-white z-10">
     <div class="flex relative flex-wrap items-center justify-between mx-auto max-w-[var(--page-width)] w-full">
-    <header class="flex flex-col justify-center self-stretch my-auto min-w-[240px] text-slate-700 capitalize">
-        <h2 class="text-[70px] tracking-[0.7px] leading-[79px]">{{ section.settings.heading }}</h2>
-        <p class="mt-4 text-[40px] tracking-[0.8px] leading-[normal]">{{ section.settings.subheading }}</p>
-    </header>
-    <a href="{{ section.settings.button_link }}" class="button gap-[16px] font-['syne'] max-[1200px]:hidden">
-        {{ section.settings.button_text }}
-    </a>
+        <header class="flex flex-col justify-center self-stretch my-auto min-w-[240px] text-slate-700 capitalize">
+            <h2 class="text-[70px] tracking-[0.7px] leading-[79px]">{{ section.settings.heading }}</h2>
+            <p class="mt-4 text-[40px] tracking-[0.8px] leading-[normal]">{{ section.settings.subheading }}</p>
+        </header>
+        <a href="{{ section.settings.button_link }}" class="button gap-[16px] font-['syne'] max-[1200px]:hidden">
+            {{ section.settings.button_text }}
+        </a>
     </div>
 
-    <div class="flex max-md:flex-col mt-10">
-        <ul class="font-['syne'] flex relative gap-4 items-start text-2xl font-semibold uppercase text-[#2E3666] list-none max-md:flex-col">
-        {% assign images = "image_1,image_2,image_3,image_4,image_5" | split: "," %}
-        {% assign titles = "image_1_title,image_2_title,image_3_title,image_4_title,image_5_title" | split: "," %}
-        {% assign descriptions = "image_1_desc,image_2_desc,image_3_desc,image_4_desc,image_5_desc" | split: "," %}
-        {% assign details = "image_1_detail,image_2_detail,image_3_detail,image_4_detail,image_5_detail" | split: "," %}
+    <div class="flex max-md:flex-col">
+    <div class="w-[calc((100vw_-_1340px)_/_2)] max-md:hidden"> </div>
 
-        {% for i in (0..4) %}
-        <li class="flex flex-col max-w-[20%] w-[255px] self-stretch max-md:h-[250px]">
-            <article class="overflow-hidden relative bg-[#EDEEF5] h-full max-md:h-[500px]">
-            <img src="assets/images/arrow-w.svg" class="arrow absolute top-[15px] right-[15px] z-10 max-md:rotate-[135deg]">
-            <div class="wreset w-[600px] wrap-trans translate-x-[-50%] translate-y-[10%] max-md:translate-x-[0%] max-md:translate-y-[-25%]">
-                <img src="{{ settings[images[i]] | file_url }}" class="w-[330px] h-auto block mx-auto scale-150">
-                <div class="wrap-p p-[10px]">
-                <h3 class="text-[22px] font-semibold mb-[10px]">{{ settings[titles[i]] }}</h3>
-                <p class="text-[22px] mb-[16px]">{{ settings[descriptions[i]] }}</p>
-                <p class="text-[20px]">{{ settings[details[i]] }}</p>
+        <div class="flex max-md:flex-col mt-10">
+            <ul class="font-['syne'] flex relative gap-4 items-start text-2xl font-semibold uppercase text-[#2E3666] list-none max-md:flex-col">
+            {% assign images = "image_1,image_2,image_3,image_4,image_5" | split: "," %}
+            {% assign titles = "image_1_title,image_2_title,image_3_title,image_4_title,image_5_title" | split: "," %}
+            {% assign descriptions = "image_1_desc,image_2_desc,image_3_desc,image_4_desc,image_5_desc" | split: "," %}
+            {% assign details = "image_1_detail,image_2_detail,image_3_detail,image_4_detail,image_5_detail" | split: "," %}
+
+            {% for i in (0..4) %}
+            <li class="flex flex-col max-w-[20%] w-[255px] self-stretch max-md:h-[250px]">
+                <article class="overflow-hidden relative bg-[#EDEEF5] h-full max-md:h-[500px]">
+                <img src="{{ section.settings.svg |  img_url: 'master' }}" class="arrow absolute top-[15px] right-[15px] z-10 max-md:rotate-[135deg]">
+                <div class="wreset w-[600px] wrap-trans translate-x-[-50%] translate-y-[10%] max-md:translate-x-[0%] max-md:translate-y-[-25%]">
+                    <img src="{{ section.settings[images[i]] | img_url: 'master' }}" class="w-[330px] h-auto block mx-auto scale-150">
+                    <div class="wrap-p p-[10px] opacity-0 translate-y-[50%] max-xl:opacity-100 max-xl:translate-y-[4%]">
+                    <h3 class="text-[22px] font-semibold mb-[10px]">{{ section.settings[titles[i]] }}</h3>
+                    <p class="text-[22px] mb-[16px]">{{ section.settings[descriptions[i]] }}</p>
+                    <p class="text-[20px]">{{ section.settings[details[i]] }}</p>
+                    </div>
                 </div>
-            </div>
-            </article>
-        </li>
-        {% endfor %}
-        </ul>
-    </div>
+                <h3 class="d-h3 text-[22px] font-semibold tracking-[0.44px] uppercase absolute bottom-0 left-0 px-[10px] py-[10px] w-full max-w-[300px] flex items-center max-xl:hidden">
+                    {{ section.settings[titles[i]] }}
+                </h3>
+                </article>
+            </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>    
 </section>
 
 {% schema %}
@@ -114,6 +121,11 @@
         "id": "button_text",
         "label": "Button Text",
         "default": "Our Ingredients"
+    },
+    {
+        "type": "image_picker",
+        "id": "svg",
+        "label": "arrow"
     },
     {
         "type": "image_picker",
