@@ -53,7 +53,104 @@
           font-style: normal;
           font-display: swap;
       }
-    
+      @font-face {
+          font-family: 'Heebo';
+          src: url('{{ 'Heebo-ExtraBold.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Heebo-ExtraBold.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Heebo-ExtraBold.woff' | file_url }}') format('woff'),
+               url('{{ 'Heebo-ExtraBold.ttf' | file_url }}') format('truetype');
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Heebo';
+          src: url('{{ 'Heebo-ExtraLight.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Heebo-ExtraLight.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Heebo-ExtraLight.woff' | file_url }}') format('woff'),
+               url('{{ 'Heebo-ExtraLight.ttf' | file_url }}') format('truetype');
+          font-weight: 200;
+          font-style: normal;
+          font-display: swap;
+      }
+      @font-face {
+          font-family: 'Heebo';
+          src: url('{{ 'Heebo-Regular.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Heebo-Regular.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Heebo-Regular.woff' | file_url }}') format('woff'),
+               url('{{ 'Heebo-Regular.ttf' | file_url }}') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+      
+      @font-face {
+          font-family: 'Heebo';
+          src: url('{{ 'Heebo-Bold.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Heebo-Bold.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Heebo-Bold.woff' | file_url }}') format('woff'),
+               url('{{ 'Heebo-Bold.ttf' | file_url }}') format('truetype');
+          font-weight: bold;
+          font-style: normal;
+          font-display: swap;
+      }
+      
+      @font-face {
+          font-family: 'Heebo';
+          src: url('{{ 'Heebo-Black.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Heebo-Black.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Heebo-Black.woff' | file_url }}') format('woff'),
+               url('{{ 'Heebo-Black.ttf' | file_url }}') format('truetype');
+          font-weight: 900;
+          font-style: normal;
+          font-display: swap;
+      }
+      
+      @font-face {
+          font-family: 'Heebo';
+          src: url('{{ 'Heebo-Thin.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Heebo-Thin.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Heebo-Thin.woff' | file_url }}') format('woff'),
+               url('{{ 'Heebo-Thin.ttf' | file_url }}') format('truetype');
+          font-weight: 100;
+          font-style: normal;
+          font-display: swap;
+      }
+      
+      @font-face {
+          font-family: 'Heebo';
+          src: url('{{ 'Heebo-Light.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Heebo-Light.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Heebo-Light.woff' | file_url }}') format('woff'),
+               url('{{ 'Heebo-Light.ttf' | file_url }}') format('truetype');
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+      }
+      
+      @font-face {
+          font-family: 'Heebo';
+          src: url('{{ 'Heebo-SemiBold.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Heebo-SemiBold.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Heebo-SemiBold.woff' | file_url }}') format('woff'),
+               url('{{ 'Heebo-SemiBold.ttf' | file_url }}') format('truetype');
+          font-weight: 600;
+          font-style: normal;
+          font-display: swap;
+      }
+      
+      @font-face {
+          font-family: 'Heebo';
+          src: url('{{ 'Heebo-Medium.eot' | file_url }}') format('embedded-opentype'),
+               url('{{ 'Heebo-Medium.woff2' | file_url }}') format('woff2'),
+               url('{{ 'Heebo-Medium.woff' | file_url }}') format('woff'),
+               url('{{ 'Heebo-Medium.ttf' | file_url }}') format('truetype');
+          font-weight: 500;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      
     </style>
     
     {{ 'tailwind.css' | asset_url | stylesheet_tag }}
