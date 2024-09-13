@@ -6,9 +6,9 @@
             <div class="flex mx-auto justify-end items-end gap-[90px] max-[1350px]:gap-[20px]">
               <div class="sticky bottom-[200px] flex justify-end z-[2]">
                 <div class="absolute top-[-280px] left-[-300px] parallax-image" data-speed="0.05" data-direction="up">
-                  {{#if settings.desktop_image_1}}
+                  {% if settings.desktop_image_1 %}
                     <img loading="lazy" class="element scaleup object-contain max-w-full aspect-[2.07] w-[509px]" src="{{ settings.desktop_image_1 | img_url: 'original' }}" alt="" />
-                  {{/if}}
+                  {% endif %}
                 </div>
                 <div class="max-w-[590px] mb-[40px] min-[1500px]:mr-[150px] max-[1400px]:ml-[40px] font-['syne']">
                   <div class="overflow-hidden">
@@ -33,27 +33,27 @@
                 </div>
               </div>
               <div class="flex gap-[300px] flex-col relative z-[5]">
-                {{#if settings.desktop_image_2}}
+                {% if settings.desktop_image_2 %}
                   <div class="mt-[250px]"><img class="element scaleup max-w-[280px] h-auto" src="{{ settings.desktop_image_2 | img_url: 'original' }}"></div>
-                {{/if}}
-                {{#if settings.desktop_image_3}}
+                {% endif %}
+                {% if settings.desktop_image_3 %}
                   <div><img loading="lazy" class="element scaleup max-w-[280px] h-auto" src="{{ settings.desktop_image_3 | img_url: 'original' }}"></div>
-                {{/if}}
+                {% endif %}
               </div>
               <div class="sticky bottom-[226px]">
-                {{#if settings.desktop_image_2}}
+                {% if settings.desktop_image_2 %}
                   <div class="parallax-image" data-speed="0.3" data-direction="up"><img class="element scaleup max-w-[280px] h-auto" src="{{ settings.desktop_image_2 | img_url: 'original' }}"></div>
-                {{/if}}
+                {% endif %}
               </div>
             </div>
             <div class="sticky bottom-[-50px] z-[1]">
               <div class="pt-[20px] flex justify-end relative">
-                {{#if settings.desktop_image_3}}
+                {% if settings.desktop_image_3 %}
                   <div class="absolute top-[-150px] left-0 parallax-image" data-speed="0.2" data-direction="up"><img class="element scaleup max-w-[300px]" loading="lazy" src="{{ settings.desktop_image_3 | img_url: 'original' }}"></div>
-                {{/if}}
-                {{#if settings.desktop_image_2}}
+                {% endif %}
+                {% if settings.desktop_image_2 %}
                   <div class="relative bottom-[-40px] parallax-image" data-speed="0.05" data-stop="45" data-direction="up"><img class="element scaleup max-w-[1170px]" loading="lazy" src="{{ settings.desktop_image_2 | img_url: 'original' }}"></div>
-                {{/if}}
+                {% endif %}
               </div>
             </div>
           </div>
@@ -63,13 +63,13 @@
       <script id="template-mobile" type="text/x-handlebars-template">
         {{#if (isMobile)}}
           <div id="section-1-mobile" class="relative bg-[#F4D9CC] px-[16px] pb-[30px]">
-            {{#if settings.mobile_image_1}}
+            {% if settings.mobile_image_1 %}
               <div><img src="{{ settings.mobile_image_1 | img_url: 'original' }}" class="w-full"></div>
-            {{/if}}
+            {% endif %}
             <div class="flex items-center justify-center gap-[56px] px-[20px] mt-[-120px] mb-[30px]">
-              {{#if settings.mobile_image_2}}
+              {% if settings.mobile_image_2 %}
                 <div class="w-1/2"><img src="{{ settings.mobile_image_2 | img_url: 'original' }}" class="w-full"></div>
-              {{/if}}
+              {% endif %}
             </div>
             <h2 class="text-[40px] font-normal leading-[1] tracking-[0.8px] mb-[45px] capitalize text-[#2E3666]">
               <span class="font-['blisstwin']">{{ settings.heading }}</span>
