@@ -1,0 +1,74 @@
+<style>
+    #hero {
+        background-image: url({{ section.settings.background_image | img_url: 'master' }});
+    }
+    #hero .circlebg {
+        background-image: url({{ section.settings.circle_graphic | img_url: 'master' }});
+    }
+    #hero .textbg {
+        background-image: url({{ section.settings.text_background | img_url: 'master' }});
+    }
+    @media(max-width: 1200px) {
+        #hero .circlebg {
+            background-image: url({{ section.settings.circle_graphic_mobile | img_url: 'master' }});
+        }
+    }
+</style>
+<section id="hero" class="bg-no-repeat bg-cover bg-center min-h-[1000px] flex items-center relative max-md:min-h-[660px]">
+  <div class="circlebg absolute top-0 left-0 z-0 h-full w-full bg-no-repeat bg-cover bg-center max-md:w-[348px] max-md:h-[348px] max-md:inset-[50%] max-md:translate-x-[-50%] max-md:translate-y-[-50%]">
+  </div>
+  <div class="flex items-center justify-center m-auto h-full">
+    <div class="textbg title overflow-hidden relative z-10 bg-cover bg-center bg-no-repeat max-md:bg-none">
+      <h1 class="animation-moveup text-white text-[70px] leading-[normal] tracking-[-1.4px] capitalize font-['syne'] max-md:text-[40px] max-md:text-center">
+        {{ section.settings.heading }}
+        <span class="font-['Blisstwin'] max-md:block">{{ section.settings.subheading }}</span>
+      </h1>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "AK - OurApproach Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our roadmap to"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "better health"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "circle_graphic",
+      "label": "Circle Graphic"
+    },
+    {
+      "type": "image_picker",
+      "id": "circle_graphic_mobile",
+      "label": "Circle Graphic (Mobile)"
+    },
+    {
+      "type": "image_picker",
+      "id": "text_background",
+      "label": "Text Background Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AK - OurApproach Hero",
+      "category": "AKKA OURAPPROACH"
+    }
+  ]
+}
+{% endschema %}
