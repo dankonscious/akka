@@ -166,6 +166,55 @@
         "image_5_desc": "For regenerative properties",
         "image_5_detail": "Artichoke leaf extract has a long history of being used in traditional medicine for digestive and liver issues."
       }
+    },
+    "ak_home_s7_GyJmCP": {
+      "type": "ak-home-s7",
+      "blocks": {
+        "block_RjGw97": {
+          "type": "block",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/home-checkicon.png",
+            "benefit_text": "Cleanses your liver of toxins and excess fat"
+          }
+        },
+        "block_xGCdPL": {
+          "type": "block",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/home-checkicon.png",
+            "benefit_text": "Aids in the regeneration of liver cells"
+          }
+        },
+        "block_AXtBg3": {
+          "type": "block",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/home-checkicon.png",
+            "benefit_text": "Enhances bile flow production"
+          }
+        },
+        "block_Txh8qb": {
+          "type": "block",
+          "settings": {
+            "icon_image": "shopify:\/\/shop_images\/home-checkicon.png",
+            "benefit_text": "Supports liver's ability to filter and detoxify your blood"
+          }
+        }
+      },
+      "block_order": [
+        "block_RjGw97",
+        "block_xGCdPL",
+        "block_AXtBg3",
+        "block_Txh8qb"
+      ],
+      "settings": {
+        "title": "For total",
+        "subtitle": "Liver Rejuvenation",
+        "description": "Akka synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients...",
+        "background_image_desktop": "shopify:\/\/shop_images\/sec7-background.png",
+        "background_image_mobile": "shopify:\/\/shop_images\/sec7-background-mob.png",
+        "icon_image_check": "shopify:\/\/shop_images\/check.png",
+        "button_link": "\/pages\/product.html",
+        "button_text": "Shop Akka"
+      }
     }
   },
   "order": [
@@ -175,6 +224,7 @@
     "ak_home_s3_3crNxx",
     "ak_home_s4_qUh4AQ",
     "ak_home_s5_HxwyYM",
-    "ak_home_s6_yntid4"
+    "ak_home_s6_yntid4",
+    "ak_home_s7_GyJmCP"
   ]
 }
