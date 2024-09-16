@@ -111,6 +111,31 @@
         "slider_image_3_alt": "Liver Image 3"
       }
     },
+    "ak_home_marquee_E3zCA8": {
+      "type": "ak-home-marquee",
+      "blocks": {
+        "slide_JgFYwX": {
+          "type": "slide",
+          "settings": {
+            "text_content": "the key to your vitality",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_9yz7nc": {
+          "type": "slide",
+          "settings": {
+            "text_content": "the key to your vitality",
+            "text_color": "#C8D3F0"
+          }
+        }
+      },
+      "block_order": [
+        "slide_JgFYwX",
+        "slide_9yz7nc"
+      ],
+      "settings": {
+      }
+    },
     "ak_home_s4_qUh4AQ": {
       "type": "ak-home-s4",
       "settings": {
@@ -223,6 +248,7 @@
     "ak_home_s1_d6yq6M",
     "ak_home_s2_XGdaaB",
     "ak_home_s3_3crNxx",
+    "ak_home_marquee_E3zCA8",
     "ak_home_s4_qUh4AQ",
     "ak_home_s5_HxwyYM",
     "ak_home_s6_yntid4",
