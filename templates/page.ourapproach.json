@@ -28,10 +28,25 @@
         "circle_graphic_mobile": "shopify:\/\/shop_images\/hero-circlegraphic-mob.png",
         "text_background": "shopify:\/\/shop_images\/hero-textbg.png"
       }
+    },
+    "ak_approach_s1_KRHTgn": {
+      "type": "ak-approach-s1",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/sec1-image1.png",
+        "content1_title": "Proprietary process",
+        "content1_text": "",
+        "image2": "shopify:\/\/shop_images\/sec1-image2.png",
+        "content2_title": "Synergistic activation",
+        "content2_text": "Liver degradation is multifaceted and demands a multi-pronged approach. That’s why we included different synergistic activators, each clinically validated to enhance metabolic and liver rejuvenation effects, and further boost the efficacy of akkermansia.",
+        "image3": "shopify:\/\/shop_images\/sec1-image3.png",
+        "content3_title": "Enteric Coated",
+        "content3_text": "The problem with most probiotics is that they never make it past the harsh environment of the stomach, and therefore never arrive at the place they need to. We use a proprietary enteric coating to protect the vital components of AKKA so the full liver rejuvenating payload is delivered straight to where it's needed most."
+      }
     }
   },
   "order": [
     "main",
-    "ak_approach_hero_tHNdyT"
+    "ak_approach_hero_tHNdyT",
+    "ak_approach_s1_KRHTgn"
   ]
 }
