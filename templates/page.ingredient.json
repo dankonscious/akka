@@ -78,11 +78,27 @@
       "settings": {
         "section_title": "Ingredient Information"
       }
+    },
+    "ak_ingredient_s2_axpM8N": {
+      "type": "ak-ingredient-s2",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/sec2-background.png",
+        "image_top_desktop": "shopify:\/\/shop_images\/sec2-imgtop.png",
+        "image_top_mobile": "shopify:\/\/shop_images\/sec2-imgtop-mob.png",
+        "title_part_1": "Liver health is",
+        "title_part_2": "system health",
+        "content_text": "AKKA synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients, meticulously chosen to optimize liver function and health.",
+        "link_url": "product.html",
+        "link_text": "shop akka",
+        "image_bottom_desktop": "shopify:\/\/shop_images\/sec2-imgbottom.png",
+        "image_bottom_mobile": "shopify:\/\/shop_images\/sec2-imgbottom-mob.png"
+      }
     }
   },
   "order": [
     "main",
     "ak_ingredient_hero_aexLbD",
-    "ak_ingredient_s1_GyyEFQ"
+    "ak_ingredient_s1_GyyEFQ",
+    "ak_ingredient_s2_axpM8N"
   ]
 }
