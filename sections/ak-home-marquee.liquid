@@ -1,0 +1,61 @@
+
+    
+<section id="marquee" class="bg-white pt-[49px] mb-[-48px] max-[1200px]:pt-0">
+    <!-- Slider main container -->
+    <div class="marquee swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        {% for block in section.blocks %}
+        <div class="swiper-slide !flex !items-center !justify-center gap-[35px] !w-[unset] !h-[unset] font-['blisstwin']">
+            <h3 class="text-[100px] text-[{{ block.settings.text_color }}] capitalize">{{ block.settings.text_content }}</h3>
+            <div class="w-[15px] h-[15px] bg-[#C8D3F0] rotate-45"></div>
+        </div>
+        {% endfor %}
+    </div>      
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "AK - Home Marquee",
+        "settings": [
+        
+        ],
+        "blocks": [
+        {
+            "type": "slide",
+            "name": "Slide",
+            "settings": [
+            {
+                "type": "text",
+                "id": "text_content",
+                "label": "Slide Text",
+                "default": "Slide Text"
+            },
+            {
+                "type": "color",
+                "id": "text_color",
+                "label": "Text Color",
+                "default": "#C8D3F0"
+            }
+            ]
+        }
+        ],
+        "presets": [
+        {
+            "name": "AK - Home Marquee",
+            "category": "AKKA HOME"
+        }
+        ]
+    }
+{% endschema %}
+    
+{% stylesheet %}
+    /* Add any necessary custom CSS for this section */
+{% endstylesheet %}
+
+{% javascript %}
+    /* Add any necessary custom JavaScript for this section */
+{% endjavascript %}
+    
