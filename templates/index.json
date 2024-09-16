@@ -55,16 +55,67 @@
       "settings": {
         "headline": "Akka is a <span class=\"font-[\" blisstwin>superbiotic<\/span>",
         "subheadline": "that targets liver health to help you heal",
-        "image1": "shopify:\/\/shop_images\/akka-silymarin.png",
-        "image2": "shopify:\/\/shop_images\/akka-quercetin.png",
+        "image1": "shopify:\/\/shop_images\/g2.png",
+        "image2": "shopify:\/\/shop_images\/g1.png",
         "text1": "Weight Gain, fatigue, brain fog",
         "text2": "metabolism, vitality, energy"
+      }
+    },
+    "ak_home_s3_3crNxx": {
+      "type": "ak-home-s3",
+      "blocks": {
+        "step_RxP6np": {
+          "type": "step",
+          "settings": {
+            "step_number": "01",
+            "step_description": "Why the liver is so important & how it works",
+            "active": true
+          }
+        },
+        "step_wTBAQL": {
+          "type": "step",
+          "settings": {
+            "step_number": "02",
+            "step_description": "What happens when it's compromised & how this can lead to a range of symptoms",
+            "active": false
+          }
+        },
+        "step_EnPj7L": {
+          "type": "step",
+          "settings": {
+            "step_number": "03",
+            "step_description": "Steps you can take to protect and heal your liver",
+            "active": false
+          }
+        }
+      },
+      "block_order": [
+        "step_RxP6np",
+        "step_wTBAQL",
+        "step_EnPj7L"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-sec3-title-image.png",
+        "image_alt": "Liver Image",
+        "title_line_1": "Your Key To",
+        "title_line_2": "Vitality",
+        "description": "From storing vitamins and minerals, to immune support, to hormone regulation, the liver plays a crucial role in your body.",
+        "button_link": "\/pages\/science.com",
+        "button_text": "The Science",
+        "science_intro": "Read the science to help you get clarity on:",
+        "slider_image_1": "shopify:\/\/shop_images\/sec3PHTO1-mob.png",
+        "slider_image_1_alt": "Liver Image 1",
+        "slider_image_2": "shopify:\/\/shop_images\/sec3PHTO2-mob.png",
+        "slider_image_2_alt": "Liver Image 2",
+        "slider_image_3": "shopify:\/\/shop_images\/sec3PHTO3-mob.png",
+        "slider_image_3_alt": "Liver Image 3"
       }
     }
   },
   "order": [
     "featured_collection",
     "ak_home_s1_d6yq6M",
-    "ak_home_s2_XGdaaB"
+    "ak_home_s2_XGdaaB",
+    "ak_home_s3_3crNxx"
   ]
 }
