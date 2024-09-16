@@ -12,13 +12,26 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "ak_approach_hero_tHNdyT": {
+      "type": "ak-approach-hero",
+      "settings": {
+        "heading": "Our roadmap to",
+        "subheading": "better health",
+        "background_image": "shopify:\/\/shop_images\/hero-background.png",
+        "circle_graphic": "shopify:\/\/shop_images\/hero-circlegraphic.png",
+        "circle_graphic_mobile": "shopify:\/\/shop_images\/hero-circlegraphic-mob.png",
+        "text_background": "shopify:\/\/shop_images\/hero-textbg.png"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "ak_approach_hero_tHNdyT"
   ]
 }
