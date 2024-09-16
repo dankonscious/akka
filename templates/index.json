@@ -110,12 +110,25 @@
         "slider_image_3": "shopify:\/\/shop_images\/sec3PHTO3-mob.png",
         "slider_image_3_alt": "Liver Image 3"
       }
+    },
+    "ak_home_s4_qUh4AQ": {
+      "type": "ak-home-s4",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/frame4bg.png",
+        "heading_1": "Rigorously researched,",
+        "heading_2": "expertly executed",
+        "content": "We believe in the power of strong science to bring you great health...",
+        "button_link": "\/pages\/ourapproach.com",
+        "button_text": "Our Approach",
+        "button_icon": "shopify:\/\/shop_images\/ak-home-s4-arrow.png"
+      }
     }
   },
   "order": [
     "featured_collection",
     "ak_home_s1_d6yq6M",
     "ak_home_s2_XGdaaB",
-    "ak_home_s3_3crNxx"
+    "ak_home_s3_3crNxx",
+    "ak_home_s4_qUh4AQ"
   ]
 }
