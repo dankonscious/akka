@@ -1,0 +1,166 @@
+<!-- sections/ingredient-information.liquid -->
+
+<section id="section1" class="ingredient-information-section">
+  <div class="flex items-start justify-between max-w-[var(--page-width)] w-full mx-auto relative text-[#2E3666] pt-[47px] max-md:max-w-full max-md:pt-0">
+    <div class="max-w-[125px] w-full sticky top-0 pt-[128px] mb-[703px] max-md:hidden">
+      {% for link in section.blocks %}
+        {% if link.type == 'link' %}
+          <a href="#{{ link.settings.link_id }}" class="text-[24px] leading-[64px] no-underline">{{ link.settings.link_name }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div>
+      <section class="flex flex-col">
+        {% for item in section.blocks %}
+          {% if item.type == 'ingredient' %}
+            <article id="{{ item.settings.ingredient_id }}" class="flex flex-col p-4 w-full bg-[#EDEEF5] rounded-3xl max-md:max-w-full {% if forloop.index != 1 %}mt-16 max-md:mt-0{% endif %}">
+              <div class="flex flex-wrap gap-8 w-full max-md:max-w-full">
+                <div class="flex flex-col min-w-[240px] w-[374px] max-md:max-w-full">
+                  <img loading="lazy" src="{{ item.settings.image_1 | img_url: 'master' }}" alt="{{ item.settings.image_alt }}" class="object-contain flex-1 max-w-full aspect-[0.83] w-[468px]" />
+                </div>
+                <div class="flex flex-col self-start min-w-[240px] w-full max-w-[498px] max-md:max-w-full ">
+                  <header class="flex flex-col w-full max-w-[485px]">
+                    <h2 class="text-[50px] font-medium leading-[normal] text-[#EDEEF5]">{{ item.settings.ingredient_number }}</h2>
+                    <h3 class="py-2.5 w-full text-[45px] max-md:text-[30px] tracking-[-0.9px] leading-[48px] border-[#2E3666] border-t-[6px] max-md:max-w-full  max-md:leading-[110%]">
+                      <span>{{ item.settings.ingredient_name }}</span>
+                      <br />
+                      <span class="font-['Blisstwin'] max-md:text-[27px]">{{ item.settings.ingredient_subtext }}</span>
+                    </h3>
+                  </header>
+                  <div class="mt-8 max-md:mt-[16px] max-md:max-w-full [&>p]:text-[20px] [&>p]:tracking-[0.4px] [&>p]:leading-[140%]">
+                    {{ item.settings.ingredient_description }}
+                  </div>                  
+                </div>
+              </div>
+              <section class="flex flex-col mt-8 w-full max-md:max-w-full">
+                <h4 class="gap-10 pb-4 max-w-full text-3xl tracking-tight border-b-[6px] border-[#2E3666] w-full max-md:max-w-full">{{ item.settings.research_title }}</h4>
+                {% for research in item.blocks %}
+                  {% if research.type == 'list' %}
+                    <div class="flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
+                        <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
+                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px]">
+                                {{ research.settings.title }}
+                            </div>
+                        </div>
+                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full [&>p]:text-[20px] [&>p]:tracking-[0.4px] [&>p]:leading-[140%]">
+                            {{ research.settings.description }}
+                        </div>                        
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              </section>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </section>              
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "AK - Ingredient S1",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Ingredient Information"
+    }    
+  ],  
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        {
+          "type": "text",
+          "id": "ingredient_id",
+          "label": "Ingredient ID",
+          "default": "Akkermansia"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image Alt Text",
+          "default": "Illustration representing ingredient"
+        },
+        {
+          "type": "text",
+          "id": "ingredient_number",
+          "label": "Ingredient Number",
+          "default": "01"
+        },
+        {
+          "type": "text",
+          "id": "ingredient_name",
+          "label": "Ingredient Name",
+          "default": "Akkermansia muciniphila"
+        },
+        {
+          "type": "text",
+          "id": "ingredient_subtext",
+          "label": "Ingredient Subtext",
+          "default": "for total rejuvenation"
+        },
+        {
+          "type": "richtext",
+          "id": "ingredient_description",
+          "label": "Ingredient Description"
+        },
+        {
+          "type": "text",
+          "id": "research_title",
+          "label": "Research Title",
+          "default": "The Research"
+        }        
+      ]
+    },
+    {
+      "type": "link",
+      "name": "Navigation Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_id",
+          "label": "Link ID",
+          "default": "Akkermansia"
+        },
+        {
+          "type": "text",
+          "id": "link_name",
+          "label": "Link Name",
+          "default": "Akkermasia"
+        }
+      ]
+    },
+    {
+        "type": "list",
+        "name": "Research Items",
+        "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Research Title"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Research Description"
+        }
+        ]
+    }
+  ],
+  "presets": [
+    {
+       "name": "AK - Ingredient S1",
+       "category": "AKKA INGREDIENT"
+    }
+  ]
+}
+{% endschema %}
