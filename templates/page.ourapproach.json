@@ -42,11 +42,93 @@
         "content3_title": "Enteric Coated",
         "content3_text": "The problem with most probiotics is that they never make it past the harsh environment of the stomach, and therefore never arrive at the place they need to. We use a proprietary enteric coating to protect the vital components of AKKA so the full liver rejuvenating payload is delivered straight to where it's needed most."
       }
+    },
+    "ak_approach_marquee_JQXdXC": {
+      "type": "ak-approach-marquee",
+      "blocks": {
+        "slide_nd3PCX": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Proprietary process",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_9HKUDP": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Synergistic activation",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_yDEM9X": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Enteric Coated",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_iAkz8N": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Proprietary process",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_mJJE6Y": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Synergistic activation",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_qAVNTq": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Enteric Coated",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_48DwRQ": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Proprietary process",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_N6Tktf": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Synergistic activation",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_AzJpyD": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Enteric Coated",
+            "text_color": "#C8D3F0"
+          }
+        }
+      },
+      "block_order": [
+        "slide_nd3PCX",
+        "slide_9HKUDP",
+        "slide_yDEM9X",
+        "slide_iAkz8N",
+        "slide_mJJE6Y",
+        "slide_qAVNTq",
+        "slide_48DwRQ",
+        "slide_N6Tktf",
+        "slide_AzJpyD"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "ak_approach_hero_tHNdyT",
-    "ak_approach_s1_KRHTgn"
+    "ak_approach_s1_KRHTgn",
+    "ak_approach_marquee_JQXdXC"
   ]
 }
