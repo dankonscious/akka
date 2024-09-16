@@ -136,6 +136,36 @@
         "image_7": "shopify:\/\/shop_images\/business.png",
         "image_8": "shopify:\/\/shop_images\/forbes.png"
       }
+    },
+    "ak_home_s6_yntid4": {
+      "type": "ak-home-s6",
+      "settings": {
+        "heading": "The building blocks",
+        "subheading": "Our clinically — researched ingredients",
+        "button_link": "\/pages\/ingredient.html",
+        "button_text": "Our Ingredients",
+        "svg": "shopify:\/\/shop_images\/arrow-w.svg",
+        "image_1": "shopify:\/\/shop_images\/akkermansia_muciniphila.png",
+        "image_1_title": "Akkermansia muciniphila",
+        "image_1_desc": "For total rejuvenation",
+        "image_1_detail": "Representing 3–5% of the microbial community, Akkermansia muciniphila is commonly found in the human gut. Rigorously studied in recent years, A. muciniphilia has been inversely associated with cardiovascular disease, obesity, diabetes, inflammation, and liver disease.",
+        "image_2": "shopify:\/\/shop_images\/sec2-image2.png",
+        "image_2_title": "Quercetin",
+        "image_2_desc": "For amplified support",
+        "image_2_detail": "Silymarin is currently the world's most effective treatment for liver disease. It has shown positive effects in treating nearly every known form of liver disease including cirrhosis, hepatitis, and necrosis, and liver damage from substance abuse.",
+        "image_3": "shopify:\/\/shop_images\/sec6-image3.png",
+        "image_3_title": "Resveratrol",
+        "image_3_desc": "For antioxidative protection",
+        "image_3_detail": "A potent polyphenolic compound, Resveratrol plays a key role in metabolic detoxification and health maintenance.",
+        "image_4": "shopify:\/\/shop_images\/sec6-image4.png",
+        "image_4_title": "Silymarin",
+        "image_4_desc": "For all-around hepatoprotective properties",
+        "image_4_detail": "Silymarin is currently the world's most effective treatment for liver disease.",
+        "image_5": "shopify:\/\/shop_images\/sec6-image5.png",
+        "image_5_title": "Artichoke Leaf Extract",
+        "image_5_desc": "For regenerative properties",
+        "image_5_detail": "Artichoke leaf extract has a long history of being used in traditional medicine for digestive and liver issues."
+      }
     }
   },
   "order": [
@@ -144,6 +174,7 @@
     "ak_home_s2_XGdaaB",
     "ak_home_s3_3crNxx",
     "ak_home_s4_qUh4AQ",
-    "ak_home_s5_HxwyYM"
+    "ak_home_s5_HxwyYM",
+    "ak_home_s6_yntid4"
   ]
 }
