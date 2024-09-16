@@ -314,72 +314,74 @@
     <script src="{{ 'akka-app.js' | asset_url }}" defer="defer"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    {%- if request.page_type == 'index' -%}
+      <script>
+        function adjustSticky(stickySelector) {
+          const stickyElement = document.querySelector(stickySelector);
+          const stickyElementRect = stickyElement.getBoundingClientRect();
+          const negativeTop = stickyElementRect.bottom - stickyElementRect.height;
+            
+          // Apply the negative top value
+          stickyElement.style.top = `${-Math.abs(negativeTop)}px`;
+        }
 
-    <script>
-      function adjustSticky(stickySelector) {
-        const stickyElement = document.querySelector(stickySelector);
-        const stickyElementRect = stickyElement.getBoundingClientRect();
-        const negativeTop = stickyElementRect.bottom - stickyElementRect.height;
-          
-        // Apply the negative top value
-        stickyElement.style.top = `${-Math.abs(negativeTop)}px`;
-      }
-
-      window.addEventListener('load', function(){
-        adjustSticky('#section6');
-        adjustSticky('#section2');
-      });
-      window.addEventListener('resize', function(){
-        adjustSticky('#section6');
-        adjustSticky('#section2');
-      });
-
-      const swiperMarquee = new Swiper(".marquee", {
-        spaceBetween: 35,
-        centeredSlides: true,
-        speed: 6000,
-        autoplay: {
-          delay: 1,
-        },
-        loop: true,
-        slidesPerView:'auto',
-        allowTouchMove: false,
-        disableOnInteraction: true
-      });
-
-      // Initialize sliders
-      const slider1 = new FadeSlider(document.getElementById('science-slider'), 7000); // 4 seconds interval for slider1
-
-      // Add custom event listeners
-      slider1.onSlideChange((e) => {
-        var index = e.detail.activeIndex + 1;
-        var scAll = document.querySelectorAll('.sc');
-        var activeSC = document.getElementById(`sc${index}`);
-
-        scAll.forEach(function(item){
-          item.classList.remove('active');
+        window.addEventListener('load', function(){
+          adjustSticky('#section6');
+          adjustSticky('#section2');
         });
-        activeSC.classList.add('active');
-      });
+        window.addEventListener('resize', function(){
+          adjustSticky('#section6');
+          adjustSticky('#section2');
+        });
 
-      var section = document.getElementById('section6');
-      var section_list = section.querySelectorAll('li');
+        const swiperMarquee = new Swiper(".marquee", {
+          spaceBetween: 35,
+          centeredSlides: true,
+          speed: 6000,
+          autoplay: {
+            delay: 1,
+          },
+          loop: true,
+          slidesPerView:'auto',
+          allowTouchMove: false,
+          disableOnInteraction: true
+        });
 
-      section_list.forEach(function(item) {
-        item.addEventListener('mouseover', function() {
-          section_list.forEach(function(li) {
-            li.classList.remove('active');
+        // Initialize sliders
+        const slider1 = new FadeSlider(document.getElementById('science-slider'), 7000); // 4 seconds interval for slider1
+
+        // Add custom event listeners
+        slider1.onSlideChange((e) => {
+          var index = e.detail.activeIndex + 1;
+          var scAll = document.querySelectorAll('.sc');
+          var activeSC = document.getElementById(`sc${index}`);
+
+          scAll.forEach(function(item){
+            item.classList.remove('active');
           });
-          item.classList.add('active');
+          activeSC.classList.add('active');
         });
 
-        item.addEventListener('mouseout', function() {
-          section_list.forEach(function(li) {
-            li.classList.remove('active');
+        var section = document.getElementById('section6');
+        var section_list = section.querySelectorAll('li');
+
+        section_list.forEach(function(item) {
+          item.addEventListener('mouseover', function() {
+            section_list.forEach(function(li) {
+              li.classList.remove('active');
+            });
+            item.classList.add('active');
+          });
+
+          item.addEventListener('mouseout', function() {
+            section_list.forEach(function(li) {
+              li.classList.remove('active');
+            });
           });
         });
-      });
-    </script>
+      </script>
+    {%- endif -%}
 
     <script>
       $(document).ready(function(){

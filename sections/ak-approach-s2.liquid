@@ -1,0 +1,97 @@
+<style>
+    #section2 {
+        background: linear-gradient(0deg, #E2E3EA 0%, #E2E3EA 100%), linear-gradient(114deg, #7B82A2 8.77%, #677099 52.96%, #7B82A2 92.94%);
+        background-blend-mode: multiply, normal;
+    }
+    .animation-moveup {
+        transition: all 1s linear;
+        animation: moveUp 1s linear;        
+    }
+    #section2 a:hover svg {
+     rotate: 45deg;
+    }
+    @media(max-width: 767px) {
+        .animation-moveup {
+            
+        }
+    }
+    @keyframes moveUp {
+        0% {transform: translateY(0%);}
+        50% {transform: translateY(100%);}
+        100% {transform: translateY(0%);}
+    }    
+</style>
+    
+<section id="section2" class="relative z-10">
+    <div class="font-['syne'] pt-[169px] overflow-hidden max-md:pt-[64px]">
+    <div class="max-w-[842px] w-full mx-auto mb-[51px] overflow-hidden">
+        <div class="text-[70px] leading-[79px] tracking-[-1.4px] mb-[64px] text-white text-center max-md:text-[40px] max-md:leading-[100%] max-md:mb-[32px] max-md:px-[20%]">
+        <h3 class="overflow-hidden max-md:mb-[8px]">
+            <span class="animation-moveup block">{{ section.settings.heading_1 }}</span>
+        </h3>
+        <h3 class="overflow-hidden">
+            <span class="animation-moveup block font-['Blisstwin']">{{ section.settings.heading_2 }}</span>
+        </h3>
+        </div>
+        <a href="{{ section.settings.button_link }}" class="animation-moveup underline text-[24px] text-white leading-[140%] tracking-[0.48px] uppercase flex items-center gap-[16px] w-fit mx-auto shadow-[0px_54px_15px_0px_rgba(33,_48,_94,_0.00),_0px_35px_14px_0px_rgba(33,_48,_94,_0.01),_0px_20px_12px_0px_rgba(33,_48,_94,_0.05),_0px_9px_9px_0px_rgba(33,_48,_94,_0.09),_0px_2px_5px_0px_rgba(33,_48,_94,_0.10)]">
+        {{ section.settings.button_text }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="34" viewBox="0 0 18 34" fill="none" style="transition:all .2s linear;">
+            <path d="M16.537 23.404C16.537 23.6817 16.4267 23.948 16.2303 24.1444C16.034 24.3408 15.7676 24.4511 15.4899 24.4511C15.2122 24.4511 14.9458 24.3408 14.7495 24.1444C14.5531 23.948 14.4428 23.6817 14.4428 23.404V12.576L2.26978 24.749C2.07128 24.9339 1.80874 25.0346 1.53746 25.0298C1.26618 25.0251 1.00734 24.9152 0.815489 24.7233C0.623635 24.5314 0.513739 24.2726 0.508952 24.0013C0.504166 23.7301 0.604865 23.4675 0.789831 23.269L12.9611 11.0943H2.13308C1.85536 11.0943 1.58901 10.984 1.39264 10.7876C1.19626 10.5912 1.08594 10.3249 1.08594 10.0471C1.08594 9.76942 1.19626 9.50308 1.39264 9.3067C1.58901 9.11032 1.85536 9 2.13308 9H15.4899C15.7676 9 16.034 9.11032 16.2303 9.3067C16.4267 9.50308 16.537 9.76942 16.537 10.0471V23.404Z" fill="#EDEEF5"/>
+        </svg>
+        </a>
+    </div>
+    <div class="">
+        <img class="transition-all duration-1000 ease-linear animation-moveup max-md:hidden mx-auto" src="{{ section.settings.desktop_image | img_url: 'master' }}" alt="">
+        <img class="transition-all duration-1000 ease-linear animation-moveup hidden max-md:block" src="{{ section.settings.mobile_image | img_url: 'master' }}" alt="">
+    </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name": "AK - OurApproach S2",
+    "settings": [
+    {
+        "type": "text",
+        "id": "heading_1",
+        "label": "Heading Line 1",
+        "default": "Liver health is system health."
+    },
+    {
+        "type": "text",
+        "id": "heading_2",
+        "label": "Heading Line 2",
+        "default": "Help your liver heal you."
+    },
+    {
+        "type": "text",
+        "id": "button_link",
+        "label": "Button Link",
+        "default": "/pages/product"
+    },
+    {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Shop Akka"
+    },
+    {
+        "type": "image_picker",
+        "id": "desktop_image",
+        "label": "Desktop Image"
+    },
+    {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Mobile Image"
+    }
+    ],
+    "presets": [
+        {
+            "name": "AK - OurApproach S2",
+            "category": "AKKA OURAPPROACH"
+        }
+    ]
+}
+{% endschema %}
+    
