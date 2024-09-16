@@ -122,6 +122,20 @@
         "button_text": "Our Approach",
         "button_icon": "shopify:\/\/shop_images\/ak-home-s4-arrow.png"
       }
+    },
+    "ak_home_s5_HxwyYM": {
+      "type": "ak-home-s5",
+      "settings": {
+        "heading": "As seen On",
+        "image_1": "shopify:\/\/shop_images\/Allure.png",
+        "image_2": "shopify:\/\/shop_images\/People.png",
+        "image_3": "shopify:\/\/shop_images\/Elle.png",
+        "image_4": "shopify:\/\/shop_images\/EatingWell.png",
+        "image_5": "shopify:\/\/shop_images\/Shape.png",
+        "image_6": "shopify:\/\/shop_images\/Vogue.png",
+        "image_7": "shopify:\/\/shop_images\/business.png",
+        "image_8": "shopify:\/\/shop_images\/forbes.png"
+      }
     }
   },
   "order": [
@@ -129,6 +143,7 @@
     "ak_home_s1_d6yq6M",
     "ak_home_s2_XGdaaB",
     "ak_home_s3_3crNxx",
-    "ak_home_s4_qUh4AQ"
+    "ak_home_s4_qUh4AQ",
+    "ak_home_s5_HxwyYM"
   ]
 }
