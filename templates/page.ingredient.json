@@ -28,10 +28,61 @@
         "hero_title": "Our building blocks",
         "hero_subtitle": "to better health"
       }
+    },
+    "ak_ingredient_s1_GyyEFQ": {
+      "type": "ak-ingredient-s1",
+      "blocks": {
+        "link_8bCnPk": {
+          "type": "link",
+          "settings": {
+            "link_id": "Akkermansia",
+            "link_name": "Akkermasia"
+          }
+        },
+        "link_FEUmH7": {
+          "type": "link",
+          "settings": {
+            "link_id": "Quercertin",
+            "link_name": "Quercertin"
+          }
+        },
+        "link_erkYyn": {
+          "type": "link",
+          "settings": {
+            "link_id": "Resveratrol",
+            "link_name": "Resveratrol"
+          }
+        },
+        "link_K36NFh": {
+          "type": "link",
+          "settings": {
+            "link_id": "Silymarin",
+            "link_name": "Silymarin"
+          }
+        },
+        "link_camwxT": {
+          "type": "link",
+          "settings": {
+            "link_id": "Artichoke",
+            "link_name": "Artichoke"
+          }
+        }
+      },
+      "block_order": [
+        "link_8bCnPk",
+        "link_FEUmH7",
+        "link_erkYyn",
+        "link_K36NFh",
+        "link_camwxT"
+      ],
+      "settings": {
+        "section_title": "Ingredient Information"
+      }
     }
   },
   "order": [
     "main",
-    "ak_ingredient_hero_aexLbD"
+    "ak_ingredient_hero_aexLbD",
+    "ak_ingredient_s1_GyyEFQ"
   ]
 }
