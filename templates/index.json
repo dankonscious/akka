@@ -121,17 +121,81 @@
             "text_color": "#C8D3F0"
           }
         },
+        "slide_jynDXt": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Liveliness",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_V7Xf6F": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Energy",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_ezhQbJ": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Life",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_bYbFHX": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Animation",
+            "text_color": "#C8D3F0"
+          }
+        },
         "slide_9yz7nc": {
           "type": "slide",
           "settings": {
             "text_content": "the key to your vitality",
             "text_color": "#C8D3F0"
           }
+        },
+        "slide_AD7W33": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Liveliness",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_xb7JaH": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Energy",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_6BVwxr": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Life",
+            "text_color": "#C8D3F0"
+          }
+        },
+        "slide_BiPXyg": {
+          "type": "slide",
+          "settings": {
+            "text_content": "Animation",
+            "text_color": "#C8D3F0"
+          }
         }
       },
       "block_order": [
         "slide_JgFYwX",
-        "slide_9yz7nc"
+        "slide_jynDXt",
+        "slide_V7Xf6F",
+        "slide_ezhQbJ",
+        "slide_bYbFHX",
+        "slide_9yz7nc",
+        "slide_AD7W33",
+        "slide_xb7JaH",
+        "slide_6BVwxr",
+        "slide_BiPXyg"
       ],
       "settings": {
       }
