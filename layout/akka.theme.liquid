@@ -313,8 +313,7 @@
     <script src="{{ 'swiper.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'handlebar.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'akka-app.js' | asset_url }}" defer="defer"></script>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     
     {%- if request.page_type == 'index' -%}
       <script>
@@ -374,17 +373,6 @@
         });
       </script>
     {%- endif -%}
-
-    <script>
-      $(document).ready(function(){
-        $('#nav-icon').click(function(){
-          $(this).toggleClass('open');
-          $('#nav-box').toggleClass('open');
-        });
-      });
-    </script>
-
-
     
   </body>
 </html>
