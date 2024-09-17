@@ -8,18 +8,29 @@
 * ------------------------------------------------------------
 */
 {
-    "layout": "akka.theme",
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
+  "layout": "akka.theme",
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
-    "order": [
-      "main"
-    ]
-  }
-  
+    "ak_science_s1_qqTwAi": {
+      "type": "ak-science-s1",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/hero-backgroiund_4c0bf0d1-5d3f-4acd-b6c3-0bf5834a9b98.png",
+        "circle_image": "shopify:\/\/shop_images\/hero-circle_025c068e-9561-47ea-b7af-0900c216f0ce.png",
+        "circle_image_mobile": "shopify:\/\/shop_images\/hero-circle_025c068e-9561-47ea-b7af-0900c216f0ce.png",
+        "hero_text": "Our building blocks",
+        "sub_text": "to better health"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ak_science_s1_qqTwAi"
+  ]
+}
