@@ -69,6 +69,9 @@
               {% if section.settings.mobile_image_2 %}
                 <div class="w-1/2"><img src="{{ section.settings.mobile_image_2 | img_url: 'original' }}" class="w-full"></div>
               {% endif %}
+              {% if section.settings.mobile_image_3 %}
+                <div class="w-1/2"><img src="{{ section.settings.mobile_image_3 | img_url: 'original' }}" class="w-full"></div>
+              {% endif %}
             </div>
             <h2 class="text-[40px] font-normal leading-[1] tracking-[0.8px] mb-[45px] capitalize text-[#2E3666]">
               {{ section.settings.heading }}
@@ -130,6 +133,11 @@
         "type": "image_picker",
         "id": "mobile_image_2",
         "label": "Mobile Image 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_image_3",
+        "label": "Mobile Image 3"
       },
       {
         "type": "text",
