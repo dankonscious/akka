@@ -194,3 +194,19 @@ section {
   --page-width: 1340px;
   --desktop-bp: 1200px;
 }
+
+.marquee .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.rotate-me {
+  -webkit-animation:spin 16s linear infinite;
+  -moz-animation:spin 16s linear infinite;
+  animation:spin 16s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
