@@ -2,7 +2,9 @@
 <section id="section4" class="font-['syne']">
   <div class="max-w-[var(--page-width)] w-full mx-auto py-[128px] text-[#2E3666] max-md:py-8 max-md:px-4">
     <div class="max-w-[1062px] w-full mr-auto">
-      <h3 class="text-[70px] leading-[104%] max-md:text-[40px]">{{ section.settings.title }}</h3>
+      <h3 class="text-[70px] leading-[104%] max-md:text-[40px]">{{ section.settings.title }}
+        <span class="font-['Blisstwin'] leading-[79%]">{{ section.settings.title2 }}</span>
+      </h3>      
       <p class="text-[24px] leading-[36px] tracking-[0.48px] mt-[35px] max-md:mt-[32px] max-md:text-[20px]">{{ section.settings.description }}</p>
     </div>
     <section class="flex flex-wrap items-stretch mt-[64px] max-md:border max-md:border-solid max-md:border-[#2E3666]">
@@ -30,7 +32,13 @@
       "type": "text",
       "id": "title",
       "label": "Section Title",
-      "default": "How your lifestyle choices can help"
+      "default": "How your lifestyle <br> choices "
+    },
+    {
+      "type": "text",
+      "id": "title2",
+      "label": "Section Title",
+      "default": "can help"
     },
     {
       "type": "textarea",
