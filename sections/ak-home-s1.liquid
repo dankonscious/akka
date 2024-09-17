@@ -50,8 +50,8 @@
                 {% if section.settings.desktop_image_3 %}
                   <div class="absolute top-[-150px] left-0 parallax-image" data-speed="0.2" data-direction="up"><img class="element scaleup max-w-[300px]" loading="lazy" src="{{ section.settings.desktop_image_3 | img_url: 'original' }}"></div>
                 {% endif %}
-                {% if section.settings.desktop_image_2 %}
-                  <div class="relative bottom-[-40px] parallax-image" data-speed="0.05" data-stop="45" data-direction="up"><img class="element scaleup max-w-[1170px]" loading="lazy" src="{{ section.settings.desktop_image_2 | img_url: 'original' }}"></div>
+                {% if section.settings.desktop_image_4 %}
+                  <div class="relative bottom-[-40px] parallax-image" data-speed="0.05" data-stop="45" data-direction="up"><img class="element scaleup max-w-[1170px]" loading="lazy" src="{{ section.settings.desktop_image_4 | img_url: 'original' }}"></div>
                 {% endif %}
               </div>
             </div>
@@ -105,6 +105,11 @@
         "type": "image_picker",
         "id": "desktop_image_3",
         "label": "Desktop Image 3"
+      },
+      {
+        "type": "image_picker",
+        "id": "desktop_image_4",
+        "label": "Desktop Image 4"
       },
       {
         "type": "image_picker",
