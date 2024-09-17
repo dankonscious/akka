@@ -308,10 +308,12 @@
     </main>
 
     {% sections 'footer-group' %}
-
+    
+    <script src="{{ 'fadeslider.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'swiper.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'handlebar.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'akka-app.js' | asset_url }}" defer="defer"></script>
-
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     {%- if request.page_type == 'index' -%}
