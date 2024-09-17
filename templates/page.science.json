@@ -119,6 +119,47 @@
         "icon_image3": "shopify:\/\/shop_images\/iconline3.png",
         "final_text3": "Regulate mood and immunity..."
       }
+    },
+    "ak_science_s5_hHVfjj": {
+      "type": "ak-science-s5",
+      "blocks": {
+        "article_fGX6gh": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sec4-img1.png",
+            "image_alt": "Image description",
+            "heading": "Sugar",
+            "description": "Overloading the liver with sugar forces it to produce excess fat, uric acid, and free radicals, which can lead to diabetes and fatty liver disease."
+          }
+        },
+        "article_eNiLHF": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sec4-img2.png",
+            "image_alt": "Image description",
+            "heading": "Alcohol",
+            "description": "Alcohol metabolism creates harmful chemicals like acetaldehyde, closely related to formaldehyde, which can significantly damage liver cells and lead to conditions like fatty liver."
+          }
+        },
+        "article_GpKicq": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sec4-img3.png",
+            "image_alt": "Image description",
+            "heading": "Trans fats and fried foods",
+            "description": "These not only lead to the destruction of liver cells but also cause fat to accumulate in the bloodstream, which can block arteries and deposit fat around the body, further straining the liver."
+          }
+        }
+      },
+      "block_order": [
+        "article_fGX6gh",
+        "article_eNiLHF",
+        "article_GpKicq"
+      ],
+      "settings": {
+        "title": "How your lifestyle choices can help",
+        "description": "Everyday choices about what you consume have direct impacts on your liver's health, and may be at the root of your sluggish liver. Here’s how your daily consumption can be affecting the liver."
+      }
     }
   },
   "order": [
@@ -126,6 +167,7 @@
     "ak_science_s1_qqTwAi",
     "ak_science_s2_VXNabU",
     "ak_science_s3_eVcLTQ",
-    "ak_science_s4_CzJzJJ"
+    "ak_science_s4_CzJzJJ",
+    "ak_science_s5_hHVfjj"
   ]
 }
