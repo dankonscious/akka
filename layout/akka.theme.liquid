@@ -318,15 +318,6 @@
     
     {%- if request.page_type == 'index' -%}
       <script>
-        function adjustSticky(stickySelector) {
-          const stickyElement = document.querySelector(stickySelector);
-          const stickyElementRect = stickyElement.getBoundingClientRect();
-          const negativeTop = stickyElementRect.bottom - stickyElementRect.height;
-            
-          // Apply the negative top value
-          stickyElement.style.top = `${-Math.abs(negativeTop)}px`;
-        }
-
         window.addEventListener('load', function(){
           adjustSticky('#section6');
           adjustSticky('#section2');
