@@ -45,7 +45,7 @@
         "desktop_image_1": "shopify:\/\/shop_images\/2c1636c4df70d710f1548a1e59b1f70291564f5e019a701f42433eab57c799c1.png",
         "desktop_image_2": "shopify:\/\/shop_images\/3.png",
         "desktop_image_3": "shopify:\/\/shop_images\/4.png",
-        "heading": "Next Generation Liver Rejuvenation",
+        "heading": "<span class=\"font-['blisstwin']\">Next Generation<\/span>  Liver Rejuvenation",
         "description": "Your liver is responsible for over 500 different functions. Our researchers have created the ultimate supplement to help support it.",
         "cta_link": ""
       }
@@ -118,70 +118,70 @@
           "type": "slide",
           "settings": {
             "text_content": "the key to your vitality",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         },
         "slide_jynDXt": {
           "type": "slide",
           "settings": {
             "text_content": "Liveliness",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         },
         "slide_V7Xf6F": {
           "type": "slide",
           "settings": {
             "text_content": "Energy",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         },
         "slide_ezhQbJ": {
           "type": "slide",
           "settings": {
             "text_content": "Life",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         },
         "slide_bYbFHX": {
           "type": "slide",
           "settings": {
             "text_content": "Animation",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         },
         "slide_9yz7nc": {
           "type": "slide",
           "settings": {
             "text_content": "the key to your vitality",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         },
         "slide_AD7W33": {
           "type": "slide",
           "settings": {
             "text_content": "Liveliness",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         },
         "slide_xb7JaH": {
           "type": "slide",
           "settings": {
             "text_content": "Energy",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         },
         "slide_6BVwxr": {
           "type": "slide",
           "settings": {
             "text_content": "Life",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         },
         "slide_BiPXyg": {
           "type": "slide",
           "settings": {
             "text_content": "Animation",
-            "text_color": "#C8D3F0"
+            "text_color": "#c8d3f0"
           }
         }
       },
