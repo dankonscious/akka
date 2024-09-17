@@ -188,51 +188,6 @@
     </main>
 
     {% sections 'footer-group' %}
-
-    
-    {%- if request.page_type == 'index' -%}
-      <script>
-        window.addEventListener('load', function(){
-          adjustSticky('#section6');
-          adjustSticky('#section2');
-        });
-        window.addEventListener('resize', function(){
-          adjustSticky('#section6');
-          adjustSticky('#section2');
-        });
-
-        const swiperMarquee = new Swiper(".marquee", {
-          spaceBetween: 35,
-          centeredSlides: true,
-          speed: 6000,
-          autoplay: {
-            delay: 1,
-          },
-          loop: true,
-          slidesPerView:'auto',
-          allowTouchMove: false,
-          disableOnInteraction: true
-        });
-
-        var section = document.getElementById('section6');
-        var section_list = section.querySelectorAll('li');
-
-        section_list.forEach(function(item) {
-          item.addEventListener('mouseover', function() {
-            section_list.forEach(function(li) {
-              li.classList.remove('active');
-            });
-            item.classList.add('active');
-          });
-
-          item.addEventListener('mouseout', function() {
-            section_list.forEach(function(li) {
-              li.classList.remove('active');
-            });
-          });
-        });
-      </script>
-    {%- endif -%}
     
   </body>
 </html>
