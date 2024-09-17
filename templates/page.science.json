@@ -51,15 +51,73 @@
           "settings": {
             "slide_text": "it plays a pivotal role in transforming food into energy"
           }
+        },
+        "slide_jyhfpU": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "The Liver Performs over 500 crucial functions"
+          }
+        },
+        "slide_qANdMq": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "it plays a pivotal role in transforming food into energy"
+          }
+        },
+        "slide_Rb96ET": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "The Liver Performs over 500 crucial functions"
+          }
+        },
+        "slide_GAmdLN": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "it plays a pivotal role in transforming food into energy"
+          }
         }
       },
       "block_order": [
         "slide_PTRLmJ",
-        "slide_4gkWJX"
+        "slide_4gkWJX",
+        "slide_jyhfpU",
+        "slide_qANdMq",
+        "slide_Rb96ET",
+        "slide_GAmdLN"
       ],
       "settings": {
         "desktop_background_image": "shopify:\/\/shop_images\/sec2-bg.png",
         "mobile_background_image": "shopify:\/\/shop_images\/sec2-bg-mob.png"
+      }
+    },
+    "ak_science_s4_CzJzJJ": {
+      "type": "ak-science-s4",
+      "settings": {
+        "title": "How AKKA",
+        "subtitle": "can help",
+        "description": "AKKA was crafted with the world's most researched and clinically proven ingredients for liver health...",
+        "section_heading": "It works by:",
+        "main_image": "shopify:\/\/shop_images\/bottled-bg.png",
+        "mobile_image": "shopify:\/\/shop_images\/bottled-bg-mob.png",
+        "line_image1": "shopify:\/\/shop_images\/horizonline1.png",
+        "vertical_line1": "shopify:\/\/shop_images\/verticleline1.png",
+        "label1_title": "Aid",
+        "label1_text": "Aiding in the regeneration of liver cells and the repair of scar tissue...",
+        "line_image2": "shopify:\/\/shop_images\/horizonline2.png",
+        "vertical_line2": "shopify:\/\/shop_images\/verticleline1_45880b15-409c-4925-92fe-1ec52b5d8a15.png",
+        "label2_title": "Clean",
+        "label2_text": "Cleansing your liver of toxins and excess fat that might be clogging your bile ducts...",
+        "line_image3": "shopify:\/\/shop_images\/horizonline3.png",
+        "vertical_line3": "shopify:\/\/shop_images\/verticleline1_45880b15-409c-4925-92fe-1ec52b5d8a15.png",
+        "label3_title": "Support",
+        "label3_text": "Supporting the restoration of your liver's natural ability...",
+        "final_heading": "It helps to:",
+        "icon_image1": "shopify:\/\/shop_images\/iconline1.png",
+        "final_text1": "Increase energy and metabolism...",
+        "icon_image2": "shopify:\/\/shop_images\/iconline2.png",
+        "final_text2": "Reduce bloating, indigestion...",
+        "icon_image3": "shopify:\/\/shop_images\/iconline3.png",
+        "final_text3": "Regulate mood and immunity..."
       }
     }
   },
@@ -67,6 +125,7 @@
     "main",
     "ak_science_s1_qqTwAi",
     "ak_science_s2_VXNabU",
-    "ak_science_s3_eVcLTQ"
+    "ak_science_s3_eVcLTQ",
+    "ak_science_s4_CzJzJJ"
   ]
 }
