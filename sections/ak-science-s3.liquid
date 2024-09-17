@@ -1,0 +1,68 @@
+<!-- sections/marquee-section.liquid -->
+ <style>
+    #section2 .bg-image {
+        background-image: url({{ section.settings.desktop_background_image | img_url: 'master' }});
+    }
+    @media(max-width: 1200px) {
+        #section2 .bg-image {
+            background-image: url({{ section.settings.mobile_background_image | img_url: 'master' }});
+        }
+    }
+ </style>
+<section id="section2" class="relative max-md:overflow-x-hidden">
+  <div class="bg-image bg-cover bg-center bg-no-repeat h-[900px]">
+    <section id="marquee" class="pt-[49px] max-md:pt-0 max-md:overflow-hidden h-[122px] absolute bottom-[30px] left-0 max-md:w-full">
+      <!-- Slider main container -->
+      <div class="marquee swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper !h-auto">
+          {% for slide in section.blocks %}
+          <!-- Slides -->
+          <div class="swiper-slide !flex !items-center !justify-center gap-[35px] !w-[unset] !h-[unset] font-['blisstwin']">
+            <h3 class="text-[100px] text-[#C8D3F0] capitalize">{{ slide.settings.slide_text }}</h3>
+            <div class="w-[15px] h-[15px] bg-[#C8D3F0] rotate-45"></div>
+          </div>
+          {% endfor %}
+        </div>      
+      </div>
+    </section>        
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ak - Science S3",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_background_image",
+      "label": "Desktop Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_background_image",
+      "label": "Mobile Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "slide_text",
+          "label": "Slide Text",
+          "default": "The Liver Performs over 500 crucial functions"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ak - Science S3",
+      "category": "AKKA SCIENCE"      
+    }
+  ]
+}
+{% endschema %}
