@@ -64,7 +64,6 @@
         "subheadline": "that targets liver health to help you heal",
         "image1": "shopify:\/\/shop_images\/g2.png",
         "image2": "shopify:\/\/shop_images\/g1.png",
-        "image3": "shopify:\/\/shop_images\/cf6b662b2298936f3fb16a81c6a97c82.png",
         "image4": "shopify:\/\/shop_images\/cf6b662b2298936f3fb16a81c6a97c82.png",
         "text1": "Weight Gain, fatigue, brain fog",
         "text2": "metabolism, vitality, energy"
@@ -78,6 +77,7 @@
           "settings": {
             "step_number": "01",
             "step_description": "Why the liver is so important & how it works",
+            "image": "shopify:\/\/shop_images\/sec3PHTO1-mob.png",
             "active": true
           }
         },
@@ -86,6 +86,7 @@
           "settings": {
             "step_number": "02",
             "step_description": "What happens when it's compromised & how this can lead to a range of symptoms",
+            "image": "shopify:\/\/shop_images\/sec3PHTO2-mob.png",
             "active": false
           }
         },
@@ -94,6 +95,7 @@
           "settings": {
             "step_number": "03",
             "step_description": "Steps you can take to protect and heal your liver",
+            "image": "shopify:\/\/shop_images\/sec3PHTO3-mob.png",
             "active": false
           }
         }
@@ -111,13 +113,7 @@
         "description": "From storing vitamins and minerals, to immune support, to hormone regulation, the liver plays a crucial role in your body.",
         "button_link": "\/pages\/science.com",
         "button_text": "The Science",
-        "science_intro": "Read the science to help you get clarity on:",
-        "slider_image_1": "shopify:\/\/shop_images\/sec3PHTO1-mob.png",
-        "slider_image_1_alt": "Liver Image 1",
-        "slider_image_2": "shopify:\/\/shop_images\/sec3PHTO2-mob.png",
-        "slider_image_2_alt": "Liver Image 2",
-        "slider_image_3": "shopify:\/\/shop_images\/sec3PHTO3-mob.png",
-        "slider_image_3_alt": "Liver Image 3"
+        "science_intro": "Read the science to help you get clarity on:"
       }
     },
     "ak_home_marquee_E3zCA8": {
