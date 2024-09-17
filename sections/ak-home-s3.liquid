@@ -43,15 +43,11 @@
       </div>
       <div class="relative w-[860px] max-w-full flex-1 max-[1200px]:w-full">
         <div id="science-slider" class="fade_slider !max-w-[100%] !h-[50vh] ">
-          <div class="fade_slide">
-            <img loading="lazy" src="{{ section.settings.slider_image_1 | img_url: 'master' }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ section.settings.slider_image_1_alt }}">
-          </div>
-          <div class="fade_slide">
-            <img loading="lazy" src="{{ section.settings.slider_image_2 | img_url: 'master' }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ section.settings.slider_image_2_alt }}">
-          </div>
-          <div class="fade_slide">
-            <img loading="lazy" src="{{ section.settings.slider_image_3 | img_url: 'master' }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ section.settings.slider_image_3_alt }}">
-          </div>
+          {% for step in section.blocks %}
+            <div class="fade_slide">
+              <img loading="lazy" src="{{ step.settings.image |  image_url: width: 900  }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ step.settings.step_description }}">
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>
@@ -108,39 +104,6 @@
       "id": "science_intro",
       "label": "Science Section Intro",
       "default": "Read the science to help you get clarity on:"
-    },
-    {
-      "type": "image_picker",
-      "id": "slider_image_1",
-      "label": "Slider Image 1"
-    },
-    {
-      "type": "text",
-      "id": "slider_image_1_alt",
-      "label": "Slider Image 1 Alt Text",
-      "default": "Liver Image 1"
-    },
-    {
-      "type": "image_picker",
-      "id": "slider_image_2",
-      "label": "Slider Image 2"
-    },
-    {
-      "type": "text",
-      "id": "slider_image_2_alt",
-      "label": "Slider Image 2 Alt Text",
-      "default": "Liver Image 2"
-    },
-    {
-      "type": "image_picker",
-      "id": "slider_image_3",
-      "label": "Slider Image 3"
-    },
-    {
-      "type": "text",
-      "id": "slider_image_3_alt",
-      "label": "Slider Image 3 Alt Text",
-      "default": "Liver Image 3"
     }
   ],
   "blocks": [
@@ -159,6 +122,11 @@
           "id": "step_description",
           "label": "Step Description",
           "default": "Why the liver is so important & how it works"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
         },
         {
           "type": "checkbox",
