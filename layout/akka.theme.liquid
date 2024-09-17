@@ -214,18 +214,6 @@
           disableOnInteraction: true
         });
 
-        // Add custom event listeners
-        slider1.onSlideChange((e) => {
-          var index = e.detail.activeIndex + 1;
-          var scAll = document.querySelectorAll('.sc');
-          var activeSC = document.getElementById(`sc${index}`);
-
-          scAll.forEach(function(item){
-            item.classList.remove('active');
-          });
-          activeSC.classList.add('active');
-        });
-
         var section = document.getElementById('section6');
         var section_list = section.querySelectorAll('li');
 
