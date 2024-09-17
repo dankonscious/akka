@@ -27,10 +27,46 @@
         "hero_text": "Our building blocks",
         "sub_text": "to better health"
       }
+    },
+    "ak_science_s2_VXNabU": {
+      "type": "ak-science-s2",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/sec1PHOTO1.png",
+        "image2": "shopify:\/\/shop_images\/sec1PHOTO2.png",
+        "image3": "shopify:\/\/shop_images\/sec1PHOTO3-small.png",
+        "image4": "shopify:\/\/shop_images\/sec1PHOTO3-long.png"
+      }
+    },
+    "ak_science_s3_eVcLTQ": {
+      "type": "ak-science-s3",
+      "blocks": {
+        "slide_PTRLmJ": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "The Liver Performs over 500 crucial functions"
+          }
+        },
+        "slide_4gkWJX": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "it plays a pivotal role in transforming food into energy"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PTRLmJ",
+        "slide_4gkWJX"
+      ],
+      "settings": {
+        "desktop_background_image": "shopify:\/\/shop_images\/sec2-bg.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/sec2-bg-mob.png"
+      }
     }
   },
   "order": [
     "main",
-    "ak_science_s1_qqTwAi"
+    "ak_science_s1_qqTwAi",
+    "ak_science_s2_VXNabU",
+    "ak_science_s3_eVcLTQ"
   ]
 }
