@@ -1377,6 +1377,14 @@ video {
   width: calc(100% - 760px);
 }
 
+.w-\[780px\] {
+  width: 780px;
+}
+
+.w-\[calc\(100\%_-_780px\)\] {
+  width: calc(100% - 780px);
+}
+
 .min-w-\[240px\] {
   min-width: 240px;
 }
