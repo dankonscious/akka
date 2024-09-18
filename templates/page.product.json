@@ -198,12 +198,30 @@
         "heading_line_1": "How AKKA has helped",
         "heading_line_2": "people like you"
       }
+    },
+    "ak_product_s4_XhhzUW": {
+      "type": "ak-product-s4",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/sec4-photo1.png",
+        "heading_1": "Liver health is",
+        "heading_1_span": "system health",
+        "description_1": "Find out why liver health is key to overall well-being.",
+        "link_1": "\/page\/ourapproach",
+        "link_text_1": "Our Approach",
+        "image2": "shopify:\/\/shop_images\/sec4-photogirl1.png",
+        "heading_2": "The roadmap",
+        "heading_2_span": "to results",
+        "description_2": "Read about how we’ve combined leading scientific research with innovative approaches to provide superior liver health support.",
+        "link_2": "\/pages\/science",
+        "link_text_2": "The Science"
+      }
     }
   },
   "order": [
     "main",
     "ak_product_s1_PA7zTp",
     "ak_product_s2_9fXVkb",
-    "ak_product_s3_pMKCgd"
+    "ak_product_s3_pMKCgd",
+    "ak_product_s4_XhhzUW"
   ]
 }
