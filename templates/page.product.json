@@ -162,97 +162,37 @@
           "type": "testimonial",
           "settings": {
             "star_image": "shopify:\/\/shop_images\/star.png",
-            "name": "Elizabeth M.",
+            "name": "Joan T.",
             "customer_status": "Verified Customer",
-            "testimonial": "\"The effect was immediate, and dramatic. My energy levels improved, and the bloating disappeared. My previous issues with fatigue and discomfort after meals became a thing of the past.\"",
-            "customer_image": "shopify:\/\/shop_images\/elizabethm-photo.png",
+            "testimonial": "“Akka was a godsend. I had no idea why I couldn't lose weight. I tried everything including hard core diets, exercise programs, and fat burner pills (they made the problem worse).   I had no idea that my liver was responsible.  I tried Akka and felt the effects in days.  My mental clarity has also been amazing. Five stars. “",
+            "customer_image": "shopify:\/\/shop_images\/joant.png",
             "row2": true,
+            "row2_star_image": "shopify:\/\/shop_images\/star.png",
+            "row2_name": "Jerry S.",
+            "row2_customer_status": "Verified Customer",
+            "row2_testimonial": "“I was skeptical at first, as I had never been able to find something that truly worked, but Akka proved me wrong. Not only has my energy returned, but I've also started to lose some of the weight that seemed impossible to shed before. Akka has truly been a game-changer for me. A solid 5-star experience.”",
+            "row2_customer_image": "shopify:\/\/shop_images\/jerrys.png"
+          }
+        },
+        "testimonial_E9i87C": {
+          "type": "testimonial",
+          "settings": {
+            "star_image": "shopify:\/\/shop_images\/star.png",
+            "name": "Jerry S.",
+            "customer_status": "Verified Customer",
+            "testimonial": "“Akka changed everything for me. Not only did it help cleanse and rejuvenate my liver, but it also kick-started my weight loss and restored my energy levels. For the first time in years, I felt like my body was working with me, not against me.\n                              <br><br>\n                              The transformation was noticeable not just to me but to everyone around me. Colleagues and friends commented on how much happier and more energetic I seemed. I went from avoiding social gatherings to embracing them, thanks to the newfound confidence Akka gave me.\n                              <br><br>\n                              I believe Akka is something everyone should know about, especially those struggling with similar issues. It has not only improved my physical health but has also had a profound impact on my overall well-being and happiness. I've recommended it to everyone I care about.”",
+            "customer_image": "shopify:\/\/shop_images\/jerrys2.png",
+            "row2": false,
             "row2_name": "",
             "row2_customer_status": "Verified Customer",
             "row2_testimonial": ""
-          }
-        },
-        "tags_mjdx7C": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Reduce brain frog"
-          }
-        },
-        "tags_FJgTtp": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Happy"
-          }
-        },
-        "tags_HR6we9": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Energy"
-          }
-        },
-        "tags_FTY7rA": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Clear Skin"
-          }
-        },
-        "tags_UUFG8H": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Flat belly"
-          }
-        },
-        "tags_Ktz9AN": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Reduce weight gain"
-          }
-        },
-        "tags_w8Jdwq": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Vibrant"
-          }
-        },
-        "tags_87Wt7w": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Reduce bloating"
-          }
-        },
-        "tags_waWAAh": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Fresh"
-          }
-        },
-        "tags_enGcxb": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Focus"
-          }
-        },
-        "tags_D689jb": {
-          "type": "tags",
-          "settings": {
-            "tag_name": "Improve immune system"
           }
         }
       },
       "block_order": [
         "testimonial_UQCqie",
         "testimonial_rpDFyB",
-        "tags_mjdx7C",
-        "tags_FJgTtp",
-        "tags_HR6we9",
-        "tags_FTY7rA",
-        "tags_UUFG8H",
-        "tags_Ktz9AN",
-        "tags_w8Jdwq",
-        "tags_87Wt7w",
-        "tags_waWAAh",
-        "tags_enGcxb",
-        "tags_D689jb"
+        "testimonial_E9i87C"
       ],
       "settings": {
         "heading_line_1": "How AKKA has helped",
