@@ -70,7 +70,7 @@ function adjustSticky(e) {
       let g = e.closest('.shopify-section');
       let t = g.getBoundingClientRect(),
           i = -Math.abs(t.height / 4);
-      e.stype.position = 'sticky';
+      e.style.position = 'sticky';
       e.style.top = `${i}px`
   })
 }
