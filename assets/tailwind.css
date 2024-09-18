@@ -1365,6 +1365,14 @@ video {
   width: 30%;
 }
 
+.w-\[calc\(100\%_-_670px\)\] {
+  width: calc(100% - 670px);
+}
+
+.w-\[670px\] {
+  width: 670px;
+}
+
 .min-w-\[240px\] {
   min-width: 240px;
 }
@@ -2123,6 +2131,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pr-\[100px\] {
+  padding-right: 100px;
 }
 
 .text-center {
