@@ -215,6 +215,31 @@
         "link_2": "\/pages\/science",
         "link_text_2": "The Science"
       }
+    },
+    "ak_product_s5_FL6pGF": {
+      "type": "ak-product-s5",
+      "blocks": {
+        "faq_XezQag": {
+          "type": "faq",
+          "settings": {
+            "question": "Are there any side effects? Is it safe to take it long term?",
+            "answer": "<b>Akka superbiotic, with our Preserve Pasteurized preparation, has had zero reported side effects,<\/b> and is one of the most powerful health-boosting formulations to exist in the last 20 years.\n                        <br><br>\n                        In fact, the only side effects related to Akkermansia are associated with the live version, which is what motivated us to develop our Preserve Pasteurized preparation. \n                        <br><br>\n                        <b>The best part is, studies show this version to be far more effective for boosting the metabolism, burning fat and reducing fatigue. <\/b>\n                        <br><br>\n                        In addition, Akka is considered a master superbiotic because it feeds the other beneficial probiotic strains already in your gut.\n                        <br><br>\n                        That means not only are you populating your microbiome with Akkermansia, you’re also increasing other health-promoting strains across the board.\n                        <br><br>\n                        This is important because many scientific studies have established a link between microbiome diversity and health.\n                        <br><br>\n                        In fact, low microbiome diversity, meaning not enough beneficial strains in the gut, has been linked in studies to many things like allergies, low sex drive, eczema, arthritis, cancer, chronic fatigue, autism, depression, enlarged prostate, anxiety, sleep disorder, HIV susceptibility, auto-immune problems like Crohn's and colitis, arterial plaque, hypertension, and gout.\n                        <br><br>\n                        And of course, while it would be a stretch to claim <b>Akka will cure these problems,<\/b> since there’s so many lifestyle factors involved, it will improve your microbiome dramatically and move things into a more healthy direction, and keep improving your health long-term."
+          }
+        },
+        "faq_NMaYcn": {
+          "type": "faq",
+          "settings": {
+            "question": "How much weight can I lose with Akka Superbiotics?",
+            "answer": "<b>Because the liver is the most critical organ in the body for eliminating fat and losing weight,<\/b> Akka Superbiotics helps rejuvenate the liver, supercharging its ability to burn fat and detoxify your body. \n                      <br><br>\n                      Your weight loss with Akka is going to depend on many things, and here they are:\n                      <br><br>\n                      <b>First… It's based on your starting point.<\/b> If you’re significantly overweight, your bile ducts are clogged and your metabolism has been slowed, it might take a bit longer for your liver to rejuvenate, and burn all that fat.\n                      <br><br>\n                      <b>Second… It's also based on your lifestyle factors.<\/b> Here's what I mean. If you continue eating the 3 liver-toxic foods - sugar, alcohol, and trans fats, then you're going to have a tougher time because it's a bit like walking up a hill.\n                      <br><br>\n                      You'll get there but it's going to take Akka a little longer, and a bit more energy.\n                      <br><br>\n                      Once your liver reaches its full function, you'll know because it's likely you'll <b>feel more energy, more clarity of mind, more focus, and renewed optimism for life.<\/b>\n                      <br><br>\n                      <b>The mental benefits are usually felt first, with the accelerated weight loss and fat burning ability kicking in about 2-4 weeks later.<\/b>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_XezQag",
+        "faq_NMaYcn"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -222,6 +247,7 @@
     "ak_product_s1_PA7zTp",
     "ak_product_s2_9fXVkb",
     "ak_product_s3_pMKCgd",
-    "ak_product_s4_XhhzUW"
+    "ak_product_s4_XhhzUW",
+    "ak_product_s5_FL6pGF"
   ]
 }
