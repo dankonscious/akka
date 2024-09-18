@@ -161,16 +161,92 @@
             "testimonial": "\"The effect was immediate, and dramatic. My energy levels improved, and the bloating disappeared. My previous issues with fatigue and discomfort after meals became a thing of the past.\"",
             "customer_image": "shopify:\/\/shop_images\/elizabethm-photo.png"
           }
+        },
+        "tags_mjdx7C": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Reduce brain frog"
+          }
+        },
+        "tags_FJgTtp": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Happy"
+          }
+        },
+        "tags_HR6we9": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Energy"
+          }
+        },
+        "tags_FTY7rA": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Clear Skin"
+          }
+        },
+        "tags_UUFG8H": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Flat belly"
+          }
+        },
+        "tags_Ktz9AN": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Reduce weight gain"
+          }
+        },
+        "tags_w8Jdwq": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Vibrant"
+          }
+        },
+        "tags_87Wt7w": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Reduce bloating"
+          }
+        },
+        "tags_waWAAh": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Fresh"
+          }
+        },
+        "tags_enGcxb": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Focus"
+          }
+        },
+        "tags_D689jb": {
+          "type": "tags",
+          "settings": {
+            "tag_name": "Improve immune system"
+          }
         }
       },
       "block_order": [
         "testimonial_UQCqie",
-        "testimonial_rpDFyB"
+        "testimonial_rpDFyB",
+        "tags_mjdx7C",
+        "tags_FJgTtp",
+        "tags_HR6we9",
+        "tags_FTY7rA",
+        "tags_UUFG8H",
+        "tags_Ktz9AN",
+        "tags_w8Jdwq",
+        "tags_87Wt7w",
+        "tags_waWAAh",
+        "tags_enGcxb",
+        "tags_D689jb"
       ],
       "settings": {
         "heading_line_1": "How AKKA has helped",
-        "heading_line_2": "people like you",
-        "benefits": "Reduce brain fog, Happy, Energy, Clear Skin, Flat belly, Reduce weight gain, Vibrant, Reduce bloating, Fresh, Focus, Improve immune system"
+        "heading_line_2": "people like you"
       }
     }
   },
