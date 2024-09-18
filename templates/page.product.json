@@ -149,7 +149,13 @@
             "name": "Michael G.",
             "customer_status": "Verified Customer",
             "testimonial": "\"I was struggling with chronic fatigue and auto-immune problems. I was constantly breaking out in rashes and itching all over my body. Akka gave me a 'clean body' feeling in just a few weeks and I couldn't be happier. Amazing focus and concentration. I feel 20 years younger.\"",
-            "customer_image": "shopify:\/\/shop_images\/michealg-photo_8214cb88-ac4f-496d-98ec-d7eef80f5f7a.png"
+            "customer_image": "shopify:\/\/shop_images\/michealg-photo_8214cb88-ac4f-496d-98ec-d7eef80f5f7a.png",
+            "row2": false,
+            "row2_star_image": "shopify:\/\/shop_images\/star.png",
+            "row2_name": "Elizabeth M.",
+            "row2_customer_status": "Verified Customer",
+            "row2_testimonial": "\"The effect was immediate, and dramatic. My energy levels improved, and the bloating disappeared. My previous issues with fatigue and discomfort after meals became a thing of the past.\"",
+            "row2_customer_image": "shopify:\/\/shop_images\/elizabethm-photo.png"
           }
         },
         "testimonial_rpDFyB": {
@@ -159,7 +165,11 @@
             "name": "Elizabeth M.",
             "customer_status": "Verified Customer",
             "testimonial": "\"The effect was immediate, and dramatic. My energy levels improved, and the bloating disappeared. My previous issues with fatigue and discomfort after meals became a thing of the past.\"",
-            "customer_image": "shopify:\/\/shop_images\/elizabethm-photo.png"
+            "customer_image": "shopify:\/\/shop_images\/elizabethm-photo.png",
+            "row2": true,
+            "row2_name": "",
+            "row2_customer_status": "Verified Customer",
+            "row2_testimonial": ""
           }
         },
         "tags_mjdx7C": {
