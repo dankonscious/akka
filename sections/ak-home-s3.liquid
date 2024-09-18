@@ -36,7 +36,7 @@
                 <div  id="sc{{ forloop.index }}" class="sc {{ step.settings.active | default: '' }} flex justify-center items-center rounded-full bg-blend-multiply text-[50px] font-extralight tracking-tight text-center whitespace-nowrap w-[100px] h-[100px] max-[1200px]:max-w-[70px] max-[1200px]:w-full max-[1200px]:h-[70px] bg-[#EDEEF5]">
                   <span class="px-3 py-0.5 max-[1200px]:text-[50px]">{{ step.settings.step_number }}</span>
                 </div>
-                <div class="w-[566px] max-[1200px]:max-w-full">
+                <div class="flex-1">
                   <p class="self-stretch my-auto text-2xl tracking-wide">
                     {{ step.settings.step_description }}
                   </p>
