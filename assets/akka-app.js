@@ -65,13 +65,6 @@ class ParallaxEffect {
 }
 
 function adjustSticky(e) {
-  let t = document.querySelector(e),
-      i = t.getBoundingClientRect(),
-      a = i.bottom - i.height;
-  t.style.top = `${-Math.abs(a)}px`
-}
-
-function adjustSticky(e) {
   let t = document.querySelectorAll(e);
   t.forEach(e => {
       let g = e.element.parentNode;
