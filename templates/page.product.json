@@ -150,7 +150,7 @@
             "customer_status": "Verified Customer",
             "testimonial": "\"I was struggling with chronic fatigue and auto-immune problems. I was constantly breaking out in rashes and itching all over my body. Akka gave me a 'clean body' feeling in just a few weeks and I couldn't be happier. Amazing focus and concentration. I feel 20 years younger.\"",
             "customer_image": "shopify:\/\/shop_images\/michealg-photo_8214cb88-ac4f-496d-98ec-d7eef80f5f7a.png",
-            "row2": false,
+            "row2": true,
             "row2_star_image": "shopify:\/\/shop_images\/star.png",
             "row2_name": "Elizabeth M.",
             "row2_customer_status": "Verified Customer",
