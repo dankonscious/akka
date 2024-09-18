@@ -1,4 +1,21 @@
 <!-- testimonials-slider.liquid -->
+ <style>
+    .swiper-wrapper{
+        transition-timing-function : linear;
+    }
+    .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after , .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+        content:unset;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        width: 50%;
+    }
+    .swiper-button-next {
+        right: -20px;
+    }
+    .swiper-button-prev {
+        left: -20px;
+    }
+ </style>
 <section id="section-3">
   <section class="flex relative flex-col items-center px-20 min-h-[1080px] max-[1200px]:px-5">
     <div class="flex relative flex-col py-16 w-full max-w-[var(--page-width)] max-[1200px]:max-w-full max-[1200px]:py-8">
