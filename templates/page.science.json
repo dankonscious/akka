@@ -1,0 +1,173 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "layout": "akka.theme",
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "ak_science_s1_qqTwAi": {
+      "type": "ak-science-s1",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/hero-backgroiund_4c0bf0d1-5d3f-4acd-b6c3-0bf5834a9b98.png",
+        "circle_image": "shopify:\/\/shop_images\/hero-circle_025c068e-9561-47ea-b7af-0900c216f0ce.png",
+        "circle_image_mobile": "shopify:\/\/shop_images\/hero-circle_025c068e-9561-47ea-b7af-0900c216f0ce.png",
+        "hero_text": "Our building blocks",
+        "sub_text": "to better health"
+      }
+    },
+    "ak_science_s2_VXNabU": {
+      "type": "ak-science-s2",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/sec1PHOTO1.png",
+        "image2": "shopify:\/\/shop_images\/sec1PHOTO2.png",
+        "image3": "shopify:\/\/shop_images\/sec1PHOTO3-small.png",
+        "image4": "shopify:\/\/shop_images\/sec1PHOTO3-long.png"
+      }
+    },
+    "ak_science_s3_eVcLTQ": {
+      "type": "ak-science-s3",
+      "blocks": {
+        "slide_PTRLmJ": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "The Liver Performs over 500 crucial functions"
+          }
+        },
+        "slide_4gkWJX": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "it plays a pivotal role in transforming food into energy"
+          }
+        },
+        "slide_jyhfpU": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "The Liver Performs over 500 crucial functions"
+          }
+        },
+        "slide_qANdMq": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "it plays a pivotal role in transforming food into energy"
+          }
+        },
+        "slide_Rb96ET": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "The Liver Performs over 500 crucial functions"
+          }
+        },
+        "slide_GAmdLN": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "it plays a pivotal role in transforming food into energy"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PTRLmJ",
+        "slide_4gkWJX",
+        "slide_jyhfpU",
+        "slide_qANdMq",
+        "slide_Rb96ET",
+        "slide_GAmdLN"
+      ],
+      "settings": {
+        "desktop_background_image": "shopify:\/\/shop_images\/sec2-bg.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/sec2-bg-mob.png"
+      }
+    },
+    "ak_science_s4_CzJzJJ": {
+      "type": "ak-science-s4",
+      "settings": {
+        "title": "How AKKA",
+        "subtitle": "can help",
+        "description": "AKKA was crafted with the world's most researched and clinically proven ingredients for liver health...",
+        "section_heading": "It works by:",
+        "main_image": "shopify:\/\/shop_images\/bottled-bg.png",
+        "mobile_image": "shopify:\/\/shop_images\/bottled-bg-mob.png",
+        "line_image1": "shopify:\/\/shop_images\/horizonline1.png",
+        "vertical_line1": "shopify:\/\/shop_images\/verticleline1.png",
+        "label1_title": "Aid",
+        "label1_text": "Aiding in the regeneration of liver cells and the repair of scar tissue...",
+        "line_image2": "shopify:\/\/shop_images\/horizonline2.png",
+        "vertical_line2": "shopify:\/\/shop_images\/verticleline1_45880b15-409c-4925-92fe-1ec52b5d8a15.png",
+        "label2_title": "Clean",
+        "label2_text": "Cleansing your liver of toxins and excess fat that might be clogging your bile ducts...",
+        "line_image3": "shopify:\/\/shop_images\/horizonline3.png",
+        "vertical_line3": "shopify:\/\/shop_images\/verticleline1_45880b15-409c-4925-92fe-1ec52b5d8a15.png",
+        "label3_title": "Support",
+        "label3_text": "Supporting the restoration of your liver's natural ability...",
+        "final_heading": "It helps to:",
+        "icon_image1": "shopify:\/\/shop_images\/iconline1.png",
+        "final_text1": "Increase energy and metabolism, relieving symptoms of lethargy, fatigue and brain fog",
+        "icon_image2": "shopify:\/\/shop_images\/iconline2.png",
+        "final_text2": "Reduce bloating, indigestion, and inability to lose weight",
+        "icon_image3": "shopify:\/\/shop_images\/iconline3.png",
+        "final_text3": "Regulate mood and immunity, improving overall well-being and vitality"
+      }
+    },
+    "ak_science_s5_hHVfjj": {
+      "type": "ak-science-s5",
+      "blocks": {
+        "article_fGX6gh": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sec4-img1.png",
+            "image_alt": "Image description",
+            "heading": "Sugar",
+            "description": "Overloading the liver with sugar forces it to produce excess fat, uric acid, and free radicals, which can lead to diabetes and fatty liver disease."
+          }
+        },
+        "article_eNiLHF": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sec4-img2.png",
+            "image_alt": "Image description",
+            "heading": "Alcohol",
+            "description": "Alcohol metabolism creates harmful chemicals like acetaldehyde, closely related to formaldehyde, which can significantly damage liver cells and lead to conditions like fatty liver."
+          }
+        },
+        "article_GpKicq": {
+          "type": "article",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sec4-img3.png",
+            "image_alt": "Image description",
+            "heading": "Trans fats and fried foods",
+            "description": "These not only lead to the destruction of liver cells but also cause fat to accumulate in the bloodstream, which can block arteries and deposit fat around the body, further straining the liver."
+          }
+        }
+      },
+      "block_order": [
+        "article_fGX6gh",
+        "article_eNiLHF",
+        "article_GpKicq"
+      ],
+      "settings": {
+        "title": "How your lifestyle <br>                   choices",
+        "description": "Everyday choices about what you consume have direct impacts on your liver's health, and may be at the root of your sluggish liver. Here’s how your daily consumption can be affecting the liver."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ak_science_s1_qqTwAi",
+    "ak_science_s2_VXNabU",
+    "ak_science_s3_eVcLTQ",
+    "ak_science_s4_CzJzJJ",
+    "ak_science_s5_hHVfjj"
+  ]
+}

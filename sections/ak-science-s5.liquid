@@ -1,0 +1,88 @@
+<!-- sections/lifestyle-choices.liquid -->
+<section id="section4" class="font-['syne']">
+  <div class="max-w-[var(--page-width)] w-full mx-auto py-[128px] text-[#2E3666] max-md:py-8 max-md:px-4">
+    <div class="max-w-[1062px] w-full mr-auto">
+      <h3 class="text-[70px] leading-[104%] max-md:text-[40px]">{{ section.settings.title }}
+        <span class="font-['Blisstwin'] leading-[79%]">{{ section.settings.title2 }}</span>
+      </h3>      
+      <p class="text-[24px] leading-[36px] tracking-[0.48px] mt-[35px] max-md:mt-[32px] max-md:text-[20px]">{{ section.settings.description }}</p>
+    </div>
+    <section class="flex flex-wrap items-stretch mt-[64px] max-md:border max-md:border-solid max-md:border-[#2E3666]">
+      {% for block in section.blocks %}
+        <article class="flex flex-col px-3 pt-4 pb-8 border border-solid border-[#2E3666] min-w-[240px] w-[443px] max-md:max-w-full max-md:border-none max-md:pb-4">
+          <img loading="lazy" src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt }}" class="object-contain max-w-full aspect-square w-[420px]" />
+          <h2 class="flex items-start mt-4 w-full text-[24px] tracking-[0.48px] leading-[40px] uppercase whitespace-nowrap max-md:max-w-full">
+            {{ block.settings.heading }}
+            <span class="flex flex-1 shrink h-10 basis-0 min-w-[240px] w-[301px]"></span>
+          </h2>
+          <p class="gap-2.5 self-stretch mt-4 max-w-full text-[22px] max-md:text-[20px] tracking-[0.44px] leading-[140%] w-[421px] max-md:max-w-full">
+            {{ block.settings.description }}
+          </p>
+        </article>
+      {% endfor %}
+    </section>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ak - Science S5",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "How your lifestyle <br> choices"
+    },
+    {
+      "type": "text",
+      "id": "title2",
+      "label": "Section Title",
+      "default": "can help"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section Description",
+      "default": "Everyday choices about what you consume have direct impacts on your liver's health, and may be at the root of your sluggish liver. Here’s how your daily consumption can be affecting the liver."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "article",
+      "name": "Article",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "image_alt",
+          "label": "Image Alt Text",
+          "default": "Image description"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Sugar"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Overloading the liver with sugar forces it to produce excess fat, uric acid, and free radicals, which can lead to diabetes and fatty liver disease."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ak - Science S5",
+      "category": "AKKA SCIENCE"
+    }
+  ]
+}
+{% endschema %}

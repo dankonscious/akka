@@ -1,0 +1,256 @@
+<!-- sections/akka-help-section.liquid -->
+<section id="section3" class="text-[#2E3666] bg-[#C9CFE1] font-['syne']">
+  <div class="max-w-[var(--page-width)] w-full mx-auto pt-[128px] pb-[144px] max-md:pt-[64px] max-md:pb-0">
+    <!-- TITLE DIV -->
+    <div class="flex justify-between items-start max-md:flex-col max-md:px-4">
+      <div class="max-w-[325px] w-full">
+        <h3 class="text-[70px] leading-[79%] max-md:text-[40px] max-md:mb-8">
+          {{ section.settings.title }}
+          <span class="font-['Blisstwin'] mt-[12px] block">{{ section.settings.subtitle }}</span>
+        </h3>
+      </div>
+      <div class="max-w-[658px] w-full">
+        <p class="text-[24px] leading-[140%] tracking-[0.48px] max-md:text-[20px]">{{ section.settings.description }}</p>
+      </div>
+    </div>
+    <div class="w-full py-[16px] border-b-[4px] border-solid border-[#3E488B] mt-[64px] max-md:hidden">
+      <h3 class="text-[40px] tracking-[-0.8px] uppercase">{{ section.settings.section_heading }}</h3>
+    </div>
+    <!-- CONTENT DIV -->
+    <div class="block relative h-[689px] w-full max-md:hidden">
+      <!-- MIDDLE IMAGE DIV -->
+      <div class="absolute left-[50%] translate-x-[-50%] max-w-[430px] w-full top-[-25px]">
+        <img src="{{ section.settings.main_image | img_url: 'master' }}" alt="">
+      </div>
+      <!-- LABEL1 DIV -->
+      <div class="max-w-[363px] w-full absolute top-[193px] left-0">
+        <div class="max-w-[284px] w-full h-[92px] overflow-hidden ml-[200px]">
+          <img class="" src="{{ section.settings.line_image1 | img_url: 'master' }}" alt="">
+          <img class="w-[2px]" src="{{ section.settings.vertical_line1 | img_url: 'master' }}" alt="">
+        </div>
+        <div class="">
+          <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label1_title }}</h4>
+          <p class="mt-[31px] text-[22px] leading-[normal]">{{ section.settings.label1_text }}</p>
+        </div>
+      </div>
+      <!-- LABEL2 DIV -->
+      <div class="max-w-[363px] w-full absolute top-[59px] right-0">
+        <div class="relative">
+          <div class="">
+            <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label2_title }}</h4>
+            <p class="mt-[8px] text-[22px] leading-[normal]">{{ section.settings.label2_text }}</p>
+          </div>
+          <div class="max-w-[354px] w-full overflow-hidden absolute top-[123px] right-[160px]">
+            <img class="w-[2px] ml-auto" src="{{ section.settings.vertical_line2 | img_url: 'master' }}" alt="">
+            <img class="" src="{{ section.settings.line_image2 | img_url: 'master' }}" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- LABEL3 DIV -->
+      <div class="max-w-[363px] w-full absolute bottom-[16px] right-[11px]">
+        <div class="relative bg-[#C9CFE1]">
+          <div class="max-w-[300px] w-full overflow-hidden absolute top-[-64px] right-[160px]">
+            <img class="" src="{{ section.settings.line_image3 | img_url: 'master' }}" alt="">
+            <img class="w-[2px] ml-auto mb-[-40px]" src="{{ section.settings.vertical_line3 | img_url: 'master' }}" alt="">
+          </div>
+          <div class="relative z-10">
+            <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label3_title }}</h4>
+            <p class="mt-[8px] text-[22px] leading-[normal]">{{ section.settings.label3_text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTENT DIV MOBILE -->
+    <div class="hidden max-md:block px-4">
+      <div class="max-w-[430px] w-full">
+        <img class="mt-[-100px]" src="{{ section.settings.mobile_image | img_url: 'master' }}" alt="">
+      </div>
+      <div class="w-full mb-8">
+        <h3 class="text-[30px] tracking-[-0.8px] uppercase border-b-[4px] border-solid border-[#3E488B] py-[16px]">{{ section.settings.section_heading }}</h3>
+      </div>
+      <div class="">
+        <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label1_title }}</h4>
+        <p class="mt-4 text-[22px] leading-[normal]">{{ section.settings.label1_text }}</p>
+      </div>
+      <div class="mt-8">
+        <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label2_title }}</h4>
+        <p class="mt-4 text-[22px] leading-[normal]">{{ section.settings.label2_text }}</p>
+      </div>
+      <div class="mt-8">
+        <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label3_title }}</h4>
+        <p class="mt-4 text-[22px] leading-[normal]">{{ section.settings.label3_text }}</p>
+      </div>
+    </div>
+    <!-- BOTTOM DIV -->
+    <div class="w-full mb-8 relative z-10 max-md:px-4">
+      <h3 class="text-[40px] tracking-[-0.8px] uppercase border-b-[4px] border-solid border-[#3E488B] py-[16px] max-md:text-[30px]">{{ section.settings.final_heading }}</h3>
+    </div>
+    <div class="flex justify-between items-start mt-[28px] max-md:flex-col max-md:px-4 max-md:gap-2 max-md:pb-[49px]">
+      <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full">
+        <img src="{{ section.settings.icon_image1 | img_url: 'master' }}" alt="">
+        <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px]">{{ section.settings.final_text1 }}</p>
+      </div>
+      <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full h-[265px]">
+        <img src="{{ section.settings.icon_image2 | img_url: 'master' }}" alt="">
+        <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px]">{{ section.settings.final_text2 }}</p>
+      </div>
+      <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full">
+        <img src="{{ section.settings.icon_image3 | img_url: 'master' }}" alt="">
+        <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px]">{{ section.settings.final_text3 }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ak - Science S4",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "How AKKA"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "can help"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "AKKA was crafted with the world's most researched and clinically proven ingredients for liver health..."
+    },
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "It works by:"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Main Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "line_image1",
+      "label": "Line Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "vertical_line1",
+      "label": "Vertical Line 1"
+    },
+    {
+      "type": "text",
+      "id": "label1_title",
+      "label": "Label 1 Title",
+      "default": "Aid"
+    },
+    {
+      "type": "textarea",
+      "id": "label1_text",
+      "label": "Label 1 Text",
+      "default": "Aiding in the regeneration of liver cells and the repair of scar tissue..."
+    },
+    {
+      "type": "image_picker",
+      "id": "line_image2",
+      "label": "Line Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "vertical_line2",
+      "label": "Vertical Line 2"
+    },
+    {
+      "type": "text",
+      "id": "label2_title",
+      "label": "Label 2 Title",
+      "default": "Clean"
+    },
+    {
+      "type": "textarea",
+      "id": "label2_text",
+      "label": "Label 2 Text",
+      "default": "Cleansing your liver of toxins and excess fat that might be clogging your bile ducts..."
+    },
+    {
+      "type": "image_picker",
+      "id": "line_image3",
+      "label": "Line Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "vertical_line3",
+      "label": "Vertical Line 3"
+    },
+    {
+      "type": "text",
+      "id": "label3_title",
+      "label": "Label 3 Title",
+      "default": "Support"
+    },
+    {
+      "type": "textarea",
+      "id": "label3_text",
+      "label": "Label 3 Text",
+      "default": "Supporting the restoration of your liver's natural ability..."
+    },
+    {
+      "type": "text",
+      "id": "final_heading",
+      "label": "Final Heading",
+      "default": "It helps to:"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_image1",
+      "label": "Icon Image 1"
+    },
+    {
+      "type": "textarea",
+      "id": "final_text1",
+      "label": "Final Text 1",
+      "default": "Increase energy and metabolism..."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_image2",
+      "label": "Icon Image 2"
+    },
+    {
+      "type": "textarea",
+      "id": "final_text2",
+      "label": "Final Text 2",
+      "default": "Reduce bloating, indigestion..."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_image3",
+      "label": "Icon Image 3"
+    },
+    {
+      "type": "textarea",
+      "id": "final_text3",
+      "label": "Final Text 3",
+      "default": "Regulate mood and immunity..."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ak - Science S4",
+      "category": "AKKA SCIENCE"
+    }
+  ]
+}
+{% endschema %}

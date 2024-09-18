@@ -1,0 +1,63 @@
+
+    
+<section id="section5" class="max-md:bg-[#E9B9A3] font-['syne']">
+    <div class=" bg-cover bg-center bg-no-repeat max-md:bg-none" style="background-image:url({{ section.settings.desktop_background_image | img_url: 'master' }});">
+        <div class="max-w-[var(--page-width)] w-full mx-auto">
+            <div class="max-w-[562px] w-full mr-auto py-[280px] max-md:py-0 max-md:pt-8 max-md:px-4">
+                <p class="text-[#2E3666] text-[24px] leading-[160%] mb-[64px] max-md:text-[20px] max-md:mb-4">{{ section.settings.text_content }}</p>
+                <a href="{{ section.settings.link_url }}" class="text-[#2E3666] text-[36px] leading-[normal] underline uppercase flex items-center gap-[16px] max-md:text-[24px]">
+                    {{ section.settings.link_text }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="35" viewBox="0 0 17 35" fill="none">
+                    <path d="M16.0283 23.904C16.0283 24.1817 15.9179 24.448 15.7216 24.6444C15.5252 24.8408 15.2588 24.9511 14.9811 24.9511C14.7034 24.9511 14.4371 24.8408 14.2407 24.6444C14.0443 24.448 13.934 24.1817 13.934 23.904V13.076L1.761 25.249C1.56249 25.4339 1.29995 25.5346 1.02867 25.5298C0.757386 25.5251 0.498554 25.4152 0.3067 25.2233C0.114846 25.0314 0.00494956 24.7726 0.000163137 24.5013C-0.00462328 24.2301 0.0960757 23.9675 0.281042 23.769L12.4523 11.5943H1.62429C1.34657 11.5943 1.08022 11.484 0.883848 11.2876C0.687471 11.0912 0.577148 10.8249 0.577148 10.5471C0.577148 10.2694 0.687471 10.0031 0.883848 9.8067C1.08022 9.61032 1.34657 9.5 1.62429 9.5H14.9811C15.2588 9.5 15.5252 9.61032 15.7216 9.8067C15.9179 10.0031 16.0283 10.2694 16.0283 10.5471V23.904Z" fill="#2E3666"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hidden max-md:block mix-blend-normal">
+                <img class="mix-blend-normal" src="{{ section.settings.mobile_background_image | img_url: 'master' }}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name": "Ak - Science S6",
+        "settings": [
+        {
+            "type": "textarea",
+            "id": "text_content",
+            "label": "Text Content",
+            "default": "Limiting sugar, alcohol, trans fats and fried food are great steps towards improving your liver health. We created AKKA to accelerate the process."
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link URL",
+            "default": "product.html"
+        },
+        {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link Text",
+            "default": "shop akka"
+        },
+        {
+            "type": "image_picker",
+            "id": "desktop_background_image",
+            "label": "Desktop Background Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "mobile_background_image",
+            "label": "Mobile Background Image"
+        }
+        ],
+        "presets": [
+        {
+            "name": "Ak - Science S6",
+            "category": "AKKA SCIENCE"
+        }
+        ]
+    }
+{% endschema %}
+    
