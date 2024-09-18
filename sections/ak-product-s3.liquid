@@ -38,6 +38,7 @@
                   <div class="swiper-slide">
                     <div class="flex gap-10 items-center max-[1200px]:max-w-full">
                       <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-[1200px]:max-w-full">
+
                         <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full border-t border-[#2E3666] max-[1200px]:max-w-full">
                           <div class="flex flex-col grow shrink items-start pr-16 w-44">
                             <img loading="lazy" src="{{ testimonial.settings.star_image | img_url: '150x' }}" class="object-contain max-w-full aspect-[5]" alt="5 star rating" />
@@ -53,6 +54,23 @@
                             <img loading="lazy" src="{{ testimonial.settings.customer_image | img_url: '150x' }}" class="object-contain w-full aspect-square" alt="{{ testimonial.settings.name }}" />
                           </div>
                         </article>
+                        {% if section.settings.row2 %}
+                            <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full border-t border-[#2E3666] max-[1200px]:max-w-full">
+                                <div class="flex flex-col grow shrink items-start pr-16 w-44">
+                                  <img loading="lazy" src="{{ testimonial.settings.row2_star_image | img_url: '150x' }}" class="object-contain max-w-full aspect-[5]" alt="5 star rating" />
+                                  <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">{{ testimonial.settings.row2_name }}</h3>
+                                  <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
+                                    <span class="self-stretch my-auto">{{ testimonial.settings.row2_customer_status }}</span>
+                                  </div>
+                                </div>
+                                <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                                  "{{ testimonial.settings.row2_testimonial }}"
+                                </blockquote>
+                                <div class="flex flex-col grow shrink w-44">
+                                  <img loading="lazy" src="{{ testimonial.settings.row2_customer_image | img_url: '150x' }}" class="object-contain w-full aspect-square" alt="{{ testimonial.settings.row2_name }}" />
+                                </div>
+                              </article>   
+                        {% endif %}
                       </div>
                     </div>
                   </div>
@@ -126,6 +144,42 @@
         {
           "type": "image_picker",
           "id": "customer_image",
+          "label": "Customer Image"
+        },
+        {
+            "type":"header",
+            "content":"For 2nd Row"
+        },
+        {
+            "type": "checkbox",
+            "id": "row2",
+            "label": "Check for 2nd row",
+            "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "row2_star_image",
+          "label": "Star Rating Image"
+        },
+        {
+          "type": "text",
+          "id": "row2_name",
+          "label": "Customer Name"
+        },
+        {
+          "type": "text",
+          "id": "row2_customer_status",
+          "label": "Customer Status",
+          "default": "Verified Customer"
+        },
+        {
+          "type": "textarea",
+          "id": "row2_testimonial",
+          "label": "Testimonial Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "row2_customer_image",
           "label": "Customer Image"
         }
       ]
