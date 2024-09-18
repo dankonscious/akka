@@ -208,7 +208,6 @@
     },
     "ak_home_s4_qUh4AQ": {
       "type": "ak-home-s4",
-      "disabled": true,
       "settings": {
         "background_image": "shopify:\/\/shop_images\/frame4bg.png",
         "heading_1": "Rigorously researched,",
