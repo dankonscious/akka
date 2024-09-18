@@ -221,7 +221,6 @@
     },
     "ak_home_s5_HxwyYM": {
       "type": "ak-home-s5",
-      "disabled": true,
       "settings": {
         "heading": "As seen On",
         "image_1": "shopify:\/\/shop_images\/Allure.png",
@@ -236,7 +235,6 @@
     },
     "ak_home_s6_yntid4": {
       "type": "ak-home-s6",
-      "disabled": true,
       "settings": {
         "heading": "The building blocks",
         "subheading": "Our clinically — researched ingredients",
@@ -303,7 +301,6 @@
         "block_AXtBg3",
         "block_Txh8qb"
       ],
-      "disabled": true,
       "settings": {
         "title": "For total",
         "subtitle": "Liver Rejuvenation",
