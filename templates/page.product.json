@@ -12,13 +12,103 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "ak_product_s1_PA7zTp": {
+      "type": "ak-product-s1",
+      "blocks": {
+        "block_gQJiXJ": {
+          "type": "block",
+          "settings": {
+            "prod_image": "shopify:\/\/shop_images\/product-image1_fe40f4be-c428-4fcd-aff8-02cacd81eacb.png"
+          }
+        },
+        "block_jNeL8P": {
+          "type": "block",
+          "settings": {
+            "prod_image": "shopify:\/\/shop_images\/product-image2_eae87d9f-5a15-401c-9b9b-9fbc36d9afca.png"
+          }
+        },
+        "block_iVjGpx": {
+          "type": "block",
+          "settings": {
+            "prod_image": "shopify:\/\/shop_images\/product-image3_5ab85c33-8eb8-4309-af6b-c7abc78527f3.png"
+          }
+        },
+        "block_pjkF9C": {
+          "type": "block",
+          "settings": {
+            "prod_image": "shopify:\/\/shop_images\/product-image4_500cb7f5-ad27-490e-94d4-b4e5f2d833f1.png"
+          }
+        },
+        "block_RNYbTK": {
+          "type": "block",
+          "settings": {
+            "prod_image": "shopify:\/\/shop_images\/product-image5_0fbaaeab-6162-428b-9079-ea0bc337d0b7.png"
+          }
+        },
+        "block2_PqFRkD": {
+          "type": "block2",
+          "settings": {
+            "benefit_content": "<p>Cleanses your liver of toxins and excess fat<\/p>"
+          }
+        },
+        "block2_hhkPXA": {
+          "type": "block2",
+          "settings": {
+            "benefit_content": "<p>Aids in the regeneration of liver cells<\/p>"
+          }
+        },
+        "block2_wLwHm3": {
+          "type": "block2",
+          "settings": {
+            "benefit_content": "<p>Enhances bile flow production<\/p>"
+          }
+        },
+        "block2_yR9dJf": {
+          "type": "block2",
+          "settings": {
+            "benefit_content": "<p>Supports liver's ability to filter and detoxify<br\/>your blood<\/p>"
+          }
+        },
+        "block3_Qz9VY6": {
+          "type": "block3",
+          "settings": {
+            "prod_title": "Starter",
+            "prod_content1": "One-time purchase",
+            "prod_content2": "1 bottles upfront",
+            "prod_price": "$69",
+            "prod_before_price": "$99",
+            "save": "Save $30",
+            "per_bottle": "$69"
+          }
+        }
+      },
+      "block_order": [
+        "block_gQJiXJ",
+        "block_jNeL8P",
+        "block_iVjGpx",
+        "block_pjkF9C",
+        "block_RNYbTK",
+        "block2_PqFRkD",
+        "block2_hhkPXA",
+        "block2_wLwHm3",
+        "block2_yR9dJf",
+        "block3_Qz9VY6"
+      ],
+      "settings": {
+        "title": "Akka for total",
+        "title2": "liver rejuvenation",
+        "content": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "ak_product_s1_PA7zTp"
   ]
 }
