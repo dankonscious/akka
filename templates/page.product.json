@@ -320,6 +320,18 @@
       ],
       "settings": {
       }
+    },
+    "ak_product_s6_QdmkfN": {
+      "type": "ak-product-s6",
+      "settings": {
+        "link": "\/pages\/product",
+        "button_text": "shop akka",
+        "upper_image": "shopify:\/\/shop_images\/sec5-upperimg.png",
+        "mid_image_desktop": "shopify:\/\/shop_images\/sec5-img1.png",
+        "mid_image_mobile": "shopify:\/\/shop_images\/sec5-img1-mob.png",
+        "vector_image": "shopify:\/\/shop_images\/sec5-Vector.png",
+        "lower_image": "shopify:\/\/shop_images\/sec5-lowerimg.png"
+      }
     }
   },
   "order": [
@@ -328,6 +340,7 @@
     "ak_product_s2_9fXVkb",
     "ak_product_s3_pMKCgd",
     "ak_product_s4_XhhzUW",
-    "ak_product_s5_FL6pGF"
+    "ak_product_s5_FL6pGF",
+    "ak_product_s6_QdmkfN"
   ]
 }
