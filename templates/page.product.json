@@ -131,10 +131,27 @@
         "title2": "liver rejuvenation",
         "content": ""
       }
+    },
+    "ak_product_s2_9fXVkb": {
+      "type": "ak-product-s2",
+      "settings": {
+        "desktop_img": "shopify:\/\/shop_images\/product-List.png",
+        "mob_img": "shopify:\/\/shop_images\/product-List-mob.png"
+      }
+    },
+    "ak_product_s3_pMKCgd": {
+      "type": "ak-product-s3",
+      "settings": {
+        "heading_line_1": "How AKKA has helped",
+        "heading_line_2": "people like you",
+        "benefits": "Reduce brain fog, Happy, Energy, Clear Skin, Flat belly, Reduce weight gain, Vibrant, Reduce bloating, Fresh, Focus, Improve immune system"
+      }
     }
   },
   "order": [
     "main",
-    "ak_product_s1_PA7zTp"
+    "ak_product_s1_PA7zTp",
+    "ak_product_s2_9fXVkb",
+    "ak_product_s3_pMKCgd"
   ]
 }
