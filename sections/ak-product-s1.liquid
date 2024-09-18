@@ -1,3 +1,6 @@
+<style>
+
+</style>
 <section id="hero" class="relative flex overflow-hidden flex-wrap gap-10 justify-center items-start pt-20 pb-32 bg-[#E2E3EA] font-['syne'] max-[1200px]:py-0 max-[1200px]:gap-0">
     
     <div class="prod-image absolute top-0 left-0 w-full z-[-1] max-[1200px]:static max-[1200px]:overflow-hidden max-[1200px]:h-[493px] max-[1200px]:w-[414px] max-[1200px]:mx-auto">
@@ -40,9 +43,9 @@
             <span class="self-stretch my-auto tracking-tight">(922 ratings)</span>
         </div>
         </header>
-        <p class="mt-8 text-lg tracking-wide leading-6">
+        <div class="mt-8 text-lg tracking-wide leading-6 ">
             {{ section.settings.content }}
-        </p>
+        </div>
         <section class="flex flex-col mt-8 w-full text-lg tracking-wide max-w-[399px]">
         <h2 class="flex gap-2.5 items-start py-4 w-full text-xl font-semibold tracking-wide whitespace-nowrap max-[1200px]:text-[18px]">
             BENEFITS:
@@ -117,6 +120,34 @@
     </div>
   
 </section>
+
+<script>
+
+  $(document).ready(function() {
+    let currentImageIndex = 0;
+    const images = $('.prod');
+    const totalImages = images.length;
+
+    function showImage(index) {
+      images.removeClass('active').fadeOut(500);
+      images.eq(index).addClass('active').fadeIn(500);
+    }
+
+    $('.prod-next').click(function() {
+      currentImageIndex = (currentImageIndex + 1) % totalImages;
+      showImage(currentImageIndex);
+    });
+
+    $('.prod-prev').click(function() {
+      currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+      showImage(currentImageIndex);
+    });
+
+    // Initial setup
+    images.hide().eq(currentImageIndex).show();
+  });
+
+</script>
 
 {% schema %}
     {
@@ -226,30 +257,3 @@
     }
 {% endschema %}
 
-<script>
-
-  $(document).ready(function() {
-    let currentImageIndex = 0;
-    const images = $('.prod');
-    const totalImages = images.length;
-
-    function showImage(index) {
-      images.removeClass('active').fadeOut(500);
-      images.eq(index).addClass('active').fadeIn(500);
-    }
-
-    $('.prod-next').click(function() {
-      currentImageIndex = (currentImageIndex + 1) % totalImages;
-      showImage(currentImageIndex);
-    });
-
-    $('.prod-prev').click(function() {
-      currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
-      showImage(currentImageIndex);
-    });
-
-    // Initial setup
-    images.hide().eq(currentImageIndex).show();
-  });
-
-</script>

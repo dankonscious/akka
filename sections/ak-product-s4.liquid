@@ -1,0 +1,115 @@
+<!-- sections/section-4.liquid -->
+<section id="section-4" class="">
+  <div class="max-w-[var(--page-width)] w-full mx-auto text-white flex justify-center items-center max-[1200px]:flex-col font-['syne']">
+    <div class="relative w-1/2 max-[1200px]:w-full">
+      <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="">
+      <div class="max-w-[410px] w-full absolute left-[32px] bottom-[91px] max-[1200px]:max-w-[260px] max-[1200px]:bottom-[36px] max-[1200px]:left-[16px]">
+        <h3 class="text-[70px] leading-[normal] tracking-[-1.4px] max-[1200px]:text-[40px]">{{ section.settings.heading_1 }} <span class="font-['Blisstwin'] block">{{ section.settings.heading_1_span }}</span></h3>
+        <p class="my-[32px] text-[22px] leading-[normal] tracking-[0.44px] max-[1200px]:text-[20px] max-[1200px]:my-[18px]">{{ section.settings.description_1 }}</p>
+        <a href="{{ section.settings.link_1 }}" class="text-[24px] leading-[140%] tracking-[0.48px] underline uppercase flex items-center gap-[16px]">
+          {{ section.settings.link_text_1 }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="34" viewBox="0 0 17 34" fill="none">
+            <path d="M16.0283 23.404C16.0283 23.6817 15.9179 23.948 15.7216 24.1444C15.5252 24.3408 15.2588 24.4511 14.9811 24.4511C14.7034 24.4511 14.4371 24.3408 14.2407 24.1444C14.0443 23.948 13.934 23.6817 13.934 23.404V12.576L1.761 24.749C1.56249 24.9339 1.29995 25.0346 1.02867 25.0298C0.757386 25.0251 0.498554 24.9152 0.3067 24.7233C0.114846 24.5314 0.00494956 24.2726 0.000163137 24.0013C-0.00462328 23.7301 0.0960757 23.4675 0.281042 23.269L12.4523 11.0943H1.62429C1.34657 11.0943 1.08022 10.984 0.883848 10.7876C0.687471 10.5912 0.577148 10.3249 0.577148 10.0471C0.577148 9.76942 0.687471 9.50308 0.883848 9.3067C1.08022 9.11032 1.34657 9 1.62429 9H14.9811C15.2588 9 15.5252 9.11032 15.7216 9.3067C15.9179 9.50308 16.0283 9.76942 16.0283 10.0471V23.404Z" fill="#EDEEF5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="relative w-1/2 max-[1200px]:w-full">
+      <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="">
+      <div class="max-w-[410px] w-full absolute left-[32px] bottom-[65px] max-[1200px]:max-w-[260px] max-[1200px]:bottom-[36px] max-[1200px]:left-[16px]">
+        <h3 class="text-[70px] leading-[normal] tracking-[-1.4px] max-[1200px]:text-[40px]">{{ section.settings.heading_2 }} <span class="font-['Blisstwin'] block">{{ section.settings.heading_2_span }}</span></h3>
+        <p class="my-[32px] text-[22px] leading-[normal] tracking-[0.44px] max-[1200px]:text-[20px] max-[1200px]:my-[18px]">{{ section.settings.description_2 }}</p>
+        <a href="{{ section.settings.link_2 }}" class="text-[24px] leading-[140%] tracking-[0.48px] underline uppercase flex items-center gap-[16px]">
+          {{ section.settings.link_text_2 }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="34" viewBox="0 0 17 34" fill="none">
+            <path d="M16.0283 23.404C16.0283 23.6817 15.9179 23.948 15.7216 24.1444C15.5252 24.3408 15.2588 24.4511 14.9811 24.4511C14.7034 24.4511 14.4371 24.3408 14.2407 24.1444C14.0443 23.948 13.934 23.6817 13.934 23.404V12.576L1.761 24.749C1.56249 24.9339 1.29995 25.0346 1.02867 25.0298C0.757386 25.0251 0.498554 24.9152 0.3067 24.7233C0.114846 24.5314 0.00494956 24.2726 0.000163137 24.0013C-0.00462328 23.7301 0.0960757 23.4675 0.281042 23.269L12.4523 11.0943H1.62429C1.34657 11.0943 1.08022 10.984 0.883848 10.7876C0.687471 10.5912 0.577148 10.3249 0.577148 10.0471C0.577148 9.76942 0.687471 9.50308 0.883848 9.3067C1.08022 9.11032 1.34657 9 1.62429 9H14.9811C15.2588 9 15.5252 9.11032 15.7216 9.3067C15.9179 9.50308 16.0283 9.76942 16.0283 10.0471V23.404Z" fill="#EDEEF5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ak - Product S4",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "First Image"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "label": "Heading 1",
+      "default": "Liver health is"
+    },
+    {
+      "type": "text",
+      "id": "heading_1_span",
+      "label": "Heading 1 Span",
+      "default": "system health"
+    },
+    {
+      "type": "textarea",
+      "id": "description_1",
+      "label": "Description 1",
+      "default": "Find out why liver health is key to overall well-being."
+    },
+    {
+      "type": "text",
+      "id": "link_1",
+      "label": "Link 1 URL",
+      "default": "/page/ourapproach"
+    },
+    {
+      "type": "text",
+      "id": "link_text_1",
+      "label": "Link 1 Text",
+      "default": "Our Approach"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Second Image"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "label": "Heading 2",
+      "default": "The roadmap"
+    },
+    {
+      "type": "text",
+      "id": "heading_2_span",
+      "label": "Heading 2 Span",
+      "default": "to results"
+    },
+    {
+      "type": "textarea",
+      "id": "description_2",
+      "label": "Description 2",
+      "default": "Read about how we’ve combined leading scientific research with innovative approaches to provide superior liver health support."
+    },
+    {
+      "type": "text",
+      "id": "link_2",
+      "label": "Link 2 URL",
+      "default": "/pages/science"
+    },
+    {
+      "type": "text",
+      "id": "link_text_2",
+      "label": "Link 2 Text",
+      "default": "The Science"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ak - Product S4",
+      "category":"AKKA PRODUCT"
+    }
+  ]
+}
+{% endschema %}

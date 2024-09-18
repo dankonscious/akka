@@ -1,0 +1,85 @@
+{% comment %}
+  FAQ Section for Shopify
+{% endcomment %}
+<style>
+    .faq-item.active .plus {
+        rotate: -90deg;
+    }
+</style>
+<section id="faq" class="">
+  <div class="max-w-[var(--page-width)] w-full mx-auto py-[64px] text-[#2E3666] font-['syne'] max-[1200px]:py-8 max-[1200px]:px-4">
+    <h3 class="text-[70px] leading-[normal] tracking-[-1.4px] max-[1200px]:text-[40px]">
+      Frequently Asked <span class="font-[Blisstwin]">Questions</span>
+    </h3>
+    <div class="mt-[64px]">
+      {% for faq in section.blocks %}
+        <div class="faq-item cursor-pointer flex flex-col pt-4 pb-5 border-t bg-blend-normal border-[#2E3666] max-[1200px]:pt-0 active">
+          <div class="flex gap-8 items-start max-[1200px]:max-w-full">
+            <div class="flex flex-wrap items-start min-w-[240px] w-full max-[1200px]:max-w-full">
+              <div class="faq-question flex items-center justify-between w-full max-[1200px]:flex-wrap">
+                <h2 class="max-w-[365px] w-full text-[100px] tracking-[-10px] leading-[40px] text-[#2E3666] opacity-10 max-[1200px]:text-[60px] max-[1200px]:tracking-[-6px] max-[1200px]:w-full">
+                  /{{ forloop.index | prepend: '0' | slice: -2 }}
+                </h2>
+                <h3 class="text-2xl font-medium leading-5 max-w-[877px] w-full max-[1200px]:text-[20px] max-[1200px]:max-w-[calc(100%_-_70px)]">
+                  {{ faq.settings.question }}
+                </h3>
+                <div class="flex flex-col justify-center items-end px-3.5 py-8 w-[70px]">
+                  <div class="flex flex-col bg-[#2E3666] w-[18px]">
+                    <div class="flex shrink-0 h-[4px] bg-[#2E3666] plus rotate-90 transition-all duration-[.5s]"></div>
+                  </div>
+                </div>
+              </div>
+              <article class="faq-answer flex flex-col min-w-[240px] text-[#2E3666] w-[849px] max-[1200px]:max-w-full ml-[372px] pb-[20px] max-[1200px]:ml-0 max-[1200px]:mt-3">
+                <p class="text-[18px] leading-[normal] tracking-[0.36px]">
+                  {{ faq.settings.answer }}
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+    $(document).ready(function() {
+        $('.faq-item').click(function() {
+            $(this).toggleClass('active');
+            $(this).find('.faq-answer').slideToggle();
+        });
+    });
+</script>
+
+{% schema %}
+{
+  "name": "Ak - Product S5",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Sample Question?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "Sample answer text goes here. This section can contain detailed information."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ak - Product S5",
+      "category": "AKKA PRODUCT"
+    }
+  ]
+}
+{% endschema %}

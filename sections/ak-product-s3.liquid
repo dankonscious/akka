@@ -65,7 +65,7 @@
                             </div>
                           </div>
                           <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
-                            "{{ testimonial.settings.testimonial }}"
+                            {{ testimonial.settings.testimonial }}
                           </blockquote>
                           <div class="flex flex-col grow shrink w-44">
                             <img loading="lazy" src="{{ testimonial.settings.customer_image | img_url: '150x' }}" class="object-contain w-full aspect-square" alt="{{ testimonial.settings.name }}" />
@@ -81,7 +81,7 @@
                                   </div>
                                 </div>
                                 <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
-                                  "{{ testimonial.settings.row2_testimonial }}"
+                                  {{ testimonial.settings.row2_testimonial }}
                                 </blockquote>
                                 <div class="flex flex-col grow shrink w-44">
                                   <img loading="lazy" src="{{ testimonial.settings.row2_customer_image | img_url: '150x' }}" class="object-contain w-full aspect-square" alt="{{ testimonial.settings.row2_name }}" />
@@ -99,21 +99,98 @@
 
         <!-- BOTTOM PART -->
         <div class="flex flex-wrap gap-2 items-start mt-16 max-w-full text-base tracking-tight leading-tight text-[#2E3666] w-[879px] max-[1200px]:mt-10">
-          {% for tags in section.blocks %}
-            {% if tags.type == 'tags' %}
-                <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
+            <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                     <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span class="self-stretch my-auto">{{ tags.settings.tag_name }}</span>
-                </div>
-            {% endif %}
-          {% endfor %}
+                <span class="self-stretch my-auto">Reduce brain frog</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 whitespace-nowrap border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Happy</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 whitespace-nowrap border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Energy</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Clear Skin</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Flat belly</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Reduce weight gain</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 whitespace-nowrap border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Vibrant</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Reduce bloating</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 whitespace-nowrap border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Fresh</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 whitespace-nowrap border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Focus</span>
+            </div>
+            <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="self-stretch my-auto">Improve immune system</span>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
   </section>
 </section>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,    
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
 
 {% schema %}
 {

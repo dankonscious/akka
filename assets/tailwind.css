@@ -764,6 +764,18 @@ video {
   bottom: 80px;
 }
 
+.bottom-\[65px\] {
+  bottom: 65px;
+}
+
+.bottom-\[91px\] {
+  bottom: 91px;
+}
+
+.left-\[32px\] {
+  left: 32px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -995,6 +1007,10 @@ video {
   margin-top: 0.375rem;
 }
 
+.ml-\[372px\] {
+  margin-left: 372px;
+}
+
 .block {
   display: block;
 }
@@ -1154,6 +1170,10 @@ video {
 
 .h-\[730px\] {
   height: 730px;
+}
+
+.h-\[4px\] {
+  height: 4px;
 }
 
 .min-h-0 {
@@ -1465,6 +1485,18 @@ video {
   width: 879px;
 }
 
+.w-\[18px\] {
+  width: 18px;
+}
+
+.w-\[70px\] {
+  width: 70px;
+}
+
+.w-\[849px\] {
+  width: 849px;
+}
+
 .min-w-\[1350px\] {
   min-width: 1350px;
 }
@@ -1625,6 +1657,18 @@ video {
   max-width: 412px;
 }
 
+.max-w-\[410px\] {
+  max-width: 410px;
+}
+
+.max-w-\[365px\] {
+  max-width: 365px;
+}
+
+.max-w-\[877px\] {
+  max-width: 877px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1679,6 +1723,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-150 {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
@@ -1687,6 +1736,10 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .list-none {
@@ -2161,6 +2214,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-\[64px\] {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2293,6 +2351,10 @@ video {
   padding-right: 4rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2319,6 +2381,10 @@ video {
 
 .font-\[\'Heebo\'\] {
   font-family: 'Heebo';
+}
+
+.font-\[Blisstwin\] {
+  font-family: Blisstwin;
 }
 
 .\!text-\[18px\] {
@@ -2642,6 +2708,14 @@ video {
   letter-spacing: -0.05em;
 }
 
+.tracking-\[-10px\] {
+  letter-spacing: -10px;
+}
+
+.tracking-\[0\.36px\] {
+  letter-spacing: 0.36px;
+}
+
 .text-\[\#2E3666\] {
   --tw-text-opacity: 1;
   color: rgb(46 54 102 / var(--tw-text-opacity));
@@ -2716,6 +2790,14 @@ video {
   opacity: 0;
 }
 
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.bg-blend-normal {
+  background-blend-mode: normal;
+}
+
 .bg-blend-multiply {
   background-blend-mode: multiply;
 }
@@ -2783,6 +2865,10 @@ video {
 
 .duration-1000 {
   transition-duration: 1000ms;
+}
+
+.duration-\[\.5s\] {
+  transition-duration: .5s;
 }
 
 .ease-linear {
@@ -3072,6 +3158,14 @@ html {
     top: 430px;
   }
 
+  .max-\[1200px\]\:bottom-\[36px\] {
+    bottom: 36px;
+  }
+
+  .max-\[1200px\]\:left-\[16px\] {
+    left: 16px;
+  }
+
   .max-\[1200px\]\:order-1 {
     order: 1;
   }
@@ -3087,6 +3181,11 @@ html {
   .max-\[1200px\]\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .max-\[1200px\]\:my-\[18px\] {
+    margin-top: 18px;
+    margin-bottom: 18px;
   }
 
   .max-\[1200px\]\:mb-2\.5 {
@@ -3111,6 +3210,10 @@ html {
 
   .max-\[1200px\]\:mt-\[-30px\] {
     margin-top: -30px;
+  }
+
+  .max-\[1200px\]\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .max-\[1200px\]\:block {
@@ -3177,6 +3280,14 @@ html {
     max-width: 100%;
   }
 
+  .max-\[1200px\]\:max-w-\[260px\] {
+    max-width: 260px;
+  }
+
+  .max-\[1200px\]\:max-w-\[calc\(100\%_-_70px\)\] {
+    max-width: calc(100% - 70px);
+  }
+
   .max-\[1200px\]\:translate-x-\[-50\%\] {
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3194,6 +3305,10 @@ html {
 
   .max-\[1200px\]\:flex-col-reverse {
     flex-direction: column-reverse;
+  }
+
+  .max-\[1200px\]\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .max-\[1200px\]\:items-start {
@@ -3342,6 +3457,14 @@ html {
 
   .max-\[1200px\]\:text-\[50px\] {
     font-size: 50px;
+  }
+
+  .max-\[1200px\]\:text-\[60px\] {
+    font-size: 60px;
+  }
+
+  .max-\[1200px\]\:tracking-\[-6px\] {
+    letter-spacing: -6px;
   }
 }
 
