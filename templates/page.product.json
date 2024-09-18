@@ -141,6 +141,21 @@
     },
     "ak_product_s3_pMKCgd": {
       "type": "ak-product-s3",
+      "blocks": {
+        "testimonial_UQCqie": {
+          "type": "testimonial",
+          "settings": {
+            "star_image": "shopify:\/\/shop_images\/star.png",
+            "name": "Michael G.",
+            "customer_status": "Verified Customer",
+            "testimonial": "\"I was struggling with chronic fatigue and auto-immune problems. I was constantly breaking out in rashes and itching all over my body. Akka gave me a 'clean body' feeling in just a few weeks and I couldn't be happier. Amazing focus and concentration. I feel 20 years younger.\"",
+            "customer_image": "shopify:\/\/shop_images\/michealg-photo_8214cb88-ac4f-496d-98ec-d7eef80f5f7a.png"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_UQCqie"
+      ],
       "settings": {
         "heading_line_1": "How AKKA has helped",
         "heading_line_2": "people like you",
