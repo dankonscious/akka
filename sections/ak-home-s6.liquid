@@ -1,56 +1,4 @@
-<style>
-
-    #section6 li,
-    #section6 li .wrap-trans,
-    #section6 .wrap-trans img,
-    #section6 .wrap-trans .wrap-p,
-    #section6 .d-h3,
-    #section6 li article,
-    #section6 li article .arrow  {
-        transition: all 0.3s ease;
-    }
-    @media screen and (max-width:1199px) {
-        #section6 li.active {        
-        height: auto;
-
-        }
-        #section6 li.active article .arrow {
-        rotate: -180deg;
-        }
-
-    }    
-
-    @media screen and (min-width:1200px) {
-        #section6 .active {
-        width: 50%;
-        max-width: 600px;
-        }
-        #section6 .wreset {
-        transition: all 0s ease;
-        transition-delay: 3s;
-        }
-        #section6 .active .wreset {
-        width:100%;
-        }
-        #section6 .active .wrap-trans {
-        transform: translateX(0);
-        transform: translateY(0);
-        }
-        #section6 .active .wrap-trans img {
-        transform:scale(1);
-        }
-        #section6 .active .wrap-trans .wrap-p {
-        opacity:1;
-        transform: translateY(0);
-        }
-        #section6 .active .d-h3 {
-        opacity:0;
-        transform: translateY(-50%);
-        }
-    }
-</style>
-    
-<section id="section6" class="flex sticky top-0 flex-col py-24 min-h-[984px] bg-white z-10">
+<section id="section6" class="dynamic-sticky flex sticky top-0 flex-col py-24 min-h-[984px] bg-white z-10">
     <div class="flex relative flex-wrap items-center justify-between mx-auto max-w-[var(--page-width)] w-full">
         <header class="flex flex-col justify-center self-stretch my-auto min-w-[240px] text-slate-700 capitalize">
             <h2 class="text-[70px] tracking-[0.7px] leading-[79px]">{{ section.settings.heading }}</h2>
@@ -93,6 +41,75 @@
         </div>
     </div>    
 </section>
+
+<script>
+    var section = document.getElementById('section6');
+    var section_list = section.querySelectorAll('li');
+
+    section_list.forEach(function(item) {
+        item.addEventListener('mouseover', function() {
+        section_list.forEach(function(li) {
+            li.classList.remove('active');
+        });
+        item.classList.add('active');
+        });
+
+        item.addEventListener('mouseout', function() {
+        section_list.forEach(function(li) {
+            li.classList.remove('active');
+        });
+        });
+    });
+</script>
+
+{%  style  %} 
+#section6 li,
+#section6 li .wrap-trans,
+#section6 .wrap-trans img,
+#section6 .wrap-trans .wrap-p,
+#section6 .d-h3,
+#section6 li article,
+#section6 li article .arrow  {
+    transition: all 0.3s ease;
+}
+@media screen and (max-width:1199px) {
+    #section6 li.active {        
+        height: auto;
+
+    }
+    #section6 li.active article .arrow {
+        rotate: -180deg;
+    }
+}    
+@media screen and (min-width:1200px) {
+    #section6 .active {
+        width: 50%;
+        max-width: 600px;
+    }
+    #section6 .wreset {
+        transition: all 0s ease;
+        transition-delay: 3s;
+    }
+    #section6 .active .wreset {
+        width:100%;
+    }
+    #section6 .active .wrap-trans {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    #section6 .active .wrap-trans img {
+        transform:scale(1);
+    }
+    #section6 .active .wrap-trans .wrap-p {
+        opacity:1;
+        transform: translateY(0);
+    }
+    #section6 .active .d-h3 {
+        opacity:0;
+        transform: translateY(-50%);
+    }
+}
+{% endstyle %} 
 
 {% schema %}
 {
