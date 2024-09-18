@@ -1,36 +1,10 @@
-<style>
-    #section4 .box::before {
-        content: "";
-        display: block;
-        max-width: 100%;
-        width: 100%;
-        height: 232px;
-        border-top: 1px solid #2E3666;
-        border-bottom: 1px solid #2E3666;
-        position: absolute;
-        top: 120px;
-        left: 0;
-      }
-      #section4 .box::after {
-        content: "";
-        display: block;
-        max-width: 100%;
-        width: 100%;
-        height: 194px;
-        border-top: 1px solid #2E3666;
-        border-bottom: 1px solid #2E3666;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-      }
-</style>
 <section id="section4" class="flex overflow-hidden relative flex-col h-[1463px] max-[1200px]:px-[16px] max-[1200px]:h-auto">
     <img loading="lazy" src="{{ section.settings.background_image | img_url: 'master' }}" alt="" class="object-cover absolute inset-0 size-full"/>
 
     <div class="w-full h-full absolute top-0 left-0 flex items-center justify-center max-[1200px]:hidden">
-    <div class="rotate-me border-[#2e3666] border-solid border-[2px] w-full h-full max-w-[1350px] max-h-[1350px] relative  rounded-full">
-        <div class="w-[15px] h-[15px] bg-[#2e3666] rotate-45 absolute top-[-9px] left-[50%]"></div>
-    </div>
+        <div class="rotate-me border-[#2e3666] border-solid border-[2px] min-w-[1350px] min-h-[1350px] relative rounded-full">
+            <div class="w-[15px] h-[15px] bg-[#2e3666] rotate-45 absolute top-[-9px] left-[50%]"></div>
+        </div>
     </div>
 
     <div class="box relative w-full max-[1200px]:max-w-full font-['syne'] h-full max-[1200px]:h-auto">
@@ -55,6 +29,33 @@
     </div>
     </div>
 </section>
+
+{%  style  %} 
+#section4 .box::before {
+    content: "";
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 232px;
+    border-top: 1px solid #2E3666;
+    border-bottom: 1px solid #2E3666;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+#section4 .box::after {
+    content: "";
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 194px;
+    border-top: 1px solid #2E3666;
+    border-bottom: 1px solid #2E3666;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+{% endstyle %}
 
 {% schema %}
 {

@@ -30,19 +30,24 @@
       <div class="flex flex-col flex-1">
         <div class="flex flex-col max-[1200px]:max-w-full mr-[-1px] [&_.active]:!bg-[#dcdeeb]">
           {% for step in section.blocks %}
-            <article class="justify-end flex gap-8 max-[1200px]:gap-[16px] items-center pt-[24px] pb-[24px] pr-24 pl-52 border-t border-[#2E3666] max-[1200px]:max-w-full max-[1200px]:px-0 max-[1200px]:py-[16px] max-xl:justify-center">
-              <div  id="sc{{ forloop.index }}" class="sc {{ step.settings.active | default: '' }} flex justify-center items-center rounded-full bg-blend-multiply text-[50px] font-extralight tracking-tight text-center whitespace-nowrap w-[100px] h-[100px] max-[1200px]:max-w-[70px] max-[1200px]:w-full max-[1200px]:h-[70px] bg-[#EDEEF5]">
-                <span class="px-3 py-0.5 max-[1200px]:text-[50px]">{{ step.settings.step_number }}</span>
+            <article class="flex flex-wrap border-t border-[#2E3666] {% if forloop.last %} border-b max-[1024px]:border-b-0 {% endif %}">
+              <div class="w-[calc(100%_-_760px)]"></div>
+              <div class="w-[760px] max-[1200px]:w-full max-[1200px]:px-0 max-[1200px]:py-[16px] justify-end flex gap-8 max-[1200px]:gap-[16px] items-center max-xl:justify-center pt-[24px] pb-[24px] pr-[100px]">
+                <div  id="sc{{ forloop.index }}" class="sc {{ step.settings.active | default: '' }} flex justify-center items-center rounded-full bg-blend-multiply text-[50px] font-extralight tracking-tight text-center whitespace-nowrap w-[100px] h-[100px] max-[1200px]:max-w-[70px] max-[1200px]:w-full max-[1200px]:h-[70px] bg-[#EDEEF5]">
+                  <span class="px-3 py-0.5 max-[1200px]:text-[50px]">{{ step.settings.step_number }}</span>
+                </div>
+                <div class="flex-1">
+                  <p class="self-stretch my-auto text-2xl tracking-wide">
+                    {{ step.settings.step_description }}
+                  </p>
+                </div>
               </div>
-              <p class="self-stretch my-auto text-2xl tracking-wide w-[566px] max-[1200px]:max-w-full">
-                {{ step.settings.step_description }}
-              </p>
             </article>
           {% endfor %}
         </div>
       </div>
-      <div class="relative w-[860px] max-w-full flex-1 max-[1200px]:w-full">
-        <div id="science-slider" class="fade_slider !max-w-[100%] !h-[50vh] ">
+      <div class="relative w-[860px] max-w-full max-[1200px]:w-full">
+        <div id="science-slider" class="fade_slider !max-w-[100%] !h-[447px] ">
           {% for step in section.blocks %}
             <div class="fade_slide">
               <img loading="lazy" src="{{ step.settings.image |  image_url: width: 900  }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ step.settings.step_description }}">
