@@ -1120,6 +1120,10 @@ video {
   height: 447px !important;
 }
 
+.h-\[1350px\] {
+  height: 1350px;
+}
+
 .max-h-\[1350px\] {
   max-height: 1350px;
 }
@@ -1375,6 +1379,18 @@ video {
 
 .w-\[calc\(100\%_-_760px\)\] {
   width: calc(100% - 760px);
+}
+
+.w-\[780px\] {
+  width: 780px;
+}
+
+.w-\[calc\(100\%_-_780px\)\] {
+  width: calc(100% - 780px);
+}
+
+.w-\[1350px\] {
+  width: 1350px;
 }
 
 .min-w-\[240px\] {
