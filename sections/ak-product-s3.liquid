@@ -1,0 +1,133 @@
+<!-- testimonials-slider.liquid -->
+<section id="section-3">
+  <section class="flex relative flex-col items-center px-20 min-h-[1080px] max-[1200px]:px-5">
+    <div class="flex relative flex-col py-16 w-full max-w-[var(--page-width)] max-[1200px]:max-w-full max-[1200px]:py-8">
+      <div class="flex flex-col w-full">
+
+        <h2 class="flex flex-col w-full text-7xl tracking-tighter text-[#2E3666] max-[1200px]:max-w-full max-[1200px]:text-4xl">
+          <span>{{ section.settings.heading_line_1 }}</span>
+          <span>{{ section.settings.heading_line_2 }}</span>
+        </h2>
+
+        <div class="flex flex-col w-full max-[1200px]:max-w-full">
+          <div class="flex flex-col items-end w-full max-[1200px]:max-w-full">
+            <!-- ARROW -->
+            <div class="flex gap-10 items-end max-[1200px]:order-2 max-[1200px]:mx-auto max-[1200px]:mt-[-30px] max-[1200px]:hidden">
+              <!-- Slider navigation buttons -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- SLIDER Desktop PART -->
+            <div class="swiper mySwiper w-full h-full mt-16 max-[1200px]:!hidden">
+              <div class="swiper-wrapper">
+                {% for testimonial in section.blocks %}
+                  <div class="swiper-slide">
+                    <div class="flex gap-10 items-center max-[1200px]:max-w-full">
+                      <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-[1200px]:max-w-full">
+                        <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full border-t border-[#2E3666] max-[1200px]:max-w-full">
+                          <div class="flex flex-col grow shrink items-start pr-16 w-44">
+                            <img loading="lazy" src="{{ testimonial.settings.star_image | img_url: '150x' }}" class="object-contain max-w-full aspect-[5]" alt="5 star rating" />
+                            <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">{{ testimonial.settings.name }}</h3>
+                            <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
+                              <span class="self-stretch my-auto">{{ testimonial.settings.customer_status }}</span>
+                            </div>
+                          </div>
+                          <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                            "{{ testimonial.settings.testimonial }}"
+                          </blockquote>
+                          <div class="flex flex-col grow shrink w-44">
+                            <img loading="lazy" src="{{ testimonial.settings.customer_image | img_url: '150x' }}" class="object-contain w-full aspect-square" alt="{{ testimonial.settings.name }}" />
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM PART -->
+        <div class="flex flex-wrap gap-2 items-start mt-16 max-w-full text-base tracking-tight leading-tight text-[#2E3666] w-[879px] max-[1200px]:mt-10">
+          {% for benefit in section.settings.benefits %}
+            <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="self-stretch my-auto">{{ benefit }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+{% schema %}
+{
+  "name": "Ak - Product S3",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_line_1",
+      "label": "Heading Line 1",
+      "default": "How AKKA has helped"
+    },
+    {
+      "type": "text",
+      "id": "heading_line_2",
+      "label": "Heading Line 2",
+      "default": "people like you"
+    },
+    {
+      "type": "text",
+      "id": "benefits",
+      "label": "Benefits",
+      "default": "Reduce brain fog, Happy, Energy, Clear Skin, Flat belly, Reduce weight gain, Vibrant, Reduce bloating, Fresh, Focus, Improve immune system",
+      "info": "Separate each benefit with a comma"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "star_image",
+          "label": "Star Rating Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Customer Name"
+        },
+        {
+          "type": "text",
+          "id": "customer_status",
+          "label": "Customer Status",
+          "default": "Verified Customer"
+        },
+        {
+          "type": "textarea",
+          "id": "testimonial",
+          "label": "Testimonial Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "customer_image",
+          "label": "Customer Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ak - Product S3",
+      "category": "AKKA PRODUCT"
+    }
+  ]
+}
+{% endschema %}
