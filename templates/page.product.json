@@ -83,7 +83,7 @@
             "prod_content2": "1 bottles upfront",
             "prod_price": "$69",
             "prod_before_price": "$99",
-            "save": "Save $30",
+            "save": "$30",
             "per_bottle": "$69"
           }
         },
@@ -95,7 +95,7 @@
             "prod_content2": "3 bottles upfront",
             "prod_price": "$177",
             "prod_before_price": "$297",
-            "save": "Save $120",
+            "save": "$120",
             "per_bottle": "$59"
           }
         },
@@ -107,7 +107,7 @@
             "prod_content2": "6 bottles upfront",
             "prod_price": "$294",
             "prod_before_price": "$594",
-            "save": "Save $300",
+            "save": "$300",
             "per_bottle": "$49"
           }
         }
@@ -129,7 +129,7 @@
       "settings": {
         "title": "Akka for total",
         "title2": "liver rejuvenation",
-        "content": ""
+        "content": "<p>Akka synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients, meticulously chosen to optimize liver function and health. This powerful formula focuses on liver regeneration and detoxification, unclogging bile ducts, healing and clearing out old scar tissue, and eliminating excess fat from the liver.<\/p>"
       }
     },
     "ak_product_s2_9fXVkb": {
