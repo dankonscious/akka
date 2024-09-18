@@ -64,13 +64,15 @@
 
         <!-- BOTTOM PART -->
         <div class="flex flex-wrap gap-2 items-start mt-16 max-w-full text-base tracking-tight leading-tight text-[#2E3666] w-[879px] max-[1200px]:mt-10">
-          {% for benefit in section.settings.benefits %}
-            <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
-                <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span class="self-stretch my-auto">{{ benefit }}</span>
-            </div>
+          {% for tags in section.blocks %}
+            {% if tags.type == 'tags' %}
+                <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="self-stretch my-auto">{{ tags.settings.tag_name }}</span>
+                </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
@@ -93,14 +95,7 @@
       "id": "heading_line_2",
       "label": "Heading Line 2",
       "default": "people like you"
-    },
-    {
-      "type": "text",
-      "id": "benefits",
-      "label": "Benefits",
-      "default": "Reduce brain fog, Happy, Energy, Clear Skin, Flat belly, Reduce weight gain, Vibrant, Reduce bloating, Fresh, Focus, Improve immune system",
-      "info": "Separate each benefit with a comma"
-    }
+    }    
   ],
   "blocks": [
     {
@@ -132,6 +127,17 @@
           "type": "image_picker",
           "id": "customer_image",
           "label": "Customer Image"
+        }
+      ]
+    },
+    {
+      "type": "tags",
+      "name": "Testimonial Tags",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tag_name",
+          "label": "Content Tag"
         }
       ]
     }
