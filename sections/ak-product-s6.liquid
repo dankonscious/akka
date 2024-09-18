@@ -1,0 +1,75 @@
+<!-- section-product-sec5.liquid -->
+<section id="section-5" class="w-full h-[900px] max-[1200px]:h-[663px] bg-[linear-gradient(114deg,_#7B82A2_8.77%,_#677099_52.96%,_#7B82A2_92.94%)] overflow-hidden">
+  <div class="relative w-full h-full flex items-center justify-center">
+    <div class="upperimg max-w-[616px] w-full absolute top-0 left-[110px] z-10 max-[1200px]:max-w-[300px] max-[1200px]:left-[-151px]">
+      <img src="{{ section.settings.upper_image | img_url: 'master' }}" alt="">
+    </div>
+    <div class="midimg max-w-[578px] w-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-30 ">
+      <img class="max-[1200px]:hidden" src="{{ section.settings.mid_image_desktop | img_url: 'master' }}" alt="">
+      <img class="hidden max-[1200px]:block mx-auto" src="{{ section.settings.mid_image_mobile | img_url: 'master' }}" alt="">
+    </div>
+    <div class="max-w-[1307px] w-full relative z-20 max-[1200px]:max-w-full font-['syne']">      
+        <img class="max-[1200px]:w-[343px] max-[1200px]:mx-auto" src="{{ section.settings.vector_image | img_url: 'master' }}" alt="">
+        <a href="{{ section.settings.link }}" class="flex items-center gap-4 text-white text-[32px] leading-[140%] underline uppercase absolute top-[36px] right-0 max-[1200px]:translate-x-[-50%] max-[1200px]:top-[unset] max-[1200px]:bottom-[-160px] max-[1200px]:right-[unset] max-[1200px]:left-[50%]">
+          {{ section.settings.button_text }}
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="45" viewBox="0 0 17 45" fill="none">
+            <path d="M16.0283 29.404C16.0283 29.6817 15.9179 29.948 15.7216 30.1444C15.5252 30.3408 15.2588 30.4511 14.9811 30.4511C14.7034 30.4511 14.4371 30.3408 14.2407 30.1444C14.0443 29.948 13.934 29.6817 13.934 29.404V18.576L1.761 30.749C1.56249 30.9339 1.29995 31.0346 1.02867 31.0298C0.757386 31.0251 0.498554 30.9152 0.3067 30.7233C0.114846 30.5314 0.00494956 30.2726 0.000163137 30.0013C-0.00462328 29.7301 0.0960757 29.4675 0.281042 29.269L12.4523 17.0943H1.62429C1.34657 17.0943 1.08022 16.984 0.883848 16.7876C0.687471 16.5912 0.577148 16.3249 0.577148 16.0471C0.577148 15.7694 0.687471 15.5031 0.883848 15.3067C1.08022 15.1103 1.34657 15 1.62429 15H14.9811C15.2588 15 15.5252 15.1103 15.7216 15.3067C15.9179 15.5031 16.0283 15.7694 16.0283 16.0471V29.404Z" fill="#EDEEF5"/>
+          </svg>
+        </a>    
+    </div>
+    <div class="lowerimg max-w-[473px] w-full absolute bottom-0 right-[100px] z-10 max-[1200px]:max-w-[223px] max-[1200px]:right-[-105px]">
+      <img src="{{ section.settings.lower_image | img_url: 'master' }}" alt="">
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ak - Product S6",
+  "settings": [
+    {
+      "type": "text",
+      "id": "link",
+      "label": "Button Link",
+      "default": "/pages/product"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "shop akka"
+    },
+    {
+      "type": "image_picker",
+      "id": "upper_image",
+      "label": "Upper Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mid_image_desktop",
+      "label": "Mid Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "mid_image_mobile",
+      "label": "Mid Image (Mobile)"
+    },
+    {
+      "type": "image_picker",
+      "id": "vector_image",
+      "label": "Vector Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "lower_image",
+      "label": "Lower Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ak - Product S6",
+      "category": "AKKA PRODUCT"
+    }
+  ]
+}
+{% endschema %}

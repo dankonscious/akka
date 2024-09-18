@@ -18,7 +18,11 @@
             <div class="flex flex-wrap items-start min-w-[240px] w-full max-[1200px]:max-w-full">
               <div class="faq-question flex items-center justify-between w-full max-[1200px]:flex-wrap">
                 <h2 class="max-w-[365px] w-full text-[100px] tracking-[-10px] leading-[40px] text-[#2E3666] opacity-10 max-[1200px]:text-[60px] max-[1200px]:tracking-[-6px] max-[1200px]:w-full">
-                  /{{ forloop.index | prepend: '0' | slice: -2 }}
+                  /{% if forloop.index >= 10 %}
+                    {{ forloop.index }}
+                    {%  else %} 
+                    {{ forloop.index | prepend: '0' }}                    
+                  {% endif %}
                 </h2>
                 <h3 class="text-2xl font-medium leading-5 max-w-[877px] w-full max-[1200px]:text-[20px] max-[1200px]:max-w-[calc(100%_-_70px)]">
                   {{ faq.settings.question }}
@@ -41,7 +45,8 @@
     </div>
   </div>
 </section>
-
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 <script>
     $(document).ready(function() {
         $('.faq-item').click(function() {
