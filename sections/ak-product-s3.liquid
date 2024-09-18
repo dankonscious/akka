@@ -71,7 +71,7 @@
                             <img loading="lazy" src="{{ testimonial.settings.customer_image | img_url: '150x' }}" class="object-contain w-full aspect-square" alt="{{ testimonial.settings.name }}" />
                           </div>
                         </article>
-                        {% if section.settings.row2 %}
+                        {% if testimonial.settings.row2 %}
                             <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full border-t border-[#2E3666] max-[1200px]:max-w-full">
                                 <div class="flex flex-col grow shrink items-start pr-16 w-44">
                                   <img loading="lazy" src="{{ testimonial.settings.row2_star_image | img_url: '150x' }}" class="object-contain max-w-full aspect-[5]" alt="5 star rating" />
