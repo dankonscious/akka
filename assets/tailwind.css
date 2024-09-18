@@ -1361,6 +1361,10 @@ video {
   width: calc(100% - 42px);
 }
 
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .min-w-\[240px\] {
   min-width: 240px;
 }
