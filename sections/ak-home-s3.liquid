@@ -32,7 +32,7 @@
           {% for step in section.blocks %}
             <article class="flex border-t border-[#2E3666]">
               <div class="w-[30%]"></div>
-              <div class="flex-1 max-[1200px]:px-0 max-[1200px]:py-[16px] justify-end flex gap-8 max-[1200px]:gap-[16px] items-center max-xl:justify-center pt-[24px] pb-[24px] pr-24 pl-52">
+              <div class="flex-1 max-[1200px]:px-0 max-[1200px]:py-[16px] justify-end flex gap-8 max-[1200px]:gap-[16px] items-center max-xl:justify-center pt-[24px] pb-[24px] pr-24">
                 <div  id="sc{{ forloop.index }}" class="sc {{ step.settings.active | default: '' }} flex justify-center items-center rounded-full bg-blend-multiply text-[50px] font-extralight tracking-tight text-center whitespace-nowrap w-[100px] h-[100px] max-[1200px]:max-w-[70px] max-[1200px]:w-full max-[1200px]:h-[70px] bg-[#EDEEF5]">
                   <span class="px-3 py-0.5 max-[1200px]:text-[50px]">{{ step.settings.step_number }}</span>
                 </div>
