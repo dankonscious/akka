@@ -77,14 +77,98 @@
             "ingredient_name": "Akkermansia muciniphila",
             "ingredient_subtext": "for total rejuvenation",
             "ingredient_description": "<p>Representing 3–5% of the microbial community, Akkermansia muciniphila is commonly found in the human gut. Rigorously studied in recent years, A. muciniphilia has been inversely associated with cardiovascular disease, obesity, diabetes, inflammation, and liver disease.<br\/><br\/>A. muciniphila is a game-changer in the realm of probiotics, and a cornerstone to AKKA's advanced formula. In its <a href=\"ourapproach.html\"><span style=\"text-decoration:underline\">most potent form<\/span> <\/a>— preserved pasteurized — it has the ability to support liver function while enhancing the intestinal barrier and boosting metabolic health.<\/p>",
-            "research_title": "The Research"
+            "research_title": "The Research",
+            "title1": "The Journal of <br>Functional Foods",
+            "description1": "Strategies to promote abundance of Akkermansia muciniphila, an emerging probiotics in the gut, evidence from dietary intervention studies\n<br><br>\nKey takeaway: \"Unexpectedly we discovered that pasteurization of Akkermansia enhanced its capacity to reduce fat mass development, insulin resistance and cholesterol.\"",
+            "title2": "Scientific Reports",
+            "description2": "Comparative effects of alive and pasteurized Akkermansia muciniphila on normal diet-fed mice\n<br><br>\nKey takeaway: \"Treatment with the pasteurized form more effectively upregulated tight junction and regulated immune response-related genes.\"",
+            "title3": "Food & Function",
+            "description3": "The effects of live and pasteurized Akkermansia muciniphila on DSS-induced ulcerative colitis, gut microbiota, and metabolomics in mice\n<br><br>\nKey takeaway: \"Pasteurized A. muciniphila showed a more effective amelioration of DSS-induced colitis by repairing the dysbiosis of gut microbiota and intestinal metabolism compared to live A. muciniphila.\"",
+            "title4": "Helyion",
+            "description4": "Pasteurized Akkermansia muciniphila improves glucose metabolism is linked with increased hypothalamic nitric oxide release\n<br><br>\nKey takeaway: \"A. muciniphila exerts positive effects on different metabolic parameters such as body weight, fat mass, insulin, glycemia and glucose tolerance.\""
           }
         },
-        "list_WGLyNC": {
-          "type": "list",
+        "ingredient_ntNFqE": {
+          "type": "ingredient",
           "settings": {
-            "title": "The Journal ofFunctional Foods",
-            "description": "Strategies to promote abundance of Akkermansia muciniphila, an emerging probiotics in the gut, evidence from dietary intervention studies\n<br><br>\nKey takeaway: \"Unexpectedly we discovered that pasteurization of Akkermansia enhanced its capacity to reduce fat mass development, insulin resistance and cholesterol.\""
+            "ingredient_id": "Quercetin",
+            "image_1": "shopify:\/\/shop_images\/sec2-image2_2.png",
+            "image_alt": "Illustration representing ingredient",
+            "ingredient_number": "02",
+            "ingredient_name": "Quercetin",
+            "ingredient_subtext": "for amplified support",
+            "ingredient_description": "<p>Quercetin is a naturally occurring flavonoid, which helps neutralize harmful free radicals in the body. Further known for its anti-inflammatory and antioxidant properties, Quercetin is also a powerful liver protectant and Akkernamsia amplifier, making it highly beneficial for health in multiple ways.  <br\/><br\/>Multiple studies have demonstrated that quercetin prevents both fatty liver and damage from alcohol, in addition to reducing scarring of the liver.<\/p>",
+            "research_title": "The Research",
+            "title1": "Antioxidants",
+            "description1": "The Synbiotic Combination of Akkermansia muciniphila and Quercetin Ameliorates Early Obesity and NAFLD through Gut Microbiota Reshaping and Bile Acid Metabolism Modulation\n<br><br>\nKey takeaway:  “Beneficial effects of A. muciniphila and quercetin combination are driven by gut microbiota modulation, the shift in BAs and the gut-liver bile flow enhancement.”",
+            "title2": "Phytotherapy <br>Research",
+            "description2": "Quercetin as a protective agent for liver diseases: A comprehensive descriptive review of the molecular mechanism\n<br><br>\nKey takeaway: “In conclusion, quercetin is an effective liver protectant.”",
+            "title3": "",
+            "description3": "",
+            "title4": "",
+            "description4": ""
+          }
+        },
+        "ingredient_hN4WAQ": {
+          "type": "ingredient",
+          "settings": {
+            "ingredient_id": "Resveratrol",
+            "image_1": "shopify:\/\/shop_images\/sec2-image3.png",
+            "image_alt": "Illustration representing ingredient",
+            "ingredient_number": "03",
+            "ingredient_name": "Resveratrol",
+            "ingredient_subtext": "for antioxidative protection",
+            "ingredient_description": "<p>A potent polyphenolic compound, Resveratrol plays a key role in metabolic detoxification and health maintenance. It not only prevents the formation of new fat cells but also enhances fat burning through a process known as thermogenesis. <br\/><br\/>By boosting bile production, resveratrol further improves digestion and aids in the efficient removal of toxins, optimizing liver function. Additionally, it strengthens the intestinal barrier, preventing unwanted substances from entering the bloodstream and safeguarding overall liver health.<\/p>",
+            "research_title": "The Research",
+            "title1": "MetabolicHealth",
+            "description1": "Anti-obesity effect of resveratrol-amplified grape skin extracts on 3T3-L1 adipocytes differentiation\n<br><br>\nKey takeaway: ”Resveratrol-amplified grape skin extracts help prevent fat cell formation by reducing the activity of specific genes that are involved in fat storage. This effect on gene activity leads to less fat accumulation, suggesting these extracts could be useful in preventing obesity by improving how the body manages fat.”",
+            "title2": "",
+            "description2": "",
+            "title3": "",
+            "description3": "",
+            "title4": "",
+            "description4": ""
+          }
+        },
+        "ingredient_ErGrgh": {
+          "type": "ingredient",
+          "settings": {
+            "ingredient_id": "Silymarin",
+            "image_1": "shopify:\/\/shop_images\/sec2-image4.png",
+            "image_alt": "Illustration representing ingredient",
+            "ingredient_number": "04",
+            "ingredient_name": "Silymarin for all-around",
+            "ingredient_subtext": "hepatoprotective properties",
+            "ingredient_description": "<p>Silymarin is currently the world's most effective treatment for liver disease. It has shown positive effects in treating nearly every known form of liver disease including cirrhosis, hepatitis, and necrosis, and liver damage from substance abuse.<br\/><br\/>Silymarin may enhance three availableth factors (HGF, TGFα, and TGFβ1), acting as a cell cycle progression agent that triggers liver regeneration to protect the liver as a hepatoprotective agent for liver disease. <\/p>",
+            "research_title": "The Research",
+            "title1": "Hepatoprotective<br>Phytotherapy",
+            "description1": "Role of silymarin as antioxidant in clinical management of chronic liver diseases: a narrative review\n<br><br>\nKey takeaway:  “Silymarin, particularly in its original form or as Legalon®, is recommended for protecting the liver from long-term damage in chronic liver diseases. It works by combating oxidative stress, the main cause of liver damage.”",
+            "title2": "",
+            "description2": "",
+            "title3": "",
+            "description3": "",
+            "title4": "",
+            "description4": ""
+          }
+        },
+        "ingredient_GqGX4d": {
+          "type": "ingredient",
+          "settings": {
+            "ingredient_id": "Artichoke",
+            "image_alt": "Illustration representing ingredient",
+            "ingredient_number": "05",
+            "ingredient_name": "Artichoke Leaf Extract",
+            "ingredient_subtext": "for regenerative properties",
+            "ingredient_description": "<p>Artichoke leaf extract has a long history of being used in traditional medicine as a treatment for digestive and liver issues. Full of protective and regenerative properties, artichoke leaf extract not only improves blood flow, but also reduces overall cholesterol and triglycerides. <br\/><br\/>Emerging evidence further suggests that artichoke leaf extract’s beneficial properties include helping to lower blood pressure, reduce inflammation in the liver, and facilitate weight loss.<\/p>",
+            "research_title": "The Research",
+            "title1": "Antioxidants ",
+            "description1": "Evaluation of the Protective and Regenerative Properties of Commercially Available Artichoke Leaf Powder Extract on Plasma and Liver Oxidative Stress Parameters\n<br><br>\nKey takeaway: “The results showed that artichoke has antioxidative, hepatoprotective, and regenerative effects on liver cells.”",
+            "title2": "Reduce Cholesterol",
+            "description2": "A 2018 study demonstrated that Artichoke Leaf Extract not only regenerates the liver and improves blood flow, it also reduces total cholesterol and triglycerides as well.",
+            "title3": "",
+            "description3": "",
+            "title4": "",
+            "description4": ""
           }
         }
       },
@@ -95,7 +179,10 @@
         "link_K36NFh",
         "link_camwxT",
         "ingredient_hpLCa8",
-        "list_WGLyNC"
+        "ingredient_ntNFqE",
+        "ingredient_hN4WAQ",
+        "ingredient_ErGrgh",
+        "ingredient_GqGX4d"
       ],
       "settings": {
         "section_title": "Ingredient Information"
