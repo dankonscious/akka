@@ -240,16 +240,24 @@
           "type": "ingredient",
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
-            "heading": "tes",
+            "heading": "Akkermansia muciniphila",
             "sub_heading": "tes",
             "content": "test"
+          }
+        },
+        "ingredient_YHnV8f": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "content": ""
           }
         },
         "ingredient_LTJ6Y9": {
           "type": "ingredient",
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
-            "heading": "tes",
+            "heading": "Quercetin",
             "sub_heading": "tes",
             "content": "test"
           }
@@ -258,7 +266,7 @@
           "type": "ingredient",
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
-            "heading": "tes",
+            "heading": "Resveratrol",
             "sub_heading": "tes",
             "content": "test"
           }
@@ -267,7 +275,7 @@
           "type": "ingredient",
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
-            "heading": "tes",
+            "heading": "Silymarin",
             "sub_heading": "tes",
             "content": "test"
           }
@@ -276,7 +284,7 @@
           "type": "ingredient",
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
-            "heading": "tes",
+            "heading": "Artichoke Leaf Extract",
             "sub_heading": "tes",
             "content": "test"
           }
@@ -284,6 +292,7 @@
       },
       "block_order": [
         "ingredient_yYfWxc",
+        "ingredient_YHnV8f",
         "ingredient_LTJ6Y9",
         "ingredient_6CaWWg",
         "ingredient_rHKfGz",
