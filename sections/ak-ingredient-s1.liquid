@@ -1,6 +1,6 @@
 <!-- sections/ingredient-information.liquid -->
 
-<section id="section1" class="ingredient-information-section">
+<section id="section1" class="ingredient-information-section font-['syne']">
   <div class="flex items-start justify-between max-w-[var(--page-width)] w-full mx-auto relative text-[#2E3666] pt-[47px] max-md:max-w-full max-md:pt-0">
     <div class="max-w-[125px] w-full sticky top-0 pt-[128px] mb-[703px] max-md:hidden">
       {% for link in section.blocks %}
@@ -13,8 +13,8 @@
       <section class="flex flex-col">
         {% for item in section.blocks %}
           {% if item.type == 'ingredient' %}
-            <article id="{{ item.settings.ingredient_id }}" class="flex flex-col p-4 w-full bg-[#EDEEF5] rounded-3xl max-md:max-w-full {% if forloop.index != 1 %}mt-16 max-md:mt-0{% endif %}">
-              <div class="flex flex-wrap gap-8 w-full max-md:max-w-full">
+            <article id="{{ item.settings.ingredient_id }}" class="flex flex-col p-4 w-full bg-[#EDEEF5] rounded-3xl max-md:max-w-full {% if forloop.index != 1 %}mt-16 max-md:mt-0{% endif %} max-[1200px]:rounded-none">
+              <div class="flex flex-wrap gap-8 w-full max-md:max-w-full max-[1200px]:justify-center">
                 <div class="flex flex-col min-w-[240px] w-[374px] max-md:max-w-full">
                   <img loading="lazy" src="{{ item.settings.image_1 | img_url: 'master' }}" alt="{{ item.settings.image_alt }}" class="object-contain flex-1 max-w-full aspect-[0.83] w-[468px]" />
                 </div>
@@ -32,22 +32,60 @@
                   </div>                  
                 </div>
               </div>
-              <section class="flex flex-col mt-8 w-full max-md:max-w-full">
+              <section class="flex flex-col mt-8 w-full max-md:max-w-full font-['syne']">
                 <h4 class="gap-10 pb-4 max-w-full text-3xl tracking-tight border-b-[6px] border-[#2E3666] w-full max-md:max-w-full">{{ item.settings.research_title }}</h4>
-                {% for research in item.blocks %}
-                  {% if research.type == 'list' %}
-                    <div class="flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
+                  {%  if item.settings.title1 and item.settings.description1 != ''  %}
+                    <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
                         <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
-                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px]">
-                                {{ research.settings.title }}
+                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px] ">
+                                {{ item.settings.title1 }}
                             </div>
                         </div>
-                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full [&>p]:text-[20px] [&>p]:tracking-[0.4px] [&>p]:leading-[140%]">
-                            {{ research.settings.description }}
+                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%]">
+                            {{ item.settings.description1 }}
                         </div>                        
                     </div>
-                  {% endif %}
-                {% endfor %}
+                  {% endif %} 
+
+                  {%  if item.settings.title2 and item.settings.description2 != '' %}
+                    <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
+                        <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
+                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px]">
+                                {{ item.settings.title2 }}
+                            </div>
+                        </div>
+                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%]">
+                            {{ item.settings.description2 }}
+                        </div>                        
+                    </div>
+                  {% endif %} 
+
+                  {%  if item.settings.title3 and item.settings.description3 != '' %}
+                    <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
+                        <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
+                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px]">
+                                {{ item.settings.title3 }}
+                            </div>
+                        </div>
+                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%]">
+                            {{ item.settings.description3 }}
+                        </div>                        
+                    </div>
+                  {% endif %} 
+
+                  {%  if item.settings.title4 and item.settings.description4 != '' %}
+                    <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
+                        <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
+                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px]">
+                                {{ item.settings.title4 }}
+                            </div>
+                        </div>
+                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%]">
+                            {{ item.settings.description4 }}
+                        </div>                        
+                    </div>
+                  {% endif %}  
+
               </section>
             </article>
           {% endif %}
@@ -97,7 +135,7 @@
           "default": "01"
         },
         {
-          "type": "text",
+          "type": "text", 
           "id": "ingredient_name",
           "label": "Ingredient Name",
           "default": "Akkermansia muciniphila"
@@ -118,8 +156,52 @@
           "id": "research_title",
           "label": "Research Title",
           "default": "The Research"
-        }        
-      ]
+        },
+        {
+          "type":"header",
+          "content":"For Research Leave Blank To Hide"
+        }, 
+        {
+            "type": "text",
+            "id": "title1",
+            "label": "Research Title 1"
+        },
+        {
+            "type": "textarea",
+            "id": "description1",
+            "label": "Research Description 1"
+        },
+        {
+            "type": "text",
+            "id": "title2",
+            "label": "Research Title 2"
+        },
+        {
+            "type": "textarea",
+            "id": "description2",
+            "label": "Research Description 2"
+        },
+        {
+            "type": "text",
+            "id": "title3",
+            "label": "Research Title 3"
+        },
+        {
+            "type": "textarea",
+            "id": "description3",
+            "label": "Research Description 3"
+        },
+        {
+            "type": "text",
+            "id": "title4",
+            "label": "Research Title 4"
+        },
+        {
+            "type": "textarea",
+            "id": "description4",
+            "label": "Research Description 4"
+        }          
+      ]    
     },
     {
       "type": "link",
@@ -138,23 +220,8 @@
           "default": "Akkermasia"
         }
       ]
-    },
-    {
-        "type": "list",
-        "name": "Research Items",
-        "settings": [
-        {
-            "type": "text",
-            "id": "title",
-            "label": "Research Title"
-        },
-        {
-            "type": "textarea",
-            "id": "description",
-            "label": "Research Description"
-        }
-        ]
     }
+    
   ],
   "presets": [
     {
