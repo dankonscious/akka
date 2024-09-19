@@ -263,15 +263,6 @@
             "content": "test"
           }
         },
-        "ingredient_m4kwED": {
-          "type": "ingredient",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
-            "heading": "tes",
-            "sub_heading": "tes",
-            "content": "test"
-          }
-        },
         "ingredient_rHKfGz": {
           "type": "ingredient",
           "settings": {
@@ -295,7 +286,6 @@
         "ingredient_yYfWxc",
         "ingredient_LTJ6Y9",
         "ingredient_6CaWWg",
-        "ingredient_m4kwED",
         "ingredient_rHKfGz",
         "ingredient_cijhFg"
       ],
