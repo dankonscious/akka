@@ -14,29 +14,27 @@
 
         <div class="flex max-md:flex-col mt-10">
             <ul class="font-['syne'] flex relative gap-4 items-start text-2xl font-semibold uppercase text-[#2E3666] list-none max-md:flex-col">
-            {% assign images = "image_1,image_2,image_3,image_4,image_5" | split: "," %}
-            {% assign titles = "image_1_title,image_2_title,image_3_title,image_4_title,image_5_title" | split: "," %}
-            {% assign descriptions = "image_1_desc,image_2_desc,image_3_desc,image_4_desc,image_5_desc" | split: "," %}
-            {% assign details = "image_1_detail,image_2_detail,image_3_detail,image_4_detail,image_5_detail" | split: "," %}
-
-            {% for i in (0..4) %}
-            <li class="flex flex-col max-w-[20%] w-[255px] max-[1200px]:w-full max-[1200px]:max-w-full self-stretch max-md:h-[250px]">
-                <article class="overflow-hidden relative bg-[#EDEEF5] h-full max-md:h-[500px]">
-                <img src="{{ section.settings.svg |  img_url: 'master' }}" class="arrow absolute top-[15px] max-md:top-[190px] right-[15px] z-10 max-md:rotate-[135deg]">
-                <div class="wreset w-[600px] wrap-trans translate-x-[-50%] translate-y-[10%] max-md:translate-x-[0%] max-md:translate-y-[-25%] max-[1200px]:mx-auto max-xl:w-auto">
-                    <img src="{{ section.settings[images[i]] | img_url: 'master' }}" class="w-[330px] h-auto block mx-auto scale-150 max-xl:scale-100">
-                    <div class="wrap-p p-[10px] opacity-0 translate-y-[50%] max-xl:opacity-100 max-xl:translate-y-[4%]">
-                    <h3 class="text-[22px] font-semibold mb-[10px]">{{ section.settings[titles[i]] }}</h3>
-                    <p class="text-[22px] tracking-[0.44px] mb-[16px] font-normal capitalize">{{ section.settings[descriptions[i]] }}</p>
-                    <p class="text-[20px] leading-[normal] font-normal capitalize">{{ section.settings[details[i]] }}</p>
-                    </div>
-                </div>
-                <h3 class="d-h3 text-[22px] font-semibold tracking-[0.44px] uppercase absolute bottom-0 left-0 px-[10px] py-[10px] w-full max-w-[300px] flex items-center max-xl:hidden">
-                    {{ section.settings[titles[i]] }}
-                </h3>
-                </article>
-            </li>
-            {% endfor %}
+                {% for block in section.blocks %}
+                    <li class="flex flex-col max-w-[calc(20%_-_16px)] w-[255px] max-[1024px]:w-full max-[1024px]:max-w-full self-stretch max-[1024px]:h-[250px]">
+                        <article class="overflow-hidden relative bg-[#EDEEF5] h-full max-[1024px]:h-[456px]">
+                            <img src="{{ 'arrow-w.svg' |  asset_url }}" class="arrow absolute top-[15px] right-[15px] z-10 max-[1024px]:top-[190px] max-[1024px]:rotate-[135deg]">
+                            <div class="wreset w-[600px] wrap-trans translate-x-[-50%] translate-y-[10%] max-[1024px]:translate-x-[0%] max-[1024px]:translate-y-[-25%] max-[1024px]:mx-auto max-[1024px]:w-auto">
+                            <img src="assets/images/akkermansia_muciniphila.png" class="w-[330px] h-auto block mx-auto scale-150 max-[1024px]:scale-100">              
+                            <div class="wrap-p p-[10px] opacity-0 translate-y-[50%] max-[1024px]:opacity-100 max-[1024px]:translate-y-[4%]">
+                                <h3 class="text-[22px] font-semibold tracking-[0.44px] uppercase mb-[10px] max-[1024px]:hidden">
+                                    {{ block.settings.heading }}
+                                </h3>
+                                <p class="text-[22px] tracking-[0.44px] mb-[16px] font-normal capitalize">{{ block.settings.sub_heading }} </p>
+                                <div class="text-[20px] leading-[normal] font-normal capitalize">{{ block.settings.content }}</div>
+                            </div>
+                            </div>
+                    
+                            <h3 class="d-h3 text-[22px] font-semibold tracking-[0.44px] uppercase absolute bottom-0 left-0 px-[10px] py-[10px] w-full max-w-[300px] flex items-center max-[1024px]:hidden">
+                                {{ block.settings.heading }}
+                            </h3>
+                        </article>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     </div>    
@@ -69,203 +67,112 @@
 #section6 .wrap-trans .wrap-p,
 #section6 .d-h3,
 #section6 li article,
-#section6 li article .arrow  {
+#section6 li article .arrow {
     transition: all 0.3s ease;
 }
-@media screen and (max-width:1199px) {
-    #section6 li.active {        
-        height: auto;
 
-    }
-    #section6 li.active article .arrow {
-        rotate: -180deg;
-    }
-}    
-@media screen and (min-width:1200px) {
-    #section6 .active {
-        width: 50%;
-        max-width: 600px;
-    }
-    #section6 .wreset {
-        transition: all 0s ease;
-        transition-delay: 3s;
-    }
-    #section6 .active .wreset {
-        width:100%;
-    }
-    #section6 .active .wrap-trans {
-        transform: translateX(0);
-        transform: translateY(0);
-    }
-    #section6 .active .wrap-trans img {
-        transform:scale(1);
-    }
-    #section6 .active .wrap-trans .wrap-p {
-        opacity:1;
-        transform: translateY(0);
-    }
-    #section6 .active .d-h3 {
-        opacity:0;
-        transform: translateY(-50%);
-    }
+@media (max-width: 1024px) {
+#section6 li.active {        
+    height: auto;
+}
+#section6 li.active article .arrow {
+    transform: rotate(-180deg); /* Corrected property */
+}
+}
+
+@media (min-width: 1024px) {
+#section6 .active {
+    width: 50%;
+    max-width: 600px;
+}
+#section6 .wreset {
+    width: 600px;
+}
+#section6 .active .wreset {
+    width: 100%;
+}
+#section6 .active .wrap-trans {
+    transform: translateX(0) translateY(0); /* Combined transform properties */
+}
+#section6 .active .wrap-trans img {
+    transform: scale(1);
+}
+#section6 .active .wrap-trans .wrap-p {
+    opacity: 1;
+    transform: translateY(0);
+}
+#section6 .active .d-h3 {
+    opacity: 0;
+    transform: translateY(-50%);
+}
 }
 {% endstyle %} 
+
 
 {% schema %}
 {
     "name": "AK - Home S6",
     "settings": [
-    {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading",
-        "default": "The building blocks"
-    },
-    {
-        "type": "text",
-        "id": "subheading",
-        "label": "Subheading",
-        "default": "Our clinically — researched ingredients"
-    },
-    {
-        "type": "text",
-        "id": "button_link",
-        "label": "Button Link",
-        "default": "/pages/ingredient.html"
-    },
-    {
-        "type": "text",
-        "id": "button_text",
-        "label": "Button Text",
-        "default": "Our Ingredients"
-    },
-    {
-        "type": "image_picker",
-        "id": "svg",
-        "label": "arrow"
-    },
-    {
-        "type": "image_picker",
-        "id": "image_1",
-        "label": "Image 1"
-    },
-    {
-        "type": "text",
-        "id": "image_1_title",
-        "label": "Image 1 Title",
-        "default": "Akkermansia muciniphila"
-    },
-    {
-        "type": "text",
-        "id": "image_1_desc",
-        "label": "Image 1 Description",
-        "default": "For total rejuvenation"
-    },
-    {
-        "type": "textarea",
-        "id": "image_1_detail",
-        "label": "Image 1 Detail",
-        "default": "Representing 3–5% of the microbial community, Akkermansia muciniphila is commonly found in the human gut. Rigorously studied in recent years, A. muciniphilia has been inversely associated with cardiovascular disease, obesity, diabetes, inflammation, and liver disease."
-    },
-    {
-        "type": "image_picker",
-        "id": "image_2",
-        "label": "Image 2"
-    },
-    {
-        "type": "text",
-        "id": "image_2_title",
-        "label": "Image 2 Title",
-        "default": "Quercetin"
-    },
-    {
-        "type": "text",
-        "id": "image_2_desc",
-        "label": "Image 2 Description",
-        "default": "For amplified support"
-    },
-    {
-        "type": "textarea",
-        "id": "image_2_detail",
-        "label": "Image 2 Detail",
-        "default": "Silymarin is currently the world's most effective treatment for liver disease. It has shown positive effects in treating nearly every known form of liver disease including cirrhosis, hepatitis, and necrosis, and liver damage from substance abuse."
-    },
-    {
-        "type": "image_picker",
-        "id": "image_3",
-        "label": "Image 3"
-    },
-    {
-        "type": "text",
-        "id": "image_3_title",
-        "label": "Image 3 Title",
-        "default": "Resveratrol"
-    },
-    {
-        "type": "text",
-        "id": "image_3_desc",
-        "label": "Image 3 Description",
-        "default": "For antioxidative protection"
-    },
-    {
-        "type": "textarea",
-        "id": "image_3_detail",
-        "label": "Image 3 Detail",
-        "default": "A potent polyphenolic compound, Resveratrol plays a key role in metabolic detoxification and health maintenance."
-    },
-    {
-        "type": "image_picker",
-        "id": "image_4",
-        "label": "Image 4"
-    },
-    {
-        "type": "text",
-        "id": "image_4_title",
-        "label": "Image 4 Title",
-        "default": "Silymarin"
-    },
-    {
-        "type": "text",
-        "id": "image_4_desc",
-        "label": "Image 4 Description",
-        "default": "For all-around hepatoprotective properties"
-    },
-    {
-        "type": "textarea",
-        "id": "image_4_detail",
-        "label": "Image 4 Detail",
-        "default": "Silymarin is currently the world's most effective treatment for liver disease."
-    },
-    {
-        "type": "image_picker",
-        "id": "image_5",
-        "label": "Image 5"
-    },
-    {
-        "type": "text",
-        "id": "image_5_title",
-        "label": "Image 5 Title",
-        "default": "Artichoke Leaf Extract"
-    },
-    {
-        "type": "text",
-        "id": "image_5_desc",
-        "label": "Image 5 Description",
-        "default": "For regenerative properties"
-    },
-    {
-        "type": "textarea",
-        "id": "image_5_detail",
-        "label": "Image 5 Detail",
-        "default": "Artichoke leaf extract has a long history of being used in traditional medicine for digestive and liver issues."
-    }
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "The building blocks"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "Our clinically — researched ingredients"
+        },
+        {
+            "type": "text",
+            "id": "button_link",
+            "label": "Button Link",
+            "default": "/pages/ingredient.html"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Our Ingredients"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "ingredient",
+            "name": "Ingredient",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Ingredient Image"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "label": "Ingredient Heading"
+                },
+                {
+                    "type": "text",
+                    "id": "sub_heading",
+                    "label": "Ingredient Sub-Heading"
+                },
+                {
+                    "type": "textarea",
+                    "id": "content",
+                    "label": "Ingredient Content"
+                }
+            ]
+        }
     ],
     "presets": [
-    {
-        "name": "AK - Home S6",
-        "category": "AKKA HOME"
-    }
+        {
+            "name": "AK - Home S6",
+            "category": "AKKA HOME"
+        }
     ]
 }
 {% endschema %}
+
     
