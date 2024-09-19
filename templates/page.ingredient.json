@@ -66,6 +66,26 @@
             "link_id": "Artichoke",
             "link_name": "Artichoke"
           }
+        },
+        "ingredient_hpLCa8": {
+          "type": "ingredient",
+          "settings": {
+            "ingredient_id": "Akkermansia",
+            "image_1": "shopify:\/\/shop_images\/sec2-image1_1.png",
+            "image_alt": "Illustration representing ingredient",
+            "ingredient_number": "01",
+            "ingredient_name": "Akkermansia muciniphila",
+            "ingredient_subtext": "for total rejuvenation",
+            "ingredient_description": "<p>Representing 3–5% of the microbial community, Akkermansia muciniphila is commonly found in the human gut. Rigorously studied in recent years, A. muciniphilia has been inversely associated with cardiovascular disease, obesity, diabetes, inflammation, and liver disease.<br\/><br\/>A. muciniphila is a game-changer in the realm of probiotics, and a cornerstone to AKKA's advanced formula. In its <a href=\"ourapproach.html\"><span style=\"text-decoration:underline\">most potent form<\/span> <\/a>— preserved pasteurized — it has the ability to support liver function while enhancing the intestinal barrier and boosting metabolic health.<\/p>",
+            "research_title": "The Research"
+          }
+        },
+        "list_WGLyNC": {
+          "type": "list",
+          "settings": {
+            "title": "The Journal ofFunctional Foods",
+            "description": "Strategies to promote abundance of Akkermansia muciniphila, an emerging probiotics in the gut, evidence from dietary intervention studies\n<br><br>\nKey takeaway: \"Unexpectedly we discovered that pasteurization of Akkermansia enhanced its capacity to reduce fat mass development, insulin resistance and cholesterol.\""
+          }
         }
       },
       "block_order": [
@@ -73,7 +93,9 @@
         "link_FEUmH7",
         "link_erkYyn",
         "link_K36NFh",
-        "link_camwxT"
+        "link_camwxT",
+        "ingredient_hpLCa8",
+        "list_WGLyNC"
       ],
       "settings": {
         "section_title": "Ingredient Information"
