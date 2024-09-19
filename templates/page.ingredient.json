@@ -155,6 +155,7 @@
           "type": "ingredient",
           "settings": {
             "ingredient_id": "Artichoke",
+            "image_1": "shopify:\/\/shop_images\/sec2-image5.png",
             "image_alt": "Illustration representing ingredient",
             "ingredient_number": "05",
             "ingredient_name": "Artichoke Leaf Extract",
