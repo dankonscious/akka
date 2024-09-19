@@ -17,9 +17,9 @@
                 {% for block in section.blocks %}
                     <li class="flex flex-col max-w-[calc(20%_-_16px)] w-[255px] max-[1024px]:w-full max-[1024px]:max-w-full self-stretch max-[1024px]:h-[250px]">
                         <article class="overflow-hidden relative bg-[#EDEEF5] h-full max-[1024px]:h-[456px]">
-                            <img src="{{ 'arrow-w.svg' |  asset_url }}" class="arrow absolute top-[15px] right-[15px] z-10 max-[1024px]:top-[190px] max-[1024px]:rotate-[135deg]">
+                            <img src="{{ 'arrow-w.svg' | file_url }}" class="arrow absolute top-[15px] right-[15px] z-10 max-[1024px]:top-[190px] max-[1024px]:rotate-[135deg]">
                             <div class="wreset w-[600px] wrap-trans translate-x-[-50%] translate-y-[10%] max-[1024px]:translate-x-[0%] max-[1024px]:translate-y-[-25%] max-[1024px]:mx-auto max-[1024px]:w-auto">
-                            <img src="assets/images/akkermansia_muciniphila.png" class="w-[330px] h-auto block mx-auto scale-150 max-[1024px]:scale-100">              
+                            <img src="{{ block.settings.image |  img_url: 'master'  }}" class="w-[330px] h-auto block mx-auto scale-150 max-[1024px]:scale-100">              
                             <div class="wrap-p p-[10px] opacity-0 translate-y-[50%] max-[1024px]:opacity-100 max-[1024px]:translate-y-[4%]">
                                 <h3 class="text-[22px] font-semibold tracking-[0.44px] uppercase mb-[10px] max-[1024px]:hidden">
                                     {{ block.settings.heading }}
@@ -76,7 +76,7 @@
     height: auto;
 }
 #section6 li.active article .arrow {
-    transform: rotate(-180deg); /* Corrected property */
+    transform: rotate(-45deg); /* Corrected property */
 }
 }
 
