@@ -241,16 +241,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
             "heading": "Akkermansia muciniphila",
-            "sub_heading": "tes",
-            "content": "test"
-          }
-        },
-        "ingredient_YHnV8f": {
-          "type": "ingredient",
-          "settings": {
-            "heading": "",
-            "sub_heading": "",
-            "content": ""
+            "sub_heading": "For total rejuvenation",
+            "content": "Representing 3–5% of the microbial community, Akkermansia muciniphila is commonly found in the human gut. Rigorously studied in recent years, A. muciniphilia has been inversely associated with cardiovascular disease, obesity, diabetes, inflammation, and liver disease."
           }
         },
         "ingredient_LTJ6Y9": {
@@ -258,8 +250,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
             "heading": "Quercetin",
-            "sub_heading": "tes",
-            "content": "test"
+            "sub_heading": "For amplified support",
+            "content": "Silymarin is currently the world's most effective treatment for liver disease. It has shown positive effects in treating nearly every known form of liver disease including cirrhosis, hepatitis, and necrosis, and liver damage from substance abuse."
           }
         },
         "ingredient_6CaWWg": {
@@ -267,8 +259,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
             "heading": "Resveratrol",
-            "sub_heading": "tes",
-            "content": "test"
+            "sub_heading": "For antioxidative protection",
+            "content": "A potent polyphenolic compound, Resveratrol plays a key role in metabolic detoxification and health maintenance. It not only prevents the formation of new fat cells but also enhances fat burning through a process known as thermogenesis."
           }
         },
         "ingredient_rHKfGz": {
@@ -276,8 +268,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
             "heading": "Silymarin",
-            "sub_heading": "tes",
-            "content": "test"
+            "sub_heading": "For all-around hepatoprotective properties",
+            "content": "Silymarin is currently the world's most effective treatment for liver disease. It has shown positive effects in treating nearly every known form of liver disease including cirrhosis, hepatitis, and necrosis, and liver damage from substance abuse."
           }
         },
         "ingredient_cijhFg": {
@@ -285,14 +277,13 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
             "heading": "Artichoke Leaf Extract",
-            "sub_heading": "tes",
-            "content": "test"
+            "sub_heading": "For regenerative properties",
+            "content": "Artichoke leaf extract has a long history of being used in traditional medicine as a treatment for digestive and liver issues. Full of protective and regenerative properties, artichoke leaf extract not only improves blood flow, but also reduces overall cholesterol and triglycerides."
           }
         }
       },
       "block_order": [
         "ingredient_yYfWxc",
-        "ingredient_YHnV8f",
         "ingredient_LTJ6Y9",
         "ingredient_6CaWWg",
         "ingredient_rHKfGz",
