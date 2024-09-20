@@ -49,12 +49,12 @@
               </div>
 
             <!-- SLIDER Desktop PART -->
-            <div class="swiper mySwiper w-full h-full mt-16 max-[1200px]:!hidden">
+            <div class="swiper mySwiper w-full h-full mt-16 max-[1200px] max-[1200px]:!hidden">
               <div class="swiper-wrapper">
                 {% for testimonial in section.blocks %}
                   <div class="swiper-slide">
                     <div class="flex gap-10 items-center max-[1200px]:max-w-full">
-                      <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-[1200px]:max-w-full">
+                      <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-[1200px]:max-w-full ">
 
                         <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full border-t border-[#2E3666] max-[1200px]:max-w-full">
                           <div class="flex flex-col grow shrink items-start pr-16 w-44">
@@ -92,7 +92,170 @@
                     </div>
                   </div>
                 {% endfor %}
-              </div>
+              </div>              
+            </div>
+
+            <!--SLIDER Mobile PART-->
+            <div class="swiper mySwiper w-full h-full mt-16 !hidden max-[1200px]:!block">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ">
+                  <div class="flex gap-10 items-center max-[1200px]:max-w-full">
+                    <!--SLIDE 1-->
+                    <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-[1200px]:max-w-full">                      
+                      <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full max-[1200px]:max-w-full">
+                        <div class="flex flex-col grow shrink items-start pr-16 w-44">                            
+                          <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
+                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Michael G.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
+                            <span class="self-stretch my-auto">verified customer</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
+                                <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                          </div>
+                        </div>
+                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                          "I was struggling with chronic fatigue and auto-immune problems. I was constantly breaking out in rashes and itching all over my body. Akka gave me a 'clean body' feeling in just a few weeks and I couldn't be happier. Amazing focus and concentration. I feel 20 years younger."
+                        </blockquote>
+                        <div class="flex flex-col grow shrink w-44">
+                          <img loading="lazy" src="{{ 'michealg-photo.png' |  file_img_url: 'master' }}" class="object-contain w-full aspect-square" alt="Michael G.'s photo" />
+                        </div>
+                      </article> 
+                    </div>
+                  </div>
+                </div>   
+                <div class="swiper-slide ">
+                  <div class="flex gap-10 items-center max-[1200px]:max-w-full">
+                    <!--SLIDE 2-->
+                    <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-[1200px]:max-w-full">   
+                      <article class="flex flex-wrap gap-10 items-start py-8 mt-1 w-full  max-[1200px]:max-w-full">
+                        <div class="flex flex-col grow shrink items-start pr-16 w-44">
+                          <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
+                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Elizabeth M.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
+                            <span class="self-stretch my-auto">verified customer</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
+                                <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                          "The effect was immediate, and dramatic. My energy levels improved, and the bloating disappeared. My previous issues with fatigue and discomfort after meals became a thing of the past."
+                        </blockquote>
+                        <div class="flex flex-col grow shrink w-44">
+                          <img loading="lazy" src="{{ 'elizabethm-photo.png' |  file_img_url: 'master' }}" class="object-contain w-full rounded-full aspect-square" alt="Elizabeth M.'s photo" />
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>                    
+                <div class="swiper-slide">
+                  <div class="flex gap-10 items-center max-[1200px]:max-w-full">
+                    <!--SLIDE 3-->
+                    <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-[1200px]:max-w-full">                      
+                      <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full max-[1200px]:max-w-full">
+                        <div class="flex flex-col grow shrink items-start pr-16 w-44">                            
+                          <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
+                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Joan T.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
+                            <span class="self-stretch my-auto">verified customer</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
+                                <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                          </div>
+                        </div>
+                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                          “Akka was a godsend. I had no idea why I couldn't lose weight. I tried everything including hard core diets, exercise programs, and fat burner pills (they made the problem worse).   I had no idea that my liver was responsible.  I tried Akka and felt the effects in days.  My mental clarity has also been amazing. Five stars. “
+                        </blockquote>
+                        <div class="flex flex-col grow shrink w-44">
+                          <img loading="lazy" src="{{ 'joant.png' |  file_img_url: 'master' }}" class="object-contain w-full aspect-square" alt="Michael G.'s photo" />
+                        </div>
+                      </article> 
+                    </div>
+                  </div>
+                </div>  
+                <div class="swiper-slide">
+                  <div class="flex gap-10 items-center max-[1200px]:max-w-full">
+                    <!--SLIDE 4-->
+                    <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-[1200px]:max-w-full">     
+                      <article class="flex flex-wrap gap-10 items-start py-8 mt-1 w-full max-[1200px]:max-w-full">
+                        <div class="flex flex-col grow shrink items-start pr-16 w-44">
+                          <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
+                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Jerry S.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
+                            <span class="self-stretch my-auto">verified customer</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
+                                <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                          “I was skeptical at first, as I had never been able to find something that truly worked, but Akka proved me wrong. Not only has my energy returned, but I've also started to lose some of the weight that seemed impossible to shed before. Akka has truly been a game-changer for me. A solid 5-star experience.”
+                        </blockquote>
+                        <div class="flex flex-col grow shrink w-44">
+                          <img loading="lazy" src="{{ 'jerrys.png' |  file_img_url: 'master' }}" class="object-contain w-full rounded-full aspect-square" alt="Elizabeth M.'s photo" />
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>                    
+                <div class="swiper-slide">
+                  <div class="flex gap-10 items-center max-[1200px]:max-w-full">
+                    <!--SLIDE 5-->
+                    <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-[1200px]:max-w-full">                      
+                      <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full max-[1200px]:max-w-full">
+                        <div class="flex flex-col grow shrink items-start pr-16 w-44">                            
+                          <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
+                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Jerry S.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
+                            <span class="self-stretch my-auto">verified customer</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
+                                <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                          </div>
+                        </div>
+                        <!--FOR DESKTOP-->
+                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full max-[1200px]:hidden">
+                          “Akka changed everything for me. Not only did it help cleanse and rejuvenate my liver, but it also kick-started my weight loss and restored my energy levels. For the first time in years, I felt like my body was working with me, not against me.
+                          <br><br>
+                          The transformation was noticeable not just to me but to everyone around me. Colleagues and friends commented on how much happier and more energetic I seemed. I went from avoiding social gatherings to embracing them, thanks to the newfound confidence Akka gave me.
+                          <br><br>
+                          I believe Akka is something everyone should know about, especially those struggling with similar issues. It has not only improved my physical health but has also had a profound impact on my overall well-being and happiness. I've recommended it to everyone I care about.”
+                        </blockquote>
+                        <!--FOR MOBILE-->
+                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full hidden max-[1200px]:block">
+                          ...The transformation was noticeable not just to me but to everyone around me. Colleagues and friends commented on how much happier and more energetic I seemed. I went from avoiding social gatherings to embracing them, thanks to the newfound confidence Akka gave me...
+                        </blockquote>
+                        <div class="flex flex-col grow shrink w-44">
+                          <img loading="lazy" src="{{ 'jerrys2.png' |  file_img_url: 'master' }}" class="object-contain w-full aspect-square" alt="Michael G.'s photo" />
+                        </div>
+                      </article>                        
+                    </div>
+                  </div>
+                </div>
+              </div>    
+              <div class="flex gap-10 items-end max-[1200px]:order-2 max-[1200px]:mx-auto max-[1200px]:mt-[-30px]">
+                <div class="flex gap-8 items-start min-h-[32px] min-w-[240px] rotate-[-1.6081230200044232e-16rad] max-[1200px]:mx-auto">
+                  <div class="swiper-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
+                      <path d="M1 19L101 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M81 13L101 19H81" fill="#2E3666"/>
+                      <path d="M81 13L101 19H81V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg> 
+                  </div>
+                  <div class="swiper-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
+                      <path d="M133 19L33 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M53 13L33 19L53 19" fill="#2E3666"/>
+                      <path d="M53 13L33 19L53 19V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  </div>                                       
+                </div>
+              </div>              
             </div>
           </div>
         </div>
