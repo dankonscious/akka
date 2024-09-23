@@ -14,12 +14,12 @@
     "ak_footer_wNwe8X": {
       "type": "ak-footer",
       "settings": {
-        "newsletter_title": "Sign up for our newsletter and get first access to the very best of our products, inspiration, and community.",
-        "sitemap_links": "footer",
+        "newsletter_title": "Sign up for our newsletter and get first access to the very best of our products, inspiration and community.",
+        "sitemap_links": "footer-information",
         "information_links": "main-menu",
-        "footer_logo": "shopify:\/\/shop_images\/akka-text.png",
-        "facebook_icon": "shopify:\/\/shop_images\/facebook.png",
-        "instagram_icon": "shopify:\/\/shop_images\/ig.png",
+        "footer_logo": "shopify://shop_images/akka-text.png",
+        "facebook_icon": "shopify://shop_images/facebook.png",
+        "instagram_icon": "shopify://shop_images/ig.png",
         "contact_email": "hello@tryakka.com",
         "contact_phone": "844-808-(AKKA) 2552",
         "contact_address": "Matawan, NJ, 07747"
