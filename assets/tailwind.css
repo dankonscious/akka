@@ -3206,6 +3206,14 @@ html {
   font-family: "Work Sans", system-ui;
 }
 
+.even\:border-l-0:nth-child(even) {
+  border-left-width: 0px;
+}
+
+.even\:border-r-0:nth-child(even) {
+  border-right-width: 0px;
+}
+
 .hover\:text-\[25px\]:hover {
   font-size: 25px;
 }

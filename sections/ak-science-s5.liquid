@@ -9,7 +9,7 @@
     </div>
     <section class="flex flex-wrap items-stretch mt-[64px] max-md:border max-md:border-solid max-md:border-[#2E3666]">
       {% for block in section.blocks %}
-        <article class="flex flex-col px-3 pt-4 pb-8 border border-solid border-[#2E3666] min-w-[240px] w-[443px] max-md:max-w-full max-md:border-none max-md:pb-4">
+        <article class="flex flex-col px-3 pt-4 pb-8 border border-solid border-[#2E3666] min-w-[240px] w-[443px] max-md:max-w-full max-md:border-none max-md:pb-4 even:border-l-0 even:border-r-0">
           <img loading="lazy" src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt }}" class="object-contain max-w-full aspect-square w-[420px]" />
           <h2 class="flex items-start mt-4 w-full text-[24px] tracking-[0.48px] leading-[40px] uppercase whitespace-nowrap max-md:max-w-full font-['Blisstwin']">
             {{ block.settings.heading }}
