@@ -2452,6 +2452,18 @@ video {
   font-family: Blisstwin;
 }
 
+.\!font-\[\'work_sans\'\] {
+  font-family: 'work sans' !important;
+}
+
+.\!font-\[\'Work_Sans\'\2c _system-ui\] {
+  font-family: 'Work Sans', system-ui !important;
+}
+
+.\!font-\[\'Work_Sans\'\] {
+  font-family: 'Work Sans' !important;
+}
+
 .\!text-\[18px\] {
   font-size: 18px !important;
 }
@@ -2575,6 +2587,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.\!font-bold {
+  font-weight: 700 !important;
 }
 
 .uppercase {

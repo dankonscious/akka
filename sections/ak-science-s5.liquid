@@ -11,7 +11,7 @@
       {% for block in section.blocks %}
         <article class="flex flex-col px-3 pt-4 pb-8 border border-solid border-[#2E3666] min-w-[240px] w-[443px] max-md:max-w-full max-md:border-none max-md:pb-4">
           <img loading="lazy" src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt }}" class="object-contain max-w-full aspect-square w-[420px]" />
-          <h2 class="flex items-start mt-4 w-full text-[24px] tracking-[0.48px] leading-[40px] uppercase whitespace-nowrap max-md:max-w-full">
+          <h2 class="flex items-start mt-4 w-full text-[24px] tracking-[0.48px] leading-[40px] uppercase whitespace-nowrap max-md:max-w-full font-['Blisstwin']">
             {{ block.settings.heading }}
             <span class="flex flex-1 shrink h-10 basis-0 min-w-[240px] w-[301px]"></span>
           </h2>
