@@ -3,14 +3,14 @@
   <div class="max-w-[var(--page-width)] w-full mx-auto pt-[128px] pb-[144px] max-md:pt-[64px] max-md:pb-0">
     <!-- TITLE DIV -->
     <div class="flex justify-between items-start max-md:flex-col max-md:px-4">
-      <div class="max-w-[325px] w-full">
+      <div class="max-w-[330px] w-full">
         <h3 class="text-[70px] leading-[79%] max-md:text-[40px] max-md:mb-8">
           {{ section.settings.title }}
           <span class="font-['Blisstwin'] mt-[12px] block">{{ section.settings.subtitle }}</span>
         </h3>
       </div>
-      <div class="max-w-[658px] w-full">
-        <p class="text-[24px] leading-[140%] tracking-[0.48px] max-md:text-[20px]">{{ section.settings.description }}</p>
+      <div class="max-w-[658px] w-full [&>p]:text-[24px] [&>p]:leading-[140%] [&>p]:tracking-[0.48px] [&>p]:max-md:text-[20px]">
+        {{ section.settings.description }}
       </div>
     </div>
     <div class="w-full py-[16px] border-b-[4px] border-solid border-[#3E488B] mt-[64px] max-md:hidden">
@@ -119,10 +119,9 @@
       "default": "can help"
     },
     {
-      "type": "textarea",
+      "type": "richtext",
       "id": "description",
-      "label": "Description",
-      "default": "AKKA was crafted with the world's most researched and clinically proven ingredients for liver health..."
+      "label": "Description"
     },
     {
       "type": "text",

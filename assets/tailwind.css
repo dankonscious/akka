@@ -1035,6 +1035,10 @@ video {
   margin-top: 8px;
 }
 
+.ml-\[16px\] {
+  margin-left: 16px;
+}
+
 .block {
   display: block;
 }
@@ -1711,6 +1715,10 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[330px\] {
+  max-width: 330px;
 }
 
 .flex-1 {
@@ -4122,12 +4130,26 @@ html {
   font-size: 20px;
 }
 
+.\[\&\>p\]\:text-\[24px\]>p {
+  font-size: 24px;
+}
+
 .\[\&\>p\]\:leading-\[140\%\]>p {
   line-height: 140%;
 }
 
 .\[\&\>p\]\:tracking-\[0\.4px\]>p {
   letter-spacing: 0.4px;
+}
+
+.\[\&\>p\]\:tracking-\[0\.48px\]>p {
+  letter-spacing: 0.48px;
+}
+
+@media not all and (min-width: 768px) {
+  .\[\&\>p\]\:max-md\:text-\[20px\]>p {
+    font-size: 20px;
+  }
 }
 
 .\[\&_\.active\]\:\!bg-\[\#dcdeeb\] .active {
