@@ -16,6 +16,21 @@
     </div>
 </section>
 
+<script>
+  const swiperMarquee = new Swiper(".marquee", {
+    spaceBetween: 35,
+    centeredSlides: true,
+    speed: 6000,
+    autoplay: {
+      delay: 1,
+    },
+    loop: true,
+    slidesPerView:'auto',
+    allowTouchMove: false,
+    disableOnInteraction: true
+  });
+</script>
+
 {% schema %}
     {
         "name": "AK - OurApproach Marquee",

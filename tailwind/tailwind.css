@@ -189,6 +189,7 @@ section {
  html {
   overflow-x: hidden;
   overflow-y: scroll;
+  padding-bottom: 0 !important;
 }
 :root {
   --page-width: 1340px;
@@ -229,4 +230,9 @@ section {
 
 .fade_slider .fade_slide.show {
   opacity: 1;
+}
+#footer ::placeholder {
+  color: #2E3666;
+  opacity: 1; /* Firefox */
+  font-family: "Work Sans", system-ui;
 }
