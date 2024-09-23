@@ -161,6 +161,16 @@
         "title2": "can help",
         "description": "Everyday choices about what you consume have direct impacts on your liver's health, and may be at the root of your sluggish liver. Here’s how your daily consumption can be affecting the liver."
       }
+    },
+    "ak_science_s6_MPxFRQ": {
+      "type": "ak-science-s6",
+      "settings": {
+        "text_content": "Limiting sugar, alcohol, trans fats and fried food are great steps towards improving your liver health. We created AKKA to accelerate the process.",
+        "link_url": "product.html",
+        "link_text": "shop akka",
+        "desktop_background_image": "shopify://shop_images/sec5-bg.png",
+        "mobile_background_image": "shopify://shop_images/sec5-bg-mob.png"
+      }
     }
   },
   "order": [
@@ -169,6 +179,7 @@
     "ak_science_s2_VXNabU",
     "ak_science_s3_eVcLTQ",
     "ak_science_s4_CzJzJJ",
-    "ak_science_s5_hHVfjj"
+    "ak_science_s5_hHVfjj",
+    "ak_science_s6_MPxFRQ"
   ]
 }
