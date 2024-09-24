@@ -20,9 +20,9 @@
         <source src="{{ section.settings.video_url }}" type="video/mp4">
         </video>
 
-        <p class="flex flex-col items-center mt-[42px] mb-0 max-w-full text-2xl leading-[normal] tracking-[0.48px] w-[847px] max-[1200px]:mb-2.5 text-center mx-auto max-[1200px]:mt-[32px] max-[1200px]:text-left max-[1200px]:text-[20px]">
-        <span class="text-[#2E3666] max-[1200px]:max-w-full">{{ section.settings.content }}</span>
-        </p>
+        <div class="flex flex-col items-center mt-[42px] mb-0 max-w-full w-[847px] max-[1200px]:mb-2.5 text-center mx-auto max-[1200px]:mt-[32px]">
+        <span class="text-[#2E3666] max-[1200px]:max-w-full text-2xl leading-[normal] tracking-[0.48px] max-[1200px]:text-[20px] max-[1200px]:text-left">{{ section.settings.content }}</span>
+        </div>
 
         <a href="{{ section.settings.button_link }}" class="button mx-auto mt-[32px] gap-[16px] !flex w-fit uppercase">
         <span>{{ section.settings.button_text }}</span>
@@ -92,10 +92,9 @@
         "label": "Video URL"
     },
     {
-        "type": "textarea",
+        "type": "richtext",
         "id": "content",
-        "label": "Content",
-        "default": "We believe in the power of strong science to bring you great health..."
+        "label": "Content"
     },
     {
         "type": "text",

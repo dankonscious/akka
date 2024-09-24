@@ -4194,8 +4194,17 @@ html {
   font-size: 22px;
 }
 
+.\[\&\>p\]\:text-2xl>p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .\[\&\>p\]\:leading-\[140\%\]>p {
   line-height: 140%;
+}
+
+.\[\&\>p\]\:leading-\[normal\]>p {
+  line-height: normal;
 }
 
 .\[\&\>p\]\:tracking-\[0\.48px\]>p {
@@ -4208,6 +4217,16 @@ html {
 
 .\[\&\>p\]\:tracking-wide>p {
   letter-spacing: 0.025em;
+}
+
+@media (max-width: 1200px) {
+  .\[\&\>p\]\:max-\[1200px\]\:text-left>p {
+    text-align: left;
+  }
+
+  .\[\&\>p\]\:max-\[1200px\]\:text-\[20px\]>p {
+    font-size: 20px;
+  }
 }
 
 @media not all and (min-width: 768px) {
