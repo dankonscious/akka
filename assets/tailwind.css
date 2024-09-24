@@ -3599,6 +3599,18 @@ html {
     padding-top: 64px;
   }
 
+  .max-\[1200px\]\:pb-\[7px\] {
+    padding-bottom: 7px;
+  }
+
+  .max-\[1200px\]\:pt-\[37px\] {
+    padding-top: 37px;
+  }
+
+  .max-\[1200px\]\:pr-\[20\%\] {
+    padding-right: 20%;
+  }
+
   .max-\[1200px\]\:text-left {
     text-align: left;
   }
@@ -3634,6 +3646,10 @@ html {
 
   .max-\[1200px\]\:text-\[60px\] {
     font-size: 60px;
+  }
+
+  .max-\[1200px\]\:\!text-\[16px\] {
+    font-size: 16px !important;
   }
 
   .max-\[1200px\]\:leading-\[140\%\] {
@@ -4124,6 +4140,10 @@ html {
 
   .max-md\:tracking-\[-0\.8px\] {
     letter-spacing: -0.8px;
+  }
+
+  .max-md\:text-\[18\] {
+    color: 18;
   }
 }
 

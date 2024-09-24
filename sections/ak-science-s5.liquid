@@ -5,17 +5,17 @@
       <h3 class="text-[70px] leading-[104%] max-md:text-[40px]">{{ section.settings.title }}
         <span class="font-['Blisstwin'] leading-[79%]">{{ section.settings.title2 }}</span>
       </h3>      
-      <p class="text-[24px] leading-[36px] tracking-[0.48px] mt-[35px] max-md:mt-[32px] max-md:text-[20px]">{{ section.settings.description }}</p>
+      <p class="text-[24px] leading-[36px] tracking-[0.48px] mt-[35px] max-md:mt-[32px] max-md:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.description }}</p>
     </div>
     <section class="flex flex-wrap items-stretch mt-[64px] max-md:border max-md:border-solid max-md:border-[#2E3666]">
       {% for block in section.blocks %}
         <article class="flex flex-col px-3 pt-4 pb-8 border border-solid border-[#2E3666] min-w-[240px] w-[443px] max-md:max-w-full max-md:border-none max-md:pb-4 even:border-l-0 even:border-r-0">
           <img loading="lazy" src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt }}" class="object-contain max-w-full aspect-square w-[420px]" />
-          <h2 class="flex items-start mt-4 w-full text-[24px] tracking-[0.48px] leading-[40px] uppercase whitespace-nowrap max-md:max-w-full font-['Blisstwin']">
+          <h2 class="items-start mt-4 w-full text-[24px] tracking-[0.48px] leading-[40px] uppercase  max-md:max-w-full font-['Blisstwin'] max-[1200px]:pr-[20%]">
             {{ block.settings.heading }}
-            <span class="flex flex-1 shrink h-10 basis-0 min-w-[240px] w-[301px]"></span>
+            <span class=" flex-1 shrink h-10 basis-0 min-w-[240px] w-[301px] hidden"></span>
           </h2>
-          <p class="gap-2.5 self-stretch mt-4 max-w-full text-[22px] max-md:text-[20px] tracking-[0.44px] leading-[140%] w-[421px] max-md:max-w-full">
+          <p class="gap-2.5 self-stretch mt-4 max-w-full text-[22px] max-md:text-[18] tracking-[0.44px] leading-[140%] w-[421px] max-md:max-w-full max-[1200px]:text-[18px]">
             {{ block.settings.description }}
           </p>
         </article>
