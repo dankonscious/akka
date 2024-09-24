@@ -3667,6 +3667,10 @@ html {
   .max-\[1200px\]\:tracking-\[0\.48px\] {
     letter-spacing: 0.48px;
   }
+
+  .max-\[1200px\]\:tracking-\[-0\.72px\] {
+    letter-spacing: -0.72px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -4060,6 +4064,11 @@ html {
   .max-md\:py-\[32px\] {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+
+  .max-md\:px-\[16\%\] {
+    padding-left: 16%;
+    padding-right: 16%;
   }
 
   .max-md\:pb-0 {
