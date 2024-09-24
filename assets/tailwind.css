@@ -2483,6 +2483,10 @@ video {
   font-family: 'Poppins';
 }
 
+.font-\[\'Neue_Haas_Grotesk_Display_Pro\'\] {
+  font-family: 'Neue Haas Grotesk Display Pro';
+}
+
 .\!text-\[18px\] {
   font-size: 18px !important;
 }
@@ -3716,6 +3720,14 @@ html {
   .max-lg\:pr-\[70px\] {
     padding-right: 70px;
   }
+
+  .max-lg\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .max-lg\:tracking-\[-0\.76px\] {
+    letter-spacing: -0.76px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -4285,6 +4297,12 @@ html {
   }
 
   .\[\&\>p\]\:max-\[1200px\]\:text-\[20px\]>p {
+    font-size: 20px;
+  }
+}
+
+@media not all and (min-width: 1024px) {
+  .\[\&\>p\]\:max-lg\:text-\[20px\]>p {
     font-size: 20px;
   }
 }

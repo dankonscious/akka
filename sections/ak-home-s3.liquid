@@ -5,8 +5,8 @@
       <header class="flex flex-wrap gap-8 items-center self-start text-[70px] max-[1200px]:max-w-full max-[1200px]:text-4xl">
         <img loading="lazy" src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image_alt }}" class="object-contain shrink-0 w-48 aspect-[2.28] rounded-[100px]" />
         <h1 class="min-w-[240px] max-[1200px]:max-w-full max-[1200px]:text-4xl text-[#2E3666]">
-          <span class="text-center max-[1200px]:text-4xl">{{ section.settings.title_line_1 }}</span>
-          <span class="w-[400px] max-[1200px]:text-4xl font-['blisstwin']">{{ section.settings.title_line_2 }}</span>
+          <span class="text-center max-[1200px]:text-[40px]">{{ section.settings.title_line_1 }}</span>
+          <span class="w-[400px] max-[1200px]:text-[40px] font-['blisstwin']">{{ section.settings.title_line_2 }}</span>
         </h1>
       </header>
       <div class="mt-16 [&>p]:text-[22px] [&>p]:tracking-wide max-[1200px]:mt-10 max-[1200px]:max-w-full">
@@ -34,10 +34,10 @@
               <div class="w-[calc(100%_-_760px)]"></div>
               <div class="w-[760px] max-[1200px]:w-full max-[1200px]:px-0 max-[1200px]:py-[16px] justify-end flex gap-8 max-[1200px]:gap-[16px] items-center max-xl:justify-center pt-[24px] pb-[24px] pr-[100px]">
                 <div  id="sc{{ forloop.index }}" class="sc {{ step.settings.active | default: '' }} flex justify-center items-center rounded-full bg-blend-multiply text-[50px] font-extralight tracking-tight text-center whitespace-nowrap w-[100px] h-[100px] max-[1200px]:max-w-[70px] max-[1200px]:w-full max-[1200px]:h-[70px] bg-[#EDEEF5]">
-                  <span class="px-3 py-0.5 max-[1200px]:text-[50px]">{{ step.settings.step_number }}</span>
+                  <span class="px-3 py-0.5 max-[1200px]:text-[50px] font-['Neue_Haas_Grotesk_Display_Pro']">{{ step.settings.step_number }}</span>
                 </div>
                 <div class="flex-1">
-                  <p class="self-stretch my-auto text-2xl tracking-wide">
+                  <p class="self-stretch my-auto text-2xl tracking-wide max-lg:text-[20px]">
                     {{ step.settings.step_description }}
                   </p>
                 </div>

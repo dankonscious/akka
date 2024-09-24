@@ -169,8 +169,19 @@
         font-weight: normal;
         font-style: normal;
         font-display: swap;
-    }
-    
+      }
+
+      @font-face {
+        font-family: 'Neue Haas Grotesk Display Pro';
+        src: url({{ 'NeueHaasDisplay-Light.eot' | file_url }});
+        src: url({{ 'NeueHaasDisplay-Light.eot' | file_url }}?#iefix) format('embedded-opentype'),
+            url({{ 'NeueHaasDisplay-Light.woff2' | file_url }}) format('woff2'),
+            url({{ 'NeueHaasDisplay-Light.woff' | file_url }}) format('woff'),
+            url({{ 'NeueHaasDisplay-Light.ttf' | file_url }}) format('truetype');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
       @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
     
