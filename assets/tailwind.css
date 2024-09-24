@@ -4190,6 +4190,10 @@ html {
   font-size: 24px;
 }
 
+.\[\&\>p\]\:text-\[22px\]>p {
+  font-size: 22px;
+}
+
 .\[\&\>p\]\:leading-\[140\%\]>p {
   line-height: 140%;
 }
@@ -4200,6 +4204,10 @@ html {
 
 .\[\&\>p\]\:tracking-\[0\.4px\]>p {
   letter-spacing: 0.4px;
+}
+
+.\[\&\>p\]\:tracking-wide>p {
+  letter-spacing: 0.025em;
 }
 
 @media not all and (min-width: 768px) {
