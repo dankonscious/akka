@@ -2456,6 +2456,10 @@ video {
   font-family: Blisstwin;
 }
 
+.font-\[\'Poppins\'\] {
+  font-family: 'Poppins';
+}
+
 .\!text-\[18px\] {
   font-size: 18px !important;
 }
