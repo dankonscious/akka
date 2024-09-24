@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.12 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -915,6 +915,10 @@ video {
   margin-left: -1px;
 }
 
+.ml-\[16px\] {
+  margin-left: 16px;
+}
+
 .ml-\[200px\] {
   margin-left: 200px;
 }
@@ -1033,10 +1037,6 @@ video {
 
 .mt-\[8px\] {
   margin-top: 8px;
-}
-
-.ml-\[16px\] {
-  margin-left: 16px;
 }
 
 .block {
@@ -1274,6 +1274,10 @@ video {
 
 .w-\[101\%\] {
   width: 101%;
+}
+
+.w-\[1036px\] {
+  width: 1036px;
 }
 
 .w-\[106px\] {
@@ -1525,10 +1529,6 @@ video {
   width: 100%;
 }
 
-.w-\[1036px\] {
-  width: 1036px;
-}
-
 .min-w-\[1350px\] {
   min-width: 1350px;
 }
@@ -1581,8 +1581,8 @@ video {
   max-width: 300px;
 }
 
-.max-w-\[325px\] {
-  max-width: 325px;
+.max-w-\[330px\] {
+  max-width: 330px;
 }
 
 .max-w-\[354px\] {
@@ -1715,10 +1715,6 @@ video {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[330px\] {
-  max-width: 330px;
 }
 
 .flex-1 {
@@ -2424,6 +2420,10 @@ video {
   text-align: center;
 }
 
+.\!font-\[\'Work_Sans\'\] {
+  font-family: 'Work Sans' !important;
+}
+
 .font-\[\'Blisstwin\'\] {
   font-family: 'Blisstwin';
 }
@@ -2450,18 +2450,6 @@ video {
 
 .font-\[Blisstwin\] {
   font-family: Blisstwin;
-}
-
-.\!font-\[\'work_sans\'\] {
-  font-family: 'work sans' !important;
-}
-
-.\!font-\[\'Work_Sans\'\2c _system-ui\] {
-  font-family: 'Work Sans', system-ui !important;
-}
-
-.\!font-\[\'Work_Sans\'\] {
-  font-family: 'Work Sans' !important;
 }
 
 .\!text-\[18px\] {
@@ -2565,6 +2553,10 @@ video {
   line-height: 1.75rem;
 }
 
+.\!font-bold {
+  font-weight: 700 !important;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2587,10 +2579,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.\!font-bold {
-  font-weight: 700 !important;
 }
 
 .uppercase {
@@ -3218,10 +3206,6 @@ html {
   font-size: 25px;
 }
 
-.hover\:font-bold:hover {
-  font-weight: 700;
-}
-
 .hover\:font-semibold:hover {
   font-weight: 600;
 }
@@ -3416,13 +3400,13 @@ html {
     width: 43%;
   }
 
-  .max-\[1200px\]\:w-full {
-    width: 100%;
-  }
-
   .max-\[1200px\]\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .max-\[1200px\]\:w-full {
+    width: 100%;
   }
 
   .max-\[1200px\]\:max-w-\[223px\] {
@@ -4013,9 +3997,9 @@ html {
     padding-right: 16px;
   }
 
-  .max-md\:px-\[20\%\] {
-    padding-left: 20%;
-    padding-right: 20%;
+  .max-md\:px-\[18\%\] {
+    padding-left: 18%;
+    padding-right: 18%;
   }
 
   .max-md\:py-0 {
@@ -4036,11 +4020,6 @@ html {
   .max-md\:py-\[32px\] {
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-
-  .max-md\:px-\[18\%\] {
-    padding-left: 18%;
-    padding-right: 18%;
   }
 
   .max-md\:pb-0 {
@@ -4099,12 +4078,12 @@ html {
     font-size: 30px;
   }
 
-  .max-md\:text-\[40px\] {
-    font-size: 40px;
-  }
-
   .max-md\:text-\[36px\] {
     font-size: 36px;
+  }
+
+  .max-md\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .max-md\:font-semibold {
@@ -4162,12 +4141,12 @@ html {
   line-height: 140%;
 }
 
-.\[\&\>p\]\:tracking-\[0\.4px\]>p {
-  letter-spacing: 0.4px;
-}
-
 .\[\&\>p\]\:tracking-\[0\.48px\]>p {
   letter-spacing: 0.48px;
+}
+
+.\[\&\>p\]\:tracking-\[0\.4px\]>p {
+  letter-spacing: 0.4px;
 }
 
 @media not all and (min-width: 768px) {
