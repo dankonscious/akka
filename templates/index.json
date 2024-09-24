@@ -60,7 +60,8 @@
     "ak_home_s2_XGdaaB": {
       "type": "ak-home-s2",
       "settings": {
-        "headline": "Akka is a <span class=\"font-[\" blisstwin>superbiotic</span>",
+        "headline": "Akka is a",
+        "headline_italic": "superbiotic",
         "subheadline": "that targets liver health to help you heal",
         "image1": "shopify://shop_images/g2.png",
         "image2": "shopify://shop_images/g1.png",
@@ -337,7 +338,7 @@
       "settings": {
         "title": "For total",
         "subtitle": "Liver Rejuvenation",
-        "description": "Akka synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients...",
+        "description": "<p>Akka synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients...</p>",
         "background_image_desktop": "shopify://shop_images/sec7-background.png",
         "background_image_mobile": "shopify://shop_images/sec7-background-mob.png",
         "icon_image_check": "shopify://shop_images/check.png",
