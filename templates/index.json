@@ -42,16 +42,16 @@
     "ak_home_s1_d6yq6M": {
       "type": "ak-home-s1",
       "settings": {
-        "desktop_image_1": "shopify:\/\/shop_images\/2c1636c4df70d710f1548a1e59b1f70291564f5e019a701f42433eab57c799c1.png",
-        "desktop_image_2": "shopify:\/\/shop_images\/Untitled-1.png",
-        "desktop_image_3": "shopify:\/\/shop_images\/9eTKrHSnmf9ai6iVhaBgjpy3rWU.png",
-        "desktop_image_4": "shopify:\/\/shop_images\/1_1.png",
-        "desktop_image_5": "shopify:\/\/shop_images\/3.png",
-        "desktop_image_6": "shopify:\/\/shop_images\/4_1.png",
-        "mobile_image_1": "shopify:\/\/shop_images\/5mob.png",
-        "mobile_image_2": "shopify:\/\/shop_images\/3mob.png",
-        "mobile_image_3": "shopify:\/\/shop_images\/9eTKrHSnmf9ai6iVhaBgjpy3rWU.png",
-        "heading": "<span class=\"font-['blisstwin']\">Next Generation<\/span>  Liver Rejuvenation",
+        "desktop_image_1": "shopify://shop_images/2c1636c4df70d710f1548a1e59b1f70291564f5e019a701f42433eab57c799c1.png",
+        "desktop_image_2": "shopify://shop_images/Untitled-1.png",
+        "desktop_image_3": "shopify://shop_images/9eTKrHSnmf9ai6iVhaBgjpy3rWU.png",
+        "desktop_image_4": "shopify://shop_images/1_1.png",
+        "desktop_image_5": "shopify://shop_images/3.png",
+        "desktop_image_6": "shopify://shop_images/4_1.png",
+        "mobile_image_1": "shopify://shop_images/5mob.png",
+        "mobile_image_2": "shopify://shop_images/3mob.png",
+        "mobile_image_3": "shopify://shop_images/9eTKrHSnmf9ai6iVhaBgjpy3rWU.png",
+        "heading": "<span class=\"font-['blisstwin']\">Next Generation</span>  Liver Rejuvenation",
         "description": "Your liver is responsible for over 500 different functions. Our researchers have created the ultimate supplement to help support it.",
         "cta_link": "",
         "cta_label": "SHOP AKKA"
@@ -60,12 +60,12 @@
     "ak_home_s2_XGdaaB": {
       "type": "ak-home-s2",
       "settings": {
-        "headline": "Akka is a <span class=\"font-[\" blisstwin>superbiotic<\/span>",
+        "headline": "Akka is a <span class=\"font-[\" blisstwin>superbiotic</span>",
         "subheadline": "that targets liver health to help you heal",
-        "image1": "shopify:\/\/shop_images\/g2.png",
-        "image2": "shopify:\/\/shop_images\/g1.png",
-        "image3": "shopify:\/\/shop_images\/cf6b662b2298936f3fb16a81c6a97c82.png",
-        "image4": "shopify:\/\/shop_images\/cf6b662b2298936f3fb16a81c6a97c82.png",
+        "image1": "shopify://shop_images/g2.png",
+        "image2": "shopify://shop_images/g1.png",
+        "image3": "shopify://shop_images/cf6b662b2298936f3fb16a81c6a97c82.png",
+        "image4": "shopify://shop_images/cf6b662b2298936f3fb16a81c6a97c82.png",
         "text1": "Weight Gain, fatigue, brain fog",
         "text2": "metabolism, vitality, energy"
       }
@@ -78,7 +78,7 @@
           "settings": {
             "step_number": "01",
             "step_description": "Why the liver is so important & how it works",
-            "image": "shopify:\/\/shop_images\/sec3PHTO1-mob.png",
+            "image": "shopify://shop_images/sec3PHTO1-mob.png",
             "active": true
           }
         },
@@ -87,7 +87,7 @@
           "settings": {
             "step_number": "02",
             "step_description": "What happens when it's compromised & how this can lead to a range of symptoms",
-            "image": "shopify:\/\/shop_images\/sec3PHTO2-mob.png",
+            "image": "shopify://shop_images/sec3PHTO2-mob.png",
             "active": false
           }
         },
@@ -96,7 +96,7 @@
           "settings": {
             "step_number": "03",
             "step_description": "Steps you can take to protect and heal your liver",
-            "image": "shopify:\/\/shop_images\/sec3PHTO3-mob.png",
+            "image": "shopify://shop_images/sec3PHTO3-mob.png",
             "active": false
           }
         }
@@ -107,12 +107,12 @@
         "step_EnPj7L"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/home-sec3-title-image.png",
+        "image": "shopify://shop_images/home-sec3-title-image.png",
         "image_alt": "Liver Image",
         "title_line_1": "Your Key To",
         "title_line_2": "Vitality",
-        "description": "From storing vitamins and minerals, to immune support, to hormone regulation, the liver plays a crucial role in your body.",
-        "button_link": "\/pages\/science.com",
+        "description": "<p>From storing vitamins and minerals, to immune support,  to hormone regulation, the liver plays a crucial role in your body. <br/><br/>A healthy liver can metabolize fats and toxins easily, supporting a state of homeostasis and general well-being. Complications arise when the liver gets compromised, leading to a variety of health issues that affect your overall vitality.</p>",
+        "button_link": "/pages/science.com",
         "button_text": "The Science",
         "science_intro": "Read the science to help you get clarity on:"
       }
@@ -209,28 +209,28 @@
     "ak_home_s4_qUh4AQ": {
       "type": "ak-home-s4",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/frame4bg.png",
-        "heading_1": "Rigorously researched,",
-        "heading_2": "expertly executed",
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/39f976a8c0664da49e3e6ff40471986d.mp4",
+        "background_image": "shopify://shop_images/frame4bg.png",
+        "heading_1": "Rigorously Researched,",
+        "heading_2": "ExpertlyEexecuted",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/39f976a8c0664da49e3e6ff40471986d.mp4",
         "content": "We believe in the power of strong science to bring you great health. \n\nWe’ve combined the most up-to-date scientific research with innovative implementation to bring you the most effective liver health support available.\n\nDiscover how our dedication to innovation and quality transforms scientific insights into a practical health solution for you.",
-        "button_link": "\/pages\/ourapproach.com",
+        "button_link": "/pages/ourapproach.com",
         "button_text": "Our Approach",
-        "button_icon": "shopify:\/\/shop_images\/ak-home-s4-arrow.png"
+        "button_icon": "shopify://shop_images/ak-home-s4-arrow.png"
       }
     },
     "ak_home_s5_HxwyYM": {
       "type": "ak-home-s5",
       "settings": {
         "heading": "As seen On",
-        "image_1": "shopify:\/\/shop_images\/Allure.png",
-        "image_2": "shopify:\/\/shop_images\/People.png",
-        "image_3": "shopify:\/\/shop_images\/Elle.png",
-        "image_4": "shopify:\/\/shop_images\/EatingWell.png",
-        "image_5": "shopify:\/\/shop_images\/Shape.png",
-        "image_6": "shopify:\/\/shop_images\/Vogue.png",
-        "image_7": "shopify:\/\/shop_images\/business.png",
-        "image_8": "shopify:\/\/shop_images\/forbes.png"
+        "image_1": "shopify://shop_images/Allure.png",
+        "image_2": "shopify://shop_images/People.png",
+        "image_3": "shopify://shop_images/Elle.png",
+        "image_4": "shopify://shop_images/EatingWell.png",
+        "image_5": "shopify://shop_images/Shape.png",
+        "image_6": "shopify://shop_images/Vogue.png",
+        "image_7": "shopify://shop_images/business.png",
+        "image_8": "shopify://shop_images/forbes.png"
       }
     },
     "ak_home_s6_yntid4": {
@@ -239,7 +239,7 @@
         "ingredient_yYfWxc": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sec2-image1_1.png",
+            "image": "shopify://shop_images/sec2-image1_1.png",
             "heading": "Akkermansia muciniphila",
             "sub_heading": "For total rejuvenation",
             "content": "Representing 3–5% of the microbial community, Akkermansia muciniphila is commonly found in the human gut. Rigorously studied in recent years, A. muciniphilia has been inversely associated with cardiovascular disease, obesity, diabetes, inflammation, and liver disease."
@@ -248,7 +248,7 @@
         "ingredient_LTJ6Y9": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sec2-image2_2.png",
+            "image": "shopify://shop_images/sec2-image2_2.png",
             "heading": "Quercetin",
             "sub_heading": "For amplified support",
             "content": "Silymarin is currently the world's most effective treatment for liver disease. It has shown positive effects in treating nearly every known form of liver disease including cirrhosis, hepatitis, and necrosis, and liver damage from substance abuse."
@@ -257,7 +257,7 @@
         "ingredient_6CaWWg": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sec6-image3.png",
+            "image": "shopify://shop_images/sec6-image3.png",
             "heading": "Resveratrol",
             "sub_heading": "For antioxidative protection",
             "content": "A potent polyphenolic compound, Resveratrol plays a key role in metabolic detoxification and health maintenance. It not only prevents the formation of new fat cells but also enhances fat burning through a process known as thermogenesis."
@@ -266,7 +266,7 @@
         "ingredient_rHKfGz": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sec6-image4.png",
+            "image": "shopify://shop_images/sec6-image4.png",
             "heading": "Silymarin",
             "sub_heading": "For all-around hepatoprotective properties",
             "content": "Silymarin is currently the world's most effective treatment for liver disease. It has shown positive effects in treating nearly every known form of liver disease including cirrhosis, hepatitis, and necrosis, and liver damage from substance abuse."
@@ -275,7 +275,7 @@
         "ingredient_cijhFg": {
           "type": "ingredient",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sec6-image5.png",
+            "image": "shopify://shop_images/sec6-image5.png",
             "heading": "Artichoke Leaf Extract",
             "sub_heading": "For regenerative properties",
             "content": "Artichoke leaf extract has a long history of being used in traditional medicine as a treatment for digestive and liver issues. Full of protective and regenerative properties, artichoke leaf extract not only improves blood flow, but also reduces overall cholesterol and triglycerides."
@@ -292,7 +292,7 @@
       "settings": {
         "heading": "The building blocks",
         "subheading": "Our clinically — researched ingredients",
-        "button_link": "\/pages\/ingredient.html",
+        "button_link": "/pages/ingredient.html",
         "button_text": "Our Ingredients"
       }
     },
@@ -302,28 +302,28 @@
         "block_RjGw97": {
           "type": "block",
           "settings": {
-            "icon_image": "shopify:\/\/shop_images\/home-checkicon.png",
+            "icon_image": "shopify://shop_images/home-checkicon.png",
             "benefit_text": "Cleanses your liver of toxins and excess fat"
           }
         },
         "block_xGCdPL": {
           "type": "block",
           "settings": {
-            "icon_image": "shopify:\/\/shop_images\/home-checkicon.png",
+            "icon_image": "shopify://shop_images/home-checkicon.png",
             "benefit_text": "Aids in the regeneration of liver cells"
           }
         },
         "block_AXtBg3": {
           "type": "block",
           "settings": {
-            "icon_image": "shopify:\/\/shop_images\/home-checkicon.png",
+            "icon_image": "shopify://shop_images/home-checkicon.png",
             "benefit_text": "Enhances bile flow production"
           }
         },
         "block_Txh8qb": {
           "type": "block",
           "settings": {
-            "icon_image": "shopify:\/\/shop_images\/home-checkicon.png",
+            "icon_image": "shopify://shop_images/home-checkicon.png",
             "benefit_text": "Supports liver's ability to filter and detoxify your blood"
           }
         }
@@ -338,10 +338,10 @@
         "title": "For total",
         "subtitle": "Liver Rejuvenation",
         "description": "Akka synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients...",
-        "background_image_desktop": "shopify:\/\/shop_images\/sec7-background.png",
-        "background_image_mobile": "shopify:\/\/shop_images\/sec7-background-mob.png",
-        "icon_image_check": "shopify:\/\/shop_images\/check.png",
-        "button_link": "\/pages\/product.html",
+        "background_image_desktop": "shopify://shop_images/sec7-background.png",
+        "background_image_mobile": "shopify://shop_images/sec7-background-mob.png",
+        "icon_image_check": "shopify://shop_images/check.png",
+        "button_link": "/pages/product.html",
         "button_text": "Shop Akka"
       }
     }
