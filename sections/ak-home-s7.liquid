@@ -6,9 +6,9 @@
           <span class="overflow-hidden max-w-full max-[1200px]:text-[40px]">{{ section.settings.title }}</span>
           <span class="overflow-hidden py-0.5 mt-2 w-full max-[1200px]:pr-5 max-[1200px]:max-w-full max-[1200px]:text-4xl font-['blisstwin']">{{ section.settings.subtitle }}</span>
         </h1>
-        <p class="mt-8 w-full text-[22px] tracking-[0.44px] leading-[140%] max-[1200px]:max-w-full text-[#2E3666]">
+        <div class="mt-8 w-full [&>p]:text-[22px] [&>p]:tracking-[0.44px] [&>p]:leading-[140%] max-[1200px]:max-w-full [&>p]:text-[#2E3666]">
           {{ section.settings.description }}
-        </p>
+        </div>
         <div class="my-[32px] max-w-full w-[573px]">
           <h2 class="text-2xl max-[1200px]:text-[18px] font-semibold tracking-[0.48px] py-[16px] max-[1200px]:py-[8px] whitespace-nowrap max-w-[566px] max-[1200px]:max-w-full">
             BENEFITS:
@@ -91,10 +91,9 @@
       "default": "Liver Rejuvenation"
     },
     {
-      "type": "textarea",
+      "type": "richtext",
       "id": "description",
-      "label": "Description",
-      "default": "Akka synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients..."
+      "label": "Description"
     },
     {
       "type": "image_picker",

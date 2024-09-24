@@ -3,7 +3,7 @@
     
     <div class="overflow-hidden">
       <h2 class="element slideupfade text-[#2E3666] font-['syne'] text-[70px] font-normal leading-[1] tracking-[1.4px] capitalize max-[1024px]:text-[40px]">
-        {{ section.settings.headline }}
+        {{ section.settings.headline }}<span class="font-['Blisstwin']">{{ section.settings.headline_italic }}</span>
       </h2>
     </div>
     <div class="overflow-hidden pb-[20px]">
@@ -56,7 +56,13 @@
       "type": "text",
       "id": "headline",
       "label": "Headline",
-      "default": "Akka is a <span class='font-['Blisstwin']'>superbiotic</span>"
+      "default": "Akka is a "
+    },
+    {
+      "type": "text",
+      "id": "headline_italic",
+      "label": "Headline",
+      "default": "superbiotic"
     },
     {
       "type": "text",
