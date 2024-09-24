@@ -2005,6 +2005,10 @@ video {
   border-top-width: 6px;
 }
 
+.border-t-\[2px\] {
+  border-top-width: 2px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -3294,6 +3298,14 @@ html {
     top: unset;
   }
 
+  .max-\[1200px\]\:bottom-\[-25px\] {
+    bottom: -25px;
+  }
+
+  .max-\[1200px\]\:bottom-0 {
+    bottom: 0px;
+  }
+
   .max-\[1200px\]\:order-1 {
     order: 1;
   }
@@ -3342,6 +3354,10 @@ html {
 
   .max-\[1200px\]\:mt-\[32px\] {
     margin-top: 32px;
+  }
+
+  .max-\[1200px\]\:mb-\[-25px\] {
+    margin-bottom: -25px;
   }
 
   .max-\[1200px\]\:\!block {
@@ -3618,6 +3634,10 @@ html {
 
   .max-\[1200px\]\:text-\[60px\] {
     font-size: 60px;
+  }
+
+  .max-\[1200px\]\:leading-\[140\%\] {
+    line-height: 140%;
   }
 
   .max-\[1200px\]\:tracking-\[-6px\] {
