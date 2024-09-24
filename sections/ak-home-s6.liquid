@@ -1,3 +1,9 @@
+<style>
+    @media(max-width: 1200px) {
+        
+    }
+    
+</style>
 <section id="section6" class="dynamic-sticky flex sticky top-0 flex-col py-24 min-h-[984px] bg-white z-10 max-[1200px]:px-[16px] max-[1200px]:pt-[64px] max-[1200px]:pb-[32px] max-md:relative max-xl:!top-[unset]">
     <div class="flex relative flex-wrap items-center justify-between mx-auto max-w-[var(--page-width)] w-full">
         <header class="flex flex-col justify-center self-stretch my-auto min-w-[240px] text-slate-700 capitalize">
@@ -17,12 +23,12 @@
             <ul class="font-['syne'] flex relative gap-4 items-start text-2xl font-semibold uppercase text-[#2E3666] list-none max-md:flex-col">
                 {% for block in section.blocks %}
                     <li class="flex flex-col max-w-[calc(20%_-_16px)] w-[255px] max-[1024px]:w-full max-[1024px]:max-w-full self-stretch max-[1024px]:h-[250px]">
-                        <article class="overflow-hidden relative bg-[#EDEEF5] h-full max-[1024px]:h-[456px]">
+                        <article class="overflow-hidden relative bg-[#EDEEF5] h-full max-[1024px]:h-[auto]">
                             <img src="{{ 'arrow-w.svg' | file_url }}" class="arrow absolute top-[15px] right-[15px] z-10 max-[1024px]:top-[190px] max-[1024px]:rotate-[135deg]">
                             <div class="wreset w-[600px] wrap-trans translate-x-[-50%] translate-y-[10%] max-[1024px]:translate-x-[0%] max-[1024px]:translate-y-[-25%] max-[1024px]:mx-auto max-[1024px]:w-auto">
                             <img src="{{ block.settings.image |  img_url: 'master'  }}" class="w-[330px] h-auto block mx-auto scale-150 max-[1024px]:scale-100">              
                             <div class="wrap-p p-[10px] opacity-0 translate-y-[50%] max-[1024px]:opacity-100 max-[1024px]:translate-y-[4%]">
-                                <h3 class="text-[22px] font-semibold tracking-[0.44px] uppercase mb-[10px] max-[1024px]:hidden">
+                                <h3 class="text-[22px] font-semibold tracking-[0.44px] uppercase mb-[10px] max-lg:pr-[70px]">
                                     {{ block.settings.heading }}
                                 </h3>
                                 <p class="text-[22px] tracking-[0.44px] mb-[16px] font-normal normal-case">{{ block.settings.sub_heading }} </p>
@@ -73,39 +79,83 @@
 }
 
 @media (max-width: 1024px) {
-#section6 li.active {        
-    height: auto;
-}
-#section6 li.active article .arrow {
-    transform: rotate(-45deg); /* Corrected property */
-}
+    #section6 li.active {        
+        height: auto;
+    }
+    #section6 li.active article .arrow {
+        transform: rotate(-45deg); /* Corrected property */
+    }
+    #section6 ul li:nth-child(1) article .wrap-p {
+        transform: translateY(-10%);
+    }
+    #section6 ul li:nth-child(2) article .wrap-p {
+        transform: translateY(8%);
+    }    
+    #section6 ul li:nth-child(3) article .wrap-p {
+        transform: translateY(-3%);
+    }
+    #section6 ul li:nth-child(3) .wreset img {
+        margin-top:70px;
+        rotate:180deg;
+    }
+    #section6 ul li:nth-child(4) article .wrap-p {
+        transform: translateY(-7%);
+    }
+    #section6 ul li:nth-child(4) .wreset img {
+        margin-top:70px;
+        rotate:180deg;
+    }
+    #section6 ul li:nth-child(5) article .wrap-p {
+        transform: translateY(-6%);
+    }
+    #section6 ul li:nth-child(5) .wreset img {
+        margin-top:70px;
+    }
+    #section6 ul li.active:nth-child(1) {
+        height: 530px;
+    }
+    #section6 ul li.active:nth-child(2) {
+        height: 550px;
+    }
+    #section6 ul li.active:nth-child(3) {
+        height: 475px;
+    }
+    #section6 ul li.active:nth-child(4) {
+        height: 500px;
+    }
+    #section6 ul li.active:nth-child(5) {
+        height: 505px;
+    }    
 }
 
 @media (min-width: 1024px) {
-#section6 .active {
-    width: 50%;
-    max-width: 600px;
-}
-#section6 .wreset {
-    width: 600px;
-}
-#section6 .active .wreset {
-    width: 100%;
-}
-#section6 .active .wrap-trans {
-    transform: translateX(0) translateY(0); /* Combined transform properties */
-}
-#section6 .active .wrap-trans img {
-    transform: scale(1);
-}
-#section6 .active .wrap-trans .wrap-p {
-    opacity: 1;
-    transform: translateY(0);
-}
-#section6 .active .d-h3 {
-    opacity: 0;
-    transform: translateY(-50%);
-}
+    #section6 ul li:nth-child(3) .wreset img {
+        margin-top:45px;
+    }
+    #section6 .active {
+        width: 50%;
+        max-width: 600px;
+    }
+    #section6 .wreset {
+        width: 600px;
+    }
+    #section6 .active .wreset {
+        width: 100%;
+    }
+    #section6 .active .wrap-trans {
+        transform: translateX(0) translateY(0); /* Combined transform properties */
+    }
+    #section6 .active .wrap-trans img {
+        transform: scale(1);
+    }
+    #section6 .active .wrap-trans .wrap-p {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    #section6 .active .d-h3 {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
 }
 {% endstyle %} 
 
