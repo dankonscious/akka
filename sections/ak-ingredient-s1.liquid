@@ -1,5 +1,19 @@
 <!-- sections/ingredient-information.liquid -->
-
+<style>
+  #section1 article:nth-child(1) h3 {
+    font-size: 45px;
+  }
+  #section1 article:nth-child(1) h3 .subtext {
+    font-size: 46px;
+  }  
+  #section1  {
+    background-image: url('https://cdn.shopify.com/s/files/1/0885/5581/5215/files/science-s2bg.png?v=1727176796');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #fff;
+  }
+</style>
 <section id="section1" class="ingredient-information-section font-['syne']">
   <div class="flex items-start justify-between max-w-[var(--page-width)] w-full mx-auto relative text-[#2E3666] pt-[47px] max-md:max-w-full max-md:pt-0">
     <div class="max-w-[125px] w-full sticky top-0 pt-[128px] mb-[703px] max-md:hidden">
@@ -21,10 +35,10 @@
                 <div class="flex flex-col self-start min-w-[240px] w-full max-w-[494px] max-md:max-w-full ">
                   <header class="flex flex-col w-full max-w-[485px]">
                     <h2 class="text-[50px] font-medium leading-[normal] text-[#dcdbe8]">{{ item.settings.ingredient_number }}</h2>
-                    <h3 class="py-2.5 w-full text-[45px] max-md:text-[30px] tracking-[-0.9px] leading-[48px] border-[#2E3666] border-t-[6px] max-md:max-w-full  max-md:leading-[110%]">
+                    <h3 class="py-2.5 w-full text-[48px] max-md:!text-[30px] tracking-[-0.9px] leading-[48px] border-[#2E3666] border-t-[6px] max-md:max-w-full  max-md:leading-[110%]">
                       <span>{{ item.settings.ingredient_name }}</span>
                       <br />
-                      <span class="font-['Blisstwin'] max-md:text-[27px]">{{ item.settings.ingredient_subtext }}</span>
+                      <span class="subtext font-['Blisstwin'] max-md:text-[27px]">{{ item.settings.ingredient_subtext }}</span>
                     </h3>
                   </header>
                   <div class="mt-8 max-md:mt-[16px] max-md:max-w-full [&>p]:text-[20px] [&>p]:tracking-[0.4px] [&>p]:leading-[140%]">

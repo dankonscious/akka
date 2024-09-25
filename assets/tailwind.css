@@ -2581,6 +2581,10 @@ video {
   font-size: 28px;
 }
 
+.text-\[48px\] {
+  font-size: 48px;
+}
+
 .\!font-bold {
   font-weight: 700 !important;
 }
@@ -4163,6 +4167,10 @@ html {
 
   .max-md\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .max-md\:\!text-\[30px\] {
+    font-size: 30px !important;
   }
 
   .max-md\:font-semibold {
