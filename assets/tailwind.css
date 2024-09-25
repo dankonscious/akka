@@ -3372,6 +3372,14 @@ html {
     margin-top: 32px;
   }
 
+  .max-\[1200px\]\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .max-\[1200px\]\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .max-\[1200px\]\:\!block {
     display: block !important;
   }

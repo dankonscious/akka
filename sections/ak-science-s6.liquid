@@ -6,6 +6,9 @@
         #section5 {
          background:#E9B9A3;
         }
+        #section5 .bg-cover {
+            background-image: none !important;
+        }
     }
 </style>
     
@@ -13,7 +16,7 @@
     <div class=" bg-cover bg-center bg-no-repeat max-md:bg-none" style="background-image:url({{ section.settings.desktop_background_image | img_url: 'master' }});">
         <div class="max-w-[var(--page-width)] w-full mx-auto">
             <div class="max-w-[562px] w-full mr-auto py-[280px] max-md:py-0 max-md:pt-8 max-md:px-4">
-                <p class="text-[#2E3666] text-[24px] leading-[160%] mb-[64px] max-md:text-[20px] max-md:mb-4">{{ section.settings.text_content }}</p>
+                <p class="text-[#2E3666] text-[24px] leading-[160%] max-[1200px]:leading-[140%] mb-[64px] max-md:text-[20px] max-md:mb-4">{{ section.settings.text_content }}</p>
                 <a href="{{ section.settings.link_url }}" class="text-[#2E3666] text-[36px] leading-[normal] underline uppercase flex items-center gap-[16px] max-md:text-[24px]">
                     {{ section.settings.link_text }}
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="35" viewBox="0 0 17 35" fill="none">
