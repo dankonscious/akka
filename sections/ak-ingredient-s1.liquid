@@ -15,12 +15,12 @@
           {% if item.type == 'ingredient' %}
             <article id="{{ item.settings.ingredient_id }}" class="flex flex-col p-4 w-full bg-[#EDEEF5] rounded-3xl max-md:max-w-full {% if forloop.index != 1 %}mt-16 max-md:mt-0{% endif %} max-[1200px]:rounded-none">
               <div class="flex flex-wrap gap-8 w-full max-md:max-w-full max-[1200px]:justify-center">
-                <div class="flex flex-col min-w-[240px] w-[374px] max-md:max-w-full">
+                <div class="flex flex-col min-w-[240px] w-[468px] max-md:max-w-full">
                   <img loading="lazy" src="{{ item.settings.image_1 | img_url: 'master' }}" alt="{{ item.settings.image_alt }}" class="object-contain flex-1 max-w-full aspect-[0.83] w-[468px]" />
                 </div>
-                <div class="flex flex-col self-start min-w-[240px] w-full max-w-[498px] max-md:max-w-full ">
+                <div class="flex flex-col self-start min-w-[240px] w-full max-w-[494px] max-md:max-w-full ">
                   <header class="flex flex-col w-full max-w-[485px]">
-                    <h2 class="text-[50px] font-medium leading-[normal] text-[#EDEEF5]">{{ item.settings.ingredient_number }}</h2>
+                    <h2 class="text-[50px] font-medium leading-[normal] text-[#dcdbe8]">{{ item.settings.ingredient_number }}</h2>
                     <h3 class="py-2.5 w-full text-[45px] max-md:text-[30px] tracking-[-0.9px] leading-[48px] border-[#2E3666] border-t-[6px] max-md:max-w-full  max-md:leading-[110%]">
                       <span>{{ item.settings.ingredient_name }}</span>
                       <br />
@@ -33,7 +33,7 @@
                 </div>
               </div>
               <section class="flex flex-col mt-8 w-full max-md:max-w-full font-['syne']">
-                <h4 class="gap-10 pb-4 max-w-full text-3xl tracking-tight border-b-[6px] border-[#2E3666] w-full max-md:max-w-full">{{ item.settings.research_title }}</h4>
+                <h4 class="gap-10 pb-4 max-w-full text-[28px] tracking-tight border-b-[6px] border-[#2E3666] w-full max-md:max-w-full">{{ item.settings.research_title }}</h4>
                   {%  if item.settings.title1 and item.settings.description1 != ''  %}
                     <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
                         <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
