@@ -2283,6 +2283,11 @@ video {
   padding-bottom: 64px;
 }
 
+.py-\[47px\] {
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -3547,6 +3552,11 @@ html {
     border-style: none;
   }
 
+  .max-\[1200px\]\:bg-\[\#EDEEF5\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(237 238 245 / var(--tw-bg-opacity));
+  }
+
   .max-\[1200px\]\:p-\[16px\] {
     padding: 16px;
   }
@@ -3959,6 +3969,10 @@ html {
     margin-left: 0px;
   }
 
+  .max-md\:mt-\[20px\] {
+    margin-top: 20px;
+  }
+
   .max-md\:block {
     display: block;
   }
@@ -4177,6 +4191,10 @@ html {
 
   .max-md\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .max-md\:\!text-\[27px\] {
+    font-size: 27px !important;
   }
 
   .max-md\:font-semibold {

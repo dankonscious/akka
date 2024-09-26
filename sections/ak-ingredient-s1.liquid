@@ -15,7 +15,7 @@
   }
 </style>
 <section id="section1" class="ingredient-information-section font-['syne']">
-  <div class="flex items-start justify-between max-w-[var(--page-width)] w-full mx-auto relative text-[#2E3666] pt-[47px] max-md:max-w-full max-md:pt-0">
+  <div class="flex items-start justify-between max-w-[var(--page-width)] w-full mx-auto relative text-[#2E3666] py-[47px] max-md:max-w-full max-md:py-0">
     <div class="max-w-[125px] w-full sticky top-0 pt-[128px] mb-[703px] max-md:hidden">
       {% for link in section.blocks %}
         {% if link.type == 'link' %}
@@ -24,7 +24,7 @@
       {% endfor %}
     </div>
     <div class="max-md:w-full">
-      <section class="flex flex-col">
+      <section class="flex flex-col max-[1200px]:bg-[#EDEEF5] max-[1200px]:pb-[64px]">
         {% for item in section.blocks %}
           {% if item.type == 'ingredient' %}
             <article id="{{ item.settings.ingredient_id }}" class="flex flex-col p-4 w-full bg-[#EDEEF5] rounded-3xl max-md:max-w-full {% if forloop.index != 1 %}mt-16 max-md:mt-0{% endif %} max-[1200px]:rounded-none">
@@ -38,10 +38,10 @@
                     <h3 class="py-2.5 w-full text-[48px] max-md:!text-[30px] tracking-[-0.9px] leading-[48px] border-[#2E3666] border-t-[6px] max-md:max-w-full  max-md:leading-[110%]">
                       <span>{{ item.settings.ingredient_name }}</span>
                       <br />
-                      <span class="subtext font-['Blisstwin'] max-md:text-[27px]">{{ item.settings.ingredient_subtext }}</span>
+                      <span class="subtext font-['Blisstwin'] max-md:!text-[27px]">{{ item.settings.ingredient_subtext }}</span>
                     </h3>
                   </header>
-                  <div class="mt-8 max-md:mt-[16px] max-md:max-w-full [&>p]:text-[20px] [&>p]:tracking-[0.4px] [&>p]:leading-[140%]">
+                  <div class="mt-8 max-md:mt-[20px] max-md:max-w-full [&>p]:text-[20px] [&>p]:tracking-[0.4px] [&>p]:leading-[140%]">
                     {{ item.settings.ingredient_description }}
                   </div>                  
                 </div>
@@ -55,7 +55,7 @@
                                 {{ item.settings.title1 }}
                             </div>
                         </div>
-                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%]">
+                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%] max-[1200px]:text-[18px]">
                             {{ item.settings.description1 }}
                         </div>                        
                     </div>
@@ -68,7 +68,7 @@
                                 {{ item.settings.title2 }}
                             </div>
                         </div>
-                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%]">
+                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%] max-[1200px]:text-[18px]">
                             {{ item.settings.description2 }}
                         </div>                        
                     </div>
@@ -81,7 +81,7 @@
                                 {{ item.settings.title3 }}
                             </div>
                         </div>
-                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%]">
+                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%] max-[1200px]:text-[18px]">
                             {{ item.settings.description3 }}
                         </div>                        
                     </div>
@@ -94,7 +94,7 @@
                                 {{ item.settings.title4 }}
                             </div>
                         </div>
-                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%]">
+                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%] max-[1200px]:text-[18px]">
                             {{ item.settings.description4 }}
                         </div>                        
                     </div>
