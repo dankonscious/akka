@@ -2888,6 +2888,10 @@ video {
   color: rgb(73 73 73 / var(--tw-text-opacity));
 }
 
+.text-\[var\(--footercolor\)\] {
+  color: var(--footercolor);
+}
+
 .text-opacity-20 {
   --tw-text-opacity: 0.2;
 }
@@ -3869,6 +3873,10 @@ html {
 
   .max-\[1024px\]\:pt-\[32px\] {
     padding-top: 32px;
+  }
+
+  .max-\[1024px\]\:pr-\[0\] {
+    padding-right: 0;
   }
 
   .max-\[1024px\]\:text-\[14px\] {

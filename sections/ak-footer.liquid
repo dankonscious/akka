@@ -72,12 +72,24 @@
         </div>
       </div>
       <hr class="mt-4 w-full min-h-0 border-2 border-solid border-[#2E3666] max-[1024px]:max-w-full" />
-      <p class="mt-4 text-lg tracking-[-0.18px] leading-[145%] max-[1024px]:max-w-full text-[rgba(46,54,102,0.50)] max-[1024px]:text-[14px] max-[1024px]:tracking-[-0.14px]" style="color:{{ section.settings.color }};">
+      <p class="mt-4 text-lg tracking-[-0.18px] leading-[145%] max-[1024px]:max-w-full text-[var(--footercolor)] max-[1024px]:text-[14px] max-[1024px]:tracking-[-0.14px]">
         *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary, and testimonials are not claimed to represent typical results. All testimonials are by real people, and may not reflect the typical purchaser's experience, and are not intended to represent or guarantee that anyone will achieve the same or similar results.
       </p>
     </footer>
   </div>
 </section>
+
+<style>
+  {% if template == 'index' or template contains 'ingredient' %}
+    :root {
+      --footercolor: #2E3666;
+    }
+    {% else %}
+    :root {
+      --footercolor: rgba(46, 54, 102, 0.50);
+    }
+  {% endif %}
+</style>
 
 {% schema %}
 {
@@ -134,14 +146,7 @@
       "id": "contact_address",
       "label": "Contact Address",
       "default": "Matawan, NJ, 07747"
-    },
-    {      
-      "type": "color",
-      "id": "color",
-      "label": "Footer Background Color",
-      "default": "rgba(46,54,102,0.50)"
     }
-
   ],
   "presets": [
     {
