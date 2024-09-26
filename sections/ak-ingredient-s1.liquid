@@ -23,7 +23,7 @@
         {% endif %}
       {% endfor %}
     </div>
-    <div>
+    <div class="max-md:w-full">
       <section class="flex flex-col">
         {% for item in section.blocks %}
           {% if item.type == 'ingredient' %}
@@ -47,7 +47,7 @@
                 </div>
               </div>
               <section class="flex flex-col mt-8 w-full max-md:max-w-full font-['syne']">
-                <h4 class="gap-10 pb-4 max-w-full text-[28px] tracking-tight border-b-[6px] border-[#2E3666] w-full max-md:max-w-full">{{ item.settings.research_title }}</h4>
+                <h4 class="gap-10 pb-4 max-w-full text-[28px] tracking-tight border-b-[6px] border-[#2E3666] w-full max-md:max-w-full max-[1200px]:text-[27px]">{{ item.settings.research_title }}</h4>
                   {%  if item.settings.title1 and item.settings.description1 != ''  %}
                     <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
                         <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">

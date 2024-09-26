@@ -3679,6 +3679,10 @@ html {
     font-size: 60px;
   }
 
+  .max-\[1200px\]\:text-\[27px\] {
+    font-size: 27px;
+  }
+
   .max-\[1200px\]\:leading-\[140\%\] {
     line-height: 140%;
   }
@@ -3949,6 +3953,10 @@ html {
 
   .max-md\:mt-\[32px\] {
     margin-top: 32px;
+  }
+
+  .max-md\:ml-0 {
+    margin-left: 0px;
   }
 
   .max-md\:block {
