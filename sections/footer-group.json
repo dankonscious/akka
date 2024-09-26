@@ -13,6 +13,9 @@
   "sections": {
     "ak_footer_wNwe8X": {
       "type": "ak-footer",
+      "custom_css": [
+        "root: {--footercolor: ;}"
+      ],
       "settings": {
         "newsletter_title": "Sign up for our newsletter and get first access to the very best of our products, inspiration and community.",
         "sitemap_links": "footer-information",
