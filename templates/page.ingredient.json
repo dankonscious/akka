@@ -23,6 +23,7 @@
       "settings": {
         "hero_background_image": "shopify://shop_images/hero-backgroiund.png",
         "hero_circle_image": "shopify://shop_images/hero-circle.png",
+        "hero_circle_image_mobile": "shopify://shop_images/hero-circlegraphic-mob_bfadf37c-3a0b-4759-aedd-12c6545ada23.png",
         "hero_text_background": "shopify://shop_images/hero-textbg_59ccabbc-6f53-48ce-b18b-8c9c5fa8c784.png",
         "hero_title": "Our building blocks",
         "hero_subtitle": "To better health"
