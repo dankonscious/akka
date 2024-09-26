@@ -41,10 +41,10 @@
 
     <div class="flex flex-col min-w-[240px] text-[#2E3666] w-[412px] max-[1200px]:order-2 max-[1200px]:px-4">
         <header class="flex flex-col w-full max-w-[412px]">
-        <h1 class="text-5xl leading-[110%] max-[1200px]:text-[40px]">
+        <h1 class="text-5xl leading-[110%] max-[1200px]:text-[40px] capitalize">
             <span>{{ section.settings.title }}</span>
             <br />
-            <span class="tracking-tighter font-['Blisstwin']">{{ section.settings.title2 }}</span>
+            <span class="tracking-tighter font-['Blisstwin'] italic">{{ section.settings.title2 }}</span>
         </h1>
         <div class="flex gap-1 items-center self-start mt-4 text-base leading-snug">
             <span class="self-stretch my-auto font-semibold">4.6</span>
@@ -59,7 +59,7 @@
         <h2 class="flex gap-2.5 items-start py-4 w-full text-xl font-semibold tracking-wide whitespace-nowrap max-[1200px]:text-[18px]">
             BENEFITS:
         </h2>
-        <ul class="list-none p-0">
+        <ul class="list-none p-0 border-t border-solid border-[#2E3666]">
 
             {% for block2 in section.blocks %}
                 {% if block2.type == 'block2' %}
@@ -94,7 +94,7 @@
                         </p>
                         <p class="flex gap-1 items-start mt-2 text-2xl font-bold text-orange-500 whitespace-nowrap font-['Heebo']">
                         <span class="w-[59px]">{{ block3.settings.prod_price }}</span>
-                        <span class="w-[59px] line-through">{{ block3.settings.prod_before_price }}</span>
+                        <span class="w-[59px] line-through opacity-50">{{ block3.settings.prod_before_price }}</span>
                         </p>
                     </div>
                     <div class="flex flex-col items-center text-xl text-center font-['Heebo'] max-[1200px]:w-[43%]">
@@ -106,7 +106,7 @@
         {% endfor %}    
         
         <div class="flex flex-col justify-center items-center pt-8 mt-4 max-[1200px]:w-[322px]">
-        <button class="flex gap-4 items-start px-24 py-4 text-2xl tracking-wide leading-snug text-center text-white uppercase bg-indigo-900 border border-solid border-[#2E3666] rounded-[100px] shadow-[0px_54px_15px_rgba(33,48,94,0)] max-[1200px]:px-5 max-[1200px]:w-full max-[1200px]:justify-center">
+        <button class="flex gap-4 items-start px-24 py-4 text-2xl tracking-wide leading-snug text-center text-white uppercase bg-[#3E488B] border border-solid border-[#2E3666] rounded-[100px] shadow-[0px_54px_15px_rgba(33,48,94,0)] max-[1200px]:px-5 max-[1200px]:w-full max-[1200px]:justify-center">
             Add to Cart
             <img loading="lazy"  src="https://cdn.builder.io/api/v1/image/assets/TEMP/449543b04857691bfc461d1f9c69f03fbb4c2e3cb1e28e0a1783367697ed8ce0?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="object-contain shrink-0 aspect-[0.65] w-[22px]" />
         </button>
@@ -120,7 +120,7 @@
                 </a>
             </span> 
             </p>
-            <p class=" gap-2 self-stretch mt-4 max-w-full text-xl leading-normal w-[322px]">
+            <p class=" gap-2 self-stretch mt-4 max-w-full text-xl leading-normal w-[322px] font-['Heebo']">
             90-DAY MONEY-BACK GUARANTEE
             </p>
             <div class="flex gap-2  mt-4 min-h-[24px]" aria-hidden="true"></div>

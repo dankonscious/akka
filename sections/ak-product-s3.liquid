@@ -16,14 +16,14 @@
         left: -20px;
     }
  </style>
-<section id="section-3">
+<section id="section-3" class="font-['syne']">
   <section class="flex relative flex-col items-center px-20 min-h-[1080px] max-[1200px]:px-5">
     <div class="flex relative flex-col py-16 w-full max-w-[var(--page-width)] max-[1200px]:max-w-full max-[1200px]:py-8">
       <div class="flex flex-col w-full">
 
-        <h2 class="flex flex-col w-full text-7xl tracking-tighter text-[#2E3666] max-[1200px]:max-w-full max-[1200px]:text-4xl">
+        <h2 class="flex flex-col w-full text-[70px] leading-[normal] tracking-[-1.4px] text-[#2E3666] max-[1200px]:max-w-full max-[1200px]:text-[40px] max-[1200px]:leading-[40px] font-['syne']">
           <span>{{ section.settings.heading_line_1 }}</span>
-          <span>{{ section.settings.heading_line_2 }}</span>
+          <span class="font-['Blisstwin']">{{ section.settings.heading_line_2 }}</span>
         </h2>
 
         <div class="flex flex-col w-full max-[1200px]:max-w-full">
@@ -59,12 +59,16 @@
                         <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full border-t border-[#2E3666] max-[1200px]:max-w-full">
                           <div class="flex flex-col grow shrink items-start pr-16 w-44">
                             <img loading="lazy" src="{{ testimonial.settings.star_image | img_url: '150x' }}" class="object-contain max-w-full aspect-[5]" alt="5 star rating" />
-                            <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">{{ testimonial.settings.name }}</h3>
-                            <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
-                              <span class="self-stretch my-auto">{{ testimonial.settings.customer_status }}</span>
+                            <h3 class="self-stretch mt-1.5 text-[20px] font-bold leading-[130%] text-[#2E3666]">{{ testimonial.settings.name }}</h3>
+                            <div class="flex gap-1 justify-center items-center mt-1.5 text-[16px] tracking-[-0.32px] leading-[120%]">
+                              <span class="self-stretch my-auto text-[#494949] font-['work_sans']">{{ testimonial.settings.customer_status }}</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                    <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
+                                    <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
                             </div>
                           </div>
-                          <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                          <blockquote class="grow shrink gap-2 text-[24px] leading-[140%] min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
                             {{ testimonial.settings.testimonial }}
                           </blockquote>
                           <div class="flex flex-col grow shrink w-44">
@@ -75,12 +79,16 @@
                             <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full border-t border-[#2E3666] max-[1200px]:max-w-full">
                                 <div class="flex flex-col grow shrink items-start pr-16 w-44">
                                   <img loading="lazy" src="{{ testimonial.settings.row2_star_image | img_url: '150x' }}" class="object-contain max-w-full aspect-[5]" alt="5 star rating" />
-                                  <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">{{ testimonial.settings.row2_name }}</h3>
-                                  <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
-                                    <span class="self-stretch my-auto">{{ testimonial.settings.row2_customer_status }}</span>
+                                  <h3 class="self-stretch mt-1.5 text-[20px] font-bold leading-[130%] text-[#2E3666]">{{ testimonial.settings.row2_name }}</h3>
+                                  <div class="flex gap-1 justify-center items-center mt-1.5 text-[16px] tracking-[-0.32px] leading-[120%]">
+                                    <span class="self-stretch my-auto text-[#494949] font-['work_sans']">{{ testimonial.settings.row2_customer_status }}</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                                      <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
+                                      <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
                                   </div>
                                 </div>
-                                <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                                <blockquote class="grow shrink gap-2 text-[24px] leading-[140%] min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
                                   {{ testimonial.settings.row2_testimonial }}
                                 </blockquote>
                                 <div class="flex flex-col grow shrink w-44">
@@ -105,16 +113,16 @@
                       <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full max-[1200px]:max-w-full">
                         <div class="flex flex-col grow shrink items-start pr-16 w-44">                            
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
-                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Michael G.</h3>
-                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
-                            <span class="self-stretch my-auto">verified customer</span>
+                          <h3 class="self-stretch mt-1.5 text-[20px] font-bold leading-[130%] text-[#2E3666]">Michael G.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-[16px] tracking-[-0.32px] leading-[120%]">
+                            <span class="self-stretch my-auto text-[#494949] font-['work_sans']">verified customer</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                                 <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
                                 <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>                            
                           </div>
                         </div>
-                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                        <blockquote class="grow shrink gap-2 text-[24px] leading-[140%] min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
                           "I was struggling with chronic fatigue and auto-immune problems. I was constantly breaking out in rashes and itching all over my body. Akka gave me a 'clean body' feeling in just a few weeks and I couldn't be happier. Amazing focus and concentration. I feel 20 years younger."
                         </blockquote>
                         <div class="flex flex-col grow shrink w-44">
@@ -131,16 +139,16 @@
                       <article class="flex flex-wrap gap-10 items-start py-8 mt-1 w-full  max-[1200px]:max-w-full">
                         <div class="flex flex-col grow shrink items-start pr-16 w-44">
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
-                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Elizabeth M.</h3>
-                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
-                            <span class="self-stretch my-auto">verified customer</span>
+                          <h3 class="self-stretch mt-1.5 text-[20px] font-bold leading-[130%] text-[#2E3666]">Elizabeth M.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-[16px] tracking-[-0.32px] leading-[120%]">
+                            <span class="self-stretch my-auto text-[#494949] font-['work_sans']">verified customer</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                                 <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
                                 <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                           </div>
                         </div>
-                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                        <blockquote class="grow shrink gap-2 text-[24px] leading-[140%] min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
                           "The effect was immediate, and dramatic. My energy levels improved, and the bloating disappeared. My previous issues with fatigue and discomfort after meals became a thing of the past."
                         </blockquote>
                         <div class="flex flex-col grow shrink w-44">
@@ -157,16 +165,16 @@
                       <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full max-[1200px]:max-w-full">
                         <div class="flex flex-col grow shrink items-start pr-16 w-44">                            
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
-                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Joan T.</h3>
-                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
-                            <span class="self-stretch my-auto">verified customer</span>
+                          <h3 class="self-stretch mt-1.5 text-[20px] font-bold leading-[130%] text-[#2E3666]">Joan T.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-[16px] tracking-[-0.32px] leading-[120%]">
+                            <span class="self-stretch my-auto text-[#494949] font-['work_sans']">verified customer</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                                 <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
                                 <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>                            
                           </div>
                         </div>
-                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                        <blockquote class="grow shrink gap-2 text-[24px] leading-[140%] min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
                           “Akka was a godsend. I had no idea why I couldn't lose weight. I tried everything including hard core diets, exercise programs, and fat burner pills (they made the problem worse).   I had no idea that my liver was responsible.  I tried Akka and felt the effects in days.  My mental clarity has also been amazing. Five stars. “
                         </blockquote>
                         <div class="flex flex-col grow shrink w-44">
@@ -183,16 +191,16 @@
                       <article class="flex flex-wrap gap-10 items-start py-8 mt-1 w-full max-[1200px]:max-w-full">
                         <div class="flex flex-col grow shrink items-start pr-16 w-44">
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
-                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Jerry S.</h3>
-                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
-                            <span class="self-stretch my-auto">verified customer</span>
+                          <h3 class="self-stretch mt-1.5 text-[20px] font-bold leading-[130%] text-[#2E3666]">Jerry S.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-[16px] tracking-[-0.32px] leading-[120%]">
+                            <span class="self-stretch my-auto text-[#494949] font-['work_sans']">verified customer</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                                 <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
                                 <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                           </div>
                         </div>
-                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
+                        <blockquote class="grow shrink gap-2 text-[24px] leading-[140%] min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full">
                           “I was skeptical at first, as I had never been able to find something that truly worked, but Akka proved me wrong. Not only has my energy returned, but I've also started to lose some of the weight that seemed impossible to shed before. Akka has truly been a game-changer for me. A solid 5-star experience.”
                         </blockquote>
                         <div class="flex flex-col grow shrink w-44">
@@ -209,9 +217,9 @@
                       <article class="flex flex-wrap gap-10 items-start pt-8 pb-4 w-full max-[1200px]:max-w-full">
                         <div class="flex flex-col grow shrink items-start pr-16 w-44">                            
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
-                          <h3 class="self-stretch mt-1.5 text-xl font-bold leading-tight text-[#2E3666]">Jerry S.</h3>
-                          <div class="flex gap-1 justify-center items-center mt-1.5 text-base tracking-tight leading-tight text-zinc-700">
-                            <span class="self-stretch my-auto">verified customer</span>
+                          <h3 class="self-stretch mt-1.5 text-[20px] font-bold leading-[130%] text-[#2E3666]">Jerry S.</h3>
+                          <div class="flex gap-1 justify-center items-center mt-1.5 text-[16px] tracking-[-0.32px] leading-[120%]">
+                            <span class="self-stretch my-auto text-[#494949] font-['work_sans']">verified customer</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                                 <circle cx="5.49959" cy="5.7242" r="5.21053" fill="#278DB5"/>
                                 <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="white" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
@@ -219,7 +227,7 @@
                           </div>
                         </div>
                         <!--FOR DESKTOP-->
-                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full max-[1200px]:hidden">
+                        <blockquote class="grow shrink gap-2 text-[24px] leading-[140%] min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full max-[1200px]:hidden">
                           “Akka changed everything for me. Not only did it help cleanse and rejuvenate my liver, but it also kick-started my weight loss and restored my energy levels. For the first time in years, I felt like my body was working with me, not against me.
                           <br><br>
                           The transformation was noticeable not just to me but to everyone around me. Colleagues and friends commented on how much happier and more energetic I seemed. I went from avoiding social gatherings to embracing them, thanks to the newfound confidence Akka gave me.
@@ -227,7 +235,7 @@
                           I believe Akka is something everyone should know about, especially those struggling with similar issues. It has not only improved my physical health but has also had a profound impact on my overall well-being and happiness. I've recommended it to everyone I care about.”
                         </blockquote>
                         <!--FOR MOBILE-->
-                        <blockquote class="grow shrink gap-2 text-2xl leading-9 min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full hidden max-[1200px]:block">
+                        <blockquote class="grow shrink gap-2 text-[24px] leading-[140%] min-w-[240px] text-[#2E3666] w-[564px] max-[1200px]:max-w-full hidden max-[1200px]:block">
                           ...The transformation was noticeable not just to me but to everyone around me. Colleagues and friends commented on how much happier and more energetic I seemed. I went from avoiding social gatherings to embracing them, thanks to the newfound confidence Akka gave me...
                         </blockquote>
                         <div class="flex flex-col grow shrink w-44">
@@ -261,7 +269,7 @@
         </div>
 
         <!-- BOTTOM PART -->
-        <div class="flex flex-wrap gap-2 items-start mt-16 max-w-full text-base tracking-tight leading-tight text-[#2E3666] w-[879px] max-[1200px]:mt-10">
+        <div class="flex flex-wrap gap-2 items-start mt-16 max-w-full text-base tracking-tight leading-tight text-[#2E3666] w-[879px] max-[1200px]:mt-10 font-['work_sans']">
             <div class="flex gap-1 justify-center items-center px-4 py-2 border border-solid border-[#2E3666] rounded-[60px]">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
                     <path d="M8.39453 4.05273L4.63137 7.81589L2.95898 6.1435" stroke="#2E3666" stroke-width="1.29412" stroke-linecap="round" stroke-linejoin="round"/>
