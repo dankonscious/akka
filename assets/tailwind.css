@@ -4209,6 +4209,10 @@ html {
     font-weight: 600;
   }
 
+  .max-md\:font-normal {
+    font-weight: 400;
+  }
+
   .max-md\:leading-10 {
     line-height: 2.5rem;
   }

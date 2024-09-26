@@ -15,7 +15,7 @@
             {{ block.settings.heading }}
             <span class=" flex-1 shrink h-10 basis-0 min-w-[240px] w-[301px] hidden"></span>
           </h2>
-          <p class="gap-2.5 self-stretch mt-4 max-w-full text-[22px] max-md:text-[18] tracking-[0.44px] leading-[140%] w-[421px] max-md:max-w-full max-[1200px]:text-[18px] max-[1200px]:mt-0 ">
+          <p class="description{{ forloop.index }} gap-2.5 self-stretch mt-4 max-w-full text-[22px] max-md:text-[18] tracking-[0.44px] leading-[140%] w-[421px] max-md:max-w-full max-[1200px]:text-[18px] max-[1200px]:mt-0 ">
             {{ block.settings.description }}
           </p>
         </article>
@@ -26,7 +26,7 @@
 
 <style>
   @media(max-width: 1200px) {
-    #section4 article:nth-child(3) p {
+    #section4 article:nth-child(3) h2 {
       line-height: 130%;
     }
   }
