@@ -2082,11 +2082,6 @@ video {
   background-color: rgb(244 217 204 / var(--tw-bg-opacity));
 }
 
-.bg-indigo-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(49 46 129 / var(--tw-bg-opacity));
-}
-
 .bg-neutral-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
@@ -2278,14 +2273,14 @@ video {
   padding-bottom: 346px;
 }
 
-.py-\[64px\] {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-
 .py-\[47px\] {
   padding-top: 47px;
   padding-bottom: 47px;
+}
+
+.py-\[64px\] {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .pb-0 {
@@ -2416,10 +2411,6 @@ video {
   padding-top: 24px;
 }
 
-.pt-\[47px\] {
-  padding-top: 47px;
-}
-
 .pt-\[49px\] {
   padding-top: 49px;
 }
@@ -2496,6 +2487,10 @@ video {
   font-size: 100px;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -2568,10 +2563,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[16px\] {
-  font-size: 16px;
-}
-
 .\!font-bold {
   font-weight: 700 !important;
 }
@@ -2632,10 +2623,6 @@ video {
   line-height: 1.75rem;
 }
 
-.leading-9 {
-  line-height: 2.25rem;
-}
-
 .leading-\[1\.2\] {
   line-height: 1.2;
 }
@@ -2650,6 +2637,10 @@ video {
 
 .leading-\[120\%\] {
   line-height: 120%;
+}
+
+.leading-\[130\%\] {
+  line-height: 130%;
 }
 
 .leading-\[140\%\] {
@@ -2728,12 +2719,12 @@ video {
   line-height: 1.25;
 }
 
-.leading-\[130\%\] {
-  line-height: 130%;
-}
-
 .tracking-\[-0\.18px\] {
   letter-spacing: -0.18px;
+}
+
+.tracking-\[-0\.32px\] {
+  letter-spacing: -0.32px;
 }
 
 .tracking-\[-0\.36px\] {
@@ -2816,10 +2807,6 @@ video {
   letter-spacing: 0.025em;
 }
 
-.tracking-\[-0\.32px\] {
-  letter-spacing: -0.32px;
-}
-
 .\!text-\[\#2E3666\] {
   --tw-text-opacity: 1 !important;
   color: rgb(46 54 102 / var(--tw-text-opacity)) !important;
@@ -2828,6 +2815,11 @@ video {
 .text-\[\#2E3666\] {
   --tw-text-opacity: 1;
   color: rgb(46 54 102 / var(--tw-text-opacity));
+}
+
+.text-\[\#494949\] {
+  --tw-text-opacity: 1;
+  color: rgb(73 73 73 / var(--tw-text-opacity));
 }
 
 .text-\[\#C8D3F0\] {
@@ -2849,8 +2841,8 @@ video {
   color: rgba(46,54,102,0.20);
 }
 
-.text-\[rgba\(46\2c 54\2c 102\2c 0\.50\)\] {
-  color: rgba(46,54,102,0.50);
+.text-\[var\(--footercolor\)\] {
+  color: var(--footercolor);
 }
 
 .text-blue-950 {
@@ -2876,20 +2868,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-zinc-700 {
-  --tw-text-opacity: 1;
-  color: rgb(63 63 70 / var(--tw-text-opacity));
-}
-
-.text-\[\#494949\] {
-  --tw-text-opacity: 1;
-  color: rgb(73 73 73 / var(--tw-text-opacity));
-}
-
-.text-\[var\(--footercolor\)\] {
-  color: var(--footercolor);
 }
 
 .text-opacity-20 {
@@ -3677,6 +3655,10 @@ html {
     font-size: 24px;
   }
 
+  .max-\[1200px\]\:text-\[27px\] {
+    font-size: 27px;
+  }
+
   .max-\[1200px\]\:text-\[33px\] {
     font-size: 33px;
   }
@@ -3691,10 +3673,6 @@ html {
 
   .max-\[1200px\]\:text-\[60px\] {
     font-size: 60px;
-  }
-
-  .max-\[1200px\]\:text-\[27px\] {
-    font-size: 27px;
   }
 
   .max-\[1200px\]\:leading-\[140\%\] {
@@ -3875,10 +3853,6 @@ html {
     padding-top: 32px;
   }
 
-  .max-\[1024px\]\:pr-\[0\] {
-    padding-right: 0;
-  }
-
   .max-\[1024px\]\:text-\[14px\] {
     font-size: 14px;
   }
@@ -3953,6 +3927,10 @@ html {
     margin-bottom: 8px;
   }
 
+  .max-md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .max-md\:mt-0 {
     margin-top: 0px;
   }
@@ -3965,20 +3943,12 @@ html {
     margin-top: 2rem;
   }
 
-  .max-md\:mt-\[16px\] {
-    margin-top: 16px;
+  .max-md\:mt-\[20px\] {
+    margin-top: 20px;
   }
 
   .max-md\:mt-\[32px\] {
     margin-top: 32px;
-  }
-
-  .max-md\:ml-0 {
-    margin-left: 0px;
-  }
-
-  .max-md\:mt-\[20px\] {
-    margin-top: 20px;
   }
 
   .max-md\:block {
@@ -4169,6 +4139,10 @@ html {
     text-align: center;
   }
 
+  .max-md\:\!text-\[27px\] {
+    font-size: 27px !important;
+  }
+
   .max-md\:\!text-\[30px\] {
     font-size: 30px !important;
   }
@@ -4185,10 +4159,6 @@ html {
     font-size: 24px;
   }
 
-  .max-md\:text-\[27px\] {
-    font-size: 27px;
-  }
-
   .max-md\:text-\[30px\] {
     font-size: 30px;
   }
@@ -4199,14 +4169,6 @@ html {
 
   .max-md\:text-\[40px\] {
     font-size: 40px;
-  }
-
-  .max-md\:\!text-\[27px\] {
-    font-size: 27px !important;
-  }
-
-  .max-md\:font-semibold {
-    font-weight: 600;
   }
 
   .max-md\:font-normal {
