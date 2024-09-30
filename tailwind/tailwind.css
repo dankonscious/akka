@@ -208,9 +208,19 @@ section {
   animation:spin 16s linear infinite;
 }
 
+.rotate-counter-me {
+  -webkit-animation:Conterspin 16s linear infinite;
+  -moz-animation:Conterspin 16s linear infinite;
+  animation:Conterspin 16s linear infinite;
+}
+
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes Conterspin  { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes Conterspin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes Conterspin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
 
 .fade_slider {
   position: relative;

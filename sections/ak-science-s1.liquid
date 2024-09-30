@@ -12,8 +12,8 @@
 
 <section id="hero" class="bg-no-repeat bg-cover bg-center min-h-[980px] flex items-center relative max-md:min-h-[660px] font-['syne'] max-[1200px]:overflow-hidden" style="background-image: url({{ section.settings.background_image | img_url: 'master' }});">
     <div class=" absolute inset-[50%] translate-x-[-50%] translate-y-[-50%] z-0 max-w-[604px] w-full h-[605px] bg-no-repeat bg-cover bg-center max-md:w-[348px] max-md:h-[348px] max-md:inset-[50%] max-md:translate-x-[-50%] max-md:translate-y-[-50%]">
-      <img class="rotate-me max-[1200px]:hidden" src="{{ section.settings.circle_image | img_url: 'master' }}" alt="">
-      <img class="rotate-me hidden max-[1200px]:block" src="{{ section.settings.circle_image_mobile | img_url: 'master' }}" alt="">
+      <img class="big rotate-me max-[1200px]:" src="{{ 'science-circle-big.png' | file_img_url: 'master' }}" alt="">
+      <img class="small rotate-counter-me absolute top-0 max-[1200px]: " src="{{ 'science-circle-small.png' | file_img_url: 'master' }}" alt="">
     </div>
     <div class="flex items-center justify-center m-auto h-full">
         <div class="title overflow-hidden relative z-10 bg-[url({{ section.settings.text_background_image | img_url: 'master' }})] bg-cover bg-center bg-no-repeat max-md:bg-none">
