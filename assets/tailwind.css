@@ -820,6 +820,14 @@ video {
   top: 59px;
 }
 
+.left-\[-27\%\] {
+  left: -27%;
+}
+
+.right-\[-27\%\] {
+  right: -27%;
+}
+
 .isolate {
   isolation: isolate;
 }
