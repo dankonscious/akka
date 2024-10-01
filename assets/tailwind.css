@@ -676,6 +676,10 @@ video {
   left: 0px;
 }
 
+.left-\[-25\%\] {
+  left: -25%;
+}
+
 .left-\[-300px\] {
   left: -300px;
 }
@@ -694,6 +698,10 @@ video {
 
 .right-0 {
   right: 0px;
+}
+
+.right-\[-25\%\] {
+  right: -25%;
 }
 
 .right-\[100px\] {
@@ -744,6 +752,10 @@ video {
   top: -25px;
 }
 
+.top-\[-27px\] {
+  top: -27px;
+}
+
 .top-\[-280px\] {
   top: -280px;
 }
@@ -792,6 +804,10 @@ video {
   top: 36px;
 }
 
+.top-\[430px\] {
+  top: 430px;
+}
+
 .top-\[45px\] {
   top: 45px;
 }
@@ -802,34 +818,6 @@ video {
 
 .top-\[59px\] {
   top: 59px;
-}
-
-.left-\[-50\%\] {
-  left: -50%;
-}
-
-.right-\[-50\%\] {
-  right: -50%;
-}
-
-.top-\[-20px\] {
-  top: -20px;
-}
-
-.top-\[-27px\] {
-  top: -27px;
-}
-
-.left-\[-25\%\] {
-  left: -25%;
-}
-
-.right-\[-25\%\] {
-  right: -25%;
-}
-
-.top-\[430px\] {
-  top: 430px;
 }
 
 .isolate {
@@ -1188,6 +1176,14 @@ video {
   height: 100px;
 }
 
+.h-\[1034px\] {
+  height: 1034px;
+}
+
+.h-\[11px\] {
+  height: 11px;
+}
+
 .h-\[122px\] {
   height: 122px;
 }
@@ -1210,6 +1206,10 @@ video {
 
 .h-\[4px\] {
   height: 4px;
+}
+
+.h-\[592px\] {
+  height: 592px;
 }
 
 .h-\[605px\] {
@@ -1246,18 +1246,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[11px\] {
-  height: 11px;
-}
-
-.h-\[1034px\] {
-  height: 1034px;
-}
-
-.h-\[592px\] {
-  height: 592px;
 }
 
 .min-h-0 {
@@ -1332,8 +1320,8 @@ video {
   width: 101%;
 }
 
-.w-\[1036px\] {
-  width: 1036px;
+.w-\[1034px\] {
+  width: 1034px;
 }
 
 .w-\[106px\] {
@@ -1342,6 +1330,10 @@ video {
 
 .w-\[107px\] {
   width: 107px;
+}
+
+.w-\[11px\] {
+  width: 11px;
 }
 
 .w-\[120px\] {
@@ -1492,6 +1484,10 @@ video {
   width: 58px;
 }
 
+.w-\[592px\] {
+  width: 592px;
+}
+
 .w-\[597px\] {
   width: 597px;
 }
@@ -1564,6 +1560,10 @@ video {
   width: 956px;
 }
 
+.w-\[971px\] {
+  width: 971px;
+}
+
 .w-\[calc\(\(100vw_-_1340px\)_\/_2\)\] {
   width: calc((100vw - 1340px) / 2);
 }
@@ -1583,22 +1583,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[971px\] {
-  width: 971px;
-}
-
-.w-\[11px\] {
-  width: 11px;
-}
-
-.w-\[1034px\] {
-  width: 1034px;
-}
-
-.w-\[592px\] {
-  width: 592px;
 }
 
 .min-w-\[1350px\] {
@@ -1850,16 +1834,6 @@ video {
 
 .rotate-\[-45deg\] {
   --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[-180deg\] {
-  --tw-rotate: -180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[180deg\] {
-  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2120,14 +2094,14 @@ video {
   border-color: rgb(62 72 139 / var(--tw-border-opacity));
 }
 
-.border-indigo-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(49 46 129 / var(--tw-border-opacity));
-}
-
 .border-\[\#BCBCBC\] {
   --tw-border-opacity: 1;
   border-color: rgb(188 188 188 / var(--tw-border-opacity));
+}
+
+.border-indigo-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(49 46 129 / var(--tw-border-opacity));
 }
 
 .bg-\[\#07080f\] {
@@ -2148,6 +2122,11 @@ video {
 .bg-\[\#3E488B\] {
   --tw-bg-opacity: 1;
   background-color: rgb(62 72 139 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#BCBCBC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(188 188 188 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#C8D3F0\] {
@@ -2195,21 +2174,16 @@ video {
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#BCBCBC\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(188 188 188 / var(--tw-bg-opacity));
-}
-
 .bg-\[linear-gradient\(114deg\2c _\#7B82A2_8\.77\%\2c _\#677099_52\.96\%\2c _\#7B82A2_92\.94\%\)\] {
   background-image: linear-gradient(114deg, #7B82A2 8.77%, #677099 52.96%, #7B82A2 92.94%);
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
 .bg-contain {
   background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-center {
