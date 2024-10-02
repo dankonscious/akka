@@ -820,6 +820,10 @@ video {
   top: 59px;
 }
 
+.top-\[-72px\] {
+  top: -72px;
+}
+
 .isolate {
   isolation: isolate;
 }
