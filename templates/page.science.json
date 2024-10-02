@@ -22,7 +22,8 @@
       "type": "ak-science-s1",
       "settings": {
         "background_image": "shopify://shop_images/hero-backgroiund_4c0bf0d1-5d3f-4acd-b6c3-0bf5834a9b98.png",
-        "circle_image": "shopify://shop_images/science-hero-bg-mob.png",
+        "background_image_mob": "shopify://shop_images/science-hero-bg-mob.png",
+        "circle_image": "shopify://shop_images/science-circle-big.png",
         "circle_image_mobile": "shopify://shop_images/hero-circle_025c068e-9561-47ea-b7af-0900c216f0ce.png",
         "hero_text": "The Science Behind",
         "sub_text": "Liver Health"
