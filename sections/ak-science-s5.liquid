@@ -25,7 +25,7 @@
 </section>
 
 <style>
-  #shopify-section-template--23440138305839__ak_science_s5_hHVfjj {
+  .section4-sticky {
     position: sticky;s
     top: -330px;
   }
@@ -33,11 +33,17 @@
     #section4 article:nth-child(3) h2 {
       line-height: 130%;
     }
-    #shopify-section-template--23440138305839__ak_science_s5_hHVfjj {    
+    .section4-sticky {    
       top: -1350px;
     }
   }
 </style>
+
+<script>
+  window.onload = function() {
+    document.getElementById('section4').parentElement.classList.add('section4-sticky');
+  };
+</script>
 
 {% schema %}
 {

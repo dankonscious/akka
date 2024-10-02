@@ -1,6 +1,6 @@
 <!-- hero.liquid -->
 <style>
-    #shopify-section-template--23440138305839__ak_science_s1_qqTwAi {
+    .hero-sticky {
       position: sticky;
       top: 72px;
     }
@@ -34,6 +34,12 @@
         </div>
     </div>
 </section>
+
+<script>
+  window.onload = function() {
+    document.getElementById('hero').parentElement.classList.add('hero-sticky');
+  };
+</script>
 
 {% schema %}
 {
