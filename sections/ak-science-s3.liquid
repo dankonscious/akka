@@ -1,7 +1,7 @@
 <!-- sections/marquee-section.liquid -->
 <link rel="stylesheet" href="{{ 'swiper.css' |  asset_url }}">
  <style>
-    #section2-sticky {
+    .section2-sticky {
       position: sticky;
       top: 72px;
     }
@@ -24,6 +24,11 @@
   </section>
 </div>
 
+<script>
+  window.onload = function() {
+    document.getElementById('section2-sticky').parentElement.classList.add('section2-sticky');
+  };
+</script>
 
 {% schema %}
 {
