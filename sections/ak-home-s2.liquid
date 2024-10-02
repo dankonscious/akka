@@ -14,7 +14,7 @@
 
     <div class="flex mt-[50px] max-[1024px]:flex-col max-[1024px]:mt-[39px]">
       <div class="w-1/2 element scaleup relative max-[1024px]:w-full">
-        <div class="pb-[90%] relative overflow-hidden [&:hover_img]:translate-y-[100%]">
+        <div class="pb-[90%] relative overflow-hidden [&:hover_img]:translate-y-[100%] mobile-continue-animation yaxis">
           <img class="block transform transition-transform  absolute bottom-[99.9%] left-0 w-full h-full object-cover" loading="eager" src="{{ section.settings.image2 | img_url: 'master' }}">
           <img class="block transform transition-transform absolute top-0 left-0 w-full h-full object-cover" loading="eager" src="{{ section.settings.image1 | img_url: 'master' }}">
         </div>
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="w-1/2 element scaleup max-[1024px]:w-full">
-        <div class="pb-[90%] relative overflow-hidden [&:hover_img]:translate-x-[100%]">
+        <div class="pb-[90%] relative overflow-hidden [&:hover_img]:translate-x-[100%] mobile-continue-animation xaxis">
           <img class="block transform transition-transform  absolute top-0 right-[99.9%] w-full h-full object-cover" loading="eager" src="{{ section.settings.image4 | img_url: 'master' }}">
           <img class="block transform transition-transform absolute top-0 left-0 w-full h-full object-cover" loading="eager" src="{{ section.settings.image3 | img_url: 'master' }}">
         </div>
@@ -47,6 +47,40 @@
     </div>
   </div>
 </div>
+
+{%  style  %} 
+@media screen and (max-width:1200px) {
+  .mobile-continue-animation.yaxis img {
+    animation: moveImagey 2s infinite;
+  }
+  .mobile-continue-animation.xaxis img {
+    animation: moveImagex 2s infinite;
+  }
+
+  @keyframes moveImagey {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes moveImagex {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+{% endstyle %}
 
 {% schema %}
 {
