@@ -1,6 +1,10 @@
 <!-- sections/marquee-section.liquid -->
 <link rel="stylesheet" href="{{ 'swiper.css' |  asset_url }}">
  <style>
+    #shopify-section-template--23440138305839__ak_science_s3_eVcLTQ {
+      position: sticky;
+      top: 72px;
+    }
     #section2 .bg-image {
         background-image: url({{ section.settings.desktop_background_image | img_url: 'master' }});
     }
@@ -11,41 +15,14 @@
             background-size:100% 100%;
         }
     }
+
  </style>
 <section id="section2" class="relative max-md:overflow-hidden font-['syne']">
-  <div class="bg-image bg-cover bg-center bg-no-repeat h-[900px]">
-    <section id="marquee" class="hidden pt-[49px] max-md:pt-0 max-md:overflow-hidden h-[122px] absolute bottom-[30px] left-0 max-md:w-full max-[1200px]:bottom-0 max-[1200px]:mb-[-25px]">
-      <!-- Slider main container -->
-      <div class="marquee swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper !h-auto">
-          {% for slide in section.blocks %}
-          <!-- Slides -->
-          <div class="swiper-slide !flex !items-center !justify-center gap-[35px] !w-[unset] !h-[unset] font-['blisstwin']">
-            <h3 class="text-[100px] text-[#C8D3F0] capitalize">{{ slide.settings.slide_text }}</h3>
-            <div class="w-[15px] h-[15px] bg-[#C8D3F0] rotate-45"></div>
-          </div>
-          {% endfor %}
-        </div>      
-      </div>
-    </section>        
+  <div class="bg-image bg-cover bg-center bg-no-repeat h-[900px]">          
   </div>
 </section>
 
-<script>
-  const swiperMarquee = new Swiper(".marquee", {
-    spaceBetween: 35,
-    centeredSlides: true,
-    speed: 20000,
-    autoplay: {
-      delay: 1,
-    },
-    loop: true,
-    slidesPerView:'auto',
-    allowTouchMove: false,
-    disableOnInteraction: true
-  });
-</script>
+
 
 {% schema %}
 {
