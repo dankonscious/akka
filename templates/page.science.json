@@ -40,52 +40,6 @@
     },
     "ak_science_s3_eVcLTQ": {
       "type": "ak-science-s3",
-      "blocks": {
-        "slide_PTRLmJ": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "The Liver Performs over 500 crucial functions"
-          }
-        },
-        "slide_4gkWJX": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "it plays a pivotal role in transforming food into energy"
-          }
-        },
-        "slide_jyhfpU": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "The Liver Performs over 500 crucial functions"
-          }
-        },
-        "slide_qANdMq": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "it plays a pivotal role in transforming food into energy"
-          }
-        },
-        "slide_Rb96ET": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "The Liver Performs over 500 crucial functions"
-          }
-        },
-        "slide_GAmdLN": {
-          "type": "slide",
-          "settings": {
-            "slide_text": "it plays a pivotal role in transforming food into energy"
-          }
-        }
-      },
-      "block_order": [
-        "slide_PTRLmJ",
-        "slide_4gkWJX",
-        "slide_jyhfpU",
-        "slide_qANdMq",
-        "slide_Rb96ET",
-        "slide_GAmdLN"
-      ],
       "settings": {
         "desktop_background_image": "shopify://shop_images/sec2-bg.png",
         "mobile_background_image": "shopify://shop_images/sec2-bg-mob.png"
@@ -93,6 +47,38 @@
     },
     "ak_science_s4_CzJzJJ": {
       "type": "ak-science-s4",
+      "blocks": {
+        "slide_aRKVhC": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "The Liver Performs over 500 crucial functions"
+          }
+        },
+        "slide_pePnBJ": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "it plays a pivotal role in transforming food into energy"
+          }
+        },
+        "slide_mc4k6Q": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "The Liver Performs over 500 crucial functions"
+          }
+        },
+        "slide_X67iHP": {
+          "type": "slide",
+          "settings": {
+            "slide_text": "it plays a pivotal role in transforming food into energy"
+          }
+        }
+      },
+      "block_order": [
+        "slide_aRKVhC",
+        "slide_pePnBJ",
+        "slide_mc4k6Q",
+        "slide_X67iHP"
+      ],
       "settings": {
         "title": "How AKKA",
         "subtitle": "can help",
