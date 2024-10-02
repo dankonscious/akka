@@ -12,7 +12,7 @@
       </h3>
     </div>
 
-    <div class="flex mt-[50px] max-[1024px]:flex-col max-[1024px]:mt-[39px]">
+    <div class="flex mt-[50px] max-[1024px]:flex-col max-[1024px]:mt-[39px] ">
       <div class="w-1/2 element scaleup relative max-[1024px]:w-full">
         <div class="pb-[90%] relative overflow-hidden [&:hover_img]:translate-y-[100%] mobile-continue-animation yaxis">
           <img class="block transform transition-transform  absolute bottom-[99.9%] left-0 w-full h-full object-cover" loading="eager" src="{{ section.settings.image2 | img_url: 'master' }}">
@@ -51,18 +51,30 @@
 {%  style  %} 
 @media screen and (max-width:1200px) {
   .mobile-continue-animation.yaxis img {
-    animation: moveImagey 2s infinite;
+    animation: moveImagey 10s infinite;
   }
   .mobile-continue-animation.xaxis img {
-    animation: moveImagex 2s infinite;
+    animation: moveImagex 10s infinite;
   }
 
   @keyframes moveImagey {
     0% {
       transform: translateY(0);
     }
+    30% {
+      transform: translateY(105%);
+    }
+    40% {
+      transform: translateY(100%);
+    }
     50% {
       transform: translateY(100%);
+    }
+    80% {
+      transform: translateY(-5%);
+    }
+    90% {
+      transform: translateY(0);
     }
     100% {
       transform: translateY(0);
@@ -72,8 +84,20 @@
     0% {
       transform: translateX(0);
     }
+    30% {
+      transform: translateX(105%);
+    }
+    40% {
+      transform: translateX(100%);
+    }
     50% {
       transform: translateX(100%);
+    }
+    80% {
+      transform: translateX(-5%);
+    }
+    90% {
+      transform: translateX(0);
     }
     100% {
       transform: translateX(0);
