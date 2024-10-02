@@ -51,18 +51,27 @@
 {%  style  %} 
 @media screen and (max-width:1200px) {
   .mobile-continue-animation.yaxis img {
-    animation: moveImagey 2s infinite;
+    animation: moveImagey 4s infinite;
   }
   .mobile-continue-animation.xaxis img {
-    animation: moveImagex 2s infinite;
+    animation: moveImagex 4s infinite;
   }
 
   @keyframes moveImagey {
-    0% {
+    30% {
       transform: translateY(0);
     }
     50% {
       transform: translateY(100%);
+    }
+    70% {
+      transform: translateY(100%);
+    }
+    71% {
+      transform: translateY(101%);
+    }
+    72% {
+      transform: translateY(101%);
     }
     80% {
       transform: translateY(100%);
