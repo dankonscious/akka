@@ -1,13 +1,67 @@
 <style>
     #hero {
         background-image: url({{ section.settings.background_image | img_url: 'master' }});
+        animation:bgmovement 1.2s ease-out forwards;
     }
-    
+    #hero .whitebg {      
+      background: white;      
+      -webkit-mask: radial-gradient(#000 70%, #0000 71%) no-repeat, linear-gradient(#000 0 0);
+      mask: radial-gradient(#000 70%, #0000 71%) no-repeat, linear-gradient(#000 0 0);
+      mask-position: center;
+      mask-size: 30% 60%;
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      -webkit-transition: 1s ease-out;
+      -moz-transition: 1s ease-out;
+      -o-transition: 1s ease-out;
+      transition: 1s ease-out;
+      z-index: 11111111;
+      -moz-animation:scoop 1.2s ease-out forwards;
+      -webkit-animation:scoop 1.2s ease-out forwards;
+      animation:scoop 1.2s ease-out forwards;
+    }    
+    #hero .animation-moveup {
+      animation: ;
+    }
+    @keyframes scoop {
+      from {
+        mask-size: 30% 60%;
+        
+      }
+      to {
+        mask-size: 150% 250%;
+        
+      }
+    }
+    @keyframes bgmovement {
+      from {
+          background-position-y: -10px;
+      } 
+      to  {
+          background-position-y: 0px;
+      }
+    }
+    @keyframes textbg {
+      from  {background-position-y: -88px;;}
+      to {background-position-y: 0px;}
+    }
+    @keyframes circlesOp {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
     /* #hero .circlebg {
         background-image: url({{ section.settings.circle_graphic | img_url: 'master' }});
     } */
     #hero .textbg {
-        background-image: url({{ section.settings.text_background | img_url: 'master' }});
+      background-image: url({{ section.settings.text_background | img_url: 'master' }});
+      -moz-animation:textbg 1.2s ease-out forwards;
+      -webkit-animation:textbg 1.2s ease-out forwards;
+      animation:textbg 1.2s ease-out forwards;
+    }
+    #hero .circlesop {
+      -moz-animation:circlesOp 1.2s ease-out forwards;
+      -webkit-animation:circlesOp 1.2s ease-out forwards;
+      animation:circlesOp 1.2s ease-out forwards;
     }
     #hero .bcircle {
       width: 1034px;
@@ -35,8 +89,8 @@
     }
 </style>
 <section id="hero" class="bg-no-repeat bg-cover bg-center min-h-[980px] flex items-center relative max-md:min-h-[660px] overflow-hidden xl:h-[980px] ">  
-
-  <div class="absolute max-w-[1728px] w-full h-full z-10 max-[1200px]:hidden left-[50%] translate-x-[-50%]">
+  <div class="whitebg absolute w-full h-full"></div>
+  <div class="circlesop absolute max-w-[1728px] w-full h-full z-10 max-[1200px]:hidden left-[50%] translate-x-[-50%]">
     <div class="relative w-full h-full ">
       {% comment %} left Circle {% endcomment %}
       <div class="absolute left-[-27%] top-[-27px] w-[1034px] h-[1034px]  rotate-[171deg]">
@@ -76,6 +130,13 @@
     </div>
   </div>
 </section>
+
+<script>
+  window.addEventListener('load', function() {
+    const whiteBgElement = document.querySelector('#hero .whitebg');
+    whiteBgElement.classList.add('active');
+  });
+</script>
 
 {% schema %}
 {
