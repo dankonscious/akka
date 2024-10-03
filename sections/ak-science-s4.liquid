@@ -13,6 +13,85 @@
     </div>      
   </div>
 </section>  
+<style>
+  .overflow-up {
+    overflow:hidden;
+    padding-top: 15px;
+    margin-top: -15px;
+  }
+  .overflow-down {
+    overflow:hidden;
+    padding-bottom: 15px;
+    margin-bottom: -15px;
+  }
+  .animate-downup {
+    transition: 2s ease-out;
+    animation: downUp 2s ease-out forwards;
+  }
+  img.animate-downup {
+    transition: 2s ease-out;
+    animation: downUp2 2s ease-out forwards;
+  }
+  .animate-updown {
+    transition: 2s ease-out;
+    animation: upDown 2s ease-out forwards;
+  }
+  .animate-leftrigth {
+    transition: 2s ease-out;
+    animation: leftRigth 2s ease-out forwards;
+  }
+  .animate-rigthleft {
+    transition: 2s ease-out;
+    animation: rigthLeft 2s ease-out forwards;
+  }
+  @keyframes downUp2 {
+    0% {transform: translateY(100%);}
+    50% {transform: translateY(-2%);}
+    100% {transform: translateY(0%);}
+  }
+  @keyframes downUp {
+    0% {transform: translateY(100%);}
+    50% {transform: translateY(-10%);}
+    100% {transform: translateY(0%);}
+  }
+  @keyframes upDown {
+    0% {transform: translateY(-100%);}
+    50% {transform: translateY(10%);}
+    100% {transform: translateY(0%);}
+  }
+  @keyframes leftRigth {
+    0% {transform: translatex(-100%);}
+    50% {transform: translatex(5%);}
+    100% {transform: translatex(0%);}
+  }
+  @keyframes rigthLeft {
+    0% {transform: translatex(100%);}
+    50% {transform: translatex(-5%);}
+    100% {transform: translatex(0%);}
+  }
+  @media(max-width: 1200px) {
+    .animate-downup {
+    transition: unset;
+    animation:unset;
+    }
+    img.animate-downup {
+      transition: unset;
+      animation: unset;
+    }
+    .animate-updown {
+      transition: unset;
+      animation:unset;
+    }
+    .animate-leftrigth {
+      transition: unset;
+      animation:unset;
+    }
+    .animate-rigthleft {
+      transition: unset;
+      animation:unset;
+    }
+  }
+</style>
 <!-- sections/akka-help-section.liquid -->
 <section id="section3" class="text-[#2E3666] bg-[#C9CFE1] font-['syne']">
   <div class="max-w-[var(--page-width)] w-full mx-auto pt-[128px] pb-[144px] max-md:pt-[64px] max-md:pb-0">
@@ -20,98 +99,133 @@
     <div class="flex justify-between items-start max-md:flex-col max-md:px-4">
       <div class="max-w-[330px] w-full">
         <h3 class="text-[70px] leading-[79%] max-md:text-[40px] max-md:mb-8">
-          {{ section.settings.title }}
-          <span class="font-['Blisstwin'] mt-[12px] block">{{ section.settings.subtitle }}</span>
+          <div class="overflow-up">
+            <span class="block animate-downup">{{ section.settings.title }}</span>
+          </div>          
+          <div class="overflow-up">
+            <span class="font-['Blisstwin'] mt-[12px] block animate-downup pb-3">{{ section.settings.subtitle }}</span>
+          </div>
         </h3>
       </div>
-      <div class="max-w-[658px] w-full [&>p]:text-[24px] [&>p]:leading-[140%] [&>p]:tracking-[0.48px] [&>p]:max-md:text-[20px]">
-        {{ section.settings.description }}
+      <div class="max-w-[658px] w-full overflow-up">
+        <div class="animate-downup [&>p]:text-[24px] [&>p]:leading-[140%] [&>p]:tracking-[0.48px] [&>p]:max-md:text-[20px]">
+          {{ section.settings.description }}
+        </div>        
       </div>
     </div>
-    <div class="w-full py-[16px] border-b-[4px] border-solid border-[#3E488B] mt-[64px] max-md:hidden">
-      <h3 class="text-[40px] tracking-[-0.8px] uppercase">{{ section.settings.section_heading }}</h3>
+    <div class="w-full py-[16px] mt-[64px] max-md:hidden overflow-up">
+      <h3 class="text-[40px] tracking-[-0.8px] uppercase animate-downup">{{ section.settings.section_heading }}</h3>
+    </div>
+    <div class="overflow-hidden max-md:hidden">
+      <div class="h-[4px] w-full bg-[#3E488B] animate-leftrigth"></div>
     </div>
     <!-- CONTENT DIV -->
     <div class="block relative h-[689px] w-full max-md:hidden">
       <!-- MIDDLE IMAGE DIV -->
-      <div class="absolute left-[50%] translate-x-[-50%] max-w-[430px] w-full top-[-25px]">
-        <img src="{{ section.settings.main_image | img_url: 'master' }}" alt="">
+      <div class="absolute left-[50%] translate-x-[-50%] max-w-[430px] w-full top-0 overflow-up">
+        <img class="animate-downup" src="{{ section.settings.main_image | img_url: 'master' }}" alt="">
       </div>
       <!-- LABEL1 DIV -->
       <div class="max-w-[363px] w-full absolute top-[193px] left-0">
-        <div class="max-w-[284px] w-full h-[92px] overflow-hidden ml-[200px]">
-          <img class="" src="{{ section.settings.line_image1 | img_url: 'master' }}" alt="">
-          <img class="w-[2px]" src="{{ section.settings.vertical_line1 | img_url: 'master' }}" alt="">
+        <div class="max-w-[284px] w-full h-[92px] ml-[200px]">
+          <div class="pr-[30px] mr-[-30px] overflow-hidden">
+            <img class="animate-leftrigth" src="{{ section.settings.line_image1 | img_url: 'master' }}" alt="">
+          </div>          
+          <div class="overflow-hidden mt-[-4px]">
+            <img class="w-[2px] animate-downup" src="{{ section.settings.vertical_line1 | img_url: 'master' }}" alt="">
+          </div>          
         </div>
-        <div class="">
-          <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label1_title }}</h4>
-          <p class="mt-[31px] text-[22px] leading-[normal]">{{ section.settings.label1_text }}</p>
+        <div class="overflow-down">
+          <div class="animate-updown">
+            <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label1_title }}</h4>
+            <p class="mt-[31px] text-[22px] leading-[normal]">{{ section.settings.label1_text }}</p>
+          </div>          
         </div>
       </div>
       <!-- LABEL2 DIV -->
       <div class="max-w-[363px] w-full absolute top-[59px] right-0">
         <div class="relative">
-          <div class="">
-            <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label2_title }}</h4>
-            <p class="mt-[8px] text-[22px] leading-[normal]">{{ section.settings.label2_text }}</p>
+          <div class="overflow-down">
+            <div class="animate-updown">
+              <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label2_title }}</h4>
+              <p class="mt-[8px] text-[22px] leading-[normal]">{{ section.settings.label2_text }}</p>
+            </div>            
           </div>
-          <div class="max-w-[354px] w-full overflow-hidden absolute top-[123px] right-[160px]">
-            <img class="w-[2px] ml-auto" src="{{ section.settings.vertical_line2 | img_url: 'master' }}" alt="">
-            <img class="" src="{{ section.settings.line_image2 | img_url: 'master' }}" alt="">
+          <div class="max-w-[354px] w-full absolute top-[123px] right-[160px]">
+            <div class="overflow-down">
+              <img class="w-[2px] ml-auto animate-updown" src="{{ section.settings.vertical_line2 | img_url: 'master' }}" alt="">
+            </div>
+            <div class="overflow-hidden pl-[30px] ml-[-30px]">
+              <img class="animate-rigthleft" src="{{ section.settings.line_image2 | img_url: 'master' }}" alt="">
+            </div>
           </div>
         </div>
       </div>
       <!-- LABEL3 DIV -->
       <div class="max-w-[363px] w-full absolute bottom-[16px] right-[11px]">
         <div class="relative bg-[#C9CFE1]">
-          <div class="max-w-[300px] w-full overflow-hidden absolute top-[-64px] right-[160px]">
-            <img class="" src="{{ section.settings.line_image3 | img_url: 'master' }}" alt="">
-            <img class="w-[2px] ml-auto mb-[-40px]" src="{{ section.settings.vertical_line3 | img_url: 'master' }}" alt="">
+          <div class="max-w-[300px] w-full absolute top-[-64px] right-[160px]">
+            <div class="overflow-hidden pl-[30px] ml-[-30px]">
+              <img class="animate-rigthleft" src="{{ section.settings.line_image3 | img_url: 'master' }}" alt="">
+            </div>
+            <div class="overflow-up">
+              <img class="w-[2px] ml-auto mb-[-40px] animate-downup" src="{{ section.settings.vertical_line3 | img_url: 'master' }}" alt="">
+            </div>
           </div>
-          <div class="relative z-10">
-            <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label3_title }}</h4>
-            <p class="mt-[8px] text-[22px] leading-[normal]">{{ section.settings.label3_text }}</p>
+          <div class="relative z-10 overflow-down">
+            <div class="animate-updown">
+              <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label3_title }}</h4>
+              <p class="mt-[8px] text-[22px] leading-[normal]">{{ section.settings.label3_text }}</p>
+            </div>            
           </div>
         </div>
       </div>
     </div>
     <!-- CONTENT DIV MOBILE -->
-    <div class="hidden max-md:block px-4">
-      <div class="max-w-[430px] w-full">
-        <img class="mt-[-100px]" src="{{ section.settings.mobile_image | img_url: 'master' }}" alt="">
-      </div>
-      <div class="w-full mb-8">
-        <h3 class="text-[30px] tracking-[-0.8px] uppercase border-b-[4px] border-solid border-[#3E488B] py-[16px] max-[1200px]:pb-0">{{ section.settings.section_heading }}</h3>
-      </div>
-      <div class="">
-        <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0 max-[1200px]:text-[20px]">{{ section.settings.label1_title }}</h4>
-        <p class="mt-4 text-[22px] leading-[normal] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.label1_text }}</p>
-      </div>
-      <div class="mt-8">
-        <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0 max-[1200px]:text-[20px]">{{ section.settings.label2_title }}</h4>
-        <p class="mt-4 text-[22px] leading-[normal] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.label2_text }}</p>
-      </div>
-      <div class="mt-8">
-        <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0 max-[1200px]:text-[20px]">{{ section.settings.label3_title }}</h4>
-        <p class="mt-4 text-[22px] leading-[normal] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.label3_text }}</p>
-      </div>
+    <div class="hidden max-md:block max-w-[430px] w-full sticky top-0 z-[-1]">
+      <img class="mt-[-100px]" src="{{ section.settings.mobile_image | img_url: 'master' }}" alt="">
     </div>
-    <!-- BOTTOM DIV -->
-    <div class="w-full mb-8 relative z-10 max-md:px-4">
-      <h3 class="text-[40px] tracking-[-0.8px] uppercase border-b-[4px] border-solid border-[#3E488B] py-[16px] max-md:text-[30px] max-[1200px]:pt-[37px] max-[1200px]:pb-0" >{{ section.settings.final_heading }}</h3>
-    </div>
-    <div class="flex justify-between items-start mt-[28px] max-md:flex-col max-md:px-4 max-md:gap-2 max-md:pb-[49px]">
-      <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full">
-        <img src="{{ section.settings.icon_image1 | img_url: 'master' }}" alt="">
-        <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.final_text1 }}</p>
+
+    <div class="max-md:bg-[rgba(201,207,225,0.80)] max-md:backdrop-blur-[30px] max-md:pb-[49px]">
+      <div class="hidden max-md:block px-4">
+        
+        <div class="w-full mb-8 ">
+          <h3 class="text-[30px] tracking-[-0.8px] uppercase border-b-[4px] border-solid border-[#3E488B] py-[16px] max-[1200px]:pb-0">{{ section.settings.section_heading }}</h3>
+        </div>
+        <div class="">
+          <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0 max-[1200px]:text-[20px]">{{ section.settings.label1_title }}</h4>
+          <p class="mt-4 text-[22px] leading-[normal] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.label1_text }}</p>
+        </div>
+        <div class="mt-8">
+          <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0 max-[1200px]:text-[20px]">{{ section.settings.label2_title }}</h4>
+          <p class="mt-4 text-[22px] leading-[normal] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.label2_text }}</p>
+        </div>
+        <div class="mt-8">
+          <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0 max-[1200px]:text-[20px]">{{ section.settings.label3_title }}</h4>
+          <p class="mt-4 text-[22px] leading-[normal] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.label3_text }}</p>
+        </div>
       </div>
-      <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full h-[265px]">
-        <img src="{{ section.settings.icon_image2 | img_url: 'master' }}" alt="">
-        <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.final_text2 }}</p>
+      <!-- BOTTOM DIV -->
+      
+      <div class="w-full relative z-10 max-md:px-4 overflow-up">
+        <h3 class="text-[40px] tracking-[-0.8px] uppercase max-md:text-[30px] max-[1200px]:pt-[37px] max-[1200px]:pb-0 animate-downup" >{{ section.settings.final_heading }}</h3>
       </div>
-      <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full">
-        <img src="{{ section.settings.icon_image3 | img_url: 'master' }}" alt="">
-        <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.final_text3 }}</p>
+      <div class="overflow-hidden max-md:px-[16px]">
+        <div class="h-[4px] w-full bg-[#3E488B] animate-rigthleft"></div>
+      </div>
+      <div class="flex justify-between items-start mt-[28px] max-md:flex-col max-md:px-4 max-md:gap-2 max-md:pb-[49px] overflow-down" >
+        <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full animate-updown">
+          <img src="{{ section.settings.icon_image1 | img_url: 'master' }}" alt="">
+          <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.final_text1 }}</p>
+        </div>
+        <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full h-[265px] animate-updown">
+          <img src="{{ section.settings.icon_image2 | img_url: 'master' }}" alt="">
+          <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.final_text2 }}</p>
+        </div>
+        <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full animate-updown">
+          <img src="{{ section.settings.icon_image3 | img_url: 'master' }}" alt="">
+          <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px] max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">{{ section.settings.final_text3 }}</p>
+        </div>
       </div>
     </div>
   </div>
