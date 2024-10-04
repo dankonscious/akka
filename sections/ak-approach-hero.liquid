@@ -21,39 +21,18 @@
       animation:scoop 1.2s ease-out forwards;
     }    
     #hero .animation-moveup {
-      animation: ;
+      
     }
-    @keyframes scoop {
-      from {
-        mask-size: 30% 60%;
-        
-      }
-      to {
-        mask-size: 150% 250%;
-        
-      }
-    }
-    @keyframes bgmovement {
-      from {
-          background-position-y: -10px;
-      } 
-      to  {
-          background-position-y: 0px;
-      }
-    }
-    @keyframes textbg {
-      from  {background-position-y: -88px;;}
-      to {background-position-y: 0px;}
-    }
-    @keyframes circlesOp {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
+    #hero .text-downup {
+      animation:movedownUp 1.5s ease-out forwards;
+      transition: 1.5s ease-out;
+    }    
     /* #hero .circlebg {
         background-image: url({{ section.settings.circle_graphic | img_url: 'master' }});
     } */
     #hero .textbg {
       background-image: url({{ section.settings.text_background | img_url: 'master' }});
+      transition: 1.5s ease-out;
       -moz-animation:textbg 1.2s ease-out forwards;
       -webkit-animation:textbg 1.2s ease-out forwards;
       animation:textbg 1.2s ease-out forwards;
@@ -86,6 +65,36 @@
           -moz-animation:spin 16s linear infinite;
           animation:spin 16s linear infinite;
         }
+    }
+    @keyframes movedownUp {
+      from {transform:translateY(100%);}
+      to {transform:translateY(0%);}
+    }
+    @keyframes scoop {
+      from {
+        mask-size: 30% 60%;
+        
+      }
+      to {
+        mask-size: 150% 250%;
+        
+      }
+    }
+    @keyframes bgmovement {
+      from {
+          background-position-y: -10px;
+      } 
+      to  {
+          background-position-y: 0px;
+      }
+    }
+    @keyframes textbg {
+      from  {background-position-y: -2200%;}
+      to {background-position-y: 0%;}
+    }
+    @keyframes circlesOp {
+      from {opacity: 0;}
+      to {opacity: 1;}
     }
 </style>
 <section id="hero" class="bg-no-repeat bg-cover bg-center min-h-[980px] flex items-center relative max-md:min-h-[660px] overflow-hidden xl:h-[980px] ">  
@@ -123,7 +132,7 @@
 
   <div class="flex items-center justify-center m-auto h-full">
     <div class="textbg title overflow-hidden relative z-10 bg-contain bg-center bg-no-repeat w-[971px] max-[1200px]:w-fit max-md:bg-none">
-      <h1 class="animation-moveup text-white text-[70px] leading-[normal] tracking-[-1.4px] capitalize font-['syne'] max-md:text-[40px] text-center">
+      <h1 class="text-downup text-white text-[70px] leading-[normal] tracking-[-1.4px] capitalize font-['syne'] max-md:text-[40px] text-center">
         {{ section.settings.heading }}
         <span class="font-['Blisstwin'] max-md:block">{{ section.settings.subheading }}</span>
       </h1>
