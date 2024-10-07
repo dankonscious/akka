@@ -1,4 +1,4 @@
-<section id="marquee" class="pt-[49px] max-md:pt-0 max-md:overflow-hidden h-[122px] bottom-[30px] left-0 max-md:w-full max-[1200px]:bottom-0 max-[1200px]:mb-[-25px]">
+<section id="marquee" class="pt-[49px] max-md:pt-0 max-md:overflow-hidden h-[122px] bottom-[30px] left-0 max-md:w-full max-[1200px]:bottom-0 max-[1200px]:mb-[-25px] max-md:mt-[-97px]">
   <!-- Slider main container -->
   <div class="marquee swiper">
     <!-- Additional required wrapper -->
@@ -14,33 +14,33 @@
   </div>
 </section>  
 <style>
-  .overflow-up {
+  #section3-animation.active .overflow-up {
     overflow:hidden;
     padding-top: 15px;
     margin-top: -15px;
   }
-  .overflow-down {
+  #section3-animation.active .overflow-down {
     overflow:hidden;
     padding-bottom: 15px;
     margin-bottom: -15px;
   }
-  .animate-downup {
+  #section3-animation.active .animate-downup {
     transition: 2s ease-out;
     animation: downUp 2s ease-out forwards;
   }
-  img.animate-downup {
+  #section3-animation.active img.animate-downup {
     transition: 2s ease-out;
     animation: downUp2 2s ease-out forwards;
   }
-  .animate-updown {
+  #section3-animation.active .animate-updown {
     transition: 2s ease-out;
     animation: upDown 2s ease-out forwards;
   }
-  .animate-leftrigth {
+  #section3-animation.active .animate-leftrigth {
     transition: 2s ease-out;
     animation: leftRigth 2s ease-out forwards;
   }
-  .animate-rigthleft {
+  #section3-animation.active .animate-rigthleft {
     transition: 2s ease-out;
     animation: rigthLeft 2s ease-out forwards;
   }
@@ -70,23 +70,23 @@
     100% {transform: translatex(0%);}
   }
   @media(max-width: 1200px) {
-    .animate-downup {
+    #section3-animation.active .animate-downup {
     transition: unset;
     animation:unset;
     }
-    img.animate-downup {
+    #section3-animation.active img.animate-downup {
       transition: unset;
       animation: unset;
     }
-    .animate-updown {
+    #section3-animation.active .animate-updown {
       transition: unset;
       animation:unset;
     }
-    .animate-leftrigth {
+    #section3-animation.active .animate-leftrigth {
       transition: unset;
       animation:unset;
     }
-    .animate-rigthleft {
+    #section3-animation.active .animate-rigthleft {
       transition: unset;
       animation:unset;
     }
@@ -94,9 +94,9 @@
 </style>
 <!-- sections/akka-help-section.liquid -->
 <section id="section3" class="text-[#2E3666] bg-[#C9CFE1] font-['syne']">
-  <div class="max-w-[var(--page-width)] w-full mx-auto pt-[128px] pb-[144px] max-md:pt-[64px] max-md:pb-0">
+  <div id="section3-animation" class="max-w-[var(--page-width)] w-full mx-auto pt-[128px] pb-[144px] max-md:pt-[64px] max-md:pb-0 active">
     <!-- TITLE DIV -->
-    <div class="flex justify-between items-start max-md:flex-col max-md:px-4">
+    <div  class="flex justify-between items-start max-md:flex-col max-md:px-4">
       <div class="max-w-[330px] w-full">
         <h3 class="text-[70px] leading-[79%] max-md:text-[40px] max-md:mb-8">
           <div class="overflow-up">
@@ -245,6 +245,31 @@
     disableOnInteraction: true
   });
 </script>
+
+<script>
+// Target element
+var targetElement = document.getElementById('section3-animation'); // Replace with your element class or ID
+
+// Callback function for the IntersectionObserver
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    } else {
+      entry.target.classList.remove('active');
+    }
+  });
+});
+
+// Observe the target element
+observer.observe(targetElement);
+
+
+
+
+</script>
+
+
 
 {% schema %}
 {
