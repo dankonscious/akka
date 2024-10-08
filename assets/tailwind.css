@@ -1075,6 +1075,10 @@ video {
   margin-top: 8px;
 }
 
+.\!mt-\[64px\] {
+  margin-top: 64px !important;
+}
+
 .block {
   display: block;
 }

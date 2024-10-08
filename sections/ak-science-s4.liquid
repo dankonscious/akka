@@ -1,4 +1,4 @@
-<section id="marquee" class="pt-[49px] max-md:pt-0 max-md:overflow-hidden h-[122px] bottom-[30px] left-0 max-md:w-full max-[1200px]:bottom-0 max-[1200px]:mb-[-25px] max-md:mt-[-97px]">
+<section id="marquee" class="remove-animation pt-[49px] max-md:pt-0 max-md:overflow-hidden h-[122px] bottom-[30px] left-0 max-md:w-full max-[1200px]:bottom-0 max-[1200px]:mb-[-25px] max-md:mt-[-97px]">
   <!-- Slider main container -->
   <div class="marquee swiper">
     <!-- Additional required wrapper -->
@@ -113,7 +113,7 @@
         </div>        
       </div>
     </div>
-    <div class="w-full py-[16px] mt-[64px] max-md:hidden overflow-up">
+    <div class="w-full py-[16px] !mt-[64px] max-md:hidden overflow-up">
       <h3 class="text-[40px] tracking-[-0.8px] uppercase animate-downup">{{ section.settings.section_heading }}</h3>
     </div>
     <div class="overflow-hidden max-md:hidden">
@@ -247,6 +247,24 @@
 </script>
 
 <script>
+// // Target element
+// var targetElement = document.getElementById('section3-animation'); // Replace with your element class or ID
+
+// // Callback function for the IntersectionObserver
+// var observer = new IntersectionObserver(function(entries) {
+//   entries.forEach(function(entry) {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add('active');
+//     } else {
+//       entry.target.classList.remove('active');
+//     }
+//   });
+// });
+
+// // Observe the target element
+// observer.observe(targetElement);
+
+
 // Target element
 var targetElement = document.getElementById('section3-animation'); // Replace with your element class or ID
 
@@ -255,14 +273,18 @@ var observer = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
     if (entry.isIntersecting) {
       entry.target.classList.add('active');
-    } else {
-      entry.target.classList.remove('active');
+      
+      // Remove the class 'active' after 1 second
+      setTimeout(function() {
+        entry.target.classList.remove('active');
+      }, 2500); // 1000ms = 1 second
     }
   });
 });
 
 // Observe the target element
 observer.observe(targetElement);
+
 
 
 
