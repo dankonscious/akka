@@ -1,0 +1,117 @@
+/* Define font families */
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Light.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Regular.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Semibold.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Bold.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 900;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Black.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/myraidpro-all/MyriadPro-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    font-weight: 800;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/avenir-all/Avenir-Black.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/avenir-all/Avenir-Black.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/avenir-all/Avenir-Medium.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/avenir-all/Avenir-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Avenir LT Std';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/avenir-all/Avenir-Roman.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/avenir-all/Avenir-Roman.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'NeueHaasDisplay-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/neue-haas-grotesk-display-pro-bold/NeueHaasDisplay-Bold.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/neue-haas-grotesk-display-pro-bold/NeueHaasDisplay-Bold.woff2') format('woff2');
+}
+
+
+
+/* Apply font families to Tailwind utility classes */
+.font-myriadpro {
+    font-family: 'Myriad Pro', sans-serif;
+}
+
+.font-avenir {
+    font-family: 'Avenir LT Std', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-neueHaas {
+    font-family: 'NeueHaasDisplay-Bold', sans-serif;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.line-through {
+    text-decoration: line-through;
+    text-decoration-color: var(--Red-60, #D44747);
+}
+
+.highlight {
+    position: relative;
+    padding: 0 5px; /* Adjust padding as needed */
+    z-index: 0; /* Ensure text remains on top */
+}
+
+.highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3px; /* Adjust the value to control the slant */
+    width: calc(100% + 3px); /* Adjusted width to cover the entire text area */
+    height: 100%;
+    background-color: #FFF450; /* Highlight color */
+    z-index: -1; /* Push the pseudo-element behind the text */
+    transform: skewX(-20deg); /* Skew the element */
+}
+  

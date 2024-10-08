@@ -1,0 +1,2361 @@
+/*
+! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: Helvetica, Arial, sans-serif;
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.visible {
+  visibility: visible;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.float-left {
+  float: left;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mx-\[13px\] {
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-\[32px\] {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.ms-2 {
+  margin-inline-start: 0.5rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-\[6px\] {
+  margin-top: 6px;
+}
+
+.mt-\[8px\] {
+  margin-top: 8px;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.table {
+  display: table;
+}
+
+.contents {
+  display: contents;
+}
+
+.\!hidden {
+  display: none !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-\[16px\] {
+  height: 16px;
+}
+
+.w-\[16px\] {
+  width: 16px;
+}
+
+.w-\[44\.35px\] {
+  width: 44.35px;
+}
+
+.w-\[81\.96px\] {
+  width: 81.96px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.\!max-w-\[1085\.8px\] {
+  max-width: 1085.8px !important;
+}
+
+.max-w-\[776px\] {
+  max-width: 776px;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize {
+  resize: both;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
+.gap-\[13\.2px\] {
+  gap: 13.2px;
+}
+
+.gap-\[16px\] {
+  gap: 16px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-wrap {
+  text-wrap: wrap;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-y-\[1\.32px\] {
+  border-top-width: 1.32px;
+  border-bottom-width: 1.32px;
+}
+
+.border-\[\#2D394C1A\] {
+  border-color: #2D394C1A;
+}
+
+.bg-\[\#ffffff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-\[0\] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-\[5px\] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-\[0\] {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.py-\[40px\] {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pb-\[10px\] {
+  padding-bottom: 10px;
+}
+
+.pe-1 {
+  padding-inline-end: 0.25rem;
+}
+
+.ps-1 {
+  padding-inline-start: 0.25rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-myriadpro {
+  font-family: myriad-pro;
+}
+
+.font-sans {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.text-\[15\.84px\] {
+  font-size: 15.84px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-\[\#385898\] {
+  --tw-text-opacity: 1;
+  color: rgb(56 88 152 / var(--tw-text-opacity));
+}
+
+.text-\[\#6378F3\] {
+  --tw-text-opacity: 1;
+  color: rgb(99 120 243 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-vxl {
+  --tw-shadow: 4px 14px 24px 0px #00000026;;
+  --tw-shadow-colored: 4px 14px 24px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+body {
+  background: #eff0ff url(bgd.png) no-repeat bottom;
+  background-size: 100% 1712px;
+}
+
+body.dropped {
+  background-size: 100% 1225px;
+}
+
+.headingbar {
+  position: relative;
+}
+
+.headingbar::before {
+  content: "";
+  width: 150px;
+  height: 8px;
+  background-color: #2F3A7C;
+  display: block;
+  position: absolute;
+  top: -16px;
+}
+
+.headingbar.barcentered::before{
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.fullwidth #vidcont, .fullwidth #vidcont2 {
+  width: 100%;
+  max-width: unset;
+  /*height: 100vh;*/
+  background-color: rgba(0,0,0,.95);
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.fullwidth #heading{
+  display: none;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.guaranteedmaindiv h2{
+  margin-bottom: 8px!important;
+}
+
+.fullwidth .vidcont2{
+  margin-bottom: 50px;
+}
+
+.clickforsound{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  z-index: 9999;
+  cursor: pointer;
+  max-width: 1080px;
+  transform: translate(-50%,-50%);
+  padding: 0 10px;
+}
+
+.maxwidth1058{
+  max-width: 1058px;
+}
+
+.ctas a{
+  bottom: 120px;
+  left: 25px;
+  width: 280px;
+  height: 65px;
+  border-radius: 50px;
+  text-indent: -100px;
+  overflow: hidden;
+}
+
+.ctas >div:first-child a{
+  bottom: 155px;
+}
+
+.maxwidth{
+  max-width: 800px;
+}
+
+.cookbg{
+  background: #e7e9fd url(./cookbg.png) no-repeat top right / contain;
+}
+
+.bgcolorffffff{
+  background-color:#ffffff;
+}
+
+.bgcolore7e9fd{
+  background-color:#e7e9fd;
+}
+
+.bgcolor485397
+{
+  background-color:#485397;
+}
+
+.bgcolorF7F6F4
+{
+  background-color:#F7F6F4;
+}
+
+#exitpopup{
+  background:rgba(0,0,0, .8);
+}
+
+.waitmaindiv{
+  max-width: 749px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.wait{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #E34134;
+}
+
+.btn-x-close{
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  line-height: 30px;
+  width: 30px;
+  cursor: pointer;
+  color: #000;
+  background-color: #ffffff;
+  font-size: 25px;
+}
+
+.mel1heroimage{
+  max-width: 278px;
+  width: 100%;
+}
+
+.injust{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #0A5C4D;
+  text-align: center;
+}
+
+.bowelelimination{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #0A5C4D;
+  text-align: center;
+  line-height: 37px;
+}
+
+.ithelped{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #191919;
+  line-height: 25px;
+}
+
+a.btn-keepwatching{
+  background: linear-gradient(0deg, #FBFF23, #FBFF23), linear-gradient(360deg, #EBAB00 -4.55%, #FFB800 25.74%, #F3DFA8 84.85%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.btn-keepwatching{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #191919;
+  max-width: 640px;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+a.btn-keepwatching:hover{
+  color: #191919;
+}
+
+.animatedbtn .btn-keepwatching{
+  width:unset;
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px 0px rgb(59 135 234 / 99%);
+  }
+
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 10px rgb(59 135 234 / 99%);
+  }
+}
+
+.topdoctordiv{
+  padding-bottom: 35px !important;
+}
+
+.prefertoread{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #191919;
+}
+
+.btn-seethetext{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #1D7DE3;
+}
+
+.topnycdoctor{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #4B569D;
+  margin-bottom: 12px;
+}
+
+.emptybowel{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  color: #C50000;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+#subhead{
+  font-family: 'myriad-pro';
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 48.4px;
+  color: #253A36;
+}
+
+.vidcont1{
+  max-width: 573px;
+  width: 100%;
+}
+
+.vidcont2 {
+  max-width: 800px;
+  width: 100%;
+  /* background-color: #ffffff; */
+}
+
+.important{
+  color: #C50000;
+}
+
+.yourvideo {
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  vertical-align: middle;
+}
+
+.drginamaindiv{
+  max-width: 740px;
+  width: 100%;
+  margin-top: 24px!important;
+}
+
+.topgastro{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.8px;
+  color: #ffffff;
+  border-radius: 2px;
+  background: linear-gradient(152.02deg, #FFBE4F -119.98%, #EB3D26 88.44%), linear-gradient(0deg, rgba(240, 150, 90, 0.4), rgba(240, 150, 90, 0.4));
+}
+
+.doctorname{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25.6px;
+  text-decoration-line: underline;
+  color: #4B569D;
+}
+
+.doctorcaption{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  max-width: 290px;
+  width: 100%;
+}
+
+.ginaimage{
+  width: 120px;
+}
+
+.ginacontent{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+
+.ginasignature{
+  font-family: 'myriad-pro';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+  max-width: 384px;
+  width: 100%;
+}
+
+.asseenon {
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+
+.asseenondiv {
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px 0 1px 0;
+}
+
+.prevent-select{
+  -webkit-user-select: none;
+  /* Safari */
+  /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none;
+  /* Standard syntax */
+}
+
+.clinicalstudies{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+
+.studiescontent:first-child {
+  font-size: 16px;
+}
+
+.studiescontent{
+  font-family: 'myriad-pro';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+
+body.dropped .bgcolorC6CBE1{
+  background-color: #C6CBE1;
+}
+
+.wordbreak{
+  word-break: break-all;
+}
+
+.studiesdiv{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+}
+
+.studiesdiv > div {
+  max-width: 363px;
+  width: 100%;
+}
+
+.supportivestudiesmaindiv{
+  max-width: 800px;
+  width: 100%;
+}
+
+.disclosurestatement{
+  max-width: 1247px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.allrightsreserved{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.footerlinks a{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.footerlinks a:hover{
+  color: #000000;
+}
+
+.bgcolorblack{
+  background-color: #000000;
+}
+
+.ordertoday{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFBF8;
+}
+
+.timer{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #F4FF61;
+}
+
+.orderheader9BE3C5{
+  background-color: #9BE3C5;
+  border-radius: 2px 2px 0 0;
+}
+
+.bgcolorwhite{
+  background-color: #ffffff;
+  border-radius: 0 0 2px 2px;
+}
+
+.ordertitle{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  color: #000000;
+}
+
+.orderdays{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+
+.orderprice{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 55px;
+  color: #000000;
+}
+
+.bottle{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+}
+
+.shippingfee{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+}
+
+.oldprice{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #002C1E;
+  text-decoration-line: line-through;
+  text-decoration-color: red;
+}
+
+.oldprice2{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  color: #002C1E;
+}
+
+.orderheaderlinear{
+  background-color:#fbd262;
+  background-image: url(//emmarelief.com/cdn/shop/t/10/assets/bestvalue.png?v=65068311291142910311687504930);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  border-radius: 2px 2px 0 0;
+}
+
+.bgcolorFAF5C9{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fff7da+0,ffffff+100 */
+  background: #fff7da;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fff7da 0%,#ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff7da', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  border-radius: 0 0 2px 2px;
+}
+
+.orderchecklist1, .orderchecklist2, .orderchecklist3{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6), 0px 0px 2px rgba(0, 0, 0, 0.6);
+  max-width: 315px;
+  width: 100%;
+}
+
+.orderchecklist1{
+  background-color: #DC3B3D;
+}
+
+.orderchecklist2{
+  background-color: #146E54;
+}
+
+.orderchecklist3{
+  background-color: #3983D2;
+}
+
+.supplydiv{
+  max-width: 1200px;
+  width: 100%;
+}
+
+.gutsuperherodiv{
+  border-radius: 2px;
+}
+
+.numberofbottles{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+.guaranteeddiv {
+  width: 100%;
+  background: transparent url(./letter.png) no-repeat top center / 100% 100%;
+  /* padding-top: 300px; */
+  padding-bottom: 130px;
+}
+
+.guaranteehead {
+  font-family: 'myriad-pro';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #000;
+  width: 555px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.guaranteethumb{
+  font-size: 20px!important;
+  font-weight: 700!important;
+  line-height: 40px!important;
+  text-transform: uppercase!important;
+  color: #2F3A7C!important;
+  max-width: 585px!important;
+  padding-bottom: 39px;
+}
+
+.guaranteethumb > span > span{
+  background-color: #FFF4A9;
+  padding: 0 8px;
+}
+
+.guaranteeddiv p{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+  width: 100%;
+  max-width: 557px;
+  margin: 20px auto;
+  line-height: 27px;
+}
+
+.guaranteeddiv em{
+  font-weight: 700;
+}
+
+.guaranteedimg{
+  margin-top: -110px!important;
+}
+
+#hellotryakka{
+  font-family: 'myriad-pro';
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 27px;
+  text-decoration: none;
+}
+
+.best90{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #0A6050;
+}
+
+.moneyback{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #E34134;
+}
+
+.quaranteepdiv{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #002C1E;
+  max-width: 679px;
+  width: 100%;
+}
+
+.bggradient{
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), #0A6050;
+}
+
+.crushcravings{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  color: #F6FF80;
+}
+
+.multipack{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.cravingstextcontent{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  max-width: 485px;
+  width: 100%;
+}
+
+.bgimgcravings{
+  background-image: url(./leanbellyshakebook.png);
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  background-size: 272px;
+  max-width: 870px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 40%);
+}
+
+.yourstorymaindiv{
+  max-width: 870px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.yourstory{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #2F3A7C;
+}
+
+.customername{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #2F3A7C;
+}
+
+.customername span{
+  font-style: italic;
+  font-weight: 400;
+  color: #2F3A7C80;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.vercustomer{
+  font-family: 'myriad-pro';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #006C04;
+}
+
+.storytitle{
+  font-family: 'myriad-pro';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.customerstory{
+  border: 1px solid #48539799;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #FAFAFA;
+  font-family: 'myriad-pro';
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 13%);
+}
+
+.faqdiv{
+  max-width: 712px!important;
+  width: 100%;
+  padding: 16px 0;
+}
+
+.faq{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #2F3A7C;
+  margin-bottom: 50px;
+}
+
+.qacont{
+  padding: 16px 32px;
+}
+
+.qacont:nth-child(even) {
+  background-color: #F1F2FD;
+}
+
+.qanumber span{
+  font-family: 'myriad-pro';
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #485397;
+  width: 85px;
+  display: block;
+}
+
+.qaquestion h3 {
+  font-family: 'myriad-pro';
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #485397;
+  margin-bottom: .5rem;
+}
+
+.qalabel span{
+  font-family: 'myriad-pro';
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 29px;
+  color: #485397;
+  width: 85px;
+  display: block;
+}
+
+.qaanswer p {
+  font-family: 'myriad-pro';
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.qaanswer p b{
+  font-weight: 600;
+}
+
+.qaanswer .readmore, .qaanswer .readmoreless{
+  color: #EC7800;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faquestiondiv{
+  border-bottom: 2px solid #191919;
+}
+
+.faquestiondiv a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.faquestion{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 110%;
+  color: #000000;
+  max-width: 740px;
+  width: 100%;
+}
+
+.faquestion:hover{
+  color: #000000;
+}
+
+.emmafaq li{
+  list-style: none;
+  border-bottom: 2px solid #191919;
+}
+
+.faquestiondiv >div:not(.ui-state-active) .arrowd{
+  display: block;
+}
+
+.faquestiondiv >div:not(.ui-state-active) .arrowu{
+  display: none;
+}
+
+.faquestiondiv >div.ui-state-active .arrowd{
+  display: none;
+}
+
+.faquestiondiv >div.ui-state-active .arrowu{
+  display: block;
+}
+
+.emmafaq p{
+  font-family: 'myriad-pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #191919;
+}
+
+.tryakkabtn {
+  display: inline-block;
+  background: linear-gradient(0deg, #485397, #485397), linear-gradient(0deg, #485397, #485397);
+  padding: 22px 64px;
+  font-family: 'myriad-pro';
+  font-size: 20px;
+  font-weight: 600;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  border-radius: 50px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0px 10px 15px 0px #48539780;
+  margin-top: 30px;
+}
+
+.tryakkabtn:hover {
+  color: #f4f4f4;
+}
+
+.coockbookdiv
+{
+  max-width: 664px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.coockbookdiv h2{
+  font-family: 'myriad-pro';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #2F3A7C	;
+  max-width: 700px;
+  padding-bottom: 20px;
+}
+
+.coockbookdiv h2 em{
+  text-decoration: underline;
+}
+
+.coockbookdiv
+ img{
+  max-width: 664px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.coockbookdiv p{
+  font-family: 'myriad-pro';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.coockbookdiv p em, .coockbookdiv p span{
+  font-weight: 600;
+}
+
+.coockbookdiv p b{
+  font-weight: 700;
+}
+
+#cbp{
+  margin-top: -120px;
+}
+
+.coockbookdiv .recipe{
+  margin: 5px 0;
+}
+
+.coockbookdiv .recipe img{
+  width: 139px;
+}
+
+@media(min-width: 375px) and (max-width: 992px){
+  .bgimgcravings{
+    background-image: none;
+  }
+}
+
+@media(min-width: 375px) and (max-width: 768px){
+  .mel1heroimage{
+    max-width: 310px!important;
+  }
+
+  .doctorcaption{
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 345px) and (max-width: 1439px){
+  .wait, .injust{
+    font-size: 44px;
+  }
+
+  .bowelelimination{
+    font-size: 32px;
+    line-height: 35.2px;
+  }
+
+  .ithelped{
+    font-size: 16px;
+  }
+
+  .btn-keepwatching{
+    font-size: 18px;
+  }
+
+  .prefertoread, .btn-seethetext{
+    font-size: 16px;
+  }
+
+  .ladysmile{
+    width: 100%;
+  }
+
+  a.btn-keepwatching{
+    width: 100%;
+  }
+
+  .topnycdoctor{
+    font-size: 24px;
+  }
+
+  .emptybowel{
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 420px;
+  }
+
+  #subhead{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 39.6px;
+  }
+
+  .doctorname, .clinicalstudies{
+    font-size: 24px!important;
+  }
+
+  .doctorcaption{
+    font-size: 14px;
+    max-width: 255px;
+  }
+
+  .ginaimage{
+    width: 81px;
+  }
+
+  .asseenon{
+    font-size: 20px;
+  }
+
+  .topnycdoctor{
+    font-size: 20px;
+  }
+
+  .best90{
+    font-size:20px;
+  }
+
+  .multipack{
+    font-size: 20px;
+  }
+
+  .moneyback{
+    font-size: 32px;
+  }
+
+  .crushcravings{
+    font-size: 26px;
+  }
+
+  .yourstory{
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .faq{
+    font-size: 32px !important;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    line-height: 38px;
+  }
+
+  .faquestion{
+    font-size: 18px;
+  }
+
+  .topgastro{
+    font-size: 13px;
+  }
+
+  body {
+    background: #f7f8ff url(bgm.png) no-repeat bottom;
+    background-size: 100% 2080px;
+  }
+
+  .guaranteeddiv {
+    background: transparent url(./letterm.png) no-repeat top left / calc(100% + 36px) 100%;
+    padding: 0px 35px;
+    padding-bottom: 85px;
+  }
+
+  .tryakkabtn {
+    padding: 22px 32px;
+    font-family: 'myriad-pro';
+    font-size: 18px;
+  }
+
+  .guaranteeddiv p{
+    line-height: 24px;
+  }
+
+  .coockbookdiv
+ h2{
+    font-family: 'myriad-pro';
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 18px;
+  }
+
+  .coockbookdiv
+ img {
+    max-width: 343px;
+  }
+
+  #cbp{
+    margin-top: 15px;
+  }
+
+  .faqmaincont .container, .faqdiv{
+    padding: 0;
+  }
+
+  .cookbg {
+    background: #e7e9fd;
+  }
+
+  .scrolldowntoselect{
+    margin-top: 120px;
+    opacity: 0;
+  }
+
+  .fadeOut{
+    transition: all 1.25s ease-in-out;
+    opacity: 0;
+    margin-top: 200px;
+  }
+
+  .fadeIn{
+    transition: all 1.25s ease-in-out;
+    opacity: 1;
+    margin-top: 0;
+  }
+
+  .flowheight{
+    height: 181px;
+    overflow: hidden;
+  }
+
+  .fullwidth .vidcont2{
+    margin-bottom: 181px;
+  }
+
+  /* .dropped .flowheight{
+		height: 181px;
+	} */
+
+  .headingbar.barcentered::before{
+    transform: unset;
+    left: unset;
+  }
+
+  .coockbookdiv p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .qaquestion h3{
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .qaanswer p{
+    font-size: 18px;
+    line-height: 29px;
+  }
+
+  .fullwidth #vidcont{
+    margin-top: 71px!important;
+  }
+
+  .guaranteehead{
+    font-family: 'myriad-pro';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:m-auto {
+    margin: auto;
+  }
+
+  .md\:\!my-\[30px\] {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .md\:\!my-\[44px\] {
+    margin-top: 44px !important;
+    margin-bottom: 44px !important;
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:mt-\[16px\] {
+    margin-top: 16px;
+  }
+
+  .md\:mt-\[4px\] {
+    margin-top: 4px;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-\[24px\] {
+    height: 24px;
+  }
+
+  .md\:w-\[147\.2px\] {
+    width: 147.2px;
+  }
+
+  .md\:w-\[204\.8px\] {
+    width: 204.8px;
+  }
+
+  .md\:w-\[24px\] {
+    width: 24px;
+  }
+
+  .md\:w-\[63\.36px\] {
+    width: 63.36px;
+  }
+
+  .md\:max-w-\[838\.2px\] {
+    max-width: 838.2px;
+  }
+
+  .md\:gap-\[20px\] {
+    gap: 20px;
+  }
+
+  .md\:gap-\[35px\] {
+    gap: 35px;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .md\:\!py-\[30px\] {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:px-\[35px\] {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .md\:px-\[53px\] {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+
+  .md\:pb-\[20px\] {
+    padding-bottom: 20px;
+  }
+
+  .md\:pt-\[25px\] {
+    padding-top: 25px;
+  }
+
+  .md\:pt-\[45px\] {
+    padding-top: 45px;
+  }
+
+  .md\:text-\[13px\] {
+    font-size: 13px;
+  }
+
+  .md\:text-\[18\.48px\] {
+    font-size: 18.48px;
+  }
+
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .md\:shadow-vxl {
+    --tw-shadow: 4px 14px 24px 0px #00000026;;
+    --tw-shadow-colored: 4px 14px 24px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
