@@ -871,6 +871,10 @@ video {
   margin-bottom: auto;
 }
 
+.\!mt-\[64px\] {
+  margin-top: 64px !important;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -1075,8 +1079,8 @@ video {
   margin-top: 8px;
 }
 
-.\!mt-\[64px\] {
-  margin-top: 64px !important;
+.mb-\[-50px\] {
+  margin-bottom: -50px;
 }
 
 .block {
