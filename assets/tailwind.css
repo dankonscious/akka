@@ -4052,6 +4052,10 @@ html {
     top: 21px;
   }
 
+  .max-md\:z-10 {
+    z-index: 10;
+  }
+
   .max-md\:mb-4 {
     margin-bottom: 1rem;
   }

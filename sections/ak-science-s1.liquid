@@ -43,6 +43,12 @@
         #hero {
           background-image: url({{ section.settings.background_image_mob | img_url: 'master' }});
         }     
+        #hero .whitebg {
+          display: none;
+        }
+        #hero .text-downup {
+          animation: unset;
+        }
     }
     @keyframes scoop {
       from {
