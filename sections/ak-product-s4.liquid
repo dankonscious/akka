@@ -1,8 +1,36 @@
+<style>
+  #section-4 .imagebox1 .img2 {
+    transform: translateX(100%);
+  }
+  #section-4 .imagebox1 img {    
+    transition: 2s ease-out;
+  }
+  #section-4 .imagebox1:hover .img2 {
+    animation: hoverRight 2s ease-out forwards;
+  }
+  
+  #section-4 .imagebox1:hover .img1 {
+    animation: hoverLeft 2s ease-out forwards;
+  }
+  @keyframes hoverRight {
+    0% {transform: translateX(100%);}
+    80% {transform: translateX(-5%);}
+    100% {transform: translateX(0%);}
+  }
+  @keyframes hoverLeft {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
+  }
+</style>
 <!-- sections/section-4.liquid -->
 <section id="section-4" class="">
   <div class="max-w-[var(--page-width)] w-full mx-auto text-white flex justify-center items-center max-[1200px]:flex-col font-['syne']">
-    <div class="relative w-1/2 max-[1200px]:w-full">
-      <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="">
+    <div class="imagebox1 relative w-1/2 max-[1200px]:w-full overflow-hidden">
+      <div>
+        <img class="img1" src="{{ section.settings.image1 | img_url: 'master' }}" alt="">
+        <img class="img2 absolute w-full h-f top-0 left-0" src="{{ section.settings.image1 | img_url: 'master' }}" alt="">
+      </div>
+      
       <div class="max-w-[410px] w-full absolute left-[32px] bottom-[91px] max-[1200px]:max-w-[260px] max-[1200px]:bottom-[36px] max-[1200px]:left-[16px]">
         <h3 class="text-[70px] leading-[normal] tracking-[-1.4px] max-[1200px]:text-[40px]">{{ section.settings.heading_1 }} <span class="font-['Blisstwin'] italic block">{{ section.settings.heading_1_span }}</span></h3>
         <p class="my-[32px] text-[22px] leading-[normal] tracking-[0.44px] max-[1200px]:text-[20px] max-[1200px]:my-[18px]">{{ section.settings.description_1 }}</p>
