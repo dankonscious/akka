@@ -1,34 +1,47 @@
 <style>
+
+#section-4 .imagebox1,
+#section-4 .imagebox1 .forhoveranimation {
+  transition: 10s ease-out;
+}
   #section-4 .imagebox1 .img2 {
-    transform: translateX(100%);
+    transform: translateX(10%);
   }
+
   #section-4 .imagebox1 img {    
-    transition: 2s ease-out;
+    transition: 10s ease-out;
+    scale: 1.12;
   }
-  #section-4 .imagebox1:hover .img2 {
-    animation: hoverRight 2s ease-out forwards;
+  #section-4 .imagebox1:hover .forhoveranimation {
+    animation: hoverRight 1s ease-out forwards;
+    transition: 10s ease-out;
+  }
+  #section-4 .imagebox1 .forhoveranimation {
+    animation: hoverLeft 1s ease-out forwards;
+    transition: 10s ease-out;
   }
   
-  #section-4 .imagebox1:hover .img1 {
+  /* #section-4  {
     animation: hoverLeft 2s ease-out forwards;
-  }
+  } */
   @keyframes hoverRight {
-    0% {transform: translateX(100%);}
-    80% {transform: translateX(-5%);}
-    100% {transform: translateX(0%);}
+    0% {transform: translateX(0%);}
+    25% {transform: translateX(-55%);}
+    100% {transform: translateX(-53%);}
   }
   @keyframes hoverLeft {
-    0% {transform: translateX(0%);}
-    100% {transform: translateX(-100%);}
+    0% {transform: translateX(-53%);}
+    25% {transform: translateX(2%);}
+    100% {transform: translateX(0%);}
   }
 </style>
 <!-- sections/section-4.liquid -->
 <section id="section-4" class="">
   <div class="max-w-[var(--page-width)] w-full mx-auto text-white flex justify-center items-center max-[1200px]:flex-col font-['syne']">
-    <div class="imagebox1 relative w-1/2 max-[1200px]:w-full overflow-hidden">
-      <div>
-        <img class="img1" src="{{ section.settings.image1_1 | img_url: 'master' }}" alt="">
-        <img class="img2 absolute w-full h-f top-0 left-0" src="{{ section.settings.image1_2 | img_url: 'master' }}" alt="">
+    <div class="imagebox1 relative w-1/2 max-[1200px]:w-full overflow-hidden pb-[50%]">
+      <div class="forhoveranimation absolute top-0 left-0 flex justify-center items-center w-[200%]">
+        <img class="img1 w-1/2" src="{{ section.settings.image1_1 | img_url: 'master' }}" alt="">
+        <img class="img2 w-1/2" src="{{ section.settings.image1_2 | img_url: 'master' }}" alt="">
       </div>
       
       <div class="max-w-[410px] w-full absolute left-[32px] bottom-[91px] max-[1200px]:max-w-[260px] max-[1200px]:bottom-[36px] max-[1200px]:left-[16px]">

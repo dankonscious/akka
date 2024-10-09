@@ -1884,6 +1884,10 @@ video {
   width: 100%;
 }
 
+.w-\[200\%\] {
+  width: 200%;
+}
+
 .min-w-\[1350px\] {
   min-width: 1350px;
 }
@@ -3355,6 +3359,10 @@ video {
 
 .pt-\[64px\] {
   padding-top: 64px;
+}
+
+.pb-\[50\%\] {
+  padding-bottom: 50%;
 }
 
 .text-left {
