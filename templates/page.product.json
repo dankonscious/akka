@@ -24,31 +24,36 @@
         "block_gQJiXJ": {
           "type": "block",
           "settings": {
-            "prod_image": "shopify://shop_images/product-image1_fe40f4be-c428-4fcd-aff8-02cacd81eacb.png"
+            "prod_image": "shopify://shop_images/product-image1_fe40f4be-c428-4fcd-aff8-02cacd81eacb.png",
+            "prod_image_mob": "shopify://shop_images/phto_3f6b9f90-886b-4955-9df3-dee9ab96bdc5.png"
           }
         },
         "block_jNeL8P": {
           "type": "block",
           "settings": {
-            "prod_image": "shopify://shop_images/product-image2_eae87d9f-5a15-401c-9b9b-9fbc36d9afca.png"
+            "prod_image": "shopify://shop_images/product-image2_eae87d9f-5a15-401c-9b9b-9fbc36d9afca.png",
+            "prod_image_mob": "shopify://shop_images/mobile_Product_Photo_list2.png"
           }
         },
         "block_iVjGpx": {
           "type": "block",
           "settings": {
-            "prod_image": "shopify://shop_images/product-image3_5ab85c33-8eb8-4309-af6b-c7abc78527f3.png"
+            "prod_image": "shopify://shop_images/product-image3_5ab85c33-8eb8-4309-af6b-c7abc78527f3.png",
+            "prod_image_mob": "shopify://shop_images/mobile_Product_Photo_list3.png"
           }
         },
         "block_pjkF9C": {
           "type": "block",
           "settings": {
-            "prod_image": "shopify://shop_images/product-image4_500cb7f5-ad27-490e-94d4-b4e5f2d833f1.png"
+            "prod_image": "shopify://shop_images/product-image4_500cb7f5-ad27-490e-94d4-b4e5f2d833f1.png",
+            "prod_image_mob": "shopify://shop_images/mobile_Product_Photo_list4.png"
           }
         },
         "block_RNYbTK": {
           "type": "block",
           "settings": {
-            "prod_image": "shopify://shop_images/product-image5_0fbaaeab-6162-428b-9079-ea0bc337d0b7.png"
+            "prod_image": "shopify://shop_images/product-image5_0fbaaeab-6162-428b-9079-ea0bc337d0b7.png",
+            "prod_image_mob": "shopify://shop_images/mobile_Product_Photo_list.png"
           }
         },
         "block2_PqFRkD": {
