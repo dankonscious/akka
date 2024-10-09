@@ -27,8 +27,8 @@
   <div class="max-w-[var(--page-width)] w-full mx-auto text-white flex justify-center items-center max-[1200px]:flex-col font-['syne']">
     <div class="imagebox1 relative w-1/2 max-[1200px]:w-full overflow-hidden">
       <div>
-        <img class="img1" src="{{ section.settings.image1 | img_url: 'master' }}" alt="">
-        <img class="img2 absolute w-full h-f top-0 left-0" src="{{ section.settings.image1 | img_url: 'master' }}" alt="">
+        <img class="img1" src="{{ section.settings.image1_1 | img_url: 'master' }}" alt="">
+        <img class="img2 absolute w-full h-f top-0 left-0" src="{{ section.settings.image1_2 | img_url: 'master' }}" alt="">
       </div>
       
       <div class="max-w-[410px] w-full absolute left-[32px] bottom-[91px] max-[1200px]:max-w-[260px] max-[1200px]:bottom-[36px] max-[1200px]:left-[16px]">
@@ -64,8 +64,13 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "image1",
-      "label": "First Image"
+      "id": "image1_1",
+      "label": "First Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1_2",
+      "label": "First Image 2"
     },
     {
       "type": "text",
