@@ -55,11 +55,29 @@
     25% {transform: translateY(2%);}
     100% {transform: translateY(0%);}
   }
+  @media(max-width: 1200px) {
+    #section-4 .imagebox1:hover .forhoveranimation {
+    animation: unset;
+    transition: unset;
+    }
+    #section-4 .imagebox1 .forhoveranimation {
+      animation: unset;
+      transition: unset;
+    }
+    #section-4 .imagebox2:hover .forhoveranimation {
+      animation: unset;
+      transition: unset;
+    }
+    #section-4 .imagebox2 .forhoveranimation {
+      animation: unset;
+      transition: unset;
+    }
+  }
 </style>
 <!-- sections/section-4.liquid -->
 <section id="section-4" class="">
   <div class="max-w-[var(--page-width)] w-full mx-auto text-white flex justify-center items-center max-[1200px]:flex-col font-['syne']">
-    <div class="imagebox1 relative w-1/2 max-[1200px]:w-full overflow-hidden pb-[50%]">
+    <div class="imagebox1 relative w-1/2 max-[1200px]:w-full overflow-hidden pb-[50%] max-[1200px]:pb-[100%]">
       <div class="forhoveranimation absolute top-0 left-0 flex justify-center items-center w-[200%]">
         <img class="img1 w-1/2" src="{{ section.settings.image1_1 | img_url: 'master' }}" alt="">
         <img class="img2 w-1/2" src="{{ section.settings.image1_2 | img_url: 'master' }}" alt="">
@@ -76,7 +94,7 @@
         </a>
       </div>
     </div>
-    <div class="imagebox2 relative w-1/2 max-[1200px]:w-full overflow-hidden pb-[50%]">
+    <div class="imagebox2 relative w-1/2 max-[1200px]:w-full overflow-hidden pb-[50%] max-[1200px]:pb-[100%]">
       <div class="forhoveranimation absolute top-0 left-0 w-[200%]">
         <img class="img1 w-1/2" src="{{ section.settings.image2_1 | img_url: 'master' }}" alt="">
         <img class="img2 w-1/2" src="{{ section.settings.image2_2 | img_url: 'master' }}" alt="">

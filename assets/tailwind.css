@@ -4523,6 +4523,10 @@ html {
     top: unset;
   }
 
+  .max-\[1200px\]\:top-\[130px\] {
+    top: 130px;
+  }
+
   .max-\[1200px\]\:order-1 {
     order: 1;
   }
@@ -4709,6 +4713,10 @@ html {
     align-items: flex-start;
   }
 
+  .max-\[1200px\]\:items-center {
+    align-items: center;
+  }
+
   .max-\[1200px\]\:justify-center {
     justify-content: center;
   }
@@ -4835,6 +4843,10 @@ html {
 
   .max-\[1200px\]\:pt-\[64px\] {
     padding-top: 64px;
+  }
+
+  .max-\[1200px\]\:pb-\[100\%\] {
+    padding-bottom: 100%;
   }
 
   .max-\[1200px\]\:text-left {
