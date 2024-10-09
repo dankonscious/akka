@@ -836,6 +836,10 @@ video {
   top: 59px;
 }
 
+.top-\[450px\] {
+  top: 450px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2364,6 +2368,10 @@ video {
   gap: 90px;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .self-start {
   align-self: flex-start;
 }
@@ -2378,6 +2386,10 @@ video {
 
 .self-stretch {
   align-self: stretch;
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-hidden {
