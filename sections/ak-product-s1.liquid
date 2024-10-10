@@ -144,42 +144,45 @@
 
   <script id="template-mobile" type="text/x-handlebars-template">
     {%- raw -%}{{#if (isMobile)}}{% endraw %}
-      <div id="hero-mobile" class="relative overflow-hidden flex py-0 gap-0 flex-col items-center">
-        <div class="image-container prod-image absolute top-0 left-0 w-full z-[-1] max-[1200px]:static max-[1200px]:overflow-hidden max-[1200px]:h-[493px] max-[1200px]:w-[414px] max-[1200px]:mx-auto">
-            {% for block in section.blocks %}
-                {% if block.type == 'block' %}
-                  <div class="prod max-[1200px]:w-full mx-auto {% if forloop.first %}active{% endif %} {{ forloop.index }}">
-                    <img class="hidden max-[1200px]:block  mx-auto" src="{{ block.settings.prod_image_mob | img_url: 'master' }}">
-                  </div>                
-                {% endif %}    
-            {% endfor %}        
+      <div id="hero-mobile" class="relative flex py-0 gap-0 flex-col items-center">
+        <div class="max-w-full w-full sticky top-[72px]">
+          <div class="image-container prod-image top-0 left-0 w-full z-[-1] sticky max-[1200px]:h-[493px] max-w-full  max-[1200px]:mx-auto">
+              {% for block in section.blocks %}
+                  {% if block.type == 'block' %}
+                    <div class="prod max-[1200px]:w-full mx-auto {% if forloop.first %}active{% endif %} {{ forloop.index }}">
+                      <img class="hidden max-[1200px]:block  mx-auto" src="{{ block.settings.prod_image_mob | img_url: 'master' }}">
+                    </div>                
+                  {% endif %}    
+              {% endfor %}        
+          </div>
+
+          <div class="floating-button absolute left-[50%] translate-x-[-50%] w-full max-w-full flex items-center justify-center gap-5 z-10 top-[450px]">
+            
+            <button class="prod-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
+                <path d="M133 19L33 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M53 13L33 19L53 19" fill="#2E3666"/>
+                <path d="M53 13L33 19L53 19V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <button class="prod-next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
+                <path d="M1 19L101 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M81 13L101 19H81" fill="#2E3666"/>
+                <path d="M81 13L101 19H81V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg> 
+            </button>
+          </div>
+
+          <div class="flex w-full max-w-full justify-center absolute top-0 left-[50%] translate-x-[-50%] h-[400px] " aria-hidden="true">
+              <button id="prod-prev" class="w-1/2 prod-prev"></button>
+              <button id="prod-next" class="w-1/2 prod-next"></button>        
+          </div>
         </div>
+        
 
-        <div class="floating-button absolute left-[50%] translate-x-[-50%] w-[421px] flex items-center justify-center gap-5 z-10 top-[450px]">
-          
-          <button class="prod-prev">
-            <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
-              <path d="M133 19L33 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M53 13L33 19L53 19" fill="#2E3666"/>
-              <path d="M53 13L33 19L53 19V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-
-          <button class="prod-next">
-            <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
-              <path d="M1 19L101 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M81 13L101 19H81" fill="#2E3666"/>
-              <path d="M81 13L101 19H81V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg> 
-          </button>
-        </div>
-
-        <div class="flex shrink-0 h-[730px] min-w-[240px] w-[421px] max-[1200px]:order-1 justify-center max-[1200px]:absolute max-[1200px]:top-0 max-[1200px]:left-[50%] max-[1200px]:translate-x-[-50%] max-[1200px]:h-[400px] max-[1200px]:w-[414px]" aria-hidden="true">
-            <button id="prod-prev" class="w-1/2 prod-prev"></button>
-            <button id="prod-next" class="w-1/2 prod-next"></button>        
-        </div>
-
-        <div class="w-full max-w-full px-4 sticky top-0">
+        <div class="w-full max-w-full px-4 sticky top-0 bg-[rgb(226,227,234,0.80)] backdrop-blur-[30px]">
           <div class="flex flex-col text-[#2E3666] w-full max-w-[412px]">
             <header class="flex flex-col w-full max-w-full">
               <h1 class="text-5xl leading-[110%] max-[1200px]:text-[40px] capitalize">

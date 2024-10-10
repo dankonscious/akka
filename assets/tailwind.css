@@ -824,6 +824,10 @@ video {
   top: 430px;
 }
 
+.top-\[450px\] {
+  top: 450px;
+}
+
 .top-\[45px\] {
   top: 45px;
 }
@@ -836,8 +840,8 @@ video {
   top: 59px;
 }
 
-.top-\[450px\] {
-  top: 450px;
+.top-\[72px\] {
+  top: 72px;
 }
 
 .isolate {
@@ -1419,6 +1423,10 @@ video {
   height: 100%;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .min-h-0 {
   min-height: 0px;
 }
@@ -1577,6 +1585,10 @@ video {
 
 .w-\[199px\] {
   width: 199px;
+}
+
+.w-\[200\%\] {
+  width: 200%;
 }
 
 .w-\[209px\] {
@@ -1886,10 +1898,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[200\%\] {
-  width: 200%;
 }
 
 .min-w-\[1350px\] {
@@ -2252,6 +2260,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
@@ -2368,10 +2380,6 @@ video {
   gap: 90px;
 }
 
-.gap-0 {
-  gap: 0px;
-}
-
 .self-start {
   align-self: flex-start;
 }
@@ -2386,10 +2394,6 @@ video {
 
 .self-stretch {
   align-self: stretch;
-}
-
-.overflow-auto {
-  overflow: auto;
 }
 
 .overflow-hidden {
@@ -2755,8 +2759,20 @@ video {
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
+.bg-\[rgba\(201\2c 207\2c 225\2c 0\.80\)\] {
+  background-color: rgba(201,207,225,0.80);
+}
+
+.bg-\[rgb\(226\2c 227\2c 234\2c 0\.80\)\] {
+  background-color: rgb(226,227,234,0.80);
+}
+
 .bg-opacity-75 {
   --tw-bg-opacity: 0.75;
+}
+
+.bg-opacity-\[\.80\] {
+  --tw-bg-opacity: .80;
 }
 
 .bg-\[linear-gradient\(0deg\2c \#E4E7FF_0\%\2c \#E4E7FF_100\%\)\2c linear-gradient\(0deg\2c \#F79F45_0\%\2c \#F79F45_100\%\)\2c linear-gradient\(0deg\2c rgba\(255\2c 255\2c 255\2c 0\.90\)_0\%\2c rgba\(255\2c 255\2c 255\2c 0\.90\)_100\%\)\] {
@@ -3253,6 +3269,10 @@ video {
   padding-bottom: 48px;
 }
 
+.pb-\[50\%\] {
+  padding-bottom: 50%;
+}
+
 .pb-\[64px\] {
   padding-bottom: 64px;
 }
@@ -3371,10 +3391,6 @@ video {
 
 .pt-\[64px\] {
   padding-top: 64px;
-}
-
-.pb-\[50\%\] {
-  padding-bottom: 50%;
 }
 
 .text-left {
@@ -4143,6 +4159,12 @@ video {
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.backdrop-blur-\[30px\] {
+  --tw-backdrop-blur: blur(30px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -4487,6 +4509,10 @@ html {
     position: absolute;
   }
 
+  .max-\[1200px\]\:sticky {
+    position: sticky;
+  }
+
   .max-\[1200px\]\:bottom-0 {
     bottom: 0px;
   }
@@ -4533,10 +4559,6 @@ html {
 
   .max-\[1200px\]\:top-\[unset\] {
     top: unset;
-  }
-
-  .max-\[1200px\]\:top-\[130px\] {
-    top: 130px;
   }
 
   .max-\[1200px\]\:order-1 {
@@ -4703,12 +4725,6 @@ html {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .max-\[1200px\]\:scale-\[2\] {
-    --tw-scale-x: 2;
-    --tw-scale-y: 2;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .max-\[1200px\]\:flex-col {
     flex-direction: column;
   }
@@ -4829,6 +4845,10 @@ html {
     padding-bottom: 0px;
   }
 
+  .max-\[1200px\]\:pb-\[100\%\] {
+    padding-bottom: 100%;
+  }
+
   .max-\[1200px\]\:pb-\[32px\] {
     padding-bottom: 32px;
   }
@@ -4855,10 +4875,6 @@ html {
 
   .max-\[1200px\]\:pt-\[64px\] {
     padding-top: 64px;
-  }
-
-  .max-\[1200px\]\:pb-\[100\%\] {
-    padding-bottom: 100%;
   }
 
   .max-\[1200px\]\:text-left {
