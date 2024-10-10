@@ -49,7 +49,7 @@
               </div>
 
             <!-- SLIDER Desktop PART -->
-            <div class="swiper mySwiper w-full h-full mt-16 max-[1200px] max-[1200px]:!hidden">
+            <div class="swiper swiper-{{ section.id }} w-full h-full mt-16 max-[1200px] max-[1200px]:!hidden">
               <div class="swiper-wrapper">
                 {% for testimonial in section.blocks %}
                   <div class="swiper-slide">
@@ -343,7 +343,7 @@
 </section>
 
 <script>
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper(".swiper-{{ section.id }}", {
     slidesPerView: 1,
     spaceBetween: 30,
     centeredSlides: true,    
