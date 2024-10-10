@@ -358,6 +358,24 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    on: {
+        slideChangeTransitionStart: function () {
+            // This event is triggered when the slide starts changing
+            const activeSlide = document.querySelector('.swiper-slide-active');
+            
+            // Apply custom movement to the active slide
+            activeSlide.style.transform = 'translateX(-20px)';
+        },
+        slideChangeTransitionEnd: function () {
+            // This event is triggered when the slide finishes changing
+            const slides = document.querySelectorAll('.swiper-slide');
+
+            // Reset the transform for all slides to normal
+            slides.forEach(slide => {
+                slide.style.transform = 'translateX(0px)';
+            });
+        }
+    }
   });
 </script>
 
