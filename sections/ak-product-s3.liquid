@@ -361,7 +361,7 @@
     on: {
         slideChangeTransitionStart: function () {
             // This event is triggered when the slide starts changing
-            const slides = document.querySelectorAll('.swiper-slide');
+            const slides = document.querySelectorAll('.swiper-{{ section.id }} .swiper-slide');
             
             // Reset the transform for all slides to normal
             slides.forEach(slide => {
@@ -370,7 +370,7 @@
         },
         slideChangeTransitionEnd: function () {
             // This event is triggered when the slide finishes changing
-            const slides = document.querySelectorAll('.swiper-slide');
+            const slides = document.querySelectorAll('.swiper-{{ section.id }} .swiper-slide');
 
             // Reset the transform for all slides to normal
             slides.forEach(slide => {
