@@ -364,7 +364,7 @@
             const activeSlide = document.querySelector('.swiper-slide-active');
             
             // Apply custom movement to the active slide
-            activeSlide.style.transform = 'translateX(-200px)';
+            activeSlide.style.transform = 'translateX(-100px)';
         },
         slideChangeTransitionEnd: function () {
             // This event is triggered when the slide finishes changing
@@ -382,9 +382,6 @@
 <style>
   .swiper-slide {
       transition: transform 1s ease-in-out; /* Smooth transition for the movement */
-  }
-  .swiper-slide-active {
-      transform: translateX(-200px); /* Move the active slide a bit to the left */
   }
 </style>
 
