@@ -364,7 +364,7 @@
   });
 </script>
 
-<style>
+{% style %} 
   .swiper-{{ section.id }} .swiper-slide {
       transition: transform 1.5s ease-in-out; /* Smooth transition for the movement */
   }
@@ -386,7 +386,7 @@
   .swiper-{{ section.id }} .swiper-button-prev {
       left: -20px;
   }
-</style>
+{% endstyle %}
 
 {% schema %}
 {
