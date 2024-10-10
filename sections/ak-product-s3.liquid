@@ -361,10 +361,12 @@
     on: {
         slideChangeTransitionStart: function () {
             // This event is triggered when the slide starts changing
-            const activeSlide = document.querySelector('.swiper-slide');
+            const slides = document.querySelectorAll('.swiper-slide');
             
-            // Apply custom movement to the active slide
-            activeSlide.style.transform = 'translateX(-100px)';
+            // Reset the transform for all slides to normal
+            slides.forEach(slide => {
+                slide.style.transform = 'translateX(-100px)';
+            });
         },
         slideChangeTransitionEnd: function () {
             // This event is triggered when the slide finishes changing
