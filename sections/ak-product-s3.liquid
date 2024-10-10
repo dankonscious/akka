@@ -361,6 +361,15 @@
   });
 </script>
 
+<style>
+  .swiper-slide {
+      transition: transform 0.3s ease-in-out; /* Smooth transition for the movement */
+  }
+  .swiper-slide-active {
+      transform: translateX(-20px); /* Move the active slide a bit to the left */
+  }
+</style>
+
 {% schema %}
 {
   "name": "Ak - Product S3",
