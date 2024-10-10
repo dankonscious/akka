@@ -1,5 +1,5 @@
 <!-- testimonials-slider.liquid -->
-<section id="section-3" class=" font-['syne']">
+<section id="section-{{ section.id }}" class=" font-['syne']">
   <section class="flex relative flex-col items-center px-20 min-h-[1080px] max-[1200px]:px-5">
     <div class="flex relative flex-col py-16 w-full max-w-[var(--page-width)] max-[1200px]:max-w-full max-[1200px]:py-8">
       <div class="flex flex-col w-full">
@@ -365,25 +365,25 @@
 </script>
 
 {% style %} 
-  .swiper-{{ section.id }} .swiper-slide {
+  #section-{{ section.id }} .swiper-slide {
       transition: transform 1.5s ease-in-out; /* Smooth transition for the movement */
   }
-  .swiper-{{ section.id }} .swiper-wrapper{
+  #section-{{ section.id }} .swiper-wrapper{
       transition-timing-function : linear;
   }
-  .swiper-{{ section.id }} .swiper-button-next:after, 
-  .swiper-{{ section.id }} .swiper-rtl .swiper-button-prev:after , 
-  .swiper-{{ section.id }} .swiper-button-prev:after, 
-  .swiper-{{ section.id }} .swiper-rtl .swiper-button-next:after {
+  #section-{{ section.id }} .swiper-button-next:after, 
+  #section-{{ section.id }} .swiper-rtl .swiper-button-prev:after , 
+  #section-{{ section.id }} .swiper-button-prev:after, 
+  #section-{{ section.id }} .swiper-rtl .swiper-button-next:after {
       content:unset;
   }
-  .swiper-{{ section.id }} .swiper-button-next, .swiper-{{ section.id }} .swiper-button-prev {
+  #section-{{ section.id }} .swiper-button-next, #section-{{ section.id }} .swiper-button-prev {
       width: 50%;
   }
-  .swiper-{{ section.id }} .swiper-button-next {
+  #section-{{ section.id }} .swiper-button-next {
       right: -20px;
   }
-  .swiper-{{ section.id }} .swiper-button-prev {
+  #section-{{ section.id }} .swiper-button-prev {
       left: -20px;
   }
 {% endstyle %}
