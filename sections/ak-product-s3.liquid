@@ -368,6 +368,24 @@
   .swiper-{{ section.id }} .swiper-slide {
       transition: transform 1.5s ease-in-out; /* Smooth transition for the movement */
   }
+  .swiper-{{ section.id }} .swiper-wrapper{
+      transition-timing-function : linear;
+  }
+  .swiper-{{ section.id }} .swiper-button-next:after, 
+  .swiper-{{ section.id }} .swiper-rtl .swiper-button-prev:after , 
+  .swiper-{{ section.id }} .swiper-button-prev:after, 
+  .swiper-{{ section.id }} .swiper-rtl .swiper-button-next:after {
+      content:unset;
+  }
+  .swiper-{{ section.id }} .swiper-button-next, .swiper-{{ section.id }} .swiper-button-prev {
+      width: 50%;
+  }
+  .swiper-{{ section.id }} .swiper-button-next {
+      right: -20px;
+  }
+  .swiper-{{ section.id }} .swiper-button-prev {
+      left: -20px;
+  }
 </style>
 
 {% schema %}
