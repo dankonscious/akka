@@ -38,13 +38,19 @@ class ParallaxEffect {
                 let t = parseFloat(e.getAttribute("data-speed")),
                     i = parseFloat(e.getAttribute("data-stop")),
                     a = e.getAttribute("data-direction"),
-                    s = window.pageYOffset;
-
-                    console.log(s);
-                    i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)")
-            }), requestAnimationFrame(e)
+                    s = e.getAttribute("data-starting") ? parseFloat(e.getAttribute("data-starting")) : window.pageYOffset; // Use data-starting if present
+                
+                if (e.getAttribute("data-starting")) {
+                    s++;
+                    e.setAttribute("data-starting", s);
+                }
+        
+                console.log(s);
+                i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
+            });
+            requestAnimationFrame(e);
         };
-        requestAnimationFrame(e)
+        requestAnimationFrame(e);        
     }
     parallaxAnimate() {
         let e = document.querySelectorAll(".parallax-animate");
