@@ -40,11 +40,12 @@ class ParallaxEffect {
                     a = e.getAttribute("data-direction"),
                     s = window.pageYOffset;
                 
-                    i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
+        
+                i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
             });
             requestAnimationFrame(e);
         };
-        requestAnimationFrame(e);   
+        requestAnimationFrame(e);        
     }
     parallaxAnimate() {
         let e = document.querySelectorAll(".parallax-animate");
