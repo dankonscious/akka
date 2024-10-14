@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "layout": "akka.theme",
   "sections": {
@@ -333,11 +333,11 @@
       "settings": {
         "link": "/pages/product",
         "button_text": "shop akka",
-        "upper_image": "shopify://shop_images/sec5-upperimg.png",
+        "upper_image": "shopify://shop_images/12_F.png",
         "mid_image_desktop": "shopify://shop_images/sec5-img1.png",
         "mid_image_mobile": "shopify://shop_images/sec5-img1-mob.png",
         "vector_image": "shopify://shop_images/sec5-Vector.png",
-        "lower_image": "shopify://shop_images/sec5-lowerimg.png"
+        "lower_image": "shopify://shop_images/12_H.png"
       }
     }
   },
