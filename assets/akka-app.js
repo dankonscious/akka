@@ -30,7 +30,6 @@ class FadeSlider {
 }
 class ParallaxEffect {
     constructor() {
-        this.parallaxAnimateDiv = document.querySelectorAll(".parallax-animate");
         this.parallaxImages = document.querySelectorAll(".parallax-image"), 
         this.initParallax(), 
         this.parallaxAnimate()
