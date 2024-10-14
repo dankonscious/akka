@@ -35,21 +35,22 @@ class ParallaxEffect {
     initParallax() {
         let e = () => {
             this.parallaxImages.forEach(e => {
-                let o = parseFloat(e.getAttribute("data-offset-scroll")),
-                    t = parseFloat(e.getAttribute("data-speed")),
+                let t = parseFloat(e.getAttribute("data-speed")),
                     i = parseFloat(e.getAttribute("data-stop")),
                     a = e.getAttribute("data-direction"),
-                    s = window.pageYOffset;
-
-                if ( o ) {
-                    console.log('test');
-                } else {
-                    i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)")
-                }
+                    s = e.getAttribute("data-starting") ? parseFloat(e.getAttribute("data-starting")) : window.pageYOffset; // Use data-starting if present
                 
-            }), requestAnimationFrame(e)
+                if (e.getAttribute("data-starting")) {
+                    s++;
+                    e.setAttribute("data-starting", s);
+                }
+        
+                console.log(s);
+                i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
+            });
+            requestAnimationFrame(e);
         };
-        requestAnimationFrame(e)
+        requestAnimationFrame(e);        
     }
     parallaxAnimate() {
         let e = document.querySelectorAll(".parallax-animate");
