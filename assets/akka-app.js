@@ -38,10 +38,10 @@ class ParallaxEffect {
                 let t = parseFloat(e.getAttribute("data-speed")),
                     i = parseFloat(e.getAttribute("data-stop")),
                     a = e.getAttribute("data-direction"),
-                    nasd = window.pageYOffset;
+                    m = window.pageYOffset;
                     
 
-                    console.log(nasd);
+                    console.log(m);
                     console.log(e.offsetTop);
                 
                     i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
