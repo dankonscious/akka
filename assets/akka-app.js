@@ -41,7 +41,7 @@ class ParallaxEffect {
                     n = window.pageYOffset, // Use data-starting if present\
                     s = n - e.offsetTop;
 
-                    console.log(s);
+                    console.log(e.offsetTop);
                 
                     i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
             });
