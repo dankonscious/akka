@@ -33,35 +33,35 @@ class ParallaxEffect {
         this.parallaxImages = document.querySelectorAll(".parallax-image"), this.initParallax(), this.parallaxAnimate()
     }
     initParallax() {
-        let previousScrollY = window.pageYOffset; // Initial scroll position
-
+        let t = document.querySelectorAll(".parallax-animate");
         let e = () => {
-            this.parallaxImages.forEach(e => {
-                let t = parseFloat(e.getAttribute("data-speed")),
-                    i = parseFloat(e.getAttribute("data-stop")),
-                    a = e.getAttribute("data-direction"),
-                    s = e.getAttribute("data-starting") ? parseFloat(e.getAttribute("data-starting")) : window.pageYOffset; // Use data-starting if present
-
-                // Detect scroll direction by comparing current and previous scroll positions
-                let currentScrollY = window.pageYOffset;
-                let k = currentScrollY > previousScrollY ? -1 : 1; // -1 for scroll down, 1 for scroll up
+            t.forEach(el => {
+                let speed = parseFloat(el.getAttribute("data-speed")),
+                    stop = parseFloat(el.getAttribute("data-stop")),
+                    direction = el.getAttribute("data-direction"),
+                    starting = el.getAttribute("data-starting") ? parseFloat(el.getAttribute("data-starting")) : el.offsetTop; // Use offsetTop instead of window.pageYOffset
                 
-                // Update the previous scroll position for the next frame
-                previousScrollY = currentScrollY;
+                /*
+                if (el.getAttribute("data-starting")) {
+                    starting++;
+                    el.setAttribute("data-starting", starting);
+                }*/
+                
+                let scrollOffset = window.pageYOffset; // Current scroll offset
+                let relativeOffset = scrollOffset - el.offsetTop; // Calculate element's relative offset to the current scroll
 
-                console.log("Scroll direction (k):", k); // Log scroll direction for debugging
+                console.log(relativeOffset);
 
-                // Only apply the transformation if conditions are met
-                if (!i || s * t < i) {
-                    e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t * k + "px)";
+                // Check if 'stop' condition is met, otherwise apply the transformation
+                if (!stop || relativeOffset * speed < stop) {
+                    el.style.transform = "translateY(" + ("up" === direction ? -1 : 1) * relativeOffset * speed + "px)";
                 }
             });
-
             requestAnimationFrame(e);
         };
 
         requestAnimationFrame(e);
-    
+   
     }
     parallaxAnimate() {
         let e = document.querySelectorAll(".parallax-animate");
