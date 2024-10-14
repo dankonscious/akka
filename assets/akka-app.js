@@ -40,12 +40,16 @@ class ParallaxEffect {
                     a = e.getAttribute("data-direction"),
                     s = e.getAttribute("data-starting") ? parseFloat(e.getAttribute("data-starting")) : window.pageYOffset; // Use data-starting if present
                 
+                /*
                 if (e.getAttribute("data-starting")) {
                     s++;
                     e.setAttribute("data-starting", s);
-                }
+                }*/
+               let h = window.pageYOffset - 1;
+               let k = h - window.pageYOffset;
+
+               console.log(k);
         
-                console.log(s);
                 i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
             });
             requestAnimationFrame(e);
