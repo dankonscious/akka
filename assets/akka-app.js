@@ -30,7 +30,10 @@ class FadeSlider {
 }
 class ParallaxEffect {
     constructor() {
-        this.parallaxImages = document.querySelectorAll(".parallax-image"), this.initParallax(), this.parallaxAnimate()
+        this.parallaxAnimateDiv = document.querySelectorAll(".parallax-animate");
+        this.parallaxImages = document.querySelectorAll(".parallax-image"), 
+        this.initParallax(), 
+        this.parallaxAnimate()
     }
     initParallax() {
         let e = () => {
@@ -41,7 +44,6 @@ class ParallaxEffect {
                     a = e.getAttribute("data-direction"),
                     s = window.pageYOffset;
 
-              console.log(o);
                 if ( o ) {
                     console.log('test');
                 } else {
