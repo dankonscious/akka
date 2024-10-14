@@ -33,35 +33,20 @@ class ParallaxEffect {
         this.parallaxImages = document.querySelectorAll(".parallax-image"), this.initParallax(), this.parallaxAnimate()
     }
     initParallax() {
-        let t = document.querySelectorAll(".parallax-animate");
         let e = () => {
-            t.forEach(el => {
-                let speed = parseFloat(el.getAttribute("data-speed")),
-                    stop = parseFloat(el.getAttribute("data-stop")),
-                    direction = el.getAttribute("data-direction"),
-                    starting = el.getAttribute("data-starting") ? parseFloat(el.getAttribute("data-starting")) : el.offsetTop; // Use offsetTop instead of window.pageYOffset
+            this.parallaxImages.forEach(e => {
+                let t = parseFloat(e.getAttribute("data-speed")),
+                    i = parseFloat(e.getAttribute("data-stop")),
+                    a = e.getAttribute("data-direction"),
+                    n = window.pageYOffset, // Use data-starting if present\
+                    s = n - e.offsetTop;
                 
-                /*
-                if (el.getAttribute("data-starting")) {
-                    starting++;
-                    el.setAttribute("data-starting", starting);
-                }*/
                 
-                let scrollOffset = window.pageYOffset; // Current scroll offset
-                let relativeOffset = scrollOffset - el.offsetTop; // Calculate element's relative offset to the current scroll
-
-                console.log(relativeOffset);
-
-                // Check if 'stop' condition is met, otherwise apply the transformation
-                if (!stop || relativeOffset * speed < stop) {
-                    el.style.transform = "translateY(" + ("up" === direction ? -1 : 1) * relativeOffset * speed + "px)";
-                }
+                    i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
             });
             requestAnimationFrame(e);
         };
-
-        requestAnimationFrame(e);
-   
+        requestAnimationFrame(e);   
     }
     parallaxAnimate() {
         let e = document.querySelectorAll(".parallax-animate");
