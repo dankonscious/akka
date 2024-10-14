@@ -46,7 +46,7 @@ class ParallaxEffect {
                     e.setAttribute("data-starting", s);
                 }*/
                let h = window.pageYOffset - 1;
-               let k = h - window.pageYOffset;
+               let k = window.pageYOffset - h;
 
                console.log(k);
         
