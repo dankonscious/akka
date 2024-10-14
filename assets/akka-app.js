@@ -38,17 +38,14 @@ class ParallaxEffect {
                 let t = parseFloat(e.getAttribute("data-speed")),
                     i = parseFloat(e.getAttribute("data-stop")),
                     a = e.getAttribute("data-direction"),
-                    m = window.pageYOffset,
-                    s = window.pageYOffset - e.offsetTop;
-                    
-                    console.log(e.offsetTop);
-                    console.log(s);
+                    s = window.pageYOffset;
                 
-                    i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
+        
+                i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
             });
             requestAnimationFrame(e);
         };
-        requestAnimationFrame(e);   
+        requestAnimationFrame(e);        
     }
     parallaxAnimate() {
         let e = document.querySelectorAll(".parallax-animate");
