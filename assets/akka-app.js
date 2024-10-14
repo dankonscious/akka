@@ -40,9 +40,8 @@ class ParallaxEffect {
                     a = e.getAttribute("data-direction"),
                     m = window.pageYOffset,
                     s = window.pageYOffset;
-
+console.log(e.offsetTop);
                     console.log(m);
-                    console.log(e.offsetTop);
                 
                     i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
             });
