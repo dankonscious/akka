@@ -50,7 +50,7 @@ class ParallaxEffect {
                               a = e.getAttribute("data-direction"),
                               m = window.pageYOffset,
                               s = window.pageYOffset - e.offsetTop;
-  
+                          console.log(s);
                           if (s >= 0) { // Only apply parallax when the element is visible
                               i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
                           }
