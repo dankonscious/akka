@@ -38,8 +38,10 @@ class ParallaxEffect {
                 let t = parseFloat(e.getAttribute("data-speed")),
                     i = parseFloat(e.getAttribute("data-stop")),
                     a = e.getAttribute("data-direction"),
-                    n = window.pageYOffset, // Use data-starting if present\
+                    n = window.pageYOffset,
                     s = n - e.offsetTop;
+
+                    console.log(s);
                 
                     i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
             });
