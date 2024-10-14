@@ -35,11 +35,18 @@ class ParallaxEffect {
     initParallax() {
         let e = () => {
             this.parallaxImages.forEach(e => {
-                let t = parseFloat(e.getAttribute("data-speed")),
+                let o = parseFloat(e.getAttribute("data-offset-scroll")),
+                    t = parseFloat(e.getAttribute("data-speed")),
                     i = parseFloat(e.getAttribute("data-stop")),
                     a = e.getAttribute("data-direction"),
                     s = window.pageYOffset;
-                i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)")
+
+                if ( o ) {
+                    console.log('test');
+                } else {
+                    i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)")
+                }
+                
             }), requestAnimationFrame(e)
         };
         requestAnimationFrame(e)
