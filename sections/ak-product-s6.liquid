@@ -2,12 +2,12 @@
 <section id="section-5" class="w-full h-[900px] max-[1200px]:h-[663px] bg-[linear-gradient(114deg,_#7B82A2_8.77%,_#677099_52.96%,_#7B82A2_92.94%)] overflow-hidden">
   <div class="relative w-full h-full flex items-center justify-center">
     
-    <div class="upperimg max-w-[616px] w-full absolute top-[-100px] left-[110px] z-10 max-[1200px]:max-w-[300px] max-[1200px]:left-[-151px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
-      <img src="{{ section.settings.upper_image | img_url: 'master' }}" alt="">
+    <div class="upperimg max-w-[480px] w-full absolute top-[-200px] left-[110px] z-10 max-[1200px]:max-w-[300px] max-[1200px]:left-[-151px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
+      <img src="{{ section.settings.upper_image |  image_url: width: 800 }}" alt="">
     </div>
 
     <div class="midimg max-w-[578px] mt-[100px] w-full absolute z-30 rellax" data-rellax-percentage="0.5" data-rellax-speed="3">
-      <img class="max-[1200px]:hidden" src="{{ section.settings.mid_image_desktop | img_url: 'master' }}" alt="">
+      <img class="max-[1200px]:hidden" src="{{ section.settings.mid_image_desktop | image_url: width: 800 }}" alt="">
       <img class="hidden max-[1200px]:block mx-auto" src="{{ section.settings.mid_image_mobile | img_url: 'master' }}" alt="">
     </div>
     <div class="max-w-[1307px] w-full relative z-20 max-[1200px]:max-w-full font-['syne']">      
@@ -19,8 +19,8 @@
           </svg>
         </a>    
     </div>
-    <div class="lowerimg max-w-[473px] w-full absolute bottom-[-100px] right-[100px] z-10 max-[1200px]:max-w-[223px] max-[1200px]:right-[-105px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
-      <img src="{{ section.settings.lower_image | img_url: 'master' }}" alt="">
+    <div class="lowerimg max-w-[400px] w-full absolute bottom-[-200px] right-[100px] z-10 max-[1200px]:max-w-[223px] max-[1200px]:right-[-105px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
+      <img src="{{ section.settings.lower_image |  image_url: width: 800  }}" alt="">
     </div>
   </div>
 </section> 

@@ -860,6 +860,10 @@ video {
   bottom: -100px;
 }
 
+.top-\[-200px\] {
+  top: -200px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -2122,6 +2126,14 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[480px\] {
+  max-width: 480px;
+}
+
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .flex-1 {
