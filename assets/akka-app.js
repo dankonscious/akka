@@ -33,23 +33,44 @@ class ParallaxEffect {
         this.parallaxImages = document.querySelectorAll(".parallax-image"), this.initParallax(), this.parallaxAnimate()
     }
     initParallax() {
-        let e = () => {
-            this.parallaxImages.forEach(e => {
-                let t = parseFloat(e.getAttribute("data-speed")),
-                    i = parseFloat(e.getAttribute("data-stop")),
-                    a = e.getAttribute("data-direction"),
-                    m = window.pageYOffset,
-                    s = window.pageYOffset - e.offsetTop;
-                    
-                    console.log(e.offsetTop);
-                    console.log(s);
-                
-                    i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
-            });
-            requestAnimationFrame(e);
-        };
-        requestAnimationFrame(e);   
-    }
+      const observerOptions = {
+          root: null, // Use the viewport as the container
+          rootMargin: '0px',
+          threshold: 0 // Trigger when even a small part of the element is visible
+      };
+  
+      // Callback function for when the element is intersecting the viewport
+      const observerCallback = (entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  let e = () => {
+                      this.parallaxImages.forEach(e => {
+                          let t = parseFloat(e.getAttribute("data-speed")),
+                              i = parseFloat(e.getAttribute("data-stop")),
+                              a = e.getAttribute("data-direction"),
+                              m = window.pageYOffset,
+                              s = window.pageYOffset - e.offsetTop;
+  
+                          if (s >= 0) { // Only apply parallax when the element is visible
+                              i && s * t >= i || (e.style.transform = "translateY(" + ("up" === a ? -1 : 1) * s * t + "px)");
+                          }
+                      });
+                      requestAnimationFrame(e);
+                  };
+                  requestAnimationFrame(e);
+              }
+          });
+      };
+  
+      // Create the observer instance
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+  
+      // Observe each parallax image
+      this.parallaxImages.forEach(image => {
+          observer.observe(image);
+      });
+  }
+
     parallaxAnimate() {
         let e = document.querySelectorAll(".parallax-animate");
         e.forEach(e => {
