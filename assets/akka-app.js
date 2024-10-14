@@ -39,7 +39,7 @@ class ParallaxEffect {
                     i = parseFloat(e.getAttribute("data-stop")),
                     a = e.getAttribute("data-direction"),
                     m = window.pageYOffset;
-                    
+                    s = window.pageYOffset;
 
                     console.log(m);
                     console.log(e.offsetTop);
