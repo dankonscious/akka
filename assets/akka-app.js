@@ -41,6 +41,7 @@ class ParallaxEffect {
                     a = e.getAttribute("data-direction"),
                     s = window.pageYOffset;
 
+              console.log(o);
                 if ( o ) {
                     console.log('test');
                 } else {
