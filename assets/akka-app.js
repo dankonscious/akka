@@ -68,11 +68,7 @@ class ParallaxEffect {
 }
 
 function adjustSticky(e) {
-    document.querySelectorAll(e).forEach(e => {
-        let t = e.closest(".shopify-section"),
-            i = -Math.abs(t.getBoundingClientRect().height / 4);
-        t.style.position = "sticky", t.style.top = `${i}px`
-    });
+   
 
     // Add window resize event listener
     function handleResize() {
