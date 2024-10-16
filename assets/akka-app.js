@@ -79,7 +79,7 @@ function adjustSticky(e) {
         document.querySelectorAll(e).forEach(el => {
             let section = el.closest(".shopify-section");
             if (window.innerWidth < 1200) {
-                let offset = -Math.abs(section.getBoundingClientRect().height / 4);
+                let offset = -section.getBoundingClientRect().height;
                 section.style.position = "sticky";
                 section.style.top = `${offset}px`;
             } else {
