@@ -90,6 +90,7 @@ function adjustSticky(e) {
               }
             } else {
                if ( m ) {
+                 console.log('test');
                } else {
                 let offset = -Math.abs(section.getBoundingClientRect().height / 4);
                 section.style.position = "sticky";
