@@ -80,6 +80,7 @@ function adjustSticky(e) {
             let section = el.closest(".shopify-section");
             let m = el.getAttribute('data-full-m');
             if (window.innerWidth < 1200) {
+              console.log('working');
               if ( m ) {
                 let offset = -section.getBoundingClientRect().height;
                 section.style.position = "sticky";
