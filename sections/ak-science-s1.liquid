@@ -3,12 +3,121 @@
     .hero-sticky {
       position: sticky;
       top: 72px;
-      z-index:0;
     }
     #hero {
-      
+      background-image: url({{ section.settings.background_image | img_url: 'master' }});
     }
-    
+    #hero .circlebg {
+        background-image: url();
+    }
+    #hero .text-downup {
+      animation:movedownUp 1.5s ease-out forwards;
+      transition: 1.5s ease-out;
+    }  
+    #hero .whitebg {      
+      background: white;      
+      -webkit-mask: radial-gradient(#000 70%, #0000 71%) no-repeat, linear-gradient(#000 0 0);
+      mask: radial-gradient(#000 70%, #0000 71%) no-repeat, linear-gradient(#000 0 0);
+      mask-position: center;
+      mask-size: 30% 60%;
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      -webkit-transition: 1s ease-out;
+      -moz-transition: 1s ease-out;
+      -o-transition: 1s ease-out;
+      transition: 1s ease-out;
+      z-index: 11111111;
+      -moz-animation:scoop 1.2s ease-out forwards;
+      -webkit-animation:scoop 1.2s ease-out forwards;
+      animation:scoop 1.2s ease-out forwards;
+    }    
+    #hero .circlesop {
+      -moz-animation:circlesOp 1.2s ease-out forwards;
+      -webkit-animation:circlesOp 1.2s ease-out forwards;
+      animation:circlesOp 1.2s ease-out forwards;
+    }
+    #hero .spinpause {
+      animation: spinPause 9s ease-in infinite;
+    }
+    #hero .spinpause-rev {
+      animation: spinPauserev 9s ease-in infinite;
+    }
+    @media(max-width: 1200px) {
+        #hero .circlebg {
+            background-image: url();s
+        }   
+        #hero {
+          background-image: url({{ section.settings.background_image_mob | img_url: 'master' }});
+        }     
+        #hero .whitebg {
+          display: none;
+        }
+        #hero .text-downup {
+          animation: unset;
+        }
+    }
+    @keyframes scoop {
+      from {
+        mask-size: 30% 60%;
+        
+      }
+      to {
+        mask-size: 150% 250%;
+        
+      }
+    }
+    @keyframes movedownUp {
+      from {transform:translateY(100%);}
+      to {transform:translateY(0%);}
+    }
+    @keyframes circlesOp {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes spinPause {
+      0% {
+        transform: rotate(0deg);
+        
+      }
+      25% {
+        transform: rotate(90deg);
+        
+      }
+      50% {
+        transform: rotate(180deg);
+        
+      }
+      75% {
+        transform: rotate(270deg);
+        
+      }
+      100% {
+        transform: rotate(360deg);
+        
+      }
+    }
+    @keyframes spinPauserev {
+      0% {
+        transform: rotate(0deg);
+        
+      }
+      25% {
+        transform: rotate(-90deg);
+        
+      }
+      50% {
+        transform: rotate(-180deg);
+        
+      }
+      75% {
+        transform: rotate(-270deg);
+        
+      }
+      100% {
+        transform: rotate(-360deg);
+        
+      }
+    }
 </style>
 
 <section id="hero" class="bg-no-repeat bg-cover bg-center min-h-[980px] flex items-center relative max-md:min-h-[660px] font-['syne'] max-[1200px]:overflow-hidden" style="">
