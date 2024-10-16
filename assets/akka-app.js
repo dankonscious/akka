@@ -89,9 +89,11 @@ function adjustSticky(e) {
                 section.style.top = "";
               }
             } else {
+               if ( !m ) {
                 let offset = -Math.abs(section.getBoundingClientRect().height / 4);
                 section.style.position = "sticky";
                 section.style.top = `${offset}px`;
+               }
             }
         });
     }
