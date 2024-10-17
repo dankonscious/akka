@@ -3397,6 +3397,10 @@ video {
   padding-top: 64px;
 }
 
+.pl-\[8px\] {
+  padding-left: 8px;
+}
+
 .text-left {
   text-align: left;
 }
