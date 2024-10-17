@@ -299,7 +299,7 @@
   //   images.hide().eq(currentImageIndex).show();
   // });
 
-  document.addEventListener("DOMContentLoaded", function () {
+  function initializeImageSlider() {
     const images = document.querySelectorAll('.image-container .prod');
     const nextButtons = document.querySelectorAll('.prod-next');
     const prevButtons = document.querySelectorAll('.prod-prev');
@@ -331,7 +331,16 @@
             updateActiveImage(prevIndex);
         });
     });
+}
+
+// Initialize the slider on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", initializeImageSlider);
+
+// Reinitialize the slider on window resize
+window.addEventListener('resize', function () {
+    initializeImageSlider();
 });
+
 
 
 </script>
