@@ -336,6 +336,7 @@
   // Initialize the slider on DOMContentLoaded
   document.addEventListener("DOMContentLoaded", initializeImageSlider);
   document.addEventListener("htmlContentChanged", initializeImageSlider);
+  document.addEventListener("htmlContentChanged", function(){ console.log('test') });
 
 </script>
 
