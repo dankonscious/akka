@@ -87,7 +87,7 @@ function adjustSticky(e) {
               }
             } else {
                if ( m ) {
-                 console.log('test');
+                 
                } else {
                 let offset = -Math.abs(section.getBoundingClientRect().height / 4);
                 section.style.position = "sticky";
@@ -113,10 +113,16 @@ function renderTemplates() {
             a = Handlebars.compile(t)();
         if (a.trim()) {
             let s = `<div class="handlebar-template-compiled">${a}</div>`;
-            i && i.remove(), e.insertAdjacentHTML("afterend", s)
+            i && i.remove();
+            e.insertAdjacentHTML("afterend", s);
+
+            // Dispatch a custom event after the HTML change
+            const event = new Event('htmlContentChanged');
+            e.dispatchEvent(event);
         }
-    })
+    });
 }
+
 document.addEventListener("DOMContentLoaded", () => {
     new ParallaxEffect
 }), document.addEventListener("DOMContentLoaded", () => {

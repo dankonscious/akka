@@ -335,11 +335,7 @@
 
   // Initialize the slider on DOMContentLoaded
   document.addEventListener("DOMContentLoaded", initializeImageSlider);
-  
-  // Reinitialize the slider on window resize
-  window.addEventListener('resize', function () {
-      initializeImageSlider();
-  });
+  document.addEventListener("htmlContentChanged", initializeImageSlider);
 
 </script>
 
