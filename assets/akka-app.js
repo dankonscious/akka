@@ -124,19 +124,32 @@ function renderTemplates() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    new ParallaxEffect
-}), document.addEventListener("DOMContentLoaded", () => {
-    adjustSticky(".dynamic-sticky")
-}), Handlebars.registerHelper("isMobile", function() {
-    return window.matchMedia("(max-width: 1024px)").matches
-}), renderTemplates(), window.addEventListener("resize", function() {
-    renderTemplates()
-}), document.addEventListener("DOMContentLoaded", function() {
-    var e = document.getElementById("nav-icon"),
-        t = document.getElementById("nav-box");
-    e.addEventListener("click", function() {
-        e.classList.toggle("open"), t.classList.toggle("open")
-    })
+    new ParallaxEffect();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    adjustSticky(".dynamic-sticky");
+});
+
+Handlebars.registerHelper("isMobile", function() {
+    return window.matchMedia("(max-width: 1024px)").matches;
+});
+
+renderTemplates();
+
+window.addEventListener("resize", () => {
+    renderTemplates();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navIcon = document.getElementById("nav-icon");
+    const navBox = document.getElementById("nav-box");
+
+    navIcon.addEventListener("click", () => {
+        navIcon.classList.toggle("open");
+        navBox.classList.toggle("open");
+    });
+});
+
 
 var rellax = new Rellax('.rellax');
