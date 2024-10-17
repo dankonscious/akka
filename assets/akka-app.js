@@ -137,9 +137,10 @@ Handlebars.registerHelper("isMobile", function() {
 
 renderTemplates();
 
+/*
 window.addEventListener("resize", () => {
     renderTemplates();
-});
+});*/
 
 document.addEventListener("DOMContentLoaded", () => {
     const navIcon = document.getElementById("nav-icon");
