@@ -68,23 +68,32 @@ class ParallaxEffect {
 }
 
 function adjustSticky(e) {
-    document.querySelectorAll(e).forEach(e => {
-        let t = e.closest(".shopify-section"),
-            i = -Math.abs(t.getBoundingClientRect().height / 4);
-        t.style.position = "sticky", t.style.top = `${i}px`
-    });
+   
 
     // Add window resize event listener
     function handleResize() {
         document.querySelectorAll(e).forEach(el => {
             let section = el.closest(".shopify-section");
+            let m = el.getAttribute('data-full-m');
             if (window.innerWidth < 1200) {
+              console.log('working');
+              if ( m ) {
+                let offset = -section.getBoundingClientRect().height;
+                section.style.position = "sticky";
+                section.style.top = `${offset}px`;
+              } else {
                 section.style.position = "";
                 section.style.top = "";
+              }
             } else {
+               if ( m ) {
+                 
+               } else {
                 let offset = -Math.abs(section.getBoundingClientRect().height / 4);
                 section.style.position = "sticky";
                 section.style.top = `${offset}px`;
+               }
+               
             }
         });
     }
@@ -104,24 +113,44 @@ function renderTemplates() {
             a = Handlebars.compile(t)();
         if (a.trim()) {
             let s = `<div class="handlebar-template-compiled">${a}</div>`;
-            i && i.remove(), e.insertAdjacentHTML("afterend", s)
+            i && i.remove();
+            e.insertAdjacentHTML("afterend", s);
+
+            // Dispatch a custom event after the HTML change
+            const event = new Event('htmlContentChanged');
+            e.dispatchEvent(event);
         }
-    })
+    });
 }
+
 document.addEventListener("DOMContentLoaded", () => {
-    new ParallaxEffect
-}), document.addEventListener("DOMContentLoaded", () => {
-    adjustSticky(".dynamic-sticky")
-}), Handlebars.registerHelper("isMobile", function() {
-    return window.matchMedia("(max-width: 1024px)").matches
-}), renderTemplates(), window.addEventListener("resize", function() {
-    renderTemplates()
-}), document.addEventListener("DOMContentLoaded", function() {
-    var e = document.getElementById("nav-icon"),
-        t = document.getElementById("nav-box");
-    e.addEventListener("click", function() {
-        e.classList.toggle("open"), t.classList.toggle("open")
-    })
+    new ParallaxEffect();
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    adjustSticky(".dynamic-sticky");
+});
+
+Handlebars.registerHelper("isMobile", function() {
+    return window.matchMedia("(max-width: 1024px)").matches;
+});
+
+renderTemplates();
+
+/*
+window.addEventListener("resize", () => {
+    renderTemplates();
+});*/
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navIcon = document.getElementById("nav-icon");
+    const navBox = document.getElementById("nav-box");
+
+    navIcon.addEventListener("click", () => {
+        navIcon.classList.toggle("open");
+        navBox.classList.toggle("open");
+    });
+});
+
 
 var rellax = new Rellax('.rellax');
