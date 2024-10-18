@@ -13,7 +13,7 @@
     </h3>
     <div class="mt-[64px]">
       {% for faq in section.blocks %}
-        <div class="faq-item cursor-pointer flex flex-col pt-4 pb-5 border-t bg-blend-normal border-[#2E3666] max-[1200px]:pt-0 active">
+        <div class="faq-item cursor-pointer flex flex-col pt-4 pb-5 border-t bg-blend-normal border-[#2E3666] max-[1200px]:pt-0">
           <div class="flex gap-8 items-start max-[1200px]:max-w-full">
             <div class="flex flex-wrap items-start min-w-[240px] w-full max-[1200px]:max-w-full">
               <div class="faq-question flex items-center justify-between w-full max-[1200px]:flex-wrap">
@@ -24,7 +24,7 @@
                     {{ forloop.index | prepend: '0' }}                    
                   {% endif %}
                 </h2>
-                <h3 class="text-2xl font-medium leading-5 max-w-[877px] w-full max-[1200px]:text-[20px] max-[1200px]:max-w-[calc(100%_-_70px)]">
+                <h3 class="text-2xl font-medium leading-5 max-[1200px]:leading-[130%] max-w-[877px] w-full max-[1200px]:text-[20px] max-[1200px]:max-w-[calc(100%_-_70px)]">
                   {{ faq.settings.question }}
                 </h3>
                 <div class="flex flex-col justify-center items-end px-3.5 py-8 w-[70px]">
@@ -33,7 +33,7 @@
                   </div>
                 </div>
               </div>
-              <article class="faq-answer pl-[8px] flex flex-col min-w-[240px] text-[#2E3666] w-[849px] max-[1200px]:max-w-full ml-[372px] pb-[20px] max-[1200px]:ml-0 max-[1200px]:mt-3">
+              <article class="faq-answer pl-[8px] flex flex-col min-w-[240px] text-[#2E3666] w-[849px] max-[1200px]:max-w-full ml-[372px] pb-[20px] max-[1200px]:ml-0 max-[1200px]:mt-3" style="display: none;">
                 <p class="text-[18px] leading-[normal] tracking-[0.36px]">
                   {{ faq.settings.answer }}
                 </p>

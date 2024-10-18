@@ -4976,6 +4976,10 @@ html {
     line-height: 40px;
   }
 
+  .max-\[1200px\]\:leading-\[130\%\] {
+    line-height: 130%;
+  }
+
   .max-\[1200px\]\:tracking-\[-0\.72px\] {
     letter-spacing: -0.72px;
   }
