@@ -149,7 +149,7 @@
           <div class="image-container prod-image top-0 left-0 w-full z-[-1] sticky max-[1200px]:h-[493px] max-w-full  max-[1200px]:mx-auto">
               {% for block in section.blocks %}
                   {% if block.type == 'block' %}
-                    <div class="prod max-[1200px]:w-full mx-auto {% if forloop.first %}active{% endif %} {{ forloop.index }}">
+                    <div class="prod max-[1200px]:w-full mx-auto top-[-40px] {% if forloop.first %}active{% endif %} {{ forloop.index }}">
                       <img class="hidden max-[1200px]:block  mx-auto" src="{{ block.settings.prod_image_mob | img_url: 'master' }}">
                     </div>                
                   {% endif %}    
@@ -211,7 +211,7 @@
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                   <path d="M4 13.8347L6.14133 16.1307C7.32267 17.3973 7.91333 18.0293 8.57467 18.2293C9.156 18.404 9.77467 18.3573 10.328 18.096C10.9587 17.7973 11.464 17.0813 12.4773 15.648L20 5" stroke="#5462B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                               </svg>
-                              <span class="gap-2.5 self-stretch min-w-[240px] w-[539px] max-[1200px]:max-w-full">
+                              <span class="gap-2.5 self-stretch min-w-[240px] w-[539px] max-[1200px]:max-w-full [&>p]:leading-[21.6px] [&>p>br]:hidden">
                                   {{ block2.settings.benefit_content }}
                               </span>
                           </li>
