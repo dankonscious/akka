@@ -278,7 +278,7 @@
 <script>
   const Hero = document.querySelector('#hero');
   const ProductItems = Hero.querySelectorAll('article');
-  const AddtoCart = Product.querySelector('.addtocart');
+  const AddtoCart = Hero.querySelectorAll('.addtocart');
 
   ProductItems.forEach(function(item) {
     item.addEventListener('click', function() {
@@ -289,17 +289,19 @@
     });
   });
 
-  AddtoCart.addEventListener('click', function() {
-    // Find the active article
-    const activeItem = Product.querySelector('article.active');
-    if (activeItem) {
-      // Get the data-url attribute of the active article
-      const dataUrl = activeItem.getAttribute('data-url');
-      if (dataUrl) {
-        // Redirect to the URL
-        window.location.href = dataUrl;
+  AddtoCart.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // Find the active article
+      const activeItem = Product.querySelector('article.active');
+      if (activeItem) {
+        // Get the data-url attribute of the active article
+        const dataUrl = activeItem.getAttribute('data-url');
+        if (dataUrl) {
+          // Redirect to the URL
+          window.location.href = dataUrl;
+        }
       }
-    }
+    });
   });
 
 
