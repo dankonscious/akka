@@ -343,9 +343,9 @@
     loop: true,
     autoplay: true,
     speed: 800,
-    simulateTouch: false,
-    allowTouchMove: false, // Disables swiping with touch/mouse
-    noSwiping: true, // Prevents swiping on specific elements
+    simulateTouch: true,
+    allowTouchMove: true, // Disables swiping with touch/mouse
+    noSwiping: false, // Prevents swiping on specific elements
     preventInteractionOnTransition:false,
     pagination: {
       el: ".swiper-pagination",
@@ -355,6 +355,13 @@
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      1200: {
+        simulateTouch: false,
+        allowTouchMove: false, // Disables swiping with touch/mouse
+        noSwiping: true, // Prevents swiping on specific elements
+      }
+    }
     on: {
         slideChangeTransitionStart: function () {
             // This event is triggered when the slide starts changing
