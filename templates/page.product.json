@@ -85,7 +85,7 @@
           "settings": {
             "prod_title": "Starter",
             "prod_content1": "One-time purchase",
-            "prod_content2": "1 bottles upfront",
+            "prod_content2": "1 bottle upfront",
             "prod_price": "$69",
             "prod_before_price": "$99",
             "save": "$30",
@@ -183,8 +183,8 @@
           "type": "testimonial",
           "settings": {
             "star_image": "shopify://shop_images/star.png",
-            "name": "Jerry S.",
-            "customer_status": "Verified Customer",
+            "name": "Stephanie C.",
+            "customer_status": "verified customer",
             "testimonial": "“Akka changed everything for me. Not only did it help cleanse and rejuvenate my liver, but it also kick-started my weight loss and restored my energy levels. For the first time in years, I felt like my body was working with me, not against me.\n                              <br><br>\n                              The transformation was noticeable not just to me but to everyone around me. Colleagues and friends commented on how much happier and more energetic I seemed. I went from avoiding social gatherings to embracing them, thanks to the newfound confidence Akka gave me.\n                              <br><br>\n                              I believe Akka is something everyone should know about, especially those struggling with similar issues. It has not only improved my physical health but has also had a profound impact on my overall well-being and happiness. I've recommended it to everyone I care about.”",
             "customer_image": "shopify://shop_images/jerrys2.png",
             "row2": false,
@@ -212,7 +212,7 @@
         "heading_1": "Liver health is",
         "heading_1_span": "system health",
         "description_1": "Find out why liver health is key to overall well-being.",
-        "link_1": "/page/our-approach",
+        "link_1": "/pages/our-approach",
         "link_text_1": "Our Approach",
         "image2_1": "shopify://shop_images/11.png",
         "image2_2": "shopify://shop_images/22.png",
@@ -251,7 +251,7 @@
           "type": "faq",
           "settings": {
             "question": "What else can harm the liver? I suspect I have liver problems because of my difficulty with weight loss, but I don't drink alcohol and I don’t consume a lot of sugar.",
-            "answer": "Remember, your liver is your body’s central filtration system for toxins. It’s also responsible for clearing cholesterol and removing fats from the bloodstream.\n                      <br><br>\n                      It has such an essential role in the body that <b>person would not even live for more than one day without a liver.</b>\n                      <br><br>\n                      So there’s many other things that can cause problems with the liver, including drugs and medicines as well as environmental toxins, which would include exhaust from cars and airplanes, air pollution from factories and big cities.\n                      <br><br>\n                      Even if you avoid going outside or wear a mask, all kinds of pollution get into our water supply, which leeches into the skin while taking a shower. \n                      <br><br>\n                      Even if you have a whole-home water filter, you’re still getting pesticides, preservatives, and plastics from the food supply.\n                      <br><br>\n                      So, <b>our liver has a critical job,</b> and it’s no wonder why it’s overburdened in today’s society.  Above and beyond that, the liver can be affected by viruses, mold, and bacteria, and can also be <b>damaged by Big Pharma’s imperfect solutions to these outbreaks.</b>\n                      <br><br>\n                      In fact, there has been a <b>sharp increase in liver-related weight gain since 2020,</b> and I think it’s not a coincidence, given the health epidemic that took place during that time period. \n                      <br><br>\n                      Lots of new research is coming out that shows just how fragile the liver really is and how important it is to take this important step on the road back to health and healing."
+            "answer": "Remember, your liver is your body’s central filtration system for toxins. It’s also responsible for clearing cholesterol and removing fats from the bloodstream.\n                      <br><br>\n                      It has such an essential role in the body that <b>a person would not even live for more than one day without a liver.</b>\n                      <br><br>\n                      So there’s many other things that can cause problems with the liver, including drugs and medicines as well as environmental toxins, which would include exhaust from cars and airplanes, air pollution from factories and big cities.\n                      <br><br>\n                      Even if you avoid going outside or wear a mask, all kinds of pollution get into our water supply, which leeches into the skin while taking a shower. \n                      <br><br>\n                      Even if you have a whole-home water filter, you’re still getting pesticides, preservatives, and plastics from the food supply.\n                      <br><br>\n                      So, <b>our liver has a critical job,</b> and it’s no wonder why it’s overburdened in today’s society.  Above and beyond that, the liver can be affected by viruses, mold, and bacteria, and can also be <b>damaged by Big Pharma’s imperfect solutions to these outbreaks.</b>\n                      <br><br>\n                      In fact, there has been a <b>sharp increase in liver-related weight gain since 2020,</b> and I think it’s not a coincidence, given the health epidemic that took place during that time period. \n                      <br><br>\n                      Lots of new research is coming out that shows just how fragile the liver really is and how important it is to take this important step on the road back to health and healing."
           }
         },
         "faq_YgqeDW": {

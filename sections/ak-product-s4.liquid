@@ -2,7 +2,7 @@
 
 #section-4 .imagebox1,
 #section-4 .imagebox1 .forhoveranimation {
-  transition: 10s ease-out;
+  transition: 1s ease-out;
 }
   #section-4 .imagebox1 .img2 {
     transform: translateX(10%);
@@ -13,24 +13,26 @@
 
   #section-4 .imagebox1 img,
   #section-4 .imagebox2 img {    
-    transition: 10s ease-out;
+    transition: 1s ease-out;
     scale: 1.12;
   }
-  #section-4 .imagebox1:hover .forhoveranimation {
+  #section-4 .imagebox1:hover .forhoveranimation,
+  #section-4 .imagebox1 .forhoveranimation.hover {
     animation: hoverRight 1s ease-out forwards;
-    transition: 10s ease-out;
+    transition: 1s ease-out;
   }
   #section-4 .imagebox1 .forhoveranimation {
     animation: hoverLeft 1s ease-out forwards;
-    transition: 10s ease-out;
+    transition: 1s ease-out;
   }
-  #section-4 .imagebox2:hover .forhoveranimation {
+  #section-4 .imagebox2:hover .forhoveranimation,
+  #section-4 .imagebox2 .forhoveranimation.hover  {
     animation: upDown 1s ease-out forwards;
-    transition: 10s ease-out;
+    transition: 1s ease-out;
   }
   #section-4 .imagebox2 .forhoveranimation {
     animation: downUp 1s ease-out forwards;
-    transition: 10s ease-out;
+    transition: 1s ease-out;
   }
   /* #section-4  {
     animation: hoverLeft 2s ease-out forwards;
@@ -54,14 +56,15 @@
     0% {transform: translateY(-53%);}
     25% {transform: translateY(2%);}
     100% {transform: translateY(0%);}
-  }
-  @media(max-width: 1200px) {
+  }  
+  
+  /* @media(max-width: 1200px) {
     #section-4 .imagebox1:hover .forhoveranimation {
     animation: unset;
     transition: unset;
     }
     #section-4 .imagebox1 .forhoveranimation {
-      animation: unset;
+      animation: leftauto 1s linear infinite;
       transition: unset;
     }
     #section-4 .imagebox2:hover .forhoveranimation {
@@ -69,10 +72,10 @@
       transition: unset;
     }
     #section-4 .imagebox2 .forhoveranimation {
-      animation: unset;
+      animation: upauto 1s linear infinite;
       transition: unset;
-    }
-  }
+    } 
+  }*/
 </style>
 <!-- sections/section-4.liquid -->
 <section id="section-4" class="">
@@ -112,6 +115,38 @@
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const targetClass = "forhoveranimation"; // Replace with your target class
+  const hoverClass = "hover"; // Class to simulate hover state
+  const intervalTime = 2000; // 2 seconds
+
+  // Function to check if the device is mobile
+  function isMobile() {
+    return window.innerWidth <= 768; // Adjust as necessary
+  }
+
+  // Function to simulate hover state
+  function toggleHoverEffect() {
+    if (isMobile()) {
+      const elements = document.querySelectorAll(`.${targetClass}`);
+
+      elements.forEach((element) => {
+        if (element.classList.contains(hoverClass)) {
+          element.classList.remove(hoverClass);
+        } else {
+          element.classList.add(hoverClass);
+        }
+      });
+    }
+  }
+
+  // Run the toggle function every 2 seconds on mobile
+  setInterval(toggleHoverEffect, intervalTime);
+});
+
+</script>
 
 {% schema %}
 {
