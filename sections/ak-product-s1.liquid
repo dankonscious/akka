@@ -332,7 +332,7 @@
     AddtoCart.forEach(function(button) {
       button.addEventListener('click', function() {
         // Find the active article
-        const activeItem = Product.querySelector('article.active');
+        const activeItem = Hero.querySelector('article.active');
         if (activeItem) {
           // Get the data-url attribute of the active article
           const dataUrl = activeItem.getAttribute('data-url');
