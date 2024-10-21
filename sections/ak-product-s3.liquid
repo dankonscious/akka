@@ -343,8 +343,9 @@
     loop: true,
     autoplay: true,
     speed: 800,
-    noSwiping: true,
-    draggable: false,
+    simulateTouch: false,
+    allowTouchMove: false, // Disables swiping with touch/mouse
+    noSwiping: true, // Prevents swiping on specific elements
     preventInteractionOnTransition:false,
     pagination: {
       el: ".swiper-pagination",
