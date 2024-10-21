@@ -84,6 +84,7 @@
           "type": "block3",
           "settings": {
             "prod_title": "Starter",
+            "link": "https://go.tryakka.com/products/akka-1-pack-akk-brand",
             "prod_content1": "One-time purchase",
             "prod_content2": "1 bottle upfront",
             "prod_price": "$69",
@@ -96,6 +97,7 @@
           "type": "block3",
           "settings": {
             "prod_title": "doctor's choice",
+            "link": "",
             "prod_content1": "Charged annually, cancel anytime",
             "prod_content2": "3 bottles upfront",
             "prod_price": "$177",
@@ -108,6 +110,7 @@
           "type": "block3",
           "settings": {
             "prod_title": "gut superhero",
+            "link": "",
             "prod_content1": "Charged annually, cancel anytime",
             "prod_content2": "6 bottles upfront",
             "prod_price": "$294",
