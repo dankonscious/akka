@@ -335,7 +335,7 @@
         const activeItem = Hero.querySelector('article.active');
         if (activeItem) {
           // Get the data-url attribute of the active article
-          const dataUrl = activeItem.getAttribute('data-url');
+          const dataUrl = activeItem.getAttribute('data-link');
           if (dataUrl) {
             // Redirect to the URL
             window.location.href = dataUrl;
