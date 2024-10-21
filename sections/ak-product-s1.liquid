@@ -9,7 +9,9 @@
   #hero .prod-image .prod.active {
     opacity: 1;
   } 
-  .prodbox article:hover {
+  .prodbox article:hover,
+  .prodbox article.active {
+    cursor:pointer;
     background: linear-gradient(67deg, #98B1FC 26.65%, #FFAD61 78.89%);
   }
   
@@ -96,7 +98,7 @@
         <div class="prodbox flex flex-col justify-center items-center min-w-[240px] w-[399px] max-[1200px]:order-3 max-[1200px]:px-4">
             {% for block3 in section.blocks %}
                 {% if block3.type == 'block3' %}
-                    <article class="flex gap-8 items-start px-3.5 py-4 max-w-full mb-4 leading-snug border border-indigo-900 border-solid text-[#2E3666] w-[399px] max-[1200px]:gap-[18px]">
+                    <article data-link="{{ block3.settings.link }}" class="flex gap-8 items-start px-3.5 py-4 max-w-full mb-4 leading-snug border border-indigo-900 border-solid text-[#2E3666] w-[399px] max-[1200px]:gap-[18px]">
                         <div class="flex flex-col items-start w-[209px]">
                             <h3 class="text-xl font-medium text-center uppercase">{{ block3.settings.prod_title }}</h3>
                             <p class="self-stretch mt-2 text-sm leading-5">
@@ -117,7 +119,7 @@
             {% endfor %}    
             
             <div class="flex flex-col justify-center items-center pt-8 mt-4 max-[1200px]:w-[322px]">
-            <button class="flex gap-4 items-start px-24 py-4 text-2xl tracking-wide leading-snug text-center text-white uppercase bg-[#3E488B] border border-solid border-[#2E3666] rounded-[100px] hover:shadow-[0px_12px_15px_rgba(33,48,94,0.5)] max-[1200px]:px-5 max-[1200px]:w-full max-[1200px]:justify-center">
+            <button class="addtocart flex gap-4 items-start px-24 py-4 text-2xl tracking-wide leading-snug text-center text-white uppercase bg-[#3E488B] border border-solid border-[#2E3666] rounded-[100px] hover:shadow-[0px_12px_15px_rgba(33,48,94,0.5)] max-[1200px]:px-5 max-[1200px]:w-full max-[1200px]:justify-center">
                 Add to Cart
                 <img loading="lazy"  src="https://cdn.builder.io/api/v1/image/assets/TEMP/449543b04857691bfc461d1f9c69f03fbb4c2e3cb1e28e0a1783367697ed8ce0?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="object-contain shrink-0 aspect-[0.65] w-[22px]" />
             </button>
@@ -224,7 +226,7 @@
           <div class="prodbox flex flex-col justify-center items-center min-w-[240px] w-full max-w-[399px]">
             {% for block3 in section.blocks %}
                 {% if block3.type == 'block3' %}
-                    <article class="flex gap-8 items-start px-3.5 py-4 max-w-full mb-4 leading-snug border border-indigo-900 border-solid text-[#2E3666] w-[399px] max-[1200px]:gap-[18px]">
+                    <article data-link="{{ block3.settings.link }}" class="flex gap-8 items-start px-3.5 py-4 max-w-full mb-4 leading-snug border border-indigo-900 border-solid text-[#2E3666] w-[399px] max-[1200px]:gap-[18px]">
                         <div class="flex flex-col items-start w-[209px]">
                             <h3 class="text-xl font-medium text-center uppercase">{{ block3.settings.prod_title }}</h3>
                             <p class="self-stretch mt-2 text-sm leading-5">
@@ -245,7 +247,7 @@
             {% endfor %}    
               
             <div class="flex flex-col justify-center items-center pt-8 mt-4 max-[1200px]:w-[322px]">
-              <button class="flex gap-4 items-start px-24 py-4 text-2xl tracking-wide leading-snug text-center text-white uppercase bg-[#3E488B] border border-solid border-[#2E3666] rounded-[100px] shadow-[0px_54px_15px_rgba(33,48,94,0)] max-[1200px]:px-5 max-[1200px]:w-full max-[1200px]:justify-center">
+              <button class="addtocart flex gap-4 items-start px-24 py-4 text-2xl tracking-wide leading-snug text-center text-white uppercase bg-[#3E488B] border border-solid border-[#2E3666] rounded-[100px] shadow-[0px_54px_15px_rgba(33,48,94,0)] max-[1200px]:px-5 max-[1200px]:w-full max-[1200px]:justify-center">
                   Add to Cart
                   <img loading="lazy"  src="https://cdn.builder.io/api/v1/image/assets/TEMP/449543b04857691bfc461d1f9c69f03fbb4c2e3cb1e28e0a1783367697ed8ce0?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="object-contain shrink-0 aspect-[0.65] w-[22px]" />
               </button>
@@ -274,30 +276,32 @@
 </section>
 
 <script>
+  const Product = document.querySelector('.prodbox');
+  const ProductItems = Product.querySelectorAll('article');
+  const AddtoCart = Product.querySelector('.addtocart');
 
-  // $(document).ready(function() {
-  //   let currentImageIndex = 0;
-  //   const images = $('.prod');
-  //   const totalImages = images.length;
+  ProductItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+      ProductItems.forEach(function(article) {
+        article.classList.remove('active');
+      });
+      item.classList.add('active');
+    });
+  });
 
-  //   function showImage(index) {
-  //     images.removeClass('active').fadeOut(500);
-  //     images.eq(index).addClass('active').fadeIn(500);
-  //   }
+  AddtoCart.addEventListener('click', function() {
+    // Find the active article
+    const activeItem = Product.querySelector('article.active');
+    if (activeItem) {
+      // Get the data-url attribute of the active article
+      const dataUrl = activeItem.getAttribute('data-url');
+      if (dataUrl) {
+        // Redirect to the URL
+        window.location.href = dataUrl;
+      }
+    }
+  });
 
-  //   $('.prod-next').click(function() {
-  //     currentImageIndex = (currentImageIndex + 1) % totalImages;
-  //     showImage(currentImageIndex);
-  //   });
-
-  //   $('.prod-prev').click(function() {
-  //     currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
-  //     showImage(currentImageIndex);
-  //   });
-
-  //   // Initial setup
-  //   images.hide().eq(currentImageIndex).show();
-  // });
 
   function initializeImageSlider() {
     const images = document.querySelectorAll('.image-container .prod');
@@ -398,6 +402,11 @@
               "type": "text",
               "id": "prod_title",
               "label": "Price Title"
+            },
+            {
+              "type": "url",
+              "id": "link",
+              "label": "Product Link"
             },
             {
                 "type":"header",
