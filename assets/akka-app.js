@@ -116,10 +116,9 @@ function renderTemplates() {
             i && i.remove();
             e.insertAdjacentHTML("afterend", s);
 
-            console.log('test');
             // Dispatch a custom event after the HTML change
             const event = new Event('htmlContentChanged');
-            e.dispatchEvent(event);
+            event.dispatchEvent(event);
         }
     });
 }
