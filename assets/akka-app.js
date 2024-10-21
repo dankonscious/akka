@@ -159,10 +159,6 @@ var rellax = new Rellax('.rellax');
 
 // Get the query parameter from the URL
 var qparam = window.location.search.replace('?', '');
-
-// If there is no query parameter, do nothing
-if (qparam == "") return;
-
 // Select all anchor elements and elements with the data-link attribute
 var els = document.querySelectorAll("a, [data-link]");
 
