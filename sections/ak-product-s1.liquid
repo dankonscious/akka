@@ -276,34 +276,6 @@
 </section>
 
 <script>
-  const Hero = document.querySelector('#hero');
-  const ProductItems = Hero.querySelectorAll('article');
-  const AddtoCart = Hero.querySelectorAll('.addtocart');
-
-  ProductItems.forEach(function(item) {
-    item.addEventListener('click', function() {
-      ProductItems.forEach(function(article) {
-        article.classList.remove('active');
-      });
-      item.classList.add('active');
-    });
-  });
-
-  AddtoCart.forEach(function(button) {
-    button.addEventListener('click', function() {
-      // Find the active article
-      const activeItem = Product.querySelector('article.active');
-      if (activeItem) {
-        // Get the data-url attribute of the active article
-        const dataUrl = activeItem.getAttribute('data-url');
-        if (dataUrl) {
-          // Redirect to the URL
-          window.location.href = dataUrl;
-        }
-      }
-    });
-  });
-
 
   function initializeImageSlider() {
     const images = document.querySelectorAll('.image-container .prod');
@@ -341,8 +313,37 @@
 
   // Initialize the slider on DOMContentLoaded
   document.addEventListener("DOMContentLoaded", initializeImageSlider);
-  document.addEventListener("htmlContentChanged", initializeImageSlider);
-  document.addEventListener("htmlContentChanged", function(){ console.log('test') });
+  document.addEventListener("htmlContentChanged", function(){
+    initializeImageSlider();
+    
+    const Hero = document.querySelector('#hero');
+    const ProductItems = Hero.querySelectorAll('article');
+    const AddtoCart = Hero.querySelectorAll('.addtocart');
+  
+    ProductItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        ProductItems.forEach(function(article) {
+          article.classList.remove('active');
+        });
+        item.classList.add('active');
+      });
+    });
+  
+    AddtoCart.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Find the active article
+        const activeItem = Product.querySelector('article.active');
+        if (activeItem) {
+          // Get the data-url attribute of the active article
+          const dataUrl = activeItem.getAttribute('data-url');
+          if (dataUrl) {
+            // Redirect to the URL
+            window.location.href = dataUrl;
+          }
+        }
+      });
+    });
+  });
 
 </script>
 
