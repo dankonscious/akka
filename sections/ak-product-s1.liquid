@@ -223,7 +223,7 @@
             </section>
           </div>
 
-          <div class="prodbox flex flex-col justify-center items-center min-w-[240px] w-full max-w-[399px]">
+          <div class="prodbox flex flex-col justify-center items-center min-w-[240px] w-full max-w-[399px] mt-[32px]">
             {% for block3 in section.blocks %}
                 {% if block3.type == 'block3' %}
                     <article data-link="{{ block3.settings.link }}" class="flex gap-8 items-start px-3.5 py-4 max-w-full mb-4 leading-snug border border-indigo-900 border-solid text-[#2E3666] w-[399px] max-[1200px]:gap-[18px]">
@@ -239,7 +239,7 @@
                             </p>
                         </div>
                         <div class="flex flex-col items-center text-xl text-center font-['Heebo'] max-[1200px]:w-[43%]">
-                            <span class="gap-1 px-4 py-2 bg-zinc-100 rounded-[100px]">Save {{ block3.settings.save }}</span>
+                            <span class="gap-1 px-2 py-2 bg-zinc-100 rounded-[100px]">Save {{ block3.settings.save }}</span>
                             <p class="mt-2 font-bold">{{ block3.settings.per_bottle }}/bottle</p>
                         </div>
                     </article>
