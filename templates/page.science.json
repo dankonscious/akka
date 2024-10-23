@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "layout": "akka.theme",
   "sections": {
@@ -153,7 +153,7 @@
       "type": "ak-science-s6",
       "settings": {
         "text_content": "Limiting sugar, alcohol, trans fats and fried food are great steps towards improving your liver health. We created AKKA to accelerate the process.",
-        "link_url": "product.html",
+        "link_url": "https://tryakka.com/pages/product",
         "link_text": "shop akka",
         "desktop_background_image": "shopify://shop_images/science-sec5-bg.png",
         "mobile_background_image": "shopify://shop_images/Frame_6_-shop_b0d8df00-be68-4393-9984-4e53899f2dc4.png"
