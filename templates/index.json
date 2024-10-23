@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "layout": "akka.theme",
   "sections": {
@@ -53,7 +53,7 @@
         "mobile_image_3": "shopify://shop_images/9eTKrHSnmf9ai6iVhaBgjpy3rWU.png",
         "heading": "<span class=\"font-['blisstwin']\">Next Generation</span>  Liver Rejuvenation",
         "description": "Your liver is responsible for over 500 different functions. Our researchers have created the ultimate supplement to help support it.",
-        "cta_link": "",
+        "cta_link": "https://tryakka.com/pages/product?",
         "cta_label": "SHOP AKKA"
       }
     },
