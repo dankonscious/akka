@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "layout": "akka.theme",
   "sections": {
@@ -198,7 +198,7 @@
         "title_part_1": "Liver health is",
         "title_part_2": "system health",
         "content_text": "AKKA synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients, meticulously chosen to optimize liver function and health.",
-        "link_url": "product.html",
+        "link_url": "https://tryakka.com/pages/product",
         "link_text": "shop akka",
         "image_bottom_desktop": "shopify://shop_images/sec2-imgbottom.png",
         "image_bottom_mobile": "shopify://shop_images/sec2-imgbottom-mob.png"
