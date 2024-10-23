@@ -162,27 +162,29 @@ var qparam = window.location.search.replace('?', '');
 // Select all anchor elements and elements with the data-link attribute
 var els = document.querySelectorAll("a, [data-link]");
 
-// Loop through each element and update the href or data-link
-els.forEach(function(element) {
-  // Check if the element is an anchor (has an href) or has a data-link attribute
-  var currentUrl = element.tagName.toLowerCase() === 'a' ? 
-                   element.getAttribute('href') : 
-                   element.getAttribute('data-link');
-
-  // If there is a URL or data-link value, update it
-  if (currentUrl) {
-    // If the current URL already has a query string, append the new parameter
-    if (currentUrl.includes('?')) {
-      currentUrl += '&' + qparam;
-    } else {
-      currentUrl += '?' + qparam;
+if ( qparam ) {
+  // Loop through each element and update the href or data-link
+  els.forEach(function(element) {
+    // Check if the element is an anchor (has an href) or has a data-link attribute
+    var currentUrl = element.tagName.toLowerCase() === 'a' ? 
+                     element.getAttribute('href') : 
+                     element.getAttribute('data-link');
+  
+    // If there is a URL or data-link value, update it
+    if (currentUrl) {
+      // If the current URL already has a query string, append the new parameter
+      if (currentUrl.includes('?')) {
+        currentUrl += '&' + qparam;
+      } else {
+        currentUrl += '?' + qparam;
+      }
+  
+      // Set the updated URL back to href or data-link
+      if (element.tagName.toLowerCase() === 'a') {
+        element.setAttribute('href', currentUrl);
+      } else {
+        element.setAttribute('data-link', currentUrl);
+      }
     }
-
-    // Set the updated URL back to href or data-link
-    if (element.tagName.toLowerCase() === 'a') {
-      element.setAttribute('href', currentUrl);
-    } else {
-      element.setAttribute('data-link', currentUrl);
-    }
-  }
-});
+  });
+}
