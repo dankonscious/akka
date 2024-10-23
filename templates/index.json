@@ -342,7 +342,7 @@
         "background_image_desktop": "shopify://shop_images/sec7-background.png",
         "background_image_mobile": "shopify://shop_images/sec7-background-mob.png",
         "icon_image_check": "shopify://shop_images/check.png",
-        "button_link": "/pages/product.html",
+        "button_link": "https://tryakka.com/pages/product",
         "button_text": "Shop Akka"
       }
     }
