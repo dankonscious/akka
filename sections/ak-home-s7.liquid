@@ -1,30 +1,30 @@
-<section id="section7" class="overflow-hidden pt-24 font-['syne'] max-[1200px]:pt-0" style="background: linear-gradient(126deg, rgba(244, 217, 204, 0.00) 63.13%, #F4D9CC 102.44%), linear-gradient(0deg, #F4D9CC 0%, #F4D9CC 100%), linear-gradient(0deg, rgba(244, 217, 204, 0.20) 0%, rgba(244, 217, 204, 0.20) 100%), linear-gradient(298deg, #D2B699 -6.57%, #C3A789 18.13%, #D5B99D 61.65%, #FFE8D0 108.57%);">
-  <div class="flex max-[1200px]:flex-col-reverse justify-center pl-[200px] max-[1200px]:pl-0">
-    <div class="flex flex-col w-[624px] max-[1200px]:w-full  max-[1200px]:p-[16px] max-[1200px]:pb-[64px]">
-      <div class="flex flex-col self-stretch my-auto text-[#2E3666] max-[1200px]:max-w-full max-[1200px]:mt-0">
-        <h1 class="flex flex-col max-w-full text-[70px] leading-none w-[624px] max-[1200px]:text-[40px] capitalize">
-          <span class="overflow-hidden max-w-full max-[1200px]:text-[40px]">{{ section.settings.title }}</span>
-          <span class="overflow-hidden py-0.5 mt-2 w-full max-[1200px]:max-w-full max-[1200px]:text-[40px] font-['blisstwin'] max-lg:tracking-[-0.76px]">{{ section.settings.subtitle }}</span>
+<section id="section7" class="overflow-hidden pt-24 font-['syne'] max-lg:pt-0" style="background: linear-gradient(126deg, rgba(244, 217, 204, 0.00) 63.13%, #F4D9CC 102.44%), linear-gradient(0deg, #F4D9CC 0%, #F4D9CC 100%), linear-gradient(0deg, rgba(244, 217, 204, 0.20) 0%, rgba(244, 217, 204, 0.20) 100%), linear-gradient(298deg, #D2B699 -6.57%, #C3A789 18.13%, #D5B99D 61.65%, #FFE8D0 108.57%);">
+  <div class="flex max-lg:flex-col-reverse justify-center pl-[200px] max-lg:pl-0">
+    <div class="flex flex-col w-[624px] max-lg:w-full  max-lg:p-[16px] max-lg:pb-[64px]">
+      <div class="flex flex-col self-stretch my-auto text-[#2E3666] max-lg:max-w-full max-lg:mt-0">
+        <h1 class="flex flex-col max-w-full text-[70px] leading-none w-[624px] max-lg:text-[40px] capitalize">
+          <span class="overflow-hidden max-w-full max-lg:text-[40px]">{{ section.settings.title }}</span>
+          <span class="overflow-hidden py-0.5 mt-2 w-full max-lg:max-w-full max-lg:text-[40px] font-['blisstwin'] max-lg:tracking-[-0.76px]">{{ section.settings.subtitle }}</span>
         </h1>
-        <div class="mt-8 w-full [&>p]:text-[22px] [&>p]:max-lg:text-[20px] [&>p]:tracking-[0.44px] [&>p]:leading-[140%] max-[1200px]:max-w-full [&>p]:text-[#2E3666]">
+        <div class="mt-8 w-full [&>p]:text-[22px] [&>p]:max-lg:text-[20px] [&>p]:tracking-[0.44px] [&>p]:leading-[140%] max-lg:max-w-full [&>p]:text-[#2E3666]">
           {{ section.settings.description }}
         </div>
         <div class="my-[32px] max-w-full w-[573px]">
-          <h2 class="text-2xl max-[1200px]:text-[18px] font-semibold tracking-[0.48px] py-[16px] max-[1200px]:py-[8px] whitespace-nowrap max-w-[566px] max-[1200px]:max-w-full">
+          <h2 class="text-2xl max-lg:text-[18px] font-semibold tracking-[0.48px] py-[16px] max-lg:py-[8px] whitespace-nowrap max-w-[566px] max-lg:max-w-full">
             BENEFITS:
           </h2>
           <ul class="list-none p-0">
             {% for benefit in section.blocks %}
-            <li class="flex gap-2.5 max-[1200px]:gap-[10px] items-center max-[1200px]:items-start py-4 border-t border-[#2E3666] max-[1200px]:max-w-full">
+            <li class="flex gap-2.5 max-lg:gap-[10px] items-center max-lg:items-start py-4 border-t border-[#2E3666] max-lg:max-w-full">
               <img loading="lazy" src="{{ benefit.settings.icon_image | img_url: 'master' }}" alt="" class="object-contain shrink-0 w-6 aspect-square" />
-              <span class="min-w-[240px] w-[539px] max-[1200px]:w-full max-[1200px]:max-w-full text-[22px] max-[1200px]:text-[20px] tracking-[0.44px]">
+              <span class="min-w-[240px] w-[539px] max-lg:w-full max-lg:max-w-full text-[22px] max-lg:text-[20px] tracking-[0.44px]">
                 {{ benefit.settings.benefit_text }}
               </span>
             </li>
             {% endfor %}
           </ul>
         </div>
-        <a href="{{ section.settings.button_link }}" class="button w-fit max-[1200px]:mx-auto gap-[16px]">
+        <a href="{{ section.settings.button_link }}" class="button w-fit max-lg:mx-auto gap-[16px]">
           <span>{{ section.settings.button_text }}</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="34" viewBox="0 0 22 34" fill="none">
             <path d="M19.3476 23.404C19.3476 23.6817 19.2373 23.948 19.0409 24.1444C18.8445 24.3408 18.5782 24.4511 18.3005 24.4511C18.0227 24.4511 17.7564 24.3408 17.56 24.1444C17.3636 23.948 17.2533 23.6817 17.2533 23.404V12.576L5.08033 24.749C4.88183 24.9339 4.61928 25.0346 4.348 25.0298C4.07672 25.0251 3.81789 24.9152 3.62604 24.7233C3.43418 24.5314 3.32429 24.2726 3.3195 24.0013C3.31471 23.7301 3.41541 23.4675 3.60038 23.269L15.7716 11.0943H4.94362C4.6659 11.0943 4.39956 10.984 4.20318 10.7876C4.00681 10.5912 3.89648 10.3249 3.89648 10.0471C3.89648 9.76942 4.00681 9.50308 4.20318 9.3067C4.39956 9.11032 4.6659 9 4.94362 9H18.3005C18.5782 9 18.8445 9.11032 19.0409 9.3067C19.2373 9.50308 19.3476 9.76942 19.3476 10.0471V23.404Z" fill="#EDEEF5"/>
@@ -32,10 +32,10 @@
         </a>
       </div>
     </div>
-    <div class="flex flex-col ml-5 w-[905px] max-[1200px]:ml-0 max-[1200px]:w-full relative">
-      <img loading="lazy" src="{{ section.settings.background_image_desktop | img_url: 'master'  }}" class="object-cover grow w-full aspect-[0.97] max-[1200px]:mt-10 max-[1200px]:max-w-full max-[1200px]:hidden" />
-      <img loading="lazy" src="{{ section.settings.background_image_mobile | img_url: 'master'  }}" class="w-full hidden max-[1200px]:block" />
-      <div class="w-[147px] absolute top-0 right-[150px] max-md:top-[21px] max-md:right-[16px]">
+    <div class="flex flex-col ml-5 w-[905px] max-lg:ml-0 max-lg:w-full relative">
+      <img loading="lazy" src="{{ section.settings.background_image_desktop | img_url: 'master'  }}" class="object-cover grow w-full aspect-[0.97] max-lg:mt-10 max-lg:max-w-full max-lg:hidden" />
+      <img loading="lazy" src="{{ section.settings.background_image_mobile | img_url: 'master'  }}" class="w-full hidden max-lg:block" />
+      <div class="w-[147px] absolute top-0 right-[150px] max-lg:top-[21px] max-lg:right-[16px]">
         <div class="relative">
           <img class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" src="{{ section.settings.icon_image_check | img_url: 'master'  }}" alt="">
           <svg class="rotate-me" width="147" height="148" viewBox="0 0 147 148" fill="none" xmlns="http://www.w3.org/2000/svg">

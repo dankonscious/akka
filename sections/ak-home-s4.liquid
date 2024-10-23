@@ -1,27 +1,27 @@
 
 
-<section id="section4" class="flex overflow-hidden relative flex-col h-[1463px] max-[1200px]:px-[16px] max-[1200px]:h-auto">
+<section id="section4" class="flex overflow-hidden relative flex-col h-[1463px] max-lg:px-[16px] max-lg:h-auto">
     <img loading="lazy" src="{{ section.settings.background_image | img_url: 'master' }}" alt="" class="object-cover absolute inset-0 size-full"/>
 
-    <div class="w-full h-full absolute top-0 left-0 flex items-center justify-center max-[1200px]:hidden">
+    <div class="w-full h-full absolute top-0 left-0 flex items-center justify-center max-lg:hidden">
         <div class="rotate-me border-[#2e3666] border-solid border-[2px] min-w-[1350px] min-h-[1350px] relative rounded-full">
             <div class="w-[15px] h-[15px] bg-[#2e3666] rotate-45 absolute top-[-9px] left-[50%]"></div>
         </div>
     </div>
 
-    <div class="box relative w-full max-[1200px]:max-w-full font-['syne'] h-full max-[1200px]:h-auto">
-    <div class="z-10 flex-col items-center self-center pt-[164px] pb-[171px] mt-0 max-w-full border-x border-solid border-[#2E3666] w-[956px] mx-auto max-[1200px]:py-24 max-[1200px]:mt-0 h-full max-[1200px]:pt-[64px] max-[1200px]:pb-[32px] max-[1200px]:border-none max-[1200px]:w-full max-[1200px]:max-w-full max-[1200px]:h-auto">
-        <div class="flex flex-col items-center max-w-full text-7xl text-slate-700 w-[856px] max-[1200px]:text-4xl mx-auto">
-        <h2 class="leading-[79px] max-[1200px]:max-w-full max-[1200px]:text-[33px]">{{ section.settings.heading_1 }}</h2>
-        <h3 class="leading-[normal] max-[1200px]:max-w-full max-[1200px]:text-[33px] font-['blisstwin']">{{ section.settings.heading_2 }}</h3>
+    <div class="box relative w-full max-lg:max-w-full font-['syne'] h-full max-lg:h-auto">
+    <div class="z-10 flex-col items-center self-center pt-[164px] pb-[171px] mt-0 max-w-full border-x border-solid border-[#2E3666] w-[956px] mx-auto max-lg:py-24 max-lg:mt-0 h-full max-lg:pt-[64px] max-lg:pb-[32px] max-lg:border-none max-lg:w-full max-lg:max-w-full max-lg:h-auto">
+        <div class="flex flex-col items-center max-w-full text-7xl text-slate-700 w-[856px] max-lg:text-4xl mx-auto">
+        <h2 class="leading-[79px] max-lg:max-w-full max-lg:text-[33px]">{{ section.settings.heading_1 }}</h2>
+        <h3 class="leading-[normal] max-lg:max-w-full max-lg:text-[33px] font-['blisstwin']">{{ section.settings.heading_2 }}</h3>
         </div>
         
-        <video class="video max-w-[calc(100%_+_2px)] ml-[-1px] mt-9 w-[101%] max-[1200px]:max-w-full" autoplay loop muted playsinline>
+        <video class="video max-w-[calc(100%_+_2px)] ml-[-1px] mt-9 w-[101%] max-lg:max-w-full" autoplay loop muted playsinline>
         <source src="{{ section.settings.video_url }}" type="video/mp4">
         </video>
 
-        <div class="flex flex-col items-center mt-[42px] mb-0 max-w-full w-[847px] max-[1200px]:mb-2.5 text-center mx-auto max-[1200px]:mt-[32px]">
-        <span class="text-[#2E3666] max-[1200px]:max-w-full text-2xl leading-[normal] tracking-[0.48px] max-[1200px]:text-[20px] max-[1200px]:text-left">{{ section.settings.content }}</span>
+        <div class="flex flex-col items-center mt-[42px] mb-0 max-w-full w-[847px] max-lg:mb-2.5 text-center mx-auto max-lg:mt-[32px]">
+        <span class="text-[#2E3666] max-lg:max-w-full text-2xl leading-[normal] tracking-[0.48px] max-lg:text-[20px] max-lg:text-left">{{ section.settings.content }}</span>
         </div>
 
         <a href="{{ section.settings.button_link }}" class="button mx-auto mt-[32px] gap-[16px] !flex w-fit uppercase">
@@ -56,7 +56,7 @@
     bottom: 22px;
     left: 0;
 }
-@media(max-width: 1200px ) {
+@media(max-width: 1024px ) {
     #section4 .box::before,
     #section4 .box::after {
         content:unset;
