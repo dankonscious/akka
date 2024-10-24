@@ -97,9 +97,9 @@
       to {opacity: 1;}
     }
 </style>
-<section id="hero" class="bg-no-repeat bg-cover bg-center min-h-[980px] flex items-center relative max-md:min-h-[660px] overflow-hidden xl:h-[980px] ">  
+<section id="hero" class="bg-no-repeat bg-cover bg-center min-h-[980px] flex items-center relative max-lg:min-h-[660px] overflow-hidden xl:h-[980px] ">  
   <div class="whitebg absolute w-full h-full"></div>
-  <div class="circlesop absolute max-w-[1728px] w-full h-full z-10 max-[1200px]:hidden left-[50%] translate-x-[-50%]">
+  <div class="circlesop absolute max-w-[1728px] w-full h-full z-10 max-lg:hidden left-[50%] translate-x-[-50%]">
     <div class="relative w-full h-full ">
       {% comment %} left Circle {% endcomment %}
       <div class="absolute left-[-27%] top-[-27px] w-[1034px] h-[1034px]  rotate-[171deg]">
@@ -126,15 +126,15 @@
     </div>
   </div>
 
-  <div class="circlebg absolute top-0 left-0 z-0 h-full w-full bg-no-repeat bg-cover bg-center max-md:w-[348px] max-md:h-[348px] max-md:inset-[50%] max-md:translate-x-[-50%] max-md:translate-y-[-50%]">
-    <img class="rotate-mobile hidden max-[1200px]:block" src="{{ section.settings.circle_graphic_mobile | img_url: 'master' }}" alt="">
+  <div class="circlebg absolute top-0 left-0 z-0 h-full w-full bg-no-repeat bg-cover bg-center max-lg:w-[348px] max-lg:h-[348px] max-lg:inset-[50%] max-lg:translate-x-[-50%] max-lg:translate-y-[-50%]">
+    <img class="rotate-mobile hidden max-lg:block" src="{{ section.settings.circle_graphic_mobile | img_url: 'master' }}" alt="">
   </div>
 
   <div class="flex items-center justify-center m-auto h-full">
-    <div class="textbg title overflow-hidden relative z-10 bg-contain bg-center bg-no-repeat w-[971px] max-[1200px]:w-fit max-md:bg-none">
-      <h1 class="text-downup text-white text-[70px] leading-[normal] tracking-[-1.4px] capitalize font-['syne'] max-md:text-[40px] text-center">
+    <div class="textbg title overflow-hidden relative z-10 bg-contain bg-center bg-no-repeat w-[971px] max-lg:w-fit max-lg:bg-none">
+      <h1 class="text-downup text-white text-[70px] leading-[normal] tracking-[-1.4px] capitalize font-['syne'] max-lg:text-[40px] text-center">
         {{ section.settings.heading }}
-        <span class="font-['Blisstwin'] max-md:block">{{ section.settings.subheading }}</span>
+        <span class="font-['Blisstwin'] max-lg:block">{{ section.settings.subheading }}</span>
       </h1>
     </div>
   </div>

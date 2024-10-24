@@ -17,20 +17,20 @@
 }
 </style>
 <section id="hero" 
-  class="bg-no-repeat bg-cover bg-center min-h-[1000px] flex items-center relative max-md:min-h-[660px] overflow-hidden" style="background-image:url({{ section.settings.hero_background_image | img_url: 'master' }});">
+  class="bg-no-repeat bg-cover bg-center min-h-[1000px] flex items-center relative max-lg:min-h-[660px] overflow-hidden" style="background-image:url({{ section.settings.hero_background_image | img_url: 'master' }});">
   <div class="circle-bg absolute top-[45px] right-[130px] z-0 max-w-[604px] w-full h-[605px]               
               bg-no-repeat bg-cover bg-center 
-              max-md:w-[348px] max-md:h-[348px] max-md:inset-[50%] 
-              max-md:translate-x-[-50%] max-md:translate-y-[-50%]">
-  <img class="rotate-me  max-[1200px]:hidden" src="{{ section.settings.hero_circle_image | img_url: 'master' }}" alt="">
-  <img class="rotate-me  hidden max-[1200px]:block" src="{{ section.settings.hero_circle_image_mobile | img_url: 'master' }}" alt="">
+              max-lg:w-[348px] max-lg:h-[348px] max-lg:inset-[50%] 
+              max-lg:translate-x-[-50%] max-lg:translate-y-[-50%]">
+  <img class="rotate-me  max-lg:hidden" src="{{ section.settings.hero_circle_image | img_url: 'master' }}" alt="">
+  <img class="rotate-me  hidden max-lg:block" src="{{ section.settings.hero_circle_image_mobile | img_url: 'master' }}" alt="">
   </div>
   <div class="flex items-center justify-center m-auto h-full">
     <div class="title overflow-hidden relative z-10 
                 bg-cover bg-center bg-no-repeat" style="background-image:url({{ section.settings.hero_text_background | img_url: 'master' }});">
       <h1 class="animation-moveup text-white text-[70px] leading-[normal] 
-                tracking-[-1.4px] capitalize font-['syne'] max-md:text-[40px] max-md:text-center">
-        {{ section.settings.hero_title }}<span class="font-['Blisstwin'] max-md:block capitalize ml-[16px] max-md:ml-0">{{ section.settings.hero_subtitle }}</span>
+                tracking-[-1.4px] capitalize font-['syne'] max-lg:text-[40px] max-lg:text-center">
+        {{ section.settings.hero_title }}<span class="font-['Blisstwin'] max-lg:block capitalize ml-[16px] max-lg:ml-0">{{ section.settings.hero_subtitle }}</span>
       </h1>
     </div>
   </div>
