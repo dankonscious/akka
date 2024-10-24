@@ -32,7 +32,7 @@
               </div>
 
             <!-- SLIDER Desktop PART -->
-            <div class="swiper swiper-{{ section.id }} w-full h-full mt-16 max-[1200px] max-lg:!hidden">
+            <div class="swiper swiper-{{ section.id }} w-full h-full mt-16 max-lg:!hidden">
               <div class="swiper-wrapper">
                 {% for testimonial in section.blocks %}
                   <div class="swiper-slide">
@@ -93,7 +93,7 @@
                   <div class="flex gap-10 items-center max-lg:max-w-full">
                     <!--SLIDE 1-->
                     <div class="flex self-stretch my-auto min-w-[240px] w-[1320px] max-lg:max-w-full">                      
-                      <article class="flex flex-wrap gap-2 items-start w-full max-lg:max-w-full">
+                      <article class="flex flex-col justify-center gap-2 items-start w-full max-lg:max-w-full">
                         <div class="flex items-start justify-between max-w-full w-full">                            
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain w-full max-w-[150px]" alt="5 star rating" />
                           <div class="max-w-[150px] w-full">
@@ -107,7 +107,7 @@
                             </div>
                           </div>                          
                         </div>
-                        <blockquote class="grow shrink gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full h-[210px]">
+                        <blockquote class="gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full h-[210px] mx-auto">
                           "I was struggling with chronic fatigue and auto-immune problems. I was constantly breaking out in rashes and itching all over my body. Akka gave me a 'clean body' feeling in just a few weeks and I couldn't be happier. Amazing focus and concentration. I feel 20 years younger."
                         </blockquote>
                         <div class="flex max-w-[220px] w-full mx-auto">
@@ -121,7 +121,7 @@
                   <div class="flex gap-10 items-center max-lg:max-w-full">
                     <!--SLIDE 2-->
                     <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-lg:max-w-full">   
-                      <article class="flex flex-wrap gap-2 items-start w-full  max-lg:max-w-full">
+                      <article class="flex flex-col justify-center gap-2 items-start w-full  max-lg:max-w-full">
                         <div class="flex items-start justify-between max-w-full w-full">
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
                           <div class="max-w-[150px] w-full">
@@ -135,7 +135,7 @@
                             </div>
                           </div>                          
                         </div>
-                        <blockquote class="grow shrink gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full h-[210px]">
+                        <blockquote class="mx-auto gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full h-[210px]">
                           "The effect was immediate, and dramatic. My energy levels improved, and the bloating disappeared. My previous issues with fatigue and discomfort after meals became a thing of the past."
                         </blockquote>
                         <div class="flex max-w-[220px] w-full mx-auto">
@@ -149,7 +149,7 @@
                   <div class="flex gap-10 items-center max-lg:max-w-full">
                     <!--SLIDE 3-->
                     <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-lg:max-w-full">                      
-                      <article class="flex flex-wrap gap-2 items-start w-full max-lg:max-w-full">
+                      <article class="flex flex-col justify-center gap-2 items-start w-full max-lg:max-w-full">
                         <div class="flex items-start justify-between max-w-full w-full">                            
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
                           <div class="max-w-[150px] w-full">
@@ -163,7 +163,7 @@
                             </div>
                           </div>                          
                         </div>
-                        <blockquote class="grow shrink gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full h-[210px]">
+                        <blockquote class="mx-auto gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full h-[210px]">
                           “Akka was a godsend. I had no idea why I couldn't lose weight. I tried everything including hard core diets, exercise programs, and fat burner pills (they made the problem worse).   I had no idea that my liver was responsible.  I tried Akka and felt the effects in days.  My mental clarity has also been amazing. Five stars. “
                         </blockquote>
                         <div class="flex max-w-[220px] w-full mx-auto">
@@ -177,7 +177,7 @@
                   <div class="flex gap-10 items-center max-lg:max-w-full">
                     <!--SLIDE 4-->
                     <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-lg:max-w-full">     
-                      <article class="flex flex-wrap gap-2 items-start w-full max-lg:max-w-full">
+                      <article class="flex flex-col justify-center gap-2 items-start w-full max-lg:max-w-full">
                         <div class="flex items-start justify-between max-w-full w-full">
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
                           <div class="max-w-[150px] w-full">
@@ -191,7 +191,7 @@
                             </div>
                           </div>                          
                         </div>
-                        <blockquote class="grow shrink gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full h-[210px]">
+                        <blockquote class="mx-auto gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full h-[210px]">
                           “I was skeptical at first, as I had never been able to find something that truly worked, but Akka proved me wrong. Not only has my energy returned, but I've also started to lose some of the weight that seemed impossible to shed before. Akka has truly been a game-changer for me. A solid 5-star experience.”
                         </blockquote>
                         <div class="flex max-w-[220px] w-full mx-auto">
@@ -205,7 +205,7 @@
                   <div class="flex gap-10 items-center max-lg:max-w-full">
                     <!--SLIDE 5-->
                     <div class="flex flex-col self-stretch my-auto min-w-[240px] w-[1320px] max-lg:max-w-full">                      
-                      <article class="flex flex-wrap gap-2 items-start w-full max-lg:max-w-full">
+                      <article class="flex flex-col justify-center gap-2 items-start w-full max-lg:max-w-full">
                         <div class="flex items-start justify-between max-w-full w-full">                            
                           <img loading="lazy" src="{{ 'star.png' |  file_img_url: 'master' }}" class="object-contain max-w-full aspect-[5] w-[150px]" alt="5 star rating" />
                           <div class="max-w-[150px] w-full">
@@ -228,7 +228,7 @@
                           I believe Akka is something everyone should know about, especially those struggling with similar issues. It has not only improved my physical health but has also had a profound impact on my overall well-being and happiness. I've recommended it to everyone I care about.”
                         </blockquote>
                         <!--FOR MOBILE-->
-                        <blockquote class="grow shrink gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full hidden max-lg:block h-[210px]">
+                        <blockquote class="mx-auto gap-2 text-[18px] leading-[25.2px] min-w-[240px] text-[#2E3666] w-[564px] max-lg:max-w-full hidden max-lg:block h-[210px]">
                           ...The transformation was noticeable not just to me but to everyone around me. Colleagues and friends commented on how much happier and more energetic I seemed. I went from avoiding social gatherings to embracing them, thanks to the newfound confidence Akka gave me...
                         </blockquote>
                         <div class="flex max-w-[220px] w-full mx-auto">
