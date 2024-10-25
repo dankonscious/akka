@@ -14,6 +14,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/hzx2hdn.css">  
     <link href="{{ 'terms-conditions.css' | asset_url }}" rel="stylesheet">
+    {{ 'tailwind.css' | asset_url | stylesheet_tag }}
+    <style>
+        @font-face {
+          font-family: 'Syne';
+          src: url('{{ 'Syne-Regular.eot' | file_url }}');
+          src: url('{{ 'Syne-Regular.eot?#iefix' | file_url }}') format('embedded-opentype'),
+              url('{{ 'Syne-Regular.woff2' | file_url }}') format('woff2'),
+              url('{{ 'Syne-Regular.woff' | file_url }}') format('woff'),
+              url('{{ 'Syne-Regular.ttf' | file_url }}') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+    </style>
 </head>
 
 <body>
@@ -24,7 +38,7 @@
         </div>
     </div>
 </section>
-<section class="tc-numbertitle px-3 px-lg-0">
+<section class="tc-numbertitle px-3 px-lg-0 pb-[65px]">
     <div class="maxwidth maxwidth-430">
         <h1 class="color485397 fs30 fw700 myriadpro py-4 text-center">Terms & Conditions</h1>
         <h3 class="color1D1D1F myriadpro fs16 italic">
@@ -221,7 +235,7 @@
 
     </div>
 </section>
- <footer class="bgcolorE8EAFF mt-5">
+ {% comment %} <footer class="bgcolorE8EAFF mt-5">
         <div class="pt-5 pb-4 px-3 m-auto" style="max-width: 1360px;">
             <div class="">
                <div class="d-flex flex-column flex-lg-row justify-content-between m-auto mx-0">
@@ -277,7 +291,119 @@
             </div>
             
         </div>
-    </footer>   
+    </footer>    {% endcomment %}
+
+    <div id="shopify-section-sections--23592599814447__ak_footer_wNwe8X" class="shopify-section shopify-section-group-footer-group">
+        <section id="footer" class="flex flex-col bg-[#EDEEF5] font-['syne']">
+            <div class="flex flex-col py-16 w-full max-[1024px]:px-[16px] max-[1024px]:max-w-full max-w-[1328px] mx-auto">
+                <div class="flex flex-wrap gap-5 max-[1024px]:gap-[21px] justify-between items-start w-full">
+                <h2 class="text-[22px] text-[#2E3666] w-[597px] max-[1024px]:max-w-full max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">
+                    Sign up for our newsletter and get first access to the very best of our products, inspiration and community.
+                </h2>
+                <form class="relative leading-7 rounded-[100px] max-[1024px]:max-w-full">
+                    <label for="emailInput" class="sr-only">Enter your email</label>
+                    <input id="emailInput" type="email" placeholder="Enter your email" aria-label="Enter your email" class="font-['work_sans'] text-[18px] pl-6 tracking-[-0.36px] bg-white min-h-[55px] rounded-[100px] !text-[#2E3666] w-[562px] max-[1024px]:pl-5 max-[1024px]:max-w-full" fdprocessedid="d4vvxo">
+                    <button type="submit" class="button w-fit !text-[18px] !h-[55px] !font-bold absolute right-0 top-0 max-[1024px]:!px-[24px] !font-['Work_Sans'] max-[1200px]:!text-[16px]" fdprocessedid="5p5iwt">
+                    Sign me up!
+                    </button>
+                </form>
+                </div>
+                <nav class="flex flex-wrap gap-[40px] justify-between items-start pt-[32px] mt-[39px] max-w-full text-lg border-t-4 border-[#2E3666] text-[#2E3666] w-full capitalize max-[1024px]:flex-col max-[1024px]:gap-[32px]">
+                    <div class="w-[182px]">
+                        
+                        <img class="w-[90px]" src="//tryakka.com/cdn/shop/files/akka-text_1024x1024.png?v=1719315551" alt="Footer Logo">
+                        
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="gap-[10px] self-start p-[2px] font-bold whitespace-nowrap text-[#2E3666]">SITEMAP</h3>
+                        <ul class="flex flex-col items-start mt-[16px] text-[18px] max-[1200px]:mt-[8px]">
+                        
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/">Home</a>
+                            </li>
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/pages/our-approach">Our Approach</a>
+                            </li>
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/pages/science">The Science</a>
+                            </li>
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/pages/ingredient">Ingredients</a>
+                            </li>
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/pages/product">Product</a>
+                            </li>
+                            
+                                    
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col">
+                        <h3 class="gap-[10px] self-start p-[2px] font-bold uppercase whitespace-nowrap text-[#2E3666]">Information</h3>
+                        <ul class="flex flex-col items-start mt-[16px] max-[1200px]:mt-[8px]">
+                            
+                            
+                                <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="https://privacy.konscious.us/privacy-policy" target="_blank">Privacy Policy</a>
+                                </li>
+                            
+                                <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="https://tryakka.com/pages/shipping-refund-policy" target="_blank">Shipping and refund policy</a>
+                                </li>
+                            
+                                <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="https://tryakka.com/pages/terms-conditions/" target="_blank">Terms and conditions</a>
+                                </li>
+    
+                                <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="https://tryakka.com/pages/accessibility-statement" target="_blank">Accessibility Statement</a>
+                                </li>
+                            
+                                        
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col">
+                        <h3 class="gap-[10px] self-stretch p-[2px] font-bold text-[#2E3666]">CUSTOMER SERVICE</h3>
+                        <address class="gap-[10px] self-start p-[2px] mt-[16px] leading-7 not-italic normal-case max-[1200px]:mt-[8px]">            
+                            <span class="font-['Poppins']">hello@tryakka.com</span> <br>
+                            844-808-(AKKA) 2552 <br>
+                            Matawan, NJ, 07747
+                        </address>
+                        </div>
+                    </div>
+                </nav>
+                <div class="flex flex-col mt-10 w-full max-w-[1328px] text-[#2E3666] max-[1024px]:max-w-full">
+                    <div class="flex flex-wrap gap-[40px] items-center justify-between text-[20px] leading-[145%] tracking-[0.2px] max-[1024px]:max-w-full pr-[10px] max-[1024px]:gap-[10px] max-[1024px]:pr-0">
+                        <p class="self-stretch my-auto w-[874px] max-[1024px]:max-w-full max-[1024px]:w-full max-[1024px]:text-[16px] text-[#2E3666] font-['Syne']">© 2024 Enclave BioActives. All rights reserved.</p>
+                        <div class="flex items-center justify-between w-[58px]">
+                        
+                            <a href="https://www.facebook.com/akkasuperbiotics/" class="max-w-[25px] w-full">
+                            <img src="//tryakka.com/cdn/shop/files/facebook_1024x1024.png?v=1726163196" alt="Facebook">
+                            </a>
+                        
+                        
+                            <a href="https://www.instagram.com/tryakka/" class="max-w-[25px] w-full">
+                            <img src="//tryakka.com/cdn/shop/files/ig_1024x1024.png?v=1726163199" alt="Instagram">
+                            </a>
+                        
+                        </div>
+                    </div>
+                    <hr class="mt-[16px] w-full min-h-0 border-2 border-solid border-[#2E3666] max-[1024px]:max-w-full opacity-100">
+    
+                    <p class="mt-[16px] text-lg tracking-[-0.18px] leading-[145%] max-[1024px]:max-w-full text-[#2E3666] max-[1024px]:text-[14px] max-[1024px]:tracking-[-0.14px]">
+                        *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary, and testimonials are not claimed to represent typical results. All testimonials are by real people, and may not reflect the typical purchaser's experience, and are not intended to represent or guarantee that anyone will achieve the same or similar results.
+                    </p>
+                </div>
+            </div>
+        </section>    
+    </div>    
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
     
