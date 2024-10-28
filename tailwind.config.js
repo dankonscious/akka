@@ -9,5 +9,5 @@ module.exports = {
     './templates/*.liquid',
     './templates/*.json',
     './templates/customers/*.liquid'
-  ]
+  ]  
 }

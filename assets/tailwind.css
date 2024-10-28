@@ -4620,6 +4620,12 @@ html {
   }
 }
 
+@media (max-width: 1025px) {
+  .max-\[1025px\]\:w-auto {
+    width: auto;
+  }
+}
+
 @media not all and (min-width: 1024px) {
   .max-lg\:static {
     position: static;
@@ -5474,17 +5480,9 @@ html {
   }
 }
 
-@media not all and (min-width: 768px) {
-  .max-md\:relative {
-    position: relative;
-  }
-
-  .max-md\:hidden {
-    display: none;
-  }
-
-  .max-md\:flex-col {
-    flex-direction: column;
+@media (max-width: 1023px) {
+  .max-\[1023px\]\:w-auto {
+    width: auto;
   }
 }
 
