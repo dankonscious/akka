@@ -13,7 +13,8 @@
       </form>
       
       <script>
-        function alconfirmsubscribe() {
+        function alconfirmsubscribe(event) {
+          event.preventDefault(); // Prevent form default submission
           const emailInput = document.getElementById("emailInput");
           const email = emailInput.value;
       
@@ -141,9 +142,19 @@
       "label": "Facebook Icon"
     },
     {
+      "type": "url",
+      "id": "facebook_url",
+      "label": "Facebook URL"
+    },
+    {
       "type": "image_picker",
       "id": "instagram_icon",
       "label": "Instagram Icon"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram URL"
     },
     {
       "type": "text",
