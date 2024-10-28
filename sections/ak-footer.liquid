@@ -77,12 +77,12 @@
         <p class="self-stretch my-auto w-[874px] max-[1024px]:max-w-full max-[1024px]:w-full max-[1024px]:text-[16px]">© 2024 Enclave BioActives. All rights reserved.</p>
         <div class="flex items-center justify-between w-[58px]">
           {% if section.settings.facebook_icon %}
-            <a href="https://www.facebook.com/akkasuperbiotics/" class="max-w-[25px] w-full">
+            <a href="{{ section.settings.facebook_url | default: "https://www.facebook.com/akkasuperbiotics/" }}" class="max-w-[25px] w-full">
               <img src="{{ section.settings.facebook_icon | img_url: 'original' }}" alt="Facebook">
             </a>
           {% endif %}
           {% if section.settings.instagram_icon %}
-            <a href="https://www.instagram.com/tryakka/" class="max-w-[25px] w-full">
+            <a href="{{ section.settings.instagram_url | default: "https://www.instagram.com/tryakka/" }}" class="max-w-[25px] w-full">
               <img src="{{ section.settings.instagram_icon | img_url: 'original' }}" alt="Instagram">
             </a>
           {% endif %}
