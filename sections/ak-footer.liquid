@@ -4,13 +4,29 @@
       <h2 class="text-[22px] text-[#2E3666] w-[597px] max-[1024px]:max-w-full max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">
         {{ section.settings.newsletter_title | escape }}
       </h2>
-      <form class="relative leading-7 rounded-[100px] max-[1024px]:max-w-full">
+      <form class="relative leading-7 rounded-[100px] max-[1024px]:max-w-full" onsubmit="return alconfirmsubscribe()">
         <label for="emailInput" class="sr-only">Enter your email</label>
         <input id="emailInput" type="email" placeholder="Enter your email" aria-label="Enter your email" class="font-['work_sans'] text-[18px] pl-6 tracking-[-0.36px] bg-white min-h-[55px] rounded-[100px] !text-[#2E3666] w-[562px] max-[1024px]:pl-5 max-[1024px]:max-w-full" />
         <button type="submit" class="button w-fit !text-[18px] !h-[55px] !font-bold absolute right-0 top-0 max-[1024px]:!px-[24px] !font-['Work_Sans'] max-[1200px]:!text-[16px]">
           Sign me up!
         </button>
       </form>
+      
+      <script>
+        function alconfirmsubscribe() {
+          const emailInput = document.getElementById("emailInput");
+          const email = emailInput.value;
+      
+          console.log("event_subscribe", email);
+          dataLayer.push({ 'event': 'event_subscribe', 'email': email });
+          
+          alert("Thank you for Subscribing.");
+          emailInput.value = ""; // Clear input after submission
+      
+          return false; // Prevent form default submission
+        }
+      </script>
+
     </div>
     <nav class="flex flex-wrap gap-10 justify-between items-start pt-8 mt-[39px] max-w-full text-lg border-t-4 border-[#2E3666] text-[#2E3666] w-full capitalize max-[1024px]:flex-col max-[1024px]:gap-[32px]">
       <div class="w-[182px]">
