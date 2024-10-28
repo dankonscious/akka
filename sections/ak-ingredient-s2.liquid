@@ -22,18 +22,33 @@
         50% {transform: translateY(-100%);}
         100% {transform: translateY(0%);}
       }
+      @media (max-width: 1200px) and (min-width: 1024px) {
+        #section2 .title h3.title-left {
+          padding-right: 100px;
+          padding-left: 20px;
+        }
+        #section2 .title h3.title-rigth {
+          padding-left: 100px;
+        }
+      }
+      @media (max-width: 1023px) and (min-width: 645px) {
+        #section2 .title {
+          top: 247px;
+        }
+      }
+
 </style>
 <section id="section2" class="overflow-hidden font-['syne']">
-  <div class="min-h-[996px] bg-center bg-cover bg-no-repeat relative max-lg:min-h-0" style="background-image:url({{ section.settings.background_image | img_url: 'master' }}) ;">
+  <div class="min-h-[996px] bg-center bg-cover bg-no-repeat relative max-lg:min-h-0 max-" style="background-image:url({{ section.settings.background_image | img_url: 'master' }}) ;">
     <div class="imagetop max-lg:mb-[109px]">          
       <img class="animation-movedown max-lg:hidden" src="{{ section.settings.image_top_desktop | img_url: 'master' }}" alt="">
-      <img class="animation-movedown hidden max-lg:block" src="{{ section.settings.image_top_mobile | img_url: 'master' }}" alt="">
+      <img class="animation-movedown hidden max-lg:block mx-auto" src="{{ section.settings.image_top_mobile | img_url: 'master' }}" alt="">
     </div>
     <div class="title max-w-[var(--page-width)] w-full absolute top-[215px] max-lg:top-[127px] left-[50%] translate-x-[-50%] flex items-center justify-between overflow-hidden max-lg:flex-col">
-      <h3 class="text-white text-[94px] max-lg:text-[40px] leading-[normal] tracking-[-1.88px] max-lg:tracking-[-0.8px]">
+      <h3 class="text-white text-[94px] max-lg:text-[40px] leading-[normal] tracking-[-1.88px] max-lg:tracking-[-0.8px]  title-left">
         <span class="animation-moveup block">{{ section.settings.title_part_1 }}</span>
       </h3>
-      <h3 class="text-white text-[94px] max-lg:text-[40px] leading-[normal] tracking-[-1.88px] max-lg:tracking-[-0.8px] font-['Blisstwin']">
+      <h3 class="text-white text-[94px] max-lg:text-[40px] leading-[normal] tracking-[-1.88px] max-lg:tracking-[-0.8px] font-['Blisstwin'] title-rigth">
         <span class="animation-moveup block">{{ section.settings.title_part_2 }}</span>
       </h3>
     </div>
@@ -50,7 +65,7 @@
     </div>
     <div class="image-bot">
       <img class="animation-moveup max-lg:hidden" src="{{ section.settings.image_bottom_desktop | img_url: 'master' }}" alt="">
-      <img class="animation-moveup hidden max-lg:block" src="{{ section.settings.image_bottom_mobile | img_url: 'master' }}" alt="">
+      <img class="animation-moveup hidden max-lg:block mx-auto" src="{{ section.settings.image_bottom_mobile | img_url: 'master' }}" alt="">
     </div>
   </div>
 </section>
