@@ -19,7 +19,7 @@
     <div class="max-w-[125px] w-full sticky top-0 pt-[128px] mb-[703px] max-lg:hidden">
       {% for link in section.blocks %}
         {% if link.type == 'link' %}
-          <a href="#{{ link.settings.link_id }}" class="text-[24px] leading-[64px] no-underline">{{ link.settings.link_name }}</a>
+          <a href="{{ link.settings.link_id }}" class="text-[24px] leading-[64px] no-underline">{{ link.settings.link_name }}</a>
         {% endif %}
       {% endfor %}
     </div>
