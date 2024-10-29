@@ -1495,6 +1495,14 @@ video {
   min-height: 100vh;
 }
 
+.min-h-\[clac\(100vh-779px\)\] {
+  min-height: clac(100vh-779px);
+}
+
+.min-h-\[calc\(100vh-779px\)\] {
+  min-height: calc(100vh - 779px);
+}
+
 .\!w-\[unset\] {
   width: unset !important;
 }
