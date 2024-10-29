@@ -648,10 +648,6 @@ video {
   bottom: -50px;
 }
 
-.bottom-\[102px\] {
-  bottom: 102px;
-}
-
 .bottom-\[16px\] {
   bottom: 16px;
 }
@@ -1489,14 +1485,6 @@ video {
 
 .min-h-\[996px\] {
   min-height: 996px;
-}
-
-.min-h-\[100vh\] {
-  min-height: 100vh;
-}
-
-.min-h-\[clac\(100vh-779px\)\] {
-  min-height: clac(100vh-779px);
 }
 
 .min-h-\[calc\(100vh-779px\)\] {
