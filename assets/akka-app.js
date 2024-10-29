@@ -162,7 +162,7 @@ var qparam = window.location.search.replace('?', '');
 // Select all anchor elements and elements with the data-link attribute
 var els = document.querySelectorAll("a, [data-link]");
 
-if ( qparam ) {
+if (qparam) {
   // Loop through each element and update the href or data-link
   els.forEach(function(element) {
     // Check if the element is an anchor (has an href) or has a data-link attribute
@@ -170,8 +170,8 @@ if ( qparam ) {
                      element.getAttribute('href') : 
                      element.getAttribute('data-link');
   
-    // If there is a URL or data-link value, update it
-    if (currentUrl) {
+    // If there is a URL or data-link value and it does not contain a '#', update it
+    if (currentUrl && !currentUrl.includes('#')) {
       // If the current URL already has a query string, append the new parameter
       if (currentUrl.includes('?')) {
         currentUrl += '&' + qparam;
@@ -188,3 +188,4 @@ if ( qparam ) {
     }
   });
 }
+
