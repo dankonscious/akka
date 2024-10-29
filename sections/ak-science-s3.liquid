@@ -9,16 +9,20 @@
         background-image: url({{ section.settings.desktop_background_image | img_url: 'master' }});
     }
     @media(max-width: 1024px) {
-        #section2 .bg-image {
-            background-image: url({{ section.settings.mobile_background_image | img_url: 'master' }});
+        #section2 .bg-image {            
             height:660px;
             background-size:100% 100%;
         }
     }
     @media(max-width: 1024px) and (min-width: 767px) {
-      #section2 .bg-image {
+      /* #section2 .bg-image {
         padding-bottom:100%;
-      }    
+      }     */
+    }
+    @media(max-width: 767px) {
+      #section2 .bg-image {
+          background-image: url({{ section.settings.mobile_background_image | img_url: 'master' }});        
+      }
     }
  </style>
 <div id="section2-sticky">
