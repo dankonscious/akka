@@ -22,18 +22,33 @@
         50% {transform: translateY(-100%);}
         100% {transform: translateY(0%);}
       }
-      @media (max-width: 1200px) and (min-width: 1024px) {
+      @media (min-width: 1024px) and (max-width: 1200px) {
         #section2 .title h3.title-left {
           padding-right: 100px;
           padding-left: 20px;
         }
-        #section2 .title h3.title-rigth {
+        #section2 .title h3.title-right {
           padding-left: 100px;
         }
       }
-      @media (max-width: 1023px) and (min-width: 645px) {
+      @media (min-width: 645px) and (max-width: 1023px) {
         #section2 .title {
           top: 247px;
+        }
+      }
+      /* ipad pro */
+      @media (min-width: 1023px) and (max-width: 1200px) {
+        #section2 .image-bot {
+          transform: translateY(26%);
+          scale: 1.5;
+          z-index: 0;
+          position: relative;
+        }
+        #section2 .title {
+          z-index: 1;
+        }
+        #section2 .title-right {
+          text-align: center;
         }
       }
 
@@ -48,11 +63,11 @@
       <h3 class="text-white text-[94px] max-lg:text-[40px] leading-[normal] tracking-[-1.88px] max-lg:tracking-[-0.8px]  title-left">
         <span class="animation-moveup block">{{ section.settings.title_part_1 }}</span>
       </h3>
-      <h3 class="text-white text-[94px] max-lg:text-[40px] leading-[normal] tracking-[-1.88px] max-lg:tracking-[-0.8px] font-['Blisstwin'] title-rigth">
+      <h3 class="text-white text-[94px] max-lg:text-[40px] leading-[normal] tracking-[-1.88px] max-lg:tracking-[-0.8px] font-['Blisstwin'] title-right">
         <span class="animation-moveup block">{{ section.settings.title_part_2 }}</span>
       </h3>
     </div>
-    <div class="content max-w-[var(--page-width)] w-full absolute bottom-[102px] max-lg:bottom-[55px] left-[50%] translate-x-[-50%] overflow-hidden max-lg:w-[343px]">
+    <div class="content max-w-[var(--page-width)] w-full absolute bottom-[80px] max-lg:bottom-[55px] left-[50%] translate-x-[-50%] overflow-hidden max-lg:w-[343px]">
       <p class="text-white text-[32px] max-lg:text-[20px] leading-[normal] uppercase text-center animation-moveup">
         {{ section.settings.content_text }}
         <a href="{{ section.settings.link_url }}" class="inline-flex items-center justify-center gap-4 underline max-lg:flex max-lg:mt-8">
@@ -65,7 +80,7 @@
     </div>
     <div class="image-bot">
       <img class="animation-moveup max-lg:hidden" src="{{ section.settings.image_bottom_desktop | img_url: 'master' }}" alt="">
-      <img class="animation-moveup hidden max-lg:block mx-auto" src="{{ section.settings.image_bottom_mobile | img_url: 'master' }}" alt="">
+      <img class="animation-moveup hidden max-lg:block mx-auto w-full" src="{{ section.settings.image_bottom_mobile | img_url: 'master' }}" alt="">
     </div>
   </div>
 </section>
