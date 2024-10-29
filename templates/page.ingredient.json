@@ -49,21 +49,21 @@
         "link_erkYyn": {
           "type": "link",
           "settings": {
-            "link_id": "Resveratrol",
+            "link_id": "#Resveratrol",
             "link_name": "Resveratrol"
           }
         },
         "link_K36NFh": {
           "type": "link",
           "settings": {
-            "link_id": "Silymarin",
+            "link_id": "#Silymarin",
             "link_name": "Silymarin"
           }
         },
         "link_camwxT": {
           "type": "link",
           "settings": {
-            "link_id": "Artichoke",
+            "link_id": "#Artichoke",
             "link_name": "Artichoke"
           }
         },
