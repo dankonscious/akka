@@ -1,0 +1,7 @@
+<img {{ image_meta }} class="{{ image_class }}"
+     src="{{ image_url | img_url: image_size }}"
+     data-src="{{ image_url | img_url: image_size }}"
+     data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+     alt="{{ image_url.alt | default: shop.name }}"
+     data-sizes="auto"
+     itemprop="image">
