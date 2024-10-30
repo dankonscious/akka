@@ -1,0 +1,46 @@
+/* Define font families */
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/helvetica-neue/HelveticaNeue-Light.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/helvetica-neue/HelveticaNeue-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/helvetica-neue/HelveticaNeue.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/helvetica-neue/HelveticaNeue.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/helvetica-neue/HelveticaNeue-Medium.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/helvetica-neue/HelveticaNeue-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/helvetica-neue/HelveticaNeue-Bold.woff') format('woff'),
+        url('https://s3.amazonaws.com/konsciousketo.com/samcart/upsell-fonts/helvetica-neue/HelveticaNeue-Bold.woff2') format('woff2');
+}
+
+.font-helveticaneue { font-family: 'Helvetica Neue', sans-serif; }
+
+body { background: var(--bg-3, linear-gradient(100deg, rgba(254, 239, 230, 0.00) 71.22%, rgba(158, 158, 158, 0.40) 108.21%), linear-gradient(183deg, rgba(228, 231, 255, 0.00) 64.1%, #E4E7FF 78.37%), linear-gradient(180deg, rgba(254, 239, 230, 0.00) 5.5%, rgba(254, 239, 230, 0.40) 12.67%, rgba(255, 221, 200, 0.40) 37.98%), linear-gradient(180deg, rgba(254, 239, 230, 0.00) 41.23%, #FEEFE6 61.22%, #FFDDC8 104.37%), linear-gradient(137deg, #FFF -19.79%, #E4E7FF 77.24%)); background-blend-mode: multiply, normal, multiply, normal, normal; background-attachment: fixed; }
+
+.newsletter input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */ font-family: 'Helvetica Neue'; font-weight: 400; opacity: 1; /* Firefox */ }
+.newsletter input:-ms-input-placeholder { /* Internet Explorer 10-11 */ font-family: 'Helvetica Neue'; font-weight: 400; }
+.newsletter input::-ms-input-placeholder { /* Microsoft Edge */ font-family: 'Helvetica Neue'; font-weight: 400; }
+
+.radiobtn input[type="radio"]:checked + .radiobtn-circle { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Ccircle cx='10' cy='10' r='9' stroke='%233E488B'/%3E%3Ccircle cx='10' cy='10' r='5' fill='%233E488B'/%3E%3C/svg%3E"); }
+.radiobtn:has(:checked) { background: rgba(241, 122, 0, 0.10); }
+
+
+/****** Mobile View Only *******/
+@media (max-width: 767px) {
+
+}
