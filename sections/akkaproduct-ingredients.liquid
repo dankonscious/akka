@@ -9,7 +9,7 @@
         <div class="ingredients-list">
           {% for block in section.blocks %}
             <div class="flex md:flex-row flex-col md:gap-[47px] gap-[24px] items-center border border-[#A1A6CA] border-solid md:py-[32px] py-[24px] md:px-[36px] px-[15px]">
-                {% render 'ingredient-image' with image_url: block.settings.image_pdi, image_size: '180x180', image_class: 'w-[180px]' %}
+                {% render 'akkaproduct-ingredient-image' with image_url: block.settings.image_pdi, image_size: '180x180', image_class: 'w-[180px]' %}
                 <div class="md:text-start text-center">
                     <h5 class="font-helveticaneue text-[#3E488B] md:text-[24px] text-[20px] font-medium leading-[120%] mb-[8px]">{{ block.settings.heading_pdi }}</h5>
                     <div class="font-helveticaneue text-[#333961] md:text-[16px] text-[15px] font-normal leading-[160%] tracking-[0.24px]">
