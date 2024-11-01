@@ -184,9 +184,12 @@
         font-display: swap;
       }
       @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
     </style>
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    
+    <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
     {{ 'tailwind.css' | asset_url | stylesheet_tag }}
 
     {%- if request.page_type == 'index' -%}
