@@ -9,7 +9,7 @@
     </div>
     <section class="ak-flex ak-flex-wrap max-lg:ak-flex-col ak-items-stretch ak-mt-[64px] max-lg:ak-border max-lg:ak-border-solid max-lg:ak-border-[#2E3666] max-lg:ak-mt-8">
       {% for block in section.blocks %}
-        <article class="ak-flex ak-flex-col ak-px-3 ak-pt-4 ak-pb-8 ak-border ak-border-solid ak-border-[#2E3666] ak-min-w-[240px] ak-w-[443px] max-lg:ak-max-w-full max-lg:ak-border-none max-lg:ak-pb-4 ak-even:border-l-0 ak-even:border-r-0 max-lg:ak-mx-auto">
+        <article class="ak-flex ak-flex-col ak-px-3 ak-pt-4 ak-pb-8 ak-border ak-border-solid ak-border-[#2E3666] ak-min-w-[240px] ak-w-[443px] max-lg:ak-max-w-full max-lg:ak-border-none max-lg:ak-pb-4 even:ak-border-l-0 even:ak-border-r-0 max-lg:ak-mx-auto">
           <img loading="lazy" src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt }}" class="ak-object-contain ak-max-w-full ak-aspect-square ak-w-[420px]" />
           <h2 class="ak-items-start ak-mt-4 ak-w-full ak-text-[24px] ak-tracking-[0.48px] ak-leading-[40px] ak-uppercase max-lg:ak-max-w-full ak-font-['Blisstwin'] max-lg:ak-pr-[20%]">
             {{ block.settings.heading }}

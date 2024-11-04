@@ -3317,6 +3317,14 @@ html {
   font-family: "Work Sans", system-ui;
 }
 
+.even\:ak-border-l-0:nth-child(even) {
+  border-left-width: 0px;
+}
+
+.even\:ak-border-r-0:nth-child(even) {
+  border-right-width: 0px;
+}
+
 @media (max-width: 1400px) {
   .max-\[1400px\]\:ak-ml-\[40px\] {
     margin-left: 40px;
