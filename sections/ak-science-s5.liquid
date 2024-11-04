@@ -1,21 +1,21 @@
 <!-- sections/lifestyle-choices.liquid -->
-<section id="section4" class="remove-animation font-['syne'] overflow-x-hidden dynamic-sticky" data-full-m="true">
-  <div class="max-w-[var(--page-width)] w-full mx-auto py-[128px] text-[#2E3666] max-lg:py-8 max-lg:px-4">
-    <div class="max-w-[1062px] w-full mr-auto">
-      <h3 class="text-[70px] leading-[104%] max-lg:text-[40px]">{{ section.settings.title }}
-        <span class="font-['Blisstwin'] leading-[79%]">{{ section.settings.title2 }}</span>
+<section id="section4" class="remove-animation ak-font-['syne'] ak-overflow-x-hidden dynamic-sticky" data-full-m="true">
+  <div class="ak-max-w-[var(--page-width)] ak-w-full ak-mx-auto ak-py-[128px] ak-text-[#2E3666] max-lg:ak-py-8 max-lg:ak-px-4">
+    <div class="ak-max-w-[1062px] ak-w-full ak-mr-auto">
+      <h3 class="ak-text-[70px] ak-leading-[104%] max-lg:ak-text-[40px]">{{ section.settings.title }}
+        <span class="ak-font-['Blisstwin'] ak-leading-[79%]">{{ section.settings.title2 }}</span>
       </h3>      
-      <p class="text-[24px] leading-[36px] tracking-[0.48px] mt-[35px] max-lg:mt-[32px] max-lg:text-[20px] max-lg:leading-[140%]">{{ section.settings.description }}</p>
+      <p class="ak-text-[24px] ak-leading-[36px] ak-tracking-[0.48px] ak-mt-[35px] max-lg:ak-mt-[32px] max-lg:ak-text-[20px] max-lg:ak-leading-[140%]">{{ section.settings.description }}</p>
     </div>
-    <section class="flex flex-wrap max-lg:flex-col items-stretch mt-[64px] max-lg:border max-lg:border-solid max-lg:border-[#2E3666] max-lg:mt-8">
+    <section class="ak-flex ak-flex-wrap max-lg:ak-flex-col ak-items-stretch ak-mt-[64px] max-lg:ak-border max-lg:ak-border-solid max-lg:ak-border-[#2E3666] max-lg:ak-mt-8">
       {% for block in section.blocks %}
-        <article class="flex flex-col px-3 pt-4 pb-8 border border-solid border-[#2E3666] min-w-[240px] w-[443px] max-lg:max-w-full max-lg:border-none max-lg:pb-4 even:border-l-0 even:border-r-0 max-lg:mx-auto">
-          <img loading="lazy" src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt }}" class="object-contain max-w-full aspect-square w-[420px]" />
-          <h2 class="items-start mt-4 w-full text-[24px] tracking-[0.48px] leading-[40px] uppercase  max-lg:max-w-full font-['Blisstwin'] max-lg:pr-[20%]">
+        <article class="ak-flex ak-flex-col ak-px-3 ak-pt-4 ak-pb-8 ak-border ak-border-solid ak-border-[#2E3666] ak-min-w-[240px] ak-w-[443px] max-lg:ak-max-w-full max-lg:ak-border-none max-lg:ak-pb-4 ak-even:border-l-0 ak-even:border-r-0 max-lg:ak-mx-auto">
+          <img loading="lazy" src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.image_alt }}" class="ak-object-contain ak-max-w-full ak-aspect-square ak-w-[420px]" />
+          <h2 class="ak-items-start ak-mt-4 ak-w-full ak-text-[24px] ak-tracking-[0.48px] ak-leading-[40px] ak-uppercase max-lg:ak-max-w-full ak-font-['Blisstwin'] max-lg:ak-pr-[20%]">
             {{ block.settings.heading }}
-            <span class=" flex-1 shrink h-10 basis-0 min-w-[240px] w-[301px] hidden"></span>
+            <span class="ak-flex-1 ak-shrink ak-h-10 ak-basis-0 ak-min-w-[240px] ak-w-[301px] ak-hidden"></span>
           </h2>
-          <p class="description{{ forloop.index }} gap-2.5 self-stretch mt-4 max-w-full text-[22px] max-lg:text-[18] tracking-[0.44px] leading-[140%] w-[421px] max-lg:max-w-full max-lg:text-[18px] max-lg:mt-0 ">
+          <p class="description{{ forloop.index }} ak-gap-2.5 ak-self-stretch ak-mt-4 ak-max-w-full ak-text-[22px] max-lg:ak-text-[18px] ak-tracking-[0.44px] ak-leading-[140%] ak-w-[421px] max-lg:ak-max-w-full  max-lg:ak-mt-0 ">
             {{ block.settings.description }}
           </p>
         </article>
@@ -23,6 +23,7 @@
     </section>
   </div>
 </section>
+
 
 <style>
   

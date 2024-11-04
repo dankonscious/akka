@@ -17,24 +17,25 @@
 }
 </style>
 <section id="hero" 
-  class="bg-no-repeat bg-cover bg-center min-h-[1000px] flex items-center relative max-lg:min-h-[660px] overflow-hidden" style="background-image:url({{ section.settings.hero_background_image | img_url: 'master' }});">
-  <div class="circle-bg absolute top-[45px] right-[130px] z-0 max-w-[604px] w-full h-[605px]               
-              bg-no-repeat bg-cover bg-center 
-              max-lg:w-[348px] max-lg:h-[348px] max-lg:inset-[50%] 
-              max-lg:translate-x-[-50%] max-lg:translate-y-[-50%]">
-  <img class="rotate-me  max-lg:hidden" src="{{ section.settings.hero_circle_image | img_url: 'master' }}" alt="">
-  <img class="rotate-me  hidden max-lg:block" src="{{ section.settings.hero_circle_image_mobile | img_url: 'master' }}" alt="">
+  class="ak-bg-no-repeat ak-bg-cover ak-bg-center ak-min-h-[1000px] ak-flex ak-items-center ak-relative max-lg:ak-min-h-[660px] ak-overflow-hidden" style="background-image:url({{ section.settings.hero_background_image | img_url: 'master' }});">
+  <div class="circle-bg ak-absolute ak-top-[45px] ak-right-[130px] ak-z-0 ak-max-w-[604px] ak-w-full ak-h-[605px]               
+              ak-bg-no-repeat ak-bg-cover ak-bg-center 
+              max-lg:ak-w-[348px] max-lg:ak-h-[348px] max-lg:ak-inset-[50%] 
+              max-lg:ak-translate-x-[-50%] max-lg:ak-translate-y-[-50%]">
+    <img class="rotate-me  max-lg:ak-hidden" src="{{ section.settings.hero_circle_image | img_url: 'master' }}" alt="">
+    <img class="rotate-me  ak-hidden max-lg:ak-block" src="{{ section.settings.hero_circle_image_mobile | img_url: 'master' }}" alt="">
   </div>
-  <div class="flex items-center justify-center m-auto h-full">
-    <div class="title overflow-hidden relative z-10 
-                bg-cover bg-center bg-no-repeat" style="background-image:url({{ section.settings.hero_text_background | img_url: 'master' }});">
-      <h1 class="animation-moveup text-white text-[70px] leading-[normal] 
-                tracking-[-1.4px] capitalize font-['syne'] max-lg:text-[40px] max-lg:text-center">
-        {{ section.settings.hero_title }}<span class="font-['Blisstwin'] max-lg:block capitalize ml-[16px] max-lg:ml-0">{{ section.settings.hero_subtitle }}</span>
+  <div class="ak-flex ak-items-center ak-justify-center ak-m-auto ak-h-full">
+    <div class="ak-title ak-overflow-hidden ak-relative ak-z-10 
+                ak-bg-cover ak-bg-center ak-bg-no-repeat" style="background-image:url({{ section.settings.hero_text_background | img_url: 'master' }});">
+      <h1 class="ak-animation-moveup ak-text-white ak-text-[70px] ak-leading-[normal] 
+                ak-tracking-[-1.4px] ak-capitalize ak-font-['syne'] max-lg:ak-text-[40px] max-lg:ak-text-center">
+        {{ section.settings.hero_title }}<span class="ak-font-['Blisstwin'] max-lg:ak:block ak-capitalize ak-ml-[16px] max-lg:ak-ml-0">{{ section.settings.hero_subtitle }}</span>
       </h1>
     </div>
   </div>
 </section>
+
 
 {% schema %}
 {

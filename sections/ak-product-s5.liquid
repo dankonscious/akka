@@ -7,34 +7,34 @@
     }
 </style>
 <section id="faq" class="">
-  <div class="max-w-[var(--page-width)] w-full mx-auto py-[64px] text-[#2E3666] font-['syne'] max-lg:py-8 max-lg:px-4">
-    <h3 class="text-[70px] leading-[normal] tracking-[-1.4px] max-lg:text-[40px]">
-      Frequently Asked <span class="font-[Blisstwin] italic">Questions</span>
+  <div class="ak-max-w-[var(--page-width)] ak-w-full ak-mx-auto ak-py-[64px] ak-text-[#2E3666] ak-font-['syne'] max-lg:ak-py-8 max-lg:ak-px-4">
+    <h3 class="ak-text-[70px] ak-leading-[normal] ak-tracking-[-1.4px] max-lg:ak-text-[40px]">
+      Frequently Asked <span class="ak-font-[Blisstwin] ak-italic">Questions</span>
     </h3>
-    <div class="mt-[64px]">
+    <div class="ak-mt-[64px]">
       {% for faq in section.blocks %}
-        <div class="faq-item cursor-pointer flex flex-col pt-4 pb-5 border-t bg-blend-normal border-[#2E3666] max-lg:pt-0">
-          <div class="flex gap-8 items-start max-lg:max-w-full">
-            <div class="flex flex-wrap items-start min-w-[240px] w-full max-lg:max-w-full">
-              <div class="faq-question flex items-center justify-between w-full max-lg:flex-wrap">
-                <h2 class="max-w-[365px] w-full text-[100px] tracking-[-10px] leading-[40px] text-[#2E3666] opacity-10 max-lg:text-[60px] max-lg:tracking-[-6px] max-lg:w-full max-lg:mb-[8px]">
+        <div class="faq-item ak-cursor-pointer ak-flex ak-flex-col ak-pt-4 ak-pb-5 ak-border-t ak-bg-blend-normal ak-border-[#2E3666] max-lg:ak-pt-0">
+          <div class="ak-flex ak-gap-8 ak-items-start max-lg:ak-max-w-full">
+            <div class="ak-flex ak-flex-wrap ak-items-start ak-min-w-[240px] ak-w-full max-lg:ak-max-w-full">
+              <div class="faq-question ak-flex ak-items-center ak-justify-between ak-w-full max-lg:ak-flex-wrap">
+                <h2 class="ak-max-w-[365px] ak-w-full ak-text-[100px] ak-tracking-[-10px] ak-leading-[40px] ak-text-[#2E3666] ak-opacity-10 max-lg:ak-text-[60px] max-lg:ak-tracking-[-6px] max-lg:ak-w-full max-lg:ak-mb-[8px]">
                   /{% if forloop.index >= 10 %}
                     {{ forloop.index }}
-                    {%  else %} 
+                    {% else %} 
                     {{ forloop.index | prepend: '0' }}                    
                   {% endif %}
                 </h2>
-                <h3 class="text-2xl font-medium leading-5 max-lg:leading-[130%] max-w-[877px] w-full max-lg:text-[20px] max-lg:max-w-[calc(100%_-_70px)]">
+                <h3 class="ak-text-2xl ak-font-medium ak-leading-5 max-lg:ak-leading-[130%] ak-max-w-[877px] ak-w-full max-lg:ak-text-[20px] max-lg:ak-max-w-[calc(100%_-_70px)]">
                   {{ faq.settings.question }}
                 </h3>
-                <div class="flex flex-col justify-center items-end px-3.5 py-8 w-[70px]">
-                  <div class="flex flex-col bg-[#2E3666] w-[18px]">
-                    <div class="flex shrink-0 h-[4px] bg-[#2E3666] plus rotate-90 transition-all duration-[.5s]"></div>
+                <div class="ak-flex ak-flex-col ak-justify-center ak-items-end ak-px-3.5 ak-py-8 ak-w-[70px]">
+                  <div class="ak-flex ak-flex-col ak-bg-[#2E3666] ak-w-[18px]">
+                    <div class="ak-flex ak-shrink-0 ak-h-[4px] ak-bg-[#2E3666] ak-plus ak-rotate-90 ak-transition-all ak-duration-[.5s]"></div>
                   </div>
                 </div>
               </div>
-              <article class="faq-answer pl-[8px] flex flex-col min-w-[240px] text-[#2E3666] w-[849px] max-lg:max-w-full ml-[372px] pb-[20px] max-lg:ml-0 max-lg:mt-3" style="display: none;">
-                <p class="text-[18px] leading-[normal] tracking-[0.36px]">
+              <article class="faq-answer ak-pl-[8px] ak-flex ak-flex-col ak-min-w-[240px] ak-text-[#2E3666] ak-w-[849px] max-lg:ak-max-w-full ak-ml-[372px] ak-pb-[20px] max-lg:ak-ml-0 max-lg:ak-mt-3" style="display: none;">
+                <p class="ak-text-[18px] ak-leading-[normal] ak-tracking-[0.36px]">
                   {{ faq.settings.answer }}
                 </p>
               </article>
@@ -45,6 +45,7 @@
     </div>
   </div>
 </section>
+
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 <script>

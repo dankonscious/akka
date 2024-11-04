@@ -1,13 +1,13 @@
-<section id="footer" class="flex flex-col bg-[#EDEEF5] font-['syne']">
-  <div class="flex flex-col py-16 w-full max-[1024px]:px-[16px] max-[1024px]:max-w-full max-w-[1328px] mx-auto">
-    <div class="flex flex-wrap gap-5 max-[1024px]:gap-[21px] justify-between items-start w-full">
-      <h2 class="text-[22px] text-[#2E3666] w-[597px] max-[1024px]:max-w-full max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">
+<section id="footer" class="ak-flex ak-flex-col ak-bg-[#EDEEF5] ak-font-['syne']">
+  <div class="ak-flex ak-flex-col ak-py-16 ak-w-full max-[1024px]:ak-px-[16px] max-[1024px]:ak-max-w-full ak-max-w-[1328px] ak-mx-auto">
+    <div class="ak-flex ak-flex-wrap ak-gap-5 max-[1024px]:ak-gap-[21px] ak-justify-between ak-items-start ak-w-full">
+      <h2 class="ak-text-[22px] ak-text-[#2E3666] ak-w-[597px] max-[1024px]:ak-max-w-full ak-max-[1200px]:text-[20px] ak-max-[1200px]:leading-[140%]">
         {{ section.settings.newsletter_title | escape }}
       </h2>
-      <form class="relative leading-7 rounded-[100px] max-[1024px]:max-w-full" onsubmit="alconfirmsubscribe(event)">
-        <label for="emailInput" class="sr-only">Enter your email</label>
-        <input id="emailInput" type="email" placeholder="Enter your email" aria-label="Enter your email" class="font-['work_sans'] text-[18px] pl-6 tracking-[-0.36px] bg-white min-h-[55px] rounded-[100px] !text-[#2E3666] w-[562px] max-[1024px]:pl-5 max-[1024px]:max-w-full" />
-        <button type="submit" class="button w-fit !text-[18px] !h-[55px] !font-bold absolute right-0 top-0 max-[1024px]:!px-[24px] !font-['Work_Sans'] max-[1200px]:!text-[16px]">
+      <form class="ak-relative ak-leading-7 ak-rounded-[100px] max-[1024px]:ak-max-w-full" onsubmit="alconfirmsubscribe(event)">
+        <label for="emailInput" class="ak-sr-only">Enter your email</label>
+        <input id="emailInput" type="email" placeholder="Enter your email" aria-label="Enter your email" class="ak-font-['work_sans'] ak-text-[18px] ak-pl-6 ak-tracking-[-0.36px] ak-bg-white ak-min-h-[55px] ak-rounded-[100px] !ak-text-[#2E3666] ak-w-[562px] max-[1024px]:ak-pl-5 max-[1024px]:ak-max-w-full" />
+        <button type="submit" class="button ak-w-fit !ak-text-[18px] !ak-h-[55px] !ak-font-bold ak-absolute ak-right-0 ak-top-0 max-[1024px]:!ak-px-[24px] !ak-font-['Work_Sans'] ak-max-[1200px]:!text-[16px]">
           Sign me up!
         </button>
       </form>
@@ -27,33 +27,32 @@
           return false; // Prevent form default submission
         }
       </script>
-
     </div>
-    <nav class="flex flex-wrap gap-10 justify-between items-start pt-8 mt-[39px] max-w-full text-lg border-t-4 border-[#2E3666] text-[#2E3666] w-full capitalize max-[1024px]:flex-col max-[1024px]:gap-[32px]">
-      <div class="w-[182px]">
+    <nav class="ak-flex ak-flex-wrap ak-gap-10 ak-justify-between ak-items-start ak-pt-8 ak-mt-[39px] ak-max-w-full ak-text-lg ak-border-t-4 ak-border-[#2E3666] ak-text-[#2E3666] ak-w-full ak-capitalize max-[1024px]:ak-flex-col max-[1024px]:ak-gap-[32px]">
+      <div class="ak-w-[182px]">
         {% if section.settings.footer_logo %}
-          <img class="w-[90px]" src="{{ section.settings.footer_logo | img_url: 'original' }}" alt="Footer Logo">
+          <img class="ak-w-[90px]" src="{{ section.settings.footer_logo | img_url: 'original' }}" alt="Footer Logo">
         {% endif %}
       </div>
-      <div class="flex flex-col">
-        <h3 class="gap-2.5 self-start p-0.5 font-bold whitespace-nowrap">SITEMAP</h3>
-        <ul class="flex flex-col items-start mt-4 text-[18px] max-[1200px]:mt-2">
+      <div class="ak-flex ak-flex-col">
+        <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-whitespace-nowrap">SITEMAP</h3>
+        <ul class="ak-flex ak-flex-col ak-items-start ak-mt-4 ak-text-[18px] ak-max-[1200px]:mt-2">
           {% if section.settings.information_links %}
             {% for link in linklists[section.settings.information_links].links %}
-              <li class="gap-2.5 self-stretch p-0.5 mt-2 max-[1200px]:mt-0">
+              <li class="ak-gap-2.5 ak-self-stretch ak-p-0.5 ak-mt-2 ak-max-[1200px]:mt-0">
                 <a href="{{ link.url }}">{{ link.title }}</a>
               </li>
             {% endfor %}
           {% endif %}          
         </ul>
       </div>
-      <div class="flex flex-col">
-        <div class="flex flex-col">
-          <h3 class="gap-2.5 self-start p-0.5 font-bold uppercase whitespace-nowrap">Information</h3>
-          <ul class="flex flex-col items-start mt-4 max-[1200px]:mt-2">
+      <div class="ak-flex ak-flex-col">
+        <div class="ak-flex ak-flex-col">
+          <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-uppercase ak-whitespace-nowrap">Information</h3>
+          <ul class="ak-flex ak-flex-col ak-items-start ak-mt-4 ak-max-[1200px]:mt-2">
             {% if section.settings.sitemap_links %}
               {% for link in linklists[section.settings.sitemap_links].links %}
-                <li class="gap-2.5 self-stretch p-0.5 mt-2 max-[1200px]:mt-0">
+                <li class="ak-gap-2.5 ak-self-stretch ak-p-0.5 ak-mt-2 ak-max-[1200px]:mt-0">
                   <a href="{{ link.url }}" target="_blank">{{ link.title }}</a>
                 </li>
               {% endfor %}
@@ -61,35 +60,35 @@
           </ul>
         </div>
       </div>
-      <div class="flex flex-col">
-        <div class="flex flex-col">
-          <h3 class="gap-2.5 self-stretch p-0.5 font-bold">CUSTOMER SERVICE</h3>
-          <address class="gap-2.5 self-start p-0.5 mt-4 leading-7 not-italic normal-case max-[1200px]:mt-2">            
-            <span class="font-['Poppins']">{{ section.settings.contact_email }}</span> <br />
+      <div class="ak-flex ak-flex-col">
+        <div class="ak-flex ak-flex-col">
+          <h3 class="ak-gap-2.5 ak-self-stretch ak-p-0.5 ak-font-bold">CUSTOMER SERVICE</h3>
+          <address class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-mt-4 ak-leading-7 ak-not-italic ak-normal-case ak-max-[1200px]:mt-2">            
+            <span class="ak-font-['Poppins']">{{ section.settings.contact_email }}</span> <br />
             {{ section.settings.contact_phone }} <br />
             {{ section.settings.contact_address }}
           </address>
         </div>
       </div>
     </nav>
-    <footer class="flex flex-col mt-10 w-full max-w-[1328px] text-[#2E3666] max-[1024px]:max-w-full">
-      <div class="flex flex-wrap gap-10 items-center justify-between text-[20px] leading-[145%] tracking-[0.2px] max-[1024px]:max-w-full pr-[10px] max-[1024px]:gap-[10px] max-[1024px]:pr-0">
-        <p class="self-stretch my-auto w-[874px] max-[1024px]:max-w-full max-[1024px]:w-full max-[1024px]:text-[16px]">© 2024 Enclave BioActives. All rights reserved.</p>
-        <div class="flex items-center justify-between w-[58px]">
+    <footer class="ak-flex ak-flex-col ak-mt-10 ak-w-full ak-max-w-[1328px] ak-text-[#2E3666] max-[1024px]:ak-max-w-full">
+      <div class="ak-flex ak-flex-wrap ak-gap-10 ak-items-center ak-justify-between ak-text-[20px] ak-leading-[145%] ak-tracking-[0.2px] max-[1024px]:ak-max-w-full ak-pr-[10px] max-[1024px]:ak-gap-[10px] max-[1024px]:ak-pr-0">
+        <p class="ak-self-stretch ak-my-auto ak-w-[874px] max-[1024px]:ak-max-w-full max-[1024px]:ak-w-full max-[1024px]:ak-text-[16px]">© 2024 Enclave BioActives. All rights reserved.</p>
+        <div class="ak-flex ak-items-center ak-justify-between ak-w-[58px]">
           {% if section.settings.facebook_icon %}
-            <a href="{{ section.settings.facebook_url | default: "https://www.facebook.com/akkasuperbiotics/" }}" class="max-w-[25px] w-full">
+            <a href="{{ section.settings.facebook_url | default: "https://www.facebook.com/akkasuperbiotics/" }}" class="ak-max-w-[25px] ak-w-full">
               <img src="{{ section.settings.facebook_icon | img_url: 'original' }}" alt="Facebook">
             </a>
           {% endif %}
           {% if section.settings.instagram_icon %}
-            <a href="{{ section.settings.instagram_url | default: "https://www.instagram.com/tryakka/" }}" class="max-w-[25px] w-full">
+            <a href="{{ section.settings.instagram_url | default: "https://www.instagram.com/tryakka/" }}" class="ak-max-w-[25px] ak-w-full">
               <img src="{{ section.settings.instagram_icon | img_url: 'original' }}" alt="Instagram">
             </a>
           {% endif %}
         </div>
       </div>
-      <hr class="mt-4 w-full min-h-0 border-2 border-solid border-[#2E3666] max-[1024px]:max-w-full" />
-      <p class="mt-4 text-lg tracking-[-0.18px] leading-[145%] max-[1024px]:max-w-full text-[var(--footercolor)] max-[1024px]:text-[14px] max-[1024px]:tracking-[-0.14px]">
+      <hr class="ak-mt-4 ak-w-full ak-min-h-0 ak-border-2 ak-border-solid ak-border-[#2E3666] max-[1024px]:ak-max-w-full" />
+      <p class="ak-mt-4 ak-text-lg ak-tracking-[-0.18px] ak-leading-[145%] max-[1024px]:ak-max-w-full ak-text-[var(--footercolor)] max-[1024px]:ak-text-[14px] max-[1024px]:ak-tracking-[-0.14px]">
         *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary, and testimonials are not claimed to represent typical results. All testimonials are by real people, and may not reflect the typical purchaser's experience, and are not intended to represent or guarantee that anyone will achieve the same or similar results.
       </p>
     </footer>
@@ -101,7 +100,7 @@
     :root {
       --footercolor: #2E3666;
     }
-    {% else %}
+  {% else %}
     :root {
       --footercolor: rgba(46, 54, 102, 0.50);
     }

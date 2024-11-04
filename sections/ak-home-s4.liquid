@@ -1,36 +1,37 @@
 
 
-<section id="section4" class="flex overflow-hidden relative flex-col h-[1463px] max-lg:px-[16px] max-lg:h-auto">
-    <img loading="lazy" src="{{ section.settings.background_image | img_url: 'master' }}" alt="" class="object-cover absolute inset-0 size-full"/>
+<section id="section4" class="ak-flex ak-overflow-hidden ak-relative ak-flex-col ak-h-[1463px] max-lg:ak-px-[16px] max-lg:ak-h-auto">
+    <img loading="lazy" src="{{ section.settings.background_image | img_url: 'master' }}" alt="" class="ak-object-cover ak-absolute ak-inset-0 ak-size-full"/>
 
-    <div class="w-full h-full absolute top-0 left-0 flex items-center justify-center max-lg:hidden">
-        <div class="rotate-me border-[#2e3666] border-solid border-[2px] min-w-[1350px] min-h-[1350px] relative rounded-full">
-            <div class="w-[15px] h-[15px] bg-[#2e3666] rotate-45 absolute top-[-9px] left-[50%]"></div>
+    <div class="ak-w-full ak-h-full ak-absolute ak-top-0 ak-left-0 ak-flex ak-items-center ak-justify-center max-lg:ak-hidden">
+        <div class="rotate-me ak-border-[#2e3666] ak-border-solid ak-border-[2px] ak-min-w-[1350px] ak-min-h-[1350px] ak-relative ak-rounded-full">
+            <div class="ak-w-[15px] ak-h-[15px] ak-bg-[#2e3666] ak-rotate-45 ak-absolute ak-top-[-9px] ak-left-[50%]"></div>
         </div>
     </div>
 
-    <div class="box relative w-full max-lg:max-w-full font-['syne'] h-full max-lg:h-auto">
-    <div class="z-10 flex-col items-center self-center pt-[164px] pb-[171px] mt-0 max-w-full border-x border-solid border-[#2E3666] w-[956px] mx-auto max-lg:py-24 max-lg:mt-0 h-full max-lg:pt-[64px] max-lg:pb-[32px] max-lg:border-none max-lg:w-full max-lg:max-w-full max-lg:h-auto">
-        <div class="flex flex-col items-center max-w-full text-7xl text-slate-700 w-[856px] max-lg:text-4xl mx-auto">
-        <h2 class="leading-[79px] max-lg:max-w-full max-lg:text-[33px]">{{ section.settings.heading_1 }}</h2>
-        <h3 class="leading-[normal] max-lg:max-w-full max-lg:text-[33px] font-['blisstwin']">{{ section.settings.heading_2 }}</h3>
-        </div>
-        
-        <video class="video max-w-[calc(100%_+_2px)] ml-[-1px] mt-9 w-[101%] max-lg:max-w-full" autoplay loop muted playsinline>
-        <source src="{{ section.settings.video_url }}" type="video/mp4">
-        </video>
+    <div class="box ak-relative ak-w-full max-lg:ak-max-w-full ak-font-['syne'] ak-h-full max-lg:ak-h-auto">
+        <div class="ak-z-10 ak-flex-col ak-items-center ak-self-center ak-pt-[164px] ak-pb-[171px] ak-mt-0 ak-max-w-full ak-border-x ak-border-solid ak-border-[#2E3666] ak-w-[956px] ak-mx-auto max-lg:ak-py-24 max-lg:ak-mt-0 ak-h-full max-lg:ak-pt-[64px] max-lg:ak-pb-[32px] max-lg:ak-border-none max-lg:ak-w-full max-lg:ak-max-w-full max-lg:ak-h-auto">
+            <div class="ak-flex ak-flex-col ak-items-center ak-max-w-full ak-text-7xl ak-text-slate-700 ak-w-[856px] max-lg:ak-text-4xl ak-mx-auto">
+                <h2 class="ak-leading-[79px] max-lg:ak-max-w-full max-lg:ak-text-[33px]">{{ section.settings.heading_1 }}</h2>
+                <h3 class="ak-leading-[normal] max-lg:ak-max-w-full max-lg:ak-text-[33px] ak-font-['blisstwin']">{{ section.settings.heading_2 }}</h3>
+            </div>
+            
+            <video class="ak-video ak-max-w-[calc(100%_+_2px)] ak-ml-[-1px] ak-mt-9 ak-w-[101%] max-lg:ak-max-w-full" autoplay loop muted playsinline>
+                <source src="{{ section.settings.video_url }}" type="video/mp4">
+            </video>
 
-        <div class="flex flex-col items-center mt-[42px] mb-0 max-w-full w-[847px] max-lg:mb-2.5 text-center mx-auto max-lg:mt-[32px]">
-        <span class="text-[#2E3666] max-lg:max-w-full text-2xl leading-[normal] tracking-[0.48px] max-lg:text-[20px] max-lg:text-left">{{ section.settings.content }}</span>
-        </div>
+            <div class="ak-flex ak-flex-col ak-items-center ak-mt-[42px] ak-mb-0 ak-max-w-full ak-w-[847px] max-lg:ak-mb-2.5 ak-text-center ak-mx-auto max-lg:ak-mt-[32px]">
+                <span class="ak-text-[#2E3666] max-lg:ak-max-w-full ak-text-2xl ak-leading-[normal] ak-tracking-[0.48px] max-lg:ak-text-[20px] max-lg:ak-text-left">{{ section.settings.content }}</span>
+            </div>
 
-        <a href="{{ section.settings.button_link }}" class="button mx-auto mt-[32px] gap-[16px] !flex w-fit uppercase">
-        <span>{{ section.settings.button_text }}</span>
-        <img loading="lazy" src="{{ section.settings.button_icon | img_url: 'small' }}" alt="" class="object-contain shrink-0 aspect-[0.65] w-[22px]" />
-        </a>
-    </div>
+            <a href="{{ section.settings.button_link }}" class="button ak-mx-auto ak-mt-[32px] ak-gap-[16px] !ak-flex ak-w-fit ak-uppercase">
+                <span>{{ section.settings.button_text }}</span>
+                <img loading="lazy" src="{{ section.settings.button_icon | img_url: 'small' }}" alt="" class="ak-object-contain ak-shrink-0 ak-aspect-[0.65] ak-w-[22px]" />
+            </a>
+        </div>
     </div>
 </section>
+
 
 {%  style  %} 
 #section4 .box::before {

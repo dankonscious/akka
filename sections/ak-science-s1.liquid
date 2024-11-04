@@ -120,20 +120,21 @@
     }
 </style>
 
-<section id="hero" class="bg-no-repeat bg-cover bg-center min-h-[980px] flex items-center relative max-lg:min-h-[660px] font-['syne'] max-lg:overflow-hidden" style="">
-  <div class="whitebg absolute w-full h-full"></div>
-    <div class="circlesop absolute inset-[50%] translate-x-[-50%] translate-y-[-50%] z-0 max-w-[604px] w-full h-[605px] bg-no-repeat bg-cover bg-center max-lg:w-[348px] max-lg:h-[348px] max-lg:inset-[50%] max-lg:translate-x-[-50%] max-lg:translate-y-[-50%]">
-      <img class="big spinpause max-lg:" src="{{ 'science-circle-big.png' | file_img_url: 'master' }}" alt="">
-      <img class="small spinpause-rev absolute top-0 max-lg: " src="{{ 'science-circle-small.png' | file_img_url: 'master' }}" alt="">
+<section id="hero" class="ak-bg-no-repeat ak-bg-cover ak-bg-center ak-min-h-[980px] ak-flex ak-items-center ak-relative max-lg:ak-min-h-[660px] ak-font-['syne'] max-lg:ak-overflow-hidden" style="">
+  <div class="whitebg ak-absolute ak-w-full ak-h-full"></div>
+    <div class="circlesop ak-absolute ak-inset-[50%] ak-translate-x-[-50%] ak-translate-y-[-50%] ak-z-0 ak-max-w-[604px] ak-w-full ak-h-[605px] ak-bg-no-repeat ak-bg-cover ak-bg-center max-lg:ak-w-[348px] max-lg:ak-h-[348px] max-lg:ak-inset-[50%] max-lg:ak-translate-x-[-50%] max-lg:ak-translate-y-[-50%]">
+      <img class="big spinpause max-lg:ak-" src="{{ 'science-circle-big.png' | file_img_url: 'master' }}" alt="">
+      <img class="small spinpause-rev ak-absolute ak-top-0 max-lg:ak- " src="{{ 'science-circle-small.png' | file_img_url: 'master' }}" alt="">
     </div>
-    <div class="flex items-center justify-center m-auto h-full">
-        <div class="title overflow-hidden relative z-10 bg-[url({{ section.settings.text_background_image | img_url: 'master' }})] bg-cover bg-center bg-no-repeat max-lg:bg-none">
-            <h1 class="text-downup text-white text-[70px] leading-[normal] tracking-[-1.4px] capitalize font-['syne'] max-lg:text-[40px] max-lg:text-center">
-                {{ section.settings.hero_text }}<span class="font-['Blisstwin'] max-lg:block ml-[16px] max-lg:ml-0">{{ section.settings.sub_text }}</span>
+    <div class="ak-flex ak-items-center ak-justify-center ak-m-auto ak-h-full">
+        <div class="title ak-overflow-hidden ak-relative ak-z-10 ak-bg-[url({{ section.settings.text_background_image | img_url: 'master' }})] ak-bg-cover ak-bg-center ak-bg-no-repeat max-lg:ak-bg-none">
+            <h1 class="text-downup ak-text-white ak-text-[70px] ak-leading-[normal] ak-tracking-[-1.4px] ak-capitalize ak-font-['syne'] max-lg:ak-text-[40px] max-lg:ak-text-center">
+                {{ section.settings.hero_text }}<span class="ak-font-['Blisstwin'] max-lg:ak-block ak-ml-[16px] max-lg:ak-ml-0">{{ section.settings.sub_text }}</span>
             </h1>
         </div>
     </div>
 </section>
+
 
 <script>
   window.onload = function() {

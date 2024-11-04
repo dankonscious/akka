@@ -5,21 +5,22 @@
     }
   }
 </style>
-<section id="marquee" class="remove-animation pt-[49px] max-lg:pt-0 max-lg:overflow-hidden h-[122px] bottom-[30px] left-0 max-lg:w-full max-lg:bottom-0 max-lg:mb-[-25px] max-lg:mt-[-97px] dynamic-sticky" data-full-m="true">
+<section id="marquee" class="remove-animation ak-pt-[49px] max-lg:ak-pt-0 max-lg:ak-overflow-hidden ak-h-[122px] ak-bottom-[30px] ak-left-0 max-lg:ak-w-full max-lg:ak-bottom-0 max-lg:ak-mb-[-25px] max-lg:ak-mt-[-97px] ak-dynamic-sticky" data-full-m="true">
   <!-- Slider main container -->
   <div class="marquee swiper">
     <!-- Additional required wrapper -->
-    <div class="swiper-wrapper !h-auto">
+    <div class="swiper-wrapper !ak-h-auto">
       {% for slide in section.blocks %}
       <!-- Slides -->
-      <div class="swiper-slide !flex !items-center !justify-center gap-[35px] !w-[unset] !h-[unset] font-['blisstwin']">
-        <h3 class="text-[100px] text-[#C8D3F0] capitalize">{{ slide.settings.slide_text }}</h3>
-        <div class="w-[15px] h-[15px] bg-[#C8D3F0] rotate-45"></div>
+      <div class="swiper-slide !ak-flex !ak-items-center !ak-justify-center ak-gap-[35px] !ak-w-[unset] !ak-h-[unset] ak-font-['blisstwin']">
+        <h3 class="ak-text-[100px] ak-text-[#C8D3F0] ak-capitalize">{{ slide.settings.slide_text }}</h3>
+        <div class="ak-w-[15px] ak-h-[15px] ak-bg-[#C8D3F0] ak-rotate-45"></div>
       </div>
       {% endfor %}
     </div>      
   </div>
-</section>  
+</section>
+ 
 <style>
   #section3-animation.active .overflow-up {
     overflow:hidden;
@@ -100,143 +101,144 @@
   }
 </style>
 <!-- sections/akka-help-section.liquid -->
-<section id="section3" class="text-[#2E3666] bg-[#C9CFE1] font-['syne']">
-  <div id="section3-animation" class="max-w-[var(--page-width)] w-full mx-auto pt-[128px] pb-[144px] max-lg:pt-[64px] max-lg:pb-0 active">
+<section id="section3" class="ak-text-[#2E3666] ak-bg-[#C9CFE1] ak-font-['syne']">
+  <div id="section3-animation" class="ak-max-w-[var(--page-width)] ak-w-full ak-mx-auto ak-pt-[128px] ak-pb-[144px] max-lg:ak-pt-[64px] max-lg:ak-pb-0 active">
     <!-- TITLE DIV -->
-    <div  class="flex justify-between items-start max-lg:flex-col max-lg:px-4">
-      <div class="max-w-[330px] w-full">
-        <h3 class="text-[70px] leading-[79%] max-lg:text-[40px] max-lg:mb-8">
+    <div class="ak-flex ak-justify-between ak-items-start max-lg:ak-flex-col max-lg:ak-px-4">
+      <div class="ak-max-w-[330px] ak-w-full">
+        <h3 class="ak-text-[70px] ak-leading-[79%] max-lg:ak-text-[40px] max-lg:ak-mb-8">
           <div class="overflow-up">
-            <span class="block animate-downup">{{ section.settings.title }}</span>
+            <span class="ak-block animate-downup">{{ section.settings.title }}</span>
           </div>          
           <div class="overflow-up">
-            <span class="font-['Blisstwin'] mt-[12px] block animate-downup pb-3">{{ section.settings.subtitle }}</span>
+            <span class="ak-font-['Blisstwin'] ak-mt-[12px] ak-block animate-downup ak-pb-3">{{ section.settings.subtitle }}</span>
           </div>
         </h3>
       </div>
-      <div class="max-w-[658px] w-full overflow-up">
-        <div class="animate-downup [&>p]:text-[24px] [&>p]:leading-[140%] [&>p]:tracking-[0.48px] [&>p]:max-lg:text-[20px]">
+      <div class="ak-max-w-[658px] ak-w-full overflow-up">
+        <div class="animate-downup [&>p]:ak-text-[24px] [&>p]:ak-leading-[140%] [&>p]:ak-tracking-[0.48px] [&>p]:max-lg:ak-text-[20px]">
           {{ section.settings.description }}
         </div>        
       </div>
     </div>
-    <div class="w-full py-[16px] !mt-[64px] max-lg:hidden overflow-up">
-      <h3 class="text-[40px] tracking-[-0.8px] uppercase animate-downup">{{ section.settings.section_heading }}</h3>
+    <div class="ak-w-full ak-py-[16px] !ak-mt-[64px] max-lg:ak-hidden overflow-up">
+      <h3 class="ak-text-[40px] ak-tracking-[-0.8px] ak-uppercase animate-downup">{{ section.settings.section_heading }}</h3>
     </div>
-    <div class="overflow-hidden max-lg:hidden">
-      <div class="h-[4px] w-full bg-[#3E488B] animate-leftrigth"></div>
+    <div class="ak-overflow-hidden max-lg:ak-hidden">
+      <div class="ak-h-[4px] ak-w-full ak-bg-[#3E488B] ak-animate-leftrigth"></div>
     </div>
     <!-- CONTENT DIV -->
-    <div class="block relative h-[689px] w-full max-lg:hidden">
+    <div class="ak-block ak-relative ak-h-[689px] ak-w-full max-lg:ak-hidden">
       <!-- MIDDLE IMAGE DIV -->
-      <div class="absolute left-[50%] translate-x-[-50%] max-w-[430px] w-full top-0 overflow-up">
+      <div class="ak-absolute ak-left-[50%] ak-translate-x-[-50%] ak-max-w-[430px] ak-w-full ak-top-0 overflow-up">
         <img class="animate-downup" src="{{ section.settings.main_image | img_url: 'master' }}" alt="">
       </div>
       <!-- LABEL1 DIV -->
-      <div class="max-w-[363px] w-full absolute top-[193px] left-0">
-        <div class="max-w-[284px] w-full h-[92px] ml-[200px]">
-          <div class="pr-[30px] mr-[-30px] overflow-hidden">
-            <img class="animate-leftrigth" src="{{ section.settings.line_image1 | img_url: 'master' }}" alt="">
+      <div class="ak-max-w-[363px] ak-w-full ak-absolute ak-top-[193px] ak-left-0">
+        <div class="ak-max-w-[284px] ak-w-full ak-h-[92px] ak-ml-[200px]">
+          <div class="ak-pr-[30px] ak-mr-[-30px] ak-overflow-hidden">
+            <img class="ak-animate-leftrigth" src="{{ section.settings.line_image1 | img_url: 'master' }}" alt="">
           </div>          
-          <div class="overflow-hidden mt-[-4px]">
-            <img class="w-[2px] animate-downup" src="{{ section.settings.vertical_line1 | img_url: 'master' }}" alt="">
+          <div class="ak-overflow-hidden ak-mt-[-4px]">
+            <img class="ak-w-[2px] animate-downup" src="{{ section.settings.vertical_line1 | img_url: 'master' }}" alt="">
           </div>          
         </div>
-        <div class="overflow-down">
-          <div class="animate-updown">
-            <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label1_title }}</h4>
-            <p class="mt-[31px] text-[22px] leading-[normal]">{{ section.settings.label1_text }}</p>
+        <div class="ak-overflow-down">
+          <div class="ak-animate-updown">
+            <h4 class="ak-font-['Blisstwin'] ak-text-[30px] ak-text-center ak-tracking-[0.6px] ak-uppercase ak-p-[10px] ak-border-[1.5px] ak-border-solid ak-border-[#2E3666] ak-pb-0">{{ section.settings.label1_title }}</h4>
+            <p class="ak-mt-[31px] ak-text-[22px] ak-leading-[normal]">{{ section.settings.label1_text }}</p>
           </div>          
         </div>
       </div>
       <!-- LABEL2 DIV -->
-      <div class="max-w-[363px] w-full absolute top-[59px] right-0">
-        <div class="relative">
-          <div class="overflow-down">
-            <div class="animate-updown">
-              <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label2_title }}</h4>
-              <p class="mt-[8px] text-[22px] leading-[normal]">{{ section.settings.label2_text }}</p>
+      <div class="ak-max-w-[363px] ak-w-full ak-absolute ak-top-[59px] ak-right-0">
+        <div class="ak-relative">
+          <div class="ak-overflow-down">
+            <div class="ak-animate-updown">
+              <h4 class="ak-font-['Blisstwin'] ak-text-[30px] ak-text-center ak-tracking-[0.6px] ak-uppercase ak-p-[10px] ak-border-[1.5px] ak-border-solid ak-border-[#2E3666] ak-pb-0">{{ section.settings.label2_title }}</h4>
+              <p class="ak-mt-[8px] ak-text-[22px] ak-leading-[normal]">{{ section.settings.label2_text }}</p>
             </div>            
           </div>
-          <div class="max-w-[354px] w-full absolute top-[123px] right-[160px]">
-            <div class="overflow-down">
-              <img class="w-[2px] ml-auto animate-updown" src="{{ section.settings.vertical_line2 | img_url: 'master' }}" alt="">
+          <div class="ak-max-w-[354px] ak-w-full ak-absolute ak-top-[123px] ak-right-[160px]">
+            <div class="ak-overflow-down">
+              <img class="ak-w-[2px] ak-ml-auto ak-animate-updown" src="{{ section.settings.vertical_line2 | img_url: 'master' }}" alt="">
             </div>
-            <div class="overflow-hidden pl-[30px] ml-[-30px]">
-              <img class="animate-rigthleft" src="{{ section.settings.line_image2 | img_url: 'master' }}" alt="">
+            <div class="ak-overflow-hidden ak-pl-[30px] ak-ml-[-30px]">
+              <img class="ak-animate-rigthleft" src="{{ section.settings.line_image2 | img_url: 'master' }}" alt="">
             </div>
           </div>
         </div>
       </div>
       <!-- LABEL3 DIV -->
-      <div class="max-w-[363px] w-full absolute bottom-[16px] right-[11px]">
-        <div class="relative bg-[#C9CFE1]">
-          <div class="max-w-[300px] w-full absolute top-[-64px] right-[160px]">
-            <div class="overflow-hidden pl-[30px] ml-[-30px]">
-              <img class="animate-rigthleft" src="{{ section.settings.line_image3 | img_url: 'master' }}" alt="">
+      <div class="ak-max-w-[363px] ak-w-full ak-absolute ak-bottom-[16px] ak-right-[11px]">
+        <div class="ak-relative ak-bg-[#C9CFE1]">
+          <div class="ak-max-w-[300px] ak-w-full ak-absolute ak-top-[-64px] ak-right-[160px]">
+            <div class="ak-overflow-hidden ak-pl-[30px] ak-ml-[-30px]">
+              <img class="ak-animate-rigthleft" src="{{ section.settings.line_image3 | img_url: 'master' }}" alt="">
             </div>
             <div class="overflow-up">
-              <img class="w-[2px] ml-auto mb-[-40px] animate-downup" src="{{ section.settings.vertical_line3 | img_url: 'master' }}" alt="">
+              <img class="ak-w-[2px] ak-ml-auto ak-mb-[-40px] animate-downup" src="{{ section.settings.vertical_line3 | img_url: 'master' }}" alt="">
             </div>
           </div>
-          <div class="relative z-10 overflow-down">
-            <div class="animate-updown">
-              <h4 class="font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0">{{ section.settings.label3_title }}</h4>
-              <p class="mt-[8px] text-[22px] leading-[normal]">{{ section.settings.label3_text }}</p>
+          <div class="ak-relative ak-z-10 ak-overflow-down">
+            <div class="ak-animate-updown">
+              <h4 class="ak-font-['Blisstwin'] ak-text-[30px] ak-text-center ak-tracking-[0.6px] ak-uppercase ak-p-[10px] ak-border-[1.5px] ak-border-solid ak-border-[#2E3666] ak-pb-0">{{ section.settings.label3_title }}</h4>
+              <p class="ak-mt-[8px] ak-text-[22px] ak-leading-[normal]">{{ section.settings.label3_text }}</p>
             </div>            
           </div>
         </div>
       </div>
     </div>
     <!-- CONTENT DIV MOBILE -->
-    <div class="hidden max-lg:block max-w-[430px] w-full sticky top-0 z-[-1] mx-auto">
-      <img class="mt-[-100px]" src="{{ section.settings.mobile_image | img_url: 'master' }}" alt="">
+    <div class="ak-hidden max-lg:ak-block ak-max-w-[430px] ak-w-full ak-sticky ak-top-0 ak-z-[-1] ak-mx-auto">
+      <img class="ak-mt-[-100px]" src="{{ section.settings.mobile_image | img_url: 'master' }}" alt="">
     </div>
 
-    <div class="max-lg:bg-[rgba(201,207,225,0.80)] max-lg:backdrop-blur-[30px] max-lg:pb-[49px]">
-      <div class="hidden max-lg:block px-4">
+    <div class="max-lg:ak-bg-[rgba(201,207,225,0.80)] max-lg:ak-backdrop-blur-[30px] max-lg:ak-pb-[49px]">
+      <div class="ak-hidden max-lg:ak-block ak-px-4">
         
-        <div class="w-full mb-8 ">
-          <h3 class="text-[30px] tracking-[-0.8px] uppercase border-b-[4px] border-solid border-[#3E488B] py-[16px] max-lg:pb-0">{{ section.settings.section_heading }}</h3>
+        <div class="ak-w-full ak-mb-8 ">
+          <h3 class="ak-text-[30px] ak-tracking-[-0.8px] ak-uppercase ak-border-b-[4px] ak-border-solid ak-border-[#3E488B] ak-py-[16px] max-lg:ak-pb-0">{{ section.settings.section_heading }}</h3>
         </div>
         <div class="">
-          <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0 max-lg:text-[20px]">{{ section.settings.label1_title }}</h4>
-          <p class="mt-4 text-[22px] leading-[normal] max-lg:text-[20px] max-lg:leading-[140%]">{{ section.settings.label1_text }}</p>
+          <h4 class="ak-w-[calc(100%_-_42px)] ak-mx-auto ak-font-['Blisstwin'] ak-text-[30px] ak-text-center ak-tracking-[0.6px] ak-uppercase ak-p-[10px] ak-border-[1.5px] ak-border-solid ak-border-[#2E3666] ak-pb-0 max-lg:ak-text-[20px]">{{ section.settings.label1_title }}</h4>
+          <p class="ak-mt-4 ak-text-[22px] ak-leading-[normal] max-lg:ak-text-[20px] max-lg:ak-leading-[140%]">{{ section.settings.label1_text }}</p>
         </div>
-        <div class="mt-8">
-          <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0 max-lg:text-[20px]">{{ section.settings.label2_title }}</h4>
-          <p class="mt-4 text-[22px] leading-[normal] max-lg:text-[20px] max-lg:leading-[140%]">{{ section.settings.label2_text }}</p>
+        <div class="ak-mt-8">
+          <h4 class="ak-w-[calc(100%_-_42px)] ak-mx-auto ak-font-['Blisstwin'] ak-text-[30px] ak-text-center ak-tracking-[0.6px] ak-uppercase ak-p-[10px] ak-border-[1.5px] ak-border-solid ak-border-[#2E3666] ak-pb-0 max-lg:ak-text-[20px]">{{ section.settings.label2_title }}</h4>
+          <p class="ak-mt-4 ak-text-[22px] ak-leading-[normal] max-lg:ak-text-[20px] max-lg:ak-leading-[140%]">{{ section.settings.label2_text }}</p>
         </div>
-        <div class="mt-8">
-          <h4 class="w-[calc(100%_-_42px)] mx-auto font-['Blisstwin'] text-[30px] text-center tracking-[0.6px] uppercase p-[10px] border-[1.5px] border-solid border-[#2E3666] pb-0 max-lg:text-[20px]">{{ section.settings.label3_title }}</h4>
-          <p class="mt-4 text-[22px] leading-[normal] max-lg:text-[20px] max-lg:leading-[140%]">{{ section.settings.label3_text }}</p>
+        <div class="ak-mt-8">
+          <h4 class="ak-w-[calc(100%_-_42px)] ak-mx-auto ak-font-['Blisstwin'] ak-text-[30px] ak-text-center ak-tracking-[0.6px] ak-uppercase ak-p-[10px] ak-border-[1.5px] ak-border-solid ak-border-[#2E3666] ak-pb-0 max-lg:ak-text-[20px]">{{ section.settings.label3_title }}</h4>
+          <p class="ak-mt-4 ak-text-[22px] ak-leading-[normal] max-lg:ak-text-[20px] max-lg:ak-leading-[140%]">{{ section.settings.label3_text }}</p>
         </div>
       </div>
       <!-- BOTTOM DIV -->
       
-      <div class="w-full relative z-10 max-lg:px-4 overflow-up">
-        <h3 class="text-[40px] tracking-[-0.8px] uppercase max-lg:text-[30px] max-lg:pt-[37px] max-lg:pb-0 animate-downup" >{{ section.settings.final_heading }}</h3>
+      <div class="ak-w-full ak-relative ak-z-10 max-lg:ak-px-4 overflow-up">
+        <h3 class="ak-text-[40px] ak-tracking-[-0.8px] ak-uppercase max-lg:ak-text-[30px] max-lg:ak-pt-[37px] max-lg:ak-pb-0 animate-downup" >{{ section.settings.final_heading }}</h3>
       </div>
-      <div class="overflow-hidden max-lg:px-[16px] relative z-10">
-        <div class="h-[4px] w-full bg-[#3E488B] animate-rigthleft"></div>
+      <div class="ak-overflow-hidden max-lg:ak-px-[16px] ak-relative ak-z-10">
+        <div class="ak-h-[4px] ak-w-full ak-bg-[#3E488B] ak-animate-rigthleft"></div>
       </div>
-      <div class="flex justify-between items-start mt-[28px] max-lg:flex-col max-lg:px-4 max-lg:gap-2 max-lg:pb-[49px] overflow-down" >
-        <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full animate-updown max-lg:mx-auto">
+      <div class="ak-flex ak-justify-between ak-items-start ak-mt-[28px] max-lg:ak-flex-col max-lg:ak-px-4 max-lg:ak-gap-2 max-lg:ak-pb-[49px] ak-overflow-down" >
+        <div class="ak-py-[32px] ak-pl-[40px] ak-bg-[#3E488B] ak-backdrop-blur-2xl ak-rounded-[6px] ak-max-w-[431px] ak-w-full ak-animate-updown max-lg:ak-mx-auto">
           <img src="{{ section.settings.icon_image1 | img_url: 'master' }}" alt="">
-          <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px] max-lg:text-[20px] max-lg:leading-[140%]">{{ section.settings.final_text1 }}</p>
+          <p class="ak-text-[24px] ak-text-[#C9CFE1] ak-leading-[150%] ak-tracking-[0.48px] ak-py-[16px] max-lg:ak-text-[20px] max-lg:ak-leading-[140%]">{{ section.settings.final_text1 }}</p>
         </div>
-        <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full h-[265px] animate-updown max-lg:mx-auto">
+        <div class="ak-py-[32px] ak-pl-[40px] ak-bg-[#3E488B] ak-backdrop-blur-2xl ak-rounded-[6px] ak-max-w-[431px] ak-w-full ak-h-[265px] ak-animate-updown max-lg:ak-mx-auto">
           <img src="{{ section.settings.icon_image2 | img_url: 'master' }}" alt="">
-          <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px] max-lg:text-[20px] max-lg:leading-[140%]">{{ section.settings.final_text2 }}</p>
+          <p class="ak-text-[24px] ak-text-[#C9CFE1] ak-leading-[150%] ak-tracking-[0.48px] ak-py-[16px] max-lg:ak-text-[20px] max-lg:ak-leading-[140%]">{{ section.settings.final_text2 }}</p>
         </div>
-        <div class="py-[32px] pl-[40px] bg-[#3E488B] backdrop-blur-2xl rounded-[6px] max-w-[431px] w-full animate-updown max-lg:mx-auto">
+        <div class="ak-py-[32px] ak-pl-[40px] ak-bg-[#3E488B] ak-backdrop-blur-2xl ak-rounded-[6px] ak-max-w-[431px] ak-w-full ak-animate-updown max-lg:ak-mx-auto">
           <img src="{{ section.settings.icon_image3 | img_url: 'master' }}" alt="">
-          <p class="text-[24px] text-[#C9CFE1] leading-[150%] tracking-[0.48px] py-[16px] max-lg:text-[20px] max-lg:leading-[140%]">{{ section.settings.final_text3 }}</p>
+          <p class="ak-text-[24px] ak-text-[#C9CFE1] ak-leading-[150%] ak-tracking-[0.48px] ak-py-[16px] max-lg:ak-text-[20px] max-lg:ak-leading-[140%]">{{ section.settings.final_text3 }}</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <script>
   const swiperMarquee = new Swiper(".marquee", {
