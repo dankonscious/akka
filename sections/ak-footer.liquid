@@ -35,7 +35,7 @@
         {% endif %}
       </div>
       <div class="ak-flex ak-flex-col">
-        <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-whitespace-nowrap">SITEMAP</h3>
+        <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-whitespace-nowrap ak-text-[#2E3666]">SITEMAP</h3>
         <ul class="ak-flex ak-flex-col ak-items-start ak-mt-4 ak-text-[18px] ak-max-[1200px]:mt-2">
           {% if section.settings.information_links %}
             {% for link in linklists[section.settings.information_links].links %}
@@ -48,7 +48,7 @@
       </div>
       <div class="ak-flex ak-flex-col">
         <div class="ak-flex ak-flex-col">
-          <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-uppercase ak-whitespace-nowrap">Information</h3>
+          <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-uppercase ak-whitespace-nowrap ak-text-[#2E3666]">Information</h3>
           <ul class="ak-flex ak-flex-col ak-items-start ak-mt-4 ak-max-[1200px]:mt-2">
             {% if section.settings.sitemap_links %}
               {% for link in linklists[section.settings.sitemap_links].links %}
@@ -62,7 +62,7 @@
       </div>
       <div class="ak-flex ak-flex-col">
         <div class="ak-flex ak-flex-col">
-          <h3 class="ak-gap-2.5 ak-self-stretch ak-p-0.5 ak-font-bold">CUSTOMER SERVICE</h3>
+          <h3 class="ak-gap-2.5 ak-self-stretch ak-p-0.5 ak-font-bold ak-text-[#2E3666]">CUSTOMER SERVICE</h3>
           <address class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-mt-4 ak-leading-7 ak-not-italic ak-normal-case ak-max-[1200px]:mt-2">            
             <span class="ak-font-['Poppins']">{{ section.settings.contact_email }}</span> <br />
             {{ section.settings.contact_phone }} <br />
