@@ -1571,6 +1571,10 @@ video {
   width: 100%;
 }
 
+.ak-w-\[161px\] {
+  width: 161px;
+}
+
 .ak-min-w-\[1350px\] {
   min-width: 1350px;
 }
