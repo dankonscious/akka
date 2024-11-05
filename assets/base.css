@@ -3598,12 +3598,3 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
-/* for cart adjustment */
-
-#main-cart-footer #checkout::after , 
-#shopify-section-template--23414598074671__cart-items .cart__warnings .button::after {
-  content: unset;
-}
-.cart__warnings h1.cart__empty-text {
-  font-size: 40px;
-}

@@ -17,6 +17,18 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  /* for cart adjustment */
+
+  #main-cart-footer #checkout::after , 
+  .cart__warnings .button::after {
+    content: unset;
+  }
+  .cart__warnings h1.cart__empty-text {
+    font-size: 40px;
+  }
+  .cart__warnings .button {
+    margin-bottom: 244px;
+  }
 {%- endstyle -%}
 
 {%- unless settings.cart_type == 'drawer' -%}
