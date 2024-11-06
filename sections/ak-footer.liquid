@@ -1,13 +1,13 @@
 <section id="footer" class="ak-flex ak-flex-col ak-bg-[#EDEEF5] ak-font-['syne']">
   <div class="ak-flex ak-flex-col ak-py-16 ak-w-full max-[1024px]:ak-px-[16px] max-[1024px]:ak-max-w-full ak-max-w-[1328px] ak-mx-auto">
     <div class="ak-flex ak-flex-wrap ak-gap-5 max-[1024px]:ak-gap-[21px] ak-justify-between ak-items-start ak-w-full">
-      <h2 class="ak-text-[22px] ak-text-[#2E3666] ak-w-[597px] max-[1024px]:ak-max-w-full ak-max-[1200px]:text-[20px] ak-max-[1200px]:leading-[140%]">
+      <h2 class="ak-text-[22px] ak-text-[#2E3666] ak-w-[597px] max-[1024px]:ak-max-w-full ak-max-[1200px]:text-[20px] ak-max-[1200px]:leading-[140%] ak-font-['syne']">
         {{ section.settings.newsletter_title | escape }}
       </h2>
       <form class="ak-relative ak-leading-7 ak-rounded-[100px] max-[1024px]:ak-max-w-full" onsubmit="alconfirmsubscribe(event)">
         <label for="emailInput" class="ak-sr-only">Enter your email</label>
         <input id="emailInput" type="email" placeholder="Enter your email" aria-label="Enter your email" class="ak-font-['work_sans'] ak-text-[18px] ak-pl-6 ak-tracking-[-0.36px] ak-bg-white ak-min-h-[55px] ak-rounded-[100px] !ak-text-[#2E3666] ak-w-[562px] max-[1024px]:ak-pl-5 max-[1024px]:ak-max-w-full" />
-        <button type="submit" class="button after:ak-content-[unset] ak-min-h-[auto] ak-w-fit !ak-text-[18px] !ak-h-[55px] !ak-font-bold ak-absolute ak-right-0 ak-top-0 max-[1024px]:!ak-px-[24px] !ak-font-['Work_Sans'] ak-max-[1200px]:!text-[16px]">
+        <button type="submit" class="button after:ak-content-[unset] ak-min-h-[auto] ak-min-w-[auto] ak-w-fit !ak-text-[18px] !ak-h-[55px] !ak-font-bold ak-absolute ak-right-0 ak-top-0 max-[1024px]:!ak-px-[24px] !ak-font-['Work_Sans'] ak-max-[1200px]:!text-[16px]">
           Sign me up!
         </button>
       </form>
@@ -35,7 +35,7 @@
         {% endif %}
       </div>
       <div class="ak-flex ak-flex-col">
-        <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-whitespace-nowrap ak-text-[#2E3666]">SITEMAP</h3>
+        <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-whitespace-nowrap ak-text-[#2E3666] ak-font-['syne']">SITEMAP</h3>
         <ul class="ak-flex ak-flex-col ak-items-start ak-mt-4 ak-text-[18px] ak-max-[1200px]:mt-2">
           {% if section.settings.information_links %}
             {% for link in linklists[section.settings.information_links].links %}
@@ -48,7 +48,7 @@
       </div>
       <div class="ak-flex ak-flex-col">
         <div class="ak-flex ak-flex-col">
-          <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-uppercase ak-whitespace-nowrap ak-text-[#2E3666]">Information</h3>
+          <h3 class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-font-bold ak-uppercase ak-whitespace-nowrap ak-text-[#2E3666] ak-font-['syne']">Information</h3>
           <ul class="ak-flex ak-flex-col ak-items-start ak-mt-4 ak-max-[1200px]:mt-2">
             {% if section.settings.sitemap_links %}
               {% for link in linklists[section.settings.sitemap_links].links %}
@@ -62,7 +62,7 @@
       </div>
       <div class="ak-flex ak-flex-col">
         <div class="ak-flex ak-flex-col">
-          <h3 class="ak-gap-2.5 ak-self-stretch ak-p-0.5 ak-font-bold ak-text-[#2E3666]">CUSTOMER SERVICE</h3>
+          <h3 class="ak-gap-2.5 ak-self-stretch ak-p-0.5 ak-font-bold ak-text-[#2E3666] ak-font-['syne']">CUSTOMER SERVICE</h3>
           <address class="ak-gap-2.5 ak-self-start ak-p-0.5 ak-mt-4 ak-leading-7 ak-not-italic ak-normal-case ak-max-[1200px]:mt-2">            
             <span class="ak-font-['Poppins']">{{ section.settings.contact_email }}</span> <br />
             {{ section.settings.contact_phone }} <br />
