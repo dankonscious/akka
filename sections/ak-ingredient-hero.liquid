@@ -21,14 +21,15 @@
   <div class="circle-bg ak-absolute ak-top-[45px] ak-right-[130px] ak-z-0 ak-max-w-[604px] ak-w-full ak-h-[605px]               
               ak-bg-no-repeat ak-bg-cover ak-bg-center 
               max-lg:ak-w-[348px] max-lg:ak-h-[348px] max-lg:ak-inset-[50%] 
-              max-lg:ak-translate-x-[-50%] max-lg:ak-translate-y-[-50%]">
+              max-lg:ak-translate-x-[-50%] max-lg:ak-translate-y-[-50%]
+              max-md:ak-w-full max-md:ak-h-0 max-md:ak-pb-[100%]">
     <img class="rotate-me  max-lg:ak-hidden" src="{{ section.settings.hero_circle_image | img_url: 'master' }}" alt="">
-    <img class="rotate-me  ak-hidden max-lg:ak-block" src="{{ section.settings.hero_circle_image_mobile | img_url: 'master' }}" alt="">
+    <img class="rotate-me  ak-hidden max-lg:ak-block max-md:ak-w-full" src="{{ section.settings.hero_circle_image_mobile | img_url: 'master' }}" alt="">
   </div>
   <div class="ak-flex ak-items-center ak-justify-center ak-m-auto ak-h-full">
-    <div class="ak-title ak-overflow-hidden ak-relative ak-z-10 
+    <div class="title ak-overflow-hidden ak-relative ak-z-10 
                 ak-bg-cover ak-bg-center ak-bg-no-repeat" style="background-image:url({{ section.settings.hero_text_background | img_url: 'master' }});">
-      <h1 class="ak-animation-moveup ak-text-white ak-text-[70px] ak-leading-[normal] 
+      <h1 class="animation-moveup ak-text-white ak-text-[70px] ak-leading-[normal] 
                 ak-tracking-[-1.4px] ak-capitalize ak-font-['syne'] max-lg:ak-text-[40px] max-lg:ak-text-center">
         {{ section.settings.hero_title }}<span class="ak-font-['Blisstwin'] max-lg:ak:block ak-capitalize ak-ml-[16px] max-lg:ak-ml-0">{{ section.settings.hero_subtitle }}</span>
       </h1>

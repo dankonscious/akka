@@ -3367,6 +3367,12 @@ html {
   }
 }
 
+@media (max-width: 1025px) {
+  .max-\[1025px\]\:ak-w-auto {
+    width: auto;
+  }
+}
+
 @media not all and (min-width: 1024px) {
   .max-lg\:ak-static {
     position: static;
@@ -4178,6 +4184,20 @@ html {
 
   .max-\[1024px\]\:ak-opacity-100 {
     opacity: 1;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  .max-md\:ak-h-0 {
+    height: 0px;
+  }
+
+  .max-md\:ak-w-full {
+    width: 100%;
+  }
+
+  .max-md\:ak-pb-\[100\%\] {
+    padding-bottom: 100%;
   }
 }
 
