@@ -1,2232 +1,1369 @@
 {% layout none %}
-<!DOCTYPE html>
+{% layout none %}
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Start Tailwind PLAY CDN Setup -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        corePlugins: {
-          preflight: false,
-        },
-        theme: {
-          extend: {
-            fontFamily: {
-              myriadpro: ["myriad-pro"],
-              sans: ["Helvetica", "Arial", "sans-serif"],
-            },
-            boxShadow: {
-              vxl: "4px 14px 24px 0px #00000026;",
-              comment: "0px 4px 4px 0px #00000026",
-            },
+
+<head>
+  <!-- Start Tailwind PLAY CDN Setup -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: {
+        preflight: false
+      },
+      theme: {
+        extend: {
+          fontFamily: {
+            'myriadpro': ['myriad-pro'],
+            'sans': ['Helvetica', 'Arial', 'sans-serif'],
           },
-        },
-      };
-    </script>
-    <!-- End Tailwind PLAY CDN Setup -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&family=Work+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Detoxify Your Liver</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link href="https://use.typekit.net/ifq3oek.css" rel="stylesheet" />
-    <!-- <link href="./styles.css?v=27439477841575696001690904743" rel="stylesheet"> -->
-    <link href="./input.css" rel="stylesheet" />
-
-    <link
-      href="https://emmarelief.com/cdn/shop/t/10/assets/er-template-global-v1.css?v=85673224888456333981687504987"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-
-    <!-- Start of TrueVault Polaris Code Block -->
-    <script>
-      window.polarisOptions = {
-        GoogleAnalyticsTrackingId: "G-381562022",
-        enableConsentManager: true,
-        privacyCenterId: "2WDWRB6YE",
-      };
-    </script>
-    <script src="https://polaris.truevaultcdn.com/static/polaris.js"></script>
-    <style>
-      .footerlinks a:not(:first-child) {
-        border-left: 1px solid #000;
-        padding-left: 4px;
-        line-height: 11px;
-        display: inline-block;
-      }
-
-      .footerlinks a {
-        text-decoration: underline;
-      }
-    </style>
-    <!-- End of TrueVault Polaris Code Block -->
-
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      //Second ID config
-      gtag("config", "AW-770742054");
-      gtag("config", "AW-11038484286");
-    </script>
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          "gtm.start": new Date().getTime(),
-          event: "gtm.js",
-        });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        // j.async = 'async';
-        j.src = "https://gtmsvr.konsciousketo.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-56TX85F");
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var qparam = window.location.search;
-        qparam = qparam.replace("?", "");
-
-        var els = document.querySelectorAll("a[href*='#params']");
-        for (var i = 0, l = els.length; i < l; i++) {
-          let el = els[i];
-          let href = el.getAttribute("href");
-          let newhref = "";
-          if (href.indexOf("?") >= 0) newhref = "&" + qparam;
-          else newhref = "?" + qparam;
-          href = href.replace("#params", newhref);
-          el.setAttribute("href", href);
-        }
-      });
-    </script>
-
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122527750-1"
-    ></script>
-    <script
-      src="https://emmarelief.com/cdn/shop/t/10/assets/vslpyttimer.js?v=106713531995554717351687505120"
-      type="text/javascript"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script> -->
-    <script
-      type="text/javascript"
-      src="https://www.digestionfreedom.com/footer/popups.js"
-    ></script>
-    <link rel="canonical" href="https://emmarelief.com/pages/vslfb" />
-    <!-- <script type="text/javascript" src="https://metabolicsuperpower.com/pproof/proof.js"></script> -->
-    <script>
-      jQuery("document").ready(function ($) {
-        $("body").on("click", ".readmore, .readmoreless", function () {
-          $(this).parent().next().toggleClass("d-none");
-          if ($(this).hasClass("readmore")) {
-            $(this).addClass("d-none");
-          } else {
-            let t = $(this).text();
-            if (t == "(Read more)") {
-              $(this).text("(Read less)");
-            } else {
-              $(this).text("(Read more)");
-            }
+          boxShadow: {
+            'vxl': '4px 14px 24px 0px #00000026;',
+            'comment': '0px 4px 4px 0px #00000026',
           }
-        });
-      });
-    </script>
-  </head>
-
-  <body>
-    <noscript>
-      <iframe
-        height="0"
-        src="https://www.googletagmanager.com/ns.html?id=GTM-56TX85F"
-        style="display: none; visibility: hidden"
-        width="0"
-      ></iframe>
-    </noscript>
-    <style>
-      @media (min-width: 768px) {
-        .md\:max-w-\[87vw\] {
-          max-width: 87vw;
         }
       }
-    </style>
+    }
+  </script>
+  <!-- End Tailwind PLAY CDN Setup -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&family=Work+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <title>Detoxify Your Liver</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="https://use.typekit.net/ifq3oek.css" rel="stylesheet">
+  <!-- <link href="https://livercleanseprotocol.com/pages/akk-vslfb-v2/styles.css?v=27439477841575696001690904743" rel="stylesheet"> -->
+  <link href="{{ 'styles-akka-vsl.css' | asset_url }}" rel="stylesheet">
 
-    <div class="xbgcolorf7f6f4 w-100" id="thevid">
-      <div class="maxwidth m-auto pt-1 pt-sm-4" id="heading">
-        <div class="m-auto px-0 pt-1 pb-4 topdoctordiv">
-          <div class="d-block text-center">
-            <span class="topnycdoctor d-block">Top NYC Doctor Reveals:</span>
-            <h2 class="d-block emptybowel text-center m-auto">
-              3 Foods Killing <span class="text-nowrap">Your Liver</span>
-            </h2>
-            <p id="subhead" class="pb-0 mb-0">(#3 will shock you)</p>
-          </div>
-        </div>
-      </div>
-      <script
-        src="https://fast.wistia.com/assets/external/E-v1.js"
-        async
-      ></script>
+  <link href="https://emmarelief.com/cdn/shop/t/10/assets/er-template-global-v1.css?v=85673224888456333981687504987"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="https://livercleanseprotocol.com/pages/akk-vslfb-v2/favicon.svg">
 
-      <div
-        id="vidcont"
-        class="!max-w-[1085.8px] bg-[#ffffff] px-[0] py-[0] md:px-[35px] md:pt-[45px] md:pb-[20px] md:shadow-vxl w-full d-flex flex-column flex-md-row gap-[16px] md:gap-[35px] m-auto vidcont2"
-      >
-        <div class="block flex-grow-1 md:mx-auto md:max-w-[87vw]">
-          <div>
-            <div
-              class="wistia_responsive_padding"
-              style="padding: 56.25% 0 0 0; position: relative"
-            >
-              <div
-                class="wistia_responsive_wrapper"
-                style="
-                  height: 100%;
-                  left: 0;
-                  position: absolute;
-                  top: 0;
-                  width: 100%;
-                "
-              >
-                <div
-                  class="m-auto wistia_embed seo=false videoFoam=true"
-                  style="height: 100%; width: 100%"
-                >
-                  &nbsp;
-                </div>
-              </div>
-            </div>
-          </div>
+  <!-- Start of TrueVault Polaris Code Block -->
+  <script>
+    window.polarisOptions = {
+      GoogleAnalyticsTrackingId: "G-381562022",
+      enableConsentManager: true,
+      privacyCenterId: "2WDWRB6YE",
+    };
+  </script>
+  <script src="https://polaris.truevaultcdn.com/static/polaris.js"></script>
+  <style>
+    .footerlinks a:not(:first-child) {
+      border-left: 1px solid #000;
+      padding-left: 4px;
+      line-height: 11px;
+      display: inline-block;
+    }
 
-          <div
-            class="beforedrop hideonplay px-[16px] md:px-0 md:pt-[25px] w-full hidden md:block"
-          >
-            <div class="text-[18px] md:text-[20px]">
-              <p class="font-semibold max-w-[776px] md:m-auto text-center">
-                <img
-                  class="float-left h-[16px] md:h-[24px] w-[16px] md:w-[24px] mt-[6px] md:mt-[4px]"
-                  src="./charm_sound.png"
-                /><span class="important font-bold">IMPORTANT:</span>
-                <span
-                  >Your video may take 10 seconds to load. Make sure your sound
-                  is on.</span
-                >
-              </p>
-            </div>
-          </div>
-        </div>
+    .footerlinks a {
+      text-decoration: underline;
+    }
+  </style>
+  <!-- End of TrueVault Polaris Code Block -->
 
-        <div
-          class="w-full md:w-[204.8px] px-[16px] md:px-0 pb-[10px] hidden md:block hideonplay beforedrop"
-        >
-          <div class="d-flex flex-row flex-md-column gap-[10px]">
-            <div>
-              <img
-                src="./drginasam.png"
-                class="ginaimage w-[81.96px] md:w-[147.2px]"
-              />
-            </div>
-            <div class="">
-              <span class="topgastro text-nowrap px-1"
-                >Top Gastroenterologist 2024</span
-              >
-              <span class="doctorname d-block">Dr. Gina Sam M.D</span>
-            </div>
-          </div>
-          <p class="font-myriadpro text-[18px] md:text-[13px]">
-            <b
-              >Dr. Gina Sam, MD, is a leading NYC gastroenterologist and former
-              director of the Mount Sinai Gastrointestinal Motility Center</b
-            >. Over her 20-year career, Dr. Sam has specialized in treating
-            digestive and metabolic disorders, founding the Institute of
-            Gastrointestinal Motility Disorders and Integrative Health in New
-            York City.
-            <em
-              >Dr. Sam's research has positioned her at the forefront of
-              understanding
-              <b>obesity, fatigue and other metabolic dysfunctions.</b></em
-            >
-          </p>
-        </div>
-      </div>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    //Second ID config
+    gtag('config', 'AW-770742054');
+    gtag('config', 'AW-11038484286');
+  </script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      // j.async = 'async';
+      j.src = 'https://gtmsvr.konsciousketo.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-56TX85F');
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var qparam = window.location.search;
+      qparam = qparam.replace("?", "");
 
-      <div
-        class="bg-[#ffffff] md:bg-transparent m-auto maxwidth mb-sm-0 pb-sm-4 pt-1 pt-sm-3 mt-[8px] md:mt-[16px] flowheight"
-      >
-        <div class="text-[18px] md:text-[20px] px-[5px] !hidden showonplay">
-          <p class="font-semibold max-w-[776px] md:m-auto text-center">
-            <img
-              class="float-left h-[16px] md:h-[24px] w-[16px] md:w-[24px] mt-[6px] md:mt-[4px]"
-              src="./charm_sound.png"
-            /><span class="important font-bold">IMPORTANT:</span>
-            <span
-              >Your video may take 10 seconds to load. Make sure your sound is
-              on.</span
-            >
-          </p>
-        </div>
+      var els = document.querySelectorAll("a[href*='#params']");
+      for (var i = 0, l = els.length; i < l; i++) {
+        let el = els[i];
+        let href = el.getAttribute("href");
+        let newhref = "";
+        if (href.indexOf('?') >= 0)
+          newhref = "&" + qparam;
+        else
+          newhref = "?" + qparam;
+        href = href.replace("#params", newhref);
+        el.setAttribute("href", href);
+      }
+    });
+  </script>
 
-        <div
-          class="beforedrop text-[18px] md:text-[20px] px-[5px] block md:hidden"
-        >
-          <p class="font-semibold max-w-[776px] md:m-auto text-center">
-            <img
-              class="float-left h-[16px] md:h-[24px] w-[16px] md:w-[24px] mt-[6px] md:mt-[4px]"
-              src="./charm_sound.png"
-            /><span class="important font-bold">IMPORTANT:</span>
-            <span
-              >Your video may take 10 seconds to load. Make sure your sound is
-              on.</span
-            >
-          </p>
-        </div>
 
-        <div
-          class="afterdrop d-none text-center mt-sm-3 px-0 scrolldowntoselect"
-        >
-          <span class="yourvideo d-block"
-            >Scroll down to select your best package</span
-          >
-          <img
-            src="./arrowdown.gif?v=90230465467182572741687505008"
-            class="scrollarrow m-auto mt-2 mt-sm-4"
-            style="width: 60px"
-          />
-        </div>
-      </div>
-    </div>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122527750-1"></script>
+  <script src="https://emmarelief.com/cdn/shop/t/10/assets/vslpyttimer.js?v=106713531995554717351687505120"
+    type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script> -->
+  <script type="text/javascript" src="https://www.digestionfreedom.com/footer/popups.js"></script>
+  <link rel="canonical" href="https://emmarelief.com/pages/vslfb">
+  <!-- <script type="text/javascript" src="https://metabolicsuperpower.com/pproof/proof.js"></script> -->
+  <script>
+    jQuery("document").ready(function ($) {
+      $("body").on("click", ".readmore, .readmoreless", function () {
+        $(this).parent().next().toggleClass("d-none");
+        if ($(this).hasClass("readmore")) {
+          $(this).addClass("d-none");
+        } else {
+          let t = $(this).text();
+          if (t == "(Read more)") {
+            $(this).text("(Read less)");
+          } else {
+            $(this).text("(Read more)");
+          }
+        }
+      })
+    });
+  </script>
+</head>
 
-    <div class="afterdrop w-100 d-none prevent-select" id="cta1">
-      <div class="bgcolor485397 pt-4 pb-5" id="cta2">
-        <div
-          class="align-items-lg-end align-items-center ctas d-flex flex-column-reverse flex-lg-row gap-3 m-auto maxwidth1058"
-        >
-          <div style="width: 338px" class="position-relative">
-            <img class="w-100 shadow" src="./bottles1.png" /><a
-              class="position-absolute"
-              href="https://go.tryakka.com/products/akka-1-pack-akk-vsl-email/#params"
-              >ORDER NOW</a
-            >
-          </div>
-          <div
-            class="d-flex gap-3 align-items-md-end align-items-center flex-column flex-md-row"
-          >
-            <div style="width: 350px" class="position-relative">
-              <img class="w-100 shadow" src="./bottles6.png" /><a
-                class="position-absolute"
-                href="https://go.tryakka.com/products/akka-6-pack-akk-vsl-email/#params"
-                >ORDER NOW</a
-              >
-            </div>
-            <div style="width: 338px" class="position-relative">
-              <img class="w-100 shadow" src="./bottles3.png" /><a
-                class="position-absolute"
-                href="https://go.tryakka.com/products/akka-3-pack-akk-vsl-email/#params"
-                >ORDER NOW</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+<body>
+  <noscript>
+    <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-56TX85F"
+      style="display:none;visibility:hidden" width="0"></iframe>
+  </noscript>
+  <style>
+    @media (min-width: 768px) {
+      .md\:max-w-\[87vw\] {
+        max-width: 87vw;
+      }
+    }
+  </style>
 
-      <div class="cookbg overflow-hidden">
-        <div
-          class="maxwidth m-auto pt-sm-5 pt-0 pb-3 pb-sm-4 px-2 px-sm-0 guaranteedmaindiv"
-        >
-          <img
-            class="d-block d-sm-none m-auto mt-2"
-            src="./seal.png"
-            style="width: 140px"
-          />
-          <div class="guaranteeddiv m-auto mb-5 mb-sm-0">
-            <div
-              class="align-items-center d-flex flex-column flex-sm-row guaranteehead text-center text-sm-start"
-            >
-              <img
-                class="d-none d-sm-block"
-                src="./seal.png"
-                style="width: 140px"
-              />100% Money Back<br />Satisfaction Guarantee
-            </div>
-            <p
-              class="align-items-center d-flex flex-column flex-sm-row gap-1 gap-sm-2 guaranteethumb text-center text-sm-start"
-            >
-              <img class="mt-3" src="./thumbsup.png" /><span
-                class="d-flex d-sm-inline flex-column flex-sm-row gap-1 align-items-center"
-                ><span class="pe-1 pe-sm-0">Full Industry Best 90-Day</span
-                ><span class="ps-1 ps-sm-0"
-                  ><span class="d-none d-md-inline"> - </span>No Questions
-                  Asked</span
-                ></span
-              >
-            </p>
-            <p>
-              What this means is, whether you
-              <em>choose one bottle or <u>six</u>...</em>
-            </p>
 
-            <p>
-              If you don't feel an improvement in your liver function, if you
-              don't notice a reduction in fatigue, sluggishness, or other
-              symptoms related to liver toxicity...
-            </p>
 
-            <p>
-              If you don't <em>see the pounds melt off,</em> or feel generally
-              healthier and more vibrant...
-            </p>
-
-            <p>
-              Simply give us a call or email
-              <a
-                id="hellotryakka"
-                href="mailto:hello@tryakka.com"
-                class="text-[#6378F3]"
-                >hello@tryakka.com</a
-              >
-              within the next 90 days, and we will refund every penny you paid
-              today. <em>No questions asked, no hassle, no hard feelings.</em>
-            </p>
-            <a class="text-nowrap tryakkabtn" href="#cta2"
-              >Try AKKA 100% Guaranteed >></a
-            >
-          </div>
-
-          <div class="coockbookdiv">
-            <h2 class="headingbar">
-              Enjoy The Skinny Liver Cookbook, Yours <em>FREE</em> With Any
-              <span class="text-nowrap">Multipack Order</span>
-            </h2>
-
-            <picture>
-              <source media="(max-width: 768px)" srcset="./coockbookm.png" />
-              <source media="(min-width: 769px)" srcset="./coockbook.png" />
-              <img src="./coockbook.png" />
-            </picture>
-
-            <p id="cbp">
-              When you select a <em>3 or 6 multipack</em>, you'll gain instant
-              access to our transformative guide, the
-              <em
-                >"Skinny Liver Cookbook: Delicious Recipes to Help Detoxify and
-                Slim Your Liver".</em
-              >
-            </p>
-
-            <p>
-              This resource introduces simple, natural strategies to boost liver
-              function and promote weight loss, requiring only minutes of the
-              day.
-            </p>
-
-            <p>
-              Immerse yourself in our <b>“Lean Liver” meal plan</b>, which
-              features a collection of liver-friendly, mouthwatering meals and
-              easy-to-follow recipes that are sure to become family favorites.
-            </p>
-
-            <div
-              class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe"
-            >
-              <img src="./citrus.png" />
-              <p>
-                Discover our <em>Citrus-Poached Salmon recipe.</em> In this
-                recipe, omega-3-rich salmon meets the detoxifying powers of
-                citrus, offering a delicious approach to reducing inflammation
-                and aiding liver health.
-              </p>
-            </div>
-            <div
-              class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe"
-            >
-              <img src="./turmeric.png" />
-              <p>
-                Experience the flavors of <em>Savory Turmeric Chicken,</em> a
-                dish that harnesses the anti-inflammatory benefits of turmeric
-                in a savory, lean protein meal that supports liver wellness.
-              </p>
-            </div>
-            <div
-              class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe"
-            >
-              <img src="./almund.png" />
-              <p>
-                Try our <em>Almond-Crusted Cod with Cauliflower Rice,</em> where
-                the almond adds texture and healthy fats, and the cauliflower
-                rice offers a low-carb alternative that aids liver
-                detoxification, keeping the meal light yet nourishing.
-              </p>
-            </div>
-            <p class="mt-0 mt-sm-4">
-              <em>Normally valued at $39.95</em> on our website, the
-              <em>"Skinny Liver Cookbook"</em> is included at no additional cost
-              as part of the Akka system, offering you a comprehensive approach
-              to liver health.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bgcolorF7F6F4 overflow-hidden">
-        <div class="maxwidth m-auto py-5 px-2 px-sm-0 guaranteedmaindiv">
-          <div class="coockbookdiv">
-            <h2 class="headingbar">
-              Liver Cleanse Protocol: An Essential Part Of The
-              <span class="text-nowrap">Akka System</span>
-            </h2>
-
-            <picture>
-              <source media="(max-width: 768px)" srcset="./protocolm.png" />
-              <source media="(min-width: 769px)" srcset="./protocol.png" />
-              <img src="./protocol.png" />
-            </picture>
-
-            <p id="cbp">
-              Every order today receives our comprehensive guide,
-              <em
-                >"Liver Cleanse Protocol: The Definitive Guide to Detoxifying
-                and Revitalizing Your Liver".</em
-              >
-            </p>
-
-            <p>
-              <span>This crucial element of the Akka Superbiotic system</span>
-              unveils simple yet powerful strategies for enhancing liver
-              function, boosting metabolism, and increasing fat-burning
-              potential.
-            </p>
-
-            <div
-              class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe"
-            >
-              <img src="./liverfresh.png" />
-              <p>
-                Explore our <span>“Liver Refresh” meal plan,</span> featuring
-                liver-supportive, delectable meals and simple-to-follow recipes
-                that your entire family will enjoy.
-              </p>
-            </div>
-            <div
-              class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe"
-            >
-              <img src="./gentleexercise.png" />
-              <p>
-                Discover
-                <span>7 gentle exercises that detoxify your liver</span> more
-                effectively (and safely) than conventional detox methods.
-              </p>
-            </div>
-            <div
-              class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe"
-            >
-              <img src="./greensmoothie.png" />
-              <p>
-                Dive into the secrets of my signature
-                <span>“Green Guardian” smoothie</span> that naturally elevates
-                your antioxidant levels, supports liver function, and helps
-                reduce toxin load in your liver.
-              </p>
-            </div>
-            <div
-              class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe"
-            >
-              <img src="./relaxatioin.png" />
-              <p>
-                And not to be missed, my personal go-to, an incredibly calming
-                <em>10-minute relaxation technique</em> that significantly
-                improves liver health by reducing stress on the liver, enhancing
-                your mood, and boosting your productivity.
-              </p>
-            </div>
-            <p class="mt-3">
-              <span>"Liver Cleanse Protocol"</span> is typically available for
-              <span>$39.95</span> on our website but comes included with the
-              LiverHealth system at no additional cost.
-            </p>
-            <a class="mt-4 text-nowrap tryakkabtn" href="#cta2"
-              >Flush Your Liver And Feel Amazing ></a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div class="bgcolore7e9fd">
-        <div class="yourstorymaindiv m-auto pt-5">
-          <span class="yourstory text-sm-center d-block headingbar barcentered"
-            >Your Story Can Be Next</span
-          >
-          <div class="row mt-4 mt-sm-5">
-            <div class="col-12 col-sm-6">
-              <div class="align-items-center d-flex gap-3">
-                <img src="./elizabeth.png" />
-                <div class="flex-grow-1">
-                  <span class="d-block customername"
-                    >Elizabeth M.<span>Pensacola FL</span></span
-                  >
-                  <img
-                    src="checkmark.png"
-                    style="width: 17px"
-                    class="d-inline-block"
-                  />
-                  <span class="vercustomer d-inline-block"
-                    >Verified customer</span
-                  >
-                </div>
-                <img src="./star.svg" />
-              </div>
-              <div class="customerstory">
-                <p>
-                  Living with constant fatigue and an ever-expanding midsection
-                  had become a nightmare. I was always exhausted, no matter how
-                  much I rested. Meals were a challenge because I would feel
-                  bloated and uncomfortable afterward, leading me to dread
-                  eating.
-                  <span class="d-inline d-sm-none readmore"
-                    ><b>Read more -></b></span
-                  >
-                </p>
-                <span class="d-none d-sm-block">
-                  <p>
-                    I knew something was seriously wrong because my hands would
-                    itch after eating. Which was really weird. My husband also
-                    noticed that my breath and body odor was getting worse, and
-                    I couldn't even tell. I tried countless remedies and
-                    consulted with multiple doctors, but no one had any answers.
-                  </p>
-                  <p>
-                    Then, a life-changing recommendation came while I was at my
-                    lowest point during a family trip. My mother-in-law
-                    suggested I try Akka. Skeptical but desperate, I gave it a
-                    shot.
-                  </p>
-                  <p>
-                    The effect was immediate, and dramatic. My energy levels
-                    improved, and the bloating disappeared. My previous issues
-                    with fatigue and discomfort after meals became a thing of
-                    the past.
-                  </p>
-                  <p>
-                    Plus, my skin cleared up and my hands no longer itch. My
-                    mood significantly improved, and I look forward to eating
-                    again -- the way it should be!
-                  </p>
-                  <p>
-                    Akka has been a lifesaver for me, and I never leave home
-                    without it. I truly hope my story can help others who have
-                    faced similar struggles.
-                  </p>
-                </span>
-              </div>
-
-              <div class="align-items-center d-flex gap-3">
-                <img src="./joan.png" />
-                <div class="flex-grow-1">
-                  <span class="d-block customername"
-                    >Joan T.<span>Atlanta GA</span></span
-                  >
-                  <img
-                    src="checkmark.png"
-                    style="width: 17px"
-                    class="d-inline-block"
-                  />
-                  <span class="vercustomer d-inline-block"
-                    >Verified customer</span
-                  >
-                </div>
-                <img src="./star.svg" />
-              </div>
-              <div class="customerstory">
-                <p>
-                  Akka was a godsend. I had no idea why I couldn't lose weight.
-                  I tried everything including hard core diets, exercise
-                  programs, and fat burner pills (they made the problem worse).
-                  I had no idea that my liver was responsible. I tried Akka and
-                  felt the effects in days. My mental clarity has also been
-                  amazing. Five stars.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-6">
-              <div class="align-items-center d-flex gap-3">
-                <img src="./michael.png" />
-                <div class="flex-grow-1">
-                  <span class="d-block customername"
-                    >Michael G. <span>Cheshire CT</span></span
-                  >
-                  <img
-                    src="checkmark.png"
-                    style="width: 17px"
-                    class="d-inline-block"
-                  />
-                  <span class="vercustomer d-inline-block"
-                    >Verified customer</span
-                  >
-                </div>
-                <img src="./star.svg" />
-              </div>
-              <div class="customerstory">
-                <p>
-                  I was struggling with chronic fatigue and auto-immune
-                  problems. I was constantly breaking out in rashes and itching
-                  all over my body. Akka gave me a 'clean body' feeling in just
-                  a few weeks and I couldn't be happier. Amazing focus and
-                  concentration. I feel 20 years younger.
-                </p>
-              </div>
-
-              <div class="align-items-center d-flex gap-3">
-                <img src="./jerry.png" />
-                <div class="flex-grow-1">
-                  <span class="d-block customername"
-                    >Jerry S.<span>Atlanta GA</span></span
-                  >
-                  <img
-                    src="checkmark.png"
-                    style="width: 17px"
-                    class="d-inline-block"
-                  />
-                  <span class="vercustomer d-inline-block"
-                    >Verified customer</span
-                  >
-                </div>
-                <img src="./star.svg" />
-              </div>
-              <div class="customerstory">
-                <p>
-                  Before discovering Akka, I struggled with fatigue and a
-                  constant sense of feeling unwell, which I later learned was
-                  due to my liver not functioning properly. For years, I just
-                  lived with it, thinking it was normal to feel tired when
-                  you're older.
-                  <span class="d-inline d-sm-none readmore"
-                    ><b>Read more -></b></span
-                  >
-                </p>
-                <span class="d-none d-sm-block">
-                  <p>
-                    I had tried various supplements and visited several
-                    specialists, but nothing provided a lasting solution. My
-                    energy levels were always low, and I noticed my sense of
-                    taste and smell just seemed 'off'. Food would taste bland on
-                    some days and other days just downright unpleasant.
-                  </p>
-                  <p>
-                    I also noticed a ringing in my ears -- especially in the
-                    morning when I woke up.
-                  </p>
-                  <p>
-                    Within just one week of starting Akka, I began to feel a
-                    significant difference. My energy levels improved, and I no
-                    longer felt that constant fatigue that had been dragging me
-                    down. My senses also came back to normal in just a few short
-                    weeks.
-                  </p>
-                  <p>
-                    I was skeptical at first, as I had never been able to find
-                    something that truly worked, but Akka proved me wrong. Not
-                    only has my energy returned, but I've also started to lose
-                    some of the weight that seemed impossible to shed before.
-                  </p>
-                  <p>
-                    Akka has truly been a game-changer for me. A solid 5-star
-                    experience.
-                  </p>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="bgcolor485397 pt-4 pb-5" id="cta2">
-        <div
-          class="align-items-lg-end align-items-center ctas d-flex flex-column-reverse flex-lg-row gap-3 m-auto maxwidth1058"
-        >
-          <div style="width: 338px" class="position-relative">
-            <img class="w-100 shadow" src="./bottles1.png" /><a
-              class="position-absolute"
-              href="https://go.tryakka.com/products/akka-1-pack-akk-vsl-email/#params"
-              >ORDER NOW</a
-            >
-          </div>
-          <div
-            class="d-flex gap-3 align-items-md-end align-items-center flex-column flex-md-row"
-          >
-            <div style="width: 350px" class="position-relative">
-              <img class="w-100 shadow" src="./bottles6.png" /><a
-                class="position-absolute"
-                href="https://go.tryakka.com/products/akka-6-pack-akk-vsl-email/#params"
-                >ORDER NOW</a
-              >
-            </div>
-            <div style="width: 338px" class="position-relative">
-              <img class="w-100 shadow" src="./bottles3.png" /><a
-                class="position-absolute"
-                href="https://go.tryakka.com/products/akka-3-pack-akk-vsl-email/#params"
-                >ORDER NOW</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-100 bgcolorffffff faqmaincont prevent-select">
-        <div class="maxwidth m-auto py-5 py-sm-4">
-          <div class="container m-auto">
-            <div class="faqdiv m-auto">
-              <h2 id="faq" class="faq d-block headingbar">
-                Frequently Asked Questions
-              </h2>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q1</span></div>
-                  <h3>
-                    Are there any side effects? Is it safe to take it long term?
-                  </h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >Akka superbiotic, with our Preserve Pasteurized
-                        preparation, has had zero reported side effects,</b
-                      >
-                      and is one of the most powerful health-boosting
-                      formulations to exist in the last 20 years.
-                      <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        In fact, the only side effects related to Akkermansia
-                        are associated with the live version, which is what
-                        motivated us to develop our Preserve Pasteurized
-                        preparation.
-                      </p>
-                      <p>
-                        <b
-                          >The best part is, studies show this version to be far
-                          more effective for boosting the metabolism, burning
-                          fat and reducing fatigue.</b
-                        >
-                      </p>
-                      <p>
-                        In addition, Akka is considered a master superbiotic
-                        because it feeds the other beneficial probiotic strains
-                        already in your gut.
-                      </p>
-                      <p>
-                        That means not only are you populating your microbiome
-                        with Akkermansia, you're also increasing other
-                        health-promoting strains across the board.
-                      </p>
-                      <p>
-                        This is important because many scientific studies have
-                        established a link between microbiome diversity and
-                        health.
-                      </p>
-                      <p>
-                        In fact, low microbiome diversity, meaning not enough
-                        beneficial strains in the gut, has been linked in
-                        studies to many things like allergies, low sex drive,
-                        eczema, arthritis, cancer, chronic fatigue, autism,
-                        depression, enlarged prostate, anxiety, sleep disorder,
-                        HIV susceptibility, auto-immune problems like Crohn's
-                        and colitis, arterial plaque, hypertension, and gout.
-                      </p>
-                      <p>
-                        And of course, while it would be a stretch to claim
-                        <b>Akka will cure these problems,</b> since there's so
-                        many lifestyle factors involved, it will improve your
-                        microbiome dramatically and move things into a more
-                        healthy direction, and keep improving your health
-                        long-term.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q2</span></div>
-                  <h3>How much weight can I lose with Akka Superbiotics?</h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >Because the liver is the most critical organ in the
-                        body for eliminating fat and losing weight,</b
-                      >
-                      Akka Superbiotics helps rejuvenate the liver,
-                      supercharging its ability to burn fat and detoxify your
-                      body. <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        Your weight loss with Akka is going to depend on many
-                        things, and here they are:
-                      </p>
-                      <p>
-                        <b>First… It's based on your starting point.</b> If
-                        you're significantly overweight, your bile ducts are
-                        clogged and your metabolism has been slowed, it might
-                        take a bit longer for your liver to rejuvenate, and burn
-                        all that fat.
-                      </p>
-                      <p>
-                        <b
-                          >Second… It's also based on your lifestyle factors.</b
-                        >
-                        Here's what I mean. If you continue eating the 3
-                        liver-toxic foods - sugar, alcohol, and trans fats, then
-                        you're going to have a tougher time because it's a bit
-                        like walking up a hill.
-                      </p>
-                      <p>
-                        You'll get there but it's going to take Akka a little
-                        longer, and a bit more energy.
-                      </p>
-                      <p>
-                        Once your liver reaches its full function, you'll know
-                        because it's likely you'll
-                        <b
-                          >feel more energy, more clarity of mind, more focus,
-                          and renewed optimism for life.</b
-                        >
-                      </p>
-                      <p>
-                        <b
-                          >The mental benefits are usually felt first, with the
-                          accelerated weight loss and fat burning ability
-                          kicking in about 2-4 weeks later.</b
-                        >
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q3</span></div>
-                  <h3>What happens if I lose weight too quickly?</h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >Usually, it's bad to lose weight too quickly - but
-                        here's how Akka Superbiotics changes that.</b
-                      >
-                      <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        <b>You see...</b> Fat surrounds and protects organs from
-                        toxins. When the fat dissolves, the toxins are released
-                        into the bloodstream.
-                      </p>
-                      <p>
-                        <b
-                          >When your liver is damaged, clogged or unhealthy, it
-                          struggles to process all those released toxins.</b
-                        >
-                      </p>
-                      <p>
-                        However, because Akka helps give you a strong,
-                        rejuvenated and healthy liver, you'll have no problem
-                        handling the detoxification process that happens when
-                        you start burning stored body fat.
-                      </p>
-                      <p>
-                        <b
-                          >That said, most doctors recommend losing 2 pounds per
-                          week.</b
-                        >
-                        If you find that you're losing weight faster than you
-                        want when taking Akka, simply taper the dose back to one
-                        capsule per day.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q4</span></div>
-                  <h3>
-                    What else can harm the liver? I suspect I have liver
-                    problems because of my difficulty with weight loss, but I
-                    don't drink alcohol and I don't consume a lot of sugar.
-                  </h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      Remember, your liver is your body's central filtration
-                      system for toxins. It's also responsible for clearing
-                      cholesterol and removing fats from the bloodstream
-                      <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        It has such an essential role in the body that
-                        <b
-                          >a person would not even live for more than one day
-                          without a liver.</b
-                        >
-                      </p>
-                      <p>
-                        So there's many other things that can cause problems
-                        with the liver, including drugs and medicines as well as
-                        environmental toxins, which would include exhaust from
-                        cars and airplanes, air pollution from factories and big
-                        cities.
-                      </p>
-                      <p>
-                        Even if you avoid going outside or wear a mask, all
-                        kinds of pollution get into our water supply, which
-                        leeches into the skin while taking a shower.
-                      </p>
-                      <p>
-                        Even if you have a whole-home water filter, you're still
-                        getting pesticides, preservatives, and plastics from the
-                        food supply.
-                      </p>
-                      <p>
-                        So, <b>our liver has a critical job,</b> and it's no
-                        wonder why it's overburdened in today's society. Above
-                        and beyond that, the liver can be affected by viruses,
-                        mold, and bacteria, and can also be
-                        <b
-                          >damaged by Big Pharma's imperfect solutions to these
-                          outbreaks.</b
-                        >
-                      </p>
-                      <p>
-                        In fact, there has been a
-                        <b
-                          >sharp increase in liver-related weight gain since
-                          2020,</b
-                        >
-                        and I think it's not a coincidence, given the health
-                        epidemic that took place during that time period.
-                      </p>
-                      <p>
-                        Lots of new research is coming out that shows just how
-                        fragile the liver really is and how important it is to
-                        take this important step on the road back to health and
-                        healing.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q5</span></div>
-                  <h3>What makes Akka superior to probiotics?</h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >There's three main points that make Akka superior to
-                        any probiotic out there.</b
-                      >
-                      <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        <b
-                          >Firstly, researchers consider Akkermansia to be a
-                          next-generation superbiotic</b
-                        >—in that it actually feeds all of the beneficial
-                        probiotics already in your system and has provable
-                        benefits far beyond those of run-of-the-mill
-                        commercially available probiotics.
-                      </p>
-                      <p>
-                        Above and beyond that, our proprietary Preserve
-                        Pasteurized technology makes our Akkermansia more
-                        bioavailable and usable by your body.
-                      </p>
-                      <p>
-                        Remember, Preserve Pasteurized keeps the delicate
-                        Akkermansia in a peaceful state of hibernation, fully
-                        intact and ready for your body to be use.
-                      </p>
-                      <p>
-                        This time-consuming process increases the
-                        bioavailability of the Akkermansia to ensure you get the
-                        full liver-regenerating, metabolism-boosting benefits.
-                      </p>
-                      <p>
-                        <b
-                          >Secondly, we have combined Akkermansia with several
-                          other liver-healing ingredients</b
-                        >
-                        that have been shown in studies to be synergistic,
-                        further boosting the fat-burning, liver-rejuvenating
-                        properties.
-                      </p>
-                      <p>
-                        <b>And third, we use enteric coated capsules</b> to
-                        protect and transport the ingredients through the
-                        stomach's harsh acidic environment, to deliver Akka
-                        straight to where it needs to be – the microbiome.
-                      </p>
-                      <p>
-                        <b
-                          >You won't find a superior formulation in a
-                          supermarket, online, or anywhere else, guaranteed.</b
-                        >
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q6</span></div>
-                  <h3>How many bottles should I order?</h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >Due to high demand because of the dramatic results and
-                        word-of-mouth recommendations from happy Akka
-                        customers,</b
-                      >
-                      most customers are choosing the 6-bottle package to avoid
-                      running out. <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        Ultimately you should make a personal decision and do
-                        what's best for your situation. However I should point
-                        out that you can also take advantage of our free
-                        shipping by choosing the 3 or 6 pack.
-                      </p>
-                      <p>
-                        <b
-                          >You see, by taking the 3 or 6 pack, we are also able
-                          to save on shipping costs,</b
-                        >
-                        and we pass those savings directly onto you. You also
-                        secure the greatest savings by buying in bulk.
-                      </p>
-                      <p>
-                        And remember,
-                        <b>when you select a 3 or 6 multipack today,</b> you'll
-                        gain instant access to our transformative guide, the
-                        <b
-                          >"Skinny Liver Cookbook: Delicious Recipes to Help
-                          Detoxify and Slim Your Liver".</b
-                        >
-                        A $39.95 value, yours free.
-                      </p>
-                      <p>
-                        By claiming a 3 or 6-pack, you also ensure that you
-                        won't risk running out while in the process of metabolic
-                        recomposition and help you plan your fat loss journey
-                        ahead of time.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q7</span></div>
-                  <h3>How fast will I see results?</h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >Really, it depends on the current state of your liver
-                        and how long you've been having problems.</b
-                      >
-                      <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        <b>The liver has an amazing regenerative ability.</b> In
-                        fact, studies in transplant patients show that the liver
-                        can regrow to a normal size even after up to 90% of it
-                        has been removed.
-                      </p>
-                      <p>
-                        <b
-                          >But if you've been drinking for years, or not eating
-                          a very good diet, full rejuvenation of your liver can
-                          take some time, possibly 3-6 months.</b
-                        >
-                      </p>
-                      <p>
-                        That's why for overweight folks we often recommend
-                        choosing a 3 or 6-month package - that way, you have
-                        enough Akka to completely get the job done.
-                      </p>
-                      <p>
-                        It's possible, however, that you love the energy,
-                        vitality, and mental focus you get from AKKA, and want
-                        to continue a maintenance dose much longer. It's great
-                        year-round protection and really does create an amazing
-                        environment inside your body for many healthful benefits
-                        to appear.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q8</span></div>
-                  <h3>
-                    I'm not overweight but I'm dealing with fatigue, rosacea,
-                    itchy skin, dark puffy eyes, bloating, or bad breath.
-                  </h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >Aside from breaking down the fats in your diet, the
-                        liver is primarily a detoxification organ.</b
-                      >
-                      That means it helps filter out things in your blood that
-                      might be toxic, foreign, or even things that might be
-                      causing a reaction with different systems of your body.
-                      <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        Now, as one of the leading doctors in NYC, you would be
-                        shocked if I told you the things that appear in people's
-                        blood. Industrial byproducts, food preservatives,
-                        pesticides, microplastics, heavy metals from car exhaust
-                        and jet fuel and more.
-                      </p>
-                      <p>
-                        <b
-                          >Now usually the body is pretty good at breaking these
-                          things down and excreting them through the feces.</b
-                        >
-                      </p>
-                      <p>
-                        But if your liver is not at its full function, it's hard
-                        to keep up with the daily barrage of these harmful
-                        substances. And if your liver is fully saturated with
-                        fat or even clogged, your body looks for other ways to
-                        try and push this stuff out.
-                      </p>
-                      <p>
-                        And the major route of elimination of course, is through
-                        your skin, via your sweat glands. So it's no surprise
-                        that when your liver becomes overloaded, you might
-                        experience redness, irritation, hives, acne, odors, or
-                        itchiness on your skin.
-                      </p>
-                      <p>
-                        And of course, these symptoms will change depending on
-                        what specific toxins your body is dealing with.
-                      </p>
-                      <p>
-                        <b
-                          >When healthy, the liver is an incredible fat-burning,
-                          body-cleansing powerhouse.</b
-                        >
-                        So when you truly begin to rejuvenate your liver,
-                        especially by avoiding the three liver killers, to bring
-                        it back to its youthful state, you might be surprised
-                        how these things clear right up.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q9</span></div>
-                  <h3>
-                    Will Akka help me with headaches, poor sleep, brain fog,
-                    poor focus, or motivation?
-                  </h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      Absolutely. It does this through two different mechanisms.
-                      One is reducing the toxic load in your bloodstream that
-                      has accumulated from a liver that's not as healthy as it
-                      should be. <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        As mentioned, toxins in the bloodstream can be
-                        environmental, like from pollution, from the water
-                        supply, and absorbed into your skin while showering, or
-                        they can be in the form of pesticides on fruits and
-                        vegetables.
-                      </p>
-                      <p>
-                        Prescription drugs, especially taken over long periods,
-                        will cause toxins to build up as well.
-                      </p>
-                      <p>
-                        These are all handled by a healthy liver.
-                        <b
-                          >And when you detoxify, cleanse, and rejuvenate your
-                          liver, your body just gets better at clearing this
-                          stuff out.</b
-                        >
-                      </p>
-                      <p>
-                        You might be shocked to reach a level of clarity you
-                        haven't experienced since you were young. I've seen eyes
-                        brighten up, skin clear like magic, even joint pain
-                        vanish in just a few weeks.
-                      </p>
-                      <p>
-                        <b
-                          >Now, the second is through microbiome
-                          recomposition</b
-                        >
-                        - that is, repopulating your microbiome with the most
-                        powerful superbiotic known to man. The mental benefits
-                        of Akkermansia have been demonstrated in over 150
-                        scientific studies.
-                      </p>
-                      <p>
-                        More broadly, probiotics in general have literally
-                        thousands of clinical studies showing their mental
-                        benefits improving memory, concentration, focus, and
-                        even a dramatic lift in your mood, since 85% of your
-                        body's serotonin is produced in the gut.
-                      </p>
-                      <p>
-                        <b
-                          >Akkermansia is the master superbiotic, feeding and
-                          nurturing nearly every beneficial strain in your
-                          gut.</b
-                        >
-                      </p>
-                      <p>
-                        You've never seen anything like it, and I promise you,
-                        no amount of exercise, caffeine, energy drinks, or drugs
-                        can compete with the mental clarity and focus you'll
-                        experience from naturally improving your microbiome.
-                      </p>
-                      <p>
-                        Every day I get emails from people who have improved
-                        their memory, been able to focus for longer periods of
-                        time, and have even reported making more money as a
-                        result.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q10</span></div>
-                  <h3>
-                    I'm a bodybuilder and I take a ton of supplements and gear
-                    so I worry about my liver. Will this protect me?
-                  </h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >As you probably realize, body-building supplements and
-                        other anabolic agents are known for being extremely
-                        harsh on the liver, causing a measurable rise in liver
-                        enzymes.</b
-                      >
-                      <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        And when you see an increase in liver enzymes, that
-                        means these agents, while triggering enhanced muscle
-                        growth,
-                        <b
-                          >are also liquefying liver cells and causing them to
-                          leak out the bloodstream.</b
-                        >
-                      </p>
-                      <p>
-                        Akka is very different from the liver protective agents
-                        found online or in GNC, or other bodybuilding shops.
-                        Many of these stores carry a generic version of Milk
-                        Thistle, but there's really no other comprehensive liver
-                        formula that covers all the elements of liver protection
-                        and detoxification.
-                      </p>
-                      <p>
-                        We combine Akkermansia, the world's most effective liver
-                        regenerative superbiotic, with 4 clinically proven
-                        liver-protective ingredients: Quercetin, Resveratrol,
-                        Silymarin, and Artichoke Leaf Extract.
-                      </p>
-                      <p>
-                        That means you're covered from every angle, and several
-                        of these ingredients are synergistic.
-                        <b
-                          >In fact, when you combine Quercetin and Resveratrol,
-                          studies show an improved metabolic fat-burning
-                          effect.</b
-                        >
-                      </p>
-                      <p>
-                        <b
-                          >Likewise, when you combine Resveratrol and Silymarin,
-                          you get enhanced anti-inflammatory effects and an
-                          increased reduction in liver fat.</b
-                        >
-                      </p>
-                      <p>
-                        A 2017 study found that Resveratrol specifically
-                        decreases oxidative stress levels in muscles and
-                        promotes accelerated muscle regeneration.
-                      </p>
-                      <p>
-                        Also as a mitochondria enhancer, Resveratrol boosts the
-                        connective strength of tendons, increases blood flow to
-                        the muscles, and increases muscle vascularization as
-                        well.
-                      </p>
-                      <p>
-                        And according to a 2022 study, Akkermansia improved
-                        muscle strength and mass in animals who had previously
-                        demonstrated muscle weakness, which was the first study
-                        to show the microbiome's dramatic effect on muscle
-                        gains.
-                      </p>
-                      <p>
-                        Not to mention that Akka is one of the most effective
-                        fat-burning agents available, making it one of the
-                        fastest ways to see those abs in the mirror.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q11</span></div>
-                  <h3>
-                    What other symptoms are associated with an overburdened
-                    liver?
-                  </h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >There's many conditions caused by an overload of
-                        toxicity in the body. Gaining weight is often the tip of
-                        the iceberg.</b
-                      >
-                      <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>
-                        There's many systems of the body that break down when
-                        your bloodstream becomes oversaturated with toxins, and
-                        they can range from poor sense of smell, impaired taste
-                        or a metallic taste, tinnitus or ringing in the ears,
-                        achy joints, brain fog, or confused thinking.
-                      </p>
-                      <p>
-                        <b
-                          >You might even experience itchy or red rashy skin as
-                          your body tries to push out the toxins through sweat,
-                          or unexplained, sometimes sudden weight gain.</b
-                        >
-                      </p>
-                      <p>
-                        Now, depending on your situation, you could also lose
-                        weight due to muscle wasting that occurs from
-                        chronically poor digestion and nutrition. After all,
-                        without adequate bile, it's impossible to break down
-                        food and extract its nutrients.
-                      </p>
-                      <p>
-                        It's impossible to predict what symptoms might clear up
-                        first when you start rejuvenating your liver.
-                      </p>
-                      <p>
-                        The truth is, the best way is to grab a supply of Akka
-                        and try it for yourself. We've done everything we can to
-                        make it as easy as possible so check it out, give it
-                        some time to work its magic, THEN decide you want to
-                        keep it later.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="qacont">
-                <div class="qaquestion d-flex flex-column flex-sm-row">
-                  <div class="qanumber"><span>Q12</span></div>
-                  <h3>Is Akka available anywhere else for a lower price?</h3>
-                </div>
-                <div class="qaanswer d-flex flex-column flex-sm-row">
-                  <div class="qalabel"><span>Answer</span></div>
-                  <div>
-                    <p>
-                      <b
-                        >We only sell Akka directly through this website and
-                        there's two very important reasons why we do that.</b
-                      >
-                      <span class="readmoreless">(Read more)</span>
-                    </p>
-                    <span class="d-none">
-                      <p>The first is quality control.</p>
-                      <p>
-                        Most people don't realize, but due to the recent
-                        pandemic, the FDA has not been able to test products
-                        inside China.
-                      </p>
-                      <p>
-                        And given the recent reports of places like China having
-                        much higher levels of mercury, arsenic, and lead, this
-                        kind of thing is completely unacceptable.
-                      </p>
-                      <p>
-                        So we decided for this premium product, it must be
-                        manufactured and tested at one of the state-of-the-art,
-                        FDA-registered, GMP-certified labs right here in the
-                        USA.
-                      </p>
-                      <p>
-                        First, they use a technique called Infrared
-                        Spectroscopy. Not only are the ingredients tested for
-                        quality and safety, they are also tested for purity and
-                        potency as well.
-                      </p>
-                      <p>
-                        <b
-                          >We also conduct additional quality inspections to
-                          ensure that the ingredients do not contain heavy
-                          metals, allergens, or contaminants, and meet the
-                          highest purity standards.</b
-                        >
-                      </p>
-                      <p>
-                        It's important to make sure that these ingredients
-                        retain their full potency, so that the product will
-                        actually deliver the benefits we talk about.
-                      </p>
-                      <p>
-                        The second reason we only sell direct is to keep the
-                        price affordable for our valued customers.
-                      </p>
-                      <p>
-                        If we allowed Akka to be sold in the big natural food
-                        stores, the markup required would make the price at
-                        least double what it is now.
-                      </p>
-                      <p>
-                        For our customers, all that extra markup makes no sense.
-                        It's just added to subsidize the massive nationwide
-                        advertising budgets, which would be pointless since you
-                        can already order superbiotics from the comfort of your
-                        home directly from this website.
-                      </p>
-                      <p>
-                        Also, please remember that
-                        <b
-                          >this one-time special offer is good
-                          <span style="text-decoration: underline"
-                            >today only.</span
-                          ></b
-                        >
-                      </p>
-                      <p>
-                        If you leave this page and
-                        <b>decide to get it</b> tomorrow, we can't guarantee
-                        that Akka will still be available.
-                      </p>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="xbgcolorF7F6F4 beforedrop w-100 prevent-select">
-      <div
-        class="bg-[#ffffff] block md:hidden maxwidth m-auto mt-sm-0 pt-sm-3 px-2 px-md-0"
-      >
-        <div class="w-full md:w-[204.8px] px-[16px] md:px-0 pb-[10px]">
-          <div class="d-flex flex-row flex-md-column gap-[10px]">
-            <div>
-              <img
-                src="./drginasam.png"
-                class="ginaimage w-[81.96px] md:w-[147.2px]"
-              />
-            </div>
-            <div class="">
-              <span class="topgastro text-nowrap px-1"
-                >Top Gastroenterologist 2024</span
-              >
-              <span class="doctorname d-block">Dr. Gina Sam M.D</span>
-            </div>
-          </div>
-          <p class="font-myriadpro text-[18px] md:text-[13px]">
-            <b
-              >Dr. Gina Sam, MD, is a leading NYC gastroenterologist and former
-              director of the Mount Sinai Gastrointestinal Motility Center</b
-            >. Over her 20-year career, Dr. Sam has specialized in treating
-            digestive and metabolic disorders, founding the Institute of
-            Gastrointestinal Motility Disorders and Integrative Health in New
-            York City.
-            <em
-              >Dr. Sam's research has positioned her at the forefront of
-              understanding
-              <b>obesity, fatigue and other metabolic dysfunctions.</b></em
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="m-auto mt-sm-0 pt-sm-3 px-[16px] md:px-0">
-        <div class="max-w-[1110.8px] px-[11px] mx-auto pt-[30px] md:pt-0">
-          <h2
-            class="relative md:ml-[20px] before:content-[''] before:absolute pt-[16px] before:top-0 before:left-[2px] before:w-[150px] before:h-[8px] before:bg-[#2F3A7C] text-[#2F3A7C] font-myriadpro font-bold text-[32px] md:text-[40px]"
-          >
-            In this short video you'll discover:
+  <div class="xbgcolorf7f6f4 w-100" id="thevid">
+    <div class="maxwidth m-auto pt-1 pt-sm-4" id="heading">
+      <div class="m-auto px-0 pt-1 pb-4 topdoctordiv">
+        <div class="d-block text-center">
+          <span class="topnycdoctor d-block">Top NYC Doctor Reveals:</span>
+          <h2 class="d-block emptybowel text-center m-auto">3 Foods Killing <span class="text-nowrap">Your Liver</span>
           </h2>
-          <div
-            class="max-w-[400px] md:max-w-[100%] m-auto flex gap-[40px] md:gap-[20px] !mt-[16px] md:!mt-[30px] flex-column md:!flex-row"
-          >
-            <div class="font-myriadpro flex-1">
-              <img class="w-100" src="./failingliver.png" />
-              <span
-                class="block font-semibold text-[18px] mt-[16px] xwhitespace-nowrap"
-                >4 Signs of A Failing Liver</span
-              >
-              <span class="text-[18px] leading-[22px]"
-                >Discover the hidden symptoms that reveal your liver is
-                struggling—don't ignore these four critical warning signs.</span
-              >
-            </div>
+          <p id="subhead" class="pb-0 mb-0">(#3 will shock you)</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
 
-            <div class="font-myriadpro flex-1">
-              <img class="w-100" src="./toxicfoods.png" />
-              <span
-                class="block font-semibold text-[18px] mt-[16px] xwhitespace-nowrap"
-                >3 Liver Toxic Foods</span
-              >
-              <span class="text-[18px] leading-[22px]"
-                >These three common foods might be harming your liver.</span
-              >
-            </div>
+    <div id="vidcont"
+      class="!max-w-[1085.8px] bg-[#ffffff] px-[0] py-[0] md:px-[35px] md:pt-[45px] md:pb-[20px] md:shadow-vxl w-full d-flex flex-column flex-md-row gap-[16px] md:gap-[35px] m-auto vidcont2">
+      <div class="block flex-grow-1 md:mx-auto md:max-w-[87vw]">
 
-            <div class="font-myriadpro flex-1">
-              <img class="w-100" src="./detoxritual.png" />
-              <span
-                class="block font-semibold text-[18px] mt-[16px] xwhitespace-nowrap"
-                >Morning Liver Detox Ritual</span
-              >
-              <span class="text-[18px] leading-[22px]"
-                >Kickstart your day with this simple morning ritual to cleanse
-                your liver and boost your energy naturally.</span
-              >
-            </div>
-
-            <div class="font-myriadpro flex-1">
-              <img class="w-100" src="./burningsuperpower.png" />
-              <span
-                class="block font-semibold text-[18px] mt-[16px] xwhitespace-nowrap"
-                >Unleash Your Fat Burning Superpower</span
-              >
-              <span class="text-[18px] leading-[22px]"
-                >Discover the secret to rapid fat loss by harnessing the liver’s
-                powerful fat-burning abilities.</span
-              >
+        <div>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="m-auto wistia_embed seo=false videoFoam=true" style="height:100%;width:100%">&nbsp;</div>
             </div>
           </div>
         </div>
 
+        <div class="beforedrop hideonplay px-[16px] md:px-0 md:pt-[25px] w-full hidden md:block">
+          <div class="text-[18px] md:text-[20px]">
+            <p class="font-semibold max-w-[776px] md:m-auto text-center">
+              <img class="float-left h-[16px] md:h-[24px] w-[16px] md:w-[24px] mt-[6px] md:mt-[4px]"
+                src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/charm_sound.png"><span class="important font-bold">IMPORTANT:</span> <span>Your video may take 10
+                seconds to load. Make sure your
+                sound is on.</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="w-full md:w-[204.8px] px-[16px] md:px-0 pb-[10px] hidden md:block hideonplay beforedrop">
+        <div class="d-flex flex-row flex-md-column gap-[10px]">
+          <div>
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/drginasam.png" class="ginaimage w-[81.96px] md:w-[147.2px]">
+          </div>
+          <div class="">
+            <span class="topgastro text-nowrap px-1">Top Gastroenterologist 2024</span>
+            <span class="doctorname d-block">Dr. Gina Sam M.D</span>
+          </div>
+        </div>
+        <p class="font-myriadpro text-[18px] md:text-[13px]"><b>Dr. Gina Sam, MD, is a leading NYC gastroenterologist
+            and
+            former director of the Mount Sinai Gastrointestinal Motility Center</b>. Over her 20-year career, Dr. Sam
+          has
+          specialized in treating digestive and metabolic disorders, founding the Institute of Gastrointestinal Motility
+          Disorders and Integrative Health in New York City. <em>Dr. Sam's research has positioned her at the forefront
+            of
+            understanding <b>obesity, fatigue and other metabolic dysfunctions.</b></em></p>
+      </div>
+    </div>
+
+    <div
+      class="bg-[#ffffff] md:bg-transparent m-auto maxwidth mb-sm-0 pb-sm-4 pt-1 pt-sm-3 mt-[8px] md:mt-[16px] flowheight">
+
+      <div class="text-[18px] md:text-[20px] px-[5px] !hidden showonplay">
+        <p class="font-semibold max-w-[776px] md:m-auto text-center">
+          <img class="float-left h-[16px] md:h-[24px] w-[16px] md:w-[24px] mt-[6px] md:mt-[4px]"
+            src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/charm_sound.png"><span class="important font-bold">IMPORTANT:</span> <span>Your video may take 10
+            seconds to load. Make sure your
+            sound is on.</span>
+        </p>
+      </div>
+
+      <div class="beforedrop text-[18px] md:text-[20px] px-[5px] block md:hidden">
+        <p class="font-semibold max-w-[776px] md:m-auto text-center">
+          <img class="float-left h-[16px] md:h-[24px] w-[16px] md:w-[24px] mt-[6px] md:mt-[4px]"
+            src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/charm_sound.png"><span class="important font-bold">IMPORTANT:</span> <span>Your video may take 10
+            seconds to load. Make sure your
+            sound is on.</span>
+        </p>
+      </div>
+
+      <div class="afterdrop d-none text-center mt-sm-3 px-0 scrolldowntoselect">
+        <span class="yourvideo d-block">Scroll down to select your best package</span>
+        <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/arrowdown.gif?v=90230465467182572741687505008" class="scrollarrow m-auto mt-2 mt-sm-4"
+          style="width:60px;">
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="afterdrop w-100 d-none prevent-select" id="cta1">
+
+    <div class="bgcolor485397 pt-4 pb-5" id="cta2">
+      <div
+        class="align-items-lg-end align-items-center ctas d-flex flex-column-reverse flex-lg-row gap-3 m-auto maxwidth1058">
+        <div style="width:338px;" class="position-relative"><img class="w-100 shadow" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/bottles1.png"><a
+            class="position-absolute" href="https://go.tryakka.com/products/akka-1-pack-akk-vsl-email/#param">ORDER
+            NOW</a></div>
+        <div class="d-flex gap-3 align-items-md-end align-items-center flex-column flex-md-row">
+          <div style="width:350px;" class="position-relative"><img class="w-100 shadow" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/bottles6.png"><a
+              class="position-absolute" href="https://go.tryakka.com/products/akka-6-pack-akk-vsl-email/#param">ORDER
+              NOW</a></div>
+          <div style="width:338px;" class="position-relative"><img class="w-100 shadow" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/bottles3.png"><a
+              class="position-absolute" href="https://go.tryakka.com/products/akka-3-pack-akk-vsl-email/#param">ORDER
+              NOW</a></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cookbg overflow-hidden">
+      <div class="maxwidth m-auto pt-sm-5 pt-0 pb-3 pb-sm-4 px-2 px-sm-0 guaranteedmaindiv">
+        <img class="d-block d-sm-none m-auto mt-2" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/seal.png" style="width: 140px;">
+        <div class="guaranteeddiv m-auto mb-5 mb-sm-0">
+          <div class="align-items-center d-flex flex-column flex-sm-row guaranteehead text-center text-sm-start "><img
+              class="d-none d-sm-block" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/seal.png" style="width: 140px;">100% Money Back<br>Satisfaction Guarantee
+          </div>
+          <p
+            class="align-items-center d-flex flex-column flex-sm-row gap-1 gap-sm-2 guaranteethumb text-center text-sm-start">
+            <img class="mt-3" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/thumbsup.png"><span
+              class="d-flex d-sm-inline flex-column flex-sm-row gap-1 align-items-center"><span
+                class="pe-1 pe-sm-0">Full Industry Best 90-Day</span><span class="ps-1 ps-sm-0"><span
+                  class="d-none d-md-inline"> - </span>No Questions Asked</span></span></p>
+          <p>What this means is, whether you <em>choose one bottle or <u>six</u>...</em></p>
+
+          <p>If you don't feel an improvement in your liver function, if you don't notice a reduction in fatigue,
+            sluggishness, or other symptoms related to liver toxicity...</p>
+
+          <p>If you don't <em>see the pounds melt off,</em> or feel generally healthier and more vibrant...</p>
+
+          <p>Simply give us a call or email <a id="hellotryakka" href="mailto:hello@tryakka.com"
+              class="text-[#6378F3]">hello@tryakka.com</a> within the next 90 days, and we will refund every penny you
+            paid today. <em>No questions asked, no hassle, no hard feelings.</em></p>
+          <a class="text-nowrap tryakkabtn" href="#cta2">Try AKKA 100% Guaranteed >></a>
+        </div>
+
+        <div class="coockbookdiv">
+          <h2 class="headingbar">Enjoy The Skinny Liver Cookbook, Yours <em>FREE</em> With Any <span
+              class="text-nowrap">Multipack Order</span></h2>
+
+          <picture>
+            <source media="(max-width: 768px)" srcset="https://livercleanseprotocol.com/pages/akk-vslfb-v2/coockbookm.png">
+            <source media="(min-width: 769px)" srcset="https://livercleanseprotocol.com/pages/akk-vslfb-v2/coockbook.png">
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/coockbook.png">
+          </picture>
+
+          <p id="cbp">When you select a <em>3 or 6 multipack</em>, you'll gain instant access to our transformative
+            guide, the <em>"Skinny Liver Cookbook: Delicious Recipes to Help Detoxify and Slim Your Liver".</em></p>
+
+          <p>This resource introduces simple, natural strategies to boost liver function and promote weight loss,
+            requiring only minutes of the day.</p>
+
+          <p>Immerse yourself in our <b>“Lean Liver” meal plan</b>, which features a collection of liver-friendly,
+            mouthwatering meals and easy-to-follow recipes that are sure to become family favorites.</p>
+
+          <div class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe">
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/citrus.png">
+            <p>Discover our <em>Citrus-Poached Salmon recipe.</em> In this recipe, omega-3-rich salmon meets the
+              detoxifying powers of citrus, offering a delicious approach to reducing inflammation and aiding liver
+              health.</p>
+          </div>
+          <div class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe">
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/turmeric.png">
+            <p>Experience the flavors of <em>Savory Turmeric Chicken,</em> a dish that harnesses the anti-inflammatory
+              benefits of turmeric in a savory, lean protein meal that supports liver wellness.</p>
+          </div>
+          <div class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe">
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/almund.png">
+            <p>Try our <em>Almond-Crusted Cod with Cauliflower Rice,</em> where the almond adds texture and healthy
+              fats, and the cauliflower rice offers a low-carb alternative that aids liver detoxification, keeping the
+              meal light yet nourishing.</p>
+          </div>
+          <p class="mt-0 mt-sm-4"><em>Normally valued at $39.95</em> on our website, the <em>"Skinny Liver
+              Cookbook"</em> is included at no additional cost as part of the Akka system, offering you a comprehensive
+            approach to liver health.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgcolorF7F6F4 overflow-hidden">
+      <div class="maxwidth m-auto py-5 px-2 px-sm-0 guaranteedmaindiv">
+        <div class="coockbookdiv">
+          <h2 class="headingbar">Liver Cleanse Protocol: An Essential Part Of The <span class="text-nowrap">Akka
+              System</span></h2>
+
+          <picture>
+            <source media="(max-width: 768px)" srcset="https://livercleanseprotocol.com/pages/akk-vslfb-v2/protocolm.png">
+            <source media="(min-width: 769px)" srcset="https://livercleanseprotocol.com/pages/akk-vslfb-v2/protocol.png">
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/protocol.png">
+          </picture>
+
+          <p id="cbp">Every order today receives our comprehensive guide, <em>"Liver Cleanse Protocol: The Definitive
+              Guide to Detoxifying and Revitalizing Your Liver".</em></p>
+
+          <p><span>This crucial element of the Akka Superbiotic system</span> unveils simple yet powerful strategies for
+            enhancing liver function, boosting metabolism, and increasing fat-burning potential.</p>
+
+          <div class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe">
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/liverfresh.png">
+            <p>Explore our <span>“Liver Refresh” meal plan,</span> featuring liver-supportive, delectable meals and
+              simple-to-follow recipes that your entire family will enjoy.</p>
+          </div>
+          <div class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe">
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/gentleexercise.png">
+            <p>Discover <span>7 gentle exercises that detoxify your liver</span> more effectively (and safely) than
+              conventional detox methods.</p>
+          </div>
+          <div class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe">
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/greensmoothie.png">
+            <p>Dive into the secrets of my signature <span>“Green Guardian” smoothie</span> that naturally elevates your
+              antioxidant levels, supports liver function, and helps reduce toxin load in your liver.</p>
+          </div>
+          <div class="align-items-center d-flex flex-column flex-sm-row gap-3 recipe">
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/relaxatioin.png">
+            <p>And not to be missed, my personal go-to, an incredibly calming <em>10-minute relaxation technique</em>
+              that significantly improves liver health by reducing stress on the liver, enhancing your mood, and
+              boosting your productivity.</p>
+          </div>
+          <p class="mt-3"><span>"Liver Cleanse Protocol"</span> is typically available for <span>$39.95</span> on our
+            website but comes included with the LiverHealth system at no additional cost.</p>
+          <a class="mt-4 text-nowrap tryakkabtn" href="#cta2">Flush Your Liver And Feel Amazing ></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bgcolore7e9fd">
+      <div class="yourstorymaindiv m-auto pt-5">
+        <span class="yourstory text-sm-center d-block headingbar barcentered">Your Story Can Be Next</span>
+        <div class="row mt-4 mt-sm-5">
+          <div class="col-12 col-sm-6">
+
+            <div class="align-items-center d-flex gap-3">
+              <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/elizabeth.png">
+              <div class="flex-grow-1">
+                <span class="d-block customername">Elizabeth M.<span>Pensacola FL</span></span>
+                <img src="checkmark.png" style="width:17px;" class="d-inline-block">
+                <span class="vercustomer d-inline-block">Verified customer</span>
+              </div>
+              <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/star.svg">
+            </div>
+            <div class="customerstory">
+              <p>Living with constant fatigue and an ever-expanding midsection had become a nightmare. I was always
+                exhausted, no matter how much I rested. Meals were a challenge because I would feel bloated and
+                uncomfortable afterward, leading me to dread eating. <span class="d-inline d-sm-none readmore"><b>Read
+                    more -></b></span></p>
+              <span class="d-none d-sm-block">
+                <p>I knew something was seriously wrong because my hands would itch after eating. Which was really
+                  weird. My husband also noticed that my breath and body odor was getting worse, and I couldn't even
+                  tell. I tried countless remedies and consulted with multiple doctors, but no one had any answers.</p>
+                <p>Then, a life-changing recommendation came while I was at my lowest point during a family trip. My
+                  mother-in-law suggested I try Akka. Skeptical but desperate, I gave it a shot.</p>
+                <p>The effect was immediate, and dramatic. My energy levels improved, and the bloating disappeared. My
+                  previous issues with fatigue and discomfort after meals became a thing of the past.</p>
+                <p>Plus, my skin cleared up and my hands no longer itch. My mood significantly improved, and I look
+                  forward to eating again -- the way it should be!</p>
+                <p>Akka has been a lifesaver for me, and I never leave home without it. I truly hope my story can help
+                  others who have faced similar struggles.</p>
+              </span>
+            </div>
+
+            <div class="align-items-center d-flex gap-3">
+              <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/joan.png">
+              <div class="flex-grow-1">
+                <span class="d-block customername">Joan T.<span>Atlanta GA</span></span>
+                <img src="checkmark.png" style="width:17px;" class="d-inline-block">
+                <span class="vercustomer d-inline-block">Verified customer</span>
+              </div>
+              <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/star.svg">
+            </div>
+            <div class="customerstory">
+              <p>Akka was a godsend. I had no idea why I couldn't lose weight. I tried everything including hard core
+                diets, exercise programs, and fat burner pills (they made the problem worse). I had no idea that my
+                liver was responsible. I tried Akka and felt the effects in days. My mental clarity has also been
+                amazing. Five stars.</p>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-6">
+
+            <div class="align-items-center d-flex gap-3">
+              <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/michael.png">
+              <div class="flex-grow-1">
+                <span class="d-block customername">Michael G. <span>Cheshire CT</span></span>
+                <img src="checkmark.png" style="width:17px;" class="d-inline-block">
+                <span class="vercustomer d-inline-block">Verified customer</span>
+              </div>
+              <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/star.svg">
+            </div>
+            <div class="customerstory">
+              <p>I was struggling with chronic fatigue and auto-immune problems. I was constantly breaking out in rashes
+                and itching all over my body. Akka gave me a 'clean body' feeling in just a few weeks and I couldn't be
+                happier. Amazing focus and concentration. I feel 20 years younger.</p>
+            </div>
+
+            <div class="align-items-center d-flex gap-3">
+              <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/jerry.png">
+              <div class="flex-grow-1">
+                <span class="d-block customername">Jerry S.<span>Atlanta GA</span></span>
+                <img src="checkmark.png" style="width:17px;" class="d-inline-block">
+                <span class="vercustomer d-inline-block">Verified customer</span>
+              </div>
+              <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/star.svg">
+            </div>
+            <div class="customerstory">
+              <p>Before discovering Akka, I struggled with fatigue and a constant sense of feeling unwell, which I later
+                learned was due to my liver not functioning properly. For years, I just lived with it, thinking it was
+                normal to feel tired when you're older. <span class="d-inline d-sm-none readmore"><b>Read more
+                    -></b></span></p>
+              <span class="d-none d-sm-block">
+                <p>I had tried various supplements and visited several specialists, but nothing provided a lasting
+                  solution. My energy levels were always low, and I noticed my sense of taste and smell just seemed
+                  'off'. Food would taste bland on some days and other days just downright unpleasant.</p>
+                <p>I also noticed a ringing in my ears -- especially in the morning when I woke up.</p>
+                <p>Within just one week of starting Akka, I began to feel a significant difference. My energy levels
+                  improved, and I no longer felt that constant fatigue that had been dragging me down. My senses also
+                  came back to normal in just a few short weeks.</p>
+                <p>I was skeptical at first, as I had never been able to find something that truly worked, but Akka
+                  proved me wrong. Not only has my energy returned, but I've also started to lose some of the weight
+                  that seemed impossible to shed before.</p>
+                <p>Akka has truly been a game-changer for me. A solid 5-star experience.</p>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bgcolor485397 pt-4 pb-5" id="cta2">
+      <div
+        class="align-items-lg-end align-items-center ctas d-flex flex-column-reverse flex-lg-row gap-3 m-auto maxwidth1058">
+        <div style="width:338px;" class="position-relative"><img class="w-100 shadow" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/bottles1.png"><a
+            class="position-absolute" href="https://go.tryakka.com/products/akka-1-pack-akk-vsl-email/#param">ORDER
+            NOW</a></div>
+        <div class="d-flex gap-3 align-items-md-end align-items-center flex-column flex-md-row">
+          <div style="width:350px;" class="position-relative"><img class="w-100 shadow" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/bottles6.png"><a
+              class="position-absolute" href="https://go.tryakka.com/products/akka-6-pack-akk-vsl-email/#param">ORDER
+              NOW</a></div>
+          <div style="width:338px;" class="position-relative"><img class="w-100 shadow" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/bottles3.png"><a
+              class="position-absolute" href="https://go.tryakka.com/products/akka-3-pack-akk-vsl-email/#param">ORDER
+              NOW</a></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="w-100 bgcolorffffff faqmaincont prevent-select">
+
+      <div class="maxwidth m-auto py-5 py-sm-4">
+
+        <div class="container m-auto">
+
+          <div class="faqdiv m-auto">
+            <h2 id="faq" class="faq d-block headingbar">Frequently Asked Questions</h2>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q1</span></div>
+                <h3>Are there any side effects? Is it safe to take it long term?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>Akka superbiotic, with our Preserve Pasteurized preparation, has had zero reported side
+                      effects,</b> and is one of the most powerful health-boosting formulations to exist in the last 20
+                    years. <span class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p>In fact, the only side effects related to Akkermansia are associated with the live version, which
+                      is what motivated us to develop our Preserve Pasteurized preparation.</p>
+                    <p><b>The best part is, studies show this version to be far more effective for boosting the
+                        metabolism, burning fat and reducing fatigue.</b></p>
+                    <p>In addition, Akka is considered a master superbiotic because it feeds the other beneficial
+                      probiotic strains already in your gut.</p>
+                    <p>That means not only are you populating your microbiome with Akkermansia, you're also increasing
+                      other health-promoting strains across the board.</p>
+                    <p>This is important because many scientific studies have established a link between microbiome
+                      diversity and health.</p>
+                    <p>In fact, low microbiome diversity, meaning not enough beneficial strains in the gut, has been
+                      linked in studies to many things like allergies, low sex drive, eczema, arthritis, cancer, chronic
+                      fatigue, autism, depression, enlarged prostate, anxiety, sleep disorder, HIV susceptibility,
+                      auto-immune problems like Crohn's and colitis, arterial plaque, hypertension, and gout.</p>
+                    <p>And of course, while it would be a stretch to claim <b>Akka will cure these problems,</b> since
+                      there's so many lifestyle factors involved, it will improve your microbiome dramatically and move
+                      things into a more healthy direction, and keep improving your health long-term.</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q2</span></div>
+                <h3>How much weight can I lose with Akka Superbiotics?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>Because the liver is the most critical organ in the body for eliminating fat and losing
+                      weight,</b> Akka Superbiotics helps rejuvenate the liver, supercharging its ability to burn fat
+                    and detoxify your body. <span class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p>Your weight loss with Akka is going to depend on many things, and here they are:</p>
+                    <p><b>First… It's based on your starting point.</b> If you're significantly overweight, your bile
+                      ducts are clogged and your metabolism has been slowed, it might take a bit longer for your liver
+                      to rejuvenate, and burn all that fat.</p>
+                    <p><b>Second… It's also based on your lifestyle factors.</b> Here's what I mean. If you continue
+                      eating the 3 liver-toxic foods - sugar, alcohol, and trans fats, then you're going to have a
+                      tougher time because it's a bit like walking up a hill.</p>
+                    <p>You'll get there but it's going to take Akka a little longer, and a bit more energy.</p>
+                    <p>Once your liver reaches its full function, you'll know because it's likely you'll <b>feel more
+                        energy, more clarity of mind, more focus, and renewed optimism for life.</b></p>
+                    <p><b>The mental benefits are usually felt first, with the accelerated weight loss and fat burning
+                        ability kicking in about 2-4 weeks later.</b></p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q3</span></div>
+                <h3>What happens if I lose weight too quickly?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>Usually, it's bad to lose weight too quickly - but here's how Akka Superbiotics changes
+                      that.</b> <span class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p><b>You see...</b> Fat surrounds and protects organs from toxins. When the fat dissolves, the
+                      toxins are released into the bloodstream.</p>
+                    <p><b>When your liver is damaged, clogged or unhealthy, it struggles to process all those released
+                        toxins.</b></p>
+                    <p>However, because Akka helps give you a strong, rejuvenated and healthy liver, you'll have no
+                      problem handling the detoxification process that happens when you start burning stored body fat.
+                    </p>
+                    <p><b>That said, most doctors recommend losing 2 pounds per week.</b> If you find that you're losing
+                      weight faster than you want when taking Akka, simply taper the dose back to one capsule per day.
+                    </p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q4</span></div>
+                <h3>What else can harm the liver? I suspect I have liver problems because of my difficulty with weight
+                  loss, but I don't drink alcohol and I don't consume a lot of sugar.</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p>Remember, your liver is your body's central filtration system for toxins. It's also responsible for
+                    clearing cholesterol and removing fats from the bloodstream <span class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p>It has such an essential role in the body that <b>a person would not even live for more than one
+                        day without a liver.</b></p>
+                    <p>So there's many other things that can cause problems with the liver, including drugs and
+                      medicines as well as environmental toxins, which would include exhaust from cars and airplanes,
+                      air pollution from factories and big cities.</p>
+                    <p>Even if you avoid going outside or wear a mask, all kinds of pollution get into our water supply,
+                      which leeches into the skin while taking a shower.</p>
+                    <p>Even if you have a whole-home water filter, you're still getting pesticides, preservatives, and
+                      plastics from the food supply.</p>
+                    <p>So, <b>our liver has a critical job,</b> and it's no wonder why it's overburdened in today's
+                      society. Above and beyond that, the liver can be affected by viruses, mold, and bacteria, and can
+                      also be <b>damaged by Big Pharma's imperfect solutions to these outbreaks.</b></p>
+                    <p>In fact, there has been a <b>sharp increase in liver-related weight gain since 2020,</b> and I
+                      think it's not a coincidence, given the health epidemic that took place during that time period.
+                    </p>
+                    <p>Lots of new research is coming out that shows just how fragile the liver really is and how
+                      important it is to take this important step on the road back to health and healing.</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q5</span></div>
+                <h3>What makes Akka superior to probiotics?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>There's three main points that make Akka superior to any probiotic out there.</b> <span
+                      class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p><b>Firstly, researchers consider Akkermansia to be a next-generation superbiotic</b>—in that it
+                      actually feeds all of the beneficial probiotics already in your system and has provable benefits
+                      far beyond those of run-of-the-mill commercially available probiotics.</p>
+                    <p>Above and beyond that, our proprietary Preserve Pasteurized technology makes our Akkermansia more
+                      bioavailable and usable by your body.</p>
+                    <p>Remember, Preserve Pasteurized keeps the delicate Akkermansia in a peaceful state of hibernation,
+                      fully intact and ready for your body to be use.</p>
+                    <p>This time-consuming process increases the bioavailability of the Akkermansia to ensure you get
+                      the full liver-regenerating, metabolism-boosting benefits.</p>
+                    <p><b>Secondly, we have combined Akkermansia with several other liver-healing ingredients</b> that
+                      have been shown in studies to be synergistic, further boosting the fat-burning, liver-rejuvenating
+                      properties.</p>
+                    <p><b>And third, we use enteric coated capsules</b> to protect and transport the ingredients through
+                      the stomach's harsh acidic environment, to deliver Akka straight to where it needs to be – the
+                      microbiome.</p>
+                    <p><b>You won't find a superior formulation in a supermarket, online, or anywhere else,
+                        guaranteed.</b></p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q6</span></div>
+                <h3>How many bottles should I order?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>Due to high demand because of the dramatic results and word-of-mouth recommendations from happy
+                      Akka customers,</b> most customers are choosing the 6-bottle package to avoid running out. <span
+                      class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p>Ultimately you should make a personal decision and do what's best for your situation. However I
+                      should point out that you can also take advantage of our free shipping by choosing the 3 or 6
+                      pack.</p>
+                    <p><b>You see, by taking the 3 or 6 pack, we are also able to save on shipping costs,</b> and we
+                      pass those savings directly onto you. You also secure the greatest savings by buying in bulk.</p>
+                    <p>And remember, <b>when you select a 3 or 6 multipack today,</b> you'll gain instant access to our
+                      transformative guide, the <b>"Skinny Liver Cookbook: Delicious Recipes to Help Detoxify and Slim
+                        Your Liver".</b> A $39.95 value, yours free.</p>
+                    <p>By claiming a 3 or 6-pack, you also ensure that you won't risk running out while in the process
+                      of metabolic recomposition and help you plan your fat loss journey ahead of time.</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q7</span></div>
+                <h3>How fast will I see results?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>Really, it depends on the current state of your liver and how long you've been having
+                      problems.</b> <span class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p><b>The liver has an amazing regenerative ability.</b> In fact, studies in transplant patients
+                      show that the liver can regrow to a normal size even after up to 90% of it has been removed.</p>
+                    <p><b>But if you've been drinking for years, or not eating a very good diet, full rejuvenation of
+                        your liver can take some time, possibly 3-6 months.</b></p>
+                    <p>That's why for overweight folks we often recommend choosing a 3 or 6-month package - that way,
+                      you have enough Akka to completely get the job done.</p>
+                    <p>It's possible, however, that you love the energy, vitality, and mental focus you get from AKKA,
+                      and want to continue a maintenance dose much longer. It's great year-round protection and really
+                      does create an amazing environment inside your body for many healthful benefits to appear.</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q8</span></div>
+                <h3>I'm not overweight but I'm dealing with fatigue, rosacea, itchy skin, dark puffy eyes, bloating, or
+                  bad breath.</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>Aside from breaking down the fats in your diet, the liver is primarily a detoxification
+                      organ.</b> That means it helps filter out things in your blood that might be toxic, foreign, or
+                    even things that might be causing a reaction with different systems of your body. <span
+                      class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p>Now, as one of the leading doctors in NYC, you would be shocked if I told you the things that
+                      appear in people's blood. Industrial byproducts, food preservatives, pesticides, microplastics,
+                      heavy metals from car exhaust and jet fuel and more.</p>
+                    <p><b>Now usually the body is pretty good at breaking these things down and excreting them through
+                        the feces.</b></p>
+                    <p>But if your liver is not at its full function, it's hard to keep up with the daily barrage of
+                      these harmful substances. And if your liver is fully saturated with fat or even clogged, your body
+                      looks for other ways to try and push this stuff out.</p>
+                    <p>And the major route of elimination of course, is through your skin, via your sweat glands. So
+                      it's no surprise that when your liver becomes overloaded, you might experience redness,
+                      irritation, hives, acne, odors, or itchiness on your skin.</p>
+                    <p>And of course, these symptoms will change depending on what specific toxins your body is dealing
+                      with.</p>
+                    <p><b>When healthy, the liver is an incredible fat-burning, body-cleansing powerhouse.</b> So when
+                      you truly begin to rejuvenate your liver, especially by avoiding the three liver killers, to bring
+                      it back to its youthful state, you might be surprised how these things clear right up.</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q9</span></div>
+                <h3>Will Akka help me with headaches, poor sleep, brain fog, poor focus, or motivation?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p>Absolutely. It does this through two different mechanisms. One is reducing the toxic load in your
+                    bloodstream that has accumulated from a liver that's not as healthy as it should be. <span
+                      class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p>As mentioned, toxins in the bloodstream can be environmental, like from pollution, from the water
+                      supply, and absorbed into your skin while showering, or they can be in the form of pesticides on
+                      fruits and vegetables.</p>
+                    <p>Prescription drugs, especially taken over long periods, will cause toxins to build up as well.
+                    </p>
+                    <p>These are all handled by a healthy liver. <b>And when you detoxify, cleanse, and rejuvenate your
+                        liver, your body just gets better at clearing this stuff out.</b></p>
+                    <p>You might be shocked to reach a level of clarity you haven't experienced since you were young.
+                      I've seen eyes brighten up, skin clear like magic, even joint pain vanish in just a few weeks.</p>
+                    <p><b>Now, the second is through microbiome recomposition</b> - that is, repopulating your
+                      microbiome with the most powerful superbiotic known to man. The mental benefits of Akkermansia
+                      have been demonstrated in over 150 scientific studies.</p>
+                    <p>More broadly, probiotics in general have literally thousands of clinical studies showing their
+                      mental benefits improving memory, concentration, focus, and even a dramatic lift in your mood,
+                      since 85% of your body's serotonin is produced in the gut.</p>
+                    <p><b>Akkermansia is the master superbiotic, feeding and nurturing nearly every beneficial strain in
+                        your gut.</b></p>
+                    <p>You've never seen anything like it, and I promise you, no amount of exercise, caffeine, energy
+                      drinks, or drugs can compete with the mental clarity and focus you'll experience from naturally
+                      improving your microbiome.</p>
+                    <p>Every day I get emails from people who have improved their memory, been able to focus for longer
+                      periods of time, and have even reported making more money as a result.</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q10</span></div>
+                <h3>I'm a bodybuilder and I take a ton of supplements and gear so I worry about my liver. Will this
+                  protect me?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>As you probably realize, body-building supplements and other anabolic agents are known for being
+                      extremely harsh on the liver, causing a measurable rise in liver enzymes.</b> <span
+                      class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p>And when you see an increase in liver enzymes, that means these agents, while triggering enhanced
+                      muscle growth, <b>are also liquefying liver cells and causing them to leak out the
+                        bloodstream.</b></p>
+                    <p>Akka is very different from the liver protective agents found online or in GNC, or other
+                      bodybuilding shops. Many of these stores carry a generic version of Milk Thistle, but there's
+                      really no other comprehensive liver formula that covers all the elements of liver protection and
+                      detoxification.</p>
+                    <p>We combine Akkermansia, the world's most effective liver regenerative superbiotic, with 4
+                      clinically proven liver-protective ingredients: Quercetin, Resveratrol, Silymarin, and Artichoke
+                      Leaf Extract.</p>
+                    <p>That means you're covered from every angle, and several of these ingredients are synergistic.
+                      <b>In fact, when you combine Quercetin and Resveratrol, studies show an improved metabolic
+                        fat-burning effect.</b>
+                    </p>
+                    <p><b>Likewise, when you combine Resveratrol and Silymarin, you get enhanced anti-inflammatory
+                        effects and an increased reduction in liver fat.</b></p>
+                    <p>A 2017 study found that Resveratrol specifically decreases oxidative stress levels in muscles and
+                      promotes accelerated muscle regeneration.</p>
+                    <p>Also as a mitochondria enhancer, Resveratrol boosts the connective strength of tendons, increases
+                      blood flow to the muscles, and increases muscle vascularization as well.</p>
+                    <p>And according to a 2022 study, Akkermansia improved muscle strength and mass in animals who had
+                      previously demonstrated muscle weakness, which was the first study to show the microbiome's
+                      dramatic effect on muscle gains.</p>
+                    <p>Not to mention that Akka is one of the most effective fat-burning agents available, making it one
+                      of the fastest ways to see those abs in the mirror.</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q11</span></div>
+                <h3>What other symptoms are associated with an overburdened liver?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>There's many conditions caused by an overload of toxicity in the body. Gaining weight is often
+                      the tip of the iceberg.</b> <span class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p>There's many systems of the body that break down when your bloodstream becomes oversaturated with
+                      toxins, and they can range from poor sense of smell, impaired taste or a metallic taste, tinnitus
+                      or ringing in the ears, achy joints, brain fog, or confused thinking.</p>
+                    <p><b>You might even experience itchy or red rashy skin as your body tries to push out the toxins
+                        through sweat, or unexplained, sometimes sudden weight gain.</b></p>
+                    <p>Now, depending on your situation, you could also lose weight due to muscle wasting that occurs
+                      from chronically poor digestion and nutrition. After all, without adequate bile, it's impossible
+                      to break down food and extract its nutrients.</p>
+                    <p>It's impossible to predict what symptoms might clear up first when you start rejuvenating your
+                      liver.</p>
+                    <p>The truth is, the best way is to grab a supply of Akka and try it for yourself. We've done
+                      everything we can to make it as easy as possible so check it out, give it some time to work its
+                      magic, THEN decide you want to keep it later.</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="qacont">
+              <div class="qaquestion d-flex flex-column flex-sm-row">
+                <div class="qanumber"><span>Q12</span></div>
+                <h3>Is Akka available anywhere else for a lower price?</h3>
+              </div>
+              <div class="qaanswer d-flex flex-column flex-sm-row">
+                <div class="qalabel"><span>Answer</span></div>
+                <div>
+                  <p><b>We only sell Akka directly through this website and there's two very important reasons why we do
+                      that.</b> <span class="readmoreless">(Read more)</span></p>
+                  <span class="d-none">
+                    <p>The first is quality control.</p>
+                    <p>Most people don't realize, but due to the recent pandemic, the FDA has not been able to test
+                      products inside China.</p>
+                    <p>And given the recent reports of places like China having much higher levels of mercury, arsenic,
+                      and lead, this kind of thing is completely unacceptable.</p>
+                    <p>So we decided for this premium product, it must be manufactured and tested at one of the
+                      state-of-the-art, FDA-registered, GMP-certified labs right here in the USA.</p>
+                    <p>First, they use a technique called Infrared Spectroscopy. Not only are the ingredients tested for
+                      quality and safety, they are also tested for purity and potency as well.</p>
+                    <p><b>We also conduct additional quality inspections to ensure that the ingredients do not contain
+                        heavy metals, allergens, or contaminants, and meet the highest purity standards.</b></p>
+                    <p>It's important to make sure that these ingredients retain their full potency, so that the product
+                      will actually deliver the benefits we talk about.</p>
+                    <p>The second reason we only sell direct is to keep the price affordable for our valued customers.
+                    </p>
+                    <p>If we allowed Akka to be sold in the big natural food stores, the markup required would make the
+                      price at least double what it is now.</p>
+                    <p>For our customers, all that extra markup makes no sense. It's just added to subsidize the massive
+                      nationwide advertising budgets, which would be pointless since you can already order superbiotics
+                      from the comfort of your home directly from this website.</p>
+                    <p>Also, please remember that <b>this one-time special offer is good <span
+                          style="text-decoration: underline;">today only.</span></b></p>
+                    <p>If you leave this page and <b>decide to get it</b> tomorrow, we can't guarantee that Akka will
+                      still be available.</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="xbgcolorF7F6F4 beforedrop w-100 prevent-select">
+
+    <div class="bg-[#ffffff] block md:hidden maxwidth m-auto mt-sm-0 pt-sm-3 px-2 px-md-0">
+      <div class="w-full md:w-[204.8px] px-[16px] md:px-0 pb-[10px]">
+        <div class="d-flex flex-row flex-md-column gap-[10px]">
+          <div>
+            <img src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/drginasam.png" class="ginaimage w-[81.96px] md:w-[147.2px]">
+          </div>
+          <div class="">
+            <span class="topgastro text-nowrap px-1">Top Gastroenterologist 2024</span>
+            <span class="doctorname d-block">Dr. Gina Sam M.D</span>
+          </div>
+        </div>
+        <p class="font-myriadpro text-[18px] md:text-[13px]"><b>Dr. Gina Sam, MD, is a leading NYC gastroenterologist
+            and
+            former director of the Mount Sinai Gastrointestinal Motility Center</b>. Over her 20-year career, Dr. Sam
+          has
+          specialized in treating digestive and metabolic disorders, founding the Institute of Gastrointestinal Motility
+          Disorders and Integrative Health in New York City. <em>Dr. Sam's research has positioned her at the forefront
+            of
+            understanding <b>obesity, fatigue and other metabolic dysfunctions.</b></em></p>
+      </div>
+    </div>
+
+    <div class=" m-auto mt-sm-0 pt-sm-3 px-[16px] md:px-0">
+
+      <div class="max-w-[1110.8px] px-[11px] mx-auto pt-[30px] md:pt-0">
+        <h2
+          class="relative md:ml-[20px] before:content-[''] before:absolute pt-[16px] before:top-0 before:left-[2px] before:w-[150px] before:h-[8px] before:bg-[#2F3A7C] text-[#2F3A7C] font-myriadpro font-bold text-[32px] md:text-[40px]">
+          In this short video you'll discover:</h2>
         <div
-          class="beforedrop md:max-w-[838.2px] md:mx-auto my-[32px] md:!my-[44px] px-[15px] md:px-[53px] pt-[40px] pb-[16px] md:pb-[20px] bg-white font-sans"
-        >
-          <span class="text-[15.84px] font-bold md:text-[18.48px]"
-            >20 Comments</span
-          >
-          <div
-            class="my-[15px] md:!my-[30px] py-[15px] md:!py-[30px] border-0 !border-y-[1.32px] !border-[#2D394C1A] !border-solid flex flex-column gap-[16px] md:gap-[20px]"
-          >
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commsarah.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Sarah</span
-                >
-                <span class="text-[15.84px]"
-                  >I just finished the video, and I'm blown away! The liver's
-                  role in health is mind-blowing. Everyone needs to see this.
-                  🧠</span
-                >
-              </div>
-            </div>
+          class="max-w-[400px] md:max-w-[100%] m-auto flex gap-[40px] md:gap-[20px] !mt-[16px] md:!mt-[30px] flex-column md:!flex-row">
+          <div class="font-myriadpro flex-1">
+            <img class="w-100" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/failingliver.png">
+            <span class="block font-semibold text-[18px] mt-[16px] xwhitespace-nowrap">4 Signs of A Failing Liver</span>
+            <span class="text-[18px] leading-[22px]">Discover the hidden symptoms that reveal your liver is
+              struggling—don't ignore these four critical warning signs.</span>
+          </div>
 
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commmechael.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Michael</span
-                >
-                <span class="text-[15.84px]"
-                  >If you’re struggling with weight loss or fatigue, you HAVE to
-                  watch this video. Dr. Sam breaks it all down so clearly.</span
-                >
-              </div>
-            </div>
+          <div class="font-myriadpro flex-1">
+            <img class="w-100" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/toxicfoods.png">
+            <span class="block font-semibold text-[18px] mt-[16px] xwhitespace-nowrap">3 Liver Toxic Foods</span>
+            <span class="text-[18px] leading-[22px]">These three common foods might be harming your liver.</span>
+          </div>
 
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commolivia.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Olivia</span
-                >
-                <span class="text-[15.84px]"
-                  >I didn’t realize how much the liver affects everything. This
-                  video is a must-see for anyone interested in their
-                  health.</span
-                >
-              </div>
-            </div>
+          <div class="font-myriadpro flex-1">
+            <img class="w-100" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/detoxritual.png">
+            <span class="block font-semibold text-[18px] mt-[16px] xwhitespace-nowrap">Morning Liver Detox Ritual</span>
+            <span class="text-[18px] leading-[22px]">Kickstart your day with this simple morning ritual to cleanse your
+              liver and boost your energy naturally.</span>
+          </div>
 
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commjames.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >James</span
-                >
-                <span class="text-[15.84px]"
-                  >Just watched this and wow... I’m rethinking everything about
-                  my diet and lifestyle now.</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commsophia.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Sophia</span
-                >
-                <span class="text-[15.84px]"
-                  >I’ve been battling fatigue for years. This video finally gave
-                  me some answers. Thanks, Dr. Sam!</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commmegan.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Megan</span
-                >
-                <span class="text-[15.84px]"
-                  >I’ve watched a lot of health videos, but this one is in a
-                  league of its own. Totally worth your time.</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commwilliam.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >William</span
-                >
-                <span class="text-[15.84px]"
-                  >Just watched the video, and my whole perspective on health
-                  has changed. This is essential viewing!</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commlaura.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Laura</span
-                >
-                <span class="text-[15.84px]"
-                  >Wow, Dr. Sam really knows her stuff. This video is a
-                  must-watch for anyone feeling stuck with their health.</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commnicole.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Nicole</span
-                >
-                <span class="text-[15.84px]"
-                  >Mind officially blown! I had no idea how much my liver was
-                  affecting my overall health. Watch this ASAP.</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commmatthew.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Matthew</span
-                >
-                <span class="text-[15.84px]"
-                  >This video just made me rethink everything I thought I knew
-                  about weight loss and health. Must watch!</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commadam.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Adam</span
-                >
-                <span class="text-[15.84px]"
-                  >This video completely changed my view on health. I had no
-                  idea the liver could impact so much. Everyone needs to see
-                  this!</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commhannah.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Hannah</span
-                >
-                <span class="text-[15.84px]"
-                  >I’ve watched a lot of health videos, but this one made so
-                  much sense. If you want real answers, don’t miss it!</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commjacob.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Jacob</span
-                >
-                <span class="text-[15.84px]"
-                  >The info about liver detox was eye-opening. Feeling better is
-                  just a video away. Highly recommended for anyone dealing with
-                  fatigue or weight issues!</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img
-                class="w-[44.35px] md:w-[63.36px]"
-                src="./commisabella.png"
-              />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Isabella</span
-                >
-                <span class="text-[15.84px]"
-                  >Wow, just watched it! I’m amazed by what Dr. Sam shared. This
-                  video is worth every second.</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commtyler.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Tyler</span
-                >
-                <span class="text-[15.84px]"
-                  >I never knew the liver was so powerful! Makes you wonder what
-                  else we’re missing in our health journeys.</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commrachel.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Rachel</span
-                >
-                <span class="text-[15.84px]"
-                  >If you’re tired of the same health advice, this is a
-                  refreshing change. Dr. Sam gets to the real root of the
-                  problem!</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commannie.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Annie</span
-                >
-                <span class="text-[15.84px]"
-                  >Totally worth it! This video answered so many of my questions
-                  about feeling sluggish and low-energy. Watch it—you won’t
-                  regret it.</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commjason.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Jason</span
-                >
-                <span class="text-[15.84px]"
-                  >I’m shocked at how much the liver controls! Dr. Sam explains
-                  it all so clearly. A must-watch for anyone!</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img
-                class="w-[44.35px] md:w-[63.36px]"
-                src="./commsamantha.png"
-              />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Samantha</span
-                >
-                <span class="text-[15.84px]"
-                  >This video finally made it clear why nothing else has worked
-                  for me. My friends need to watch this!</span
-                >
-              </div>
-            </div>
-
-            <div class="flex gap-[13.2px] items-start">
-              <img class="w-[44.35px] md:w-[63.36px]" src="./commnoah.png" />
-              <div>
-                <span class="font-bold text-[15.84px] text-[#385898] block"
-                  >Noah</span
-                >
-                <span class="text-[15.84px]"
-                  >Dr. Sam is the real deal. Her video opened my eyes to what’s
-                  been holding me back. This is a life-changer!</span
-                >
-              </div>
-            </div>
+          <div class="font-myriadpro flex-1">
+            <img class="w-100" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/burningsuperpower.png">
+            <span class="block font-semibold text-[18px] mt-[16px] xwhitespace-nowrap">Unleash Your Fat Burning
+              Superpower</span>
+            <span class="text-[18px] leading-[22px]">Discover the secret to rapid fat loss by harnessing the liver’s
+              powerful fat-burning abilities.</span>
           </div>
         </div>
+      </div>
 
-        <div class="m-auto supportivestudiesmaindiv">
-          <div class="asseenondiv mt-4 py-2 text-center">
-            <span class="asseenon">As Seen On</span>
-            <div class="pt-[5px] md:pt-[15px] row">
-              <div class="col-12">
-                <img
-                  class="d-none d-md-block w-100 m-auto"
-                  src="./asseenond.png"
-                  style="max-width: 772px"
-                />
-                <img
-                  class="d-block d-md-none w-100 m-auto"
-                  src="./asseenonm.png"
-                  style="max-width: 343px"
-                />
-              </div>
+      <div
+        class="beforedrop md:max-w-[838.2px] md:mx-auto my-[32px] md:!my-[44px] px-[15px] md:px-[53px] pt-[40px] pb-[16px] md:pb-[20px] bg-white font-sans">
+        <span class="text-[15.84px] font-bold md:text-[18.48px]">20 Comments</span>
+        <div
+          class="my-[15px] md:!my-[30px] py-[15px] md:!py-[30px] border-0 !border-y-[1.32px] !border-[#2D394C1A] !border-solid flex flex-column gap-[16px] md:gap-[20px]">
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commsarah.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Sarah</span>
+              <span class="text-[15.84px]">I just finished the video, and I'm blown away! The liver's role in health is
+                mind-blowing. Everyone needs to see this. 🧠</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commmechael.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Michael</span>
+              <span class="text-[15.84px]">If you’re struggling with weight loss or fatigue, you HAVE to watch this
+                video. Dr. Sam breaks it all down so clearly.</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commolivia.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Olivia</span>
+              <span class="text-[15.84px]">I didn’t realize how much the liver affects everything. This video is a
+                must-see for anyone interested in their health.</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commjames.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">James</span>
+              <span class="text-[15.84px]">Just watched this and wow... I’m rethinking everything about my diet and
+                lifestyle now.</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commsophia.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Sophia</span>
+              <span class="text-[15.84px]">I’ve been battling fatigue for years. This video finally gave me some
+                answers. Thanks, Dr. Sam!</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commmegan.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Megan</span>
+              <span class="text-[15.84px]">I’ve watched a lot of health videos, but this one is in a league of its own.
+                Totally worth your time.</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commwilliam.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">William</span>
+              <span class="text-[15.84px]">Just watched the video, and my whole perspective on health has changed. This
+                is essential viewing!</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commlaura.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Laura</span>
+              <span class="text-[15.84px]">Wow, Dr. Sam really knows her stuff. This video is a must-watch for anyone
+                feeling stuck with their health.</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commnicole.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Nicole</span>
+              <span class="text-[15.84px]">Mind officially blown! I had no idea how much my liver was affecting my
+                overall health. Watch this ASAP.</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commmatthew.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Matthew</span>
+              <span class="text-[15.84px]">This video just made me rethink everything I thought I knew about weight loss
+                and health. Must watch!</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commadam.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Adam</span>
+              <span class="text-[15.84px]">This video completely changed my view on health. I had no idea the liver
+                could impact so much. Everyone needs to see this!</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commhannah.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Hannah</span>
+              <span class="text-[15.84px]">I’ve watched a lot of health videos, but this one made so much sense. If you
+                want real answers, don’t miss it!</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commjacob.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Jacob</span>
+              <span class="text-[15.84px]">The info about liver detox was eye-opening. Feeling better is just a video
+                away. Highly recommended for anyone dealing with fatigue or weight issues!</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commisabella.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Isabella</span>
+              <span class="text-[15.84px]">Wow, just watched it! I’m amazed by what Dr. Sam shared. This video is worth
+                every second.</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commtyler.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Tyler</span>
+              <span class="text-[15.84px]">I never knew the liver was so powerful! Makes you wonder what else we’re
+                missing in our health journeys.</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commrachel.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Rachel</span>
+              <span class="text-[15.84px]">If you’re tired of the same health advice, this is a refreshing change. Dr.
+                Sam gets to the real root of the problem!</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commannie.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Annie</span>
+              <span class="text-[15.84px]">Totally worth it! This video answered so many of my questions about feeling
+                sluggish and low-energy. Watch it—you won’t regret it.</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commjason.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Jason</span>
+              <span class="text-[15.84px]">I’m shocked at how much the liver controls! Dr. Sam explains it all so
+                clearly. A must-watch for anyone!</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commsamantha.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Samantha</span>
+              <span class="text-[15.84px]">This video finally made it clear why nothing else has worked for me. My
+                friends need to watch this!</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[13.2px] items-start">
+            <img class="w-[44.35px] md:w-[63.36px]" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/commnoah.png">
+            <div>
+              <span class="font-bold text-[15.84px] text-[#385898] block">Noah</span>
+              <span class="text-[15.84px]">Dr. Sam is the real deal. Her video opened my eyes to what’s been holding me
+                back. This is a life-changer!</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="m-auto supportivestudiesmaindiv">
+        <div class="asseenondiv mt-4 py-2 text-center">
+          <span class="asseenon">As Seen On</span>
+          <div class="pt-[5px] md:pt-[15px] row">
+            <div class="col-12">
+              <img class="d-none d-md-block w-100 m-auto" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/asseenond.png" style="max-width: 772px;">
+              <img class="d-block d-md-none w-100 m-auto" src="https://livercleanseprotocol.com/pages/akk-vslfb-v2/asseenonm.png" style="max-width: 343px;">
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="bgcolorC6CBE1 w-100">
-      <div class="m-auto py-4 px-3">
-        <div class="d-block m-auto">
-          <span class="d-block m-auto text-center disclosurestatement"
-            >*These statements have not been evaluated by the Food and Drug
-            Administration. This product is not intended to diagnose, treat,
-            cure or prevent any disease. Use only as directed. The information
-            provided herein is intended for your general knowledge only and is
-            not intended to be, nor is it, medical advice or a substitute for
-            medical advice. If you have or suspect you have, a specific medical
-            condition or disease, please consult your healthcare provider.</span
-          >
-          <span class="text-center mt-4 allrightsreserved d-block"
-            >© 2024 Enclave BioActives. All Rights Reserved.</span
-          >
-          <div class="mt-4 d-block text-center footerlinks">
-            <a
-              href="https://livercleanseprotocol.com/pages/terms-conditions"
-              target="_blank"
-              >Terms & Conditions</a
-            >
-            <a data-popup="Privacy Policy" href="#">Privacy Policy</a>
-            <a
-              href="https://livercleanseprotocol.com/pages/akk-vslfb-v2-text/#params"
-              >Click here to view text</a
-            >
 
-            <a
-              class="truevault-polaris-privacy-notice"
-              target="_blank"
-              href="https://privacy.konscious.us/privacy-policy#california-privacy-notice"
-              noreferrer
-              noopener
-              hidden
-              >California Privacy Notice</a
-            >
-            <a
-              class="truevault-polaris-optout"
-              target="_blank"
-              href="https://privacy.konscious.us/opt-out"
-              noreferrer
-              noopener
-              hidden
-              >Privacy Options</a
-            >
-            <a
-              class="truevault-polaris-privacy-notice"
-              target="_blank"
-              href="https://privacy.konscious.us/limit"
-              noreferrer
-              noopener
-              hidden
-              >Sensitive Personal Information</a
-            >
-          </div>
+  <div class="bgcolorC6CBE1 w-100">
+    <div class=" m-auto py-4 px-3">
+      <div class="d-block m-auto">
+        <span class="d-block m-auto text-center disclosurestatement">*These statements have not been evaluated by the
+          Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease.
+          Use only as directed. The information provided herein is intended for your general knowledge only and is not
+          intended to be, nor is it, medical advice or a substitute for medical advice. If you have or suspect you have,
+          a specific medical condition or disease, please consult your healthcare provider.</span>
+        <span class="text-center mt-4 allrightsreserved d-block">© 2024 Enclave BioActives. All Rights Reserved.</span>
+        <div class="mt-4 d-block text-center footerlinks">
+          <a href="https://livercleanseprotocol.com/pages/terms-conditions" target="_blank">Terms & Conditions</a>
+          <a data-popup="Privacy Policy" href="#">Privacy Policy</a>
+          <a href="https://livercleanseprotocol.com/pages/akk-vslfb-v2-text/#params">Click here to view text</a>
+
+          <a class="truevault-polaris-privacy-notice" target="_blank"
+            href="https://privacy.konscious.us/privacy-policy#california-privacy-notice" noreferrer noopener
+            hidden>California Privacy Notice</a>
+          <a class="truevault-polaris-optout" target="_blank" href="https://privacy.konscious.us/opt-out" noreferrer
+            noopener hidden>Privacy Options</a>
+          <a class="truevault-polaris-privacy-notice" target="_blank" href="https://privacy.konscious.us/limit"
+            noreferrer noopener hidden>Sensitive Personal Information</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        if (window.location.hash == "#drop") dropit();
-      });
-      var playfirst = true;
-      window.wistiaID = "";
-      let stillUrl = "";
-      var ismobile = false;
-      if (window.matchMedia("(max-width: 768px)").matches) {
-        window.wistiaID = "3rm4vwf3si";
-        ismobile = true;
-      } else {
-        window.wistiaID = "yh9jlzbz2o";
-      }
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.location.hash == "#drop")
+        dropit();
 
-      let playbar = false;
-      if (window.location.hash == "#vibdeobar") playbar = true;
+    });
+    var playfirst = true;
+    window.wistiaID = "";
+    let stillUrl = "";
+    var ismobile = false;
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      window.wistiaID = "3rm4vwf3si";
+      ismobile = true;
+    } else {
+      window.wistiaID = "yh9jlzbz2o";
 
-      document
-        .querySelector(".wistia_embed")
-        .classList.add("wistia_async_" + window.wistiaID);
+    }
 
-      var s = document.createElement("script");
-      s.setAttribute(
-        "src",
-        "https://fast.wistia.com/embed/medias/" + window.wistiaID + ".jsonp"
-      );
-      s.setAttribute("id", "mine");
-      s.async = true;
-      s.onload = wistiacallback;
-      document.head.appendChild(s);
+    let playbar = false;
+    if (window.location.hash == "#vibdeobar")
+      playbar = true;
 
-      var vincontClasslist = document.querySelector("#vidcont").classList.value;
-      function wistiacallback() {
-        window._wq = window._wq || [];
-        _wq.push({
-          id: window.wistiaID,
-          options: {
-            autoPlay: false,
-            playbar: playbar,
-            stillUrl: stillUrl,
-            volumeControl: false,
-            smallPlayButton: false,
-            fullscreenButton: false,
-          },
-          onReady: function (video) {
-            console.log("I got a handle to the video!", video);
 
-            window.video = video;
-            video.bind("secondchange", function (s) {
-              if (s === 31 * 60 + 12) {
-                dropit();
-              }
-            });
+    document.querySelector(".wistia_embed").classList.add("wistia_async_" + window.wistiaID);
 
-            var vidcont = document.querySelector(
-              "#vidcont>div:first-child>div:first-child"
-            );
+    var s = document.createElement('script');
+    s.setAttribute('src', "https://fast.wistia.com/embed/medias/" + window.wistiaID + ".jsonp");
+    s.setAttribute('id', "mine");
+    s.async = true;
+    s.onload = wistiacallback;
+    document.head.appendChild(s);
 
-            if (window.innerWidth <= 767) {
-              let h = window.innerWidth / window.video.aspect();
-              vidcont.style.height = h + "px";
+    var vincontClasslist = document.querySelector("#vidcont").classList.value;
+    function wistiacallback() {
+      window._wq = window._wq || [];
+      _wq.push({
+        id: window.wistiaID,
+        options: {
+          autoPlay: false,
+          playbar: playbar,
+          stillUrl: stillUrl,
+          volumeControl: false,
+          smallPlayButton: false,
+          fullscreenButton: false
+        },
+        onReady: function (video) {
+          console.log("I got a handle to the video!", video);
+
+          window.video = video;
+          video.bind("secondchange", function (s) {
+            if (s === (31 * 60) + 12) {
+              dropit();
             }
-            video.bind("play", function () {
-              if (playfirst == true) {
-                video.time(0);
-                playfirst = false;
-              }
+          });
 
-              document.querySelector("#vidcont").classList.value = "";
-              document
-                .querySelector("#vidcont")
-                .classList.add("vidcont2", "m-auto");
+          var vidcont = document.querySelector('#vidcont>div:first-child>div:first-child');
 
-              document.querySelector("#thevid").classList.add("fullwidth");
-              if (ismobile !== true) jQuery(".hideonplay").addClass("!hidden");
-              if (ismobile !== true && !jQuery("body").hasClass("dropped"))
-                jQuery(".showonplay").removeClass("!hidden");
-              if (window.innerWidth <= 767) {
-                vidcont.style.height = document.querySelector(
-                  ".m-auto.wistia_embed"
-                ).style.height;
-              }
-              setTimeout(function () {
-                jQuery(".important").closest("div").addClass("fadeOut");
-              }, 10000);
-            });
+          if (window.innerWidth <= 767) {
+            let h = window.innerWidth / window.video.aspect();
+            vidcont.style.height = h + "px";
+          }
+          video.bind("play", function () {
+            if (playfirst == true) {
+              video.time(0);
+              playfirst = false;
+            }
 
-            video.bind("pause", function () {
-              document.querySelector("#thevid").classList.remove("fullwidth");
-              jQuery(".hideonplay").removeClass("!hidden");
+            document.querySelector("#vidcont").classList.value = "";
+            document.querySelector("#vidcont").classList.add("vidcont2", "m-auto");
 
-              jQuery(".showonplay").addClass("!hidden");
+            document.querySelector('#thevid').classList.add('fullwidth');
+            if (ismobile !== true) jQuery('.hideonplay').addClass('!hidden');
+            if (ismobile !== true && !jQuery("body").hasClass("dropped")) jQuery('.showonplay').removeClass('!hidden');
+            if (window.innerWidth <= 767) {
+              vidcont.style.height = document.querySelector(".m-auto.wistia_embed").style.height;
+            }
+            setTimeout(function () {
+              jQuery(".important").closest("div").addClass("fadeOut");
+            }, 10000);
+          });
 
-              if (jQuery("body").hasClass("dropped")) {
-                document
-                  .querySelector("#vidcont")
-                  .classList.add("vidcont2", "m-auto");
-              } else {
-                document.querySelector("#vidcont").classList.value =
-                  vincontClasslist;
-              }
-            });
-            video.bind("end", function () {
-              document.querySelector("#thevid").classList.remove("fullwidth");
-              jQuery(".hideonplay").removeClass("!hidden");
-              jQuery(".showonplay").addClass("!hidden");
-              if (jQuery("body").hasClass("dropped")) {
-                document
-                  .querySelector("#vidcont")
-                  .classList.add("vidcont2", "m-auto");
-              } else {
-                document.querySelector("#vidcont").classList.value =
-                  vincontClasslist;
-              }
-            });
+          video.bind("pause", function () {
+            document.querySelector('#thevid').classList.remove('fullwidth');
+            jQuery('.hideonplay').removeClass('!hidden');
 
-            video.bind("widthchange", function () {
-              console.log("The width changed to " + video.width());
-              if (video.state() === "playing") {
-                let toHeight = Math.floor(
-                  window.innerWidth / window.video.aspect()
-                );
-                if (toHeight > window.innerHeight)
-                  toHeight = window.innerHeight;
+            jQuery('.showonplay').addClass('!hidden');
 
-                let toWidth = Math.floor(toHeight * window.video.aspect());
-                window.video.width(toWidth, { constrain: true });
-              }
-            });
-          },
-        });
-      }
+            if (jQuery("body").hasClass("dropped")) {
+              document.querySelector("#vidcont").classList.add("vidcont2", "m-auto");
+            } else {
+              document.querySelector("#vidcont").classList.value = vincontClasslist;
+            }
 
-      document.addEventListener("keydown", function (event) {
-        // CTRL + B combo
-        if (event.ctrlKey && event.key === "b") {
-          dropit();
+          });
+          video.bind("end", function () {
+            document.querySelector('#thevid').classList.remove('fullwidth');
+            jQuery('.hideonplay').removeClass('!hidden');
+            jQuery('.showonplay').addClass('!hidden');
+            if (jQuery("body").hasClass("dropped")) {
+              document.querySelector("#vidcont").classList.add("vidcont2", "m-auto");
+            } else {
+              document.querySelector("#vidcont").classList.value = vincontClasslist;
+            }
+          });
+
+          video.bind("widthchange", function () {
+            console.log("The width changed to " + video.width());
+            if (video.state() === "playing") {
+              let toHeight = Math.floor(window.innerWidth / window.video.aspect());
+              if (toHeight > window.innerHeight)
+                toHeight = window.innerHeight;
+
+              let toWidth = Math.floor(toHeight * window.video.aspect());
+              window.video.width(toWidth, { constrain: true });
+            }
+          });
         }
       });
-      function dropit() {
-        console.log("DROPPED");
-        document.querySelector("body").classList.add("dropped");
-        const nodeList = document.querySelectorAll(".beforedrop");
+    }
 
-        jQuery(".showonplay").addClass("!hidden");
-        document.querySelector("#vidcont").classList.value = "";
-        document.querySelector("#vidcont").classList.add("vidcont2", "m-auto");
+    document.addEventListener('keydown', function (event) {
 
-        for (let i = 0; i < nodeList.length; i++) {
-          nodeList[i].classList.add("d-none");
-        }
-
-        const nodeList2 = document.querySelectorAll(".afterdrop");
-        for (let i = 0; i < nodeList2.length; i++) {
-          nodeList2[i].classList.remove("d-none");
-        }
-        setTimeout(function () {
-          document.querySelector(".scrolldowntoselect").classList.add("fadeIn");
-        }, 500);
+      // CTRL + B combo
+      if (event.ctrlKey && event.key === 'b') {
+        dropit();
       }
-    </script>
-  </body>
+    });
+    function dropit() {
+      console.log("DROPPED");
+      document.querySelector("body").classList.add("dropped");
+      const nodeList = document.querySelectorAll(".beforedrop");
+
+      jQuery('.showonplay').addClass('!hidden');
+      document.querySelector("#vidcont").classList.value = "";
+      document.querySelector("#vidcont").classList.add("vidcont2", "m-auto");
+
+      for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].classList.add('d-none');
+      }
+
+      const nodeList2 = document.querySelectorAll(".afterdrop");
+      for (let i = 0; i < nodeList2.length; i++) {
+        nodeList2[i].classList.remove('d-none');
+      }
+      setTimeout(function () {
+        document.querySelector(".scrolldowntoselect").classList.add("fadeIn");
+      }, 500);
+
+    }
+  </script>
+</body>
+
 </html>
