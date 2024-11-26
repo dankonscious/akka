@@ -328,7 +328,29 @@
         "faq_qVfxdT",
         "faq_PBR3zA"
       ],
+      "settings": {}
+    },
+    "173264274331e2f621": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_agg_section_9WDtTX": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "akka",
+            "aggregated": true,
+            "data-limit": 20,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_agg_section_9WDtTX"
+      ],
       "settings": {
+        "include_margins": true
       }
     },
     "ak_product_s6_QdmkfN": {
@@ -351,6 +373,7 @@
     "ak_product_s3_pMKCgd",
     "ak_product_s4_XhhzUW",
     "ak_product_s5_FL6pGF",
+    "173264274331e2f621",
     "ak_product_s6_QdmkfN"
   ]
 }
