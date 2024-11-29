@@ -1,21 +1,23 @@
 <!-- Loox Integration for Reviews and Ratings -->
-<div class="loox-widget-section">
-  <h2 class="loox-widget-heading">{{ section.settings.heading }}</h2>
-  
-  {% if section.settings.show_ratings %}
-    <div class="loox-rating-widget">
-      <div class="loox-rating loox-rating-hp" data-fetch data-id="{{ section.settings.featured_product | default: '10212706615599' }}" data-pattern="4.6 out of [count]"></div> 
-        <span>_______</span>
-      <div class="no-stars loox-rating loox-rating-hp" data-fetch  data-id="{{ section.settings.featured_product | default: '10212706615599' }}" data-pattern="[count] Reviews"></div> 
-      <span class="revsubtitle">Sorted by people like you</span>
-    </div>
-  {% endif %}
+<div class="ak-max-w-[var(--page-width)] ak-w-full ak-mx-auto ak-py-[64px] ak-text-[#2E3666] ak-font-['syne'] max-lg:ak-py-8 max-lg:ak-px-4">
+  <div class="loox-widget-section">
+    <h2 class="ak-text-[70px] ak-leading-[normal] ak-tracking-[-1.4px] max-lg:ak-text-[40px]">{{ section.settings.heading }}</h2>
+    
+    {% if section.settings.show_ratings %}
+      <div class="loox-rating-widget">
+        <div class="loox-rating loox-rating-hp" data-fetch data-id="{{ section.settings.featured_product | default: '10212706615599' }}" data-pattern="4.6 out of [count]"></div> 
+          <span>_______</span>
+        <div class="no-stars loox-rating loox-rating-hp" data-fetch  data-id="{{ section.settings.featured_product | default: '10212706615599' }}" data-pattern="[count] Reviews"></div> 
+        <span class="revsubtitle">Sorted by people like you</span>
+      </div>
+    {% endif %}
 
-  {% if section.settings.show_reviews %}
-    <div class="loox-review-widget">
-      <div id="looxReviews" data-product-id="{{ section.settings.featured_product | default: '10212706615599' }}" ></div> 
-    </div>
-  {% endif %}  
+    {% if section.settings.show_reviews %}
+      <div class="loox-review-widget">
+        <div id="looxReviews" data-product-id="{{ section.settings.featured_product | default: '10212706615599' }}" ></div> 
+      </div>
+    {% endif %}  
+  </div>
 </div>
 
 {% schema %}
