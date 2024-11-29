@@ -1,3 +1,15 @@
+
+<!-- Loox Integration for Reviews and Ratings -->
+{% if section.settings.show_reviews %}
+  <div class="loox-review-widget">
+    <div class="loox-embed-widget" 
+         data-product-id="{{ product.id }}"
+         data-product-handle="{{ product.handle }}">
+    </div>
+  </div>
+{% endif %}
+
+
 {% schema %}
 {
   "name": "AK - Loox",
