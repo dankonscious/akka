@@ -1057,6 +1057,10 @@ video {
   display: block;
 }
 
+.ak-inline-block {
+  display: inline-block;
+}
+
 .\!ak-flex {
   display: flex !important;
 }
@@ -2529,6 +2533,10 @@ video {
 
 .ak-pt-\[49px\] {
   padding-top: 49px;
+}
+
+.ak-pb-\[10px\] {
+  padding-bottom: 10px;
 }
 
 .ak-text-center {
@@ -4202,6 +4210,14 @@ html {
 
   .max-md\:ak-pb-\[100\%\] {
     padding-bottom: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:ak-scale-150 {
+    --tw-scale-x: 1.5;
+    --tw-scale-y: 1.5;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 
