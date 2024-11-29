@@ -2072,6 +2072,10 @@ video {
   border-top-width: 6px;
 }
 
+.ak-border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .ak-border-solid {
   border-style: solid;
 }
