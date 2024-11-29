@@ -8,7 +8,7 @@
       {% if section.settings.show_ratings %}
         <div class="loox-rating-widget lg:ak-scale-150">
           <div class="ak-border-solid ak-border-b-2 ak-border-[#2E3666] ak-inline-block ak-pb-[10px] ak-mb-[10px]">
-            <div class="loox-rating loox-rating-hp" data-fetch data-id="{{ section.settings.featured_product | default: '10212706615599' }}" data-pattern="4.6 out of [count]"></div> 
+            <div class="loox-rating loox-rating-hp" data-fetch data-id="{{ section.settings.featured_product | default: '10212706615599' }}" data-pattern="4.6 [star] out of [count]"></div> 
           </div>
           <div class="no-stars loox-rating loox-rating-hp" data-fetch  data-id="{{ section.settings.featured_product | default: '10212706615599' }}" data-pattern="[count] Reviews"></div> 
           <span class="revsubtitle">Sorted by people like you</span>
