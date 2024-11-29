@@ -4290,3 +4290,8 @@ html {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(220 222 235 / var(--tw-bg-opacity, 1)) !important;
 }
+
+.\[\&_\.loox-icon\]\:\!ak-text-\[\#ef7012\] .loox-icon {
+  --tw-text-opacity: 1 !important;
+  color: rgb(239 112 18 / var(--tw-text-opacity, 1)) !important;
+}
