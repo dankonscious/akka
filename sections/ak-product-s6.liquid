@@ -1,29 +1,30 @@
 <!-- section-product-sec5.liquid -->
-<section id="section-5" class="w-full h-[900px] max-[1200px]:h-[663px] bg-[linear-gradient(114deg,_#7B82A2_8.77%,_#677099_52.96%,_#7B82A2_92.94%)] overflow-hidden">
-  <div class="relative w-full h-full flex items-center justify-center">
+<section id="section-5" class="ak-w-full ak-h-[900px] max-lg:ak-h-[663px] ak-bg-[linear-gradient(114deg,_#7B82A2_8.77%,_#677099_52.96%,_#7B82A2_92.94%)] ak-overflow-hidden">
+  <div class="ak-relative ak-w-full ak-h-full ak-flex ak-items-center ak-justify-center">
     
-    <div class="upperimg max-w-[480px] w-full absolute top-[-200px] left-[110px] z-10 max-[1200px]:max-w-[300px] max-[1200px]:left-[-151px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
+    <div class="upperimg ak-max-w-[480px] ak-w-full ak-absolute ak-top-[-200px] ak-left-[110px] ak-z-10 max-lg:ak-max-w-[300px] max-lg:ak-left-[-151px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
       <img src="{{ section.settings.upper_image |  image_url: width: 800 }}" alt="">
     </div>
 
-    <div class="midimg max-w-[578px] mt-[100px] w-full absolute z-30 rellax" data-rellax-percentage="0.5" data-rellax-speed="3">
-      <img class="max-[1200px]:hidden" src="{{ section.settings.mid_image_desktop | image_url: width: 800 }}" alt="">
-      <img class="hidden max-[1200px]:block mx-auto" src="{{ section.settings.mid_image_mobile | img_url: 'master' }}" alt="">
+    <div class="midimg ak-max-w-[578px] ak-mt-[100px] ak-w-full ak-absolute ak-z-30 rellax" data-rellax-percentage="0.5" data-rellax-speed="3">
+      <img class="max-lg:ak-hidden" src="{{ section.settings.mid_image_desktop | image_url: width: 800 }}" alt="">
+      <img class="ak-hidden max-lg:ak-block ak-mx-auto" src="{{ section.settings.mid_image_mobile | img_url: 'master' }}" alt="">
     </div>
-    <div class="max-w-[1307px] w-full relative z-20 max-[1200px]:max-w-full font-['syne']">      
-        <img class="max-[1200px]:w-[343px] max-[1200px]:mx-auto" src="{{ section.settings.vector_image | img_url: 'master' }}" alt="">
-        <a href="{{ section.settings.link }}" class="flex items-center gap-4 text-white text-[32px] leading-[140%] underline uppercase absolute top-[36px] right-0 max-[1200px]:translate-x-[-50%] max-[1200px]:top-[unset] max-[1200px]:bottom-[-160px] max-[1200px]:right-[unset] max-[1200px]:left-[50%]">
+    <div class="ak-max-w-[1307px] ak-w-full ak-relative ak-z-20 max-lg:ak-max-w-full ak-font-['syne']">      
+        <img class="max-lg:ak-w-[343px] max-lg:ak-mx-auto" src="{{ section.settings.vector_image | img_url: 'master' }}" alt="">
+        <a href="{{ section.settings.link }}" class="ak-flex ak-items-center ak-gap-4 ak-text-white ak-text-[32px] ak-leading-[140%] ak-underline ak-uppercase ak-absolute ak-top-[36px] ak-right-0 max-lg:ak-translate-x-[-50%] max-lg:ak-top-[unset] max-lg:ak-bottom-[-160px] max-lg:ak-right-[unset] max-lg:ak-left-[50%] max-lg:ak-w-[200px] max-lg:ak-gap-[10px] max-lg:ak-justify-center">
           {{ section.settings.button_text }}
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="45" viewBox="0 0 17 45" fill="none">
             <path d="M16.0283 29.404C16.0283 29.6817 15.9179 29.948 15.7216 30.1444C15.5252 30.3408 15.2588 30.4511 14.9811 30.4511C14.7034 30.4511 14.4371 30.3408 14.2407 30.1444C14.0443 29.948 13.934 29.6817 13.934 29.404V18.576L1.761 30.749C1.56249 30.9339 1.29995 31.0346 1.02867 31.0298C0.757386 31.0251 0.498554 30.9152 0.3067 30.7233C0.114846 30.5314 0.00494956 30.2726 0.000163137 30.0013C-0.00462328 29.7301 0.0960757 29.4675 0.281042 29.269L12.4523 17.0943H1.62429C1.34657 17.0943 1.08022 16.984 0.883848 16.7876C0.687471 16.5912 0.577148 16.3249 0.577148 16.0471C0.577148 15.7694 0.687471 15.5031 0.883848 15.3067C1.08022 15.1103 1.34657 15 1.62429 15H14.9811C15.2588 15 15.5252 15.1103 15.7216 15.3067C15.9179 15.5031 16.0283 15.7694 16.0283 16.0471V29.404Z" fill="#EDEEF5"/>
           </svg>
         </a>    
     </div>
-    <div class="lowerimg max-w-[400px] w-full absolute bottom-[-200px] right-[100px] z-10 max-[1200px]:max-w-[223px] max-[1200px]:right-[-105px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
+    <div class="lowerimg ak-max-w-[400px] ak-w-full ak-absolute ak-bottom-[-200px] ak-right-[100px] ak-z-10 max-lg:ak-max-w-[223px] max-lg:ak-right-[-105px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
       <img src="{{ section.settings.lower_image |  image_url: width: 800  }}" alt="">
     </div>
   </div>
-</section> 
+</section>
+
 
 {% schema %}
 {

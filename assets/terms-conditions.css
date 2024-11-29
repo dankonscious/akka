@@ -1,0 +1,399 @@
+@font-face{
+	font-family: 'Be Vietnam';
+	src: url(https://s3.amazonaws.com/konsciousketo.com/fonts/BeVietnam-Bold.ttf);
+    format("opentype");
+    font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
+}
+@font-face{
+	font-family: 'Be Vietnam';
+	src: url(https://s3.amazonaws.com/konsciousketo.com/fonts/BeVietnam-Bold.ttf);
+    format("opentype");
+    font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+}
+@font-face{
+	font-family: 'Be Vietnam';
+	src: url(https://s3.amazonaws.com/konsciousketo.com/fonts/BeVietnam-Regular.ttf);
+    format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+
+.maxwidth{
+	max-width: 1160px;
+	margin:0 auto;
+}
+.myriadpro{
+	font-family: 'myriad-pro';
+}
+.poppins{
+	font-family: 'Poppins';
+}
+.lora{
+	font-family: 'Lora';
+}
+.inter{
+	font-family: 'Inter';
+}
+.worksans{
+	font-family: 'Work Sans';
+}
+.bevietnambold{
+	font-family: 'Be Vietnam';
+}
+.bevietnam{
+	font-family: 'Be Vietnam';
+}
+.footer-maxwidth{
+    max-width:1375px;
+}
+
+.fw300{
+	font-weight: 300;
+}
+.fw400{
+	font-weight: 400;
+}
+.fw500{
+	font-weight: 500;
+}
+.fw600{
+	font-weight: 600;
+}
+.fw700{
+	font-weight: 700;
+}
+.fw800{
+	font-weight: 800;
+}
+.fw900{
+	font-weight: 900;
+}
+.italic{
+	font-style: italic;
+}
+.fs12px{
+	font-size: 12px;
+}
+.fs14{
+	font-size: 14px;
+}
+.fs15{
+	font-size: 15px;
+}
+.fs16{
+	font-size: 16px;
+}
+.fs17{
+	font-size: 17px;
+}
+.fs18{
+	font-size: 18px;
+}
+.fs19{
+	font-size: 19px;
+}
+.fs20{
+	font-size: 20px;
+}
+.fs21{
+	font-size: 21px;
+}
+.fs22{
+	font-size: 22px;
+}
+.fs23{
+	font-size: 23px;
+}
+.fs24{
+	font-size: 24px;
+}
+.fs25{
+	font-size: 25px;
+}
+.fs26{
+	font-size: 26px;
+}
+.fs27{
+	font-size: 27px;
+}
+.fs28{
+	font-size: 28px;
+}
+.fs29{
+	font-size: 29px;
+}
+.fs30{
+	font-size: 30px;
+}
+.fs32{
+	font-size: 32px;
+}
+.fs34{
+	font-size: 34px;
+}
+.fs36{
+	font-size: 36px;
+} 
+.fs40{
+	font-size: 40px;
+}
+.fs42{
+	font-size: 42px;
+}
+.fs46{
+	font-size: 46px;
+}
+.fs48{
+	font-size: 48px;
+}
+.fs64{
+	font-size: 64px;
+}
+.lh20{
+	line-height: 20px;
+}
+.lh22{
+	line-height: 22px;
+}
+.lh24{
+	line-height: 24px;
+}
+.lh30{
+	line-height: 30px;
+}
+.lh38{
+	line-height: 38px;
+}
+.lh40{
+	line-height: 40px;
+}
+.lh46{
+	line-height: 46px;
+}
+.lh50{
+	line-height: 50px;
+}
+.lh52{
+	line-height: 52px;
+}
+.text-underline{
+	text-decoration: underline;
+}
+.text-capitalize{
+	text-transform: capitalize;
+}
+.headerlogo{
+	max-width: 102px;
+}
+.pricing-ul li::marker{
+	font-size: 13px;
+}
+.footer-logo{
+	max-width: 189px;
+}
+.input-div{
+	border-radius: 50px;
+    border: 1px solid #485397;
+    display: flex;
+    overflow: hidden;
+    margin-top: 35px;
+    width: 603px;
+}
+.input-field{
+	width: 74%;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding-left: 30px;
+}
+.input-div input::placeholder{
+   color:#ffffff!important;
+   font-family:'myriad-pro';
+}
+.btn-sign-up{
+	border-radius: 100px;
+    border: 1px solid #485397;
+    background: #485397;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 15px 21px;
+}
+.contact-info{
+	max-width: 204px;
+	width: 100%;
+}
+.socialmedia-icons{
+	width: 204px;
+}
+.disclaimer-border-top{
+	border-top: 1px solid #ffffff;
+}
+.colorffffff{
+	color:#ffffff;
+}
+.colorC7ECFF{
+	color: #C7ECFF;
+}
+.color21304d{
+	color: #21304d;
+}
+.color1D1D1F{
+	color: #1D1D1F;
+}
+.bevietnam{
+	font-family: 'Be Vietnam';
+}
+.bgcolorE8EAFF {background-color:#E8EAFF;}
+.color485397 {color: #485397;}
+.akka-logo {max-width: 108px;}
+.color00E {color:#00E;}
+.color485397 {color:#485397;}
+.disclaimer-border-top {border-top:1px solid #485397!important;}
+
+ /* More specific selector for the placeholder */
+
+.input-div .input-field::placeholder {
+    color: #485397!important; /* Change this color to whatever you prefer */
+    opacity: 1; /* Ensures full opacity */
+	font-family: "myriad-pro"!important;
+	font-size: 22px!important;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.66px;
+}
+
+/* Vendor prefixes for better browser support */
+.input-div .input-field::-webkit-input-placeholder {
+    color: #485397!important;
+    opacity: 1;
+    font-family: "myriad-pro"!important;
+	font-size: 22px!important;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.66px;
+}
+.input-div .input-field::-moz-placeholder {
+    color: #485397!important;
+    opacity: 1;
+    font-family: "myriad-pro"!important;
+	font-size: 22px!important;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.66px;
+}
+.input-div .input-field:-ms-input-placeholder {
+    color: #485397!important;
+    opacity: 1;
+    font-family: "myriad-pro"!important;
+	font-size: 22px!important;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.66px;
+}
+.input-div .input-field:-moz-placeholder {
+    color: #485397!important;
+    opacity: 1;
+    font-family: "myriad-pro"!important;
+	font-size: 22px!important;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.66px;
+}
+
+
+
+
+/*===== media max-width will be change depending on the design =====*/
+@media (max-width:992px){
+	.maxwidth-430 {max-width:430px;}
+	.fsm14{
+		font-size: 14px!important;
+	}
+	.fsm15{
+     font-size:15px!important;
+   }
+   .fsm16{
+     font-size:16px!important;
+   }
+   .fsm17{
+     font-size:17px!important;
+   }
+   .fsm18{
+     font-size:18px!important;
+   }
+	.fsm20{
+		font-size: 20px!important;
+	}
+	.fsm24{
+		font-size: 24px!important;
+	}
+	.fsm26{
+		font-size: 26px!important;
+	}
+	.fsm32{
+		font-size: 32px!important;
+	} 
+	.fsm36{
+		font-size: 36px!important;
+	}
+	.lhm28{
+		line-height: 28px!important;
+	}
+	.lhm24{
+		line-height: 24px!important;
+	}
+	.lhm30{
+		line-height: 30px;
+	}
+	.lhm36{
+		line-height: 36px;
+	}
+	.lhm40{
+		line-height: 40px;
+	}
+	.footer-logo{
+		max-width: 148px;
+	}
+	.input-div{
+		flex-wrap: wrap;
+	    border: 0;
+	    overflow: visible;
+	    width: unset;
+	}
+	.input-field{
+		border: 1px solid #485397!important;
+	    border-radius: 50px;
+	    width: 100%;
+	    padding: 16px 20px;
+	    margin-bottom: 7px;
+	}
+	.btn-sign-up, .sign-up-div{
+		width: 100%;
+	}
+	.btn-sign-up{
+		font-size: 16px;
+	}
+	.contact-info{
+		max-width: unset;
+		width: 100%;
+	}
+	.socialmedia-icons{
+		width: 100%;
+	}
+	.headerlogo{
+		max-width: 88px;
+	}
+	.footer-maxwidth{
+	    max-width:375px;
+	}
+	.akka-logo {max-width: 83px;}
+	.tc-numbertitle h2 {font-size:20px!important;}
+	.tc-numbertitle p {font-size:16px!important;}
+	.input-div .input-field::placeholder {font-size: 17px!important;}
+
+	
+}	

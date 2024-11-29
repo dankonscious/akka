@@ -17,293 +17,269 @@
   
 
 </style>
-<section id="hero" class="handlebars-template w-full bg-[#E2E3EA] font-['syne']">
+<section id="hero" class="handlebars-template ak-w-full ak-bg-[#E2E3EA] ak-font-['syne']">
   
 
-  <script id="template-desktop" type="text/x-handlebars-template">
-    {%- raw -%}{{#unless (isMobile)}}{% endraw %}
-      <div id="hero-desktop" class="relative flex overflow-hidden gap-10 justify-center items-start pt-20 pb-32  max-[1200px]:py-0 max-[1200px]:gap-0 max-[1200px]:flex-col max-[1200px]:items-center">
-        <div class="image-container prod-image absolute top-0 left-0 w-full z-[-1] max-[1200px]:static max-[1200px]:overflow-hidden max-[1200px]:h-[493px] max-[1200px]:w-[414px] max-[1200px]:mx-auto">
-            {% for block in section.blocks %}
-                {% if block.type == 'block' %}
-                  <div class="prod w-full mx-auto {% if forloop.first %}active{% endif %} {{ forloop.index }}">
-                    <img class="mx-auto" src="{{ block.settings.prod_image | img_url: 'master' }}">
-                  </div>                
-                {% endif %}    
-            {% endfor %}        
-        </div>
+<script id="template-desktop" type="text/x-handlebars-template">
+{%- raw -%}{{#unless (isMobile)}}{% endraw %}
+  <div id="hero-desktop" class="ak-relative ak-flex ak-overflow-hidden ak-gap-10 ak-justify-center ak-items-start ak-pt-20 ak-pb-32 max-lg:ak-py-0 max-lg:ak-gap-0 max-lg:ak-flex-col max-lg:ak-items-center">
+    <div class="image-container prod-image ak-absolute ak-top-0 ak-left-0 ak-w-full ak-z-[-1] max-lg:ak-static max-lg:ak-overflow-hidden max-lg:ak-h-[493px] max-lg:ak-w-[414px] max-lg:ak-mx-auto">
+        {% for block in section.blocks %}
+            {% if block.type == 'block' %}
+              <div class="prod ak-w-full ak-mx-auto {% if forloop.first %}active{% endif %} {{ forloop.index }}">
+                <img class="ak-mx-auto" src="{{ block.settings.prod_image | img_url: 'master' }}">
+              </div>                
+            {% endif %}    
+        {% endfor %}        
+    </div>
 
-        <div class="floating-button absolute bottom-[80px] left-[50%] translate-x-[-50%] w-[421px] flex items-center justify-center gap-5 z-10  max-[1200px]:top-[430px] max-[1200px]:bottom-[unset] ">
+    <div class="floating-button ak-absolute ak-bottom-[80px] ak-left-[50%] ak-translate-x-[-50%] ak-w-[421px] ak-flex ak-items-center ak-justify-center ak-gap-5 z-10 max-lg:ak-top-[430px] max-lg:ak-bottom-[unset] ">
+      
+      <button class="prod-prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
+          <path d="M133 19L33 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M53 13L33 19L53 19" fill="#2E3666"/>
+          <path d="M53 13L33 19L53 19V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <button class="prod-next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
+          <path d="M1 19L101 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M81 13L101 19H81" fill="#2E3666"/>
+          <path d="M81 13L101 19H81V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg> 
+      </button>
+    </div>
+
+    <div class="ak-flex ak-flex-col ak-min-w-[240px] ak-text-[#2E3666] ak-w-[412px] max-lg:ak-order-2 max-lg:ak-px-4">
+        <header class="ak-flex ak-flex-col ak-w-full ak-max-w-[412px]">
+        <h1 class="ak-text-5xl ak-leading-[110%] max-lg:ak-text-[40px] ak-capitalize">
+            <span>{{ section.settings.title }}</span>
+            <br />
+            <span class="ak-tracking-tighter ak-font-['Blisstwin'] ak-italic">{{ section.settings.title2 }}</span>
+        </h1>
+        <div class="ak-flex ak-gap-1 ak-items-center ak-self-start ak-mt-4 ak-text-base ak-leading-snug">
+            <span class="ak-self-stretch ak-my-auto ak-font-semibold">4.6</span>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/31aa2489da1a9eca8744d7e9aa18f74145f88c0b1ae61e763035e2b48db7ac92?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="Star rating" class="ak-object-contain ak-shrink-0 ak-self-stretch ak-my-auto ak-aspect-[5] ak-w-[85px]" />
+            <span class="ak-self-stretch ak-my-auto ak-tracking-tight">(922 ratings)</span>
+        </div>
+        </header>
+        <div class="ak-mt-8 ak-text-lg ak-tracking-wide ak-leading-6 ">
+            {{ section.settings.content }}
+        </div>
+        <section class="ak-flex ak-flex-col ak-mt-8 ak-w-full ak-text-lg ak-tracking-wide ak-max-w-[399px]">
+        <h2 class="ak-flex ak-gap-2.5 ak-items-start ak-py-4 ak-w-full ak-text-xl ak-font-semibold ak-tracking-wide ak-whitespace-nowrap max-lg:ak-text-[18px]">
+            BENEFITS:
+        </h2>
+        <ul class="ak-list-none ak-p-0 ak-border-t ak-border-solid ak-border-[#2E3666]">
+
+            {% for block2 in section.blocks %}
+                {% if block2.type == 'block2' %}
+                    <li class="ak-flex ak-gap-2.5 ak-items-start ak-py-4 ak-w-full ak-border-b ak-border-solid ak-border-[#2E3666]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 13.8347L6.14133 16.1307C7.32267 17.3973 7.91333 18.0293 8.57467 18.2293C9.156 18.404 9.77467 18.3573 10.328 18.096C10.9587 17.7973 11.464 17.0813 12.4773 15.648L20 5" stroke="#5462B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="ak-gap-2.5 ak-self-stretch ak-min-w-[240px] ak-w-[539px] max-lg:ak-max-w-full">
+                            {{ block2.settings.benefit_content }}
+                        </span>
+                    </li>
+                {% endif %}
+            {% endfor %}            
+        </ul>
+        </section>
+    </div>
+    
+    <div class="ak-flex ak-shrink-0 ak-h-[730px] ak-min-w-[240px] ak-w-[421px] max-lg:ak-order-1 ak-justify-center max-lg:ak-top-0 max-lg:ak-left-[50%] max-lg:ak-translate-x-[-50%] max-lg:ak-h-[400px] max-lg:ak-w-[414px]" aria-hidden="true">
+        <button id="prod-prev" class="ak-w-1/2 prod-prev"></button>
+        <button id="prod-next" class="ak-w-1/2 prod-next"></button>        
+    </div>
+
+    <div class="prodbox ak-flex ak-flex-col ak-justify-center ak-items-center ak-min-w-[240px] ak-w-[399px] max-lg:ak-order-3 max-lg:ak-px-4">
+        {% for block3 in section.blocks %}
+            {% if block3.type == 'block3' %}
+                <article data-link="{{ block3.settings.link }}" class="ak-flex ak-gap-8 ak-items-start ak-px-3.5 ak-py-4 ak-max-w-full ak-mb-4 ak-leading-snug ak-border ak-border-indigo-900 ak-border-solid ak-text-[#2E3666] ak-w-[399px] max-lg:ak-gap-[18px]">
+                    <div class="ak-flex ak-flex-col ak-items-start ak-w-[209px]">
+                        <h3 class="ak-text-xl ak-font-medium ak-text-center ak-uppercase">{{ block3.settings.prod_title }}</h3>
+                        <p class="ak-self-stretch ak-mt-2 ak-text-sm ak-leading-5">
+                            {{ block3.settings.prod_content1 }}
+                            {{ block3.settings.prod_content2 }}
+                        </p>
+                        <p class="ak-flex ak-gap-1 ak-items-start ak-mt-2 ak-text-2xl ak-font-bold ak-text-orange-500 ak-whitespace-nowrap ak-font-['Heebo']">
+                        <span class="ak-w-[59px]">{{ block3.settings.prod_price }}</span>
+                        <span class="ak-w-[59px] ak-line-through ak-opacity-50">{{ block3.settings.prod_before_price }}</span>
+                        </p>
+                    </div>
+                    <div class="ak-flex ak-flex-col ak-items-center ak-text-xl ak-text-center ak-font-['Heebo'] max-lg:ak-w-[43%]">
+                        <span class="ak-gap-1 ak-px-4 ak-py-2 ak-bg-zinc-100 ak-rounded-[100px] ak-max-xl:px-2">Save {{ block3.settings.save }}</span>
+                        <p class="ak-mt-2 ak-font-bold">{{ block3.settings.per_bottle }}/bottle</p>
+                    </div>
+                </article>
+            {% endif %}
+        {% endfor %}    
+        
+        <div class="ak-flex ak-flex-col ak-justify-center ak-items-center ak-pt-8 ak-mt-4 max-lg:ak-w-[322px]">
+        <button class="addtocart ak-flex ak-gap-4 ak-items-start ak-px-24 ak-py-4 ak-text-2xl ak-tracking-wide ak-leading-snug ak-text-center ak-text-white ak-uppercase ak-bg-[#3E488B] ak-border ak-border-solid ak-border-[#2E3666] ak-rounded-[100px] ak-hover:shadow-[0px_12px_15px_rgba(33,48,94,0.5)] max-lg:ak-px-5 max-lg:ak-w-full max-lg:ak-justify-center">
+            Add to Cart
+            <img loading="lazy"  src="https://cdn.builder.io/api/v1/image/assets/TEMP/449543b04857691bfc461d1f9c69f03fbb4c2e3cb1e28e0a1783367697ed8ce0?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="ak-object-contain ak-shrink-0 ak-aspect-[0.65] ak-w-[22px]" />
+        </button>
+        <div class="ak-flex ak-flex-col ak-mt-2.5 ak-text-blue-950">
+            <p class="ak-flex ak-gap-2 ak-items-center ak-text-lg ak-font-medium ak-tracking-wide ak-leading-5">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6aa18bb0de06614e00c671615973d86b2b994ce883278750cb3138ff4249699d?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="ak-object-contain ak-shrink-0 ak-self-stretch ak-my-auto ak-aspect-[1.32] ak-w-[25px]" />
+            <span class="ak-self-stretch ak-my-auto">
+                Order today and shipping is on us! <br />
+                <a href="https://konsciousketo.com/policies/shipping-policy" class="ak-text-cyan-600 ak-underline" target="_blank" rel="noopener noreferrer">
+                More shipping info
+                </a>
+            </span> 
+            </p>
+            <p class="ak-gap-2 ak-self-stretch ak-mt-4 ak-max-w-full ak-text-xl ak-leading-normal ak-w-[322px] ak-font-['Heebo']">
+            90-DAY MONEY-BACK GUARANTEE
+            </p>
+            <div class="ak-flex ak-gap-2  ak-mt-4 ak-min-h-[24px]" aria-hidden="true"></div>
+        </div>
+        </div>
+    </div>
+  </div>      
+{% raw %}{{/unless}}{% endraw %}  
+</script>
+
+
+<script id="template-mobile" type="text/x-handlebars-template">
+{%- raw -%}{{#if (isMobile)}}{% endraw %}
+  <div id="hero-mobile" class="ak-relative ak-flex ak-py-0 ak-gap-0 ak-flex-col ak-items-center">
+    <div class="ak-max-w-full ak-w-full ak-sticky ak-top-[72px]">
+      <div class="image-container prod-image ak-top-0 ak-left-0 ak-w-full ak-z-[-1] ak-sticky max-lg:ak-h-[493px] ak-max-w-full max-lg:ak-mx-auto">
+          {% for block in section.blocks %}
+              {% if block.type == 'block' %}
+                <div class="prod max-lg:ak-w-full ak-mx-auto ak-top-[-40px] {% if forloop.first %}active{% endif %} {{ forloop.index }}">
+                  <img class="ak-hidden max-lg:ak-block ak-mx-auto" src="{{ block.settings.prod_image_mob | img_url: 'master' }}">
+                </div>                
+              {% endif %}    
+          {% endfor %}        
+      </div>
+
+      <div class="ak-floating-button ak-absolute ak-left-[50%] ak-translate-x-[-50%] ak-w-full ak-max-w-full ak-flex ak-items-center ak-justify-center ak-gap-5 ak-z-10 ak-top-[450px]">
+        
+        <button class="prod-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
+            <path d="M133 19L33 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M53 13L33 19L53 19" fill="#2E3666"/>
+            <path d="M53 13L33 19L53 19V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <button class="prod-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
+            <path d="M1 19L101 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M81 13L101 19H81" fill="#2E3666"/>
+            <path d="M81 13L101 19H81V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg> 
+        </button>
+      </div>
+
+      <div class="ak-flex ak-w-full ak-max-w-full ak-justify-center ak-absolute ak-top-0 ak-left-[50%] ak-translate-x-[-50%] ak-h-[400px]" aria-hidden="true">
+          <button id="prod-prev" class="ak-w-1/2 prod-prev"></button>
+          <button id="prod-next" class="ak-w-1/2 prod-next"></button>        
+      </div>
+    </div>
+    
+
+    <div class="ak-w-full ak-max-w-full ak-px-4 ak-sticky ak-top-0 ak-bg-[rgb(226,227,234,0.80)] ak-backdrop-blur-[30px]">
+      <div class="ak-flex ak-flex-col ak-text-[#2E3666] ak-w-full ak-max-w-[412px]">
+        <header class="ak-flex ak-flex-col ak-w-full ak-max-w-full">
+          <h1 class="ak-text-5xl ak-leading-[110%] max-lg:ak-text-[40px] ak-capitalize">
+              <span>{{ section.settings.title }}</span>
+              <br />
+              <span class="ak-tracking-tighter ak-font-['Blisstwin'] ak-italic">{{ section.settings.title2 }}</span>
+          </h1>
+          <div class="ak-flex ak-gap-1 ak-items-center ak-self-start ak-mt-4 ak-text-base ak-leading-snug">
+              <span class="ak-self-stretch ak-my-auto ak-font-semibold">4.6</span>
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/31aa2489da1a9eca8744d7e9aa18f74145f88c0b1ae61e763035e2b48db7ac92?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="Star rating" class="ak-object-contain ak-shrink-0 ak-self-stretch ak-my-auto ak-aspect-[5] ak-w-[85px]" />
+              <span class="ak-self-stretch ak-my-auto ak-tracking-tight">(922 ratings)</span>
+          </div>
+        </header>
+        <div class="ak-mt-8 ak-text-lg ak-tracking-wide ak-leading-6">
+            {{ section.settings.content }}
+        </div>
+        <section class="ak-flex ak-flex-col ak-mt-8 ak-w-full ak-text-lg ak-tracking-wide ak-max-w-full">
+          <h2 class="ak-flex ak-gap-2.5 ak-items-start ak-py-4 ak-w-full ak-text-xl ak-font-semibold ak-tracking-wide ak-whitespace-nowrap max-lg:ak-text-[18px]">
+              BENEFITS:
+          </h2>
+          <ul class="ak-list-none ak-p-0 ak-border-t ak-border-solid ak-border-[#2E3666]">
+
+              {% for block2 in section.blocks %}
+                  {% if block2.type == 'block2' %}
+                      <li class="ak-flex ak-gap-2.5 ak-items-start ak-py-4 ak-w-full ak-border-b ak-border-solid ak-border-[#2E3666]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M4 13.8347L6.14133 16.1307C7.32267 17.3973 7.91333 18.0293 8.57467 18.2293C9.156 18.404 9.77467 18.3573 10.328 18.096C10.9587 17.7973 11.464 17.0813 12.4773 15.648L20 5" stroke="#5462B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <span class="ak-gap-2.5 ak-self-stretch ak-min-w-[240px] ak-w-[539px] max-lg:ak-max-w-full [&>p]:leading-[21.6px] [&>p>br]:hidden">
+                              {{ block2.settings.benefit_content }}
+                          </span>
+                      </li>
+                  {% endif %}
+              {% endfor %}            
+          </ul>
+        </section>
+      </div>
+
+      <div class="prodbox ak-flex ak-flex-col ak-justify-center ak-items-center ak-min-w-[240px] ak-w-full ak-max-w-[399px] ak-mt-[32px]">
+        {% for block3 in section.blocks %}
+            {% if block3.type == 'block3' %}
+                <article data-link="{{ block3.settings.link }}" class="ak-flex ak-gap-8 ak-items-start ak-px-3.5 ak-py-4 ak-max-w-full ak-mb-4 ak-leading-snug ak-border ak-border-indigo-900 ak-border-solid ak-text-[#2E3666] ak-w-[399px] max-lg:ak-gap-[18px]">
+                    <div class="ak-flex ak-flex-col ak-items-start ak-w-[209px]">
+                        <h3 class="ak-text-xl ak-font-medium ak-text-center ak-uppercase">{{ block3.settings.prod_title }}</h3>
+                        <p class="ak-self-stretch ak-mt-2 ak-text-sm ak-leading-5">
+                            {{ block3.settings.prod_content1 }}
+                            {{ block3.settings.prod_content2 }}
+                        </p>
+                        <p class="ak-flex ak-gap-1 ak-items-start ak-mt-2 ak-text-2xl ak-font-bold ak-text-orange-500 ak-whitespace-nowrap ak-font-['Heebo']">
+                        <span class="ak-w-[59px]">{{ block3.settings.prod_price }}</span>
+                        <span class="ak-w-[59px] ak-line-through ak-opacity-50">{{ block3.settings.prod_before_price }}</span>
+                        </p>
+                    </div>
+                    <div class="ak-flex ak-flex-col ak-items-center ak-text-xl ak-text-center ak-font-['Heebo'] max-lg:ak-w-[43%]">
+                        <span class="ak-gap-1 ak-px-2 ak-py-2 ak-bg-zinc-100 ak-rounded-[100px]">Save {{ block3.settings.save }}</span>
+                        <p class="ak-mt-2 ak-font-bold">{{ block3.settings.per_bottle }}/bottle</p>
+                    </div>
+                </article>
+            {% endif %}
+        {% endfor %}    
           
-          <button class="prod-prev">
-            <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
-              <path d="M133 19L33 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M53 13L33 19L53 19" fill="#2E3666"/>
-              <path d="M53 13L33 19L53 19V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <div class="ak-flex ak-flex-col ak-justify-center ak-items-center ak-pt-8 ak-mt-4 max-lg:ak-w-[322px]">
+          <button class="addtocart ak-flex ak-gap-4 ak-items-start ak-px-24 ak-py-4 ak-text-2xl ak-tracking-wide ak-leading-snug ak-text-center ak-text-white ak-uppercase ak-bg-[#3E488B] ak-border ak-border-solid ak-border-[#2E3666] ak-rounded-[100px] ak-shadow-[0px_54px_15px_rgba(33,48,94,0)] max-lg:ak-px-5 max-lg:ak-w-full max-lg:ak-justify-center">
+              Add to Cart
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/449543b04857691bfc461d1f9c69f03fbb4c2e3cb1e28e0a1783367697ed8ce0?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="ak-object-contain ak-shrink-0 ak-aspect-[0.65] ak-w-[22px]" />
           </button>
-
-          <button class="prod-next">
-            <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
-              <path d="M1 19L101 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M81 13L101 19H81" fill="#2E3666"/>
-              <path d="M81 13L101 19H81V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg> 
-          </button>
-        </div>
-
-        <div class="flex flex-col min-w-[240px] text-[#2E3666] w-[412px] max-[1200px]:order-2 max-[1200px]:px-4">
-            <header class="flex flex-col w-full max-w-[412px]">
-            <h1 class="text-5xl leading-[110%] max-[1200px]:text-[40px] capitalize">
-                <span>{{ section.settings.title }}</span>
-                <br />
-                <span class="tracking-tighter font-['Blisstwin'] italic">{{ section.settings.title2 }}</span>
-            </h1>
-            <div class="flex gap-1 items-center self-start mt-4 text-base leading-snug">
-                <span class="self-stretch my-auto font-semibold">4.6</span>
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/31aa2489da1a9eca8744d7e9aa18f74145f88c0b1ae61e763035e2b48db7ac92?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto aspect-[5] w-[85px]" />
-                <span class="self-stretch my-auto tracking-tight">(922 ratings)</span>
-            </div>
-            </header>
-            <div class="mt-8 text-lg tracking-wide leading-6 ">
-                {{ section.settings.content }}
-            </div>
-            <section class="flex flex-col mt-8 w-full text-lg tracking-wide max-w-[399px]">
-            <h2 class="flex gap-2.5 items-start py-4 w-full text-xl font-semibold tracking-wide whitespace-nowrap max-[1200px]:text-[18px]">
-                BENEFITS:
-            </h2>
-            <ul class="list-none p-0 border-t border-solid border-[#2E3666]">
-
-                {% for block2 in section.blocks %}
-                    {% if block2.type == 'block2' %}
-                        <li class="flex gap-2.5 items-start py-4 w-full border-b border-solid border-[#2E3666]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M4 13.8347L6.14133 16.1307C7.32267 17.3973 7.91333 18.0293 8.57467 18.2293C9.156 18.404 9.77467 18.3573 10.328 18.096C10.9587 17.7973 11.464 17.0813 12.4773 15.648L20 5" stroke="#5462B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <span class="gap-2.5 self-stretch min-w-[240px] w-[539px] max-[1200px]:max-w-full">
-                                {{ block2.settings.benefit_content }}
-                            </span>
-                        </li>
-                    {% endif %}
-                {% endfor %}            
-            </ul>
-            </section>
-        </div>
-        
-        <div class="flex shrink-0 h-[730px] min-w-[240px] w-[421px] max-[1200px]:order-1 justify-center max-[1200px]:absolute max-[1200px]:top-0 max-[1200px]:left-[50%] max-[1200px]:translate-x-[-50%] max-[1200px]:h-[400px] max-[1200px]:w-[414px]" aria-hidden="true">
-            <button id="prod-prev" class="w-1/2 prod-prev"></button>
-            <button id="prod-next" class="w-1/2 prod-next"></button>        
-        </div>
-
-        <div class="prodbox flex flex-col justify-center items-center min-w-[240px] w-[399px] max-[1200px]:order-3 max-[1200px]:px-4">
-            {% for block3 in section.blocks %}
-                {% if block3.type == 'block3' %}
-                    <article data-link="{{ block3.settings.link }}" class="flex gap-8 items-start px-3.5 py-4 max-w-full mb-4 leading-snug border border-indigo-900 border-solid text-[#2E3666] w-[399px] max-[1200px]:gap-[18px]">
-                        <div class="flex flex-col items-start w-[209px]">
-                            <h3 class="text-xl font-medium text-center uppercase">{{ block3.settings.prod_title }}</h3>
-                            <p class="self-stretch mt-2 text-sm leading-5">
-                                {{ block3.settings.prod_content1 }}
-                                {{ block3.settings.prod_content2 }}
-                            </p>
-                            <p class="flex gap-1 items-start mt-2 text-2xl font-bold text-orange-500 whitespace-nowrap font-['Heebo']">
-                            <span class="w-[59px]">{{ block3.settings.prod_price }}</span>
-                            <span class="w-[59px] line-through opacity-50">{{ block3.settings.prod_before_price }}</span>
-                            </p>
-                        </div>
-                        <div class="flex flex-col items-center text-xl text-center font-['Heebo'] max-[1200px]:w-[43%]">
-                            <span class="gap-1 px-4 py-2 bg-zinc-100 rounded-[100px]">Save {{ block3.settings.save }}</span>
-                            <p class="mt-2 font-bold">{{ block3.settings.per_bottle }}/bottle</p>
-                        </div>
-                    </article>
-                {% endif %}
-            {% endfor %}    
-            
-            <div class="flex flex-col justify-center items-center pt-8 mt-4 max-[1200px]:w-[322px]">
-            <button class="addtocart flex gap-4 items-start px-24 py-4 text-2xl tracking-wide leading-snug text-center text-white uppercase bg-[#3E488B] border border-solid border-[#2E3666] rounded-[100px] hover:shadow-[0px_12px_15px_rgba(33,48,94,0.5)] max-[1200px]:px-5 max-[1200px]:w-full max-[1200px]:justify-center">
-                Add to Cart
-                <img loading="lazy"  src="https://cdn.builder.io/api/v1/image/assets/TEMP/449543b04857691bfc461d1f9c69f03fbb4c2e3cb1e28e0a1783367697ed8ce0?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="object-contain shrink-0 aspect-[0.65] w-[22px]" />
-            </button>
-            <div class="flex flex-col mt-2.5 text-blue-950">
-                <p class="flex gap-2 items-center text-lg font-medium tracking-wide leading-5">
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6aa18bb0de06614e00c671615973d86b2b994ce883278750cb3138ff4249699d?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[1.32] w-[25px]" />
-                <span class="self-stretch my-auto">
-                    Order today and shipping is on us! <br />
-                    <a href="https://konsciousketo.com/policies/shipping-policy" class="text-cyan-600 underline" target="_blank" rel="noopener noreferrer">
-                    More shipping info
-                    </a>
-                </span> 
-                </p>
-                <p class=" gap-2 self-stretch mt-4 max-w-full text-xl leading-normal w-[322px] font-['Heebo']">
-                90-DAY MONEY-BACK GUARANTEE
-                </p>
-                <div class="flex gap-2  mt-4 min-h-[24px]" aria-hidden="true"></div>
-            </div>
-            </div>
-        </div>
-      </div>      
-    {% raw %}{{/unless}}{% endraw %}  
-  </script>  
-
-  <script id="template-mobile" type="text/x-handlebars-template">
-    {%- raw -%}{{#if (isMobile)}}{% endraw %}
-      <div id="hero-mobile" class="relative flex py-0 gap-0 flex-col items-center">
-        <div class="max-w-full w-full sticky top-[72px]">
-          <div class="image-container prod-image top-0 left-0 w-full z-[-1] sticky max-[1200px]:h-[493px] max-w-full  max-[1200px]:mx-auto">
-              {% for block in section.blocks %}
-                  {% if block.type == 'block' %}
-                    <div class="prod max-[1200px]:w-full mx-auto top-[-40px] {% if forloop.first %}active{% endif %} {{ forloop.index }}">
-                      <img class="hidden max-[1200px]:block  mx-auto" src="{{ block.settings.prod_image_mob | img_url: 'master' }}">
-                    </div>                
-                  {% endif %}    
-              {% endfor %}        
-          </div>
-
-          <div class="floating-button absolute left-[50%] translate-x-[-50%] w-full max-w-full flex items-center justify-center gap-5 z-10 top-[450px]">
-            
-            <button class="prod-prev">
-              <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
-                <path d="M133 19L33 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M53 13L33 19L53 19" fill="#2E3666"/>
-                <path d="M53 13L33 19L53 19V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-
-            <button class="prod-next">
-              <svg xmlns="http://www.w3.org/2000/svg" width="134" height="32" viewBox="0 0 134 32" fill="none">
-                <path d="M1 19L101 19" stroke="#2E3666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M81 13L101 19H81" fill="#2E3666"/>
-                <path d="M81 13L101 19H81V13Z" stroke="#2E3666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg> 
-            </button>
-          </div>
-
-          <div class="flex w-full max-w-full justify-center absolute top-0 left-[50%] translate-x-[-50%] h-[400px] " aria-hidden="true">
-              <button id="prod-prev" class="w-1/2 prod-prev"></button>
-              <button id="prod-next" class="w-1/2 prod-next"></button>        
+          <div class="ak-flex ak-flex-col ak-mt-2.5 ak-text-blue-950">
+              <p class="ak-flex ak-gap-2 ak-items-center ak-text-lg ak-font-medium ak-tracking-wide ak-leading-5">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6aa18bb0de06614e00c671615973d86b2b994ce883278750cb3138ff4249699d?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="ak-object-contain ak-shrink-0 ak-self-stretch ak-my-auto ak-aspect-[1.32] ak-w-[25px]" />
+              <span class="ak-self-stretch ak-my-auto">
+                  Order today and shipping is on us! <br />
+                  <a href="https://konsciousketo.com/policies/shipping-policy" class="ak-text-cyan-600 ak-underline" target="_blank" rel="noopener noreferrer">
+                  More shipping info
+                  </a>
+              </span> 
+              </p>
+              <p class="ak-gap-2 ak-self-stretch ak-mt-4 ak-max-w-full ak-text-xl ak-leading-normal ak-w-[322px] ak-font-['Heebo']">
+              90-DAY MONEY-BACK GUARANTEE
+              </p>
+              <div class="ak-flex ak-gap-2 ak-mt-4 ak-min-h-[24px]" aria-hidden="true"></div>
           </div>
         </div>
-        
+      </div>
+    </div>    
 
-        <div class="w-full max-w-full px-4 sticky top-0 bg-[rgb(226,227,234,0.80)] backdrop-blur-[30px]">
-          <div class="flex flex-col text-[#2E3666] w-full max-w-[412px]">
-            <header class="flex flex-col w-full max-w-full">
-              <h1 class="text-5xl leading-[110%] max-[1200px]:text-[40px] capitalize">
-                  <span>{{ section.settings.title }}</span>
-                  <br />
-                  <span class="tracking-tighter font-['Blisstwin'] italic">{{ section.settings.title2 }}</span>
-              </h1>
-              <div class="flex gap-1 items-center self-start mt-4 text-base leading-snug">
-                  <span class="self-stretch my-auto font-semibold">4.6</span>
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/31aa2489da1a9eca8744d7e9aa18f74145f88c0b1ae61e763035e2b48db7ac92?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="Star rating" class="object-contain shrink-0 self-stretch my-auto aspect-[5] w-[85px]" />
-                  <span class="self-stretch my-auto tracking-tight">(922 ratings)</span>
-              </div>
-            </header>
-            <div class="mt-8 text-lg tracking-wide leading-6 ">
-                {{ section.settings.content }}
-            </div>
-            <section class="flex flex-col mt-8 w-full text-lg tracking-wide max-w-full">
-              <h2 class="flex gap-2.5 items-start py-4 w-full text-xl font-semibold tracking-wide whitespace-nowrap max-[1200px]:text-[18px]">
-                  BENEFITS:
-              </h2>
-              <ul class="list-none p-0 border-t border-solid border-[#2E3666]">
+  </div>      
+{%- raw -%}{{/if}}{% endraw %}  
+</script>
 
-                  {% for block2 in section.blocks %}
-                      {% if block2.type == 'block2' %}
-                          <li class="flex gap-2.5 items-start py-4 w-full border-b border-solid border-[#2E3666]">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                  <path d="M4 13.8347L6.14133 16.1307C7.32267 17.3973 7.91333 18.0293 8.57467 18.2293C9.156 18.404 9.77467 18.3573 10.328 18.096C10.9587 17.7973 11.464 17.0813 12.4773 15.648L20 5" stroke="#5462B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
-                              <span class="gap-2.5 self-stretch min-w-[240px] w-[539px] max-[1200px]:max-w-full [&>p]:leading-[21.6px] [&>p>br]:hidden">
-                                  {{ block2.settings.benefit_content }}
-                              </span>
-                          </li>
-                      {% endif %}
-                  {% endfor %}            
-              </ul>
-            </section>
-          </div>
 
-          <div class="prodbox flex flex-col justify-center items-center min-w-[240px] w-full max-w-[399px]">
-            {% for block3 in section.blocks %}
-                {% if block3.type == 'block3' %}
-                    <article data-link="{{ block3.settings.link }}" class="flex gap-8 items-start px-3.5 py-4 max-w-full mb-4 leading-snug border border-indigo-900 border-solid text-[#2E3666] w-[399px] max-[1200px]:gap-[18px]">
-                        <div class="flex flex-col items-start w-[209px]">
-                            <h3 class="text-xl font-medium text-center uppercase">{{ block3.settings.prod_title }}</h3>
-                            <p class="self-stretch mt-2 text-sm leading-5">
-                                {{ block3.settings.prod_content1 }}
-                                {{ block3.settings.prod_content2 }}
-                            </p>
-                            <p class="flex gap-1 items-start mt-2 text-2xl font-bold text-orange-500 whitespace-nowrap font-['Heebo']">
-                            <span class="w-[59px]">{{ block3.settings.prod_price }}</span>
-                            <span class="w-[59px] line-through opacity-50">{{ block3.settings.prod_before_price }}</span>
-                            </p>
-                        </div>
-                        <div class="flex flex-col items-center text-xl text-center font-['Heebo'] max-[1200px]:w-[43%]">
-                            <span class="gap-1 px-4 py-2 bg-zinc-100 rounded-[100px]">Save {{ block3.settings.save }}</span>
-                            <p class="mt-2 font-bold">{{ block3.settings.per_bottle }}/bottle</p>
-                        </div>
-                    </article>
-                {% endif %}
-            {% endfor %}    
-              
-            <div class="flex flex-col justify-center items-center pt-8 mt-4 max-[1200px]:w-[322px]">
-              <button class="addtocart flex gap-4 items-start px-24 py-4 text-2xl tracking-wide leading-snug text-center text-white uppercase bg-[#3E488B] border border-solid border-[#2E3666] rounded-[100px] shadow-[0px_54px_15px_rgba(33,48,94,0)] max-[1200px]:px-5 max-[1200px]:w-full max-[1200px]:justify-center">
-                  Add to Cart
-                  <img loading="lazy"  src="https://cdn.builder.io/api/v1/image/assets/TEMP/449543b04857691bfc461d1f9c69f03fbb4c2e3cb1e28e0a1783367697ed8ce0?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="object-contain shrink-0 aspect-[0.65] w-[22px]" />
-              </button>
-              <div class="flex flex-col mt-2.5 text-blue-950">
-                  <p class="flex gap-2 items-center text-lg font-medium tracking-wide leading-5">
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6aa18bb0de06614e00c671615973d86b2b994ce883278750cb3138ff4249699d?placeholderIfAbsent=true&apiKey=961afc0b78ac419daaf2298acf5cab40" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[1.32] w-[25px]" />
-                  <span class="self-stretch my-auto">
-                      Order today and shipping is on us! <br />
-                      <a href="https://konsciousketo.com/policies/shipping-policy" class="text-cyan-600 underline" target="_blank" rel="noopener noreferrer">
-                      More shipping info
-                      </a>
-                  </span> 
-                  </p>
-                  <p class=" gap-2 self-stretch mt-4 max-w-full text-xl leading-normal w-[322px] font-['Heebo']">
-                  90-DAY MONEY-BACK GUARANTEE
-                  </p>
-                  <div class="flex gap-2  mt-4 min-h-[24px]" aria-hidden="true"></div>
-              </div>
-            </div>
-          </div>
-        </div>    
 
-      </div>      
-    {%- raw -%}{{/if}}{% endraw %}  
-  </script>
 </section>
 
 <script>
-  const Hero = document.querySelector('#hero');
-  const ProductItems = Hero.querySelectorAll('article');
-  const AddtoCart = Hero.querySelectorAll('.addtocart');
-
-  ProductItems.forEach(function(item) {
-    item.addEventListener('click', function() {
-      ProductItems.forEach(function(article) {
-        article.classList.remove('active');
-      });
-      item.classList.add('active');
-    });
-  });
-
-  AddtoCart.forEach(function(button) {
-    button.addEventListener('click', function() {
-      // Find the active article
-      const activeItem = Product.querySelector('article.active');
-      if (activeItem) {
-        // Get the data-url attribute of the active article
-        const dataUrl = activeItem.getAttribute('data-url');
-        if (dataUrl) {
-          // Redirect to the URL
-          window.location.href = dataUrl;
-        }
-      }
-    });
-  });
-
 
   function initializeImageSlider() {
     const images = document.querySelectorAll('.image-container .prod');
@@ -341,8 +317,37 @@
 
   // Initialize the slider on DOMContentLoaded
   document.addEventListener("DOMContentLoaded", initializeImageSlider);
-  document.addEventListener("htmlContentChanged", initializeImageSlider);
-  document.addEventListener("htmlContentChanged", function(){ console.log('test') });
+  document.addEventListener("htmlContentChanged", function(){
+    initializeImageSlider();
+    
+    const Hero = document.querySelector('#hero');
+    const ProductItems = Hero.querySelectorAll('article');
+    const AddtoCart = Hero.querySelectorAll('.addtocart');
+  
+    ProductItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        ProductItems.forEach(function(article) {
+          article.classList.remove('active');
+        });
+        item.classList.add('active');
+      });
+    });
+  
+    AddtoCart.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Find the active article
+        const activeItem = Hero.querySelector('article.active');
+        if (activeItem) {
+          // Get the data-url attribute of the active article
+          const dataUrl = activeItem.getAttribute('data-link');
+          if (dataUrl) {
+            // Redirect to the URL
+            window.location.href = dataUrl;
+          }
+        }
+      });
+    });
+  });
 
 </script>
 

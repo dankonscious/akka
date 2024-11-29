@@ -1,27 +1,27 @@
-<div class="sticky z-20 top-0 flex flex-col justify-center items-center px-[20px] py-3 text-white bg-[#3E488B] max-[1024px]:px-5">
-    <div class="flex flex-wrap gap-5 justify-between w-full max-w-[var(--page-width)] max-[1024px]:max-w-full max-[1024px]:items-center">
-    <h1 class="flex items-start text-4xl font-extrabold">
-        <a href="{{ routes.root_url }}">
-            <img class="max-w-[93px] w-full" src="{{ section.settings.logo | img_url: 'original' }}" alt="Logo">
-        </a>
-    </h1>
-    <nav class="flex flex-wrap gap-10 items-start my-auto text-xl max-[1024px]:max-w-full font-['Syne'] capitalize max-[1024px]:hidden">
-        {% assign menu = linklists[section.settings.main_menu] %}
+<div class="ak-sticky ak-z-20 ak-top-0 ak-flex ak-flex-col ak-justify-center ak-items-center ak-px-[20px] ak-py-3 ak-text-white ak-bg-[#3E488B] max-[1024px]:ak-px-5">
+    <div class="ak-flex ak-flex-wrap ak-gap-5 ak-justify-between ak-w-full ak-max-w-[var(--page-width)] max-[1024px]:ak-max-w-full max-[1024px]:ak-items-center">
+        <h1 class="ak-flex ak-items-start ak-text-4xl ak-font-extrabold">
+            <a href="{{ routes.root_url }}">
+                <img class="ak-max-w-[93px] ak-w-full" src="{{ section.settings.logo | img_url: 'original' }}" alt="Logo">
+            </a>
+        </h1>
+        <nav class="ak-flex ak-flex-wrap ak-gap-10 ak-items-start ak-my-auto ak-text-xl max-[1024px]:ak-max-w-full ak-font-['Syne'] ak-capitalize max-[1024px]:ak-hidden">
+            {% assign menu = linklists[section.settings.main_menu] %}
+            {% for link in menu.links %}
+            <a href="{{ link.url }}" class="ak-gap-3.5 ak-self-stretch ak-p-0.5 {% if link.active %} ak-underline {% endif %}">{{ link.title | downcase }}</a>
+            {% endfor %}
+        </nav>
+        <div id="nav-icon" class="ak-hidden max-[1024px]:ak-block">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <nav id="nav-box" class="ak-max-w-full ak-font-['Syne'] ak-hidden">
         {% for link in menu.links %}
-        <a href="{{ link.url }}" class="gap-3.5 self-stretch p-0.5 {% if link.active %} underline {% endif %}">{{ link.title | downcase }}</a>
+        <a href="{{ link.url }}" class="ak-h-[60px] ak-leading-[20px] ak-text-[20px] ak-text-white ak-uppercase ak-tracking-[-0.3px] ak-p-0.5 ak-px-[16px] ak-block {% if link.active %} ak-underline {% endif %}">{{ link.title | upcase }}</a>
         {% endfor %}
-    </nav>
-    <div id="nav-icon" class="hidden max-[1024px]:block">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    </div>
-    <nav id="nav-box" class="max-w-full font-['Syne'] hidden">
-    {% for link in menu.links %}
-        <a href="{{ link.url }}" class="h-[60px] leading-[20px] text-[20px] text-white uppercase tracking-[-0.3px] p-0.5 px-[16px] block {% if link.active %} underline {% endif %}">{{ link.title | upcase }}</a>
-    {% endfor %}
     </nav>
 </div>
 
@@ -29,7 +29,7 @@
 {
     "name": "AK - Header",
     "tag": "header",
-    "class": "sticky z-20 top-0",
+    "class": "ak-sticky ak-z-20 ak-top-0",
     "enabled_on": {
         "groups": ["header"]
     },
@@ -54,4 +54,3 @@
     ]
 }
 {% endschema %}
-    

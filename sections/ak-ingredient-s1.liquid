@@ -14,87 +14,87 @@
     background-color: #fff;
   }
 </style>
-<section id="section1" class="ingredient-information-section font-['syne']">
-  <div class="flex items-start justify-between max-w-[var(--page-width)] w-full mx-auto relative text-[#2E3666] py-[47px] max-md:max-w-full max-md:py-0">
-    <div class="max-w-[125px] w-full sticky top-0 pt-[128px] mb-[703px] max-md:hidden">
+<section id="section1" class="ingredient-information-section ak-font-['syne']">
+  <div class="ak-flex ak-items-start ak-justify-between ak-max-w-[var(--page-width)] ak-w-full ak-mx-auto ak-relative ak-text-[#2E3666] ak-py-[47px] max-lg:ak-max-w-full max-lg:ak-py-0">
+    <div class="ak-max-w-[125px] ak-w-full ak-sticky ak-top-0 ak-pt-[128px] ak-mb-[703px] max-lg:ak-hidden">
       {% for link in section.blocks %}
         {% if link.type == 'link' %}
-          <a href="#{{ link.settings.link_id }}" class="text-[24px] leading-[64px] no-underline">{{ link.settings.link_name }}</a>
+          <a href="{{ link.settings.link_id }}" class="ak-text-[24px] ak-leading-[64px] ak-no-underline">{{ link.settings.link_name }}</a>
         {% endif %}
       {% endfor %}
     </div>
-    <div class="max-md:w-full">
-      <section class="flex flex-col max-[1200px]:bg-[#EDEEF5] max-[1200px]:pb-[64px]">
+    <div class="max-lg:ak-w-full">
+      <section class="ak-flex ak-flex-col max-lg:ak-bg-[#EDEEF5] max-lg:ak-pb-[64px]">
         {% for item in section.blocks %}
           {% if item.type == 'ingredient' %}
-            <article id="{{ item.settings.ingredient_id }}" class="flex flex-col p-4 w-full bg-[#EDEEF5] rounded-3xl max-md:max-w-full {% if forloop.index != 1 %}mt-16 max-md:mt-0{% endif %} max-[1200px]:rounded-none">
-              <div class="flex flex-wrap gap-8 w-full max-md:max-w-full max-[1200px]:justify-center">
-                <div class="flex flex-col min-w-[240px] w-[468px] max-md:max-w-full">
-                  <img loading="lazy" src="{{ item.settings.image_1 | img_url: 'master' }}" alt="{{ item.settings.image_alt }}" class="object-contain flex-1 max-w-full aspect-[0.83] w-[468px]" />
+            <article id="{{ item.settings.ingredient_id }}" class="ak-flex ak-flex-col ak-p-4 ak-w-full ak-bg-[#EDEEF5] ak-rounded-3xl max-lg:ak-max-w-full {% if forloop.index != 1 %}ak-mt-16 max-lg:ak-mt-0{% endif %} max-lg:ak-rounded-none">
+              <div class="ak-flex ak-flex-wrap ak-gap-8 ak-w-full max-lg:ak-max-w-full max-lg:ak-justify-center">
+                <div class="ak-flex ak-flex-col ak-min-w-[240px] ak-w-[468px] max-lg:ak-max-w-full">
+                  <img loading="lazy" src="{{ item.settings.image_1 | img_url: 'master' }}" alt="{{ item.settings.image_alt }}" class="ak-object-contain ak-flex-1 ak-max-w-full ak-aspect-[0.83] ak-w-[468px]" />
                 </div>
-                <div class="flex flex-col self-start min-w-[240px] w-full max-w-[494px] max-md:max-w-full ">
-                  <header class="flex flex-col w-full max-w-[485px]">
-                    <h2 class="text-[50px] font-medium leading-[normal] text-[#dcdbe8]">{{ item.settings.ingredient_number }}</h2>
-                    <h3 class="py-2.5 w-full text-[48px] max-md:!text-[30px] tracking-[-0.9px] leading-[48px] border-[#2E3666] border-t-[6px] max-md:max-w-full  max-md:leading-[110%]">
+                <div class="ak-flex ak-flex-col ak-self-start ak-min-w-[240px] ak-w-full ak-max-w-[494px] max-lg:ak-max-w-full ">
+                  <header class="ak-flex ak-flex-col ak-w-full ak-max-w-[485px]">
+                    <h2 class="ak-text-[50px] ak-font-medium ak-leading-[normal] ak-text-[#dcdbe8]">{{ item.settings.ingredient_number }}</h2>
+                    <h3 class="ak-py-2.5 ak-w-full ak-text-[48px] max-lg:!ak-text-[30px] ak-tracking-[-0.9px] ak-leading-[48px] ak-border-[#2E3666] ak-border-t-[6px] max-lg:ak-max-w-full  max-lg:ak-leading-[110%]">
                       <span>{{ item.settings.ingredient_name }}</span>
                       <br />
-                      <span class="subtext font-['Blisstwin'] max-md:!text-[27px]">{{ item.settings.ingredient_subtext }}</span>
+                      <span class="ak-subtext ak-font-['Blisstwin'] max-lg:!ak-text-[27px]">{{ item.settings.ingredient_subtext }}</span>
                     </h3>
                   </header>
-                  <div class="mt-8 max-md:mt-[20px] max-md:max-w-full [&>p]:text-[20px] [&>p]:tracking-[0.4px] [&>p]:leading-[140%]">
+                  <div class="ak-mt-8 max-lg:ak-mt-[20px] max-lg:ak-max-w-full [&>p]:ak-text-[20px] [&>p]:ak-tracking-[0.4px] [&>p]:ak-leading-[140%]">
                     {{ item.settings.ingredient_description }}
                   </div>                  
                 </div>
               </div>
-              <section class="flex flex-col mt-8 w-full max-md:max-w-full font-['syne']">
-                <h4 class="gap-10 pb-4 max-w-full text-[28px] tracking-tight border-b-[6px] border-[#2E3666] w-full max-md:max-w-full max-[1200px]:text-[27px]">{{ item.settings.research_title }}</h4>
+              <section class="ak-flex ak-flex-col ak-mt-8 ak-w-full max-lg:ak-max-w-full ak-font-['syne']">
+                <h4 class="ak-gap-10 ak-pb-4 ak-max-w-full ak-text-[28px] ak-tracking-tight ak-border-b-[6px] ak-border-[#2E3666] ak-w-full max-lg:ak-max-w-full max-lg:ak-text-[27px]">{{ item.settings.research_title }}</h4>
                   {%  if item.settings.title1 and item.settings.description1 != ''  %}
-                    <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
-                        <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
-                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px] ">
+                    <div class="reserch-block ak-flex ak-flex-wrap ak-gap-10 ak-items-center ak-justify-between ak-py-8 ak-border-t ak-border-[#2E3666] max-lg:ak-max-w-full max-lg:ak-justify-center max-lg:ak-gap-[16px] max-lg:ak-py-[16px]">
+                        <div class="ak-flex ak-flex-col ak-px-6 ak-pb-3.5 ak-my-auto ak-text-lg ak-font-medium ak-tracking-tight ak-text-center ak-min-w-[240px] ak-w-[244px] max-lg:ak-px-5">
+                            <div class="ak-flex-1 ak-gap-2.5 ak-py-4 ak-bg-white ak-rounded-[100px] ">
                                 {{ item.settings.title1 }}
                             </div>
                         </div>
-                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%] max-[1200px]:text-[18px]">
+                        <div class="ak-my-auto ak-max-w-[676px] ak-w-full max-lg:ak-max-w-full ak-text-[20px] ak-tracking-[0.4px] ak-leading-[140%] max-lg:ak-text-[18px]">
                             {{ item.settings.description1 }}
                         </div>                        
                     </div>
                   {% endif %} 
 
                   {%  if item.settings.title2 and item.settings.description2 != '' %}
-                    <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
-                        <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
-                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px]">
+                    <div class="reserch-block ak-flex ak-flex-wrap ak-gap-10 ak-items-center ak-justify-between ak-py-8 ak-border-t ak-border-[#2E3666] max-lg:ak-max-w-full max-lg:ak-justify-center max-lg:ak-gap-[16px] max-lg:ak-py-[16px]">
+                        <div class="ak-flex ak-flex-col ak-px-6 ak-pb-3.5 ak-my-auto ak-text-lg ak-font-medium ak-tracking-tight ak-text-center ak-min-w-[240px] ak-w-[244px] max-lg:ak-px-5">
+                            <div class="ak-flex-1 ak-gap-2.5 ak-py-4 ak-bg-white ak-rounded-[100px]">
                                 {{ item.settings.title2 }}
                             </div>
                         </div>
-                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%] max-[1200px]:text-[18px]">
+                        <div class="ak-my-auto ak-max-w-[676px] ak-w-full max-lg:ak-max-w-full ak-text-[20px] ak-tracking-[0.4px] ak-leading-[140%] max-lg:ak-text-[18px]">
                             {{ item.settings.description2 }}
                         </div>                        
                     </div>
                   {% endif %} 
 
                   {%  if item.settings.title3 and item.settings.description3 != '' %}
-                    <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
-                        <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
-                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px]">
+                    <div class="reserch-block ak-flex ak-flex-wrap ak-gap-10 ak-items-center ak-justify-between ak-py-8 ak-border-t ak-border-[#2E3666] max-lg:ak-max-w-full max-lg:ak-justify-center max-lg:ak-gap-[16px] max-lg:ak-py-[16px]">
+                        <div class="ak-flex ak-flex-col ak-px-6 ak-pb-3.5 ak-my-auto ak-text-lg ak-font-medium ak-tracking-tight ak-text-center ak-min-w-[240px] ak-w-[244px] max-lg:ak-px-5">
+                            <div class="ak-flex-1 ak-gap-2.5 ak-py-4 ak-bg-white ak-rounded-[100px]">
                                 {{ item.settings.title3 }}
                             </div>
                         </div>
-                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%] max-[1200px]:text-[18px]">
+                        <div class="ak-my-auto ak-max-w-[676px] ak-w-full max-lg:ak-max-w-full ak-text-[20px] ak-tracking-[0.4px] ak-leading-[140%] max-lg:ak-text-[18px]">
                             {{ item.settings.description3 }}
                         </div>                        
                     </div>
                   {% endif %} 
 
                   {%  if item.settings.title4 and item.settings.description4 != '' %}
-                    <div class="reserch-block flex flex-wrap gap-10 items-center justify-between py-8 border-t border-[#2E3666] max-md:max-w-full max-md:justify-center max-md:gap-[16px] max-md:py-[16px]">
-                        <div class="flex flex-col px-6 pb-3.5 my-auto text-lg font-medium tracking-tight text-center min-w-[240px] w-[244px] max-md:px-5">
-                            <div class="flex-1 gap-2.5 py-4 bg-white rounded-[100px]">
+                    <div class="reserch-block ak-flex ak-flex-wrap ak-gap-10 ak-items-center ak-justify-between ak-py-8 ak-border-t ak-border-[#2E3666] max-lg:ak-max-w-full max-lg:ak-justify-center max-lg:ak-gap-[16px] max-lg:ak-py-[16px]">
+                        <div class="ak-flex ak-flex-col ak-px-6 ak-pb-3.5 ak-my-auto ak-text-lg ak-font-medium ak-tracking-tight ak-text-center ak-min-w-[240px] ak-w-[244px] max-lg:ak-px-5">
+                            <div class="ak-flex-1 ak-gap-2.5 ak-py-4 ak-bg-white ak-rounded-[100px]">
                                 {{ item.settings.title4 }}
                             </div>
                         </div>
-                        <div class="my-auto max-w-[676px] w-full max-md:max-w-full text-[20px] tracking-[0.4px] leading-[140%] max-[1200px]:text-[18px]">
+                        <div class="ak-my-auto ak-max-w-[676px] ak-w-full max-lg:ak-max-w-full ak-text-[20px] ak-tracking-[0.4px] ak-leading-[140%] max-lg:ak-text-[18px]">
                             {{ item.settings.description4 }}
                         </div>                        
                     </div>
@@ -108,6 +108,7 @@
     </div>
   </div>
 </section>
+
 
 {% schema %}
 {

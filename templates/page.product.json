@@ -77,7 +77,7 @@
         "block2_yR9dJf": {
           "type": "block2",
           "settings": {
-            "benefit_content": "<p>Supports liver's ability to filter and detoxify<br/>your blood</p>"
+            "benefit_content": "<p>Supports liver's ability to filter and detoxify your blood</p>"
           }
         },
         "block3_Qz9VY6": {
@@ -328,8 +328,7 @@
         "faq_qVfxdT",
         "faq_PBR3zA"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "ak_product_s6_QdmkfN": {
       "type": "ak-product-s6",

@@ -1,18 +1,19 @@
-<section id="marquee" class="bg-white pt-[49px] mb-[-48px] max-[1200px]:pt-0">
+<section id="marquee" class="ak-bg-white ak-pt-[49px] ak-mb-[-48px] max-[1200px]:ak-pt-0">
     <!-- Slider main container -->
     <div class="marquee swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-        <!-- Slides -->
-        {% for block in section.blocks %}
-        <div class="swiper-slide !flex !items-center !justify-center gap-[35px] !w-[unset] !h-[unset] font-['blisstwin'] ">
-            <h3 class="text-[100px] text-[#C8D3F0] capitalize">{{ block.settings.text_content }}</h3>
-            <div class="w-[15px] h-[15px] bg-[#C8D3F0] rotate-45"></div>
-        </div>
-        {% endfor %}
-    </div>      
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            {% for block in section.blocks %}
+            <div class="swiper-slide !ak-flex !ak-items-center !ak-justify-center ak-gap-[35px] !ak-w-[unset] !ak-h-[unset] ak-font-['blisstwin']">
+                <h3 class="ak-text-[100px] ak-text-[#C8D3F0] ak-capitalize">{{ block.settings.text_content }}</h3>
+                <div class="ak-w-[15px] ak-h-[15px] ak-bg-[#C8D3F0] ak-rotate-45"></div>
+            </div>
+            {% endfor %}
+        </div>      
     </div>
 </section>
+
 
 <script>
   const swiperMarquee = new Swiper(".marquee", {

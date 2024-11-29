@@ -97,28 +97,28 @@
       to {opacity: 1;}
     }
 </style>
-<section id="hero" class="bg-no-repeat bg-cover bg-center min-h-[980px] flex items-center relative max-md:min-h-[660px] overflow-hidden xl:h-[980px] ">  
-  <div class="whitebg absolute w-full h-full"></div>
-  <div class="circlesop absolute max-w-[1728px] w-full h-full z-10 max-[1200px]:hidden left-[50%] translate-x-[-50%]">
-    <div class="relative w-full h-full ">
+<section id="hero" class="ak-bg-no-repeat ak-bg-cover ak-bg-center ak-min-h-[980px] ak-flex ak-items-center ak-relative max-lg:ak-min-h-[660px] ak-overflow-hidden xl:ak-h-[980px]">  
+  <div class="whitebg ak-absolute ak-w-full ak-h-full"></div>
+  <div class="circlesop ak-absolute ak-max-w-[1728px] ak-w-full ak-h-full ak-z-10 max-lg:ak-hidden ak-left-[50%] ak-translate-x-[-50%]">
+    <div class="ak-relative ak-w-full ak-h-full">
       {% comment %} left Circle {% endcomment %}
-      <div class="absolute left-[-27%] top-[-27px] w-[1034px] h-[1034px]  rotate-[171deg]">
-        <div class="rotate-me left-circle bcircle relative">
-          <div class="w-[11px] h-[11px] bg-[#BCBCBC] rotate-[-45deg] absolute top-[430px] z-20"></div>
+      <div class="ak-absolute ak-left-[-27%] ak-top-[-27px] ak-w-[1034px] ak-h-[1034px] ak-rotate-[171deg]">
+        <div class="rotate-me left-circle bcircle ak-relative">
+          <div class="ak-w-[11px] ak-h-[11px] ak-bg-[#BCBCBC] ak-rotate-[-45deg] ak-absolute ak-top-[430px] ak-z-20"></div>
         </div>
       </div>
       {% comment %} Center Circle {% endcomment %}
-      <div class="absolute left-[50%] top-[-27px] translate-x-[-50%] w-[1034px] h-[1034px]">
-        <div class="rotate-me center-circle bcircle relative">
-          <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-full border-2 border-solid border-[#BCBCBC] w-[592px] h-[592px]"></div>
-          <div class="w-[11px] h-[11px] bg-[#BCBCBC] rotate-[-45deg] absolute top-[430px] z-20"></div>
+      <div class="ak-absolute ak-left-[50%] ak-top-[-27px] ak-translate-x-[-50%] ak-w-[1034px] ak-h-[1034px]">
+        <div class="rotate-me center-circle bcircle ak-relative">
+          <div class="ak-absolute ak-top-[50%] ak-left-[50%] ak-translate-x-[-50%] ak-translate-y-[-50%] ak-rounded-full ak-border-2 ak-border-solid ak-border-[#BCBCBC] ak-w-[592px] ak-h-[592px]"></div>
+          <div class="ak-w-[11px] ak-h-[11px] ak-bg-[#BCBCBC] ak-rotate-[-45deg] ak-absolute ak-top-[430px] ak-z-20"></div>
         </div>
       </div>  
       {% comment %} Rigth Circle {% endcomment %}
-      <div class="absolute right-[-27%] top-[-27px] w-[1034px] h-[1034px]  rotate-[-8deg]">
-        <div class="rotate-me left-circle bcircle relative">
+      <div class="ak-absolute ak-right-[-27%] ak-top-[-27px] ak-w-[1034px] ak-h-[1034px] ak-rotate-[-8deg]">
+        <div class="rotate-me left-circle bcircle ak-relative">
           
-          <div class="w-[11px] h-[11px] bg-[#BCBCBC] rotate-[-45deg] absolute top-[430px] z-20"></div>
+          <div class="ak-w-[11px] ak-h-[11px] ak-bg-[#BCBCBC] ak-rotate-[-45deg] ak-absolute ak-top-[430px] ak-z-20"></div>
         </div>
       </div>       
       
@@ -126,15 +126,15 @@
     </div>
   </div>
 
-  <div class="circlebg absolute top-0 left-0 z-0 h-full w-full bg-no-repeat bg-cover bg-center max-md:w-[348px] max-md:h-[348px] max-md:inset-[50%] max-md:translate-x-[-50%] max-md:translate-y-[-50%]">
-    <img class="rotate-mobile hidden max-[1200px]:block" src="{{ section.settings.circle_graphic_mobile | img_url: 'master' }}" alt="">
+  <div class="circlebg ak-absolute ak-top-0 ak-left-0 ak-z-0 ak-h-full ak-w-full ak-bg-no-repeat ak-bg-cover ak-bg-center max-lg:ak-w-[348px] max-lg:ak-h-[348px] max-lg:ak-inset-[50%] max-lg:ak-translate-x-[-50%] max-lg:ak-translate-y-[-50%]">
+    <img class="rotate-mobile ak-hidden max-lg:ak-block" src="{{ section.settings.circle_graphic_mobile | img_url: 'master' }}" alt="">
   </div>
 
-  <div class="flex items-center justify-center m-auto h-full">
-    <div class="textbg title overflow-hidden relative z-10 bg-contain bg-center bg-no-repeat w-[971px] max-[1200px]:w-fit max-md:bg-none">
-      <h1 class="text-downup text-white text-[70px] leading-[normal] tracking-[-1.4px] capitalize font-['syne'] max-md:text-[40px] text-center">
+  <div class="ak-flex ak-items-center ak-justify-center ak-m-auto ak-h-full">
+    <div class="textbg title ak-overflow-hidden ak-relative ak-z-10 ak-bg-contain ak-bg-center ak-bg-no-repeat ak-w-[971px] max-lg:ak-w-fit max-lg:ak-bg-none">
+      <h1 class="text-downup ak-text-white ak-text-[70px] ak-leading-[normal] ak-tracking-[-1.4px] ak-capitalize ak-font-['syne'] max-lg:ak-text-[40px] ak-text-center">
         {{ section.settings.heading }}
-        <span class="font-['Blisstwin'] max-md:block">{{ section.settings.subheading }}</span>
+        <span class="ak-font-['Blisstwin'] max-lg:ak-block">{{ section.settings.subheading }}</span>
       </h1>
     </div>
   </div>
@@ -191,4 +191,4 @@
     }
   ]
 }
-{% endschema %}
+{%endschema%}

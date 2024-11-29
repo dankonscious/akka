@@ -1,0 +1,64 @@
+<section class="ingredients 
+    max-w-full pt-[60px] pb-[80px] relative overflow-hidden border-b-[1px] border-[#A1A6CA] border-solid
+    before:bg-[url('https://cdn.shopify.com/s/files/1/0885/5581/5215/files/akka-paper-bg.png')] before:bg-center before:bg-cover before:bg-no-repeat 
+    before:w-full before:h-full before:absolute before:z-[-2] before:top-0 before:opacity-[.26]
+    after:bg-[url('https://cdn.shopify.com/s/files/1/0885/5581/5215/files/akka-a-bg2.png')] after:bg-no-repeat after:content-[''] after:w-[551px] 
+    after:h-[748px] md:after:bottom-[185px] after:bottom-[23.3%] after:left-0 after:absolute after:z-[-1]">
+    <div class="md:max-w-[856px] px-[16px] mx-auto">
+        <h2 class="font-helveticaneue text-[#3E488B] text-[42px] italic font-normal leading-[120%] tracking-[-0.84px] mb-[34px] text-center">{{ section.settings.pdi_heading }}</h2>
+        <div class="ingredients-list">
+          {% for block in section.blocks %}
+            <div class="flex md:flex-row flex-col md:gap-[47px] gap-[24px] items-center border border-[#A1A6CA] border-solid md:py-[32px] py-[24px] md:px-[36px] px-[15px]">
+                {% render 'akkaproduct-ingredient-image' with image_url: block.settings.image_pdi, image_size: '180x180', image_class: 'w-[180px]' %}
+                <div class="md:text-start text-center">
+                    <h5 class="font-helveticaneue text-[#3E488B] md:text-[24px] text-[20px] font-medium leading-[120%] mb-[8px]">{{ block.settings.heading_pdi }}</h5>
+                    <div class="font-helveticaneue text-[#333961] md:text-[16px] text-[15px] font-normal leading-[160%] tracking-[0.24px]">
+                        {{ block.settings.content_pdi }}
+                    </div>
+                </div>
+            </div>
+            {% unless forloop.last %}<div class="bg-[#A1A6CA] w-[1px] h-[64px] mx-auto"></div>{% endunless %}
+          {% endfor %}
+        </div>
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "Product Ingredients",
+    "settings": [
+      {
+        "type": "text",
+        "id": "pdi_heading",
+        "label": "Heading"
+      }
+    ],
+	"class": "shopify-section-pdi",
+	"blocks": [{
+		"type": "text",
+        "name": "Ingredient Block",
+        "settings": [
+		  {
+            "type": "image_picker",
+            "id": "image_pdi",
+			"label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "heading_pdi",
+			"label": "Title"
+          },
+		  {
+            "type": "html",
+            "id": "content_pdi",
+			"label": "Content"
+          }
+		]
+	}],
+    "presets": [
+	  {
+      	"name":"Ingredient List",
+		"category": "Custom Section"
+      }
+	]
+  }
+{% endschema %}

@@ -14,6 +14,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/hzx2hdn.css">  
     <link href="{{ 'terms-conditions.css' | asset_url }}" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    {{ 'tailwind.css' | asset_url | stylesheet_tag }}
+    <style>
+        @font-face {
+          font-family: 'Syne';
+          src: url('{{ 'Syne-Regular.eot' | file_url }}');
+          src: url('{{ 'Syne-Regular.eot?#iefix' | file_url }}') format('embedded-opentype'),
+              url('{{ 'Syne-Regular.woff2' | file_url }}') format('woff2'),
+              url('{{ 'Syne-Regular.woff' | file_url }}') format('woff'),
+              url('{{ 'Syne-Regular.ttf' | file_url }}') format('truetype');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+    </style>
 </head>
 
 <body>
@@ -24,7 +39,7 @@
         </div>
     </div>
 </section>
-<section class="tc-numbertitle px-3 px-lg-0">
+<section class="tc-numbertitle px-3 px-lg-0 pb-[65px]">
     <div class="maxwidth maxwidth-430">
         <h1 class="color485397 fs30 fw700 myriadpro py-4 text-center">Terms & Conditions</h1>
         <h3 class="color1D1D1F myriadpro fs16 italic">
@@ -53,7 +68,7 @@
                <p>In arbitration, a dispute is resolved by a neutral arbitrator or panel of arbitrators, rather than by a judge or jury. Arbitration is more informal, however, but an arbitrator can award the same relief that a court can award. The arbitration will be administered by the American Arbitration Association (<b>“AAA”</b>) and conducted under AAA’s Consumer Arbitration Rules and the Supplementary Procedures for Consumer Related Disputes (collectively, the <b>“AAA Rules”</b>) then in effect at the time of the dispute. You may obtain copies of the AAA Rules and forms and instructions for initiating an arbitration by visiting the AAA website at www.adr.org, or by calling AAA at (800) 788-7879.</p>
                <p><em>Selection of Arbitrator and Costs</em>. If for any reason the AAA is unavailable, the parties shall mutually select another arbitration forum. To initiate an arbitration proceeding, you must send a letter requesting arbitration and describing your claim to us at: Konscious Brands, 151 Calle De San Francisco Pmb 5585, San Juan, Puerto Rico 00901. If you initiate an arbitration, Konscious Brands will promptly reimburse you for any standard filing fee which may have been required under the AAA Rules once you have notified Konscious Brands in writing and provided a copy of the Demand for Arbitration. However, if Konscious Brands is the prevailing party in the arbitration, applicable law may allow the arbitrator to award attorneys’ fees and costs to Konscious Brands including the filing fee.</p>
                <p><em>Class Action and Trial-by-Jury Waiver</em>. THERE SHALL BE NO RIGHT OR AUTHORITY FOR ANY CLAIM TO BE ARBITRATED ON A CLASS ACTION BASIS OR IN A PURPORTED REPRESENTATIVE CAPACITY. NO CLAIM SUBMITTED TO ARBITRATION WILL BE HEARD BY A JURY OR MAY BE BROUGHT AS A PRIVATE ATTORNEY GENERAL ACTION. YOU DO NOT HAVE THE RIGHT TO ACT AS A CLASS REPRESENTATIVE OR PARTICIPATE AS A MEMBER OF A CLASS OF CLAIMANTS WITH RESPECT TO ANY CLAIM SUBMITTED TO ARBITRATION. The arbitrator may not consolidate more than one person’s claims against Konscious Brands and may not preside over any representative or class proceeding against Konscious Brands. You acknowledge that this class action waiver is material and essential to the arbitration of any disputes between the parties and is non-severable from the agreement to arbitrate claims. If any portion of this class action waiver is limited, voided, or cannot be enforced, then the parties’ agreement to arbitrate shall be null and void, and in such instance any dispute between us will be resolved exclusively in the federal or state courts located in San Juan, Puerto Rico, and you and Konscious Brands consent to exclusive jurisdiction and venue in these courts.</p>
-               <p class="mb-0">YOU UNDERSTAND THAT BY AGREEING TO THIS CLASS ACTION WAIVER, YOU MAY ONLY BRING CLAIMS AGAINST KONSCIOUS BRANDS IN AN INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION OR REPRESENTATIVE PROCEEDING. IF YOU HAVE ALREADY PURCHASED A PRODUCT, AND YOU DO NOT AGREE TO THE FOREGOING TERMS, YOU MUST TELL US IN WRITING AND RETURN THE PRODUCT TO GET A REFUND. IF YOU HAVE PURCHASED THE PRODUCT AT A RETAIL STORE, YOU MUST RETURN THE PRODUCT ACCORDING TO THE STORE’S RETURN POLICY. IF YOU HAVE PURCHASED THE PRODUCT BY TELEPHONE OR ONLINE FROM US, YOU MUST RETURN THE PRODUCT PURSUANT TO OUR <a href="https://livercleanseprotocol.com/pages/shipping-refund-policy" target="_blank" class="color00E">RETURN POLICY.</a></p>
+               <p class="mb-0">YOU UNDERSTAND THAT BY AGREEING TO THIS CLASS ACTION WAIVER, YOU MAY ONLY BRING CLAIMS AGAINST KONSCIOUS BRANDS IN AN INDIVIDUAL CAPACITY AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION OR REPRESENTATIVE PROCEEDING. IF YOU HAVE ALREADY PURCHASED A PRODUCT, AND YOU DO NOT AGREE TO THE FOREGOING TERMS, YOU MUST TELL US IN WRITING AND RETURN THE PRODUCT TO GET A REFUND. IF YOU HAVE PURCHASED THE PRODUCT AT A RETAIL STORE, YOU MUST RETURN THE PRODUCT ACCORDING TO THE STORE’S RETURN POLICY. IF YOU HAVE PURCHASED THE PRODUCT BY TELEPHONE OR ONLINE FROM US, YOU MUST RETURN THE PRODUCT PURSUANT TO OUR <a href="https://tryakka.com/pages/shipping-refund-policy" target="_blank" class="color00E">RETURN POLICY.</a></p>
             </div>
         </div>
         <div>
@@ -174,7 +189,7 @@
         <div>
             <h2 class="color1D1D1F fs30 fw700 mb-0 myriadpro py-4">21. TRANSFER OF TITLE & RISK OF LOSS; SHIPPING POLICY</h2>
             <div class="color1D1D1F myriadpro fs18 fw400 fsm16">
-               <p class="mb-0">Title to and risk of loss or damage for physical products purchased by you pass from Konscious Brands, inside Puerto Rico, to you upon delivery of the product to the carrier for shipment. For more information about shipments and delivery, please see our <a href="https://livercleanseprotocol.com/pages/shipping-refund-policy" target="_blank" class="color00E">Shipping Policy.</a></p>
+               <p class="mb-0">Title to and risk of loss or damage for physical products purchased by you pass from Konscious Brands, inside Puerto Rico, to you upon delivery of the product to the carrier for shipment. For more information about shipments and delivery, please see our <a href="https://tryakka.com/pages/shipping-refund-policy" target="_blank" class="color00E">Shipping Policy.</a></p>
             </div>
         </div>
         <div>
@@ -187,13 +202,13 @@
                     <li class="mb-4">You will receive an email the day your order is placed confirming your subscription order.</li>
                     <li class="mb-4">You will receive an email three days before your renewal reminding you of your subscription.</li>
                     <li class="mb-4">You may cancel your subscription at any time by emailing us at <a href="mailto:hello@tryakka.com" class="color00E">hello@tryakka.com.</a> Upon cancellation, you will automatically receive a refund only if your product has not already shipped at the time of cancellation.</li>
-                    <li class="mb-4">If your product has already shipped and you cancel your subscription, you will need to return your product in its unopened and original state in order to receive a refund. Please see our <a href="https://livercleanseprotocol.com/pages/shipping-refund-policy" target="_blank" class="color00E">Refund Policy</a> for more information about obtaining a refund.</li>
+                    <li class="mb-4">If your product has already shipped and you cancel your subscription, you will need to return your product in its unopened and original state in order to receive a refund. Please see our <a href="https://tryakka.com/pages/shipping-refund-policy" target="_blank" class="color00E">Refund Policy</a> for more information about obtaining a refund.</li>
                 </ol>
                <p><em>*Coupons may be applicable for the first month of your initial subscription order only. CA customers will be charged CA State & County sales tax as applicable. NJ customers will be charged NJ sales tax as applicable.</em></p>
                <h3 class="fs24 fsm18 fw700">b. Payment</h3>
                <p>You agree to pay, using a valid credit card or debit card (or other form of payment which we may accept from time to time), the fixed and periodic charges and fees for the product or service you purchase, as shown to you at the time of purchase, plus any applicable taxes and shipping. For recurring subscriptions, we will automatically charge your payment method at the start of the subscription period and at the start of each renewal period, as described in Section 22(a). Any renewal charge will be the same as the prior period's charge, unless we notify you in advance at the time of sign up or prior to the beginning of the renewal period as described above. In the event we cannot charge your payment method, we reserve the right to terminate your purchase, and if applicable, your subscription. We reserve the right to collect from you all costs we incur in connection with the collection of unpaid amounts, including court costs, attorneys' fees, collection agency fees and any other associated costs.</p>
                <h3 class="fs24 fsm18 fw700">c. Refund Policy</h3>
-               <p>Please see our <a href="https://livercleanseprotocol.com/pages/shipping-refund-policy" target="_blank" class="color00E">Refund Policy</a> for more information about obtaining a refund.</p>
+               <p>Please see our <a href="https://tryakka.com/pages/shipping-refund-policy" target="_blank" class="color00E">Refund Policy</a> for more information about obtaining a refund.</p>
                <h3 class="fs24 fsm18 fw700">d. Lifetime Access Products</h3>
                <p class="mb-0">For any product which we identify as “lifetime” access or availability, we will provide you with access to the product for the duration of your lifetime or, if earlier, until such date as we cease doing business.</p>
             </div>
@@ -221,7 +236,7 @@
 
     </div>
 </section>
- <footer class="bgcolorE8EAFF mt-5">
+ {% comment %} <footer class="bgcolorE8EAFF mt-5">
         <div class="pt-5 pb-4 px-3 m-auto" style="max-width: 1360px;">
             <div class="">
                <div class="d-flex flex-column flex-lg-row justify-content-between m-auto mx-0">
@@ -257,8 +272,8 @@
                     <div class="fw400 myriadpro fs16 lh24 mt-4">
                         <h2 class="color485397 fw700 fs17 lh24 mb-0">Information</h2>
                         <p class="mb-0"><a class="color485397 text-decoration-none" href="https://privacy.konscious.us/privacy-policy" target="_blank">Privacy Policy</a></p>
-                        <p class="mb-0"><a class="color485397 text-decoration-none" href="https://livercleanseprotocol.com/pages/shipping-refund-policy" target="_blank">Shipping and refund policy</a></p>
-                        <p class="mb-0"><a class="color485397 text-decoration-none" href="https://livercleanseprotocol.com/pages/terms-conditions/" target="_blank">Terms and conditions</a></p>
+                        <p class="mb-0"><a class="color485397 text-decoration-none" href="https://tryakka.com/pages/shipping-refund-policy" target="_blank">Shipping and refund policy</a></p>
+                        <p class="mb-0"><a class="color485397 text-decoration-none" href="https://tryakka.com/pages/terms-conditions/" target="_blank">Terms and conditions</a></p>
                     </div>
                 </div>
             </div>
@@ -267,8 +282,8 @@
                     <span class="color485397 myriadpro fw400 fs16 fsm14 lh24 ms-2" style="vertical-align: middle;">© 2024 Enclave BioActives. All Rights Reserved.</span>
                 </div>
                 <div class="mb-3 mb-lg-0 socialmedia-icons text-center text-lg-start">
-                    <a href="" target="_blank"><img src="https://s3.amazonaws.com/konsciousketo.com/samcart/assets/AKKA-53416/facebook.png" style="width:25px;"></a>
-                    <a href="" target="_blank" class="ms-1"><img src="https://s3.amazonaws.com/konsciousketo.com/samcart/assets/AKKA-53416/insta.png" style="width:25px;"></a>
+                    <a href="https://www.facebook.com/akkasuperbiotics/" target="_blank"><img src="https://s3.amazonaws.com/konsciousketo.com/samcart/assets/AKKA-53416/facebook.png" style="width:25px;"></a>
+                    <a href="https://www.instagram.com/tryakka/" target="_blank" class="ms-1"><img src="https://s3.amazonaws.com/konsciousketo.com/samcart/assets/AKKA-53416/insta.png" style="width:25px;"></a>
                 </div>
             </div>
             <div class="disclaimer-border-top mt-4 mt-lg-2">
@@ -277,7 +292,118 @@
             </div>
             
         </div>
-    </footer>   
+    </footer>    {% endcomment %}
+
+    <div id="shopify-section-sections--23592599814447__ak_footer_wNwe8X" class="shopify-section shopify-section-group-footer-group">
+        <section id="footer" class="flex flex-col bg-[#EDEEF5] font-['syne']">
+            <div class="flex flex-col py-16 w-full max-[1024px]:px-[16px] max-[1024px]:max-w-full max-w-[1328px] mx-auto">
+                <div class="flex flex-wrap gap-5 max-[1024px]:gap-[21px] justify-between items-start w-full">
+                <h2 class="text-[22px] text-[#2E3666] w-[597px] max-[1024px]:max-w-full max-[1200px]:text-[20px] max-[1200px]:leading-[140%]">
+                    Sign up for our newsletter and get first access to the very best of our products, inspiration and community.
+                </h2>
+                <form class="relative leading-7 rounded-[100px] max-[1024px]:max-w-full">
+                    <label for="emailInput" class="sr-only">Enter your email</label>
+                    <input id="emailInput" type="email" placeholder="Enter your email" aria-label="Enter your email" class="font-['work_sans'] text-[18px] pl-6 tracking-[-0.36px] bg-white min-h-[55px] rounded-[100px] !text-[#2E3666] w-[562px] max-[1024px]:pl-5 max-[1024px]:max-w-full" fdprocessedid="d4vvxo">
+                    <button type="submit" class="button w-fit !text-[18px] !h-[55px] !font-bold absolute right-0 top-0 max-[1024px]:!px-[24px] !font-['Work_Sans'] max-[1200px]:!text-[16px]" fdprocessedid="5p5iwt">
+                    Sign me up!
+                    </button>
+                </form>
+                </div>
+                <nav class="flex flex-wrap gap-[40px] justify-between items-start pt-[32px] mt-[39px] max-w-full text-lg border-t-4 border-[#2E3666] text-[#2E3666] w-full capitalize max-[1024px]:flex-col max-[1024px]:gap-[32px]">
+                    <div class="w-[161px]">
+                        
+                        <img class="" src="https://tryakka.com/cdn/shop/files/akka-footer-logo_1024x1024.png?v=1730838862" alt="Footer Logo">
+                        
+                    </div>
+                    <div class="flex flex-col">
+                        <h3 class="gap-[10px] self-start p-[2px] font-bold whitespace-nowrap text-[#2E3666]">SITEMAP</h3>
+                        <ul class="flex flex-col items-start mt-[16px] text-[18px] max-[1200px]:mt-[8px]">
+                        
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/">Home</a>
+                            </li>
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/pages/our-approach">Our Approach</a>
+                            </li>
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/pages/science">The Science</a>
+                            </li>
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/pages/ingredient">Ingredients</a>
+                            </li>
+                            
+                            <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="/pages/product">Product</a>
+                            </li>
+                            
+                                    
+                        </ul>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col">
+                        <h3 class="gap-[10px] self-start p-[2px] font-bold uppercase whitespace-nowrap text-[#2E3666]">Information</h3>
+                        <ul class="flex flex-col items-start mt-[16px] max-[1200px]:mt-[8px]">
+                            
+                            
+                                <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="https://privacy.konscious.us/privacy-policy" target="_blank">Privacy Policy</a>
+                                </li>
+                            
+                                <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="https://tryakka.com/pages/shipping-refund-policy" target="_blank">Shipping and refund policy</a>
+                                </li>
+                            
+                                <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="https://tryakka.com/pages/terms-conditions/" target="_blank">Terms and conditions</a>
+                                </li>
+    
+                                <li class="gap-[10px] self-stretch p-[2px] mt-[8px] max-[1200px]:mt-0">
+                                <a href="https://tryakka.com/pages/accessibility-statement" target="_blank">Accessibility Statement</a>
+                                </li>
+                            
+                                        
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col">
+                        <h3 class="gap-[10px] self-stretch p-[2px] font-bold text-[#2E3666]">CUSTOMER SERVICE</h3>
+                        <address class="gap-[10px] self-start p-[2px] mt-[16px] leading-7 not-italic normal-case max-[1200px]:mt-[8px]">            
+                            <span class="font-['Poppins']">hello@tryakka.com</span> <br>
+                            844-808-(AKKA) 2552
+                        </address>
+                        </div>
+                    </div>
+                </nav>
+                <div class="flex flex-col mt-10 w-full max-w-[1328px] text-[#2E3666] max-[1024px]:max-w-full">
+                    <div class="flex flex-wrap gap-[40px] items-center justify-between text-[20px] leading-[145%] tracking-[0.2px] max-[1024px]:max-w-full pr-[10px] max-[1024px]:gap-[10px] max-[1024px]:pr-0">
+                        <p class="self-stretch my-auto w-[874px] max-[1024px]:max-w-full max-[1024px]:w-full max-[1024px]:text-[16px] text-[#2E3666] font-['Syne']">© 2024 Enclave BioActives. All rights reserved.</p>
+                        <div class="flex items-center justify-between w-[58px]">
+                        
+                            <a href="https://www.facebook.com/akkasuperbiotics/" class="max-w-[25px] w-full">
+                            <img src="//tryakka.com/cdn/shop/files/facebook_1024x1024.png?v=1726163196" alt="Facebook">
+                            </a>
+                        
+                        
+                            <a href="https://www.instagram.com/tryakka/" class="max-w-[25px] w-full">
+                            <img src="//tryakka.com/cdn/shop/files/ig_1024x1024.png?v=1726163199" alt="Instagram">
+                            </a>
+                        
+                        </div>
+                    </div>
+                    <hr class="mt-[16px] w-full min-h-0 border-2 border-solid border-[#2E3666] max-[1024px]:max-w-full opacity-100">
+    
+                    <p class="mt-[16px] text-lg tracking-[-0.18px] leading-[145%] max-[1024px]:max-w-full text-[#2E3666] max-[1024px]:text-[14px] max-[1024px]:tracking-[-0.14px]">
+                        *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary, and testimonials are not claimed to represent typical results. All testimonials are by real people, and may not reflect the typical purchaser's experience, and are not intended to represent or guarantee that anyone will achieve the same or similar results.
+                    </p>
+                </div>
+            </div>
+        </section>    
+    </div>    
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
     

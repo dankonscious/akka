@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "layout": "akka.theme",
   "sections": {
@@ -53,7 +53,7 @@
         "mobile_image_3": "shopify://shop_images/9eTKrHSnmf9ai6iVhaBgjpy3rWU.png",
         "heading": "<span class=\"font-['blisstwin']\">Next Generation</span>  Liver Rejuvenation",
         "description": "Your liver is responsible for over 500 different functions. Our researchers have created the ultimate supplement to help support it.",
-        "cta_link": "",
+        "cta_link": "https://tryakka.com/pages/product?",
         "cta_label": "SHOP AKKA"
       }
     },
@@ -113,7 +113,7 @@
         "title_line_1": "Your Key To",
         "title_line_2": "Vitality",
         "description": "<p>From storing vitamins and minerals, to immune support,  to hormone regulation, the liver plays a crucial role in your body. <br/><br/>A healthy liver can metabolize fats and toxins easily, supporting a state of homeostasis and general well-being. Complications arise when the liver gets compromised, leading to a variety of health issues that affect your overall vitality.</p>",
-        "button_link": "/pages/science.com",
+        "button_link": "https://tryakka.com/pages/science",
         "button_text": "The Science",
         "science_intro": "Read the science to help you get clarity on:"
       }
@@ -215,7 +215,7 @@
         "heading_2": "Expertly Executed",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/39f976a8c0664da49e3e6ff40471986d.mp4",
         "content": "<p>We believe in the power of strong science to bring you great health. <br/><br/>We’ve combined the most up-to-date scientific research with innovative implementation to bring you the most effective liver health support available.<br/><br/>Discover how our dedication to innovation and quality transforms scientific insights into a practical health solution for you.</p>",
-        "button_link": "/pages/ourapproach.com",
+        "button_link": "https://tryakka.com/pages/our-approach",
         "button_text": "Our Approach",
         "button_icon": "shopify://shop_images/ak-home-s4-arrow.png"
       }
@@ -293,7 +293,7 @@
       "settings": {
         "heading": "The building blocks",
         "subheading": "Our clinically — researched ingredients",
-        "button_link": "/pages/ingredient.html",
+        "button_link": "https://tryakka.com/pages/ingredient",
         "button_text": "Our Ingredients"
       }
     },
@@ -342,7 +342,7 @@
         "background_image_desktop": "shopify://shop_images/sec7-background.png",
         "background_image_mobile": "shopify://shop_images/sec7-background-mob.png",
         "icon_image_check": "shopify://shop_images/check.png",
-        "button_link": "/pages/product.html",
+        "button_link": "https://tryakka.com/pages/product",
         "button_text": "Shop Akka"
       }
     }

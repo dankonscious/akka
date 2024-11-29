@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -20,13 +20,14 @@
         "newsletter_title": "Sign up for our newsletter and get first access to the very best of our products, inspiration and community.",
         "sitemap_links": "footer-information",
         "information_links": "main-menu",
-        "footer_logo": "shopify://shop_images/akka-text.png",
+        "footer_logo": "shopify://shop_images/akka-footer-logo.png",
         "facebook_icon": "shopify://shop_images/facebook.png",
+        "facebook_url": "",
         "instagram_icon": "shopify://shop_images/ig.png",
+        "instagram_url": "",
         "contact_email": "hello@tryakka.com",
         "contact_phone": "844-808-(AKKA) 2552",
-        "contact_address": "Matawan, NJ, 07747",
-        "color": "#2e3666"
+        "contact_address": "Matawan, NJ, 07747"
       }
     },
     "footer": {

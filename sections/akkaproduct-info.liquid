@@ -1,0 +1,199 @@
+<div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+  <meta itemprop="ratingValue" content="{{ product.metafields.loox.avg_rating }}"/>
+  <meta itemprop="reviewCount" content="{{ product.metafields.loox.num_reviews }}"/>
+</div>
+<meta itemprop="name" content="{{ product.title }}">
+<meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+<meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
+
+{% assign current_variant = product.selected_or_first_available_variant %}
+{%- assign featured_image = current_variant.featured_image | default: product.featured_image -%}
+<style>
+  #akka .loox-rating .loox-icon { width: 1em; transform: unset; color: #C50000 !important; }
+</style>
+<section class="product-info max-w-full lg:bg-[linear-gradient(to_right,#fff_50%,rgba(0,0,0,0)_0%)]">
+    <div class="md:max-w-[1440px] max-w-full mx-auto">
+        <div class="flex lg:flex-row flex-col">
+            <div class="flex-1 flex items-center py-[50px] bg-[#fff]">
+                <img src="https://cdn.shopify.com/s/files/1/0885/5581/5215/files/akka-bottle.png" class="hidden w-[250px] mx-auto" />
+                <img src="https://cdn.shopify.com/s/files/1/0885/5581/5215/files/akka-bottle-mobile.png" class="hidden w-[140px] mx-auto" />
+                <img id="main-product-image" src="{{ product.featured_image | img_url: '750x750' }}" alt="{{ product.title }}" class="mx-auto" />
+            </div>
+            <div class="flex-1 flex md:flex-row flex-col md:border-l border-l-0 md:border-b-0 border-b border-solid border-[#A1A6CA]">
+                <div class="lg:max-w-[573px] max-w-auto my-[32px] xl:mx-[70px] lg:mx-[16px] mx-[15px]">
+                    <h1 class="font-helveticaneue text-[#3E488B] md:text-[32px] text-[24px] font-normal leading-[120%] tracking-[-0.96px] md:mb-[20px] mb-[12px]">The World's First Superbiotic and Total Liver Rejuvenator</h1>
+                    <div class="flex md:gap-[12px] gap-[8px]">
+                        {% assign looxstats = shop.metafields.loox["global_stats"] | split: ',' %} 
+                        <a href="#loox-review" class="loox-rating hide-first-letter"
+                          data-id="10212706615599" 
+                          data-product-id="10212706615599"
+                          data-rating="{{ looxstats[0] }}"
+                          data-raters="{{ looxstats[1] }}"
+                          data-pattern="[count] Reviews"></a>
+                    </div>
+                    <div class="line border-t border-[#3E488B] border-solid w-[34px] block md:my-[20px] my-[12px]"></div>
+                    <div class="description">
+                        <div class="font-helveticaneue text-[#28282A] text-[16px] font-normal leading-[170%] tracking-[0.32px]">Akka synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients, meticulously chosen to detoxify the liver, clear out bile ducts, and eliminate excess fat.</div>
+                        <h5 class="md:my-[12px] my-[8px] font-helveticaneue text-[#3E488B] md:text-[16px] text-[14px] font-bold leading-[160%] md:tracking-[0.16px] tracking-[0.14px]">AKKA can help:</h5>
+                        <div class="flex flex-col gap-[8px] md:mb-[32px] mb-[12px]">
+                          <div class="flex items-start gap-[8px] self-stretch">
+                              <div class="max-w-[18px] w-full mt-[2px]"><img src="https://cdn.shopify.com/s/files/1/0885/5581/5215/files/akka-plus-icon.png" class="w-full" /></div>
+                              <p class="text-[#242C60] font-helveticaneue text-[15px] font-normal leading-[24px] tracking-[0.15px]">Cleanse your liver from toxins and excess fat</p>
+                          </div>
+                          <div class="flex items-start gap-[8px] self-stretch">
+                              <div class="max-w-[18px] w-full mt-[2px]"><img src="https://cdn.shopify.com/s/files/1/0885/5581/5215/files/akka-plus-icon.png" class="w-full" /></div>
+                              <p class="text-[#242C60] font-helveticaneue text-[15px] font-normal leading-[24px] tracking-[0.15px]">Restore the healthy flow of bile</p>
+                          </div>
+                          <div class="flex items-start gap-[8px] self-stretch">
+                              <div class="max-w-[18px] w-full mt-[2px]"><img src="https://cdn.shopify.com/s/files/1/0885/5581/5215/files/akka-plus-icon.png" class="w-full" /></div>
+                              <p class="text-[#242C60] font-helveticaneue text-[15px] font-normal leading-[24px] tracking-[0.15px]">Promote regeneration of liver cells</p>
+                          </div>
+                          <div class="flex items-start gap-[8px] self-stretch">
+                              <div class="max-w-[18px] w-full mt-[2px]"><img src="https://cdn.shopify.com/s/files/1/0885/5581/5215/files/akka-plus-icon.png" class="w-full" /></div>
+                              <p class="text-[#242C60] font-helveticaneue text-[15px] font-normal leading-[24px] tracking-[0.15px]">Support restoration of the liver’s natural ability to filter and detoxify the blood</p>
+                          </div>
+                      </div>
+                    </div>
+                      <form action="/cart/add" data-productid="{{ product.id }}" method="post" enctype="multipart/form-data" id="subscription-form">
+                        <!-- Begin ReCharge code -->
+                        {% if product.available %}{% render 'subscription-product' with product as product %}{% endif %}
+                        <!-- End ReCharge code -->
+                        <div class="product-package md:mb-[32px] mb-[24px]">
+                            <h5 class="md:mb-[12px] mb-[8px] font-helveticaneue text-[#3E488B] text-[16px] font-bold leading-[160%] tracking-[0.16px]">Choose from</h5>
+                            <div class="radiobtn-group flex border-y-[1px] border-[#3E488B] border-solid">
+                              {% for variant in product.variants %}
+                              <label class="radiobtn flex-1 items-center justify-center flex md:gap-[8px] gap-[12px] md:py-[20px] py-[13px] px-[16px] border-l-[1px] last:border-r-[1px] border-[#3E488B] border-solid">
+                                <input type="radio" name="customRadio" value="{{ variant.id }}" class="hidden" id="packagenum" data-image="{{ variant.image | img_url: '750x750' }}" {% if forloop.index == 1 %} checked {% endif %} data-productid="{{ product.id }}" data-price="{{ variant.price | money_without_currency }}">
+                                <div class="radiobtn-circle w-[20px] h-[20px] content-[''] block bg-[url('https://cdn.shopify.com/s/files/1/0885/5581/5215/files/akka-radio.svg')]"></div>
+                                <p class="flex md:flex-row flex-col md:items-center items-start justify-center font-helveticaneue text-black md:text-[16px] text-[14px] font-normal md:leading-[140%] leading-[110%] md:tracking-[-0.24px] tracking-[-0.21px]">
+                                    {{ variant.title }} <span class="w-[11px] h-[1px] bg-[#000] lg:inline-block hidden mx-[4px]"></span>
+                                    <b class="font-medium">${{ variant.price | money_without_currency }}</b>
+                                </p>
+                              </label>
+                              {% endfor %}
+                          </div>
+                        </div>
+
+                        <div class="product-addtocart flex md:flex-row flex-col gap-[18px]">
+                            <div class="product-quantity flex items-center md:justify-center justify-between gap-[7px] py-[18px] md:px-[16px] px-[12px] border border-[#3E488B] border-solid md:w-[127px] w-100">
+                                <span class="min button" id="decrement">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M15.8334 10.625H4.16669C3.82169 10.625 3.54169 10.345 3.54169 10C3.54169 9.655 3.82169 9.375 4.16669 9.375H15.8334C16.1784 9.375 16.4584 9.655 16.4584 10C16.4584 10.345 16.1784 10.625 15.8334 10.625Z" fill="#25314C"/>
+                                    </svg>                     
+                                </span>
+                                <input type="text" id="qty" name="quantity" value="1" min="1" class="font-helveticaneue w-[41px] bg-[rgba(0,0,0,0)] text-center text-black text-[24px] font-light leading-[100%] tracking-[0.24px] outline-0 shadow-none">
+                                <span class="plus button" id="increment">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.4583 9.99996C16.4583 10.345 16.1783 10.625 15.8333 10.625H10.625V15.8333C10.625 16.1783 10.345 16.4583 9.99999 16.4583C9.65499 16.4583 9.37499 16.1783 9.37499 15.8333V10.625H4.16666C3.82166 10.625 3.54166 10.345 3.54166 9.99996C3.54166 9.65496 3.82166 9.37496 4.16666 9.37496H9.37499V4.16663C9.37499 3.82163 9.65499 3.54163 9.99999 3.54163C10.345 3.54163 10.625 3.82163 10.625 4.16663V9.37496H15.8333C16.1783 9.37496 16.4583 9.65496 16.4583 9.99996Z" fill="#25314C"/>
+                                    </svg>                                                               
+                                </span>
+                            </div>
+                            <div class="product-submit w-full">
+                              <input type="hidden" name="form_type" value="product">
+                              <input type="hidden" name="id" data-productid="{{ product.id }}" value="{{ product.selected_or_first_available_variant.id }}">
+                              <button type="submit" name="add" id="AddToCart" class="btn w-full p-[24px] bg-[#F17A00] font-helveticaneue text-white text-[18px] uppercase flex items-center justify-center gap-[10px]">
+                                  <span class="addtocart-text tracking-[2.16px]">Add to Cart</span>
+                                  <span class="addtocart-hypen w-[40px] h-[1px] bg-[#FFF]"></span>
+                                  <span class="addtocart-price font-medium">${{ product.selected_or_first_available_variant.price | money_without_currency }}</span>
+                              </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+  function changeBtnLabelPrice(buttonSelector, qty) {
+      const selectedOption = document.querySelector('input[name="customRadio"]:checked').getAttribute('data-price');
+      let totalPrice = qty * selectedOption;
+      buttonSelector.textContent = "$" + totalPrice.toFixed(2);
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+      const decrementButton = document.getElementById('decrement');
+      const incrementButton = document.getElementById('increment');
+      const numberInput = document.getElementById('qty');
+
+      const radioButtons = document.querySelectorAll('input[name="customRadio"]');
+      const actionButton = document.querySelector('.addtocart-price');
+
+      decrementButton.addEventListener('click', () => {
+          let currentValue = parseInt(numberInput.value, 10);
+          if (!isNaN(currentValue)) {
+              if (currentValue > 1) {
+                  numberInput.value = currentValue - 1;
+                  changeBtnLabelPrice(actionButton, numberInput.value);
+              }
+          }
+      });
+
+      incrementButton.addEventListener('click', () => {
+          let currentValue = parseInt(numberInput.value, 10);
+          if (!isNaN(currentValue)) {
+              numberInput.value = currentValue + 1;
+              changeBtnLabelPrice(actionButton, numberInput.value);
+          }
+      });
+
+      radioButtons.forEach(radio => {
+          radio.addEventListener('change', () => {
+              const selectedOption = document.querySelector('input[name="customRadio"]:checked');
+              changeBtnLabelPrice(actionButton, numberInput.value);
+
+              const currentVariant = document.querySelector('input[name="id"]');
+              currentVariant.value = selectedOption.value;
+
+              var mainImage = document.getElementById("main-product-image");
+              var newImageSrc = selectedOption.getAttribute("data-image");
+
+              if (newImageSrc) {
+                mainImage.src = newImageSrc;
+              }
+          });
+      });
+
+    setTimeout(function() {
+        // Replace the selector with the actual element that contains the review count
+        const reviewCountElement = document.querySelector('.no-stars .loox-rating-content .loox-rating-label');
+        
+        if (reviewCountElement) {
+          const reviewCount = reviewCountElement.textContent || reviewCountElement.innerText;
+          document.getElementById("loox-count-reviews").textContent = "(" + reviewCount + ")";
+        } else {
+          document.getElementById("loox-count-reviews").textContent = "(0 Review)"
+        }
+      }, 500);
+  });
+  document.getElementById('subscription-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+  
+      var formData = new FormData(this);
+      
+      // Convert FormData to URL-encoded string
+      var urlEncodedData = new URLSearchParams(formData).toString();
+  
+      fetch('/cart/add.js', {
+        method: 'POST',
+        body: urlEncodedData,
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Item added to cart:', data);
+        // Redirect to checkout
+        window.location.href = '/checkout';
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    });
+</script>
+{% schema %}
+  {
+    "name": "Product Info",
+    "settings": []
+  }
+{% endschema %}

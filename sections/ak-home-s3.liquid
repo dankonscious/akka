@@ -1,20 +1,20 @@
-<!-- section.liquid -->
-<section id="section3" class="flex flex-col pt-24 bg-white max-[1200px]:py-[32px] max-[1200px]:px-[16px]">
-  <div class="flex flex-wrap gap-[50px] items-end self-start pb-16 max-[1200px]:max-w-full max-w-[var(--page-width)] w-full mx-auto font-['syne'] max-[1200px]:gap-0 max-[1200px]:pb-0">
-    <div class="flex flex-col text-slate-700 w-[900px] max-[1200px]:max-w-full max-[1200px]:pl-0">
-      <header class="flex flex-wrap gap-8 items-center self-start text-[70px] max-[1200px]:max-w-full max-[1200px]:text-4xl">
-        <img loading="lazy" src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image_alt }}" class="object-contain shrink-0 w-48 aspect-[2.28] rounded-[100px]" />
-        <h1 class="min-w-[240px] max-[1200px]:max-w-full max-[1200px]:text-4xl text-[#2E3666]">
-          <span class="text-center max-[1200px]:text-[40px]">{{ section.settings.title_line_1 }}</span>
-          <span class="w-[400px] max-[1200px]:text-[40px] font-['blisstwin']">{{ section.settings.title_line_2 }}</span>
+<!--- section.liquid -->
+<section id="section3" class="ak-flex ak-flex-col ak-pt-24 ak-bg-white max-lg:ak-py-[32px] max-lg:ak-px-[16px]">
+  <div class="ak-flex ak-flex-wrap ak-gap-[50px] ak-items-end ak-self-start ak-pb-16 max-lg:ak-max-w-full ak-max-w-[var(--page-width)] ak-w-full ak-mx-auto ak-font-['syne'] max-lg:ak-gap-0 max-lg:ak-pb-0">
+    <div class="ak-flex ak-flex-col ak-text-slate-700 ak-w-[900px] max-lg:ak-max-w-full max-lg:ak-pl-0">
+      <header class="ak-flex ak-flex-wrap ak-gap-8 ak-items-center ak-self-start ak-text-[70px] max-lg:ak-max-w-full max-lg:ak-text-4xl">
+        <img loading="lazy" src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image_alt }}" class="ak-object-contain ak-shrink-0 ak-w-48 ak-aspect-[2.28] ak-rounded-[100px]" />
+        <h1 class="ak-min-w-[240px] max-lg:ak-max-w-full max-lg:ak-text-4xl ak-text-[#2E3666]">
+          <span class="ak-text-center max-lg:ak-text-[40px]">{{ section.settings.title_line_1 }}</span>
+          <span class="ak-w-[400px] max-lg:ak-text-[40px] ak-font-['blisstwin']">{{ section.settings.title_line_2 }}</span>
         </h1>
       </header>
-      <div class="mt-16 [&>p]:text-[22px] [&>p]:tracking-wide max-[1200px]:mt-10 max-[1200px]:max-w-full text-[#2E3666]">
+      <div class="ak-mt-16 [&>p]:ak-text-[22px] [&>p]:ak-tracking-wide max-lg:ak-mt-10 max-lg:ak-max-w-full ak-text-[#2E3666]">
         {{ section.settings.description }}
       </div>
     </div>
-    <div class="flex-1 flex justify-end max-[1200px]:hidden">
-      <a href="{{ section.settings.button_link }}" class="button flex items-center gap-[16px]" role="button">
+    <div class="ak-flex-1 ak-flex ak-justify-end max-lg:ak-hidden">
+      <a href="{{ section.settings.button_link }}" class="button ak-flex ak-items-center ak-gap-[16px]" role="button">
         <span>{{ section.settings.button_text }}</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="34" viewBox="0 0 22 34" fill="none">
           <path d="M19.3476 23.404C19.3476 23.6817 19.2373 23.948 19.0409 24.1444C18.8445 24.3408 18.5782 24.4511 18.3005 24.4511C18.0227 24.4511 17.7564 24.3408 17.56 24.1444C17.3636 23.948 17.2533 23.6817 17.2533 23.404V12.576L5.08033 24.749C4.88183 24.9339 4.61928 25.0346 4.348 25.0298C4.07672 25.0251 3.81789 24.9152 3.62604 24.7233C3.43418 24.5314 3.32429 24.2726 3.3195 24.0013C3.31471 23.7301 3.41541 23.4675 3.60038 23.269L15.7716 11.0943H4.94362C4.6659 11.0943 4.39956 10.984 4.20318 10.7876C4.00681 10.5912 3.89648 10.3249 3.89648 10.0471C3.89648 9.76942 4.00681 9.50308 4.20318 9.3067C4.39956 9.11032 4.6659 9 4.94362 9H18.3005C18.5782 9 18.8445 9.11032 19.0409 9.3067C19.2373 9.50308 19.3476 9.76942 19.3476 10.0471V23.404Z" fill="#EDEEF5"/>
@@ -22,22 +22,22 @@
       </a>
     </div>
   </div>
-  <section id="science" class="science1 flex flex-col mt-16 w-full text-slate-700 max-[1200px]:max-w-full max-[1200px]:mt-[32px]">
-    <h2 class="text-[#2E3666] gap-2.5 pb-8 text-2xl font-['syne'] font-bold tracking-wide max-[1200px]:max-w-full max-w-[var(--page-width)] w-full mx-auto max-[1200px]:text-[20px]">
+  <section id="science" class="science1 ak-flex ak-flex-col ak-mt-16 ak-w-full ak-text-slate-700 max-lg:ak-max-w-full max-lg:ak-mt-[32px]">
+    <h2 class="ak-text-[#2E3666] ak-gap-2.5 ak-pb-8 ak-text-2xl ak-font-['syne'] ak-font-bold ak-tracking-wide max-lg:ak-max-w-full ak-max-w-[var(--page-width)] ak-w-full ak-mx-auto max-lg:ak-text-[20px]">
       {{ section.settings.science_intro }}
     </h2>
-    <div class="flex w-full max-[1200px]:max-w-full justify-end max-[1200px]:flex-col text-[#2E3666] font-['syne']">
-      <div class="flex flex-col flex-1">
-        <div class="flex flex-col max-[1200px]:max-w-full mr-[-1px] [&_.active]:!bg-[#dcdeeb]">
+    <div class="ak-flex ak-w-full max-lg:ak-max-w-full ak-justify-end max-lg:ak-flex-col ak-text-[#2E3666] ak-font-['syne']">
+      <div class="ak-flex ak-flex-col ak-flex-1">
+        <div class="ak-flex ak-flex-col max-lg:ak-max-w-full ak-mr-[-1px] [&_.active]:!ak-bg-[#dcdeeb]">
           {% for step in section.blocks %}
-            <article class="flex flex-wrap border-t border-[#2E3666] {% if forloop.last %} border-b max-[1024px]:border-b-0 {% endif %}">
-              <div class="w-[calc(100%_-_760px)]"></div>
-              <div class="w-[760px] max-[1200px]:w-full max-[1200px]:px-0 max-[1200px]:py-[16px] justify-end flex gap-8 max-[1200px]:gap-[16px] items-center max-xl:justify-center pt-[24px] pb-[24px] pr-[100px]">
-                <div  id="sc{{ forloop.index }}" class="sc {{ step.settings.active | default: '' }} flex justify-center items-center rounded-full bg-blend-multiply text-[50px] font-extralight tracking-tight text-center whitespace-nowrap w-[100px] h-[100px] max-[1200px]:max-w-[70px] max-[1200px]:w-full max-[1200px]:h-[70px] bg-[#EDEEF5]">
-                  <span class="px-3 py-0.5 max-[1200px]:text-[50px] font-['Neue_Haas_Grotesk_Display_Pro']">{{ step.settings.step_number }}</span>
+            <article class="ak-flex ak-flex-wrap ak-border-t ak-border-[#2E3666] {% if forloop.last %} ak-border-b max-[1024px]:ak-border-b-0 {% endif %}">
+              <div class="ak-w-[calc(100%_-_760px)]"></div>
+              <div class="ak-w-[760px] max-lg:ak-w-full max-lg:ak-px-0 max-lg:ak-py-[16px] ak-justify-end ak-flex ak-gap-8 max-lg:ak-gap-[16px] ak-items-center max-xl:ak-justify-center ak-pt-[24px] ak-pb-[24px] ak-pr-[100px]">
+                <div id="sc{{ forloop.index }}" class="sc {{ step.settings.active | default: '' }} ak-flex ak-justify-center ak-items-center ak-rounded-full ak-bg-blend-multiply ak-text-[50px] ak-font-extralight ak-tracking-tight ak-text-center ak-whitespace-nowrap ak-w-[100px] ak-h-[100px] max-lg:ak-max-w-[70px] max-lg:ak-w-full max-lg:ak-h-[70px] ak-bg-[#EDEEF5]">
+                  <span class="ak-px-3 ak-py-0.5 max-lg:ak-text-[50px] ak-font-['Neue_Haas_Grotesk_Display_Pro']">{{ step.settings.step_number }}</span>
                 </div>
-                <div class="flex-1">
-                  <p class="self-stretch my-auto text-2xl tracking-wide max-lg:text-[20px]">
+                <div class="ak-flex-1">
+                  <p class="ak-self-stretch ak-my-auto ak-text-2xl ak-tracking-wide max-lg:ak-text-[20px]">
                     {{ step.settings.step_description }}
                   </p>
                 </div>
@@ -46,17 +46,17 @@
           {% endfor %}
         </div>
       </div>
-      <div class="relative w-[860px] max-w-full max-[1200px]:w-full">
-        <div id="science-slider" class="fade_slider !max-w-[100%] !h-[447px] ">
+      <div class="ak-relative ak-w-[860px] ak-max-w-full max-lg:ak-w-full">
+        <div id="science-slider" class="fade_slider !ak-max-w-[100%] !ak-h-[447px] ">
           {% for step in section.blocks %}
             <div class="fade_slide">
-              <img loading="lazy" src="{{ step.settings.image |  image_url: width: 900  }}" class="h-[100%] object-cover border-t border-b border-solid border-[#2E3666] max-xl:border-none max-xl:mx-auto" alt="{{ step.settings.step_description }}">
+              <img loading="lazy" src="{{ step.settings.image |  image_url: width: 900  }}" class="ak-h-[100%] ak-object-cover ak-border-t ak-border-b ak-border-solid ak-border-[#2E3666] max-xl:ak-border-none max-xl:ak-mx-auto" alt="{{ step.settings.step_description }}">
             </div>
           {% endfor %}
         </div>
       </div>      
     </div>
-    <a href="{{ section.settings.button_link }}" class="button !hidden max-[1200px]:!flex items-center justify-center gap-[16px] mt-8" role="button">
+    <a href="{{ section.settings.button_link }}" class="button !ak-hidden max-lg:!ak-flex ak-items-center ak-justify-center ak-gap-[16px] ak-mt-8" role="button">
         <span>{{ section.settings.button_text }}</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="34" viewBox="0 0 22 34" fill="none">
           <path d="M19.3476 23.404C19.3476 23.6817 19.2373 23.948 19.0409 24.1444C18.8445 24.3408 18.5782 24.4511 18.3005 24.4511C18.0227 24.4511 17.7564 24.3408 17.56 24.1444C17.3636 23.948 17.2533 23.6817 17.2533 23.404V12.576L5.08033 24.749C4.88183 24.9339 4.61928 25.0346 4.348 25.0298C4.07672 25.0251 3.81789 24.9152 3.62604 24.7233C3.43418 24.5314 3.32429 24.2726 3.3195 24.0013C3.31471 23.7301 3.41541 23.4675 3.60038 23.269L15.7716 11.0943H4.94362C4.6659 11.0943 4.39956 10.984 4.20318 10.7876C4.00681 10.5912 3.89648 10.3249 3.89648 10.0471C3.89648 9.76942 4.00681 9.50308 4.20318 9.3067C4.39956 9.11032 4.6659 9 4.94362 9H18.3005C18.5782 9 18.8445 9.11032 19.0409 9.3067C19.2373 9.50308 19.3476 9.76942 19.3476 10.0471V23.404Z" fill="#EDEEF5"/>
@@ -64,6 +64,7 @@
     </a>
   </section>
 </section>
+
 
 <script>
   // Initialize sliders

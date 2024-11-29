@@ -7,18 +7,51 @@
     }
     #section2 .bg-image {
         background-image: url({{ section.settings.desktop_background_image | img_url: 'master' }});
+        
     }
-    @media(max-width: 1200px) {
-        #section2 .bg-image {
-            background-image: url({{ section.settings.mobile_background_image | img_url: 'master' }});
+    @media(max-width: 1024px) {
+        #section2 .bg-image {            
             height:660px;
             background-size:100% 100%;
         }
     }
+    @media(max-width: 1024px) and (min-width: 767px) {
+      /* #section2 .bg-image {
+        padding-bottom:100%;
+      }     */
+    }
+    
+    @media(min-width: 767px) {
+      #section2 {
+        margin-bottom: -121px;
+      }
+      #section2 .bg-image {
+        height: auto;
+        background-size: contain;
+        width: 100%;
+        padding-bottom: 52.1%;
+      }
+    }
+    @media(max-width: 767px) {
+      #section2 {
+        margin-bottom: -5px;
+      }
+      #section2 .bg-image {
+        width: 100%;
+        height: auto;
+        padding-bottom: 176.1%;
+        background-size: contain;
+      }
+    }
+    @media(max-width: 767px) {
+      #section2 .bg-image {
+          background-image: url({{ section.settings.mobile_background_image | img_url: 'master' }});        
+      }
+    }
  </style>
 <div id="section2-sticky">
-  <section id="section2" class="relative max-md:overflow-hidden font-['syne']">
-    <div class="bg-image bg-cover bg-center bg-no-repeat h-[900px]">          
+  <section id="section2" class="ak-relative max-lg:ak-overflow-hidden ak-font-['syne']">
+    <div class="bg-image ak-bg-cover ak-bg-center ak-bg-no-repeat ak-h-[900px]">          
     </div>
   </section>
 </div>

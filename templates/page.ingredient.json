@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "layout": "akka.theme",
   "sections": {
@@ -35,35 +35,35 @@
         "link_8bCnPk": {
           "type": "link",
           "settings": {
-            "link_id": "Akkermansia",
+            "link_id": "#Akkermansia",
             "link_name": "Akkermasia"
           }
         },
         "link_FEUmH7": {
           "type": "link",
           "settings": {
-            "link_id": "Quercetin",
+            "link_id": "#Quercetin",
             "link_name": "Quercertin"
           }
         },
         "link_erkYyn": {
           "type": "link",
           "settings": {
-            "link_id": "Resveratrol",
+            "link_id": "#Resveratrol",
             "link_name": "Resveratrol"
           }
         },
         "link_K36NFh": {
           "type": "link",
           "settings": {
-            "link_id": "Silymarin",
+            "link_id": "#Silymarin",
             "link_name": "Silymarin"
           }
         },
         "link_camwxT": {
           "type": "link",
           "settings": {
-            "link_id": "Artichoke",
+            "link_id": "#Artichoke",
             "link_name": "Artichoke"
           }
         },
@@ -198,7 +198,7 @@
         "title_part_1": "Liver health is",
         "title_part_2": "system health",
         "content_text": "AKKA synergistically combines the world's most well-researched and clinically proven liver-rejuvenating ingredients, meticulously chosen to optimize liver function and health.",
-        "link_url": "product.html",
+        "link_url": "https://tryakka.com/pages/product",
         "link_text": "shop akka",
         "image_bottom_desktop": "shopify://shop_images/sec2-imgbottom.png",
         "image_bottom_mobile": "shopify://shop_images/sec2-imgbottom-mob.png"
