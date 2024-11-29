@@ -226,6 +226,15 @@
         "link_text_2": "The Science"
       }
     },
+    "ak_loox_review_tRVNbM": {
+      "type": "ak-loox-review",
+      "settings": {
+        "heading": "Customer Reviews",
+        "featured_product": "",
+        "show_reviews": true,
+        "show_ratings": true
+      }
+    },
     "ak_product_s5_FL6pGF": {
       "type": "ak-product-s5",
       "blocks": {
@@ -330,15 +339,6 @@
       ],
       "settings": {}
     },
-    "ak_loox_review_tRVNbM": {
-      "type": "ak-loox-review",
-      "settings": {
-        "heading": "Customer Reviews",
-        "featured_product": "",
-        "show_reviews": true,
-        "show_ratings": true
-      }
-    },
     "ak_product_s6_QdmkfN": {
       "type": "ak-product-s6",
       "settings": {
@@ -358,8 +358,8 @@
     "ak_product_s2_9fXVkb",
     "ak_product_s3_pMKCgd",
     "ak_product_s4_XhhzUW",
-    "ak_product_s5_FL6pGF",
     "ak_loox_review_tRVNbM",
+    "ak_product_s5_FL6pGF",
     "ak_product_s6_QdmkfN"
   ]
 }
