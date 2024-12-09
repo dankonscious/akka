@@ -223,11 +223,11 @@
       <div class="prodbox ak-flex ak-flex-col ak-justify-center ak-items-center ak-min-w-[240px] ak-w-full ak-max-w-[399px] ak-mt-[32px]">
         {% for block3 in section.blocks %}
             {% if block3.type == 'block3' %}
-                <article data-link="{{ block3.settings.link }}" class="ak-flex ak-gap-8 ak-items-start ak-px-3.5 ak-py-4 ak-max-w-full ak-mb-4 ak-leading-snug ak-border ak-border-indigo-900 ak-border-solid ak-text-[#2E3666] ak-w-[399px] max-lg:ak-gap-[18px]">
-                    <div class="ak-flex ak-flex-col ak-items-start ak-w-[209px]">
+                <article data-link="{{ block3.settings.link }}" class="ak-flex ak-justify-between ak-items-start ak-px-3.5 ak-py-4 ak-max-w-full ak-mb-4 ak-leading-snug ak-border ak-border-indigo-900 ak-border-solid ak-text-[#2E3666] ak-w-[399px]">
+                    <div class="ak-flex ak-flex-col ak-items-start ak-w-[calc(100%_-_35%)]">
                         <h3 class="ak-text-xl ak-font-medium ak-text-center ak-uppercase">{{ block3.settings.prod_title }}</h3>
                         <p class="ak-self-stretch ak-mt-2 ak-text-sm ak-leading-5">
-                            {{ block3.settings.prod_content1 }}
+                            {{ block3.settings.prod_content1 }}<br>
                             {{ block3.settings.prod_content2 }}
                         </p>
                         <p class="ak-flex ak-gap-1 ak-items-start ak-mt-2 ak-text-2xl ak-font-bold ak-text-orange-500 ak-whitespace-nowrap ak-font-['Heebo']">
@@ -235,7 +235,7 @@
                         <span class="ak-w-[59px] ak-line-through ak-opacity-50">{{ block3.settings.prod_before_price }}</span>
                         </p>
                     </div>
-                    <div class="ak-flex ak-flex-col ak-items-center ak-text-xl ak-text-center ak-font-['Heebo'] max-lg:ak-w-[43%]">
+                    <div class="ak-flex ak-flex-col ak-items-center ak-text-xl ak-text-center ak-font-['Heebo'] max-lg:ak-w-[35%]">
                         <span class="ak-gap-1 ak-px-2 ak-py-2 ak-bg-zinc-100 ak-rounded-[100px]">Save {{ block3.settings.save }}</span>
                         <p class="ak-mt-2 ak-font-bold">{{ block3.settings.per_bottle }}/bottle</p>
                     </div>

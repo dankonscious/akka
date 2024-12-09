@@ -3657,6 +3657,10 @@ html {
     width: 100%;
   }
 
+  .max-lg\:ak-w-\[35\%\] {
+    width: 35%;
+  }
+
   .max-lg\:ak-max-w-\[223px\] {
     max-width: 223px;
   }
