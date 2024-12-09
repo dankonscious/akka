@@ -1567,6 +1567,10 @@ video {
   width: 100%;
 }
 
+.ak-w-\[calc\(100\%_-_35\%\)\] {
+  width: calc(100% - 35%);
+}
+
 .ak-min-w-\[1350px\] {
   min-width: 1350px;
 }
