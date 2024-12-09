@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1518,10 +1518,6 @@ video {
   width: 856px;
 }
 
-.ak-w-\[85px\] {
-  width: 85px;
-}
-
 .ak-w-\[860px\] {
   width: 860px;
 }
@@ -2048,6 +2044,10 @@ video {
   border-bottom-width: 1px;
 }
 
+.ak-border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .ak-border-b-\[2px\] {
   border-bottom-width: 2px;
 }
@@ -2074,10 +2074,6 @@ video {
 
 .ak-border-t-\[6px\] {
   border-top-width: 6px;
-}
-
-.ak-border-b-2 {
-  border-bottom-width: 2px;
 }
 
 .ak-border-solid {
@@ -2419,6 +2415,10 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.ak-pb-\[10px\] {
+  padding-bottom: 10px;
+}
+
 .ak-pb-\[144px\] {
   padding-bottom: 144px;
 }
@@ -2533,10 +2533,6 @@ video {
 
 .ak-pt-\[49px\] {
   padding-top: 49px;
-}
-
-.ak-pb-\[10px\] {
-  padding-bottom: 10px;
 }
 
 .ak-text-center {
