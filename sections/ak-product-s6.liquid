@@ -37,9 +37,6 @@ function handleMutations(mutationsList) {
                 if (node.tagName === 'IFRAME') {
                     if (node.id === 'looxReviewsFrame') {
                         // Initialize Rellax after looxreview loaded with a timeout
-
-                        
-
                         // Add a timeout of 2-3 seconds before initializing Rellax
                         setTimeout(() => {
                             console.log('New iframe added:', node);
