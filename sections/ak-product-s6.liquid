@@ -26,6 +26,39 @@
 </section>
 
 <script>
+  // Function to handle mutations
+  function handleMutations(mutationsList) {
+      for (const mutation of mutationsList) {
+          if (mutation.type === 'childList') {
+              // Check added nodes
+              mutation.addedNodes.forEach((node) => {
+                  if (node.tagName === 'IFRAME') {
+                      console.log('New iframe added:', node);
+                  }
+                  if (node.classList && node.classList.contains('loox')) {
+                      console.log('New element with class "loox" added:', node);
+                  }
+              });
+          }
+      }
+  }
+  
+  // Create a MutationObserver
+  const observer = new MutationObserver(handleMutations);
+  
+  // Specify the target node and observer options
+  const targetNode = document.body; // Observe changes in the entire body
+  const observerOptions = {
+      childList: true, // Observe direct children
+      subtree: true    // Observe all descendants
+  };
+  
+  // Start observing
+  observer.observe(targetNode, observerOptions);
+  
+  console.log('MutationObserver is running...');
+  
+    
   var rellax = new Rellax('.rellax');
 </script>
 
