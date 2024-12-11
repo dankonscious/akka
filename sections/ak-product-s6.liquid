@@ -32,9 +32,16 @@
           if (mutation.type === 'childList') {
               // Check added nodes
               mutation.addedNodes.forEach((node) => {
+                  // Check if the node is an iframe
                   if (node.tagName === 'IFRAME') {
                       console.log('New iframe added:', node);
+                      // Check if the iframe has id="looxReviewsFrame"
+                      if (node.id === 'looxReviewsFrame') {
+                          console.log('Iframe with id="looxReviewsFrame" detected:', node);
+                          // Add any additional logic here
+                      }
                   }
+                  // Check if the node has a specific class
                   if (node.classList && node.classList.contains('loox')) {
                       console.log('New element with class "loox" added:', node);
                   }
@@ -42,25 +49,26 @@
           }
       }
   }
-  
+
   // Create a MutationObserver
   const observer = new MutationObserver(handleMutations);
-  
+
   // Specify the target node and observer options
-  const targetNode = document.body; // Observe changes in the entire body
+  const targetNode = document.body; 
   const observerOptions = {
-      childList: true, // Observe direct children
-      subtree: true    // Observe all descendants
+      childList: true, 
+      subtree: true 
   };
-  
+
   // Start observing
   observer.observe(targetNode, observerOptions);
-  
+
   console.log('MutationObserver is running...');
-  
-    
+
+  // Initialize Rellax if needed
   var rellax = new Rellax('.rellax');
 </script>
+
 
 
 {% schema %}
