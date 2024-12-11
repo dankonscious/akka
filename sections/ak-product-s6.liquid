@@ -28,40 +28,45 @@
 <script>
   
   // Function to handle mutations
-  function handleMutations(mutationsList) {
-      for (const mutation of mutationsList) {
-          if (mutation.type === 'childList') {
-              // Check added nodes
-              mutation.addedNodes.forEach((node) => {
-                  // Check if the node is an iframe
-                  if (node.tagName === 'IFRAME') {
-                      if (node.id === 'looxReviewsFrame') {
-                          // Initialize Rellax after looxreview loaded
+function handleMutations(mutationsList) {
+    for (const mutation of mutationsList) {
+        if (mutation.type === 'childList') {
+            // Check added nodes
+            mutation.addedNodes.forEach((node) => {
+                // Check if the node is an iframe
+                if (node.tagName === 'IFRAME') {
+                    if (node.id === 'looxReviewsFrame') {
+                        // Initialize Rellax after looxreview loaded with a timeout
 
-                          // Check if the iframe has id="looxReviewsFrame"
-                          console.log('New iframe added:', node);
-                          var rellax = new Rellax('.akk-rellax');
-                      }
-                  }
-              });
-          }
-      }
-  }
+                        
 
-  // Create a MutationObserver
-  const observer = new MutationObserver(handleMutations);
+                        // Add a timeout of 2-3 seconds before initializing Rellax
+                        setTimeout(() => {
+                            console.log('New iframe added:', node);
+                            var rellax = new Rellax('.akk-rellax');
+                        }, 2000); // Timeout set to 2 seconds
+                    }
+                }
+            });
+        }
+    }
+}
 
-  // Specify the target node and observer options
-  const targetNode = document.body; 
-  const observerOptions = {
-      childList: true, 
-      subtree: true 
-  };
+// Create a MutationObserver
+const observer = new MutationObserver(handleMutations);
 
-  // Start observing
-  observer.observe(targetNode, observerOptions);
+// Specify the target node and observer options
+const targetNode = document.body; 
+const observerOptions = {
+    childList: true, 
+    subtree: true 
+};
 
-  console.log('MutationObserver is running...');
+// Start observing
+observer.observe(targetNode, observerOptions);
+
+console.log('MutationObserver is running...');
+
 
   
 </script>
