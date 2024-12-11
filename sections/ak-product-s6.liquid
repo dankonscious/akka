@@ -26,42 +26,32 @@
 </section>
 
 <script>
-  // Function to handle mutations
-  function handleMutations(mutationsList) {
-      for (const mutation of mutationsList) {
-          if (mutation.type === 'childList') {
-              // Check added nodes
-              mutation.addedNodes.forEach((node) => {
-                  // Check if the node is an iframe
-                  if (node.tagName === 'IFRAME') {
-                      if (node.id === 'looxReviewsFrame') {
-                          // Initialize Rellax after looxreview loaded
+  const looxReviews = document.getElementById('looxReviews');
 
-                          // Check if the iframe has id="looxReviewsFrame"
-                          console.log('New iframe added:', node);
-                          var rellax = new Rellax('.akk-rellax');
-                      }
-                  }
-              });
-          }
-      }
-  }
+// Set initial height as a custom data attribute
+looxReviews.dataset.prevHeight = looxReviews.offsetHeight;
 
-  // Create a MutationObserver
-  const observer = new MutationObserver(handleMutations);
+const observer = new MutationObserver(mutationsList => {
+    for (const mutation of mutationsList) {
+        const newHeight = looxReviews.offsetHeight;
+        if (newHeight !== looxReviews.dataset.prevHeight) {
+            console.log(`Height changed from ${looxReviews.dataset.prevHeight} to ${newHeight}`);
+            looxReviews.dataset.prevHeight = newHeight; // Update stored height
+        }
+    }
+});
 
-  // Specify the target node and observer options
-  const targetNode = document.body; 
-  const observerOptions = {
-      childList: true, 
-      subtree: true 
-  };
+// Start observing the target element
+observer.observe(looxReviews, {
+    attributes: true, // Observe attribute changes
+    childList: true,  // Observe additions/removals of child elements
+    subtree: true,    // Observe changes in child nodes
+});
 
-  // Start observing
-  observer.observe(targetNode, observerOptions);
-
-  console.log('MutationObserver is running...');
-
+// Stop observing when no longer needed
+// observer.disconnect();
+var rellax = new Rellax('.akk-rellax');
+  
   
 </script>
 
