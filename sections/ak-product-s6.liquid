@@ -2,11 +2,11 @@
 <section id="section-5" class="ak-w-full ak-h-[900px] max-lg:ak-h-[663px] ak-bg-[linear-gradient(114deg,_#7B82A2_8.77%,_#677099_52.96%,_#7B82A2_92.94%)] ak-overflow-hidden">
   <div class="ak-relative ak-w-full ak-h-full ak-flex ak-items-center ak-justify-center">
     
-    <div class="upperimg ak-max-w-[480px] ak-w-full ak-absolute ak-top-[-200px] ak-left-[110px] ak-z-10 max-lg:ak-max-w-[300px] max-lg:ak-left-[-151px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
+    <div class="upperimg ak-max-w-[480px] ak-w-full ak-absolute ak-top-[-200px] ak-left-[110px] ak-z-10 max-lg:ak-max-w-[300px] max-lg:ak-left-[-151px] akk-rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
       <img src="{{ section.settings.upper_image |  image_url: width: 800 }}" alt="">
     </div>
 
-    <div class="midimg ak-max-w-[578px] ak-mt-[100px] ak-w-full ak-absolute ak-z-30 rellax" data-rellax-percentage="0.5" data-rellax-speed="3">
+    <div class="midimg ak-max-w-[578px] ak-mt-[100px] ak-w-full ak-absolute ak-z-30 akk-rellax" data-rellax-percentage="0.5" data-rellax-speed="3">
       <img class="max-lg:ak-hidden" src="{{ section.settings.mid_image_desktop | image_url: width: 800 }}" alt="">
       <img class="ak-hidden max-lg:ak-block ak-mx-auto" src="{{ section.settings.mid_image_mobile | img_url: 'master' }}" alt="">
     </div>
@@ -19,7 +19,7 @@
           </svg>
         </a>    
     </div>
-    <div class="lowerimg ak-max-w-[400px] ak-w-full ak-absolute ak-bottom-[-200px] ak-right-[100px] ak-z-10 max-lg:ak-max-w-[223px] max-lg:ak-right-[-105px] rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
+    <div class="lowerimg ak-max-w-[400px] ak-w-full ak-absolute ak-bottom-[-200px] ak-right-[100px] ak-z-10 max-lg:ak-max-w-[223px] max-lg:ak-right-[-105px] akk-rellax" data-rellax-percentage="0.5" data-rellax-speed="-7">
       <img src="{{ section.settings.lower_image |  image_url: width: 800  }}" alt="">
     </div>
   </div>
@@ -39,7 +39,7 @@
 
                           // Check if the iframe has id="looxReviewsFrame"
                           console.log('New iframe added:', node);
-                          var rellax = new Rellax('.rellax');
+                          var rellax = new Rellax('.akk-rellax');
                       }
                   }
               });
