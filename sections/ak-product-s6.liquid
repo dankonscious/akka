@@ -37,8 +37,8 @@
                       console.log('New iframe added:', node);
                       // Check if the iframe has id="looxReviewsFrame"
                       if (node.id === 'looxReviewsFrame') {
-                          console.log('Iframe with id="looxReviewsFrame" detected:', node);
-                          // Add any additional logic here
+                          // Initialize Rellax after looxreview loaded
+                          var rellax = new Rellax('.rellax');
                       }
                   }
                   // Check if the node has a specific class
@@ -65,8 +65,7 @@
 
   console.log('MutationObserver is running...');
 
-  // Initialize Rellax if needed
-  var rellax = new Rellax('.rellax');
+  
 </script>
 
 
