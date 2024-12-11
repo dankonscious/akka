@@ -50,8 +50,44 @@ observer.observe(looxReviews, {
 
 // Stop observing when no longer needed
 // observer.disconnect();
-// var rellax = new Rellax('.akk-rellax');
+var rellax = new Rellax('.akk-rellax');
   
+  // Function to handle mutations
+  function handleMutations(mutationsList) {
+      for (const mutation of mutationsList) {
+          if (mutation.type === 'childList') {
+              // Check added nodes
+              mutation.addedNodes.forEach((node) => {
+                  // Check if the node is an iframe
+                  if (node.tagName === 'IFRAME') {
+                      if (node.id === 'looxReviewsFrame') {
+                          // Initialize Rellax after looxreview loaded
+
+                          // Check if the iframe has id="looxReviewsFrame"
+                          console.log('New iframe added:', node);
+                          var rellax = new Rellax('.akk-rellax');
+                      }
+                  }
+              });
+          }
+      }
+  }
+
+  // Create a MutationObserver
+  const observer = new MutationObserver(handleMutations);
+
+  // Specify the target node and observer options
+  const targetNode = document.body; 
+  const observerOptions = {
+      childList: true, 
+      subtree: true 
+  };
+
+  // Start observing
+  observer.observe(targetNode, observerOptions);
+
+  console.log('MutationObserver is running...');
+
   
 </script>
 
