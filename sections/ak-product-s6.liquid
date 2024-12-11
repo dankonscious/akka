@@ -26,31 +26,6 @@
 </section>
 
 <script>
-  const looxReviews = document.getElementById('looxReviews');
-
-// Set initial height as a custom data attribute
-looxReviews.dataset.prevHeight = looxReviews.offsetHeight;
-
-const observer = new MutationObserver(mutationsList => {
-    for (const mutation of mutationsList) {
-        const newHeight = looxReviews.offsetHeight;
-        if (newHeight !== looxReviews.dataset.prevHeight) {
-            console.log(`Height changed from ${looxReviews.dataset.prevHeight} to ${newHeight}`);
-            looxReviews.dataset.prevHeight = newHeight; // Update stored height
-        }
-    }
-});
-
-// Start observing the target element
-observer.observe(looxReviews, {
-    attributes: true, // Observe attribute changes
-    childList: true,  // Observe additions/removals of child elements
-    subtree: true,    // Observe changes in child nodes
-});
-
-// Stop observing when no longer needed
-// observer.disconnect();
-var rellax = new Rellax('.akk-rellax');
   
   // Function to handle mutations
   function handleMutations(mutationsList) {
