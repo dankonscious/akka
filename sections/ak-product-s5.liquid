@@ -46,15 +46,25 @@
   </div>
 </section>
 
-<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 <script>
-    $(document).ready(function() {
-        $('.faq-item').click(function() {
-            $(this).toggleClass('active');
-            $(this).find('.faq-answer').slideToggle();
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+    
+        faqItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                item.classList.toggle('active');
+                const faqAnswer = item.querySelector('.faq-answer');
+                if (faqAnswer) {
+                    if (faqAnswer.style.display === 'none' || !faqAnswer.style.display) {
+                        faqAnswer.style.display = 'block';
+                    } else {
+                        faqAnswer.style.display = 'none';
+                    }
+                }
+            });
         });
     });
+
 </script>
 
 {% schema %}
